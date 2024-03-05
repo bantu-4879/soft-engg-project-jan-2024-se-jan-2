@@ -5,7 +5,7 @@ from application.config import DevelopmentConfig, TestingConfig
 from application.database import db
 from application.logger import logger
 from application.globals import API_VERSION
-from application.views.auth_bp import auth_bp
+from application.views.routes import auth_bp
 from application.views.student_bp import student_bp
 from application.views.support_bp import support_bp
 from application.views.admin_bp import admin_bp
