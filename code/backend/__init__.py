@@ -5,12 +5,12 @@ from application.config import DevelopmentConfig, TestingConfig
 from application.database import db
 from application.logger import logger
 from application.globals import API_VERSION
-from application.views.routes import auth_bp
-from application.views.student_bp import student_bp
-from application.views.support_bp import support_bp
-from application.views.admin_bp import admin_bp
-from application.views.faq_bp import faq_bp
-from application.views.ticket_bp import ticket_bp
+from application.views import auth_bp
+from application.views import student_bp
+from application.views import support_bp
+from application.views import admin_bp
+from application.views import faq_bp
+from application.views import ticket_bp
 from flask_cors import CORS
 
 
