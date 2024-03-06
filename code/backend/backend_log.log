@@ -138,3 +138,13 @@
 06-Mar-24 21:06:03 - [INFO] - Development environment configured.
 06-Mar-24 21:06:03 - [WARNING] -  * Debugger is active!
 06-Mar-24 21:06:03 - [INFO] -  * Debugger PIN: 679-372-146
+06-Mar-24 21:12:19 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\__init__.py', reloading
+06-Mar-24 21:12:19 - [INFO] -  * Restarting with stat
+06-Mar-24 21:12:19 - [INFO] - Development environment configured.
+06-Mar-24 21:12:19 - [WARNING] -  * Debugger is active!
+06-Mar-24 21:12:19 - [INFO] -  * Debugger PIN: 679-372-146
+06-Mar-24 21:15:19 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\auth_bp.py', reloading
+06-Mar-24 21:15:19 - [INFO] -  * Restarting with stat
+06-Mar-24 21:15:19 - [INFO] - Development environment configured.
+06-Mar-24 21:15:19 - [WARNING] -  * Debugger is active!
+06-Mar-24 21:15:19 - [INFO] -  * Debugger PIN: 679-372-146
