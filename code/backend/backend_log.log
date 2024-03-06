@@ -1,0 +1,10 @@
+06-Mar-24 14:59:31 - [INFO] - Development environment configured.
+06-Mar-24 14:59:41 - [INFO] - Development environment configured.
+06-Mar-24 15:06:33 - [INFO] - Development environment configured.
+06-Mar-24 15:06:33 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+06-Mar-24 15:06:33 - [INFO] - [33mPress CTRL+C to quit[0m
+06-Mar-24 15:06:33 - [INFO] -  * Restarting with stat
+06-Mar-24 15:06:33 - [INFO] - Development environment configured.
+06-Mar-24 15:06:33 - [WARNING] -  * Debugger is active!
+06-Mar-24 15:06:33 - [INFO] -  * Debugger PIN: 615-108-927
