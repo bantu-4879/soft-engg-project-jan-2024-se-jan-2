@@ -39,6 +39,7 @@ def create_app(env_type="dev"):
 
     app.app_context().push()
     db.create_all()
+    
     db.session.commit()
 
     return app
