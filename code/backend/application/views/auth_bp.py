@@ -41,32 +41,31 @@ class AuthUtils(UserUtils):
 
         """
         if details["operation"] == "login":
-            user = Auth.query.filter_by(email=details["email"]).first()
-            user.web_token = details["web_token"]
-            user.is_logged = True
+            user = Authentication.query.filter_by(email=details["email"]).first()
+            user.token = details["web_token"]
+            #user.is_logged = True
             user.token_created_on = int(time.time())
             user.token_expiry_on = details["token_expiry_on"]
             db.session.commit()
 
         if details["operation"] == "register":
-            user = Auth(
-                user_id=details["user_id"],
+            user = User(
+                user_id=details["id"],
                 email=details["email"],
                 password=details["password"],
                 role=details["role"],
-                first_name=details["first_name"],
-                last_name=details["last_name"],
+                name=details["name"],
             )
             db.session.add(user)
             db.session.commit()
 
         if details["operation"] == "verify_user":
-            user = Auth.query.filter_by(user_id=details["user_id"]).first()
+            user = User.query.filter_by(user_id=details["id"]).first()
             user.is_verified = True
             db.session.commit()
 
         if details["operation"] == "delete_user":
-            user = Auth.query.filter_by(user_id=details["user_id"]).first()
+            user = User.query.filter_by(user_id=details["user.id"]).first()
             db.session.delete(user)
             db.session.commit()
 

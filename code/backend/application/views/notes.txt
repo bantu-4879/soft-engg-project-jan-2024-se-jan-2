@@ -1,2 +1,18 @@
 1. DO we need the discourse id while registration
 2. 
+
+
+Current API Blueprints 
+
+BACKEND
+- admin_bp.py - @muskansindhu
+- auth_bp.py - @muskansindhu
+- faq_bp.py - @bantu-4879
+- student_bp.py - @akritii-3107
+- support_bp.py - @akritii-3107
+- ticket_bp.py - @sahithid
+
+FRONTEND
+- Frontend - @Ishika-0105, Steve
+- user_utils.py (planning to implement in the frontend)
+    - this consists of validation functions for emails and passwords
