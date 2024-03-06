@@ -1,207 +1,157 @@
 #routes go here!
+
+user_utils
 # --------------------  Imports  --------------------
 
 import os
-from flask import Blueprint, request
-from flask_restful import Api, Resource
-from application.logger import logger
-from application.responses import *
-from application.models import Auth
-from application.globals import TOKEN_VALIDITY, BACKEND_ROOT_PATH
-from application.database import db
-import time
-from application.views.user_utils import UserUtils
+from flask import current_app as app
+import jwt
+import hashlib
 from application.common_utils import (
-    token_required,
-    admin_required,
+    convert_base64_to_img,
     convert_img_to_base64,
     is_img_path_valid,
+    is_base64,
+    get_encoded_file_details,
 )
+from application.responses import *
+from application.logger import logger
+from application.models import *
+from application.globals import *
+
 
 # --------------------  Code  --------------------
 
 
-class AuthUtils(UserUtils):
-    def __init__(self, user_id=None):
-        self.user_id = user_id
+class UserUtils:
+    def is_blank(self, string):
+        # for "", "  ", None : True else False
+        if string == "undefined":
+            return True
+        return not (bool(string and not string.isspace()))
 
-    def update_auth_table(self, details: dict):
+    def is_email_valid(self, email):
+        is_valid = False
+        # import re
+        # regex = "^[a-z0-9]+[\._]?[a-z0-9]+[@]\w+[.]\w{2,3}$"
+        # is_valid = re.search(regex, email)
+        # But to keep it simple for now
+        if "@" in email:
+            is_valid = True
+        return is_valid
+
+    def is_password_valid(self, password):
+        # valid = list("abcdefghijklmnopqrstuvwxyz0123456789")
+        # if (len(password) >= 4) and (len(password) <= 10):
+        #     for i in password:
+        #         if i not in valid:
+        #             return False
+        #     return True
+        # else:
+        #     return False
+        # its base64 encoded by frontend
+        return True
+
+    def verify_register_form(self, details: dict):
         """
         Usage
         -----
-        Update auth table while logging in and creating new account
+        verify user email, password while creating new account
 
         Parameters
         ----------
-        details : dict with user details
+        details: dict
 
         Returns
         -------
-        updated user object
+        return boolean status
 
         """
-        if details["operation"] == "login":
-            user = Auth.query.filter_by(email=details["email"]).first()
-            user.web_token = details["web_token"]
-            user.is_logged = True
-            user.token_created_on = int(time.time())
-            user.token_expiry_on = details["token_expiry_on"]
-            db.session.commit()
+        # verify email
+        if not self.is_email_valid(details["email"]):
+            return False
 
-        if details["operation"] == "register":
-            user = Auth(
-                user_id=details["user_id"],
-                email=details["email"],
-                password=details["password"],
-                role=details["role"],
-                first_name=details["first_name"],
-                last_name=details["last_name"],
-            )
-            db.session.add(user)
-            db.session.commit()
+        # verify password
+        if not self.is_password_valid(details["password"]):
+            return False
 
-        if details["operation"] == "verify_user":
-            user = Auth.query.filter_by(user_id=details["user_id"]).first()
-            user.is_verified = True
-            db.session.commit()
+        # verify retyped password
+        if not self.is_password_valid(details["retype_password"]):
+            return False
 
-        if details["operation"] == "delete_user":
-            user = Auth.query.filter_by(user_id=details["user_id"]).first()
-            db.session.delete(user)
-            db.session.commit()
+        # verify retyped password is same as password
+        if not (details["password"] == details["retype_password"]):
+            return False
 
-        return user
+        return True
 
-
-auth_bp = Blueprint("auth_bp", __name__)
-auth_api = Api(auth_bp)
-auth_utils = AuthUtils()
-
-
-class Login(Resource):
-    def post(self):
+    def generate_web_token(self, email: str, token_expiry_on: int) -> str:
         """
         Usage
         -----
-        For the user login page. It checks user data and raise appropriate error
-        if required. Else it generates user token and returns it.
+        Generate jwt token from email id
 
         Parameters
         ----------
-        form data sent with request
-        data format {'email':'', 'password':''}
+        email : email id of user
+        token_expiry_on : expiry timestamp
 
         Returns
         -------
-        User web token
+        web_token
 
         """
-        form = {}
+        # use current time stamp and email to generate unique token
+        web_token = jwt.encode(
+            {
+                "email": email,
+                "expiry": token_expiry_on,
+            },
+            app.config["SECRET_KEY"],
+            algorithm="HS256",
+        )
+        return web_token
 
-        # get form data
-        try:
-            form = request.get_json()
-            email = form.get("email", "")
-            password = form.get("password", "")
-        except Exception as e:
-            logger.error(f"Login->post : Error occured while getting form data : {e}")
-            raise InternalServerError
-        else:
-            if auth_utils.is_blank(email) or auth_utils.is_blank(password):
-                raise BadRequest(status_msg=f"Email or Password is empty")
+    def generate_user_id(self, email: str) -> str:
+        """
+        Usage
+        -----
+        Generate user id from email and hashing with md5
 
-            details = {"email": email, "password": password, "operation": "login"}
+        Parameters
+        ----------
+        email : email id of user
 
-            # verify form data
-            if auth_utils.is_email_valid(email) and auth_utils.is_password_valid(
-                password
-            ):
-                # check if user exists
+        Returns
+        -------
+        user_id
 
-                user = Auth.query.filter_by(email=email).first()
-                if user:
-                    # user exists
-                    user_id = user.user_id
+        """
+        # use email to generate unique id
+        user_id = hashlib.md5(email.encode()).hexdigest()
+        return user_id
 
-                    if password == user.password:
-                        # password is correct so log in user if user is verified
-                        if user.is_verified or user.role == "admin":
-                            #  generate token
-                            token_expiry_on = int(int(time.time()) + TOKEN_VALIDITY)
-                            web_token = auth_utils.generate_web_token(
-                                email, token_expiry_on
-                            )
-                            details["web_token"] = web_token
-                            details["token_expiry_on"] = token_expiry_on
-
-                            # update auth table
-                            user = auth_utils.update_auth_table(details=details)
-
-                            # get profile pic
-                            profile_pic = user.profile_photo_loc
-                            if profile_pic == "":
-                                profile_pic = os.path.join(
-                                    BACKEND_ROOT_PATH,
-                                    "databases",
-                                    "images",
-                                    "profile_pics",
-                                    "dummy_profile.png",
-                                )
-                            img_base64 = ""
-                            if is_img_path_valid(profile_pic):
-                                img_base64 = convert_img_to_base64(profile_pic)
-
-                            logger.info("User logged in.")
-                            return success_200_custom(
-                                data={
-                                    "user_id": user_id,
-                                    "web_token": web_token,
-                                    "token_expiry_on": token_expiry_on,
-                                    "role": user.role,
-                                    "first_name": user.first_name,
-                                    "last_name": user.last_name,
-                                    "email": user.email,
-                                    "profile_photo_loc": img_base64,
-                                }
-                            )
-                        else:
-                            # user details are correct but user is not verified by admin
-                            raise Unauthenticated(
-                                status_msg="User is not verified by Admin."
-                            )
-                    else:
-                        # password is wrong
-                        raise Unauthenticated(status_msg="Password is incorrect")
-                else:
-                    # user does not exists
-                    raise NotFoundError(status_msg="User does not exists")
+    def convert_user_data_to_dict(self, user) -> dict:
+        user_dict = vars(user)
+        if "_sa_instance_state" in user_dict:
+            del user_dict["_sa_instance_state"]
+        if "password" in user_dict:
+            del user_dict["password"]
+        profile_pic = user_dict["profile_photo_loc"]
+        if is_img_path_valid(profile_pic):
+            img_base64 = convert_img_to_base64(profile_pic)
+            if img_base64 != "":
+                user_dict["profile_photo_loc"] = img_base64
             else:
-                # email or password are not valid as per specification
-                raise BadRequest(
-                    status_msg="Email or Password are not valid as per specification"
-                )
+                user_dict["profile_photo_loc"] = ""
+        else:
+            user_dict["profile_photo_loc"] = ""
+        return user_dict
 
-
-class Register(Resource):
-    def post(self):
-        """
-        Usage
-        -----
-        For the user register page. It checks user data and raise appropriate error
-        if required. Created user account and it generates user token and returns it.
-
-        Parameters
-        ----------
-        form data sent with request
-        data format {'first_name':'', 'last_name':'', 'email':'',
-                    'password':'', 'retype_password':'', 'role':''}
-        'last_name' is optional
-
-        Returns
-        -------
-        User web token
-
-        """
+    def update_user_profile_data(self, user_id, form):
+        # check url data
+        if self.is_blank(user_id):
+            raise BadRequest(status_msg="User id is missing.")
 
         details = {
             "first_name": "",
@@ -209,182 +159,98 @@ class Register(Resource):
             "email": "",
             "password": "",
             "retype_password": "",
-            "role": "",
+            "profile_photo_loc": "",
         }
 
-        # get form data
+        # checks form data
         try:
-            form = request.get_json()
-        except Exception as e:
-            logger.error(
-                f"Register->post : Error occured while getting form data : {e}"
-            )
-            raise InternalServerError
-        else:
             for key in details:
                 value = form.get(key, "")
+                if self.is_blank(value):
+                    value = ""
                 details[key] = value
-                if auth_utils.is_blank(value) and key != "last_name":
-                    raise BadRequest(status_msg=f"{key} is empty or invalid")
-            details["operation"] = "register"
+            user = Auth.query.filter_by(user_id=user_id).first()
+        except Exception as e:
+            logger.error(f"UserUtils : Error occured while getting form data : {e}")
+            raise InternalServerError
 
-            # verify registration form data
-            if auth_utils.verify_register_form(details):
-                # check if user exists
-                user = Auth.query.filter_by(email=details["email"]).first()
-                if user:
-                    # user exists means email is already in use
-                    raise AlreadyExistError(status_msg="Email is already in use")
+        else:
+            # User doesn't exist
+            if not user:
+                raise NotFoundError(status_msg="User does not exists")
+
+            role = user.role
+
+            # checks if first name is empty
+            if self.is_blank(details["first_name"]):
+                raise BadRequest(status_msg=f"First Name is required")
+            else:
+                user.first_name = details["first_name"]
+
+            user.last_name = details["last_name"]  # last name can be empty
+
+            # checks if email is valid
+            if not (self.is_email_valid(details["email"])):
+                raise BadRequest(status_msg=f"Email is required annd should be valid.")
+            else:
+                user_ = Auth.query.filter_by(email=details["email"]).first()
+                if user_:
+                    # if user id dont match means email already in use
+                    if user_.user_id != user.user_id:
+                        raise AlreadyExistError(status_msg="Email is already in use")
                 else:
-                    # generate unique user_id
-                    user_id = auth_utils.generate_user_id(email=details["email"])
+                    user.email = details["email"]
 
-                    # create new user in Auth table
-                    details["user_id"] = user_id
-                    user = auth_utils.update_auth_table(details=details)
+            # check password
+            if not self.is_blank(details["password"]):
+                # verify password
+                if self.is_password_valid(details["password"]) and (
+                    details["password"] == details["retype_password"]
+                ):
+                    user.password = details["password"]
+                else:
+                    raise BadRequest(status_msg=f"Password is invalid.")
 
-                    # Redirect to login page in frontend
-                    # No need to create web_token as during login it will
-                    # be created
-
-                    logger.info("New account created")
-                    raise Success_200(
-                        status_msg="Account created successfully. Now please login."
+            # update profile photo
+            if details["profile_photo_loc"] != "":
+                if details["profile_photo_loc"].startswith("data:image") and is_base64(
+                    details["profile_photo_loc"].split(",")[1]
+                ):
+                    file_type, file_format, encoded_data = get_encoded_file_details(
+                        details["profile_photo_loc"]
                     )
+                    if (file_type == "image") and (
+                        file_format in ACCEPTED_IMAGE_EXTENSIONS
+                    ):
+                        file_name = f"{user_id}.{file_format}"
+                        file_path = os.path.join(PROFILE_PIC_PATH, file_name)
+                    if convert_base64_to_img(file_path, encoded_data):
+                        # successfully image saved and now add entry to database
+                        user.profile_photo_loc = file_path
 
-            else:
-                # email or password are not valid as per specification
-                raise BadRequest(
-                    status_msg="Email or Password are not valid as per specification OR Password did not match."
+            try:
+                db.session.add(user)
+                db.session.commit()
+            except Exception as e:
+                logger.error(
+                    f"UserUtils->put : Error occured while updating user details : {e}"
                 )
-
-
-class NewUsers(Resource):
-    # Admin access required
-    # get user_id and token from headers
-    # verify token and role of the user
-
-    @token_required
-    @admin_required
-    def get(self):
-        """
-        Usage
-        -----
-        Get all new users which are not verified.
-        Only admin can access this.
-
-        Parameters
-        ----------
-
-        Returns
-        -------
-        New users dict
-
-        """
-
-        # get new users data from auth table
-        try:
-            all_users = (
-                Auth.query.filter(Auth.role.in_(["student", "support"]))
-                .filter_by(is_verified=False)
-                .all()
-            )
-        except Exception as e:
-            logger.error(f"NewUsers->get : Error occured while fetching db data : {e}")
-            raise InternalServerError
-        else:
-            # convert to list of dict
-            data = []
-            for user in all_users:
-                _d = {}
-                _d["user_id"] = user.user_id
-                _d["first_name"] = user.first_name
-                _d["last_name"] = user.last_name
-                _d["email"] = user.email
-                _d["role"] = user.role
-                data.append(_d)
-            return success_200_custom(data=data)
-
-    @token_required
-    @admin_required
-    def put(self, user_id):
-        """
-        Usage
-        -----
-        When admin verifies user, update user.is_verified to True in auth table
-
-        Parameters
-        ----------
-
-        Returns
-        -------
-
-        """
-        # get form data
-        try:
-            form = request.get_json()
-            user_id = form.get("user_id", "")
-        except Exception as e:
-            logger.error(f"NewUsers->put : Error occured while getting form data : {e}")
-            raise InternalServerError
-        else:
-            if auth_utils.is_blank(user_id):
-                raise BadRequest(status_msg=f"User id is empty or invalid")
-
-            details = {"user_id": user_id, "operation": "verify_user"}
-
-            # check if user exists
-            user = Auth.query.filter_by(user_id=user_id).first()
-            if user:
-                # user exists , proceed to update
-                user = auth_utils.update_auth_table(details=details)
-                raise Success_200(status_msg="User verified and updated in database.")
-            else:
-                raise NotFoundError(status_msg="User does not exists.")
-
-    @token_required
-    @admin_required
-    def delete(self, user_id):
-        """
-        Usage
-        -----
-        When admin rejects user, update user.is_verified to False in auth table
-
-        Parameters
-        ----------
-
-        Returns
-        -------
-
-        """
-        # get form data
-        try:
-            form = request.get_json()
-            user_id = form.get("user_id", "")
-        except Exception as e:
-            logger.error(
-                f"NewUsers->delete : Error occured while getting form data : {e}"
-            )
-            raise InternalServerError
-        else:
-            if auth_utils.is_blank(user_id):
-                raise BadRequest(status_msg=f"User id is empty or invalid")
-            details = {"user_id": user_id, "operation": "delete_user"}
-
-            # check if user exists
-            user = Auth.query.filter_by(user_id=user_id).first()
-            if user:
-                # user exists , proceed to update
-                user = auth_utils.update_auth_table(details=details)
-                raise Success_200(
-                    status_msg="Verification failed so user deleted in database."
+                raise InternalServerError(
+                    status_msg="Error occured while updating user details"
                 )
             else:
-                raise NotFoundError(status_msg="User does not exists.")
+                logger.info("User details Updated successfully.")
+                raise Success_200(status_msg="User details Updated successfully.")
 
-
-auth_api.add_resource(Login, "/login")  # path is /api/v1/auth
-auth_api.add_resource(Register, "/register")
-auth_api.add_resource(NewUsers, "/newUsers", "/newUsers/<string:user_id>")
 
 # --------------------  END  --------------------
+
+
+
+
+
+
+
+
+
+
