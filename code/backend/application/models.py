@@ -44,7 +44,7 @@ class Ticket(db.Model):
     description = db.Column(db.String(3000),nullable=False)
     solution = db.Column(db.String(2000))
     thread_link = db.Column(db.String(500))
-    created_at = db.Column(db.DateTime, default=datetime.utcnow,nullable=False)
+    created_at = db.Column(db.DateTime,nullable=False)
     created_by = db.Column(db.Integer, db.ForeignKey('user.id'),nullable=False)
     resolved_by = db.Column(db.Integer, db.ForeignKey('user.id'),nullable=False)
     resolved_at = db.Column(db.DateTime)
@@ -73,14 +73,14 @@ class TicketTags(db.Model):
 #Following is the relationship table between tickets and tags 
 tickets_tags=db.Table('tickets_tags',
     db.Column('ticket_id',db.Integer,db.ForeignKey('ticket.id')),
-    db.Column('tag_id',db.Integer,db.ForeignKey('tag.id'))
+    db.Column('tag_id',db.Integer,db.ForeignKey('ticket_tags.id'))
 )
 
 class TicketComments(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     ticket_id = db.Column(db.Integer, db.ForeignKey('ticket.id'),nullable=False)
     comment = db.Column(db.String(1000))
-    added_at = db.Column(db.DateTime, default=datetime.utcnow,nullable=False)
+    added_at = db.Column(db.DateTime,nullable=False)
     commenter = db.Column(db.Integer, db.ForeignKey('user.id'))
     user_mentions = db.relationship('User',backref='TicketComments',uselist=True)
     reactions = db.Column(db.String(100))
