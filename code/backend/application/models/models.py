@@ -18,6 +18,7 @@ class User(db.Model):
     role_id=db.Column(db.Integer, db.ForeignKey('role.id'))
     role = db.relationship('Role', backref='users')
     card = db.Column(db.String(100), nullable=False)
+    number_DA = db.Column(db.Integer, nullable=False) #number of disciplinary actions taken for user
     authentication = db.relationship('Authentication', backref='user', uselist=False) #to check for tokens
     disciplinary_actions = db.relationship('DisciplinaryAction', backref='user', uselist=True) # relationship with disciplinary actions.
     assigned_tickets = db.relationship('Ticket', secondary=assigned_staff_tickets,
@@ -119,4 +120,4 @@ class DisciplinaryAction(db.Model):
     flagged_by = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
     approved_by = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
     flagged_till = db.Column(db.String(100), nullable=False)
-    number = db.Column(db.Integer, nullable=False)
+    
