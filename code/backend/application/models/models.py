@@ -112,7 +112,7 @@ class TicketData(db.Model):
     reopened_at=db.Column(db.DateTime)
 
 class DisciplinaryAction(db.Model):
-    disciplinary_action_id = db.Column(db.Integer, db.ForeignKey('disciplinary_action.id'))
+    id = db.Column(db.Integer, primary_key=True)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'),nullable=False)
     flagged_by = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
     approved_by = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
