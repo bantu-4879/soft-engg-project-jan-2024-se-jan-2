@@ -12,6 +12,8 @@ from application.globals import API_VERSION
 # from application.views import faq_bp
 # from application.views import ticket_bp
 from flask_cors import CORS
+from application.models import *
+import os
 
 
 # --------------------  Code  --------------------
@@ -30,15 +32,20 @@ def create_app(env_type="dev"):
 
     CORS(app, resources={r"/*": {"origins": "*"}})
 
-    # app.register_blueprint(auth_bp, url_prefix=f"/api/{API_VERSION}/auth")
-    # app.register_blueprint(student_bp, url_prefix=f"/api/{API_VERSION}/student")
-    # app.register_blueprint(support_bp, url_prefix=f"/api/{API_VERSION}/support")
-    # app.register_blueprint(admin_bp, url_prefix=f"/api/{API_VERSION}/admin")
-    # app.register_blueprint(ticket_bp, url_prefix=f"/api/{API_VERSION}/ticket")
-    # app.register_blueprint(faq_bp, url_prefix=f"/api/{API_VERSION}/faq")
+    # app.register_blueprint(auth_bp, url_prefix=f"/api/{API_VERSION}/auth") --> 
+    # app.register_blueprint(student_bp, url_prefix=f"/api/{API_VERSION}/student") --> 
+    # app.register_blueprint(support_bp, url_prefix=f"/api/{API_VERSION}/support") --> 
+    # app.register_blueprint(admin_bp, url_prefix=f"/api/{API_VERSION}/admin") -->
+    # app.register_blueprint(ticket_bp, url_prefix=f"/api/{API_VERSION}/ticket") -->
+    # app.register_blueprint(faq_bp, url_prefix=f"/api/{API_VERSION}/faq") --> 
 
     app.app_context().push()
+
+    print("the app context is there")
+    #if not os.path.exists('../databases/' + DevelopmentConfig.db_path):
     db.create_all()
+    app.app_context().push()
+    print("the database is getting created.")
     db.session.commit()
 
     return app
