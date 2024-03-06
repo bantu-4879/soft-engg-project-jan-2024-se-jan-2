@@ -7,13 +7,15 @@ assigned_staff_tickets = db.Table('assigned_staff_tickets',
     db.Column('user_id', db.Integer, db.ForeignKey('user.id')),
     db.Column('ticket_id', db.Integer, db.ForeignKey('ticket.id'))
 )
-class UserMixin:
+class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(100), nullable=False)
     email = db.Column(db.String(100), nullable=False)
     password = db.Column(db.String(100), nullable=False)
     auth = db.Column(db.String(100), nullable=False)
     is_approved = db.Column(db.Boolean, nullable=False)
+    role_id=db.Column(db.Integer, db.ForeignKey('role.id'))
+    role = db.relationship('Role', backref='users')
     card = db.Column(db.String(100), nullable=False)
     authentication = db.relationship('Authentication', backref='user', uselist=False)
     disciplinary_actions = db.relationship('DisciplinaryAction', backref='user', uselist=True)
@@ -21,26 +23,11 @@ class UserMixin:
                                        backref=db.backref('assigned_staff', lazy='dynamic'))
 
 # RoleMixin for common role attributes
-class RoleMixin:
+class Role(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(64), unique=True, nullable=False)
 
-# UserRoles association table
-user_roles = db.Table('user_roles',
-    db.Column('user_id', db.Integer, db.ForeignKey('user.id'), nullable=False),
-    db.Column('role_id', db.Integer, db.ForeignKey('role.id'), nullable=False)
-)
 
-# User model with UserMixin
-class User(db.Model, UserMixin):
-    __tablename__ = 'user'
-    roles = db.relationship('Role', secondary=user_roles, backref=db.backref('users', lazy='dynamic'))
-
-# Role model with RoleMixin
-class Role(db.Model, RoleMixin):
-    __tablename__ = 'role'
-
-# Other models remain the same as before...
 class Authentication(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
