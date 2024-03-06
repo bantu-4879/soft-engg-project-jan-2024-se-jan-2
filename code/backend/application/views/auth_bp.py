@@ -6,7 +6,7 @@ from flask import Blueprint, request
 from flask_restful import Api, Resource
 from application.logger import logger
 from application.responses import *
-from application.models import Auth
+from application.models import Authentication,User
 from application.globals import TOKEN_VALIDITY, BACKEND_ROOT_PATH
 from application.database import db
 import time
@@ -204,8 +204,6 @@ class Register(Resource):
         """
 
         details = {
-            "first_name": "",
-            "last_name": "",
             "email": "",
             "password": "",
             "retype_password": "",
@@ -231,7 +229,7 @@ class Register(Resource):
             # verify registration form data
             if auth_utils.verify_register_form(details):
                 # check if user exists
-                user = Auth.query.filter_by(email=details["email"]).first()
+                user = Authentication.query.filter_by(email=details["email"]).first()
                 if user:
                     # user exists means email is already in use
                     raise AlreadyExistError(status_msg="Email is already in use")

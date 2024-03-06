@@ -1,0 +1,2 @@
+1. DO we need the discourse id while registration
+2. 
