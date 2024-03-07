@@ -120,4 +120,7 @@ class DisciplinaryAction(db.Model):
     flagged_by = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
     approved_by = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
     flagged_till = db.Column(db.String(100), nullable=False)
+    #flagged_users = db.relationship('User', foreign_keys=[user_id], backref='flagged_users', remote_side=[id])
+    #flagging_staff = db.relationship('MyTable', foreign_keys=[flagged_by], backref='flagging_staff', remote_side=[id])
+    #approving_staff = db.relationship('MyTable', foreign_keys=[approved_by], backref='approving_staff', remote_side=[id])
     
