@@ -5,7 +5,7 @@ from application.config import DevelopmentConfig, TestingConfig
 from application.database import db
 from application.logger import logger
 from application.globals import API_VERSION
-from application.views import auth_bp
+from application.views.auth_bp import auth_bp
 # from application.views import student_bp
 # from application.views import support_bp
 # from application.views import admin_bp
@@ -44,9 +44,20 @@ def create_app(env_type="dev"):
     print("the app context is there")
     #if not os.path.exists('../databases/' + DevelopmentConfig.db_path):
     db.create_all()
-    
     app.app_context().push()
     print("the database is getting created.")
     db.session.commit()
-
+    role1=Role(
+        name="Admin"
+    )
+    role2=Role(
+        name="Staff"
+    )
+    role3=Role(
+        name="Student"
+    )
+    db.session.add(role1)
+    db.session.add(role2)
+    db.session.add(role3)
+    db.session.commit()
     return app

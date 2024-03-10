@@ -380,3 +380,147 @@
 10-Mar-24 21:17:28 - [INFO] -  * Restarting with stat
 10-Mar-24 21:17:28 - [INFO] - Development environment configured.
 10-Mar-24 21:30:15 - [INFO] - Development environment configured.
+10-Mar-24 21:34:26 - [INFO] - Development environment configured.
+10-Mar-24 21:38:36 - [INFO] - Development environment configured.
+10-Mar-24 21:38:36 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+10-Mar-24 21:38:36 - [INFO] - [33mPress CTRL+C to quit[0m
+10-Mar-24 21:38:36 - [INFO] -  * Restarting with stat
+10-Mar-24 21:38:37 - [INFO] - Development environment configured.
+10-Mar-24 21:38:37 - [WARNING] -  * Debugger is active!
+10-Mar-24 21:38:37 - [INFO] -  * Debugger PIN: 128-419-458
+10-Mar-24 21:45:14 - [INFO] - 127.0.0.1 - - [10/Mar/2024 21:45:14] "OPTIONS /api/v1/auth/register HTTP/1.1" 200 -
+10-Mar-24 21:45:14 - [INFO] - 127.0.0.1 - - [10/Mar/2024 21:45:14] "[35m[1mPOST /api/v1/auth/register HTTP/1.1[0m" 500 -
+10-Mar-24 21:45:57 - [INFO] - 127.0.0.1 - - [10/Mar/2024 21:45:57] "OPTIONS /api/v1/auth/register HTTP/1.1" 200 -
+10-Mar-24 21:45:57 - [INFO] - 127.0.0.1 - - [10/Mar/2024 21:45:57] "[35m[1mPOST /api/v1/auth/register HTTP/1.1[0m" 500 -
+10-Mar-24 21:56:11 - [INFO] - Development environment configured.
+10-Mar-24 21:56:11 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+10-Mar-24 21:56:11 - [INFO] - [33mPress CTRL+C to quit[0m
+10-Mar-24 21:56:11 - [INFO] -  * Restarting with stat
+10-Mar-24 21:56:12 - [INFO] - Development environment configured.
+10-Mar-24 21:56:12 - [WARNING] -  * Debugger is active!
+10-Mar-24 21:56:12 - [INFO] -  * Debugger PIN: 128-419-458
+10-Mar-24 21:56:46 - [INFO] - 127.0.0.1 - - [10/Mar/2024 21:56:46] "OPTIONS /api/v1/auth/register HTTP/1.1" 200 -
+10-Mar-24 21:56:46 - [INFO] - 127.0.0.1 - - [10/Mar/2024 21:56:46] "[35m[1mPOST /api/v1/auth/register HTTP/1.1[0m" 500 -
+10-Mar-24 21:57:08 - [INFO] - 127.0.0.1 - - [10/Mar/2024 21:57:08] "OPTIONS /api/v1/auth/register HTTP/1.1" 200 -
+10-Mar-24 21:57:08 - [INFO] - 127.0.0.1 - - [10/Mar/2024 21:57:08] "[35m[1mPOST /api/v1/auth/register HTTP/1.1[0m" 500 -
+10-Mar-24 22:00:14 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\models.py', reloading
+10-Mar-24 22:00:14 - [INFO] -  * Restarting with stat
+10-Mar-24 22:00:15 - [INFO] - Development environment configured.
+10-Mar-24 22:00:16 - [WARNING] -  * Debugger is active!
+10-Mar-24 22:00:16 - [INFO] -  * Debugger PIN: 128-419-458
+10-Mar-24 22:01:36 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\models.py', reloading
+10-Mar-24 22:01:36 - [INFO] -  * Restarting with stat
+10-Mar-24 22:01:37 - [INFO] - Development environment configured.
+10-Mar-24 22:01:37 - [WARNING] -  * Debugger is active!
+10-Mar-24 22:01:37 - [INFO] -  * Debugger PIN: 128-419-458
+10-Mar-24 22:06:28 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\models.py', reloading
+10-Mar-24 22:06:28 - [INFO] -  * Restarting with stat
+10-Mar-24 22:06:29 - [INFO] - Development environment configured.
+10-Mar-24 22:06:29 - [WARNING] -  * Debugger is active!
+10-Mar-24 22:06:29 - [INFO] -  * Debugger PIN: 128-419-458
+10-Mar-24 22:06:51 - [INFO] - Development environment configured.
+10-Mar-24 22:06:52 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+10-Mar-24 22:06:52 - [INFO] - [33mPress CTRL+C to quit[0m
+10-Mar-24 22:06:52 - [INFO] -  * Restarting with stat
+10-Mar-24 22:06:53 - [INFO] - Development environment configured.
+10-Mar-24 22:06:53 - [WARNING] -  * Debugger is active!
+10-Mar-24 22:06:53 - [INFO] -  * Debugger PIN: 128-419-458
+10-Mar-24 22:07:12 - [INFO] - 127.0.0.1 - - [10/Mar/2024 22:07:12] "OPTIONS /api/v1/auth/register HTTP/1.1" 200 -
+10-Mar-24 22:07:12 - [INFO] - 127.0.0.1 - - [10/Mar/2024 22:07:12] "[35m[1mPOST /api/v1/auth/register HTTP/1.1[0m" 500 -
+10-Mar-24 22:09:46 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\models.py', reloading
+10-Mar-24 22:09:46 - [INFO] -  * Restarting with stat
+10-Mar-24 22:09:47 - [INFO] - Development environment configured.
+10-Mar-24 22:09:47 - [WARNING] -  * Debugger is active!
+10-Mar-24 22:09:47 - [INFO] -  * Debugger PIN: 128-419-458
+10-Mar-24 22:10:01 - [INFO] - Development environment configured.
+10-Mar-24 22:10:02 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+10-Mar-24 22:10:02 - [INFO] - [33mPress CTRL+C to quit[0m
+10-Mar-24 22:10:02 - [INFO] -  * Restarting with stat
+10-Mar-24 22:10:03 - [INFO] - Development environment configured.
+10-Mar-24 22:10:03 - [WARNING] -  * Debugger is active!
+10-Mar-24 22:10:03 - [INFO] -  * Debugger PIN: 128-419-458
+10-Mar-24 22:10:10 - [INFO] - 127.0.0.1 - - [10/Mar/2024 22:10:10] "OPTIONS /api/v1/auth/register HTTP/1.1" 200 -
+10-Mar-24 22:10:10 - [INFO] - 127.0.0.1 - - [10/Mar/2024 22:10:10] "[35m[1mPOST /api/v1/auth/register HTTP/1.1[0m" 500 -
+10-Mar-24 22:13:26 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\models.py', reloading
+10-Mar-24 22:13:26 - [INFO] -  * Restarting with stat
+10-Mar-24 22:13:27 - [INFO] - Development environment configured.
+10-Mar-24 22:13:27 - [WARNING] -  * Debugger is active!
+10-Mar-24 22:13:27 - [INFO] -  * Debugger PIN: 128-419-458
+10-Mar-24 22:13:48 - [INFO] - 127.0.0.1 - - [10/Mar/2024 22:13:48] "OPTIONS /api/v1/auth/register HTTP/1.1" 200 -
+10-Mar-24 22:13:48 - [INFO] - 127.0.0.1 - - [10/Mar/2024 22:13:48] "[35m[1mPOST /api/v1/auth/register HTTP/1.1[0m" 500 -
+10-Mar-24 22:14:18 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\models.py', reloading
+10-Mar-24 22:14:18 - [INFO] -  * Restarting with stat
+10-Mar-24 22:14:19 - [INFO] - Development environment configured.
+10-Mar-24 22:14:19 - [WARNING] -  * Debugger is active!
+10-Mar-24 22:14:19 - [INFO] -  * Debugger PIN: 128-419-458
+10-Mar-24 22:14:24 - [INFO] - 127.0.0.1 - - [10/Mar/2024 22:14:24] "OPTIONS /api/v1/auth/register HTTP/1.1" 200 -
+10-Mar-24 22:14:24 - [INFO] - 127.0.0.1 - - [10/Mar/2024 22:14:24] "[35m[1mPOST /api/v1/auth/register HTTP/1.1[0m" 500 -
+10-Mar-24 22:15:23 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\models.py', reloading
+10-Mar-24 22:15:23 - [INFO] -  * Restarting with stat
+10-Mar-24 22:15:25 - [INFO] - Development environment configured.
+10-Mar-24 22:15:25 - [WARNING] -  * Debugger is active!
+10-Mar-24 22:15:25 - [INFO] -  * Debugger PIN: 128-419-458
+10-Mar-24 22:15:44 - [INFO] - 127.0.0.1 - - [10/Mar/2024 22:15:44] "OPTIONS /api/v1/auth/register HTTP/1.1" 200 -
+10-Mar-24 22:15:44 - [INFO] - 400 - Email or Password are not valid as per specification OR Password did not match.
+10-Mar-24 22:15:44 - [INFO] - 127.0.0.1 - - [10/Mar/2024 22:15:44] "[31m[1mPOST /api/v1/auth/register HTTP/1.1[0m" 400 -
+10-Mar-24 22:15:57 - [INFO] - 127.0.0.1 - - [10/Mar/2024 22:15:57] "OPTIONS /api/v1/auth/register HTTP/1.1" 200 -
+10-Mar-24 22:15:57 - [INFO] - 400 - Email or Password are not valid as per specification OR Password did not match.
+10-Mar-24 22:15:57 - [INFO] - 127.0.0.1 - - [10/Mar/2024 22:15:57] "[31m[1mPOST /api/v1/auth/register HTTP/1.1[0m" 400 -
+10-Mar-24 22:16:18 - [INFO] - 127.0.0.1 - - [10/Mar/2024 22:16:18] "OPTIONS /api/v1/auth/register HTTP/1.1" 200 -
+10-Mar-24 22:16:18 - [INFO] - 127.0.0.1 - - [10/Mar/2024 22:16:18] "[35m[1mPOST /api/v1/auth/register HTTP/1.1[0m" 500 -
+10-Mar-24 22:18:18 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\models.py', reloading
+10-Mar-24 22:18:18 - [INFO] -  * Restarting with stat
+10-Mar-24 22:18:19 - [INFO] - Development environment configured.
+10-Mar-24 22:18:19 - [WARNING] -  * Debugger is active!
+10-Mar-24 22:18:19 - [INFO] -  * Debugger PIN: 128-419-458
+10-Mar-24 22:18:29 - [INFO] - 127.0.0.1 - - [10/Mar/2024 22:18:29] "OPTIONS /api/v1/auth/register HTTP/1.1" 200 -
+10-Mar-24 22:18:30 - [INFO] - 127.0.0.1 - - [10/Mar/2024 22:18:30] "[35m[1mPOST /api/v1/auth/register HTTP/1.1[0m" 500 -
+10-Mar-24 22:20:07 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\models.py', reloading
+10-Mar-24 22:20:07 - [INFO] -  * Restarting with stat
+10-Mar-24 22:20:09 - [INFO] - Development environment configured.
+10-Mar-24 22:20:09 - [WARNING] -  * Debugger is active!
+10-Mar-24 22:20:09 - [INFO] -  * Debugger PIN: 128-419-458
+10-Mar-24 22:20:13 - [INFO] - 127.0.0.1 - - [10/Mar/2024 22:20:13] "OPTIONS /api/v1/auth/register HTTP/1.1" 200 -
+10-Mar-24 22:20:13 - [INFO] - 127.0.0.1 - - [10/Mar/2024 22:20:13] "[35m[1mPOST /api/v1/auth/register HTTP/1.1[0m" 500 -
+10-Mar-24 22:24:11 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\__init__.py', reloading
+10-Mar-24 22:24:11 - [INFO] -  * Restarting with stat
+10-Mar-24 22:24:12 - [INFO] - Development environment configured.
+10-Mar-24 22:24:12 - [WARNING] -  * Debugger is active!
+10-Mar-24 22:24:12 - [INFO] -  * Debugger PIN: 128-419-458
+10-Mar-24 22:24:33 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\__init__.py', reloading
+10-Mar-24 22:24:33 - [INFO] -  * Restarting with stat
+10-Mar-24 22:24:34 - [INFO] - Development environment configured.
+10-Mar-24 22:24:34 - [WARNING] -  * Debugger is active!
+10-Mar-24 22:24:34 - [INFO] -  * Debugger PIN: 128-419-458
+10-Mar-24 22:24:58 - [INFO] - Development environment configured.
+10-Mar-24 22:24:58 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+10-Mar-24 22:24:58 - [INFO] - [33mPress CTRL+C to quit[0m
+10-Mar-24 22:24:58 - [INFO] -  * Restarting with stat
+10-Mar-24 22:25:00 - [INFO] - Development environment configured.
+10-Mar-24 22:25:00 - [WARNING] -  * Debugger is active!
+10-Mar-24 22:25:00 - [INFO] -  * Debugger PIN: 128-419-458
+10-Mar-24 22:25:39 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\__init__.py', reloading
+10-Mar-24 22:25:39 - [INFO] -  * Restarting with stat
+10-Mar-24 22:25:40 - [INFO] - Development environment configured.
+10-Mar-24 22:25:40 - [WARNING] -  * Debugger is active!
+10-Mar-24 22:25:40 - [INFO] -  * Debugger PIN: 128-419-458
+10-Mar-24 22:26:43 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\__init__.py', reloading
+10-Mar-24 22:26:43 - [INFO] -  * Restarting with stat
+10-Mar-24 22:26:45 - [INFO] - Development environment configured.
+10-Mar-24 22:26:45 - [WARNING] -  * Debugger is active!
+10-Mar-24 22:26:45 - [INFO] -  * Debugger PIN: 128-419-458
+10-Mar-24 22:27:08 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\__init__.py', reloading
+10-Mar-24 22:27:08 - [INFO] -  * Restarting with stat
+10-Mar-24 22:27:10 - [INFO] - Development environment configured.
+10-Mar-24 22:27:21 - [INFO] - Development environment configured.
+10-Mar-24 22:28:20 - [INFO] - Development environment configured.
+10-Mar-24 22:28:21 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+10-Mar-24 22:28:21 - [INFO] - [33mPress CTRL+C to quit[0m
+10-Mar-24 22:28:21 - [INFO] -  * Restarting with stat
+10-Mar-24 22:28:22 - [INFO] - Development environment configured.

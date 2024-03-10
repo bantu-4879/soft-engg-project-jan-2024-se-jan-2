@@ -23,9 +23,9 @@ class User(db.Model):
     profile_photo_loc = db.Column(db.String, default="", nullable=True)
     number_DA = db.Column(db.Integer, nullable=False) #number of disciplinary actions taken for user
     authentication = db.relationship('Authentication', backref='user', uselist=False) #to check for tokens
-    disciplinary_actions = db.relationship('DisciplinaryAction', backref='user', uselist=True) # relationship with disciplinary actions.
-    assigned_tickets = db.relationship('Ticket', secondary=assigned_staff_tickets,
-                                       backref=db.backref('assigned_staff', lazy='dynamic')) #This is for role = staff for their assigned tickets.
+    #disciplinary_actions = db.relationship('DisciplinaryAction', foreign_keys='DisciplinaryAction.user_id',backref='user_associated', lazy='dynamic') # relationship with disciplinary actions.
+    #flagging_actions = db.relationship('DisciplinaryAction',foreign_keys='DisciplinaryAction.flagged_by', backref='flagged_by_user', lazy='dynamic')
+    #approving_actions = db.relationship('DisciplinaryAction',  foreign_keys='DisciplinaryAction.approved_by',backref='approved_by_user', lazy='dynamic')
 
 
 class Role(db.Model):
@@ -55,10 +55,10 @@ class Ticket(db.Model):
     comments = db.Column(db.String(500))
     ticket_status=db.Column(db.String(100),nullable=False)
     ticket_priority = db.Column(db.Float)
-    tags = db.relationship('Ticket_Tags',secondary='tickets_tags',backref='tickets') #tags related to the ticket - many - many relationship
+    tags = db.relationship('TicketTags',secondary='tickets_tags',backref='tickets') #tags related to the ticket - many - many relationship
     votes = db.relationship('VoteTable', backref='ticket',uselist=True) #The votes and who votes one - many relationship
     assigned_staff = db.relationship('User', secondary=assigned_staff_tickets,
-                                     backref=db.backref('assigned_tickets', lazy='dynamic')) #many to many relationship assigned staff
+                                     backref='assigned_tickets', lazy='dynamic') #many to many relationship assigned staff
     comments=db.relationship('TicketComments', backref='ticket',uselist=True) #the comments made by staff to the ticket one - many relationship
     attachments=db.relationship('TicketAttachment', backref='ticket',uselist=True) #ticket attachments one - many relationship (we can limit to 2)
 
@@ -123,7 +123,7 @@ class DisciplinaryAction(db.Model):
     flagged_by = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
     approved_by = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
     flagged_till = db.Column(db.String(100), nullable=False)
-    flagged_users = db.relationship('User', foreign_keys=[user_id], backref='flagged_users', remote_side=[id])
-    flagging_staff = db.relationship('MyTable', foreign_keys=[flagged_by], backref='flagging_staff', remote_side=[id])
-    approving_staff = db.relationship('MyTable', foreign_keys=[approved_by], backref='approving_staff', remote_side=[id])
+    flagged_users = db.relationship('User', foreign_keys=[user_id],backref='disciplinary_actions')
+    flagging_staff = db.relationship('User', foreign_keys=[flagged_by],backref='flagged_actions')
+    approving_staff = db.relationship('User', foreign_keys=[approved_by], backref='approved_actions')
     
