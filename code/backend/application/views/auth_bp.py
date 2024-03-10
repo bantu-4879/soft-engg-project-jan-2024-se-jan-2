@@ -51,7 +51,7 @@ class AuthUtils(UserUtils):
         if details["operation"] == "register":
             role_id=Role.query.filter_by(name=details["role"]).first().id
             user = User(
-                id=details["id"],
+                id=details["user_id"],
                 email=details["email"],
                 password=details["password"],
                 role_id=role_id,
@@ -209,6 +209,8 @@ class Register(Resource):
             "password": "",
             "retype_password": "",
             "role": "",
+            "first_name":"",
+            "second_name":"",
         }
 
         # get form data
@@ -223,7 +225,7 @@ class Register(Resource):
             for key in details:
                 value = form.get(key, "")
                 details[key] = value
-                if auth_utils.is_blank(value) and key != "last_name":
+                if auth_utils.is_blank(value) and key != "second_name":
                     raise BadRequest(status_msg=f"{key} is empty or invalid")
             details["operation"] = "register"
 

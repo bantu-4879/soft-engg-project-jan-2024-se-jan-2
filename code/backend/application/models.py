@@ -9,19 +9,19 @@ assigned_staff_tickets = db.Table('assigned_staff_tickets',
     db.Column('ticket_id', db.Integer, db.ForeignKey('ticket.id'))
 )
 class User(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
+    id = db.Column(db.String(100), primary_key=True)
     first_name = db.Column(db.String(100), nullable=False)
     second_name = db.Column(db.String(100), nullable=False)
     email = db.Column(db.String(100), nullable=False)
     password = db.Column(db.String(100), nullable=False)
     #auth = db.Column(db.String(100), nullable=False)
-    is_approved = db.Column(db.Boolean, nullable=False)
+    is_approved = db.Column(db.Boolean,default=False, nullable=False)
     is_logged = db.Column(db.Boolean, default=False, nullable=False)
     role_id=db.Column(db.Integer, db.ForeignKey('role.id'))
     role = db.relationship('Role', backref='users')
-    card = db.Column(db.String(100), nullable=False)
+    card = db.Column(db.String(100), nullable=False,default="Green")
     profile_photo_loc = db.Column(db.String, default="", nullable=True)
-    number_DA = db.Column(db.Integer, nullable=False) #number of disciplinary actions taken for user
+    number_DA = db.Column(db.Integer) #number of disciplinary actions taken for user
     authentication = db.relationship('Authentication', backref='user', uselist=False) #to check for tokens
     #disciplinary_actions = db.relationship('DisciplinaryAction', foreign_keys='DisciplinaryAction.user_id',backref='user_associated', lazy='dynamic') # relationship with disciplinary actions.
     #flagging_actions = db.relationship('DisciplinaryAction',foreign_keys='DisciplinaryAction.flagged_by', backref='flagged_by_user', lazy='dynamic')
