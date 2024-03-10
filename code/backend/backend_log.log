@@ -636,3 +636,16 @@
 10-Mar-24 23:01:15 - [INFO] - New account created
 10-Mar-24 23:01:15 - [INFO] - 200 - Account created successfully. Now please login.
 10-Mar-24 23:01:15 - [INFO] - 127.0.0.1 - - [10/Mar/2024 23:01:15] "POST /api/v1/auth/register HTTP/1.1" 200 -
+10-Mar-24 23:02:57 - [INFO] - 127.0.0.1 - - [10/Mar/2024 23:02:57] "OPTIONS /api/v1/auth/login HTTP/1.1" 200 -
+10-Mar-24 23:02:57 - [INFO] - 127.0.0.1 - - [10/Mar/2024 23:02:57] "[35m[1mPOST /api/v1/auth/login HTTP/1.1[0m" 500 -
+10-Mar-24 23:03:59 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\auth_bp.py', reloading
+10-Mar-24 23:04:00 - [INFO] -  * Restarting with stat
+10-Mar-24 23:04:01 - [INFO] - Development environment configured.
+10-Mar-24 23:04:01 - [WARNING] -  * Debugger is active!
+10-Mar-24 23:04:01 - [INFO] -  * Debugger PIN: 128-419-458
+10-Mar-24 23:04:12 - [INFO] - 127.0.0.1 - - [10/Mar/2024 23:04:12] "OPTIONS /api/v1/auth/login HTTP/1.1" 200 -
+10-Mar-24 23:04:12 - [INFO] - 401 - Password is incorrect
+10-Mar-24 23:04:12 - [INFO] - 127.0.0.1 - - [10/Mar/2024 23:04:12] "[31m[1mPOST /api/v1/auth/login HTTP/1.1[0m" 401 -
+10-Mar-24 23:04:19 - [INFO] - 127.0.0.1 - - [10/Mar/2024 23:04:19] "OPTIONS /api/v1/auth/login HTTP/1.1" 200 -
+10-Mar-24 23:04:19 - [INFO] - 401 - User is not verified by Admin.
+10-Mar-24 23:04:19 - [INFO] - 127.0.0.1 - - [10/Mar/2024 23:04:19] "[31m[1mPOST /api/v1/auth/login HTTP/1.1[0m" 401 -

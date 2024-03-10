@@ -126,7 +126,7 @@ class Login(Resource):
 
                     if password == user.password:
                         # password is correct so log in user if user is verified
-                        if user.is_verified or user.role.name == "admin":
+                        if user.is_approved or user.role.name == "admin":
                             #  generate token
                             token_expiry_on = int(int(time.time()) + TOKEN_VALIDITY)
                             web_token = auth_utils.generate_web_token(
