@@ -4,7 +4,7 @@ from functools import wraps
 from flask import request
 from application.responses import *
 from application.logger import logger
-from application.models import Auth
+from application.models import User,Authentication,Role
 from application.globals import *
 import base64
 from application.database import db
@@ -23,15 +23,15 @@ def token_required(f):
             logger.error(f"Error occured while checking request token : {e}")
             raise InternalServerError
         else:
-            user = Auth.query.filter_by(user_id=user_id_rec).first()
+            user = User.query.filter_by(id=user_id_rec).first()
             if user:
                 if user.is_logged:
                     # if token is expired then update auth table and ask user to login again
                     if int(time.time()) > user.token_expiry_on:
                         user.is_logged = False
-                        user.web_token = ""
-                        user.token_created_on = 0
-                        user.token_expiry_on = 0
+                        user.authentication.token = ""
+                        user.authentication.token_created = 0
+                        user.authentication.token_expiry = 0
                         db.session.add(user)
                         db.session.commit()
                         raise Unauthenticated(
@@ -40,7 +40,7 @@ def token_required(f):
 
                     if frontend_token:
                         # check token
-                        backend_token = user.web_token
+                        backend_token = user.authentication.token
                         if frontend_token == backend_token:
                             # token is correct
                             logger.info(
@@ -73,7 +73,8 @@ def admin_required(f):
             logger.error(f"Error occured while checking user id : {e}")
             raise InternalServerError
         else:
-            role = Auth.query.filter_by(user_id=user_id_rec).first().role
+            user = User.query.filter_by(id=user_id_rec).first()
+            role = user.role.name
             if role == "admin":
                 # role verified
                 logger.info(f"Admin role is verified for the user: {user_id_rec}")
@@ -98,20 +99,16 @@ def users_required(users):
                 logger.error(f"Error occured while checking user id : {e}")
                 raise InternalServerError
             else:
-                user = Auth.query.filter_by(user_id=user_id_rec).first()
+                user = User.query.filter_by(id=user_id_rec).first()
                 if user:
-                    role = user.role
-                    if role in users:
-                        # role verified
-                        if user.is_verified or role == "admin":
-                            logger.info(
-                                f"User role : {role} : is verified for the user: {user_id_rec}"
-                            )
-                            return f(*args, **kwargs)
-                        else:
-                            raise Unauthenticated(status_msg="User is not verified.")
+                    role = user.role.name
+                    if user.is_approved or role == "admin":
+                        logger.info(
+                        f"User role : {role} : is verified for the user: {user_id_rec}"
+                        )
+                        return f(*args, **kwargs)
                     else:
-                        raise Unauthenticated(status_msg="Access denied.")
+                        raise Unauthenticated(status_msg="User is not verified.")
                 else:
                     raise NotFoundError(status_msg="User does not exists")
 

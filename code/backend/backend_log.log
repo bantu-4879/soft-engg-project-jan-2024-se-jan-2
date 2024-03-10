@@ -155,3 +155,228 @@
 06-Mar-24 21:18:25 - [INFO] -  * Debugger PIN: 679-372-146
 06-Mar-24 21:18:50 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\__init__.py', reloading
 06-Mar-24 21:18:50 - [INFO] -  * Restarting with stat
+10-Mar-24 20:09:11 - [INFO] - Development environment configured.
+10-Mar-24 20:09:34 - [INFO] - Development environment configured.
+10-Mar-24 20:09:34 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+10-Mar-24 20:09:34 - [INFO] - [33mPress CTRL+C to quit[0m
+10-Mar-24 20:09:34 - [INFO] -  * Restarting with stat
+10-Mar-24 20:09:35 - [INFO] - Development environment configured.
+10-Mar-24 20:09:35 - [WARNING] -  * Debugger is active!
+10-Mar-24 20:09:35 - [INFO] -  * Debugger PIN: 128-419-458
+10-Mar-24 20:13:01 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\__init__.py', reloading
+10-Mar-24 20:13:01 - [INFO] -  * Restarting with stat
+10-Mar-24 20:13:02 - [INFO] - Development environment configured.
+10-Mar-24 20:13:02 - [WARNING] -  * Debugger is active!
+10-Mar-24 20:13:02 - [INFO] -  * Debugger PIN: 128-419-458
+10-Mar-24 20:30:29 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\common_utils.py', reloading
+10-Mar-24 20:30:29 - [INFO] -  * Restarting with stat
+10-Mar-24 20:30:30 - [INFO] - Development environment configured.
+10-Mar-24 20:30:30 - [WARNING] -  * Debugger is active!
+10-Mar-24 20:30:30 - [INFO] -  * Debugger PIN: 128-419-458
+10-Mar-24 20:33:32 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\common_utils.py', reloading
+10-Mar-24 20:33:32 - [INFO] -  * Restarting with stat
+10-Mar-24 20:33:32 - [INFO] - Development environment configured.
+10-Mar-24 20:33:32 - [WARNING] -  * Debugger is active!
+10-Mar-24 20:33:32 - [INFO] -  * Debugger PIN: 128-419-458
+10-Mar-24 20:36:02 - [INFO] - Development environment configured.
+10-Mar-24 20:36:02 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+10-Mar-24 20:36:02 - [INFO] - [33mPress CTRL+C to quit[0m
+10-Mar-24 20:36:02 - [INFO] -  * Restarting with stat
+10-Mar-24 20:36:02 - [INFO] - Development environment configured.
+10-Mar-24 20:36:02 - [WARNING] -  * Debugger is active!
+10-Mar-24 20:36:02 - [INFO] -  * Debugger PIN: 128-419-458
+10-Mar-24 20:37:30 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\common_utils.py', reloading
+10-Mar-24 20:37:30 - [INFO] -  * Restarting with stat
+10-Mar-24 20:37:31 - [INFO] - Development environment configured.
+10-Mar-24 20:37:31 - [WARNING] -  * Debugger is active!
+10-Mar-24 20:37:31 - [INFO] -  * Debugger PIN: 128-419-458
+10-Mar-24 20:39:32 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\common_utils.py', reloading
+10-Mar-24 20:39:32 - [INFO] -  * Restarting with stat
+10-Mar-24 20:39:33 - [INFO] - Development environment configured.
+10-Mar-24 20:39:33 - [WARNING] -  * Debugger is active!
+10-Mar-24 20:39:33 - [INFO] -  * Debugger PIN: 128-419-458
+10-Mar-24 20:40:08 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\common_utils.py', reloading
+10-Mar-24 20:40:08 - [INFO] -  * Restarting with stat
+10-Mar-24 20:40:08 - [INFO] - Development environment configured.
+10-Mar-24 20:40:08 - [WARNING] -  * Debugger is active!
+10-Mar-24 20:40:08 - [INFO] -  * Debugger PIN: 128-419-458
+10-Mar-24 20:40:49 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\common_utils.py', reloading
+10-Mar-24 20:40:49 - [INFO] -  * Restarting with stat
+10-Mar-24 20:40:50 - [INFO] - Development environment configured.
+10-Mar-24 20:40:50 - [WARNING] -  * Debugger is active!
+10-Mar-24 20:40:50 - [INFO] -  * Debugger PIN: 128-419-458
+10-Mar-24 20:41:12 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\common_utils.py', reloading
+10-Mar-24 20:41:12 - [INFO] -  * Restarting with stat
+10-Mar-24 20:41:13 - [INFO] - Development environment configured.
+10-Mar-24 20:41:13 - [WARNING] -  * Debugger is active!
+10-Mar-24 20:41:13 - [INFO] -  * Debugger PIN: 128-419-458
+10-Mar-24 20:44:23 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\common_utils.py', reloading
+10-Mar-24 20:44:23 - [INFO] -  * Restarting with stat
+10-Mar-24 20:44:23 - [INFO] - Development environment configured.
+10-Mar-24 20:44:23 - [WARNING] -  * Debugger is active!
+10-Mar-24 20:44:23 - [INFO] -  * Debugger PIN: 128-419-458
+10-Mar-24 20:44:28 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\common_utils.py', reloading
+10-Mar-24 20:44:28 - [INFO] -  * Restarting with stat
+10-Mar-24 20:44:29 - [INFO] - Development environment configured.
+10-Mar-24 20:44:29 - [WARNING] -  * Debugger is active!
+10-Mar-24 20:44:29 - [INFO] -  * Debugger PIN: 128-419-458
+10-Mar-24 20:45:02 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\common_utils.py', reloading
+10-Mar-24 20:45:02 - [INFO] -  * Restarting with stat
+10-Mar-24 20:45:03 - [INFO] - Development environment configured.
+10-Mar-24 20:45:03 - [WARNING] -  * Debugger is active!
+10-Mar-24 20:45:03 - [INFO] -  * Debugger PIN: 128-419-458
+10-Mar-24 20:46:13 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\auth_bp.py', reloading
+10-Mar-24 20:46:13 - [INFO] -  * Restarting with stat
+10-Mar-24 20:46:14 - [INFO] - Development environment configured.
+10-Mar-24 20:46:14 - [WARNING] -  * Debugger is active!
+10-Mar-24 20:46:14 - [INFO] -  * Debugger PIN: 128-419-458
+10-Mar-24 20:48:19 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\common_utils.py', reloading
+10-Mar-24 20:48:19 - [INFO] -  * Restarting with stat
+10-Mar-24 20:48:20 - [INFO] - Development environment configured.
+10-Mar-24 20:48:20 - [WARNING] -  * Debugger is active!
+10-Mar-24 20:48:20 - [INFO] -  * Debugger PIN: 128-419-458
+10-Mar-24 20:50:59 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\common_utils.py', reloading
+10-Mar-24 20:50:59 - [INFO] -  * Restarting with stat
+10-Mar-24 20:51:00 - [INFO] - Development environment configured.
+10-Mar-24 20:51:00 - [WARNING] -  * Debugger is active!
+10-Mar-24 20:51:00 - [INFO] -  * Debugger PIN: 128-419-458
+10-Mar-24 20:51:10 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\common_utils.py', reloading
+10-Mar-24 20:51:10 - [INFO] -  * Restarting with stat
+10-Mar-24 20:51:11 - [INFO] - Development environment configured.
+10-Mar-24 20:51:11 - [WARNING] -  * Debugger is active!
+10-Mar-24 20:51:11 - [INFO] -  * Debugger PIN: 128-419-458
+10-Mar-24 20:51:17 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\common_utils.py', reloading
+10-Mar-24 20:51:17 - [INFO] -  * Restarting with stat
+10-Mar-24 20:51:18 - [INFO] - Development environment configured.
+10-Mar-24 20:51:18 - [WARNING] -  * Debugger is active!
+10-Mar-24 20:51:18 - [INFO] -  * Debugger PIN: 128-419-458
+10-Mar-24 20:51:28 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\common_utils.py', reloading
+10-Mar-24 20:51:28 - [INFO] -  * Restarting with stat
+10-Mar-24 20:51:29 - [INFO] - Development environment configured.
+10-Mar-24 20:51:29 - [WARNING] -  * Debugger is active!
+10-Mar-24 20:51:29 - [INFO] -  * Debugger PIN: 128-419-458
+10-Mar-24 20:51:51 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\models.py', reloading
+10-Mar-24 20:51:51 - [INFO] -  * Restarting with stat
+10-Mar-24 20:51:52 - [INFO] - Development environment configured.
+10-Mar-24 20:51:52 - [WARNING] -  * Debugger is active!
+10-Mar-24 20:51:52 - [INFO] -  * Debugger PIN: 128-419-458
+10-Mar-24 20:52:34 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\auth_bp.py', reloading
+10-Mar-24 20:52:34 - [INFO] -  * Restarting with stat
+10-Mar-24 20:52:35 - [INFO] - Development environment configured.
+10-Mar-24 20:52:35 - [WARNING] -  * Debugger is active!
+10-Mar-24 20:52:35 - [INFO] -  * Debugger PIN: 128-419-458
+10-Mar-24 20:52:57 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\auth_bp.py', reloading
+10-Mar-24 20:52:57 - [INFO] -  * Restarting with stat
+10-Mar-24 20:52:58 - [INFO] - Development environment configured.
+10-Mar-24 20:52:58 - [WARNING] -  * Debugger is active!
+10-Mar-24 20:52:58 - [INFO] -  * Debugger PIN: 128-419-458
+10-Mar-24 20:53:22 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\auth_bp.py', reloading
+10-Mar-24 20:53:22 - [INFO] -  * Restarting with stat
+10-Mar-24 20:53:23 - [INFO] - Development environment configured.
+10-Mar-24 20:53:23 - [WARNING] -  * Debugger is active!
+10-Mar-24 20:53:23 - [INFO] -  * Debugger PIN: 128-419-458
+10-Mar-24 20:53:58 - [INFO] - Development environment configured.
+10-Mar-24 20:53:58 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+10-Mar-24 20:53:58 - [INFO] - [33mPress CTRL+C to quit[0m
+10-Mar-24 20:53:58 - [INFO] -  * Restarting with stat
+10-Mar-24 20:53:58 - [INFO] - Development environment configured.
+10-Mar-24 20:53:58 - [WARNING] -  * Debugger is active!
+10-Mar-24 20:53:58 - [INFO] -  * Debugger PIN: 128-419-458
+10-Mar-24 20:54:42 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\auth_bp.py', reloading
+10-Mar-24 20:54:43 - [INFO] -  * Restarting with stat
+10-Mar-24 20:54:43 - [INFO] - Development environment configured.
+10-Mar-24 20:54:43 - [WARNING] -  * Debugger is active!
+10-Mar-24 20:54:43 - [INFO] -  * Debugger PIN: 128-419-458
+10-Mar-24 20:58:42 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\auth_bp.py', reloading
+10-Mar-24 20:58:42 - [INFO] -  * Restarting with stat
+10-Mar-24 20:58:43 - [INFO] - Development environment configured.
+10-Mar-24 20:58:43 - [WARNING] -  * Debugger is active!
+10-Mar-24 20:58:43 - [INFO] -  * Debugger PIN: 128-419-458
+10-Mar-24 20:59:03 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\auth_bp.py', reloading
+10-Mar-24 20:59:04 - [INFO] -  * Restarting with stat
+10-Mar-24 20:59:04 - [INFO] - Development environment configured.
+10-Mar-24 20:59:04 - [WARNING] -  * Debugger is active!
+10-Mar-24 20:59:04 - [INFO] -  * Debugger PIN: 128-419-458
+10-Mar-24 21:01:24 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\auth_bp.py', reloading
+10-Mar-24 21:01:24 - [INFO] -  * Restarting with stat
+10-Mar-24 21:01:25 - [INFO] - Development environment configured.
+10-Mar-24 21:01:25 - [WARNING] -  * Debugger is active!
+10-Mar-24 21:01:25 - [INFO] -  * Debugger PIN: 128-419-458
+10-Mar-24 21:05:16 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\models.py', reloading
+10-Mar-24 21:05:17 - [INFO] -  * Restarting with stat
+10-Mar-24 21:05:17 - [INFO] - Development environment configured.
+10-Mar-24 21:05:17 - [WARNING] -  * Debugger is active!
+10-Mar-24 21:05:17 - [INFO] -  * Debugger PIN: 128-419-458
+10-Mar-24 21:06:44 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\auth_bp.py', reloading
+10-Mar-24 21:06:44 - [INFO] -  * Restarting with stat
+10-Mar-24 21:06:45 - [INFO] - Development environment configured.
+10-Mar-24 21:06:45 - [WARNING] -  * Debugger is active!
+10-Mar-24 21:06:45 - [INFO] -  * Debugger PIN: 128-419-458
+10-Mar-24 21:09:12 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\auth_bp.py', reloading
+10-Mar-24 21:09:12 - [INFO] -  * Restarting with stat
+10-Mar-24 21:09:13 - [INFO] - Development environment configured.
+10-Mar-24 21:09:13 - [WARNING] -  * Debugger is active!
+10-Mar-24 21:09:13 - [INFO] -  * Debugger PIN: 128-419-458
+10-Mar-24 21:12:09 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\auth_bp.py', reloading
+10-Mar-24 21:12:09 - [INFO] -  * Restarting with stat
+10-Mar-24 21:12:09 - [INFO] - Development environment configured.
+10-Mar-24 21:12:09 - [WARNING] -  * Debugger is active!
+10-Mar-24 21:12:09 - [INFO] -  * Debugger PIN: 128-419-458
+10-Mar-24 21:13:19 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\auth_bp.py', reloading
+10-Mar-24 21:13:19 - [INFO] -  * Restarting with stat
+10-Mar-24 21:13:20 - [INFO] - Development environment configured.
+10-Mar-24 21:13:20 - [WARNING] -  * Debugger is active!
+10-Mar-24 21:13:20 - [INFO] -  * Debugger PIN: 128-419-458
+10-Mar-24 21:13:41 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\auth_bp.py', reloading
+10-Mar-24 21:13:41 - [INFO] -  * Restarting with stat
+10-Mar-24 21:13:41 - [INFO] - Development environment configured.
+10-Mar-24 21:13:41 - [WARNING] -  * Debugger is active!
+10-Mar-24 21:13:41 - [INFO] -  * Debugger PIN: 128-419-458
+10-Mar-24 21:14:29 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\auth_bp.py', reloading
+10-Mar-24 21:14:29 - [INFO] -  * Restarting with stat
+10-Mar-24 21:14:29 - [INFO] - Development environment configured.
+10-Mar-24 21:14:29 - [WARNING] -  * Debugger is active!
+10-Mar-24 21:14:29 - [INFO] -  * Debugger PIN: 128-419-458
+10-Mar-24 21:14:45 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\auth_bp.py', reloading
+10-Mar-24 21:14:45 - [INFO] -  * Restarting with stat
+10-Mar-24 21:14:45 - [INFO] - Development environment configured.
+10-Mar-24 21:14:46 - [WARNING] -  * Debugger is active!
+10-Mar-24 21:14:46 - [INFO] -  * Debugger PIN: 128-419-458
+10-Mar-24 21:15:15 - [INFO] - Development environment configured.
+10-Mar-24 21:15:15 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+10-Mar-24 21:15:15 - [INFO] - [33mPress CTRL+C to quit[0m
+10-Mar-24 21:15:15 - [INFO] -  * Restarting with stat
+10-Mar-24 21:15:15 - [INFO] - Development environment configured.
+10-Mar-24 21:15:15 - [WARNING] -  * Debugger is active!
+10-Mar-24 21:15:15 - [INFO] -  * Debugger PIN: 128-419-458
+10-Mar-24 21:16:18 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\user_utils.py', reloading
+10-Mar-24 21:16:18 - [INFO] -  * Restarting with stat
+10-Mar-24 21:16:19 - [INFO] - Development environment configured.
+10-Mar-24 21:16:19 - [WARNING] -  * Debugger is active!
+10-Mar-24 21:16:19 - [INFO] -  * Debugger PIN: 128-419-458
+10-Mar-24 21:16:38 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\user_utils.py', reloading
+10-Mar-24 21:16:38 - [INFO] -  * Restarting with stat
+10-Mar-24 21:16:38 - [INFO] - Development environment configured.
+10-Mar-24 21:16:38 - [WARNING] -  * Debugger is active!
+10-Mar-24 21:16:38 - [INFO] -  * Debugger PIN: 128-419-458
+10-Mar-24 21:16:50 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\user_utils.py', reloading
+10-Mar-24 21:16:50 - [INFO] -  * Restarting with stat
+10-Mar-24 21:16:51 - [INFO] - Development environment configured.
+10-Mar-24 21:16:51 - [WARNING] -  * Debugger is active!
+10-Mar-24 21:16:51 - [INFO] -  * Debugger PIN: 128-419-458
+10-Mar-24 21:17:13 - [INFO] - Development environment configured.
+10-Mar-24 21:17:13 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+10-Mar-24 21:17:13 - [INFO] - [33mPress CTRL+C to quit[0m
+10-Mar-24 21:17:13 - [INFO] -  * Restarting with stat
+10-Mar-24 21:17:14 - [INFO] - Development environment configured.
+10-Mar-24 21:17:14 - [WARNING] -  * Debugger is active!
+10-Mar-24 21:17:14 - [INFO] -  * Debugger PIN: 128-419-458
+10-Mar-24 21:17:27 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\__init__.py', reloading
+10-Mar-24 21:17:28 - [INFO] -  * Restarting with stat
+10-Mar-24 21:17:28 - [INFO] - Development environment configured.
+10-Mar-24 21:30:15 - [INFO] - Development environment configured.

@@ -6,7 +6,7 @@ from flask import Blueprint, request
 from flask_restful import Api, Resource
 from application.logger import logger
 from application.responses import *
-from application.models import Authentication,User
+from application.models import User,Role
 from application.globals import TOKEN_VALIDITY, BACKEND_ROOT_PATH
 from application.database import db
 import time
@@ -41,27 +41,29 @@ class AuthUtils(UserUtils):
 
         """
         if details["operation"] == "login":
-            user = Authentication.query.filter_by(email=details["email"]).first()
-            user.token = details["web_token"]
-            #user.is_logged = True
-            user.token_created_on = int(time.time())
-            user.token_expiry_on = details["token_expiry_on"]
+            user = User.query.filter_by(email=details["email"]).first()
+            user.authentication.token = details["web_token"]
+            user.is_logged = True
+            user.authentication.token_created = int(time.time())
+            user.authentication.token_expiry = details["token_expiry_on"]
             db.session.commit()
 
         if details["operation"] == "register":
+            role_id=Role.query.filter_by(name=details["role"]).first().id
             user = User(
-                user_id=details["id"],
+                id=details["id"],
                 email=details["email"],
                 password=details["password"],
-                role=details["role"],
-                name=details["name"],
+                role_id=role_id,
+                first_name=details["first_name"],
+                second_name=details["second_name"]
             )
             db.session.add(user)
             db.session.commit()
 
         if details["operation"] == "verify_user":
-            user = User.query.filter_by(user_id=details["id"]).first()
-            user.is_verified = True
+            user = User.query.filter_by(id=details["id"]).first()
+            user.is_approved = True
             db.session.commit()
 
         if details["operation"] == "delete_user":
@@ -117,14 +119,14 @@ class Login(Resource):
             ):
                 # check if user exists
 
-                user = Auth.query.filter_by(email=email).first()
+                user = User.query.filter_by(email=email).first()
                 if user:
                     # user exists
-                    user_id = user.user_id
+                    user_id = user.id
 
                     if password == user.password:
                         # password is correct so log in user if user is verified
-                        if user.is_verified or user.role == "admin":
+                        if user.is_verified or user.role.name == "admin":
                             #  generate token
                             token_expiry_on = int(int(time.time()) + TOKEN_VALIDITY)
                             web_token = auth_utils.generate_web_token(
@@ -228,7 +230,7 @@ class Register(Resource):
             # verify registration form data
             if auth_utils.verify_register_form(details):
                 # check if user exists
-                user = Authentication.query.filter_by(email=details["email"]).first()
+                user = User.query.filter_by(email=details["email"]).first()
                 if user:
                     # user exists means email is already in use
                     raise AlreadyExistError(status_msg="Email is already in use")
@@ -282,7 +284,7 @@ class NewUsers(Resource):
         # get new users data from auth table
         try:
             all_users = (
-                Auth.query.filter(Auth.role.in_(["student", "support"]))
+                User.query.filter(User.role.name.in_(["student", "support"]))
                 .filter_by(is_verified=False)
                 .all()
             )
@@ -294,11 +296,11 @@ class NewUsers(Resource):
             data = []
             for user in all_users:
                 _d = {}
-                _d["user_id"] = user.user_id
+                _d["user_id"] = user.id
                 _d["first_name"] = user.first_name
                 _d["last_name"] = user.last_name
                 _d["email"] = user.email
-                _d["role"] = user.role
+                _d["role"] = user.role.name
                 data.append(_d)
             return success_200_custom(data=data)
 
@@ -331,7 +333,7 @@ class NewUsers(Resource):
             details = {"user_id": user_id, "operation": "verify_user"}
 
             # check if user exists
-            user = Auth.query.filter_by(user_id=user_id).first()
+            user = User.query.filter_by(id=user_id).first()
             if user:
                 # user exists , proceed to update
                 user = auth_utils.update_auth_table(details=details)
@@ -369,7 +371,7 @@ class NewUsers(Resource):
             details = {"user_id": user_id, "operation": "delete_user"}
 
             # check if user exists
-            user = Auth.query.filter_by(user_id=user_id).first()
+            user = User.query.filter_by(id=user_id).first()
             if user:
                 # user exists , proceed to update
                 user = auth_utils.update_auth_table(details=details)

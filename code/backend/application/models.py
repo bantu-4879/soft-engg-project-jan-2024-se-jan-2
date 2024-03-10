@@ -10,14 +10,17 @@ assigned_staff_tickets = db.Table('assigned_staff_tickets',
 )
 class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String(100), nullable=False)
+    first_name = db.Column(db.String(100), nullable=False)
+    second_name = db.Column(db.String(100), nullable=False)
     email = db.Column(db.String(100), nullable=False)
     password = db.Column(db.String(100), nullable=False)
-    auth = db.Column(db.String(100), nullable=False)
+    #auth = db.Column(db.String(100), nullable=False)
     is_approved = db.Column(db.Boolean, nullable=False)
+    is_logged = db.Column(db.Boolean, default=False, nullable=False)
     role_id=db.Column(db.Integer, db.ForeignKey('role.id'))
     role = db.relationship('Role', backref='users')
     card = db.Column(db.String(100), nullable=False)
+    profile_photo_loc = db.Column(db.String, default="", nullable=True)
     number_DA = db.Column(db.Integer, nullable=False) #number of disciplinary actions taken for user
     authentication = db.relationship('Authentication', backref='user', uselist=False) #to check for tokens
     disciplinary_actions = db.relationship('DisciplinaryAction', backref='user', uselist=True) # relationship with disciplinary actions.
@@ -120,7 +123,7 @@ class DisciplinaryAction(db.Model):
     flagged_by = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
     approved_by = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
     flagged_till = db.Column(db.String(100), nullable=False)
-    #flagged_users = db.relationship('User', foreign_keys=[user_id], backref='flagged_users', remote_side=[id])
-    #flagging_staff = db.relationship('MyTable', foreign_keys=[flagged_by], backref='flagging_staff', remote_side=[id])
-    #approving_staff = db.relationship('MyTable', foreign_keys=[approved_by], backref='approving_staff', remote_side=[id])
+    flagged_users = db.relationship('User', foreign_keys=[user_id], backref='flagged_users', remote_side=[id])
+    flagging_staff = db.relationship('MyTable', foreign_keys=[flagged_by], backref='flagging_staff', remote_side=[id])
+    approving_staff = db.relationship('MyTable', foreign_keys=[approved_by], backref='approving_staff', remote_side=[id])
     

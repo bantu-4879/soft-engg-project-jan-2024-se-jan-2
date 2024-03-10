@@ -166,7 +166,7 @@ class UserUtils:
                 if self.is_blank(value):
                     value = ""
                 details[key] = value
-            user = Auth.query.filter_by(user_id=user_id).first()
+            user = User.query.filter_by(id=user_id).first()
         except Exception as e:
             logger.error(f"UserUtils : Error occured while getting form data : {e}")
             raise InternalServerError
@@ -190,7 +190,7 @@ class UserUtils:
             if not (self.is_email_valid(details["email"])):
                 raise BadRequest(status_msg=f"Email is required annd should be valid.")
             else:
-                user_ = Auth.query.filter_by(email=details["email"]).first()
+                user_ = User.query.filter_by(email=details["email"]).first()
                 if user_:
                     # if user id dont match means email already in use
                     if user_.user_id != user.user_id:
