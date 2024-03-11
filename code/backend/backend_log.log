@@ -1220,3 +1220,16 @@
 11-Mar-24 22:12:21 - [INFO] - User logged in.
 11-Mar-24 22:12:21 - [INFO] - 200 - Custom success 200 response sent
 11-Mar-24 22:12:21 - [INFO] - 127.0.0.1 - - [11/Mar/2024 22:12:21] "POST /api/v1/auth/login HTTP/1.1" 200 -
+11-Mar-24 22:16:51 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\models.py', reloading
+11-Mar-24 22:16:51 - [INFO] -  * Restarting with stat
+11-Mar-24 22:16:52 - [INFO] - Development environment configured.
+11-Mar-24 22:16:52 - [WARNING] -  * Debugger is active!
+11-Mar-24 22:16:52 - [INFO] -  * Debugger PIN: 145-495-166
+11-Mar-24 22:17:09 - [INFO] - Development environment configured.
+11-Mar-24 22:17:09 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+11-Mar-24 22:17:09 - [INFO] - [33mPress CTRL+C to quit[0m
+11-Mar-24 22:17:09 - [INFO] -  * Restarting with stat
+11-Mar-24 22:17:10 - [INFO] - Development environment configured.
+11-Mar-24 22:17:10 - [WARNING] -  * Debugger is active!
+11-Mar-24 22:17:10 - [INFO] -  * Debugger PIN: 145-495-166

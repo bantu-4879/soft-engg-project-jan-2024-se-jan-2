@@ -49,7 +49,6 @@ class Ticket(db.Model):
     thread_link = db.Column(db.String(500))
     created_at = db.Column(db.DateTime,nullable=False)
     resolved_by = db.Column(db.String(100), db.ForeignKey('user.id'),default=0,nullable=False)
-    resolved_at = db.Column(db.DateTime)
     solution_satisfaction = db.Column(db.Boolean,nullable=False)
     comments = db.Column(db.String(500))
     ticket_status=db.Column(db.String(100),nullable=False)
@@ -117,7 +116,10 @@ class TicketData(db.Model):
     opened_at=db.Column(db.DateTime)
     assigned_at=db.Column(db.DateTime)
     inProgress_at=db.Column(db.DateTime)
+    resolved_at = db.Column(db.DateTime)
+    closed_at= db.Column(db.DateTime)
     reopened_at=db.Column(db.DateTime)
+
 
 class DisciplinaryAction(db.Model):
     id = db.Column(db.Integer, primary_key=True)
