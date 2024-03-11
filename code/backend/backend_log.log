@@ -755,3 +755,126 @@
 11-Mar-24 14:41:59 - [INFO] - Development environment configured.
 11-Mar-24 14:41:59 - [WARNING] -  * Debugger is active!
 11-Mar-24 14:41:59 - [INFO] -  * Debugger PIN: 128-419-458
+11-Mar-24 14:47:23 - [INFO] - 127.0.0.1 - - [11/Mar/2024 14:47:23] "OPTIONS /api/v1/auth/register HTTP/1.1" 200 -
+11-Mar-24 14:47:23 - [INFO] - New account created
+11-Mar-24 14:47:23 - [INFO] - 200 - Account created successfully. Now please login.
+11-Mar-24 14:47:23 - [INFO] - 127.0.0.1 - - [11/Mar/2024 14:47:23] "POST /api/v1/auth/register HTTP/1.1" 200 -
+11-Mar-24 14:47:36 - [INFO] - 127.0.0.1 - - [11/Mar/2024 14:47:36] "OPTIONS /api/v1/auth/login HTTP/1.1" 200 -
+11-Mar-24 14:47:36 - [INFO] - 401 - User is not verified by Admin.
+11-Mar-24 14:47:36 - [INFO] - 127.0.0.1 - - [11/Mar/2024 14:47:36] "[31m[1mPOST /api/v1/auth/login HTTP/1.1[0m" 401 -
+11-Mar-24 14:48:50 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\auth_bp.py', reloading
+11-Mar-24 14:48:50 - [INFO] -  * Restarting with stat
+11-Mar-24 14:48:50 - [INFO] - Development environment configured.
+11-Mar-24 14:48:50 - [WARNING] -  * Debugger is active!
+11-Mar-24 14:48:50 - [INFO] -  * Debugger PIN: 128-419-458
+11-Mar-24 14:48:52 - [INFO] - 127.0.0.1 - - [11/Mar/2024 14:48:52] "OPTIONS /api/v1/auth/login HTTP/1.1" 200 -
+11-Mar-24 14:48:52 - [INFO] - 401 - Password is incorrect
+11-Mar-24 14:48:52 - [INFO] - 127.0.0.1 - - [11/Mar/2024 14:48:52] "[31m[1mPOST /api/v1/auth/login HTTP/1.1[0m" 401 -
+11-Mar-24 14:48:59 - [INFO] - 127.0.0.1 - - [11/Mar/2024 14:48:59] "OPTIONS /api/v1/auth/login HTTP/1.1" 200 -
+11-Mar-24 14:48:59 - [INFO] - 401 - Password is incorrect
+11-Mar-24 14:48:59 - [INFO] - 127.0.0.1 - - [11/Mar/2024 14:48:59] "[31m[1mPOST /api/v1/auth/login HTTP/1.1[0m" 401 -
+11-Mar-24 14:49:05 - [INFO] - 127.0.0.1 - - [11/Mar/2024 14:49:05] "OPTIONS /api/v1/auth/login HTTP/1.1" 200 -
+11-Mar-24 14:49:05 - [INFO] - 127.0.0.1 - - [11/Mar/2024 14:49:05] "[35m[1mPOST /api/v1/auth/login HTTP/1.1[0m" 500 -
+11-Mar-24 14:55:46 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\models.py', reloading
+11-Mar-24 14:55:46 - [INFO] -  * Restarting with stat
+11-Mar-24 14:55:47 - [INFO] - Development environment configured.
+11-Mar-24 14:55:47 - [WARNING] -  * Debugger is active!
+11-Mar-24 14:55:47 - [INFO] -  * Debugger PIN: 128-419-458
+11-Mar-24 14:57:13 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\models.py', reloading
+11-Mar-24 14:57:13 - [INFO] -  * Restarting with stat
+11-Mar-24 14:57:14 - [INFO] - Development environment configured.
+11-Mar-24 14:57:14 - [WARNING] -  * Debugger is active!
+11-Mar-24 14:57:14 - [INFO] -  * Debugger PIN: 128-419-458
+11-Mar-24 14:58:58 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\auth_bp.py', reloading
+11-Mar-24 14:58:58 - [INFO] -  * Restarting with stat
+11-Mar-24 15:02:32 - [INFO] - Development environment configured.
+11-Mar-24 15:02:32 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+11-Mar-24 15:02:32 - [INFO] - [33mPress CTRL+C to quit[0m
+11-Mar-24 15:02:32 - [INFO] -  * Restarting with stat
+11-Mar-24 15:02:33 - [INFO] - Development environment configured.
+11-Mar-24 15:02:33 - [WARNING] -  * Debugger is active!
+11-Mar-24 15:02:33 - [INFO] -  * Debugger PIN: 128-419-458
+11-Mar-24 15:03:04 - [INFO] - 127.0.0.1 - - [11/Mar/2024 15:03:04] "OPTIONS /api/v1/auth/register HTTP/1.1" 200 -
+11-Mar-24 15:03:04 - [INFO] - New account created
+11-Mar-24 15:03:04 - [INFO] - 200 - Account created successfully. Now please login.
+11-Mar-24 15:03:04 - [INFO] - 127.0.0.1 - - [11/Mar/2024 15:03:04] "POST /api/v1/auth/register HTTP/1.1" 200 -
+11-Mar-24 15:03:11 - [INFO] - 127.0.0.1 - - [11/Mar/2024 15:03:11] "OPTIONS /api/v1/auth/login HTTP/1.1" 200 -
+11-Mar-24 15:03:11 - [INFO] - File path is not valid: D:\GitHub\soft-engg-project-jan-2024-se-jan-2\code\backend\databases\images\profile_pics\dummy_profile.png
+11-Mar-24 15:03:11 - [INFO] - User logged in.
+11-Mar-24 15:03:11 - [INFO] - 200 - Custom success 200 response sent
+11-Mar-24 15:03:11 - [INFO] - 127.0.0.1 - - [11/Mar/2024 15:03:11] "[35m[1mPOST /api/v1/auth/login HTTP/1.1[0m" 500 -
+11-Mar-24 15:04:40 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\auth_bp.py', reloading
+11-Mar-24 15:04:41 - [INFO] -  * Restarting with stat
+11-Mar-24 15:04:41 - [INFO] - Development environment configured.
+11-Mar-24 15:04:41 - [WARNING] -  * Debugger is active!
+11-Mar-24 15:04:41 - [INFO] -  * Debugger PIN: 128-419-458
+11-Mar-24 15:07:15 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\auth_bp.py', reloading
+11-Mar-24 15:07:15 - [INFO] -  * Restarting with stat
+11-Mar-24 15:07:15 - [INFO] - Development environment configured.
+11-Mar-24 15:07:15 - [WARNING] -  * Debugger is active!
+11-Mar-24 15:07:15 - [INFO] -  * Debugger PIN: 128-419-458
+11-Mar-24 15:07:25 - [INFO] - 127.0.0.1 - - [11/Mar/2024 15:07:25] "OPTIONS /api/v1/auth/login HTTP/1.1" 200 -
+11-Mar-24 15:07:26 - [INFO] - File path is not valid: D:\GitHub\soft-engg-project-jan-2024-se-jan-2\code\backend\databases\images\profile_pics\dummy_profile.png
+11-Mar-24 15:07:26 - [INFO] - User logged in.
+11-Mar-24 15:07:26 - [INFO] - 200 - Custom success 200 response sent
+11-Mar-24 15:07:26 - [INFO] - 127.0.0.1 - - [11/Mar/2024 15:07:26] "[35m[1mPOST /api/v1/auth/login HTTP/1.1[0m" 500 -
+11-Mar-24 15:10:45 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\auth_bp.py', reloading
+11-Mar-24 15:10:45 - [INFO] -  * Restarting with stat
+11-Mar-24 15:10:45 - [INFO] - Development environment configured.
+11-Mar-24 15:10:45 - [WARNING] -  * Debugger is active!
+11-Mar-24 15:10:45 - [INFO] -  * Debugger PIN: 128-419-458
+11-Mar-24 15:10:53 - [INFO] - 127.0.0.1 - - [11/Mar/2024 15:10:53] "OPTIONS /api/v1/auth/login HTTP/1.1" 200 -
+11-Mar-24 15:10:53 - [INFO] - 401 - Password is incorrect
+11-Mar-24 15:10:53 - [INFO] - 127.0.0.1 - - [11/Mar/2024 15:10:53] "[31m[1mPOST /api/v1/auth/login HTTP/1.1[0m" 401 -
+11-Mar-24 15:11:01 - [INFO] - 127.0.0.1 - - [11/Mar/2024 15:11:01] "OPTIONS /api/v1/auth/login HTTP/1.1" 200 -
+11-Mar-24 15:11:01 - [INFO] - File path is not valid: D:\GitHub\soft-engg-project-jan-2024-se-jan-2\code\backend\databases\images\profile_pics\dummy_profile.png
+11-Mar-24 15:11:01 - [INFO] - User logged in.
+11-Mar-24 15:11:01 - [INFO] - 200 - Custom success 200 response sent
+11-Mar-24 15:11:01 - [INFO] - 127.0.0.1 - - [11/Mar/2024 15:11:01] "POST /api/v1/auth/login HTTP/1.1" 200 -
+11-Mar-24 15:20:38 - [INFO] - 401 - Password is incorrect
+11-Mar-24 15:20:38 - [INFO] - 127.0.0.1 - - [11/Mar/2024 15:20:38] "[31m[1mPOST /api/v1/auth/login HTTP/1.1[0m" 401 -
+11-Mar-24 15:20:51 - [INFO] - 401 - Password is incorrect
+11-Mar-24 15:20:51 - [INFO] - 127.0.0.1 - - [11/Mar/2024 15:20:51] "[31m[1mPOST /api/v1/auth/login HTTP/1.1[0m" 401 -
+11-Mar-24 15:21:53 - [INFO] - 127.0.0.1 - - [11/Mar/2024 15:21:53] "OPTIONS /api/v1/auth/login HTTP/1.1" 200 -
+11-Mar-24 15:21:53 - [INFO] - File path is not valid: D:\GitHub\soft-engg-project-jan-2024-se-jan-2\code\backend\databases\images\profile_pics\dummy_profile.png
+11-Mar-24 15:21:53 - [INFO] - User logged in.
+11-Mar-24 15:21:53 - [INFO] - 200 - Custom success 200 response sent
+11-Mar-24 15:21:53 - [INFO] - 127.0.0.1 - - [11/Mar/2024 15:21:53] "POST /api/v1/auth/login HTTP/1.1" 200 -
+11-Mar-24 15:22:14 - [INFO] - 401 - Password is incorrect
+11-Mar-24 15:22:14 - [INFO] - 127.0.0.1 - - [11/Mar/2024 15:22:14] "[31m[1mPOST /api/v1/auth/login HTTP/1.1[0m" 401 -
+11-Mar-24 15:22:15 - [INFO] - 401 - Password is incorrect
+11-Mar-24 15:22:15 - [INFO] - 127.0.0.1 - - [11/Mar/2024 15:22:15] "[31m[1mPOST /api/v1/auth/login HTTP/1.1[0m" 401 -
+11-Mar-24 15:22:16 - [INFO] - 401 - Password is incorrect
+11-Mar-24 15:22:16 - [INFO] - 127.0.0.1 - - [11/Mar/2024 15:22:16] "[31m[1mPOST /api/v1/auth/login HTTP/1.1[0m" 401 -
+11-Mar-24 15:22:41 - [INFO] - 401 - Password is incorrect
+11-Mar-24 15:22:41 - [INFO] - 127.0.0.1 - - [11/Mar/2024 15:22:41] "[31m[1mPOST /api/v1/auth/login HTTP/1.1[0m" 401 -
+11-Mar-24 15:23:17 - [INFO] - 400 - Email or Password is empty
+11-Mar-24 15:23:17 - [INFO] - 127.0.0.1 - - [11/Mar/2024 15:23:17] "[31m[1mPOST /api/v1/auth/login HTTP/1.1[0m" 400 -
+11-Mar-24 15:25:04 - [INFO] - 401 - Password is incorrect
+11-Mar-24 15:25:04 - [INFO] - 127.0.0.1 - - [11/Mar/2024 15:25:04] "[31m[1mPOST /api/v1/auth/login HTTP/1.1[0m" 401 -
+11-Mar-24 15:28:48 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\auth_bp.py', reloading
+11-Mar-24 15:28:48 - [INFO] -  * Restarting with stat
+11-Mar-24 15:28:49 - [INFO] - Development environment configured.
+11-Mar-24 15:28:49 - [WARNING] -  * Debugger is active!
+11-Mar-24 15:28:49 - [INFO] -  * Debugger PIN: 128-419-458
+11-Mar-24 15:28:52 - [INFO] - 401 - Password is incorrect
+11-Mar-24 15:28:52 - [INFO] - 127.0.0.1 - - [11/Mar/2024 15:28:52] "[31m[1mPOST /api/v1/auth/login HTTP/1.1[0m" 401 -
+11-Mar-24 15:29:57 - [INFO] - Development environment configured.
+11-Mar-24 15:29:57 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+11-Mar-24 15:29:57 - [INFO] - [33mPress CTRL+C to quit[0m
+11-Mar-24 15:29:57 - [INFO] -  * Restarting with stat
+11-Mar-24 15:29:57 - [INFO] - Development environment configured.
+11-Mar-24 15:29:57 - [WARNING] -  * Debugger is active!
+11-Mar-24 15:29:57 - [INFO] -  * Debugger PIN: 128-419-458
+11-Mar-24 15:30:57 - [INFO] - File path is not valid: D:\GitHub\soft-engg-project-jan-2024-se-jan-2\code\backend\databases\images\profile_pics\dummy_profile.png
+11-Mar-24 15:30:57 - [INFO] - User logged in.
+11-Mar-24 15:30:57 - [INFO] - 200 - Custom success 200 response sent
+11-Mar-24 15:30:57 - [INFO] - 127.0.0.1 - - [11/Mar/2024 15:30:57] "POST /api/v1/auth/login HTTP/1.1" 200 -
+11-Mar-24 15:36:33 - [INFO] - 127.0.0.1 - - [11/Mar/2024 15:36:33] "OPTIONS /api/v1/auth/register HTTP/1.1" 200 -
+11-Mar-24 15:36:33 - [INFO] - New account created
+11-Mar-24 15:36:33 - [INFO] - 200 - Account created successfully. Now please login.
+11-Mar-24 15:36:33 - [INFO] - 127.0.0.1 - - [11/Mar/2024 15:36:33] "POST /api/v1/auth/register HTTP/1.1" 200 -
+11-Mar-24 15:37:32 - [INFO] - 401 - Password is incorrect
+11-Mar-24 15:37:32 - [INFO] - 127.0.0.1 - - [11/Mar/2024 15:37:32] "[31m[1mPOST /api/v1/auth/login HTTP/1.1[0m" 401 -

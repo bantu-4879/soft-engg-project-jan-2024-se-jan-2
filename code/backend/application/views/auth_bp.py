@@ -6,7 +6,7 @@ from flask import Blueprint, request
 from flask_restful import Api, Resource
 from application.logger import logger
 from application.responses import *
-from application.models import User,Role
+from application.models import User,Role,Authentication
 from application.globals import TOKEN_VALIDITY, BACKEND_ROOT_PATH
 from application.database import db
 import time
@@ -45,7 +45,7 @@ class AuthUtils(UserUtils):
             user.authentication.token = details["web_token"]
             user.is_logged = True
             user.authentication.token_created = int(time.time())
-            user.authentication.token_expiry = details["token_expiry_on"]
+            user.authentication.token_expired = details["token_expiry_on"]
             db.session.commit()
 
         if details["operation"] == "register":
@@ -58,7 +58,11 @@ class AuthUtils(UserUtils):
                 first_name=details["first_name"],
                 second_name=details["second_name"]
             )
+            auth=Authentication(
+                user_id=details["user_id"]
+            )
             db.session.add(user)
+            db.session.add(auth)
             db.session.commit()
 
         if details["operation"] == "verify_user":
@@ -123,10 +127,11 @@ class Login(Resource):
                 if user:
                     # user exists
                     user_id = user.id
-
+                    print(password,user.password)
                     if password == user.password:
+                        print(user.role.name)
                         # password is correct so log in user if user is verified
-                        if user.is_approved or user.role.name == "admin":
+                        if user.is_approved or user.role.name == "Admin":
                             #  generate token
                             token_expiry_on = int(int(time.time()) + TOKEN_VALIDITY)
                             web_token = auth_utils.generate_web_token(
@@ -158,9 +163,9 @@ class Login(Resource):
                                     "user_id": user_id,
                                     "web_token": web_token,
                                     "token_expiry_on": token_expiry_on,
-                                    "role": user.role,
+                                    "role": user.role.name,
                                     "first_name": user.first_name,
-                                    "last_name": user.last_name,
+                                    "last_name": user.second_name,
                                     "email": user.email,
                                     "profile_photo_loc": img_base64,
                                 }

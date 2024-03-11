@@ -36,9 +36,9 @@ class Role(db.Model):
 class Authentication(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     user_id = db.Column(db.String(100), db.ForeignKey('user.id'), nullable=False)
-    token = db.Column(db.String(100), nullable=False)
-    token_created = db.Column(db.String(100), nullable=False)
-    token_expired = db.Column(db.String(100), nullable=False)
+    token = db.Column(db.String(100), nullable=True)
+    token_created = db.Column(db.Integer,default=0, nullable=True)
+    token_expired = db.Column(db.Integer, nullable=True,default=0)
 
 class Ticket(db.Model):
     id = db.Column(db.String(100), primary_key=True)

@@ -5,11 +5,11 @@
 Current API Blueprints 
 
 BACKEND
-- admin_bp.py - @muskansindhu
-- auth_bp.py - @muskansindhu
+- admin_bp.py - @muskansindhu - DONE (in this branch might be different from Muskan)
+- auth_bp.py - @muskansindhu - DONE (in this branch might be different from Muskan)
 - faq_bp.py - @bantu-4879
-- student_bp.py - @akritii-3107
-- support_bp.py - @akritii-3107
+- student_bp.py - @akritii-3107  - DONE 
+- support_bp.py - @akritii-3107  - DONE 
 - ticket_bp.py - @sahithid
 
 FRONTEND
