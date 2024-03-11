@@ -16,3 +16,44 @@ FRONTEND
 - Frontend - @Ishika-0105, Steve
 - user_utils.py (planning to implement in the frontend)
     - this consists of validation functions for emails and passwords
+
+
+
+
+TICKET BP 
+
+APIs
+
+- Ticket UTils -- init --
+a - convert ticket to dict 
+b- get ticket attachments 
+c- generate ticket id
+d- save ticket attachments 
+e- tickets filter by query 
+f- tickets filters by tags 
+g - ticket filter by status 
+h - ticket filter by priority 
+i- tickets sort 
+j- tickets + filter sort 
+k- get arguments from queries 
+// who resolved the tickets 
+// who assigned the tickets 
+// get thread link of ticket - and corresponding tickets 
+// who all votes to a ticket -
+// get ticket comments 
+// get ticket data dictionary 
+
+
+
+Ticket APIs 
+
+
+- get specific ticket 
+- post a new ticket 
+- update a ticket 
+- vote a ticket 
+- solving a ticket 
+- assigning a ticket 
+- get tickets by name
+
+
