@@ -9,7 +9,7 @@ from application.common_utils import (
 )
 from application.views.user_utils import UserUtils
 from application.responses import *
-from application.models import User, Ticket
+from application.models import User, Ticket,VoteTable
 from application.globals import *
 
 # --------------------  Code  --------------------
@@ -27,7 +27,7 @@ student_util = StudentUtils()
 
 class StudentAPI(Resource):
     @token_required
-    @users_required(users=["student"])
+    @users_required(users=["Student"])
     def get(self, user_id):
         """
         Usage
@@ -64,8 +64,8 @@ class StudentAPI(Resource):
                         created_by=user_id, status="resolved"
                     ).count()
                     n_tickets_pending = n_tickets_created - n_tickets_resolved
-                    n_tickets_upvoted = TicketVote.query.filter_by(
-                        user_id=user_id
+                    n_tickets_upvoted = VoteTable.query.filter_by(
+                        voter_id=user_id
                     ).count()
                     student_dict = student_util.convert_user_data_to_dict(user)
                     student_dict["n_tickets_created"] = n_tickets_created
@@ -80,7 +80,7 @@ class StudentAPI(Resource):
                 raise NotFoundError(status_msg="Student user id does not exists")
 
     @token_required
-    @users_required(users=["student"])
+    @users_required(users=["Student"])
     def put(self, user_id):
         """
         Usage

@@ -35,21 +35,20 @@ class Role(db.Model):
 
 class Authentication(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
+    user_id = db.Column(db.String(100), db.ForeignKey('user.id'), nullable=False)
     token = db.Column(db.String(100), nullable=False)
     token_created = db.Column(db.String(100), nullable=False)
     token_expired = db.Column(db.String(100), nullable=False)
 
 class Ticket(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    user_id = db.Column(db.Integer, db.ForeignKey('user.id'),nullable=False)
+    id = db.Column(db.String(100), primary_key=True)
+    user_id = db.Column(db.String(100), db.ForeignKey('user.id'),nullable=False)
     title = db.Column(db.String(200),nullable=False)
     description = db.Column(db.String(3000),nullable=False)
     solution = db.Column(db.String(2000))
     thread_link = db.Column(db.String(500))
     created_at = db.Column(db.DateTime,nullable=False)
-    created_by = db.Column(db.Integer, db.ForeignKey('user.id'),nullable=False)
-    resolved_by = db.Column(db.Integer, db.ForeignKey('user.id'),nullable=False)
+    resolved_by = db.Column(db.String(100), db.ForeignKey('user.id'),default=0,nullable=False)
     resolved_at = db.Column(db.DateTime)
     solution_satisfaction = db.Column(db.Boolean,nullable=False)
     comments = db.Column(db.String(500))
@@ -64,18 +63,18 @@ class Ticket(db.Model):
 
 class VoteTable(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    ticket_id = db.Column(db.Integer, db.ForeignKey('ticket.id'),nullable =False)
-    voter_id = db.Column(db.Integer, db.ForeignKey('user.id'),nullable =False)
+    ticket_id = db.Column(db.String(100), db.ForeignKey('ticket.id'),nullable =False)
+    voter_id = db.Column(db.String(100), db.ForeignKey('user.id'),nullable =False)
 
 class TicketTags(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    ticket_id = db.Column(db.Integer, db.ForeignKey('ticket.id')) #connected to ticket 
+    ticket_id = db.Column(db.String(100), db.ForeignKey('ticket.id')) #connected to ticket 
     tag_name = db.Column(db.String(100))
     description = db.Column(db.String(200))
 
 #Following is the relationship table between tickets and tags 
 tickets_tags=db.Table('tickets_tags',
-    db.Column('ticket_id',db.Integer,db.ForeignKey('ticket.id')),
+    db.Column('ticket_id',db.String(100),db.ForeignKey('ticket.id')),
     db.Column('tag_id',db.Integer,db.ForeignKey('ticket_tags.id'))
 )
 
@@ -84,19 +83,19 @@ class TicketComments(db.Model):
     ticket_id = db.Column(db.Integer, db.ForeignKey('ticket.id'),nullable=False)
     comment = db.Column(db.String(1000))
     added_at = db.Column(db.DateTime,nullable=False)
-    commenter = db.Column(db.Integer, db.ForeignKey('user.id'))
+    commenter = db.Column(db.String(100), db.ForeignKey('user.id'))
     user_mentions = db.relationship('User',backref='TicketComments',uselist=True)
     reactions = db.Column(db.String(100))
 
 class TicketAttachment(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    ticket_id = db.Column(db.Integer, db.ForeignKey('ticket.id'))
+    ticket_id = db.Column(db.String(100), db.ForeignKey('ticket.id'))
     attachment_location = db.Column(db.String(200))
 
 
 class Inbox(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
+    user_id = db.Column(db.String(100), db.ForeignKey('user.id'))
     message = db.Column(db.String(500),nullable=False)
     received_at = db.Column(db.DateTime,nullable=False)
     have_read = db.Column(db.Boolean)
@@ -104,14 +103,14 @@ class Inbox(db.Model):
 
 class StaffBadges(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
+    user_id = db.Column(db.String(100), db.ForeignKey('user.id'))
     badge_name=db.Column(db.String(100), nullable=False)
     badge_picture_location = db.Column(db.String(200))
-    assigned_by = db.Column(db.Integer, db.ForeignKey('user.id'))
+    assigned_by = db.Column(db.String(100), db.ForeignKey('user.id'))
 
 class TicketData(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    ticket_id = db.Column(db.Integer, db.ForeignKey('ticket.id'))
+    ticket_id = db.Column(db.String(100), db.ForeignKey('ticket.id'),nullable=False)
     opened_at=db.Column(db.DateTime)
     assigned_at=db.Column(db.DateTime)
     inProgress_at=db.Column(db.DateTime)
@@ -119,9 +118,9 @@ class TicketData(db.Model):
 
 class DisciplinaryAction(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    user_id = db.Column(db.Integer, db.ForeignKey('user.id'),nullable=False)
-    flagged_by = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
-    approved_by = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
+    user_id = db.Column(db.String(100), db.ForeignKey('user.id'),nullable=False)
+    flagged_by = db.Column(db.String(100), db.ForeignKey('user.id'), nullable=False)
+    approved_by = db.Column(db.String(100), db.ForeignKey('user.id'), nullable=False)
     flagged_till = db.Column(db.String(100), nullable=False)
     flagged_users = db.relationship('User', foreign_keys=[user_id],backref='disciplinary_actions')
     flagging_staff = db.relationship('User', foreign_keys=[flagged_by],backref='flagged_actions')
