@@ -98,7 +98,7 @@ class TicketAttachment(db.Model):
 class Inbox(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     user_id = db.Column(db.String(100), db.ForeignKey('user.id'))
-    message = db.Column(db.String(500),nullable=False)
+    message = db.Column(db.String)
     received_at = db.Column(db.DateTime,nullable=False)
     have_read = db.Column(db.Boolean)
     message_type = db.Column(db.String(100),nullable=False)

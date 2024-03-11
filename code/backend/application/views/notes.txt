@@ -27,24 +27,31 @@ k- get arguments from queries
 
 Ticket APIs 
 
-- get specific ticket 
-- post a new ticket 
-- update a ticket 
-- vote a ticket 
-- solving a ticket 
-- assigning a ticket 
-- get tickets by name
-- get comments of a ticket 
-- getting ticket statistics 
-- send
+
+- get specific ticket *
+- post a new ticket *  # add the details to the ticket_tags 
+- update a ticket *
+- delete a ticket *
+- vote a ticket  *
+
+
+
+- solving a ticket & 
+- assigning a ticket & 
+- get tickets by assigned tickets &
+
+- get comments of a ticket % 
+- post comment &
+- edit comment &
+- delete comment &
 
 
 Tags Utils 
 
 
-// isTagValid 
-// 
-TAGS BP 
+// isTagValid - parameter
+
+- TAGS BP 
 
 
 - Creating tags
@@ -53,20 +60,47 @@ TAGS BP
 - delete tags 
 
 
-Ticket 
-
-Tags - | opera| |admit card| | |
-+ 
-
 
 OTHER BPs 
 
+- Ticket Tracking BP 
+        a - change ticket status 
+        b- change priority (manual) 
+        c- create ticket data - ( open , time resolve etc )
+        d- send notifications when assigning -- > jobs 
+        e- send status report 
+        f- escalation + ( adding a new entry to the ticket data table , with the same ticket id )
+        g- 
 
-- 
+-Stats BP 
+    - getting ticket statistics $
+    - generate report API $
+
+- user_management BP 
+    - get_user_activity () // 
+    - assign card -- ( yellow | Red )
+    - enable again 
+    - send notification 
+    - assign badge 
+    - create badge // create the logic 
+    - revoke badge
+    - delete badge 
+    - send notification for badge 
+
+- Inbox BP 
+    - get messages 
+    - post messages 
+    - delete messages 
 
 
-1. 
-DO we need the discourse id while registration
+
+JOBS 
+1. calculate and commit db - priority 
+2. send mails 
+
+
+#LOGIC QUESTIONS
+1. DO we need the discourse id while registration
 2. 
 
 
