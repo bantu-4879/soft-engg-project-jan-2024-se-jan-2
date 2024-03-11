@@ -54,7 +54,8 @@ class Ticket(db.Model):
     comments = db.Column(db.String(500))
     ticket_status=db.Column(db.String(100),nullable=False)
     ticket_priority = db.Column(db.Float)
-    tags = db.relationship('TicketTags',secondary='tickets_tags',backref='tickets') #tags related to the ticket - many - many relationship
+    tags_list=db.Column(db.String)  #list of tags 
+    #tags = db.relationship('TicketTags',backref='tickets',lazy=True) #tags related to the ticket - many - many relationship
     votes = db.relationship('VoteTable', backref='ticket',uselist=True) #The votes and who votes one - many relationship
     assigned_staff = db.relationship('User', secondary=assigned_staff_tickets,
                                      backref='assigned_tickets', lazy='dynamic') #many to many relationship assigned staff
@@ -66,17 +67,19 @@ class VoteTable(db.Model):
     ticket_id = db.Column(db.String(100), db.ForeignKey('ticket.id'),nullable =False)
     voter_id = db.Column(db.String(100), db.ForeignKey('user.id'),nullable =False)
 
-class TicketTags(db.Model):
+class Tags(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    ticket_id = db.Column(db.String(100), db.ForeignKey('ticket.id')) #connected to ticket 
-    tag_name = db.Column(db.String(100))
+    #ticket_id = db.Column(db.String(100), db.ForeignKey('ticket.id')) #connected to ticket 
+    tag_name = db.Column(db.String(100)) 
     description = db.Column(db.String(200))
 
+
 #Following is the relationship table between tickets and tags 
-tickets_tags=db.Table('tickets_tags',
-    db.Column('ticket_id',db.String(100),db.ForeignKey('ticket.id')),
-    db.Column('tag_id',db.Integer,db.ForeignKey('ticket_tags.id'))
-)
+class Tickets_Tags(db.Model):
+    id=db.Column(db.Integer, primary_key=True)
+    tag_id=db.Column(db.Integer,db.ForeignKey('tag.id'),nullable=False),
+    ticket_id=db.Column(db.String(100),db.ForeignKey('ticket.id'),nullable=False)
+
 
 class TicketComments(db.Model):
     id = db.Column(db.Integer, primary_key=True)

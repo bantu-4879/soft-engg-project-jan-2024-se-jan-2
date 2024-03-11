@@ -14,7 +14,7 @@ from application.views.auth_bp import auth_bp
 from flask_cors import CORS
 from application.models import *
 import os
-from application.g_webhook import gchat_webhook
+#from application.g_webhook import gchat_webhook
 
 # --------------------  Code  --------------------
 
@@ -60,5 +60,5 @@ def create_app(env_type="dev"):
         db.session.add(role3)
         db.session.commit()
 
-    gchat_webhook()
+    #gchat_webhook()
     return app

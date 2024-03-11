@@ -12,8 +12,8 @@ c- generate ticket id
 d- save ticket attachments 
 e- tickets filter by query 
 f- tickets filters by tags 
-g - ticket filter by status 
-h - ticket filter by priority 
+g - ticket filter by status  --( Open | InProgress | Resolved | Closed )
+h - ticket filter by priority  -- float ( 0-30 % --> Low , 30-80 % --> Medium 80-99% --> High )
 i- tickets sort 
 j- tickets + filter sort 
 k- get arguments from queries 
@@ -25,9 +25,7 @@ k- get arguments from queries
 // get ticket data dictionary 
 
 
-
 Ticket APIs 
-
 
 - get specific ticket 
 - post a new ticket 
@@ -36,7 +34,35 @@ Ticket APIs
 - solving a ticket 
 - assigning a ticket 
 - get tickets by name
+- get comments of a ticket 
+- getting ticket statistics 
+- send
 
+
+Tags Utils 
+
+
+// isTagValid 
+// 
+TAGS BP 
+
+
+- Creating tags
+- getting tags 
+- update tags 
+- delete tags 
+
+
+Ticket 
+
+Tags - | opera| |admit card| | |
++ 
+
+
+OTHER BPs 
+
+
+- 
 
 
 1. 
