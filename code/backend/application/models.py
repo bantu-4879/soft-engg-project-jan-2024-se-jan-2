@@ -47,12 +47,9 @@ class Ticket(db.Model):
     description = db.Column(db.String(3000),nullable=False)
     solution = db.Column(db.String(2000))
     thread_link = db.Column(db.String(500))
-<<<<<<< HEAD
     privacy=db.Column(db.Boolean, default=False, nullable=False)
     created_at = db.Column(db.DateTime,nullable=False)
-=======
     created_at = db.Column(db.String,nullable=False)
->>>>>>> e50b72fcd7da3be1bed2115d9f391a8dadb24d21
     resolved_by = db.Column(db.String(100), db.ForeignKey('user.id'),default=0,nullable=False)
     solution_satisfaction = db.Column(db.Boolean,nullable=False)
     comments = db.Column(db.String(500))

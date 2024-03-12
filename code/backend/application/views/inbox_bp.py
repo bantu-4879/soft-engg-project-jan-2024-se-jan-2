@@ -46,7 +46,7 @@ def post_message(send_to, message, message_type, received_at=now, have_read=Fals
     message: message body
     recieved_at: timestamp
     have_read: defaults to False
-    message_type: [inbox,gchat,both]
+    message_type: [inbox,gchat,email,both_inbox_email]
 
     Returns
     -------
