@@ -47,7 +47,7 @@ class Ticket(db.Model):
     description = db.Column(db.String(3000),nullable=False)
     solution = db.Column(db.String(2000))
     thread_link = db.Column(db.String(500))
-    created_at = db.Column(db.DateTime,nullable=False)
+    created_at = db.Column(db.String,nullable=False)
     resolved_by = db.Column(db.String(100), db.ForeignKey('user.id'),default=0,nullable=False)
     solution_satisfaction = db.Column(db.Boolean,nullable=False)
     comments = db.Column(db.String(500))
@@ -84,7 +84,7 @@ class TicketComments(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     ticket_id = db.Column(db.Integer, db.ForeignKey('ticket.id'),nullable=False)
     comment = db.Column(db.String(1000))
-    added_at = db.Column(db.DateTime,nullable=False)
+    added_at = db.Column(db.String,nullable=False)
     commenter = db.Column(db.String(100), db.ForeignKey('user.id'))
     user_mentions = db.relationship('User',backref='TicketComments',uselist=True)
     reactions = db.Column(db.String(100))
@@ -99,7 +99,7 @@ class Inbox(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     user_id = db.Column(db.String(100), db.ForeignKey('user.id'))
     message = db.Column(db.String)
-    received_at = db.Column(db.DateTime,nullable=False)
+    received_at = db.Column(db.String,nullable=False)
     have_read = db.Column(db.Boolean)
     message_type = db.Column(db.String(100),nullable=False)
 
@@ -113,12 +113,12 @@ class StaffBadges(db.Model):
 class TicketData(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     ticket_id = db.Column(db.String(100), db.ForeignKey('ticket.id'),nullable=False)
-    opened_at=db.Column(db.DateTime)
-    assigned_at=db.Column(db.DateTime)
-    inProgress_at=db.Column(db.DateTime)
-    resolved_at = db.Column(db.DateTime)
-    closed_at= db.Column(db.DateTime)
-    reopened_at=db.Column(db.DateTime)
+    opened_at=db.Column(db.String)
+    assigned_at=db.Column(db.String)
+    inProgress_at=db.Column(db.String)
+    resolved_at = db.Column(db.String)
+    closed_at= db.Column(db.String)
+    reopened_at=db.Column(db.String)
 
 
 class DisciplinaryAction(db.Model):

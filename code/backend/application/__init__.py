@@ -11,10 +11,12 @@ from application.views.auth_bp import auth_bp
 # from application.views import admin_bp
 # from application.views import faq_bp
 # from application.views import ticket_bp
+from application.views.inbox_bp import inbox_bp
 from flask_cors import CORS
 from application.models import *
 import os
 #from application.g_webhook import gchat_webhook
+from application.views.inbox_bp import post_message
 
 # --------------------  Code  --------------------
 
@@ -38,6 +40,7 @@ def create_app(env_type="dev"):
     # app.register_blueprint(admin_bp, url_prefix=f"/api/{API_VERSION}/admin") -->
     # app.register_blueprint(ticket_bp, url_prefix=f"/api/{API_VERSION}/ticket") -->
     # app.register_blueprint(faq_bp, url_prefix=f"/api/{API_VERSION}/faq") --> 
+    app.register_blueprint(inbox_bp, url_prefix=f"/api/{API_VERSION}/inbox")
 
     app.app_context().push()
 
@@ -47,13 +50,13 @@ def create_app(env_type="dev"):
         app.app_context().push()
         print("the database is getting created.")
         role1=Role(
-            name="Admin"
+            name="admin"
         )
         role2=Role(
-            name="Staff"
+            name="staff"
         )
         role3=Role(
-            name="Student"
+            name="student"
         )
         db.session.add(role1)
         db.session.add(role2)
@@ -61,4 +64,5 @@ def create_app(env_type="dev"):
         db.session.commit()
 
     #gchat_webhook()
+    post_message(0,"This is a test message!","inbox")
     return app

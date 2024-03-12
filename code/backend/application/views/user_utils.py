@@ -15,10 +15,14 @@ from application.responses import *
 from application.logger import logger
 from application.models import *
 from application.globals import *
-
+from datetime import datetime
 
 # --------------------  Code  --------------------
 
+#datetime to the function
+
+def time_to_str(time):
+    return time.strftime("%Y-%m-%d%H:%M:%S")
 
 class UserUtils:
     def is_blank(self, string):
@@ -238,6 +242,9 @@ class UserUtils:
             else:
                 logger.info("User details Updated successfully.")
                 raise Success_200(status_msg="User details Updated successfully.")
+            
+
+
 
 
 # --------------------  END  --------------------
