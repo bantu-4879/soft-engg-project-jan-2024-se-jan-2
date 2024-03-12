@@ -6,6 +6,7 @@ from application.database import db
 from application.logger import logger
 from application.globals import API_VERSION
 from application.views.auth_bp import auth_bp
+from application.views.user_management_bp import user_management_bp
 # from application.views import student_bp
 # from application.views import support_bp
 # from application.views import admin_bp
@@ -38,6 +39,7 @@ def create_app(env_type="dev"):
     # app.register_blueprint(admin_bp, url_prefix=f"/api/{API_VERSION}/admin") -->
     # app.register_blueprint(ticket_bp, url_prefix=f"/api/{API_VERSION}/ticket") -->
     # app.register_blueprint(faq_bp, url_prefix=f"/api/{API_VERSION}/faq") --> 
+    app.register_blueprint(user_management_bp,url_prefix=f"/api/{API_VERSION}/user-management")
 
     app.app_context().push()
 
