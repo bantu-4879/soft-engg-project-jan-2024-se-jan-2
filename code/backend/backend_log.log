@@ -1545,3 +1545,8 @@
 12-Mar-24 17:04:51 - [INFO] - Development environment configured.
 12-Mar-24 17:04:51 - [WARNING] -  * Debugger is active!
 12-Mar-24 17:04:51 - [INFO] -  * Debugger PIN: 128-419-458
+12-Mar-24 17:05:47 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\user_utils.py', reloading
+12-Mar-24 17:05:47 - [INFO] -  * Restarting with stat
+12-Mar-24 17:05:49 - [INFO] - Development environment configured.
+12-Mar-24 17:05:49 - [WARNING] -  * Debugger is active!
+12-Mar-24 17:05:49 - [INFO] -  * Debugger PIN: 128-419-458
