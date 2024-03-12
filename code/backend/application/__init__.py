@@ -43,6 +43,9 @@ def create_app(env_type="dev"):
     # app.register_blueprint(faq_bp, url_prefix=f"/api/{API_VERSION}/faq") --> 
     app.register_blueprint(user_management_bp,url_prefix=f"/api/{API_VERSION}/user-management")
     app.register_blueprint(inbox_bp, url_prefix=f"/api/{API_VERSION}/inbox")
+    # tags_bp
+    # ticket_tracking_bp
+    # stats_bp
 
     app.app_context().push()
 
