@@ -1262,6 +1262,7 @@
 11-Mar-24 22:45:26 - [INFO] - Development environment configured.
 11-Mar-24 22:45:26 - [WARNING] -  * Debugger is active!
 11-Mar-24 22:45:26 - [INFO] -  * Debugger PIN: 145-495-166
+<<<<<<< HEAD
 12-Mar-24 15:00:20 - [INFO] - Development environment configured.
 12-Mar-24 15:00:20 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
@@ -1550,3 +1551,618 @@
 12-Mar-24 17:05:49 - [INFO] - Development environment configured.
 12-Mar-24 17:05:49 - [WARNING] -  * Debugger is active!
 12-Mar-24 17:05:49 - [INFO] -  * Debugger PIN: 128-419-458
+=======
+12-Mar-24 14:50:09 - [INFO] - Development environment configured.
+12-Mar-24 14:51:15 - [INFO] - Development environment configured.
+12-Mar-24 14:52:13 - [INFO] - Development environment configured.
+12-Mar-24 14:52:13 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+12-Mar-24 14:52:13 - [INFO] - [33mPress CTRL+C to quit[0m
+12-Mar-24 14:52:13 - [INFO] -  * Restarting with stat
+12-Mar-24 14:52:14 - [INFO] - Development environment configured.
+12-Mar-24 14:52:14 - [WARNING] -  * Debugger is active!
+12-Mar-24 14:52:14 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 15:02:17 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 15:02:17 - [INFO] -  * Restarting with stat
+12-Mar-24 15:02:18 - [INFO] - Development environment configured.
+12-Mar-24 15:02:18 - [WARNING] -  * Debugger is active!
+12-Mar-24 15:02:18 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 15:11:25 - [INFO] - 127.0.0.1 - - [12/Mar/2024 15:11:25] "[32mGET /api/v1/inbox HTTP/1.1[0m" 308 -
+12-Mar-24 15:11:25 - [INFO] - 127.0.0.1 - - [12/Mar/2024 15:11:25] "[35m[1mGET /api/v1/inbox/ HTTP/1.1[0m" 500 -
+12-Mar-24 15:12:05 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 15:12:05 - [INFO] -  * Restarting with stat
+12-Mar-24 15:12:06 - [INFO] - Development environment configured.
+12-Mar-24 15:12:06 - [WARNING] -  * Debugger is active!
+12-Mar-24 15:12:06 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 15:12:11 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 15:12:11 - [INFO] -  * Restarting with stat
+12-Mar-24 15:12:12 - [INFO] - Development environment configured.
+12-Mar-24 15:12:12 - [WARNING] -  * Debugger is active!
+12-Mar-24 15:12:12 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 15:12:13 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 15:12:13 - [INFO] -  * Restarting with stat
+12-Mar-24 15:12:13 - [INFO] - Development environment configured.
+12-Mar-24 15:12:13 - [WARNING] -  * Debugger is active!
+12-Mar-24 15:12:13 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 15:12:16 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 15:12:16 - [INFO] -  * Restarting with stat
+12-Mar-24 15:12:17 - [INFO] - Development environment configured.
+12-Mar-24 15:12:17 - [WARNING] -  * Debugger is active!
+12-Mar-24 15:12:17 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 15:12:24 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 15:12:24 - [INFO] -  * Restarting with stat
+12-Mar-24 15:12:25 - [INFO] - Development environment configured.
+12-Mar-24 15:12:25 - [WARNING] -  * Debugger is active!
+12-Mar-24 15:12:25 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 15:12:28 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 15:12:28 - [INFO] -  * Restarting with stat
+12-Mar-24 15:12:28 - [INFO] - Development environment configured.
+12-Mar-24 15:12:28 - [WARNING] -  * Debugger is active!
+12-Mar-24 15:12:28 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 15:13:41 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 15:13:41 - [INFO] -  * Restarting with stat
+12-Mar-24 15:13:42 - [INFO] - Development environment configured.
+12-Mar-24 15:13:42 - [WARNING] -  * Debugger is active!
+12-Mar-24 15:13:42 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 15:13:44 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 15:13:44 - [INFO] -  * Restarting with stat
+12-Mar-24 15:13:44 - [INFO] - Development environment configured.
+12-Mar-24 15:13:44 - [WARNING] -  * Debugger is active!
+12-Mar-24 15:13:44 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 15:13:49 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 15:13:50 - [INFO] -  * Restarting with stat
+12-Mar-24 15:13:50 - [INFO] - Development environment configured.
+12-Mar-24 15:13:50 - [WARNING] -  * Debugger is active!
+12-Mar-24 15:13:50 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 15:13:52 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 15:13:52 - [INFO] -  * Restarting with stat
+12-Mar-24 15:27:45 - [INFO] - Development environment configured.
+12-Mar-24 15:27:45 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+12-Mar-24 15:27:45 - [INFO] - [33mPress CTRL+C to quit[0m
+12-Mar-24 15:27:45 - [INFO] -  * Restarting with stat
+12-Mar-24 15:27:45 - [INFO] - Development environment configured.
+12-Mar-24 15:27:45 - [WARNING] -  * Debugger is active!
+12-Mar-24 15:27:45 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 15:28:00 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/globals.py', reloading
+12-Mar-24 15:28:00 - [INFO] -  * Restarting with stat
+12-Mar-24 15:28:00 - [INFO] - Development environment configured.
+12-Mar-24 15:28:00 - [WARNING] -  * Debugger is active!
+12-Mar-24 15:28:00 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 15:28:08 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 15:28:08 - [INFO] -  * Restarting with stat
+12-Mar-24 15:28:09 - [INFO] - Development environment configured.
+12-Mar-24 15:28:09 - [WARNING] -  * Debugger is active!
+12-Mar-24 15:28:09 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 15:28:11 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 15:28:11 - [INFO] -  * Restarting with stat
+12-Mar-24 15:28:11 - [INFO] - Development environment configured.
+12-Mar-24 15:28:11 - [WARNING] -  * Debugger is active!
+12-Mar-24 15:28:11 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 15:28:18 - [INFO] - 127.0.0.1 - - [12/Mar/2024 15:28:18] "[32mGET /api/v2/inbox HTTP/1.1[0m" 308 -
+12-Mar-24 15:28:18 - [INFO] - 127.0.0.1 - - [12/Mar/2024 15:28:18] "[35m[1mGET /api/v2/inbox/ HTTP/1.1[0m" 500 -
+12-Mar-24 15:28:21 - [INFO] - 127.0.0.1 - - [12/Mar/2024 15:28:21] "[33mGET /api/v2/inbox/1 HTTP/1.1[0m" 404 -
+12-Mar-24 15:28:27 - [INFO] - 127.0.0.1 - - [12/Mar/2024 15:28:27] "[33mGET /api/v2/inbox/0 HTTP/1.1[0m" 404 -
+12-Mar-24 15:29:08 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 15:29:08 - [INFO] -  * Restarting with stat
+12-Mar-24 15:41:29 - [INFO] - Development environment configured.
+12-Mar-24 15:41:29 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+12-Mar-24 15:41:29 - [INFO] - [33mPress CTRL+C to quit[0m
+12-Mar-24 15:41:29 - [INFO] -  * Restarting with stat
+12-Mar-24 15:41:29 - [INFO] - Development environment configured.
+12-Mar-24 15:41:29 - [WARNING] -  * Debugger is active!
+12-Mar-24 15:41:29 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 15:41:31 - [INFO] - 127.0.0.1 - - [12/Mar/2024 15:41:31] "[33mGET /api/v2/inbox/0 HTTP/1.1[0m" 404 -
+12-Mar-24 15:41:45 - [INFO] - 127.0.0.1 - - [12/Mar/2024 15:41:45] "[33mGET /api/v1/inbox/0 HTTP/1.1[0m" 404 -
+12-Mar-24 15:41:55 - [INFO] - 127.0.0.1 - - [12/Mar/2024 15:41:55] "[33mGET /api/v1/inbox HTTP/1.1[0m" 404 -
+12-Mar-24 15:42:06 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/globals.py', reloading
+12-Mar-24 15:42:06 - [INFO] -  * Restarting with stat
+12-Mar-24 15:42:06 - [INFO] - Development environment configured.
+12-Mar-24 15:42:06 - [WARNING] -  * Debugger is active!
+12-Mar-24 15:42:06 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 15:42:14 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 15:42:14 - [INFO] -  * Restarting with stat
+12-Mar-24 15:42:15 - [INFO] - Development environment configured.
+12-Mar-24 15:42:15 - [WARNING] -  * Debugger is active!
+12-Mar-24 15:42:15 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 15:42:16 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 15:42:16 - [INFO] -  * Restarting with stat
+12-Mar-24 15:42:16 - [INFO] - Development environment configured.
+12-Mar-24 15:42:16 - [WARNING] -  * Debugger is active!
+12-Mar-24 15:42:16 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 15:44:33 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 15:44:33 - [INFO] -  * Restarting with stat
+12-Mar-24 15:44:34 - [INFO] - Development environment configured.
+12-Mar-24 15:44:34 - [WARNING] -  * Debugger is active!
+12-Mar-24 15:44:34 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 15:44:36 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 15:44:36 - [INFO] -  * Restarting with stat
+12-Mar-24 15:45:23 - [INFO] - Development environment configured.
+12-Mar-24 15:45:23 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+12-Mar-24 15:45:23 - [INFO] - [33mPress CTRL+C to quit[0m
+12-Mar-24 15:45:23 - [INFO] -  * Restarting with stat
+12-Mar-24 15:45:23 - [INFO] - Development environment configured.
+12-Mar-24 15:45:23 - [WARNING] -  * Debugger is active!
+12-Mar-24 15:45:23 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 15:45:26 - [INFO] - 127.0.0.1 - - [12/Mar/2024 15:45:26] "[32mGET /api/v1/inbox HTTP/1.1[0m" 308 -
+12-Mar-24 15:45:26 - [INFO] - 400 - User id is missing.
+12-Mar-24 15:45:26 - [INFO] - 127.0.0.1 - - [12/Mar/2024 15:45:26] "[31m[1mGET /api/v1/inbox/ HTTP/1.1[0m" 400 -
+12-Mar-24 15:45:56 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/__init__.py', reloading
+12-Mar-24 15:45:56 - [INFO] -  * Restarting with stat
+12-Mar-24 15:45:57 - [INFO] - Development environment configured.
+12-Mar-24 15:45:57 - [WARNING] -  * Debugger is active!
+12-Mar-24 15:45:57 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 15:45:59 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/__init__.py', reloading
+12-Mar-24 15:45:59 - [INFO] -  * Restarting with stat
+12-Mar-24 15:45:59 - [INFO] - Development environment configured.
+12-Mar-24 15:45:59 - [WARNING] -  * Debugger is active!
+12-Mar-24 15:46:00 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 15:46:12 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/__init__.py', reloading
+12-Mar-24 15:46:12 - [INFO] -  * Restarting with stat
+12-Mar-24 15:48:41 - [INFO] - Development environment configured.
+12-Mar-24 15:49:32 - [INFO] - Development environment configured.
+12-Mar-24 15:49:32 - [INFO] - Message sent successfully.
+12-Mar-24 15:49:32 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+12-Mar-24 15:49:32 - [INFO] - [33mPress CTRL+C to quit[0m
+12-Mar-24 15:49:32 - [INFO] -  * Restarting with stat
+12-Mar-24 15:49:32 - [INFO] - Development environment configured.
+12-Mar-24 15:49:33 - [INFO] - Message sent successfully.
+12-Mar-24 15:49:33 - [WARNING] -  * Debugger is active!
+12-Mar-24 15:49:33 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 15:50:30 - [INFO] - 127.0.0.1 - - [12/Mar/2024 15:50:30] "[32mGET /api/v1/inbox HTTP/1.1[0m" 308 -
+12-Mar-24 15:50:30 - [INFO] - 400 - User id is missing.
+12-Mar-24 15:50:30 - [INFO] - 127.0.0.1 - - [12/Mar/2024 15:50:30] "[31m[1mGET /api/v1/inbox/ HTTP/1.1[0m" 400 -
+12-Mar-24 15:50:35 - [INFO] - 127.0.0.1 - - [12/Mar/2024 15:50:35] "[33mGET /api/v1/inbox/0 HTTP/1.1[0m" 404 -
+12-Mar-24 15:51:07 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 15:51:07 - [INFO] -  * Restarting with stat
+12-Mar-24 15:51:07 - [INFO] - Development environment configured.
+12-Mar-24 15:51:20 - [INFO] - Development environment configured.
+12-Mar-24 15:51:21 - [INFO] - Message sent successfully.
+12-Mar-24 15:51:21 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+12-Mar-24 15:51:21 - [INFO] - [33mPress CTRL+C to quit[0m
+12-Mar-24 15:51:21 - [INFO] -  * Restarting with stat
+12-Mar-24 15:51:21 - [INFO] - Development environment configured.
+12-Mar-24 15:51:21 - [INFO] - Message sent successfully.
+12-Mar-24 15:51:21 - [WARNING] -  * Debugger is active!
+12-Mar-24 15:51:21 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 15:51:37 - [INFO] - All Messages found
+12-Mar-24 15:51:37 - [INFO] - 200 - Custom success 200 response sent
+12-Mar-24 15:51:37 - [INFO] - 127.0.0.1 - - [12/Mar/2024 15:51:37] "[35m[1mGET /api/v1/inbox/0 HTTP/1.1[0m" 500 -
+12-Mar-24 15:52:37 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 15:52:37 - [INFO] -  * Restarting with stat
+12-Mar-24 15:52:38 - [INFO] - Development environment configured.
+12-Mar-24 15:52:38 - [INFO] - Message sent successfully.
+12-Mar-24 15:52:38 - [WARNING] -  * Debugger is active!
+12-Mar-24 15:52:38 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 15:52:39 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 15:52:39 - [INFO] -  * Restarting with stat
+12-Mar-24 15:52:39 - [INFO] - Development environment configured.
+12-Mar-24 15:52:39 - [ERROR] - MessageUtils->post_message : Error occured while creating a new message : (builtins.TypeError) SQLite DateTime type only accepts Python datetime and date objects as input.
+[SQL: INSERT INTO inbox (user_id, message, received_at, have_read, message_type) VALUES (?, ?, ?, ?, ?)]
+[parameters: [{'message_type': 'inbox', 'have_read': False, 'received_at': '2024-03-12 15:52:39.809604', 'message': 'This is a test message!', 'user_id': 0}]]
+12-Mar-24 15:52:39 - [INFO] - 500 - Error occured while sending the message. 
+12-Mar-24 15:52:42 - [INFO] - Development environment configured.
+12-Mar-24 15:52:42 - [ERROR] - MessageUtils->post_message : Error occured while creating a new message : (builtins.TypeError) SQLite DateTime type only accepts Python datetime and date objects as input.
+[SQL: INSERT INTO inbox (user_id, message, received_at, have_read, message_type) VALUES (?, ?, ?, ?, ?)]
+[parameters: [{'message_type': 'inbox', 'message': 'This is a test message!', 'have_read': False, 'received_at': '2024-03-12 15:52:42.902532', 'user_id': 0}]]
+12-Mar-24 15:52:42 - [INFO] - 500 - Error occured while sending the message. 
+12-Mar-24 15:53:01 - [INFO] - Development environment configured.
+12-Mar-24 15:53:01 - [INFO] - Message sent successfully.
+12-Mar-24 15:53:01 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+12-Mar-24 15:53:01 - [INFO] - [33mPress CTRL+C to quit[0m
+12-Mar-24 15:53:01 - [INFO] -  * Restarting with stat
+12-Mar-24 15:53:02 - [INFO] - Development environment configured.
+12-Mar-24 15:53:02 - [INFO] - Message sent successfully.
+12-Mar-24 15:53:02 - [WARNING] -  * Debugger is active!
+12-Mar-24 15:53:02 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 15:54:08 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 15:54:09 - [INFO] -  * Restarting with stat
+12-Mar-24 15:54:09 - [INFO] - Development environment configured.
+12-Mar-24 15:54:09 - [INFO] - Message sent successfully.
+12-Mar-24 15:54:09 - [WARNING] -  * Debugger is active!
+12-Mar-24 15:54:09 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 15:54:11 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 15:54:11 - [INFO] -  * Restarting with stat
+12-Mar-24 15:54:12 - [INFO] - Development environment configured.
+12-Mar-24 15:54:12 - [INFO] - Message sent successfully.
+12-Mar-24 15:54:12 - [WARNING] -  * Debugger is active!
+12-Mar-24 15:54:12 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 15:54:13 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 15:54:13 - [INFO] -  * Restarting with stat
+12-Mar-24 15:54:13 - [INFO] - Development environment configured.
+12-Mar-24 15:54:13 - [INFO] - Message sent successfully.
+12-Mar-24 15:54:13 - [WARNING] -  * Debugger is active!
+12-Mar-24 15:54:13 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 15:54:15 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 15:54:16 - [INFO] -  * Restarting with stat
+12-Mar-24 15:54:16 - [INFO] - Development environment configured.
+12-Mar-24 15:54:16 - [INFO] - Message sent successfully.
+12-Mar-24 15:54:16 - [WARNING] -  * Debugger is active!
+12-Mar-24 15:54:16 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 15:54:20 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 15:54:20 - [INFO] -  * Restarting with stat
+12-Mar-24 15:54:21 - [INFO] - Development environment configured.
+12-Mar-24 15:54:21 - [INFO] - Message sent successfully.
+12-Mar-24 15:54:21 - [WARNING] -  * Debugger is active!
+12-Mar-24 15:54:21 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 15:54:39 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 15:54:39 - [INFO] -  * Restarting with stat
+12-Mar-24 15:54:40 - [INFO] - Development environment configured.
+12-Mar-24 15:54:40 - [INFO] - Message sent successfully.
+12-Mar-24 15:54:40 - [WARNING] -  * Debugger is active!
+12-Mar-24 15:54:40 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 15:54:41 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 15:54:41 - [INFO] -  * Restarting with stat
+12-Mar-24 15:54:41 - [INFO] - Development environment configured.
+12-Mar-24 15:54:41 - [INFO] - Message sent successfully.
+12-Mar-24 15:54:41 - [WARNING] -  * Debugger is active!
+12-Mar-24 15:54:41 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 15:54:43 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 15:54:44 - [INFO] -  * Restarting with stat
+12-Mar-24 15:54:44 - [INFO] - Development environment configured.
+12-Mar-24 15:54:44 - [INFO] - Message sent successfully.
+12-Mar-24 15:54:44 - [WARNING] -  * Debugger is active!
+12-Mar-24 15:54:44 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 15:54:50 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 15:54:50 - [INFO] -  * Restarting with stat
+12-Mar-24 15:54:51 - [INFO] - Development environment configured.
+12-Mar-24 15:54:51 - [INFO] - Message sent successfully.
+12-Mar-24 15:54:51 - [WARNING] -  * Debugger is active!
+12-Mar-24 15:54:51 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 15:54:52 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 15:54:52 - [INFO] -  * Restarting with stat
+12-Mar-24 15:54:52 - [INFO] - Development environment configured.
+12-Mar-24 15:54:52 - [INFO] - Message sent successfully.
+12-Mar-24 15:54:52 - [WARNING] -  * Debugger is active!
+12-Mar-24 15:54:52 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 15:54:55 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 15:54:56 - [INFO] -  * Restarting with stat
+12-Mar-24 15:54:56 - [INFO] - Development environment configured.
+12-Mar-24 15:54:56 - [INFO] - Message sent successfully.
+12-Mar-24 15:54:56 - [WARNING] -  * Debugger is active!
+12-Mar-24 15:54:56 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 15:55:13 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 15:55:13 - [INFO] -  * Restarting with stat
+12-Mar-24 15:55:14 - [INFO] - Development environment configured.
+12-Mar-24 15:55:14 - [INFO] - Message sent successfully.
+12-Mar-24 15:55:14 - [WARNING] -  * Debugger is active!
+12-Mar-24 15:55:14 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 15:57:15 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 15:57:15 - [INFO] -  * Restarting with stat
+12-Mar-24 16:09:55 - [INFO] - Development environment configured.
+12-Mar-24 16:09:55 - [INFO] - Message sent successfully.
+12-Mar-24 16:09:55 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+12-Mar-24 16:09:55 - [INFO] - [33mPress CTRL+C to quit[0m
+12-Mar-24 16:09:55 - [INFO] -  * Restarting with stat
+12-Mar-24 16:09:56 - [INFO] - Development environment configured.
+12-Mar-24 16:09:56 - [INFO] - Message sent successfully.
+12-Mar-24 16:09:56 - [WARNING] -  * Debugger is active!
+12-Mar-24 16:09:56 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 16:10:02 - [INFO] - All Messages found
+12-Mar-24 16:10:02 - [INFO] - 200 - Custom success 200 response sent
+12-Mar-24 16:10:02 - [INFO] - 127.0.0.1 - - [12/Mar/2024 16:10:02] "GET /api/v1/inbox/0 HTTP/1.1" 200 -
+12-Mar-24 16:10:26 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 16:10:26 - [INFO] -  * Restarting with stat
+12-Mar-24 16:10:27 - [INFO] - Development environment configured.
+12-Mar-24 16:10:27 - [INFO] - Message sent successfully.
+12-Mar-24 16:10:27 - [WARNING] -  * Debugger is active!
+12-Mar-24 16:10:27 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 16:10:32 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 16:10:32 - [INFO] -  * Restarting with stat
+12-Mar-24 16:13:36 - [INFO] - Development environment configured.
+12-Mar-24 16:13:36 - [INFO] - Message sent successfully.
+12-Mar-24 16:13:36 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+12-Mar-24 16:13:36 - [INFO] - [33mPress CTRL+C to quit[0m
+12-Mar-24 16:13:36 - [INFO] -  * Restarting with stat
+12-Mar-24 16:13:36 - [INFO] - Development environment configured.
+12-Mar-24 16:13:36 - [INFO] - Message sent successfully.
+12-Mar-24 16:13:36 - [WARNING] -  * Debugger is active!
+12-Mar-24 16:13:36 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 16:13:38 - [INFO] - All Messages found
+12-Mar-24 16:13:38 - [INFO] - 200 - Custom success 200 response sent
+12-Mar-24 16:13:38 - [INFO] - 127.0.0.1 - - [12/Mar/2024 16:13:38] "GET /api/v1/inbox/0 HTTP/1.1" 200 -
+12-Mar-24 16:14:07 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 16:14:07 - [INFO] -  * Restarting with stat
+12-Mar-24 16:14:07 - [INFO] - Development environment configured.
+12-Mar-24 16:14:07 - [INFO] - Message sent successfully.
+12-Mar-24 16:14:07 - [WARNING] -  * Debugger is active!
+12-Mar-24 16:14:07 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 16:14:14 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 16:14:15 - [INFO] -  * Restarting with stat
+12-Mar-24 16:14:15 - [INFO] - Development environment configured.
+12-Mar-24 16:14:15 - [INFO] - Message sent successfully.
+12-Mar-24 16:14:15 - [WARNING] -  * Debugger is active!
+12-Mar-24 16:14:15 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 16:14:17 - [INFO] - All Messages found
+12-Mar-24 16:14:17 - [INFO] - 200 - Custom success 200 response sent
+12-Mar-24 16:14:17 - [INFO] - 127.0.0.1 - - [12/Mar/2024 16:14:17] "GET /api/v1/inbox/0 HTTP/1.1" 200 -
+12-Mar-24 16:15:26 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 16:15:26 - [INFO] -  * Restarting with stat
+12-Mar-24 16:15:26 - [INFO] - Development environment configured.
+12-Mar-24 16:15:26 - [INFO] - Message sent successfully.
+12-Mar-24 16:15:26 - [WARNING] -  * Debugger is active!
+12-Mar-24 16:15:27 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 16:15:34 - [INFO] - All Messages found
+12-Mar-24 16:15:34 - [INFO] - 200 - Custom success 200 response sent
+12-Mar-24 16:15:34 - [INFO] - 127.0.0.1 - - [12/Mar/2024 16:15:34] "GET /api/v1/inbox/0 HTTP/1.1" 200 -
+12-Mar-24 16:16:05 - [INFO] - 127.0.0.1 - - [12/Mar/2024 16:16:05] "[33mGET /api/v1/delete/1 HTTP/1.1[0m" 404 -
+12-Mar-24 16:16:37 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 16:16:37 - [INFO] -  * Restarting with stat
+12-Mar-24 16:16:38 - [INFO] - Development environment configured.
+12-Mar-24 16:16:38 - [INFO] - Message sent successfully.
+12-Mar-24 16:16:38 - [WARNING] -  * Debugger is active!
+12-Mar-24 16:16:38 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 16:16:40 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 16:16:40 - [INFO] -  * Restarting with stat
+12-Mar-24 16:16:41 - [INFO] - Development environment configured.
+12-Mar-24 16:16:41 - [INFO] - Message sent successfully.
+12-Mar-24 16:16:41 - [WARNING] -  * Debugger is active!
+12-Mar-24 16:16:41 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 16:16:43 - [INFO] - 127.0.0.1 - - [12/Mar/2024 16:16:43] "[33mGET /api/v1/delete/1 HTTP/1.1[0m" 404 -
+12-Mar-24 16:17:02 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 16:17:02 - [INFO] -  * Restarting with stat
+12-Mar-24 16:17:02 - [INFO] - Development environment configured.
+12-Mar-24 16:17:02 - [INFO] - Message sent successfully.
+12-Mar-24 16:17:03 - [WARNING] -  * Debugger is active!
+12-Mar-24 16:17:03 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 16:18:43 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 16:18:43 - [INFO] -  * Restarting with stat
+12-Mar-24 16:18:43 - [INFO] - Development environment configured.
+12-Mar-24 16:18:43 - [INFO] - Message sent successfully.
+12-Mar-24 16:18:43 - [WARNING] -  * Debugger is active!
+12-Mar-24 16:18:43 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 16:18:53 - [INFO] - 127.0.0.1 - - [12/Mar/2024 16:18:53] "[33mGET /api/v1/delete/1 HTTP/1.1[0m" 404 -
+12-Mar-24 16:19:02 - [INFO] - 127.0.0.1 - - [12/Mar/2024 16:19:02] "[33mDELETE /api/v1/delete/1 HTTP/1.1[0m" 404 -
+12-Mar-24 16:19:09 - [INFO] - 127.0.0.1 - - [12/Mar/2024 16:19:09] "[33mDELETE /api/v1/1 HTTP/1.1[0m" 404 -
+12-Mar-24 16:19:11 - [INFO] - 127.0.0.1 - - [12/Mar/2024 16:19:11] "[33mDELETE /api/v1/1 HTTP/1.1[0m" 404 -
+12-Mar-24 16:19:16 - [INFO] - 404 - Provided used id does not exists. Please create account.
+12-Mar-24 16:19:16 - [INFO] - 127.0.0.1 - - [12/Mar/2024 16:19:16] "[33mDELETE /api/v1/inbox/1 HTTP/1.1[0m" 404 -
+12-Mar-24 16:19:45 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 16:19:45 - [INFO] -  * Restarting with stat
+12-Mar-24 16:19:46 - [INFO] - Development environment configured.
+12-Mar-24 16:19:46 - [INFO] - Message sent successfully.
+12-Mar-24 16:19:46 - [WARNING] -  * Debugger is active!
+12-Mar-24 16:19:46 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 16:19:48 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 16:19:48 - [INFO] -  * Restarting with stat
+12-Mar-24 16:19:48 - [INFO] - Development environment configured.
+12-Mar-24 16:19:49 - [INFO] - Message sent successfully.
+12-Mar-24 16:19:49 - [WARNING] -  * Debugger is active!
+12-Mar-24 16:19:49 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 16:19:57 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 16:19:57 - [INFO] -  * Restarting with stat
+12-Mar-24 16:19:57 - [INFO] - Development environment configured.
+12-Mar-24 16:19:57 - [INFO] - Message sent successfully.
+12-Mar-24 16:19:57 - [WARNING] -  * Debugger is active!
+12-Mar-24 16:19:57 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 16:20:05 - [INFO] - 127.0.0.1 - - [12/Mar/2024 16:20:05] "[35m[1mGET /api/v1/inbox/0 HTTP/1.1[0m" 500 -
+12-Mar-24 16:20:28 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 16:20:28 - [INFO] -  * Restarting with stat
+12-Mar-24 16:20:28 - [INFO] - Development environment configured.
+12-Mar-24 16:20:28 - [INFO] - Message sent successfully.
+12-Mar-24 16:20:28 - [WARNING] -  * Debugger is active!
+12-Mar-24 16:20:28 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 16:20:31 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 16:20:31 - [INFO] -  * Restarting with stat
+12-Mar-24 16:20:32 - [INFO] - Development environment configured.
+12-Mar-24 16:20:32 - [INFO] - Message sent successfully.
+12-Mar-24 16:20:32 - [WARNING] -  * Debugger is active!
+12-Mar-24 16:20:32 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 16:20:34 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 16:20:34 - [INFO] -  * Restarting with stat
+12-Mar-24 16:20:50 - [INFO] - Development environment configured.
+12-Mar-24 16:22:14 - [INFO] - Development environment configured.
+12-Mar-24 16:22:14 - [INFO] - Message sent successfully.
+12-Mar-24 16:22:14 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+12-Mar-24 16:22:14 - [INFO] - [33mPress CTRL+C to quit[0m
+12-Mar-24 16:22:14 - [INFO] -  * Restarting with stat
+12-Mar-24 16:22:15 - [INFO] - Development environment configured.
+12-Mar-24 16:22:15 - [INFO] - Message sent successfully.
+12-Mar-24 16:22:15 - [WARNING] -  * Debugger is active!
+12-Mar-24 16:22:15 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 16:22:17 - [INFO] - 127.0.0.1 - - [12/Mar/2024 16:22:17] "[35m[1mGET /api/v1/inbox/0 HTTP/1.1[0m" 500 -
+12-Mar-24 16:27:09 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 16:27:09 - [INFO] -  * Restarting with stat
+12-Mar-24 16:27:10 - [INFO] - Development environment configured.
+12-Mar-24 16:27:10 - [INFO] - Message sent successfully.
+12-Mar-24 16:27:10 - [WARNING] -  * Debugger is active!
+12-Mar-24 16:27:10 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 16:27:28 - [INFO] - 127.0.0.1 - - [12/Mar/2024 16:27:28] "[35m[1mGET /api/v1/inbox/0 HTTP/1.1[0m" 500 -
+12-Mar-24 16:28:04 - [INFO] - 127.0.0.1 - - [12/Mar/2024 16:28:04] "[35m[1mGET /api/v1/inbox/0 HTTP/1.1[0m" 500 -
+12-Mar-24 16:28:27 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 16:28:27 - [INFO] -  * Restarting with stat
+12-Mar-24 16:28:28 - [INFO] - Development environment configured.
+12-Mar-24 16:28:28 - [INFO] - Message sent successfully.
+12-Mar-24 16:28:28 - [WARNING] -  * Debugger is active!
+12-Mar-24 16:28:28 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 16:28:31 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 16:28:31 - [INFO] -  * Restarting with stat
+12-Mar-24 16:28:32 - [INFO] - Development environment configured.
+12-Mar-24 16:28:32 - [INFO] - Message sent successfully.
+12-Mar-24 16:28:32 - [WARNING] -  * Debugger is active!
+12-Mar-24 16:28:32 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 16:28:33 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 16:28:33 - [INFO] -  * Restarting with stat
+12-Mar-24 16:28:34 - [INFO] - Development environment configured.
+12-Mar-24 16:28:34 - [INFO] - Message sent successfully.
+12-Mar-24 16:28:34 - [WARNING] -  * Debugger is active!
+12-Mar-24 16:28:34 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 16:28:35 - [INFO] - 400 - User id is missing.
+12-Mar-24 16:28:35 - [INFO] - 127.0.0.1 - - [12/Mar/2024 16:28:35] "[31m[1mGET /api/v1/inbox/0 HTTP/1.1[0m" 400 -
+12-Mar-24 16:29:06 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 16:29:06 - [INFO] -  * Restarting with stat
+12-Mar-24 16:29:07 - [INFO] - Development environment configured.
+12-Mar-24 16:29:07 - [INFO] - Message sent successfully.
+12-Mar-24 16:29:07 - [WARNING] -  * Debugger is active!
+12-Mar-24 16:29:07 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 16:29:08 - [INFO] - All Messages found
+12-Mar-24 16:29:08 - [INFO] - 200 - Custom success 200 response sent
+12-Mar-24 16:29:08 - [INFO] - 127.0.0.1 - - [12/Mar/2024 16:29:08] "GET /api/v1/inbox/0 HTTP/1.1" 200 -
+12-Mar-24 16:31:09 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 16:31:09 - [INFO] -  * Restarting with stat
+12-Mar-24 16:31:10 - [INFO] - Development environment configured.
+12-Mar-24 16:31:10 - [INFO] - Message sent successfully.
+12-Mar-24 16:31:10 - [WARNING] -  * Debugger is active!
+12-Mar-24 16:31:10 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 16:31:12 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 16:31:13 - [INFO] -  * Restarting with stat
+12-Mar-24 16:31:13 - [INFO] - Development environment configured.
+12-Mar-24 16:31:13 - [INFO] - Message sent successfully.
+12-Mar-24 16:31:13 - [WARNING] -  * Debugger is active!
+12-Mar-24 16:31:13 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 16:31:14 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 16:31:14 - [INFO] -  * Restarting with stat
+12-Mar-24 16:31:46 - [INFO] - Development environment configured.
+12-Mar-24 16:31:47 - [INFO] - Message sent successfully.
+12-Mar-24 16:31:47 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+12-Mar-24 16:31:47 - [INFO] - [33mPress CTRL+C to quit[0m
+12-Mar-24 16:31:47 - [INFO] -  * Restarting with stat
+12-Mar-24 16:31:47 - [INFO] - Development environment configured.
+12-Mar-24 16:31:47 - [INFO] - Message sent successfully.
+12-Mar-24 16:31:47 - [WARNING] -  * Debugger is active!
+12-Mar-24 16:31:47 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 16:31:50 - [INFO] - 127.0.0.1 - - [12/Mar/2024 16:31:50] "[35m[1mGET /api/v1/inbox/0 HTTP/1.1[0m" 500 -
+12-Mar-24 16:31:58 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 16:31:59 - [INFO] -  * Restarting with stat
+12-Mar-24 16:31:59 - [INFO] - Development environment configured.
+12-Mar-24 16:31:59 - [INFO] - Message sent successfully.
+12-Mar-24 16:31:59 - [WARNING] -  * Debugger is active!
+12-Mar-24 16:31:59 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 16:32:02 - [INFO] - 400 - User id is missing.
+12-Mar-24 16:32:02 - [INFO] - 127.0.0.1 - - [12/Mar/2024 16:32:02] "[31m[1mGET /api/v1/inbox/0 HTTP/1.1[0m" 400 -
+12-Mar-24 16:32:10 - [INFO] - 127.0.0.1 - - [12/Mar/2024 16:32:10] "[35m[1mDELETE /api/v1/inbox/0 HTTP/1.1[0m" 500 -
+12-Mar-24 16:32:21 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 16:32:21 - [INFO] -  * Restarting with stat
+12-Mar-24 16:32:21 - [INFO] - Development environment configured.
+12-Mar-24 16:32:21 - [INFO] - Message sent successfully.
+12-Mar-24 16:32:21 - [WARNING] -  * Debugger is active!
+12-Mar-24 16:32:21 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 16:32:30 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 16:32:31 - [INFO] -  * Restarting with stat
+12-Mar-24 16:32:31 - [INFO] - Development environment configured.
+12-Mar-24 16:32:31 - [INFO] - Message sent successfully.
+12-Mar-24 16:32:31 - [WARNING] -  * Debugger is active!
+12-Mar-24 16:32:31 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 16:32:32 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 16:32:32 - [INFO] -  * Restarting with stat
+12-Mar-24 16:32:33 - [INFO] - Development environment configured.
+12-Mar-24 16:32:33 - [INFO] - Message sent successfully.
+12-Mar-24 16:32:33 - [WARNING] -  * Debugger is active!
+12-Mar-24 16:32:33 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 16:32:42 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 16:32:42 - [INFO] -  * Restarting with stat
+12-Mar-24 16:32:43 - [INFO] - Development environment configured.
+12-Mar-24 16:32:44 - [INFO] - Message sent successfully.
+12-Mar-24 16:32:44 - [WARNING] -  * Debugger is active!
+12-Mar-24 16:32:44 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 16:32:44 - [INFO] - 127.0.0.1 - - [12/Mar/2024 16:32:44] "[35m[1mDELETE /api/v1/inbox/0 HTTP/1.1[0m" 500 -
+12-Mar-24 16:32:49 - [INFO] - All Messages found
+12-Mar-24 16:32:49 - [INFO] - 200 - Custom success 200 response sent
+12-Mar-24 16:32:49 - [INFO] - 127.0.0.1 - - [12/Mar/2024 16:32:49] "GET /api/v1/inbox/0 HTTP/1.1" 200 -
+12-Mar-24 16:33:06 - [INFO] - 200 - Message Deleted!
+12-Mar-24 16:33:06 - [INFO] - 127.0.0.1 - - [12/Mar/2024 16:33:06] "DELETE /api/v1/inbox/0/1 HTTP/1.1" 200 -
+12-Mar-24 16:33:13 - [INFO] - All Messages found
+12-Mar-24 16:33:13 - [INFO] - 200 - Custom success 200 response sent
+12-Mar-24 16:33:13 - [INFO] - 127.0.0.1 - - [12/Mar/2024 16:33:13] "GET /api/v1/inbox/0 HTTP/1.1" 200 -
+12-Mar-24 16:33:30 - [INFO] - 127.0.0.1 - - [12/Mar/2024 16:33:30] "[35m[1mDELETE /api/v1/inbox/0/1 HTTP/1.1[0m" 500 -
+12-Mar-24 16:33:36 - [INFO] - 200 - Message Deleted!
+12-Mar-24 16:33:36 - [INFO] - 127.0.0.1 - - [12/Mar/2024 16:33:36] "DELETE /api/v1/inbox/0/2 HTTP/1.1" 200 -
+12-Mar-24 16:34:16 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 16:34:16 - [INFO] -  * Restarting with stat
+12-Mar-24 16:34:17 - [INFO] - Development environment configured.
+12-Mar-24 16:34:17 - [INFO] - Message sent successfully.
+12-Mar-24 16:34:17 - [WARNING] -  * Debugger is active!
+12-Mar-24 16:34:17 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 16:35:47 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 16:35:47 - [INFO] -  * Restarting with stat
+12-Mar-24 16:35:47 - [INFO] - Development environment configured.
+12-Mar-24 16:35:47 - [INFO] - Message sent successfully.
+12-Mar-24 16:35:47 - [WARNING] -  * Debugger is active!
+12-Mar-24 16:35:47 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 16:35:55 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 16:35:55 - [INFO] -  * Restarting with stat
+12-Mar-24 16:35:55 - [INFO] - Development environment configured.
+12-Mar-24 16:35:55 - [INFO] - Message sent successfully.
+12-Mar-24 16:35:55 - [WARNING] -  * Debugger is active!
+12-Mar-24 16:35:55 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 16:36:03 - [INFO] - 127.0.0.1 - - [12/Mar/2024 16:36:03] "[35m[1mDELETE /api/v1/inbox/0/2 HTTP/1.1[0m" 500 -
+12-Mar-24 16:37:49 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 16:37:49 - [INFO] -  * Restarting with stat
+12-Mar-24 16:38:28 - [INFO] - Development environment configured.
+12-Mar-24 16:38:28 - [INFO] - Message sent successfully.
+12-Mar-24 16:38:29 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+12-Mar-24 16:38:29 - [INFO] - [33mPress CTRL+C to quit[0m
+12-Mar-24 16:38:29 - [INFO] -  * Restarting with stat
+12-Mar-24 16:38:29 - [INFO] - Development environment configured.
+12-Mar-24 16:38:29 - [INFO] - Message sent successfully.
+12-Mar-24 16:38:29 - [WARNING] -  * Debugger is active!
+12-Mar-24 16:38:29 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 16:38:31 - [INFO] - 404 - Message does not exist!
+12-Mar-24 16:38:31 - [INFO] - 127.0.0.1 - - [12/Mar/2024 16:38:31] "[33mDELETE /api/v1/inbox/0/2 HTTP/1.1[0m" 404 -
+12-Mar-24 16:38:40 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 16:38:40 - [INFO] -  * Restarting with stat
+12-Mar-24 16:38:41 - [INFO] - Development environment configured.
+12-Mar-24 16:38:41 - [INFO] - Message sent successfully.
+12-Mar-24 16:38:41 - [WARNING] -  * Debugger is active!
+12-Mar-24 16:38:41 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 16:38:51 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 16:38:51 - [INFO] -  * Restarting with stat
+12-Mar-24 16:38:52 - [INFO] - Development environment configured.
+12-Mar-24 16:38:52 - [INFO] - Message sent successfully.
+12-Mar-24 16:38:52 - [WARNING] -  * Debugger is active!
+12-Mar-24 16:38:52 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 16:39:04 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 16:39:04 - [INFO] -  * Restarting with stat
+12-Mar-24 16:39:04 - [INFO] - Development environment configured.
+12-Mar-24 16:39:04 - [INFO] - Message sent successfully.
+12-Mar-24 16:39:04 - [WARNING] -  * Debugger is active!
+12-Mar-24 16:39:04 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 16:39:40 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 16:39:40 - [INFO] -  * Restarting with stat
+12-Mar-24 16:39:40 - [INFO] - Development environment configured.
+12-Mar-24 16:39:40 - [INFO] - Message sent successfully.
+12-Mar-24 16:39:40 - [WARNING] -  * Debugger is active!
+12-Mar-24 16:39:40 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 16:39:47 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 16:39:47 - [INFO] -  * Restarting with stat
+12-Mar-24 16:39:47 - [INFO] - Development environment configured.
+12-Mar-24 16:39:47 - [INFO] - Message sent successfully.
+12-Mar-24 16:39:47 - [WARNING] -  * Debugger is active!
+12-Mar-24 16:39:47 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 16:39:50 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 16:39:50 - [INFO] -  * Restarting with stat
+12-Mar-24 16:39:51 - [INFO] - Development environment configured.
+12-Mar-24 16:39:51 - [INFO] - Message sent successfully.
+12-Mar-24 16:39:51 - [WARNING] -  * Debugger is active!
+12-Mar-24 16:39:51 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 16:40:02 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 16:40:02 - [INFO] -  * Restarting with stat
+12-Mar-24 16:40:03 - [INFO] - Development environment configured.
+12-Mar-24 16:40:03 - [INFO] - Message sent successfully.
+12-Mar-24 16:40:03 - [WARNING] -  * Debugger is active!
+12-Mar-24 16:40:03 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 16:40:04 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 16:40:04 - [INFO] -  * Restarting with stat
+12-Mar-24 16:40:04 - [INFO] - Development environment configured.
+12-Mar-24 16:40:04 - [INFO] - Message sent successfully.
+12-Mar-24 16:40:04 - [WARNING] -  * Debugger is active!
+12-Mar-24 16:40:04 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 16:40:27 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/inbox_bp.py', reloading
+12-Mar-24 16:40:28 - [INFO] -  * Restarting with stat
+12-Mar-24 16:40:28 - [INFO] - Development environment configured.
+12-Mar-24 16:40:28 - [INFO] - Message sent successfully.
+12-Mar-24 16:40:28 - [WARNING] -  * Debugger is active!
+12-Mar-24 16:40:28 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 16:42:31 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/user_management_bp.py', reloading
+12-Mar-24 16:42:31 - [INFO] -  * Restarting with stat
+>>>>>>> e50b72fcd7da3be1bed2115d9f391a8dadb24d21
