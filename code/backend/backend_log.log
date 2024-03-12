@@ -1873,3 +1873,5 @@
 12-Mar-24 16:40:28 - [INFO] - Message sent successfully.
 12-Mar-24 16:40:28 - [WARNING] -  * Debugger is active!
 12-Mar-24 16:40:28 - [INFO] -  * Debugger PIN: 615-108-927
+12-Mar-24 16:42:31 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/user_management_bp.py', reloading
+12-Mar-24 16:42:31 - [INFO] -  * Restarting with stat
