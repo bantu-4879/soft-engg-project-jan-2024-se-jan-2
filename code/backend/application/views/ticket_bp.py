@@ -292,8 +292,8 @@ ticket_api = Api(ticket_bp)
 ticket_utils = TicketUtils()
 
 class TicketAPI(Resource):
-    @token_required
-    @users_required(users=["Student", "Staff", "Admin"])
+    # @token_required
+    # @users_required(users=["Student", "Staff", "Admin"])
     def get(self, ticket_id="", user_id=""):
         """
         Usage
@@ -332,9 +332,9 @@ class TicketAPI(Resource):
             else:
                 raise NotFoundError(status_msg="Ticket does not exists")
 
-    @token_required
-    @users_required(users=["Student"])
-    def post(self, user_id=""):
+    # @token_required
+    # @users_required(users=["Student"])
+    def post(self, user_id):
         """
         Usage
         -----
@@ -351,9 +351,10 @@ class TicketAPI(Resource):
         details = {
             "title": "",
             "description": "",
-            "priority": "",
-            "tags": "",
-            "status":"Open",
+            "ticket_priority": "",
+            "tag": "",
+            "ticket_status":"Open",
+            "solution_satisfaction":"False"
         }
 
         # check user_id
@@ -380,13 +381,14 @@ class TicketAPI(Resource):
                 if ticket_utils.is_blank(value):
                     value = ""
                 details[key] = value
+            print(details)
         except Exception as e:
             logger.error(
                 f"TicketAPI->post : Error occured while getting form data : {e}"
             )
             raise InternalServerError
         else:
-            if details["title"] == "" or details["tags"] == "":
+            if details["title"] == "" or details["tag"] == "":
                 raise BadRequest(
                     status_msg=f"Ticket title and at least one tag is required"
                 )
@@ -394,8 +396,18 @@ class TicketAPI(Resource):
             ticket_id = ticket_utils.generate_ticket_id(details["title"], user_id)
             details["ticket_id"] = ticket_id
             details["created_by"] = user_id
-            details["created_on"] = time_to_str(time.time())
-            ticket = Ticket(**details)
+            details["created_on"] = time_to_str(datetime.datetime.now())
+            ticket = Ticket(
+                id = details["ticket_id"],
+                title = details["title"],
+                description = details["description"],
+                ticket_priority = details["ticket_priority"],
+                tags_list = details["tag"],
+                ticket_status = "Open",
+                solution_satisfaction = False,
+                created_at = details["created_on"],
+                user_id = details["created_by"]
+            )
 
             try:
                 db.session.add(ticket)

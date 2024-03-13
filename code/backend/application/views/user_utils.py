@@ -3,6 +3,7 @@
 import os
 from flask import current_app as app
 import jwt
+import time
 import hashlib
 from application.common_utils import (
     convert_base64_to_img,
@@ -21,8 +22,8 @@ from datetime import datetime
 
 #datetime to the function
 
-def time_to_str(time):
-    return time.strftime("%Y-%m-%d%H:%M:%S")
+def time_to_str(timestamp):
+    return time.strftime("%Y-%m-%d %H:%M:%S", timestamp.timetuple())
 
 class UserUtils:
     def is_blank(self, string):
