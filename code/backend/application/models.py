@@ -105,16 +105,15 @@ class Inbox(db.Model):
     have_read = db.Column(db.Boolean)
     message_type = db.Column(db.String(100),nullable=False)
 
-class UserBadges(db.Model):
+class AssignBadge(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     user_id = db.Column(db.String(100), db.ForeignKey('user.id'))
-    badge_name=db.Column(db.String(100), nullable=False)
-    badge_picture_location = db.Column(db.String(200), nullable=False)
+    badge_name = db.Column(db.Integer, db.ForeignKey('badge.badge_name') )
     assigned_by = db.Column(db.String(100), db.ForeignKey('user.id'))
 
 class Badge(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    badge_name=db.Column(db.String(100), nullable=False)
+    badge_name=db.Column(db.String(100), nullable=False, unique=True)
     badge_picture_location = db.Column(db.String(200), nullable=False)
 
 class TicketData(db.Model):
@@ -126,7 +125,6 @@ class TicketData(db.Model):
     resolved_at = db.Column(db.String)
     closed_at= db.Column(db.String)
     reopened_at=db.Column(db.String)
-
 
 class DisciplinaryAction(db.Model):
     id = db.Column(db.Integer, primary_key=True)

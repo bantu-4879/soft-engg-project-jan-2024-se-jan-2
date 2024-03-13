@@ -7,7 +7,7 @@ from application.common_utils import (
 )
 from application.views.user_utils import UserUtils
 from application.responses import *
-from application.models import User, Ticket, Badge
+from application.models import User, Ticket, Badge, AssignBadge
 from application.globals import *
 from application.database import db
 
@@ -82,6 +82,28 @@ class UserManagementUtils(UserUtils):
         db.session.add(badge)
         db.session.commit()
 
+    def update_assign_badge_table(self, details: dict):
+        """
+        Usage
+        -----
+        Update AssignBadge table
+
+        Parameters
+        ----------
+        details : dict with badge and user details
+
+        Returns
+        -------
+        details
+
+        """
+        badge = AssignBadge(
+            badge_name = details["badge_name"],
+            user_id = details["user_id"]
+            )
+        db.session.add(badge)
+        db.session.commit()
+
     
 
 user_management_bp = Blueprint("user_management_utils", __name__)
@@ -89,6 +111,9 @@ user_management_api = Api(user_management_bp)
 user_management_util = UserManagementUtils()
 
 class BadgeAPI(Resource):
+
+    # @token_required
+    # @users_required(users=["Admin"])
     def post(self):
         """
         Usage
@@ -142,7 +167,9 @@ class BadgeAPI(Resource):
                 raise BadRequest(
                     status_msg="Cannot create Badge"
                 )
-            
+
+    # @token_required
+    # @users_required(users=["Admin"])       
     def delete(self,badge_id):
         """
         Delete a badge from the database.
@@ -175,7 +202,103 @@ class BadgeAPI(Resource):
             logger.error(f"Error occurred while deleting badge '{badge_id}': {e}")
             raise e
 
+class AssignBadgeAPI(Resource):
 
+    # @token_required
+    # @users_required(users=["Admin"])
+    def post(self):
+        """
+        Usage
+        -----
+        Create Badge
+
+        Parameters
+        ----------
+        form data sent with request
+        data format {
+                    'user_email':'',
+                    'badge_name':''
+                    }
+
+        Returns
+        -------
+        Status
+
+        """
+
+        details = {
+            "user_email":"",
+            "badge_name":"",
+        }
+
+        try:
+            form = request.get_json()
+            
+        except Exception as e:
+            logger.error(
+                f"AssignBadge->post : Error occured while getting form data : {e}"
+            )
+            raise InternalServerError
+        else:
+            for key in details:
+                value = form.get(key, "")
+                if user_management_util.is_blank(value):
+                    raise BadRequest(status_msg=f"{key} is empty or invalid")
+                else:
+                    details[key] = value
+
+            print(details)
+            if details:        
+                user = User.query.filter_by(email=details["user_email"]).first()
+                if user: 
+                    user_id = user.id
+                    details["user_id"] = user_id
+                    print (details)
+                    user_management_util.update_assign_badge_table(details=details)
+                
+                    logger.info("Badge Assigned")
+                    raise Success_200(
+                        status_msg="Badge Assigned Successfully"
+                    )
+
+            else:
+                raise BadRequest(
+                    status_msg="Cannot assign Badge"
+                )
+    
+    # @token_required
+    # @users_required(users=["Admin"])        
+    def delete(self,badge_assign_id):
+        """
+        Revoke a badge.
+
+        Parameters
+        ----------
+        badge_id : int
+            The id of the badge to be revoked.
+
+        Raises
+        ------
+        Exception
+            If the revoke fails for any reason.
+        """
+        try:
+            badge = AssignBadge.query.filter_by(id=badge_assign_id).first()
+            if badge:
+                db.session.delete(badge)
+                db.session.commit()
+                logger.info(f"Badge '{badge_assign_id}' revoked successfully.")
+                raise Success_200(
+                    status_msg="Badge Revoked Successfully."
+                )
+            else:
+                logger.warning(f"Badge '{badge_assign_id}' not found in the database.")
+                raise NotFoundError(
+                    status_msg="Badge Not Found"
+                )
+        except Exception as e:
+            logger.error(f"Error occurred while deleting badge '{badge_assign_id}': {e}")
+            raise e
 
 class UserManagementAPI(Resource):
     # @token_required
@@ -221,3 +344,4 @@ class UserManagementAPI(Resource):
 
 user_management_api.add_resource(UserManagementAPI, "/<string:user_id>/card")  
 user_management_api.add_resource(BadgeAPI, "/badge", "/badge/<int:badge_id>")
+user_management_api.add_resource(AssignBadgeAPI, "/assign/badge", "/assign/badge/<int:badge_assign_id>")
