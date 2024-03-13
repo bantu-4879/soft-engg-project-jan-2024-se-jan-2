@@ -1,6 +1,7 @@
 # --------------------  Imports  --------------------
 
 from flask import Flask
+from flask_migrate import Migrate
 from application.config import DevelopmentConfig, TestingConfig
 from application.database import db
 from application.logger import logger
@@ -32,6 +33,7 @@ def create_app(env_type="dev"):
         logger.info("Testing environment configured.")
 
     db.init_app(app)
+    migrate = Migrate(app, db)
 
     CORS(app, resources={r"/*": {"origins": "*"}})
 

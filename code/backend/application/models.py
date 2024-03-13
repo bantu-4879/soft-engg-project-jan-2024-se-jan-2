@@ -105,12 +105,17 @@ class Inbox(db.Model):
     have_read = db.Column(db.Boolean)
     message_type = db.Column(db.String(100),nullable=False)
 
-class StaffBadges(db.Model):
+class UserBadges(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     user_id = db.Column(db.String(100), db.ForeignKey('user.id'))
     badge_name=db.Column(db.String(100), nullable=False)
-    badge_picture_location = db.Column(db.String(200))
+    badge_picture_location = db.Column(db.String(200), nullable=False)
     assigned_by = db.Column(db.String(100), db.ForeignKey('user.id'))
+
+class Badges(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    badge_name=db.Column(db.String(100), nullable=False)
+    badge_picture_location = db.Column(db.String(200), nullable=False)
 
 class TicketData(db.Model):
     id = db.Column(db.Integer, primary_key=True)
