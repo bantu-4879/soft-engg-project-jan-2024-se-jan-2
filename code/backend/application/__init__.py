@@ -57,13 +57,13 @@ def create_app(env_type="dev"):
         app.app_context().push()
         print("the database is getting created.")
         role1=Role(
-            name="admin"
+            name="Admin"
         )
         role2=Role(
-            name="staff"
+            name="Staff"
         )
         role3=Role(
-            name="student"
+            name="Student"
         )
         db.session.add(role1)
         db.session.add(role2)
