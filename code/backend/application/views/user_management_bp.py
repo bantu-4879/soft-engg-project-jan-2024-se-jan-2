@@ -6,6 +6,7 @@ from application.common_utils import (
     users_required,
 )
 from application.views.user_utils import UserUtils
+from application.views.inbox_bp import post_message
 from application.responses import *
 from application.models import User, Ticket, Badge, AssignBadge
 from application.globals import *
@@ -104,7 +105,6 @@ class UserManagementUtils(UserUtils):
         db.session.add(badge)
         db.session.commit()
 
-    
 
 user_management_bp = Blueprint("user_management_utils", __name__)
 user_management_api = Api(user_management_bp)
@@ -257,6 +257,7 @@ class AssignBadgeAPI(Resource):
                     user_management_util.update_assign_badge_table(details=details)
                 
                     logger.info("Badge Assigned")
+                    post_message(user_id, "Congratulations! You've been awarded a new badge!", "inbox")
                     raise Success_200(
                         status_msg="Badge Assigned Successfully"
                     )
@@ -285,9 +286,11 @@ class AssignBadgeAPI(Resource):
         try:
             badge = AssignBadge.query.filter_by(id=badge_assign_id).first()
             if badge:
+                user_id = badge.user_id
                 db.session.delete(badge)
                 db.session.commit()
                 logger.info(f"Badge '{badge_assign_id}' revoked successfully.")
+                post_message(user_id, "Your badge has been revoked!", "inbox")
                 raise Success_200(
                     status_msg="Badge Revoked Successfully."
                 )
