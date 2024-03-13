@@ -7,7 +7,7 @@ from application.common_utils import (
 )
 from application.views.user_utils import UserUtils
 from application.responses import *
-from application.models import User, Ticket
+from application.models import User, Ticket, Badge
 from application.globals import *
 from application.database import db
 
@@ -17,8 +17,6 @@ from application.database import db
 class UserManagementUtils(UserUtils):
     def __init__(self, user_id=None):
         self.user_id = user_id
-
-
 
     def get_user_activity(self, user_id: str):
         """
@@ -61,12 +59,122 @@ class UserManagementUtils(UserUtils):
             db.session.commit()
         else:
             raise NotFoundError(status_msg="User does not exist.")
+        
+    def update_badge_table(self, details: dict):
+        """
+        Usage
+        -----
+        Update User table
+
+        Parameters
+        ----------
+        details : dict with user details
+
+        Returns
+        -------
+        details
+
+        """
+        badge = Badge(
+            badge_name = details["badge_name"],
+            badge_picture_location= details["badge_picture_location"]
+            )
+        db.session.add(badge)
+        db.session.commit()
 
     
 
 user_management_bp = Blueprint("user_management_utils", __name__)
 user_management_api = Api(user_management_bp)
 user_management_util = UserManagementUtils()
+
+class BadgeAPI(Resource):
+    def post(self):
+        """
+        Usage
+        -----
+        Create Badge
+
+        Parameters
+        ----------
+        form data sent with request
+        data format {
+                    'badge_name':'',
+                    'badge_picture_location':''
+                    }
+
+        Returns
+        -------
+        Status
+
+        """
+
+        details = {
+            "badge_name": "",
+            "badge_picture_location":"",
+        }
+
+        try:
+            form = request.get_json()
+            
+        except Exception as e:
+            logger.error(
+                f"Badge->post : Error occured while getting form data : {e}"
+            )
+            raise InternalServerError
+        else:
+            for key in details:
+                value = form.get(key, "")
+                if user_management_util.is_blank(value):
+                    raise BadRequest(status_msg=f"{key} is empty or invalid")
+                else:
+                    details[key] = value
+
+            if details:        
+                user_management_util.update_badge_table(details=details)
+            
+                logger.info("Badge Created")
+                raise Success_200(
+                    status_msg="Badge Created Successfully."
+                )
+
+            else:
+                raise BadRequest(
+                    status_msg="Cannot create Badge"
+                )
+            
+    def delete(self,badge_id):
+        """
+        Delete a badge from the database.
+
+        Parameters
+        ----------
+        badge_name : str
+            The id of the badge to be deleted.
+
+        Raises
+        ------
+        Exception
+            If the deletion fails for any reason.
+        """
+        try:
+            badge = Badge.query.filter_by(id=badge_id).first()
+            if badge:
+                db.session.delete(badge)
+                db.session.commit()
+                logger.info(f"Badge '{badge_id}' deleted successfully.")
+                raise Success_200(
+                    status_msg="Badge Deleted Successfully."
+                )
+            else:
+                logger.warning(f"Badge '{badge_id}' not found in the database.")
+                raise NotFoundError(
+                    status_msg="Badge Not Found"
+                )
+        except Exception as e:
+            logger.error(f"Error occurred while deleting badge '{badge_id}': {e}")
+            raise e
+
 
 
 class UserManagementAPI(Resource):
@@ -111,4 +219,5 @@ class UserManagementAPI(Resource):
             else:
                 raise NotFoundError(status_msg="User does not exists.")
 
-user_management_api.add_resource(UserManagementAPI, "/<string:user_id>/card")  # path is /api/v1/user-management
+user_management_api.add_resource(UserManagementAPI, "/<string:user_id>/card")  
+user_management_api.add_resource(BadgeAPI, "/badge", "/badge/<int:badge_id>")

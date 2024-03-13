@@ -112,7 +112,7 @@ class UserBadges(db.Model):
     badge_picture_location = db.Column(db.String(200), nullable=False)
     assigned_by = db.Column(db.String(100), db.ForeignKey('user.id'))
 
-class Badges(db.Model):
+class Badge(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     badge_name=db.Column(db.String(100), nullable=False)
     badge_picture_location = db.Column(db.String(200), nullable=False)
