@@ -48,7 +48,6 @@ class Ticket(db.Model):
     solution = db.Column(db.String(2000))
     thread_link = db.Column(db.String(500))
     privacy=db.Column(db.Boolean, default=False, nullable=False)
-    created_at = db.Column(db.DateTime,nullable=False)
     created_at = db.Column(db.String,nullable=False)
     resolved_by = db.Column(db.String(100), db.ForeignKey('user.id'),default=0,nullable=False)
     solution_satisfaction = db.Column(db.Boolean,nullable=False)
@@ -113,7 +112,7 @@ class AssignBadge(db.Model):
 
 class Badge(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    badge_name=db.Column(db.String(100), nullable=False, unique=True)
+    badge_name=db.Column(db.String(100), nullable=False, unique=True) 
     badge_picture_location = db.Column(db.String(200), nullable=False)
 
 class TicketData(db.Model):

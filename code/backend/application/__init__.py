@@ -12,7 +12,7 @@ from application.views.user_management_bp import user_management_bp
 # from application.views import support_bp
 # from application.views import admin_bp
 # from application.views import faq_bp
-# from application.views import ticket_bp
+from application.views.ticket_bp import ticket_bp
 from application.views.inbox_bp import inbox_bp
 from flask_cors import CORS
 from application.models import *
@@ -33,7 +33,7 @@ def create_app(env_type="dev"):
         logger.info("Testing environment configured.")
 
     db.init_app(app)
-    migrate = Migrate(app, db)
+    migrate = Migrate(app, db, render_as_batch=True)
 
     CORS(app, resources={r"/*": {"origins": "*"}})
 
@@ -41,7 +41,7 @@ def create_app(env_type="dev"):
     # app.register_blueprint(student_bp, url_prefix=f"/api/{API_VERSION}/student") --> 
     # app.register_blueprint(support_bp, url_prefix=f"/api/{API_VERSION}/support") --> 
     # app.register_blueprint(admin_bp, url_prefix=f"/api/{API_VERSION}/admin") -->
-    # app.register_blueprint(ticket_bp, url_prefix=f"/api/{API_VERSION}/ticket") -->
+    app.register_blueprint(ticket_bp, url_prefix=f"/api/{API_VERSION}/ticket") 
     # app.register_blueprint(faq_bp, url_prefix=f"/api/{API_VERSION}/faq") --> 
     app.register_blueprint(user_management_bp,url_prefix=f"/api/{API_VERSION}/management")
     app.register_blueprint(inbox_bp, url_prefix=f"/api/{API_VERSION}/inbox")
