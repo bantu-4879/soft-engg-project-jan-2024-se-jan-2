@@ -53,7 +53,7 @@ class Ticket(db.Model):
     solution_satisfaction = db.Column(db.Boolean,nullable=False)
     comments = db.Column(db.String(500))
     ticket_status=db.Column(db.String(100),nullable=False)
-    ticket_priority = db.Column(db.Float)
+    ticket_priority = db.Column(db.Float)  ## Why float??? 
     tags_list=db.Column(db.String)  #list of tags 
     #tags = db.relationship('TicketTags',backref='tickets',lazy=True) #tags related to the ticket - many - many relationship
     votes = db.relationship('VoteTable', backref='ticket',uselist=True) #The votes and who votes one - many relationship
@@ -107,7 +107,7 @@ class Inbox(db.Model):
 class AssignBadge(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     user_id = db.Column(db.String(100), db.ForeignKey('user.id'))
-    badge_name = db.Column(db.Integer, db.ForeignKey('badge.badge_name') )
+    badge_name = db.Column(db.Integer, db.ForeignKey('badge.badge_name') ) # should this be integer or string // not compatible with badge class?
     assigned_by = db.Column(db.String(100), db.ForeignKey('user.id'))
 
 class Badge(db.Model):
