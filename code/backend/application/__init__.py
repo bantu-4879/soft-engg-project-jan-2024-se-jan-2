@@ -8,9 +8,9 @@ from application.logger import logger
 from application.globals import API_VERSION
 from application.views.auth_bp import auth_bp
 from application.views.user_management_bp import user_management_bp
-# from application.views import student_bp
-# from application.views import support_bp
-# from application.views import admin_bp
+from application.views.student_bp import student_bp
+from application.views.staff_bp import staff_bp
+from application.views.admin_bp import admin_bp
 # from application.views import faq_bp
 from application.views.ticket_bp import ticket_bp
 from application.views.inbox_bp import inbox_bp
@@ -38,9 +38,9 @@ def create_app(env_type="dev"):
     CORS(app, resources={r"/*": {"origins": "*"}})
 
     app.register_blueprint(auth_bp, url_prefix=f"/api/{API_VERSION}/auth") 
-    # app.register_blueprint(student_bp, url_prefix=f"/api/{API_VERSION}/student") --> 
-    # app.register_blueprint(support_bp, url_prefix=f"/api/{API_VERSION}/support") --> 
-    # app.register_blueprint(admin_bp, url_prefix=f"/api/{API_VERSION}/admin") -->
+    app.register_blueprint(student_bp, url_prefix=f"/api/{API_VERSION}/student")  
+    app.register_blueprint(staff_bp, url_prefix=f"/api/{API_VERSION}/staff") 
+    app.register_blueprint(admin_bp, url_prefix=f"/api/{API_VERSION}/admin") 
     app.register_blueprint(ticket_bp, url_prefix=f"/api/{API_VERSION}/ticket") 
     # app.register_blueprint(faq_bp, url_prefix=f"/api/{API_VERSION}/faq") --> 
     app.register_blueprint(user_management_bp,url_prefix=f"/api/{API_VERSION}/management")

@@ -13,24 +13,24 @@ from application.globals import *
 # --------------------  Code  --------------------
 
 
-class SupportUtils(UserUtils):
+class StaffUtils(UserUtils):
     def __init__(self, user_id=None):
         self.user_id = user_id
 
 
-support_bp = Blueprint("staff_bp", __name__)
-support_api = Api(support_bp)
-support_util = SupportUtils()
+staff_bp = Blueprint("staff_bp", __name__)
+staff_api = Api(staff_bp)
+staff_util = StaffUtils()
 
 
-class SupportAPI(Resource):
+class StaffAPI(Resource):
     @token_required
     @users_required(users=["Staff"])
     def get(self, user_id):
         """
         Usage
         -----
-        Get a details of support team member from user_id
+        Get a details of staff team member from user_id
 
         Parameters
         ----------
@@ -41,7 +41,7 @@ class SupportAPI(Resource):
         details
 
         """
-        if support_util.is_blank(user_id):
+        if staff_util.is_blank(user_id):
             raise BadRequest(status_msg="User id is missing.")
 
         # check if user exists
@@ -49,7 +49,7 @@ class SupportAPI(Resource):
             user = User.query.filter_by(id=user_id).first()
         except Exception as e:
             logger.error(
-                f"SupportAPI->get : Error occured while fetching support data : {e}"
+                f"staffAPI->get : Error occured while fetching staff data : {e}"
             )
             raise InternalServerError
         else:
@@ -61,13 +61,13 @@ class SupportAPI(Resource):
                     n_total_unresolved_tickets = Ticket.query.filter_by(
                         ticket_status="pending"
                     ).count()
-                    support_dict = support_util.convert_user_data_to_dict(user)
-                    support_dict["n_tickets_resolved"] = n_tickets_resolved
-                    support_dict[
+                    staff_dict = staff_util.convert_user_data_to_dict(user)
+                    staff_dict["n_tickets_resolved"] = n_tickets_resolved
+                    staff_dict[
                         "n_total_unresolved_tickets"
                     ] = n_total_unresolved_tickets
 
-                    return success_200_custom(data=support_dict)
+                    return success_200_custom(data=staff_dict)
                 else:
                     raise BadRequest(status_msg="User must be a support staff.")
             else:
@@ -96,13 +96,13 @@ class SupportAPI(Resource):
             form = request.get_json()
         except Exception as e:
             logger.error(
-                f"SupportAPI->put : Error occured while getting form data : {e}"
+                f"StaffAPI->put : Error occured while getting form data : {e}"
             )
             raise InternalServerError
         else:
-            support_util.update_user_profile_data(user_id, form)
+            staff_util.update_user_profile_data(user_id, form)
 
 
-support_api.add_resource(SupportAPI, "/<string:user_id>")  # path is /api/v1/support
+staff_api.add_resource(StaffAPI, "/<string:user_id>")  # path is /api/v1/support
 
 # --------------------  END  --------------------
