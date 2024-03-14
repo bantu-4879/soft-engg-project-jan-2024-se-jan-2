@@ -107,7 +107,7 @@ class Inbox(db.Model):
 class AssignBadge(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     user_id = db.Column(db.String(100), db.ForeignKey('user.id'))
-    badge_name = db.Column(db.Integer, db.ForeignKey('badge.badge_name') )
+    badge_name = db.Column(db.String(100), db.ForeignKey('badge.badge_name') )
     assigned_by = db.Column(db.String(100), db.ForeignKey('user.id'))
 
 class Badge(db.Model):
