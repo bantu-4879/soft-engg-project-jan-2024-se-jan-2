@@ -3406,3 +3406,193 @@
 13-Mar-24 22:25:00 - [INFO] -  * Debugger PIN: 389-030-203
 13-Mar-24 22:26:01 - [INFO] - 200 - Custom success 200 response sent
 13-Mar-24 22:26:01 - [INFO] - 127.0.0.1 - - [13/Mar/2024 22:26:01] "GET /api/v2/ticket/004bfc68cfef180e37b6c4b540d1e719/23463b99b62a72f26ed677cc556c44e8 HTTP/1.1" 200 -
+14-Mar-24 13:59:43 - [INFO] - Development environment configured.
+14-Mar-24 13:59:43 - [INFO] - Message sent successfully.
+14-Mar-24 13:59:43 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+14-Mar-24 13:59:43 - [INFO] - [33mPress CTRL+C to quit[0m
+14-Mar-24 13:59:43 - [INFO] -  * Restarting with stat
+14-Mar-24 13:59:44 - [INFO] - Development environment configured.
+14-Mar-24 13:59:44 - [INFO] - Message sent successfully.
+14-Mar-24 13:59:44 - [WARNING] -  * Debugger is active!
+14-Mar-24 13:59:44 - [INFO] -  * Debugger PIN: 145-495-166
+14-Mar-24 14:18:11 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\ticket_bp.py', reloading
+14-Mar-24 14:18:11 - [INFO] -  * Restarting with stat
+14-Mar-24 14:18:12 - [INFO] - Development environment configured.
+14-Mar-24 14:18:13 - [INFO] - Message sent successfully.
+14-Mar-24 14:18:13 - [WARNING] -  * Debugger is active!
+14-Mar-24 14:18:13 - [INFO] -  * Debugger PIN: 145-495-166
+14-Mar-24 14:19:04 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\ticket_bp.py', reloading
+14-Mar-24 14:19:04 - [INFO] -  * Restarting with stat
+14-Mar-24 14:19:05 - [INFO] - Development environment configured.
+14-Mar-24 14:19:05 - [INFO] - Message sent successfully.
+14-Mar-24 14:19:05 - [WARNING] -  * Debugger is active!
+14-Mar-24 14:19:05 - [INFO] -  * Debugger PIN: 145-495-166
+14-Mar-24 14:19:21 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\ticket_bp.py', reloading
+14-Mar-24 14:19:21 - [INFO] -  * Restarting with stat
+14-Mar-24 14:19:22 - [INFO] - Development environment configured.
+14-Mar-24 14:19:22 - [INFO] - Message sent successfully.
+14-Mar-24 14:19:22 - [WARNING] -  * Debugger is active!
+14-Mar-24 14:19:22 - [INFO] -  * Debugger PIN: 145-495-166
+14-Mar-24 14:19:47 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\ticket_bp.py', reloading
+14-Mar-24 14:19:47 - [INFO] -  * Restarting with stat
+14-Mar-24 14:19:48 - [INFO] - Development environment configured.
+14-Mar-24 14:19:48 - [INFO] - Message sent successfully.
+14-Mar-24 14:19:48 - [WARNING] -  * Debugger is active!
+14-Mar-24 14:19:48 - [INFO] -  * Debugger PIN: 145-495-166
+14-Mar-24 14:20:19 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\ticket_bp.py', reloading
+14-Mar-24 14:20:19 - [INFO] -  * Restarting with stat
+14-Mar-24 14:20:21 - [INFO] - Development environment configured.
+14-Mar-24 14:20:21 - [INFO] - Message sent successfully.
+14-Mar-24 14:20:21 - [WARNING] -  * Debugger is active!
+14-Mar-24 14:20:21 - [INFO] -  * Debugger PIN: 145-495-166
+14-Mar-24 14:20:36 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\ticket_bp.py', reloading
+14-Mar-24 14:20:36 - [INFO] -  * Restarting with stat
+14-Mar-24 14:20:37 - [INFO] - Development environment configured.
+14-Mar-24 14:20:37 - [INFO] - Message sent successfully.
+14-Mar-24 14:20:37 - [WARNING] -  * Debugger is active!
+14-Mar-24 14:20:37 - [INFO] -  * Debugger PIN: 145-495-166
+14-Mar-24 14:20:50 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\ticket_bp.py', reloading
+14-Mar-24 14:20:50 - [INFO] -  * Restarting with stat
+14-Mar-24 14:20:51 - [INFO] - Development environment configured.
+14-Mar-24 14:20:51 - [INFO] - Message sent successfully.
+14-Mar-24 14:20:51 - [WARNING] -  * Debugger is active!
+14-Mar-24 14:20:51 - [INFO] -  * Debugger PIN: 145-495-166
+14-Mar-24 14:21:10 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\ticket_bp.py', reloading
+14-Mar-24 14:21:11 - [INFO] -  * Restarting with stat
+14-Mar-24 14:21:12 - [INFO] - Development environment configured.
+14-Mar-24 14:21:12 - [INFO] - Message sent successfully.
+14-Mar-24 14:21:12 - [WARNING] -  * Debugger is active!
+14-Mar-24 14:21:12 - [INFO] -  * Debugger PIN: 145-495-166
+14-Mar-24 14:21:37 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\ticket_bp.py', reloading
+14-Mar-24 14:21:37 - [INFO] -  * Restarting with stat
+14-Mar-24 14:21:39 - [INFO] - Development environment configured.
+14-Mar-24 14:21:39 - [INFO] - Message sent successfully.
+14-Mar-24 14:21:39 - [WARNING] -  * Debugger is active!
+14-Mar-24 14:21:39 - [INFO] -  * Debugger PIN: 145-495-166
+14-Mar-24 14:22:04 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\ticket_bp.py', reloading
+14-Mar-24 14:22:04 - [INFO] -  * Restarting with stat
+14-Mar-24 14:22:05 - [INFO] - Development environment configured.
+14-Mar-24 14:22:05 - [INFO] - Message sent successfully.
+14-Mar-24 14:22:05 - [WARNING] -  * Debugger is active!
+14-Mar-24 14:22:05 - [INFO] -  * Debugger PIN: 145-495-166
+14-Mar-24 14:22:12 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\ticket_bp.py', reloading
+14-Mar-24 14:22:12 - [INFO] -  * Restarting with stat
+14-Mar-24 14:22:13 - [INFO] - Development environment configured.
+14-Mar-24 14:22:13 - [INFO] - Message sent successfully.
+14-Mar-24 14:22:13 - [WARNING] -  * Debugger is active!
+14-Mar-24 14:22:13 - [INFO] -  * Debugger PIN: 145-495-166
+14-Mar-24 14:22:34 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\ticket_bp.py', reloading
+14-Mar-24 14:22:34 - [INFO] -  * Restarting with stat
+14-Mar-24 14:22:35 - [INFO] - Development environment configured.
+14-Mar-24 14:22:35 - [INFO] - Message sent successfully.
+14-Mar-24 14:22:35 - [WARNING] -  * Debugger is active!
+14-Mar-24 14:22:35 - [INFO] -  * Debugger PIN: 145-495-166
+14-Mar-24 14:25:11 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\ticket_bp.py', reloading
+14-Mar-24 14:25:11 - [INFO] -  * Restarting with stat
+14-Mar-24 14:25:12 - [INFO] - Development environment configured.
+14-Mar-24 14:25:12 - [INFO] - Message sent successfully.
+14-Mar-24 14:25:12 - [WARNING] -  * Debugger is active!
+14-Mar-24 14:25:12 - [INFO] -  * Debugger PIN: 145-495-166
+14-Mar-24 14:25:16 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\ticket_bp.py', reloading
+14-Mar-24 14:25:17 - [INFO] -  * Restarting with stat
+14-Mar-24 14:25:18 - [INFO] - Development environment configured.
+14-Mar-24 14:25:18 - [INFO] - Message sent successfully.
+14-Mar-24 14:25:18 - [WARNING] -  * Debugger is active!
+14-Mar-24 14:25:18 - [INFO] -  * Debugger PIN: 145-495-166
+14-Mar-24 14:28:03 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\ticket_bp.py', reloading
+14-Mar-24 14:28:03 - [INFO] -  * Restarting with stat
+14-Mar-24 14:28:04 - [INFO] - Development environment configured.
+14-Mar-24 14:28:04 - [INFO] - Message sent successfully.
+14-Mar-24 14:28:04 - [WARNING] -  * Debugger is active!
+14-Mar-24 14:28:04 - [INFO] -  * Debugger PIN: 145-495-166
+14-Mar-24 14:28:16 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\ticket_bp.py', reloading
+14-Mar-24 14:28:16 - [INFO] -  * Restarting with stat
+14-Mar-24 14:28:17 - [INFO] - Development environment configured.
+14-Mar-24 14:28:17 - [INFO] - Message sent successfully.
+14-Mar-24 14:28:17 - [WARNING] -  * Debugger is active!
+14-Mar-24 14:28:17 - [INFO] -  * Debugger PIN: 145-495-166
+14-Mar-24 14:34:09 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\ticket_bp.py', reloading
+14-Mar-24 14:34:10 - [INFO] -  * Restarting with stat
+14-Mar-24 14:34:11 - [INFO] - Development environment configured.
+14-Mar-24 14:34:11 - [INFO] - Message sent successfully.
+14-Mar-24 14:34:11 - [WARNING] -  * Debugger is active!
+14-Mar-24 14:34:11 - [INFO] -  * Debugger PIN: 145-495-166
+14-Mar-24 14:34:40 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\ticket_bp.py', reloading
+14-Mar-24 14:34:41 - [INFO] -  * Restarting with stat
+14-Mar-24 14:34:41 - [INFO] - Development environment configured.
+14-Mar-24 14:34:41 - [INFO] - Message sent successfully.
+14-Mar-24 14:34:41 - [WARNING] -  * Debugger is active!
+14-Mar-24 14:34:41 - [INFO] -  * Debugger PIN: 145-495-166
+14-Mar-24 14:34:48 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\ticket_bp.py', reloading
+14-Mar-24 14:34:48 - [INFO] -  * Restarting with stat
+14-Mar-24 14:34:49 - [INFO] - Development environment configured.
+14-Mar-24 14:34:49 - [INFO] - Message sent successfully.
+14-Mar-24 14:34:49 - [WARNING] -  * Debugger is active!
+14-Mar-24 14:34:49 - [INFO] -  * Debugger PIN: 145-495-166
+14-Mar-24 14:35:36 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\ticket_bp.py', reloading
+14-Mar-24 14:35:36 - [INFO] -  * Restarting with stat
+14-Mar-24 14:35:37 - [INFO] - Development environment configured.
+14-Mar-24 14:35:37 - [INFO] - Message sent successfully.
+14-Mar-24 14:35:37 - [WARNING] -  * Debugger is active!
+14-Mar-24 14:35:37 - [INFO] -  * Debugger PIN: 145-495-166
+14-Mar-24 14:35:44 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\ticket_bp.py', reloading
+14-Mar-24 14:35:45 - [INFO] -  * Restarting with stat
+14-Mar-24 14:35:46 - [INFO] - Development environment configured.
+14-Mar-24 14:35:46 - [INFO] - Message sent successfully.
+14-Mar-24 14:35:46 - [WARNING] -  * Debugger is active!
+14-Mar-24 14:35:46 - [INFO] -  * Debugger PIN: 145-495-166
+14-Mar-24 14:48:46 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\ticket_bp.py', reloading
+14-Mar-24 14:48:46 - [INFO] -  * Restarting with stat
+14-Mar-24 14:48:47 - [INFO] - Development environment configured.
+14-Mar-24 14:48:47 - [INFO] - Message sent successfully.
+14-Mar-24 14:48:47 - [WARNING] -  * Debugger is active!
+14-Mar-24 14:48:47 - [INFO] -  * Debugger PIN: 145-495-166
+14-Mar-24 14:49:24 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\ticket_bp.py', reloading
+14-Mar-24 14:49:25 - [INFO] -  * Restarting with stat
+14-Mar-24 14:49:26 - [INFO] - Development environment configured.
+14-Mar-24 14:49:26 - [INFO] - Message sent successfully.
+14-Mar-24 14:49:26 - [WARNING] -  * Debugger is active!
+14-Mar-24 14:49:26 - [INFO] -  * Debugger PIN: 145-495-166
+14-Mar-24 14:50:34 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\ticket_bp.py', reloading
+14-Mar-24 14:50:35 - [INFO] -  * Restarting with stat
+14-Mar-24 14:50:36 - [INFO] - Development environment configured.
+14-Mar-24 14:50:36 - [INFO] - Message sent successfully.
+14-Mar-24 14:50:36 - [WARNING] -  * Debugger is active!
+14-Mar-24 14:50:36 - [INFO] -  * Debugger PIN: 145-495-166
+14-Mar-24 14:51:05 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\ticket_bp.py', reloading
+14-Mar-24 14:51:05 - [INFO] -  * Restarting with stat
+14-Mar-24 14:57:14 - [INFO] - Development environment configured.
+14-Mar-24 14:57:14 - [INFO] - Message sent successfully.
+14-Mar-24 14:57:14 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+14-Mar-24 14:57:14 - [INFO] - [33mPress CTRL+C to quit[0m
+14-Mar-24 14:57:14 - [INFO] -  * Restarting with stat
+14-Mar-24 14:57:15 - [INFO] - Development environment configured.
+14-Mar-24 14:57:15 - [INFO] - Message sent successfully.
+14-Mar-24 14:57:15 - [WARNING] -  * Debugger is active!
+14-Mar-24 14:57:15 - [INFO] -  * Debugger PIN: 145-495-166
+14-Mar-24 14:57:35 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\ticket_bp.py', reloading
+14-Mar-24 14:57:35 - [INFO] -  * Restarting with stat
+14-Mar-24 14:57:36 - [INFO] - Development environment configured.
+14-Mar-24 14:57:36 - [INFO] - Message sent successfully.
+14-Mar-24 14:57:36 - [WARNING] -  * Debugger is active!
+14-Mar-24 14:57:36 - [INFO] -  * Debugger PIN: 145-495-166
+14-Mar-24 14:57:51 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\ticket_bp.py', reloading
+14-Mar-24 14:57:51 - [INFO] -  * Restarting with stat
+14-Mar-24 14:57:52 - [INFO] - Development environment configured.
+14-Mar-24 14:57:52 - [INFO] - Message sent successfully.
+14-Mar-24 14:57:52 - [WARNING] -  * Debugger is active!
+14-Mar-24 14:57:52 - [INFO] -  * Debugger PIN: 145-495-166
+14-Mar-24 14:58:17 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\ticket_bp.py', reloading
+14-Mar-24 14:58:17 - [INFO] -  * Restarting with stat
+14-Mar-24 15:06:21 - [INFO] - Development environment configured.
+14-Mar-24 15:06:21 - [INFO] - Message sent successfully.
+14-Mar-24 15:06:21 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+14-Mar-24 15:06:21 - [INFO] - [33mPress CTRL+C to quit[0m
+14-Mar-24 15:06:21 - [INFO] -  * Restarting with stat
+14-Mar-24 15:06:22 - [INFO] - Development environment configured.
+14-Mar-24 15:06:22 - [INFO] - Message sent successfully.
+14-Mar-24 15:06:22 - [WARNING] -  * Debugger is active!
+14-Mar-24 15:06:22 - [INFO] -  * Debugger PIN: 145-495-166

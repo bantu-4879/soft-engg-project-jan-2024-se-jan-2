@@ -269,16 +269,14 @@ class TicketUtils(UserUtils):
         return voter_list
     
 
-    def get_ticket_comments(self,ticket):
-        ticket_id=ticket["ticket_id"]
+    def get_ticket_comments(self,ticket_id):
         ticket=Ticket.query.filter_by(id=ticket_id).first()
         comments=[]
         for comment in ticket.comments:
             comment.append(comment)
         return comments
     
-    def get_ticket_data(self,ticket):
-        ticket_id=ticket["ticket_id"]
+    def get_ticket_data(self,ticket_id):
         ticket_data=TicketData.query.filter_by(ticket_id=ticket_id).all()
         ticket_data_list=[]
         for each_data in ticket_data:
@@ -332,8 +330,8 @@ class TicketAPI(Resource):
             else:
                 raise NotFoundError(status_msg="Ticket does not exists")
 
-    # @token_required
-    # @users_required(users=["Student"])
+    @token_required
+    @users_required(users=["Student"])
     def post(self, user_id):
         """
         Usage
@@ -408,9 +406,14 @@ class TicketAPI(Resource):
                 created_at = details["created_on"],
                 user_id = details["created_by"]
             )
+            ticket_data=TicketData(
+                ticket_id=details["ticket_id"],
+                opened_at=time_to_str(datetime.datetime.now())
+            )
 
             try:
                 db.session.add(ticket)
+                db.session.add(ticket_data)
                 db.session.commit()
             except Exception as e:
                 logger.error(
@@ -428,8 +431,8 @@ class TicketAPI(Resource):
                 )
                 raise Success_200(status_msg=f"Ticket created successfully. {message}")
 
-    # @token_required
-    # @users_required(users=["Student", "Staff"])
+    @token_required
+    @users_required(users=["Student", "Staff"])
     def put(self, ticket_id="", user_id=""):
         """
         Usage
@@ -439,6 +442,7 @@ class TicketAPI(Resource):
         Student who created a ticket can update : title, description, attachments, tags, priority
         Student who did not create : can vote a ticket
         Support can update : solution and attachment, status
+        update ticket status to inProgress and update ticket data associated
 
         Parameters
         ----------
@@ -456,6 +460,7 @@ class TicketAPI(Resource):
             "status": "",
             "votes": 0,
             "solution": "",
+            "inProgress":" ",
         }
 
         
@@ -498,18 +503,19 @@ class TicketAPI(Resource):
             if ticket.ticket_status == "Resolved":
                 raise BadRequest(status_msg=f"Resolved tickets can't be edited.")
 
-            role = user.role
+            role = user.role.name
 
             if role == "Staff" or (
-                role == "Student" and user_id == ticket.created_by
+                role == "Student" and user_id == ticket.user_id
             ):
                 # add attachments now
                 status, message = ticket_utils.save_ticket_attachments(
                     attachments, ticket_id, user_id, operation="update_ticket"
                 )
+                #solution 
 
-            if role == "Admin":   #it woould be "Student" but for the time being changed it to Admin
-                if user_id == ticket.created_by:
+            if role == "Student":   #it would be "Student" but for the time being changed it to Admin
+                if user_id == ticket.user_id:
                     # student is creator of the ticket
                     if details["title"] == "" or details["tags"] == "":
                         raise BadRequest(
@@ -521,11 +527,11 @@ class TicketAPI(Resource):
                     ticket.tags_list = details["tags"]
                     priority = details["priority"]
                     ticket.ticket_status=details["status"]
-                    if(priority=="Low"):
+                    if(priority=="low"):
                         ticket.ticket_priority=0.15
-                    if(priority=="Medium"):
+                    if(priority=="medium"):
                         ticket.ticket_priority=0.50
-                    if(priority=="High"):
+                    if(priority=="high"):
                         ticket.ticket_priority=0.75
                     db.session.add(ticket)
                     db.session.commit()
@@ -550,16 +556,25 @@ class TicketAPI(Resource):
                         raise Success_200(status_msg="Successfully upvoted ticket.")
 
             if role == "Staff":
-                sol = details["Solution"]
-                if ticket_utils.is_blank(sol):
-                    raise BadRequest(status_msg="Solution can not be empty")
-                else:
-                    ticket.solution = sol
-                    ticket.ticket_status = "Resolved"
-                    ticket.resolved_by = user_id
-                    #ticket.resolved_on = time_to_str(time.time())
-                    db.session.add(ticket)
+                ticket_data=TicketData.query.filter_by(ticket_id=ticket.id).first()
+
+                if(details["inProgress"] == "yes"):
+                    ticket_data.inProgress=time_to_str(datetime.datetime.now())
+                    db.session.add(ticket_data)
                     db.session.commit()
+            
+                elif(details["inProgress"]=="no"):
+                    sol = details["Solution"]
+                    if ticket_utils.is_blank(sol):
+                        raise BadRequest(status_msg="Solution can not be empty")
+                    else:
+                        ticket.solution = sol
+                        ticket.ticket_status = "Resolved"
+                        ticket.resolved_by = user_id
+                        ticket_data.resolved_at = time_to_str(time.time())
+                        db.session.add(ticket)
+                        db.session.add(ticket_data)
+                        db.session.commit()
 
                     # send notification to user who created as well as voted , separately handled.
 
@@ -630,8 +645,8 @@ class TicketAPI(Resource):
 
 
 class AllTicketsAPI(Resource):
-    # @token_required
-    # @users_required(users=["student", "support", "admin"])
+    @token_required
+    @users_required(users=["Student", "Staff", "Admin"])
     def get(self):
         """
         Usage
@@ -688,7 +703,7 @@ class AllTicketsAPI(Resource):
 # Also had other APIs
 class AllTicketsUserAPI(Resource):
     @token_required
-    @users_required(users=["student", "support", "admin"])
+    @users_required(users=["Student", "Staff", "Admin"])
     def get(self, user_id=""):
         # tickets retrieved based on user role.
 
@@ -703,51 +718,50 @@ class AllTicketsUserAPI(Resource):
         except Exception as e:
             logger.error(f"AllTickets->get : Error occured while resolving query : {e}")
             raise InternalServerError
-        user = Auth.query.filter_by(
-            user_id=user_id
+        user = User.query.filter_by(id=user_id
         ).first()  # user already exists as user_required verified it
 
         all_tickets = []
 
         # verify user role
-        role = user.role
+        role = user.role.name
 
-        if role == "student":
+        if role == "Student":
             # student : all tickets created or upvoted by him/her
             # status, priority, sort, filter will be as per filter options received
             # upvoted ticket can be checked by comparing created_by with user_id
-            upvoted_ticket_ids = TicketVote.query.filter_by(user_id=user.user_id).all()
+            upvoted_ticket_ids = VoteTable.query.filter_by(voter_id=user.user_id).all()
             upvoted_ticket_ids = [elem.ticket_id for elem in upvoted_ticket_ids]
-            user_tickets = Ticket.query.filter_by(created_by=user.user_id).all()
+            user_tickets = Ticket.query.filter_by(user_id=user.id).all()
             for ticket in user_tickets:
                 tick = ticket_utils.convert_ticket_to_dict(ticket)
                 all_tickets.append(tick)
             for ticket_id in upvoted_ticket_ids:
-                ticket = Ticket.query.filter_by(ticket_id=ticket_id).first()
+                ticket = Ticket.query.filter_by(id=ticket_id).first()
                 tick = ticket_utils.convert_ticket_to_dict(ticket)
                 all_tickets.append(tick)
 
-        if role == "support":
+        if role == "Staff":
             # support : all tickets resolvedby him/her
             # get all pending tickets
             # status, priority, sort, filter will be as per filter options received
 
-            if "resolved" in args["status"]:
+            if "Resolved" in args["status"]:
                 # get all tickets resolved by the support staff
-                user_tickets = Ticket.query.filter_by(resolved_by=user.user_id).all()
-            elif "pending" in args["status"]:
+                user_tickets = Ticket.query.filter_by(resolved_by=user.id).all()
+            elif "Open" in args["status"]:
                 # get all pending tickets
-                user_tickets = Ticket.query.filter_by(status="pending").all()
+                user_tickets = Ticket.query.filter_by(ticket_status="Open").all()
             else:
                 user_tickets = []
             for ticket in user_tickets:
                 tick = ticket_utils.convert_ticket_to_dict(ticket)
                 all_tickets.append(tick)
 
-        if role == "admin":
+        if role == "Admin":
             # admin : get all tickets resolved globally (for creating faq)
             # status, priority, sort, filter will be as per filter options received
-            user_tickets = Ticket.query.filter_by(status="resolved").all()
+            user_tickets = Ticket.query.filter_by(ticket_status="Resolved").all()
             for ticket in user_tickets:
                 tick = ticket_utils.convert_ticket_to_dict(ticket)
                 all_tickets.append(tick)
