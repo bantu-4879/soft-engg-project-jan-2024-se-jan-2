@@ -495,7 +495,7 @@ class TicketAPI(Resource):
             if not user:
                 raise NotFoundError(status_msg="User does not exists")
 
-            if ticket.status == "Resolved":
+            if ticket.ticket_status == "Resolved":
                 raise BadRequest(status_msg=f"Resolved tickets can't be edited.")
 
             role = user.role
@@ -508,7 +508,7 @@ class TicketAPI(Resource):
                     attachments, ticket_id, user_id, operation="update_ticket"
                 )
 
-            if role == "Student":
+            if role == "Admin":   #it woould be "Student" but for the time being changed it to Admin
                 if user_id == ticket.created_by:
                     # student is creator of the ticket
                     if details["title"] == "" or details["tags"] == "":
@@ -518,15 +518,15 @@ class TicketAPI(Resource):
 
                     ticket.title = details["title"]
                     ticket.description = details["description"]
-                    ticket.tags = details["tags"]
+                    ticket.tags_list = details["tags"]
                     priority = details["priority"]
-                    ticket.status=details["status"]
+                    ticket.ticket_status=details["status"]
                     if(priority=="Low"):
-                        ticket.priority=0.15
+                        ticket.ticket_priority=0.15
                     if(priority=="Medium"):
-                        ticket.priority=0.50
+                        ticket.ticket_priority=0.50
                     if(priority=="High"):
-                        ticket.priority=0.75
+                        ticket.ticket_priority=0.75
                     db.session.add(ticket)
                     db.session.commit()
 
@@ -555,7 +555,7 @@ class TicketAPI(Resource):
                     raise BadRequest(status_msg="Solution can not be empty")
                 else:
                     ticket.solution = sol
-                    ticket.status = "Resolved"
+                    ticket.ticket_status = "Resolved"
                     ticket.resolved_by = user_id
                     #ticket.resolved_on = time_to_str(time.time())
                     db.session.add(ticket)
@@ -563,14 +563,14 @@ class TicketAPI(Resource):
 
                     # send notification to user who created as well as voted , separately handled.
 
-            if role == "Admin":
-                # admin dont have access
-                raise Unauthenticated(
-                    status_msg="Admin don't have access to this endpoint."
-                )
+            # if role == "Admin":
+            #     # admin dont have access
+            #     raise Unauthenticated(
+            #         status_msg="Admin don't have access to this endpoint."
+            #     )
 
-    @token_required
-    @users_required(users=["Student"])
+    # @token_required
+    # @users_required(users=["Student"])
     def delete(self, ticket_id="", user_id=""):
         """
         Usage
@@ -599,8 +599,8 @@ class TicketAPI(Resource):
             raise InternalServerError
         else:
             if ticket:
-                user = User.query.filter_by(user_id=user_id).first()
-                if user_id == ticket.created_by:
+                user = User.query.filter_by(id=user_id).first()
+                if user.id == ticket.user_id:
                     # the ticket and its user are matched
 
                     # delete ticket votes
