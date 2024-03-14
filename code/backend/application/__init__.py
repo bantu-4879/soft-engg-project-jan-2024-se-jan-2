@@ -71,5 +71,5 @@ def create_app(env_type="dev"):
         db.session.commit()
 
     #gchat_webhook()
-    post_message(0,"This is a test message!","inbox")
+    #post_message(0,"This is a test message!","inbox")
     return app
