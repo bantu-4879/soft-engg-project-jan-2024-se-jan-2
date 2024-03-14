@@ -31,16 +31,22 @@ from application.notifications import send_email
 
 
 class TagsUtil(UserUtils): 
-    def fuction(): 
-        return "" 
+    def convert_tags_to_dict(self, tags): 
+        tags_dict = vars(tags)  # verify if this properly converts obj to dict
+        if "_sa_instance_state" in tags_dict:
+            del tags_dict["_sa_instance_state"]
+        
+        return tags_dict
     
-
+tags_bp = Blueprint("tags_bp", __name__)
+tags_api = Api(tags_bp)
+tags_util = TagsUtil()
 
 class TagsAPI(Resource): 
     def get(self): 
         try:
             all_tags = []
-
+            
             return success_200_custom(data=all_tags)
         except Exception as e:
             logger.error(f"FAQAPI->get : Error occured while fetching FAQ data : {e}")
