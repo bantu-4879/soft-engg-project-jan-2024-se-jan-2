@@ -1,0 +1,2152 @@
+---
+openapi: 3.0.0
+info:
+  title: Software Engineering Project
+  description: |-
+    <h1>Milestone 4 - API Endpoints Documentation</h1>
+    <h2>Group: 2</h2>
+    <h3>Members
+      <ul>
+        <li>Aman Kankriya    (21F2000493)</li>
+        <li>Steve Richards   (21F1005920)</li>
+        <li>Ishika Goel      (21F1006093)</li>
+        <li>Sahithi Dhara    (21F1003337)</li>
+        <li>Muskan Sindhu    (21F1003710)</li>
+        <li>Akrithi Vishwas  (21F1001471)</li>
+      </ul>
+    </h3>
+    
+
+
+    <h2>The database schemas are as follows:</h2>
+
+    <h3> [1] User Schema </h3>
+    <h4>Auth table contains all details about user including login status.</h4>
+    <table>
+      <thead>
+        <th>Column Name</th>
+        <th>Column Type</th>
+        <th>Constraints</th>
+      </thead>
+      <tbody>
+      <tr>
+        <td>id</td>
+        <td>String</td>
+        <td>Primary Key</td>
+      </tr>
+      <tr>
+        <td>first_name</td>
+        <td>String</td>
+        <td>Not Null</td>
+      </tr>
+      <tr>
+        <td>second_name</td>
+        <td>String</td>
+        <td>Not Null</td>
+      </tr>
+      <tr>
+        <td>email</td>
+        <td>String</td>
+        <td>Not Null</td>
+      </tr>
+      <tr>
+        <td>password</td>
+        <td>String</td>
+        <td>Not Null</td>
+      </tr>
+      <tr>
+        <td>is_approved</td>
+        <td>Bool</td>
+        <td>Not Null</td>
+      </tr>
+      <tr>
+        <td>is_logged</td>
+        <td>Bool</td>
+        <td>Not Null</td>
+      </tr>
+      <tr>
+        <td>role_id</td>
+        <td>Integer</td>
+        <td>Foreign Key</td>
+      </tr>
+      <tr>
+        <td>card</td>
+        <td>String</td>
+        <td>Not Null, Default: Green</td>
+      </tr>
+      <tr>
+        <td>profile_photo_loc</td>
+        <td>String</td>
+        <td>Nullable</td>
+      </tr>
+      <tr>
+        <td>number_DA</td>
+        <td>Integer</td>
+        <td>Not Null</td>
+      </tr>
+      </tbody>
+
+    </table>
+    <h3> [2] Role Schema </h3>
+    <h4>....</h4>
+    <table>
+      <thead>
+        <th>Column Name</th>
+        <th>Column Type</th>
+        <th>Constraints</th>
+      </thead>
+      <tbody>
+      <tr>
+        <td>id</td>
+        <td>Integer</td>
+        <td>Primary Key</td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h3> [3] Authentication Schema </h3>
+    <h4>...</h4>
+    <table>
+      <thead>
+        <th>Column Name</th>
+        <th>Column Type</th>
+        <th>Constraints</th>
+      </thead>
+      <tbody>
+      <tr>
+        <td>id</td>
+        <td>Integer</td>
+        <td>Primary Key</td>
+      </tr>
+      <tr>
+        <td>user_id</td>
+        <td>String</td>
+        <td>Foreign Key, Not Null</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>token</td>
+        <td>String</td>
+        <td>Nullable</td>
+      </tr>
+      <tr>
+        <td>token_created</td>
+        <td>Integer</td>
+        <td>Nullable</td>
+      </tr>
+      <tr>
+        <td>token_expired</td>
+        <td>Integer</td>
+        <td>Nullable</td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h3> [4] Ticket Schema </h3>
+    <h4>...</h4>
+    <table>
+      <thead>
+        <th>Column Name</th>
+        <th>Column Type</th>
+        <th>Constraints</th>
+      </thead>
+      <tbody>
+      <tr>
+        <td>id</td>
+        <td>String</td>
+        <td>Primary Key</td>
+      </tr>
+      <tr>
+        <td>user_id</td>
+        <td>String</td>
+        <td>Primary Key, Foreign Key, Not Null</td>
+      </tr>
+      <tr>
+        <td>title</td>
+        <td>String</td>
+        <td>Not Null</td>
+      </tr>
+      <tr>
+        <td>description</td>
+        <td>String</td>
+        <td>Not Null</td>
+      </tr>
+      <tr>
+        <td>solution</td>
+        <td>String</td>
+        <td>Nullable</td>
+      </tr>
+      <tr>
+        <td>privacy</td>
+        <td>Bool</td>
+        <td>Not Null</td>
+      </tr>
+      <tr>
+        <td>created_at</td>
+        <td>String</td>
+        <td>Not Null</td>
+      </tr>
+      <tr>
+        <td>resolved_by</td>
+        <td>String</td>
+        <td>Foreign key, Not Null</td>
+      </tr>
+      <tr>
+        <td>solution_satisfaction</td>
+        <td>Bool</td>
+        <td>Not Null</td>
+      </tr>
+      <tr>
+        <td>comments</td>
+        <td>String</td>
+        <td>Nullable</td>
+      </tr>
+      <tr>
+        <td>ticket_status</td>
+        <td>String</td>
+        <td>Not Null</td>
+      </tr>
+      <tr>
+        <td>ticket_priority</td>
+        <td>Float</td>
+        <td>Nullable</td>
+      </tr>
+      <tr>
+        <td>tags_list</td>
+        <td>String</td>
+        <td>Nullable</td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h3> [5] VoteTable Schema </h3>
+    <h4>..</h4>
+    <table>
+      <thead>
+        <th>Column Name</th>
+        <th>Column Type</th>
+        <th>Constraints</th>
+      </thead>
+      <tbody>
+      <tr>
+        <td>id</td>
+        <td>Integer</td>
+        <td>Primary Key</td>
+      </tr>
+      <tr>
+        <td>ticket_id</td>
+        <td>String</td>
+        <td>Foreign Key, Not Null</td>
+      </tr>
+      <tr>
+        <td>voter_id</td>
+        <td>String</td>
+        <td>Foreign Key, Not Null</td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h3> [6] Tags Schema </h3>
+    <h4>...</h4>
+    <table>
+      <thead>
+        <th>Column Name</th>
+        <th>Column Type</th>
+        <th>Constraints</th>
+      </thead>
+      <tbody>
+      <tr>
+        <td>id</td>
+        <td>Integer</td>
+        <td>Primary Key</td>
+      </tr>
+      <tr>
+        <td>tag_name</td>
+        <td>String</td>
+        <td>Nullable</td>
+      </tr>
+      <tr>
+        <td>description</td>
+        <td>String</td>
+        <td>Nullable</td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h3> [7] Tickets_Tags Schema </h3>
+    <h4>...</h4>
+    <table>
+      <thead>
+        <th>Column Name</th>
+        <th>Column Type</th>
+        <th>Constraints</th>
+      </thead>
+      <tbody>
+      <tr>
+        <td>id</td>
+        <td>Integer</td>
+        <td>Primary Key</td>
+      </tr>
+      <tr>
+        <td>tag_id</td>
+        <td>Integer</td>
+        <td>Not Null, Foreign Key</td>
+      </tr>
+      <tr>
+        <td>ticket_id</td>
+        <td>Integer</td>
+        <td>Not Null, Foreign Key</td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h3> [8] TicketComments Schema </h3>
+    <h4>...</h4>
+    <table>
+      <thead>
+        <th>Column Name</th>
+        <th>Column Type</th>
+        <th>Constraints</th>
+      </thead>
+      <tbody>
+      <tr>
+        <td>id</td>
+        <td>Integer</td>
+        <td>Primary Key</td>
+      </tr>
+      <tr>
+        <td>ticket_id</td>
+        <td>Integer</td>
+        <td>Not Null, Foreign Key</td>
+      </tr>
+      <tr>
+        <td>comment</td>
+        <td>String</td>
+        <td>Nullable</td>
+      </tr>
+      <tr>
+        <td>added_at</td>
+        <td>String</td>
+        <td>Not Null</td>
+      </tr>
+      <tr>
+        <td>commenter</td>
+        <td>String</td>
+        <td>Foreign Key</td>
+      </tr>
+      <tr>
+        <td>reactions</td>
+        <td>String</td>
+        <td>Nullable</td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h3> [9] Ticket Attachment Schema</h3>
+    <h4>...</h4>
+    <table>
+      <thead>
+        <th>Column Name</th>
+        <th>Column Type</th>
+        <th>Constraints</th>
+      </thead>
+      <tbody>
+      <tr>
+        <td>id</td>
+        <td>Integer</td>
+        <td>Primary Key</td>
+      </tr>
+      <tr>
+        <td>ticket_id</td>
+        <td>Integer</td>
+        <td>Foreign Key</td>
+      </tr>
+      <tr>
+        <td>attachment_location</td>
+        <td>String</td>
+        <td>Nullable</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h3> [10] Inbox Schema</h3>
+    <h4>...</h4>
+    <table>
+      <thead>
+        <th>Column Name</th>
+        <th>Column Type</th>
+        <th>Constraints</th>
+      </thead>
+      <tbody>
+      <tr>
+        <td>id</td>
+        <td>Integer</td>
+        <td>Primary Key</td>
+      </tr>
+      <tr>
+        <td>user_id</td>
+        <td>String</td>
+        <td>Foreign Key</td>
+      </tr>
+      <tr>
+        <td>message</td>
+        <td>String</td>
+        <td>Nullable</td>
+      </tr>
+      <tr>
+        <td>received_at</td>
+        <td>String</td>
+        <td>Not Nullable</td>
+      </tr>
+      <tr>
+        <td>have_read</td>
+        <td>Bool</td>
+        <td>Not Nullable</td>
+      </tr>
+      <tr>
+        <td>message_type</td>
+        <td>String</td>
+        <td>Not Null</td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h3> [11] AssignBadge Schema</h3>
+    <h4>...</h4>
+    <table>
+      <thead>
+        <th>Column Name</th>
+        <th>Column Type</th>
+        <th>Constraints</th>
+      </thead>
+      <tbody>
+      <tr>
+        <td>id</td>
+        <td>Integer</td>
+        <td>Primary Key</td>
+      </tr>
+      <tr>
+        <td>user_id</td>
+        <td>String</td>
+        <td>Foreign Key</td>
+      </tr>
+      <tr>
+        <td>badge_name</td>
+        <td>Integer</td>
+        <td>Foreign Key</td>
+      </tr>
+      <tr>
+        <td>assigned_by</td>
+        <td>String</td>
+        <td>Foreign Key</td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h3> [12] Badge Schema</h3>
+    <h4>...</h4>
+    <table>
+      <thead>
+        <th>Column Name</th>
+        <th>Column Type</th>
+        <th>Constraints</th>
+      </thead>
+      <tbody>
+      <tr>
+        <td>id</td>
+        <td>Integer</td>
+        <td>Primary Key</td>
+      </tr>
+      <tr>
+        <td>badge_name</td>
+        <td>String</td>
+        <td>Not Null</td>
+      </tr>
+      <tr>
+        <td>badge_picture_location</td>
+        <td>String</td>
+        <td>Not Null</td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h3> [13] TicketData Schema</h3>
+    <h4>...</h4>
+    <table>
+      <thead>
+        <th>Column Name</th>
+        <th>Column Type</th>
+        <th>Constraints</th>
+      </thead>
+      <tbody>
+      <tr>
+        <td>id</td>
+        <td>Integer</td>
+        <td>Primary Key</td>
+      </tr>
+      <tr>
+        <td>ticket_id</td>
+        <td>Integer</td>
+        <td>Foreign Key, Not Null</td>
+      </tr>
+      <tr>
+        <td>opened_at</td>
+        <td>String</td>
+        <td>Nullable</td>
+      </tr>
+      <tr>
+        <td>assigned_at</td>
+        <td>String</td>
+        <td>Nullable</td>
+      </tr>
+      <tr>
+        <td>inProgress_at</td>
+        <td>String</td>
+        <td>Nullable</td>
+      </tr>
+      <tr>
+        <td>resolved_at</td>
+        <td>String</td>
+        <td>Nullable</td>
+      </tr>
+      <tr>
+        <td>closed_at</td>
+        <td>String</td>
+        <td>Nullable</td>
+      </tr>
+      </tbody>
+    </table>
+    
+    <h3> [14] DisciplinaryAction Schema</h3>
+    <h4>...</h4>
+    <table>
+      <thead>
+        <th>Column Name</th>
+        <th>Column Type</th>
+        <th>Constraints</th>
+      </thead>
+      <tbody>
+      <tr>
+        <td>id</td>
+        <td>Integer</td>
+        <td>Primary Key</td>
+      </tr>
+      <tr>
+        <td>user_id</td>
+        <td>String</td>
+        <td>Foreign Key, Not Null</td>
+      </tr>
+      <tr>
+        <td>flagged_by</td>
+        <td>String</td>
+        <td>Foreign Key, Not Null</td>
+      </tr>
+      <tr>
+        <td>approved_by</td>
+        <td>String</td>
+        <td>Foreign Key, Not Null</td>
+      </tr>
+      <tr>
+        <td>flagged_till</td>
+        <td>String</td>
+        <td>Not Null</td>
+      </tr>
+      </tbody>
+    </table>
+
+
+    </br></br>
+  termsOfService: http://swagger.io/terms/
+  contact:
+    name: Aman Kankriya
+    email: 21f2000493@ds.study.iitm.ac.in
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  version: 1.2.0
+servers:
+- url: http://127.0.0.1:5000/
+  description: Local Host
+tags:
+- name: Login
+  description: Login a user
+- name: Register
+  description: Register a user
+- name: NewUsers
+  description: Verify and validate new users. Only admin can access this endpoint.
+- name: Ticket
+  description: To perform CRUD operations on single ticket
+- name: AllTickets
+  description: Get all tickets for different categories and different types of users.
+- name: Student
+  description: Get or update user details
+- name: Support
+  description: Get or update support staff details
+- name: Admin
+  description: Get or update admin details
+- name: FAQ
+  description: Get all FAQs or create a new FAQ.
+paths:
+  /api/v1/auth/login:
+    post:
+      tags:
+      - Login
+      summary: Log in a user into OSTS
+      operationId: loginUser
+      requestBody:
+        $ref: '#/components/requestBodies/LoginForm'
+      responses:
+        "200":
+          description: Successfully logged in.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200'
+        "400":
+          description: Client specified an invalid user details.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "401":
+          description: Request not authenticated due to missing/invalid token.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "403":
+          description: Client does not have sufficient permission.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "500":
+          description: Internal server error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+  /api/v1/auth/register:
+    post:
+      tags:
+      - Register
+      summary: Register a new user into OSTS
+      operationId: registerUser
+      requestBody:
+        $ref: '#/components/requestBodies/RegisterForm'
+      responses:
+        "200":
+          description: Successfully account created.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200'
+        "400":
+          description: Client specified an invalid details.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "409":
+          description: Email address already exists in database.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "500":
+          description: Internal server error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+  /api/v1/auth/newUsers:
+    get:
+      tags:
+      - NewUsers
+      summary: Get new users data (which are not verified).
+      operationId: getNewUsers
+      responses:
+        "200":
+          description: Successfully new users data retrieved.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_1'
+        "401":
+          description: Request not authenticated due to missing/invalid token.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "403":
+          description: Client does not have sufficient permission. Only admins can access this endpoint.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "500":
+          description: Internal server error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+  /api/v1/auth/newUsers/{user_id}:
+    put:
+      tags:
+      - NewUsers
+      summary: Update user as verified.
+      operationId: updateNewUsers
+      parameters:
+      - name: user_id
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/newUsers_user_id_body'
+      responses:
+        "200":
+          description: New user details are verified and accepted.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "400":
+          description: Client specified an invalid user id.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "401":
+          description: Request not authenticated due to missing/invalid token.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "403":
+          description: Client does not have sufficient permission. Only admins have access.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "404":
+          description: Provided user id is not found.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "500":
+          description: Internal server error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+    delete:
+      tags:
+      - NewUsers
+      summary: Delete new users data which are rejected by admin during verification.
+      operationId: deleteNewUsers
+      parameters:
+      - name: user_id
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      responses:
+        "200":
+          description: New user verification failed and user account is deleted by admin.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "400":
+          description: Client specified an invalid user id.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "401":
+          description: Request not authenticated due to missing/invalid token.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "403":
+          description: Client does not have sufficient permission. Only admins have access.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "500":
+          description: Internal server error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+  /api/v1/ticket/{ticket_id}/{user_id}:
+    get:
+      tags:
+      - Ticket
+      summary: Retrieve a ticket.
+      operationId: getTicket
+      parameters:
+      - name: ticket_id
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      - name: user_id
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      responses:
+        "200":
+          description: Successfully retrieved a ticket.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_2'
+        "400":
+          description: Client specified an invalid arguments.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "401":
+          description: Request not authenticated due to missing/invalid token.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "403":
+          description: Client does not have sufficient permission.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "404":
+          description: Given ticket id or user id is not found.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "500":
+          description: Internal server error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+    put:
+      tags:
+      - Ticket
+      summary: Update ticket data and number of votes
+      operationId: updateTicket
+      parameters:
+      - name: ticket_id
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      - name: user_id
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      requestBody:
+        $ref: '#/components/requestBodies/TicketForm'
+      responses:
+        "200":
+          description: Ticket data updated successfully.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "400":
+          description: Client specified an invalid arguments.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "401":
+          description: Request not authenticated due to missing/invalid token.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "403":
+          description: Client does not have sufficient permission.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "404":
+          description: Ticket id is not found.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "500":
+          description: Internal server error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+    delete:
+      tags:
+      - Ticket
+      summary: Delete a ticket.
+      operationId: deleteTicket
+      parameters:
+      - name: ticket_id
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      - name: user_id
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      responses:
+        "200":
+          description: Ticket successfully deleted.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "400":
+          description: Client specified an invalid user id or ticket id.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "401":
+          description: Request not authenticated due to missing/invalid token.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "403":
+          description: Client does not have sufficient permission.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "404":
+          description: Ticket id is not found.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "500":
+          description: Internal server error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+  /api/v1/ticket/{user_id}:
+    post:
+      tags:
+      - Ticket
+      summary: Create a new Ticket
+      operationId: createTicket
+      parameters:
+      - name: user_id
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      requestBody:
+        $ref: '#/components/requestBodies/CreateTicketForm'
+      responses:
+        "200":
+          description: New ticket successfully created.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "400":
+          description: Client specified an invalid argument.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "401":
+          description: Request not authenticated due to missing/invalid token.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "403":
+          description: Client does not have sufficient permission.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "500":
+          description: Internal server error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+  /api/v1/ticket/all-tickets:
+    get:
+      tags:
+      - AllTickets
+      summary: Retrieve all tickets for searching.
+      operationId: getAllTickets
+      responses:
+        "200":
+          description: Successfully retrieved all tickets as per query.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_3'
+        "400":
+          description: Invalid query string received.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "401":
+          description: Request not authenticated due to missing/invalid token.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "403":
+          description: Client does not have sufficient permission.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "404":
+          description: A specified resource is not found.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "500":
+          description: Internal server error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+  /api/v1/ticket/all-tickets/{user_id}:
+    get:
+      tags:
+      - AllTickets
+      summary: Retrieve all tickets for the user as per user role.
+      operationId: getAllUserTickets
+      parameters:
+      - name: user_id
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      responses:
+        "200":
+          description: Successfully retrieved all tickets as per query.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_3'
+        "400":
+          description: Invalid query string received.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "401":
+          description: Request not authenticated due to missing/invalid token.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "403":
+          description: Client does not have sufficient permission.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "404":
+          description: A specified resource is not found.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "500":
+          description: Internal server error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+  /api/v1/student/{user_id}:
+    get:
+      tags:
+      - Student
+      summary: Get student details and metadata of activities.
+      operationId: getStudent
+      parameters:
+      - name: user_id
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      responses:
+        "200":
+          description: Successfully retrieved student details.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_4'
+        "400":
+          description: Client specified an invalid user id.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "401":
+          description: Request not authenticated due to missing/invalid token.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "403":
+          description: Client does not have sufficient permission.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "404":
+          description: Student id is not found.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "500":
+          description: Internal server error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+    put:
+      tags:
+      - Student
+      summary: Update student profile data.
+      operationId: updateStudent
+      parameters:
+      - name: user_id
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Student'
+      responses:
+        "200":
+          description: Student details updated successfully.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "400":
+          description: Client specified an invalid user id.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "401":
+          description: Request not authenticated due to missing/invalid token.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "403":
+          description: Client does not have sufficient permission.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "404":
+          description: Student id is not found.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "500":
+          description: Internal server error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+  /api/v1/support/{user_id}:
+    get:
+      tags:
+      - Support
+      summary: Get support details and metadata of activities.
+      operationId: getSupport
+      parameters:
+      - name: user_id
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      responses:
+        "200":
+          description: Successfully retrieved support details.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_5'
+        "400":
+          description: Client specified an invalid user id.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "401":
+          description: Request not authenticated due to missing/invalid token.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "403":
+          description: Client does not have sufficient permission.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "404":
+          description: Support id is not found.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "500":
+          description: Internal server error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+    put:
+      tags:
+      - Support
+      summary: Update support profile data.
+      operationId: updateSupport
+      parameters:
+      - name: user_id
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Support'
+      responses:
+        "200":
+          description: Support details updated successfully.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "400":
+          description: Client specified an invalid user id.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "401":
+          description: Request not authenticated due to missing/invalid token.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "403":
+          description: Client does not have sufficient permission.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "404":
+          description: Support id is not found.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "500":
+          description: Internal server error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+  /api/v1/admin/{user_id}:
+    get:
+      tags:
+      - Admin
+      summary: Get admin details and metadata of activities.
+      operationId: getAdmin
+      parameters:
+      - name: user_id
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      responses:
+        "200":
+          description: Successfully retrieved admin details.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_6'
+        "400":
+          description: Client specified an invalid user id.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "401":
+          description: Request not authenticated due to missing/invalid token.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "403":
+          description: Client does not have sufficient permission.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "404":
+          description: Admin id is not found.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "500":
+          description: Internal server error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+    put:
+      tags:
+      - Admin
+      summary: Update admin profile data.
+      operationId: updateAdmin
+      parameters:
+      - name: user_id
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin'
+      responses:
+        "200":
+          description: Admin details updated successfully.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "400":
+          description: Client specified an invalid argument.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "401":
+          description: Request not authenticated due to missing/invalid token.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "403":
+          description: Client does not have sufficient permission.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "404":
+          description: Admin id is not found.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "500":
+          description: Internal server error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+  /api/v1/faq:
+    get:
+      tags:
+      - FAQ
+      summary: Get all FAQ question and answer.
+      operationId: getFAQs
+      responses:
+        "200":
+          description: Successfully retrieved all FAQs details.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_7'
+        "401":
+          description: Request not authenticated due to missing/invalid token.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "500":
+          description: Internal server error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+    post:
+      tags:
+      - FAQ
+      summary: Create new FAQ.
+      operationId: createFAQ
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/FAQForm'
+      responses:
+        "200":
+          description: New FAQ successfully created.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "400":
+          description: Client specified an invalid faq form data.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "401":
+          description: Request not authenticated due to missing/invalid token.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "403":
+          description: Client does not have sufficient permission. Only admins can create FAQ.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        "500":
+          description: Internal server error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+components:
+  schemas:
+    Auth:
+      required:
+      - role
+      type: object
+      properties:
+        user_id:
+          type: string
+        role:
+          type: string
+          description: User Role
+          enum:
+          - student
+          - support
+          - admin
+        web_token:
+          type: string
+        is_verified:
+          type: boolean
+          default: false
+        is_logged:
+          type: boolean
+          default: false
+        token_created_on:
+          type: integer
+          description: Timestamp stored as integer
+          format: int64
+        token_expiry_on:
+          type: integer
+          format: int64
+        first_name:
+          type: string
+        last_name:
+          type: string
+        email:
+          type: string
+        password:
+          type: string
+        profile_photo_loc:
+          type: string
+      xml:
+        name: Auth
+    Ticket:
+      required:
+      - created_by
+      - tag_1
+      - title
+      type: object
+      properties:
+        ticket_id:
+          type: string
+        title:
+          type: string
+        description:
+          type: string
+        priority:
+          type: string
+          description: Ticket Priority
+          enum:
+          - low
+          - medium
+          - high
+        tag_1:
+          type: string
+        tag_2:
+          type: string
+        tag_3:
+          type: string
+        status:
+          type: string
+          description: Ticket Status
+          enum:
+          - pending
+          - resolved
+          - duplicate
+          - cancelled
+        votes:
+          type: integer
+          format: int64
+        created_by:
+          type: string
+        created_on:
+          type: integer
+          format: int64
+        resolved_by:
+          type: string
+        resolved_on:
+          type: integer
+          format: int64
+        solution:
+          type: string
+      xml:
+        name: Ticket
+    TicketAttachment:
+      type: object
+      properties:
+        ticket_id:
+          type: string
+        user_id:
+          type: string
+        attachment_loc:
+          type: string
+      xml:
+        name: TicketAttachment
+    TicketVote:
+      type: object
+      properties:
+        ticket_id:
+          type: string
+        user_id:
+          type: string
+      xml:
+        name: TicketVote
+    FAQ:
+      required:
+      - answer
+      - question
+      - tag_1
+      type: object
+      properties:
+        faq_id:
+          type: string
+        question:
+          type: string
+        answer:
+          type: string
+        tag_1:
+          type: string
+        tag_2:
+          type: string
+        tag_3:
+          type: string
+        created_by:
+          type: string
+      xml:
+        name: FAQ
+    FAQAttachment:
+      type: object
+      properties:
+        faq_id:
+          type: string
+        attachment_loc:
+          type: string
+      xml:
+        name: FAQAttachment
+    LoginForm:
+      type: object
+      properties:
+        email:
+          type: string
+        password:
+          type: string
+      xml:
+        name: LoginForm
+    RegisterForm:
+      type: object
+      properties:
+        first_name:
+          type: string
+        last_name:
+          type: string
+        email:
+          type: string
+        password:
+          type: string
+        retype_password:
+          type: string
+        role:
+          type: string
+          description: User Role
+          enum:
+          - student
+          - support
+          - admin
+      xml:
+        name: RegisterForm
+    ApiResponse:
+      required:
+      - category
+      - message
+      - status
+      type: object
+      properties:
+        status:
+          type: integer
+          format: int32
+        category:
+          type: string
+        message:
+          type: string
+    TicketForm:
+      type: object
+      properties:
+        ticket_id:
+          type: string
+        title:
+          type: string
+        description:
+          type: string
+        priority:
+          type: string
+          description: Ticket Priority
+          enum:
+          - low
+          - medium
+          - high
+        tag_1:
+          type: string
+        tag_2:
+          type: string
+        tag_3:
+          type: string
+        status:
+          type: string
+          description: Ticket Status
+          enum:
+          - pending
+          - resolved
+          - duplicate
+          - cancelled
+        votes:
+          type: integer
+          format: int64
+        created_by:
+          type: string
+        created_on:
+          type: integer
+          format: int64
+        resolved_by:
+          type: string
+        resolved_on:
+          type: integer
+          format: int64
+        solution:
+          type: string
+        attachments:
+          type: array
+          description: Array of attachments
+          nullable: true
+          items:
+            $ref: '#/components/schemas/TicketForm_attachments'
+    CreateTicketForm:
+      type: object
+      properties:
+        title:
+          type: string
+        description:
+          type: string
+        priority:
+          type: string
+          description: Ticket Priority
+          enum:
+          - low
+          - medium
+          - high
+        tag_1:
+          type: string
+        tag_2:
+          type: string
+        tag_3:
+          type: string
+        created_by:
+          type: string
+        created_on:
+          type: integer
+          format: int64
+        attachments:
+          type: array
+          description: Array of attachments
+          nullable: true
+          items:
+            $ref: '#/components/schemas/TicketForm_attachments'
+    StudentForm:
+      type: object
+      properties:
+        user_id:
+          type: string
+        first_name:
+          type: string
+        last_name:
+          type: string
+        email:
+          type: string
+        password:
+          type: string
+        profile_photo_loc:
+          type: string
+        n_tickets_created:
+          type: integer
+        n_tickets_resolved:
+          type: integer
+        n_tickets_unresolved:
+          type: integer
+        n_tickets_upvoted:
+          type: integer
+      xml:
+        name: StudentForm
+    SupportForm:
+      type: object
+      properties:
+        user_id:
+          type: string
+        first_name:
+          type: string
+        last_name:
+          type: string
+        email:
+          type: string
+        password:
+          type: string
+        profile_photo_loc:
+          type: string
+        n_tickets_resolved:
+          type: integer
+        n_total_unresolved_tickets:
+          type: integer
+      xml:
+        name: SupportForm
+    AdminForm:
+      type: object
+      properties:
+        user_id:
+          type: string
+        first_name:
+          type: string
+        last_name:
+          type: string
+        email:
+          type: string
+        password:
+          type: string
+        profile_photo_loc:
+          type: string
+        n_total_unresolved_tickets:
+          type: integer
+        n_total_resolved_tickets:
+          type: integer
+        n_tickets_today:
+          type: integer
+        n_tickets_week:
+          type: integer
+        n_tickets_month:
+          type: integer
+        n_student:
+          type: integer
+        n_support:
+          type: integer
+        n_admin:
+          type: integer
+        n_student_new:
+          type: integer
+        n_support_new:
+          type: integer
+      xml:
+        name: AdminForm
+    FAQForm:
+      type: object
+      properties:
+        faq_id:
+          type: string
+        question:
+          type: string
+        answer:
+          type: string
+        tag_1:
+          type: string
+        tag_2:
+          type: string
+        tag_3:
+          type: string
+        created_by:
+          type: string
+        attachments:
+          type: array
+          description: Array of attachments
+          nullable: true
+          items:
+            $ref: '#/components/schemas/FAQForm_attachments'
+      xml:
+        name: FAQForm
+    Student:
+      required:
+      - email
+      - first_name
+      - password
+      type: object
+      properties:
+        user_id:
+          type: string
+        first_name:
+          type: string
+        last_name:
+          type: string
+        email:
+          type: string
+        password:
+          type: string
+        profile_photo_loc:
+          type: string
+      xml:
+        name: Student
+    Support:
+      required:
+      - email
+      - first_name
+      - password
+      type: object
+      properties:
+        user_id:
+          type: string
+        first_name:
+          type: string
+        last_name:
+          type: string
+        email:
+          type: string
+        password:
+          type: string
+        profile_photo_loc:
+          type: string
+      xml:
+        name: Support
+    Admin:
+      required:
+      - email
+      - first_name
+      - password
+      type: object
+      properties:
+        user_id:
+          type: string
+        first_name:
+          type: string
+        last_name:
+          type: string
+        email:
+          type: string
+        password:
+          type: string
+        profile_photo_loc:
+          type: string
+      xml:
+        name: Admin
+    inline_response_200:
+      type: object
+      properties:
+        category:
+          type: string
+        status:
+          type: integer
+        message:
+          $ref: '#/components/schemas/inline_response_200_message'
+    inline_response_200_1:
+      type: object
+      properties:
+        category:
+          type: string
+        status:
+          type: integer
+        message:
+          type: array
+          description: Array of user objects
+          nullable: true
+          items:
+            $ref: '#/components/schemas/inline_response_200_1_message'
+    newUsers_user_id_body:
+      type: object
+      properties:
+        user_id:
+          type: string
+        verified:
+          type: boolean
+    inline_response_200_2:
+      type: object
+      properties:
+        category:
+          type: string
+        status:
+          type: integer
+        message:
+          $ref: '#/components/schemas/TicketForm'
+    inline_response_200_3:
+      type: object
+      properties:
+        category:
+          type: string
+        status:
+          type: integer
+        message:
+          type: array
+          items:
+            $ref: '#/components/schemas/TicketForm'
+    inline_response_200_4:
+      type: object
+      properties:
+        category:
+          type: string
+        status:
+          type: integer
+        message:
+          $ref: '#/components/schemas/StudentForm'
+    inline_response_200_5:
+      type: object
+      properties:
+        category:
+          type: string
+        status:
+          type: integer
+        message:
+          $ref: '#/components/schemas/SupportForm'
+    inline_response_200_6:
+      type: object
+      properties:
+        category:
+          type: string
+        status:
+          type: integer
+        message:
+          $ref: '#/components/schemas/AdminForm'
+    inline_response_200_7:
+      type: object
+      properties:
+        category:
+          type: string
+        status:
+          type: integer
+        message:
+          type: array
+          description: Array of FAQs
+          items:
+            $ref: '#/components/schemas/FAQForm'
+    TicketForm_attachments:
+      type: object
+      properties:
+        user_id:
+          type: string
+        attachment_loc:
+          type: string
+    FAQForm_attachments:
+      type: object
+      properties:
+        attachment_loc:
+          type: string
+    inline_response_200_message:
+      type: object
+      properties:
+        user_id:
+          type: string
+        web_token:
+          type: string
+        token_expiry_on:
+          type: integer
+    inline_response_200_1_message:
+      type: object
+      properties:
+        user_id:
+          type: string
+        first_name:
+          type: string
+        last_name:
+          type: string
+        email:
+          type: string
+        role:
+          type: string
+  responses:
+    Success:
+      description: Operation successfully completed.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ApiResponse'
+    BadRequest:
+      description: Client specified an invalid argument.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ApiResponse'
+    Unauthenticated:
+      description: Request not authenticated due to missing/invalid token.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ApiResponse'
+    PermissionDenied:
+      description: Client does not have sufficient permission.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ApiResponse'
+    NotFound:
+      description: A specified resource is not found.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ApiResponse'
+    MethodNotAllowed:
+      description: Request method is known by the server but is not supported by the target resource.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ApiResponse'
+    AlreadyExists:
+      description: An existing resource conflicts with the request.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ApiResponse'
+    ServerError:
+      description: Internal server error.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ApiResponse'
+  requestBodies:
+    LoginForm:
+      description: LoginForm
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/LoginForm'
+        application/xml:
+          schema:
+            $ref: '#/components/schemas/LoginForm'
+      required: true
+    RegisterForm:
+      description: RegisterForm
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/RegisterForm'
+        application/xml:
+          schema:
+            $ref: '#/components/schemas/RegisterForm'
+      required: true
+    TicketForm:
+      description: TicketForm
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/TicketForm'
+        application/xml:
+          schema:
+            $ref: '#/components/schemas/TicketForm'
+      required: true
+    CreateTicketForm:
+      description: CreateTicketForm
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/CreateTicketForm'
+        application/xml:
+          schema:
+            $ref: '#/components/schemas/CreateTicketForm'
+      required: true
