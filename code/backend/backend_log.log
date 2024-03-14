@@ -2177,6 +2177,7 @@
 13-Mar-24 16:28:23 - [INFO] - Message sent successfully.
 13-Mar-24 16:28:23 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
+<<<<<<< Updated upstream
 13-Mar-24 16:28:23 - [INFO] - [33mPress CTRL+C to quit[0m
 13-Mar-24 16:28:23 - [INFO] -  * Restarting with stat
 13-Mar-24 16:28:24 - [INFO] - Development environment configured.
@@ -3596,3 +3597,74 @@
 14-Mar-24 15:06:22 - [INFO] - Message sent successfully.
 14-Mar-24 15:06:22 - [WARNING] -  * Debugger is active!
 14-Mar-24 15:06:22 - [INFO] -  * Debugger PIN: 145-495-166
+=======
+13-Mar-24 21:26:21 - [INFO] - [33mPress CTRL+C to quit[0m
+13-Mar-24 21:26:21 - [INFO] -  * Restarting with stat
+13-Mar-24 21:26:22 - [INFO] - Development environment configured.
+13-Mar-24 21:26:22 - [INFO] - Message sent successfully.
+13-Mar-24 21:26:22 - [WARNING] -  * Debugger is active!
+13-Mar-24 21:26:22 - [INFO] -  * Debugger PIN: 615-108-927
+13-Mar-24 21:28:03 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+13-Mar-24 21:28:03 - [INFO] -  * Restarting with stat
+13-Mar-24 21:28:04 - [INFO] - Development environment configured.
+13-Mar-24 21:28:04 - [INFO] - Message sent successfully.
+13-Mar-24 21:28:04 - [WARNING] -  * Debugger is active!
+13-Mar-24 21:28:04 - [INFO] -  * Debugger PIN: 615-108-927
+13-Mar-24 21:28:05 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+13-Mar-24 21:28:05 - [INFO] -  * Restarting with stat
+13-Mar-24 21:28:06 - [INFO] - Development environment configured.
+13-Mar-24 21:28:06 - [INFO] - Message sent successfully.
+13-Mar-24 21:28:06 - [WARNING] -  * Debugger is active!
+13-Mar-24 21:28:06 - [INFO] -  * Debugger PIN: 615-108-927
+13-Mar-24 21:44:19 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+13-Mar-24 21:44:19 - [INFO] -  * Restarting with stat
+13-Mar-24 21:44:20 - [INFO] - Development environment configured.
+13-Mar-24 21:44:20 - [INFO] - Message sent successfully.
+13-Mar-24 21:44:20 - [WARNING] -  * Debugger is active!
+13-Mar-24 21:44:20 - [INFO] -  * Debugger PIN: 615-108-927
+13-Mar-24 21:44:26 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+13-Mar-24 21:44:26 - [INFO] -  * Restarting with stat
+13-Mar-24 21:44:27 - [INFO] - Development environment configured.
+13-Mar-24 21:44:27 - [INFO] - Message sent successfully.
+13-Mar-24 21:44:27 - [WARNING] -  * Debugger is active!
+13-Mar-24 21:44:27 - [INFO] -  * Debugger PIN: 615-108-927
+13-Mar-24 21:44:32 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+13-Mar-24 21:44:32 - [INFO] -  * Restarting with stat
+13-Mar-24 21:44:33 - [INFO] - Development environment configured.
+13-Mar-24 21:44:33 - [INFO] - Message sent successfully.
+13-Mar-24 21:44:33 - [WARNING] -  * Debugger is active!
+13-Mar-24 21:44:33 - [INFO] -  * Debugger PIN: 615-108-927
+13-Mar-24 21:45:22 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/__init__.py', reloading
+13-Mar-24 21:45:22 - [INFO] -  * Restarting with stat
+13-Mar-24 21:45:22 - [INFO] - Development environment configured.
+13-Mar-24 21:45:22 - [INFO] - Message sent successfully.
+13-Mar-24 21:45:22 - [WARNING] -  * Debugger is active!
+13-Mar-24 21:45:22 - [INFO] -  * Debugger PIN: 615-108-927
+13-Mar-24 21:45:24 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/__init__.py', reloading
+13-Mar-24 21:45:24 - [INFO] -  * Restarting with stat
+13-Mar-24 21:45:24 - [INFO] - Development environment configured.
+13-Mar-24 21:45:24 - [INFO] - Message sent successfully.
+13-Mar-24 21:45:24 - [WARNING] -  * Debugger is active!
+13-Mar-24 21:45:24 - [INFO] -  * Debugger PIN: 615-108-927
+13-Mar-24 21:45:25 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/__init__.py', reloading
+13-Mar-24 21:45:25 - [INFO] -  * Restarting with stat
+13-Mar-24 21:45:26 - [INFO] - Development environment configured.
+13-Mar-24 21:45:26 - [INFO] - Message sent successfully.
+13-Mar-24 21:45:26 - [WARNING] -  * Debugger is active!
+13-Mar-24 21:45:26 - [INFO] -  * Debugger PIN: 615-108-927
+>>>>>>> Stashed changes
+13-Mar-24 21:58:09 - [INFO] - Development environment configured.
+13-Mar-24 21:58:09 - [INFO] - Message sent successfully.
+13-Mar-24 21:58:09 - [WARNING] -  * Debugger is active!
+13-Mar-24 21:58:09 - [INFO] -  * Debugger PIN: 615-108-927
+13-Mar-24 21:58:16 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/user_utils.py', reloading
+13-Mar-24 21:58:18 - [INFO] - Development environment configured.
+13-Mar-24 21:58:18 - [INFO] - Message sent successfully.
+13-Mar-24 21:58:18 - [WARNING] -  * Debugger is active!
+13-Mar-24 21:58:18 - [INFO] -  * Debugger PIN: 615-108-927
+13-Mar-24 22:10:38 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+13-Mar-24 22:10:40 - [INFO] - Development environment configured.
+13-Mar-24 22:10:40 - [INFO] - Message sent successfully.
+13-Mar-24 22:10:40 - [WARNING] -  * Debugger is active!
+13-Mar-24 22:10:40 - [INFO] -  * Debugger PIN: 615-108-927
+>>>>>>> Stashed changes
