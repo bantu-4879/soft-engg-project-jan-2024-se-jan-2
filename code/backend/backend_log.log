@@ -3608,3 +3608,21 @@
 14-Mar-24 15:26:33 - [INFO] - Message sent successfully.
 14-Mar-24 15:26:33 - [WARNING] -  * Debugger is active!
 14-Mar-24 15:26:33 - [INFO] -  * Debugger PIN: 145-495-166
+14-Mar-24 15:27:48 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\tags_bp.py', reloading
+14-Mar-24 15:27:48 - [INFO] -  * Restarting with stat
+14-Mar-24 15:27:49 - [INFO] - Development environment configured.
+14-Mar-24 15:27:49 - [INFO] - Message sent successfully.
+14-Mar-24 15:27:49 - [WARNING] -  * Debugger is active!
+14-Mar-24 15:27:49 - [INFO] -  * Debugger PIN: 145-495-166
+14-Mar-24 15:33:13 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\stats_bp.py', reloading
+14-Mar-24 15:33:14 - [INFO] -  * Restarting with stat
+14-Mar-24 15:33:15 - [INFO] - Development environment configured.
+14-Mar-24 15:33:15 - [INFO] - Message sent successfully.
+14-Mar-24 15:33:15 - [WARNING] -  * Debugger is active!
+14-Mar-24 15:33:15 - [INFO] -  * Debugger PIN: 145-495-166
+14-Mar-24 15:33:24 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\tags_bp.py', reloading
+14-Mar-24 15:33:25 - [INFO] -  * Restarting with stat
+14-Mar-24 15:33:26 - [INFO] - Development environment configured.
+14-Mar-24 15:33:26 - [INFO] - Message sent successfully.
+14-Mar-24 15:33:26 - [WARNING] -  * Debugger is active!
+14-Mar-24 15:33:26 - [INFO] -  * Debugger PIN: 145-495-166
