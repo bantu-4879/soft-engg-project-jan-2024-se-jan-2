@@ -807,7 +807,7 @@ class TicketComment(Resource):
                 if user.role == "Staff" or user.role == "Admin":
                     #show the comments only to the staff members and admins
                     
-                    ticket_comments = get_ticket_comments(ticket.id)
+                    ticket_comments = ticket_utils.get_ticket_comments(ticket.id)
                     return success_200_custom(data=ticket_comments)
             else:
                 raise NotFoundError(status_msg="Ticket does not exists")
