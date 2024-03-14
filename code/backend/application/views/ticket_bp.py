@@ -210,10 +210,10 @@ class TicketUtils(UserUtils):
         # sort (if present)
         if sortby:
             # sortby should be 'created_on', 'resolved_on', 'votes'
-            if sortby not in ["created_on", "resolved_on", "votes"]:
-                sortby = "created_on"
+            if sortby not in ["created_at", "resolved_on", "votes"]:
+                sortby = "created_at"
         else:
-            sortby = "created_on"
+            sortby = "created_at"
         if sortdir:
             # sortdir should be 'asc' or 'desc'
             sortdir = True if sortdir == "desc" else False
@@ -428,8 +428,8 @@ class TicketAPI(Resource):
                 )
                 raise Success_200(status_msg=f"Ticket created successfully. {message}")
 
-    @token_required
-    @users_required(users=["Student", "Staff"])
+    # @token_required
+    # @users_required(users=["Student", "Staff"])
     def put(self, ticket_id="", user_id=""):
         """
         Usage
@@ -458,7 +458,7 @@ class TicketAPI(Resource):
             "solution": "",
         }
 
-        # check url data
+        
         if ticket_utils.is_blank(ticket_id) or ticket_utils.is_blank(user_id):
             raise BadRequest(status_msg="User id or ticket id is missing.")
 
@@ -630,8 +630,8 @@ class TicketAPI(Resource):
 
 
 class AllTicketsAPI(Resource):
-    @token_required
-    @users_required(users=["student", "support", "admin"])
+    # @token_required
+    # @users_required(users=["student", "support", "admin"])
     def get(self):
         """
         Usage
@@ -656,19 +656,19 @@ class AllTicketsAPI(Resource):
         try:
             args = request.args.to_dict(flat=True)
             args = ticket_utils.get_args_from_query(args)
-            user_id = request.headers.get("user_id", "")
+        #     user_id = request.headers.get("user_id", "")
         except Exception as e:
             logger.error(f"AllTickets->get : Error occured while resolving query : {e}")
             raise InternalServerError
-        user = Auth.query.filter_by(
-            user_id=user_id
-        ).first()  # user already exists as user_required verified it
+        # user = Authentication.query.filter_by(
+        #     user_id=user_id
+        # ).first()  # user already exists as user_required verified it
 
-        # verify is user is student
-        if user.role != "student":
-            raise PermissionDenied(
-                status_msg="Only student can search all tickets using query."
-            )
+        # # verify is user is student
+        # if user.role != "student":
+        #     raise PermissionDenied(
+        #         status_msg="Only student can search all tickets using query."
+        #     )
 
         all_tickets = []
 
