@@ -3596,3 +3596,15 @@
 14-Mar-24 15:06:22 - [INFO] - Message sent successfully.
 14-Mar-24 15:06:22 - [WARNING] -  * Debugger is active!
 14-Mar-24 15:06:22 - [INFO] -  * Debugger PIN: 145-495-166
+14-Mar-24 15:25:49 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\globals.py', reloading
+14-Mar-24 15:25:49 - [INFO] -  * Restarting with stat
+14-Mar-24 15:25:50 - [INFO] - Development environment configured.
+14-Mar-24 15:25:50 - [INFO] - Message sent successfully.
+14-Mar-24 15:25:50 - [WARNING] -  * Debugger is active!
+14-Mar-24 15:25:50 - [INFO] -  * Debugger PIN: 145-495-166
+14-Mar-24 15:26:32 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\globals.py', reloading
+14-Mar-24 15:26:32 - [INFO] -  * Restarting with stat
+14-Mar-24 15:26:33 - [INFO] - Development environment configured.
+14-Mar-24 15:26:33 - [INFO] - Message sent successfully.
+14-Mar-24 15:26:33 - [WARNING] -  * Debugger is active!
+14-Mar-24 15:26:33 - [INFO] -  * Debugger PIN: 145-495-166
