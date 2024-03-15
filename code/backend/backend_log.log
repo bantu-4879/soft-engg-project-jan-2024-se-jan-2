@@ -3644,3 +3644,9 @@
 14-Mar-24 15:44:51 - [INFO] - Message sent successfully.
 14-Mar-24 15:44:51 - [WARNING] -  * Debugger is active!
 14-Mar-24 15:44:51 - [INFO] -  * Debugger PIN: 145-495-166
+14-Mar-24 15:46:27 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\__init__.py', reloading
+14-Mar-24 15:46:27 - [INFO] -  * Restarting with stat
+14-Mar-24 15:46:28 - [INFO] - Development environment configured.
+14-Mar-24 15:46:28 - [WARNING] -  * Debugger is active!
+14-Mar-24 15:46:28 - [INFO] -  * Debugger PIN: 145-495-166
+14-Mar-24 20:44:05 - [INFO] - Development environment configured.
