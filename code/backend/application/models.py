@@ -134,4 +134,15 @@ class DisciplinaryAction(db.Model):
     flagged_users = db.relationship('User', foreign_keys=[user_id],backref='disciplinary_actions')
     flagging_staff = db.relationship('User', foreign_keys=[flagged_by],backref='flagged_actions')
     approving_staff = db.relationship('User', foreign_keys=[approved_by], backref='approved_actions')
-    
+
+class FAQ(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    question = db.Column(db.String, nullable=False)
+    solution = db.Column(db.String, nullable=False)
+    tags_list=db.Column(db.String) 
+    created_by = db.Column(db.String(100), db.ForeignKey('user.id'), nullable=False)
+
+class FAQAttachment(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    faq_id = db.Column(db.String(100), db.ForeignKey('faq.id'))
+    attachment_location = db.Column(db.String(200))
