@@ -3650,3 +3650,70 @@
 14-Mar-24 15:46:28 - [WARNING] -  * Debugger is active!
 14-Mar-24 15:46:28 - [INFO] -  * Debugger PIN: 145-495-166
 14-Mar-24 20:44:05 - [INFO] - Development environment configured.
+16-Mar-24 20:53:39 - [INFO] - Development environment configured.
+16-Mar-24 20:53:39 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+16-Mar-24 20:53:39 - [INFO] - [33mPress CTRL+C to quit[0m
+16-Mar-24 20:53:39 - [INFO] -  * Restarting with stat
+16-Mar-24 20:53:40 - [INFO] - Development environment configured.
+16-Mar-24 20:53:40 - [WARNING] -  * Debugger is active!
+16-Mar-24 20:53:40 - [INFO] -  * Debugger PIN: 163-373-655
+16-Mar-24 20:53:47 - [INFO] - 127.0.0.1 - - [16/Mar/2024 20:53:47] "[32mGET /api/v2/faq HTTP/1.1[0m" 308 -
+16-Mar-24 20:53:47 - [INFO] - All FAQs found : 0
+16-Mar-24 20:53:47 - [INFO] - 200 - Custom success 200 response sent
+16-Mar-24 20:53:47 - [INFO] - 127.0.0.1 - - [16/Mar/2024 20:53:47] "GET /api/v2/faq/ HTTP/1.1" 200 -
+16-Mar-24 20:54:03 - [INFO] - 127.0.0.1 - - [16/Mar/2024 20:54:03] "[32mPOST /api/v2/faq HTTP/1.1[0m" 308 -
+16-Mar-24 20:54:03 - [ERROR] - FAQAPI->post : Error occured while creating a new faq : (sqlite3.IntegrityError) datatype mismatch
+[SQL: INSERT INTO faq (id, question, solution, tags_list, created_by) VALUES (?, ?, ?, ?, ?)]
+[parameters: ('e868ef96f2731202971552dee63b351b', 'Test question', 'test solution', 'test tag', 'test bot')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+16-Mar-24 20:54:03 - [INFO] - 500 - Error occured while creating a new faq
+16-Mar-24 20:54:03 - [INFO] - 127.0.0.1 - - [16/Mar/2024 20:54:03] "[35m[1mPOST /api/v2/faq/ HTTP/1.1[0m" 500 -
+16-Mar-24 20:57:06 - [INFO] - 127.0.0.1 - - [16/Mar/2024 20:57:06] "[32mGET /api/v2/faq HTTP/1.1[0m" 308 -
+16-Mar-24 20:57:06 - [INFO] - All FAQs found : 0
+16-Mar-24 20:57:06 - [INFO] - 200 - Custom success 200 response sent
+16-Mar-24 20:57:06 - [INFO] - 127.0.0.1 - - [16/Mar/2024 20:57:06] "GET /api/v2/faq/ HTTP/1.1" 200 -
+16-Mar-24 20:57:33 - [INFO] - Development environment configured.
+16-Mar-24 20:57:34 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+16-Mar-24 20:57:34 - [INFO] - [33mPress CTRL+C to quit[0m
+16-Mar-24 20:57:34 - [INFO] -  * Restarting with stat
+16-Mar-24 20:57:34 - [INFO] - Development environment configured.
+16-Mar-24 20:57:34 - [WARNING] -  * Debugger is active!
+16-Mar-24 20:57:34 - [INFO] -  * Debugger PIN: 163-373-655
+16-Mar-24 21:00:15 - [INFO] - Development environment configured.
+16-Mar-24 21:00:35 - [INFO] - Development environment configured.
+16-Mar-24 21:00:45 - [INFO] - Development environment configured.
+16-Mar-24 21:00:53 - [INFO] - Development environment configured.
+16-Mar-24 21:01:54 - [INFO] - Development environment configured.
+16-Mar-24 21:01:54 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+16-Mar-24 21:01:54 - [INFO] - [33mPress CTRL+C to quit[0m
+16-Mar-24 21:01:54 - [INFO] -  * Restarting with stat
+16-Mar-24 21:01:55 - [INFO] - Development environment configured.
+16-Mar-24 21:01:55 - [WARNING] -  * Debugger is active!
+16-Mar-24 21:01:55 - [INFO] -  * Debugger PIN: 163-373-655
+16-Mar-24 21:01:59 - [INFO] - 127.0.0.1 - - [16/Mar/2024 21:01:59] "[32mGET /api/v2/faq HTTP/1.1[0m" 308 -
+16-Mar-24 21:01:59 - [INFO] - All FAQs found : 0
+16-Mar-24 21:01:59 - [INFO] - 200 - Custom success 200 response sent
+16-Mar-24 21:01:59 - [INFO] - 127.0.0.1 - - [16/Mar/2024 21:01:59] "GET /api/v2/faq/ HTTP/1.1" 200 -
+16-Mar-24 21:02:03 - [INFO] - 127.0.0.1 - - [16/Mar/2024 21:02:03] "[32mPOST /api/v2/faq HTTP/1.1[0m" 308 -
+16-Mar-24 21:02:03 - [INFO] - FAQ created successfully.
+16-Mar-24 21:02:03 - [INFO] - 200 - FAQ created successfully. Attachments are empty.
+16-Mar-24 21:02:03 - [INFO] - 127.0.0.1 - - [16/Mar/2024 21:02:03] "POST /api/v2/faq/ HTTP/1.1" 200 -
+16-Mar-24 21:02:15 - [INFO] - 127.0.0.1 - - [16/Mar/2024 21:02:15] "[32mGET /api/v2/faq HTTP/1.1[0m" 308 -
+16-Mar-24 21:02:15 - [INFO] - All FAQs found : 1
+16-Mar-24 21:02:15 - [INFO] - 200 - Custom success 200 response sent
+16-Mar-24 21:02:15 - [INFO] - 127.0.0.1 - - [16/Mar/2024 21:02:15] "GET /api/v2/faq/ HTTP/1.1" 200 -
+16-Mar-24 21:02:22 - [INFO] - 127.0.0.1 - - [16/Mar/2024 21:02:22] "[32mGET /api/v2/faq HTTP/1.1[0m" 308 -
+16-Mar-24 21:02:22 - [INFO] - All FAQs found : 1
+16-Mar-24 21:02:22 - [INFO] - 200 - Custom success 200 response sent
+16-Mar-24 21:02:22 - [INFO] - 127.0.0.1 - - [16/Mar/2024 21:02:22] "GET /api/v2/faq/ HTTP/1.1" 200 -
+16-Mar-24 21:02:27 - [INFO] - 127.0.0.1 - - [16/Mar/2024 21:02:27] "[32mPOST /api/v2/faq HTTP/1.1[0m" 308 -
+16-Mar-24 21:02:27 - [INFO] - FAQ created successfully.
+16-Mar-24 21:02:27 - [INFO] - 200 - FAQ created successfully. Attachments are empty.
+16-Mar-24 21:02:27 - [INFO] - 127.0.0.1 - - [16/Mar/2024 21:02:27] "POST /api/v2/faq/ HTTP/1.1" 200 -
+16-Mar-24 21:02:30 - [INFO] - 127.0.0.1 - - [16/Mar/2024 21:02:30] "[32mGET /api/v2/faq HTTP/1.1[0m" 308 -
+16-Mar-24 21:02:30 - [INFO] - All FAQs found : 2
+16-Mar-24 21:02:30 - [INFO] - 200 - Custom success 200 response sent
+16-Mar-24 21:02:30 - [INFO] - 127.0.0.1 - - [16/Mar/2024 21:02:30] "GET /api/v2/faq/ HTTP/1.1" 200 -
