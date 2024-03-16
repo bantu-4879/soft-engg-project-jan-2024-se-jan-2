@@ -136,7 +136,7 @@ class DisciplinaryAction(db.Model):
     approving_staff = db.relationship('User', foreign_keys=[approved_by], backref='approved_actions')
 
 class FAQ(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
+    id = db.Column(db.String, primary_key=True)
     question = db.Column(db.String, nullable=False)
     solution = db.Column(db.String, nullable=False)
     tags_list=db.Column(db.String) 
