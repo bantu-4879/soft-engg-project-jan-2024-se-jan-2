@@ -43,19 +43,28 @@ tags_api = Api(tags_bp)
 tags_util = TagsUtil()
 
 class TagsAPI(Resource): 
+
     def get(self): 
+    #this method is used to get all of the available tags
         try:
             all_tags = []
-            
+            tags = Tags.query.all() 
+            for tag in tags: 
+                t = tags_util.convert_tags_to_dict(tag)
+                all_tags.append(t)
+            logger.info(f"All tags found!")
             return success_200_custom(data=all_tags)
         except Exception as e:
-            logger.error(f"FAQAPI->get : Error occured while fetching FAQ data : {e}")
+            logger.error(f"TagsAPI->get : Error occured while fetching FAQ data : {e}")
             raise InternalServerError
 
-        return ""
+    #how are tags added? 
     def post(self): 
         return ""
+    
+    #is there a need to update/edit the tags? 
     def put(self): 
         return ""
+    
     def delete(self): 
         return ""

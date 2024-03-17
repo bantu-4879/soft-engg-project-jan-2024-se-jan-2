@@ -90,9 +90,9 @@ class InboxAPI(Resource):
             for message in messages:
                 m = inbox_util.convert_message_to_dict(message)
                 user_messages.append(m)
-                logger.info(f"All Messages found")
+            logger.info(f"All Messages found")
 
-                return success_200_custom(data=user_messages)
+            return success_200_custom(data=user_messages)
 
         except Exception as e:
             logger.error(
