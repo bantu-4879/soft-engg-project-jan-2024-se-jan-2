@@ -181,7 +181,7 @@ class UserUtils:
             if not user:
                 raise NotFoundError(status_msg="User does not exists")
 
-            role = user.role
+            role = user.role.name
 
             # checks if first name is empty
             if self.is_blank(details["first_name"]):
@@ -189,7 +189,7 @@ class UserUtils:
             else:
                 user.first_name = details["first_name"]
 
-            user.last_name = details["last_name"]  # last name can be empty
+            user.second_name = details["last_name"]  # last name can be empty
 
             # checks if email is valid
             if not (self.is_email_valid(details["email"])):

@@ -31,7 +31,7 @@ def token_required(f):
                         user.is_logged = False
                         user.authentication.token = ""
                         user.authentication.token_created = 0
-                        user.authentication.token_expiry = 0
+                        user.authentication.token_expired = 0
                         db.session.add(user)
                         db.session.commit()
                         raise Unauthenticated(

@@ -4187,3 +4187,121 @@
 19-Mar-24 13:16:58 - [INFO] - Development environment configured.
 >>>>>>> Stashed changes
 >>>>>>> e09ae27648307b5747805c456169ad3fa6f24879
+19-Mar-24 17:34:11 - [INFO] - Development environment configured.
+19-Mar-24 17:34:11 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+19-Mar-24 17:34:11 - [INFO] - [33mPress CTRL+C to quit[0m
+19-Mar-24 17:34:11 - [INFO] -  * Restarting with stat
+19-Mar-24 17:34:12 - [INFO] - Development environment configured.
+19-Mar-24 17:34:12 - [WARNING] -  * Debugger is active!
+19-Mar-24 17:34:12 - [INFO] -  * Debugger PIN: 144-740-991
+19-Mar-24 17:34:59 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discourseAuth_bp.py', reloading
+19-Mar-24 17:34:59 - [INFO] -  * Restarting with stat
+19-Mar-24 17:35:00 - [INFO] - Development environment configured.
+19-Mar-24 17:35:00 - [WARNING] -  * Debugger is active!
+19-Mar-24 17:35:00 - [INFO] -  * Debugger PIN: 144-740-991
+19-Mar-24 17:42:11 - [INFO] - Development environment configured.
+19-Mar-24 17:42:41 - [INFO] - Development environment configured.
+19-Mar-24 17:43:05 - [INFO] - Development environment configured.
+19-Mar-24 17:43:05 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+19-Mar-24 17:43:05 - [INFO] - [33mPress CTRL+C to quit[0m
+19-Mar-24 17:43:05 - [INFO] -  * Restarting with stat
+19-Mar-24 17:43:06 - [INFO] - Development environment configured.
+19-Mar-24 17:43:06 - [WARNING] -  * Debugger is active!
+19-Mar-24 17:43:06 - [INFO] -  * Debugger PIN: 144-740-991
+19-Mar-24 17:43:22 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discourseAuth_bp.py', reloading
+19-Mar-24 17:43:22 - [INFO] -  * Restarting with stat
+19-Mar-24 17:43:23 - [INFO] - Development environment configured.
+19-Mar-24 17:43:23 - [WARNING] -  * Debugger is active!
+19-Mar-24 17:43:23 - [INFO] -  * Debugger PIN: 144-740-991
+19-Mar-24 17:45:03 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discourseAuth_bp.py', reloading
+19-Mar-24 17:45:03 - [INFO] -  * Restarting with stat
+19-Mar-24 17:50:07 - [INFO] - Development environment configured.
+19-Mar-24 17:50:07 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+19-Mar-24 17:50:07 - [INFO] - [33mPress CTRL+C to quit[0m
+19-Mar-24 17:50:07 - [INFO] -  * Restarting with stat
+19-Mar-24 17:50:08 - [INFO] - Development environment configured.
+19-Mar-24 17:50:08 - [WARNING] -  * Debugger is active!
+19-Mar-24 17:50:08 - [INFO] -  * Debugger PIN: 144-740-991
+19-Mar-24 17:52:43 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\common_utils.py', reloading
+19-Mar-24 17:52:43 - [INFO] -  * Restarting with stat
+19-Mar-24 17:52:44 - [INFO] - Development environment configured.
+19-Mar-24 17:52:44 - [WARNING] -  * Debugger is active!
+19-Mar-24 17:52:44 - [INFO] -  * Debugger PIN: 144-740-991
+19-Mar-24 17:54:15 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\user_utils.py', reloading
+19-Mar-24 17:54:15 - [INFO] -  * Restarting with stat
+19-Mar-24 17:54:16 - [INFO] - Development environment configured.
+19-Mar-24 17:54:16 - [WARNING] -  * Debugger is active!
+19-Mar-24 17:54:16 - [INFO] -  * Debugger PIN: 144-740-991
+19-Mar-24 17:54:30 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\user_utils.py', reloading
+19-Mar-24 17:54:30 - [INFO] -  * Restarting with stat
+19-Mar-24 17:54:31 - [INFO] - Development environment configured.
+19-Mar-24 17:54:31 - [WARNING] -  * Debugger is active!
+19-Mar-24 17:54:31 - [INFO] -  * Debugger PIN: 144-740-991
+19-Mar-24 17:55:31 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\user_utils.py', reloading
+19-Mar-24 17:55:31 - [INFO] -  * Restarting with stat
+19-Mar-24 17:55:32 - [INFO] - Development environment configured.
+19-Mar-24 17:55:32 - [WARNING] -  * Debugger is active!
+19-Mar-24 17:55:32 - [INFO] -  * Debugger PIN: 144-740-991
+19-Mar-24 17:55:42 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discourseAuth_bp.py', reloading
+19-Mar-24 17:55:42 - [INFO] -  * Restarting with stat
+19-Mar-24 17:55:43 - [INFO] - Development environment configured.
+19-Mar-24 17:55:43 - [WARNING] -  * Debugger is active!
+19-Mar-24 17:55:43 - [INFO] -  * Debugger PIN: 144-740-991
+19-Mar-24 17:59:01 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discourseAuth_bp.py', reloading
+19-Mar-24 17:59:01 - [INFO] -  * Restarting with stat
+19-Mar-24 17:59:02 - [INFO] - Development environment configured.
+19-Mar-24 17:59:02 - [WARNING] -  * Debugger is active!
+19-Mar-24 17:59:02 - [INFO] -  * Debugger PIN: 144-740-991
+19-Mar-24 18:00:47 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\auth_bp.py', reloading
+19-Mar-24 18:00:47 - [INFO] -  * Restarting with stat
+19-Mar-24 18:00:48 - [INFO] - Development environment configured.
+19-Mar-24 18:00:48 - [WARNING] -  * Debugger is active!
+19-Mar-24 18:00:48 - [INFO] -  * Debugger PIN: 144-740-991
+19-Mar-24 18:03:19 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discourseAuth_bp.py', reloading
+19-Mar-24 18:03:19 - [INFO] -  * Restarting with stat
+19-Mar-24 18:03:20 - [INFO] - Development environment configured.
+19-Mar-24 18:03:20 - [WARNING] -  * Debugger is active!
+19-Mar-24 18:03:20 - [INFO] -  * Debugger PIN: 144-740-991
+19-Mar-24 18:06:50 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discourseAuth_bp.py', reloading
+19-Mar-24 18:06:50 - [INFO] -  * Restarting with stat
+19-Mar-24 18:06:51 - [INFO] - Development environment configured.
+19-Mar-24 18:06:51 - [WARNING] -  * Debugger is active!
+19-Mar-24 18:06:51 - [INFO] -  * Debugger PIN: 144-740-991
+19-Mar-24 18:09:41 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discourseAuth_bp.py', reloading
+19-Mar-24 18:09:41 - [INFO] -  * Restarting with stat
+19-Mar-24 18:09:42 - [INFO] - Development environment configured.
+19-Mar-24 18:09:42 - [WARNING] -  * Debugger is active!
+19-Mar-24 18:09:42 - [INFO] -  * Debugger PIN: 144-740-991
+19-Mar-24 18:13:40 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discourseAuth_bp.py', reloading
+19-Mar-24 18:13:40 - [INFO] -  * Restarting with stat
+19-Mar-24 20:16:55 - [INFO] - Development environment configured.
+19-Mar-24 20:16:55 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+19-Mar-24 20:16:55 - [INFO] - [33mPress CTRL+C to quit[0m
+19-Mar-24 20:16:55 - [INFO] -  * Restarting with stat
+19-Mar-24 20:16:58 - [INFO] - Development environment configured.
+19-Mar-24 20:16:58 - [WARNING] -  * Debugger is active!
+19-Mar-24 20:16:58 - [INFO] -  * Debugger PIN: 144-740-991
+19-Mar-24 20:17:00 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discourseAuth_bp.py', reloading
+19-Mar-24 20:17:00 - [INFO] -  * Restarting with stat
+19-Mar-24 20:17:03 - [INFO] - Development environment configured.
+19-Mar-24 20:17:03 - [WARNING] -  * Debugger is active!
+19-Mar-24 20:17:03 - [INFO] -  * Debugger PIN: 144-740-991
+19-Mar-24 20:18:19 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discourseAuth_bp.py', reloading
+19-Mar-24 20:18:19 - [INFO] -  * Restarting with stat
+19-Mar-24 20:18:22 - [INFO] - Development environment configured.
+19-Mar-24 20:18:22 - [WARNING] -  * Debugger is active!
+19-Mar-24 20:18:22 - [INFO] -  * Debugger PIN: 144-740-991
+19-Mar-24 20:19:53 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+19-Mar-24 20:19:53 - [INFO] -  * Restarting with stat
+19-Mar-24 20:19:56 - [INFO] - Development environment configured.
+19-Mar-24 20:19:56 - [WARNING] -  * Debugger is active!
+19-Mar-24 20:19:56 - [INFO] -  * Debugger PIN: 144-740-991
+19-Mar-24 20:20:32 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+19-Mar-24 20:20:32 - [INFO] -  * Restarting with stat
+19-Mar-24 20:20:35 - [INFO] - Development environment configured.
+19-Mar-24 20:20:35 - [WARNING] -  * Debugger is active!
+19-Mar-24 20:20:35 - [INFO] -  * Debugger PIN: 144-740-991

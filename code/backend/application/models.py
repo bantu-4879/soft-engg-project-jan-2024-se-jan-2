@@ -26,7 +26,7 @@ class User(db.Model):
     #disciplinary_actions = db.relationship('DisciplinaryAction', foreign_keys='DisciplinaryAction.user_id',backref='user_associated', lazy='dynamic') # relationship with disciplinary actions.
     #flagging_actions = db.relationship('DisciplinaryAction',foreign_keys='DisciplinaryAction.flagged_by', backref='flagged_by_user', lazy='dynamic')
     #approving_actions = db.relationship('DisciplinaryAction',  foreign_keys='DisciplinaryAction.approved_by',backref='approved_by_user', lazy='dynamic')
-
+    discourse_username=db.Column(db.String(100))
 
 class Role(db.Model):
     id = db.Column(db.Integer, primary_key=True)
