@@ -71,9 +71,15 @@ class AuthUtils(UserUtils):
             db.session.commit()
 
         if details["operation"] == "delete_user":
-            user = User.query.filter_by(user_id=details["user_id"]).first()
+            user = User.query.filter_by(id=details["user_id"]).first()
+            if user:
+                auth = Authentication.query.filter_by(id=user.authentication.id).first()
+                if auth:
+                    db.session.delete(auth)
+                    db.session.commit()
             db.session.delete(user)
             db.session.commit()
+            
 
         return user
 
