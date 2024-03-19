@@ -857,8 +857,24 @@ class TicketCommentAPI(Resource):
         else:
             details["added_at"] = time_to_str(datetime.datetime.now())
             details["ticket_id"] = ticket_id
-            ticket = Ticket(**details)
-    
+            comment = TicketComments(**details)
+            try:
+                db.session.add(comment)
+                db.session.commit()
+            except Exception as e:
+                logger.error(
+                    f"TicketCommentAPI->post : Error occured while commenting : {e}"
+                )
+                raise InternalServerError(
+                    status_msg="Error occured while commenting"
+                )
+            else:
+                logger.info("Commented successfully.")
+                raise Success_200(status_msg="Ticket created successfully.")
+
+
+
+
     def put(self):
         return ""
         

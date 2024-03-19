@@ -4187,6 +4187,7 @@
 19-Mar-24 13:16:58 - [INFO] - Development environment configured.
 >>>>>>> Stashed changes
 >>>>>>> e09ae27648307b5747805c456169ad3fa6f24879
+<<<<<<< Updated upstream
 19-Mar-24 17:34:11 - [INFO] - Development environment configured.
 19-Mar-24 17:34:11 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
@@ -4305,3 +4306,99 @@
 19-Mar-24 20:20:35 - [INFO] - Development environment configured.
 19-Mar-24 20:20:35 - [WARNING] -  * Debugger is active!
 19-Mar-24 20:20:35 - [INFO] -  * Debugger PIN: 144-740-991
+=======
+19-Mar-24 20:33:11 - [INFO] - Development environment configured.
+19-Mar-24 20:33:11 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+19-Mar-24 20:33:11 - [INFO] - [33mPress CTRL+C to quit[0m
+19-Mar-24 20:33:11 - [INFO] -  * Restarting with stat
+19-Mar-24 20:33:12 - [INFO] - Development environment configured.
+19-Mar-24 20:33:12 - [WARNING] -  * Debugger is active!
+19-Mar-24 20:33:12 - [INFO] -  * Debugger PIN: 615-108-927
+19-Mar-24 20:33:25 - [INFO] - All Messages found
+19-Mar-24 20:33:25 - [INFO] - 200 - Custom success 200 response sent
+19-Mar-24 20:33:25 - [INFO] - 127.0.0.1 - - [19/Mar/2024 20:33:25] "GET /api/v2/inbox/23463b99b62a72f26ed677cc556c44e8 HTTP/1.1" 200 -
+19-Mar-24 20:34:37 - [INFO] - 200 - Message Deleted!
+19-Mar-24 20:34:37 - [INFO] - 127.0.0.1 - - [19/Mar/2024 20:34:37] "DELETE /api/v2/inbox/23463b99b62a72f26ed677cc556c44e8/139 HTTP/1.1" 200 -
+19-Mar-24 20:36:16 - [INFO] - All tags found!
+19-Mar-24 20:36:16 - [INFO] - 200 - Custom success 200 response sent
+19-Mar-24 20:36:16 - [INFO] - 127.0.0.1 - - [19/Mar/2024 20:36:16] "GET /api/v2/tags/all-tags HTTP/1.1" 200 -
+19-Mar-24 20:36:36 - [INFO] - All tags found!
+19-Mar-24 20:36:36 - [INFO] - 200 - Custom success 200 response sent
+19-Mar-24 20:36:36 - [INFO] - 127.0.0.1 - - [19/Mar/2024 20:36:36] "GET /api/v2/tags/all-tags HTTP/1.1" 200 -
+19-Mar-24 20:42:28 - [INFO] - 127.0.0.1 - - [19/Mar/2024 20:42:28] "[33mGET /api/v2/comments/004bfc68cfef180e37b6c4b540d1e719/23463b99b62a72f26ed677cc556c44e8 HTTP/1.1[0m" 404 -
+19-Mar-24 20:42:43 - [INFO] - 404 - Ticket does not exists
+19-Mar-24 20:42:43 - [INFO] - 127.0.0.1 - - [19/Mar/2024 20:42:43] "[33mGET /api/v2/ticket/comments/004bfc68cfef180e37b6c4b540d1e719/23463b99b62a72f26ed677cc556c44e8 HTTP/1.1[0m" 404 -
+19-Mar-24 20:43:10 - [INFO] - 127.0.0.1 - - [19/Mar/2024 20:43:10] "GET /api/v2/ticket/comments/7aaef40c060d2e8be8e5e23e3f7ea0a9/23463b99b62a72f26ed677cc556c44e8 HTTP/1.1" 200 -
+19-Mar-24 20:43:37 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+19-Mar-24 20:43:37 - [INFO] -  * Restarting with stat
+19-Mar-24 20:43:39 - [INFO] - Development environment configured.
+19-Mar-24 20:43:39 - [WARNING] -  * Debugger is active!
+19-Mar-24 20:43:39 - [INFO] -  * Debugger PIN: 615-108-927
+19-Mar-24 20:43:43 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+19-Mar-24 20:43:43 - [INFO] -  * Restarting with stat
+19-Mar-24 20:43:44 - [INFO] - Development environment configured.
+19-Mar-24 20:43:44 - [WARNING] -  * Debugger is active!
+19-Mar-24 20:43:44 - [INFO] -  * Debugger PIN: 615-108-927
+19-Mar-24 20:43:46 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+19-Mar-24 20:43:46 - [INFO] -  * Restarting with stat
+19-Mar-24 20:43:48 - [INFO] - Development environment configured.
+19-Mar-24 20:43:48 - [WARNING] -  * Debugger is active!
+19-Mar-24 20:43:48 - [INFO] -  * Debugger PIN: 615-108-927
+19-Mar-24 20:43:49 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+19-Mar-24 20:43:49 - [INFO] -  * Restarting with stat
+19-Mar-24 20:43:50 - [INFO] - Development environment configured.
+19-Mar-24 20:43:50 - [WARNING] -  * Debugger is active!
+19-Mar-24 20:43:50 - [INFO] -  * Debugger PIN: 615-108-927
+19-Mar-24 20:43:57 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+19-Mar-24 20:43:57 - [INFO] -  * Restarting with stat
+19-Mar-24 20:43:59 - [INFO] - Development environment configured.
+19-Mar-24 20:43:59 - [WARNING] -  * Debugger is active!
+19-Mar-24 20:43:59 - [INFO] -  * Debugger PIN: 615-108-927
+19-Mar-24 20:44:01 - [INFO] - 127.0.0.1 - - [19/Mar/2024 20:44:01] "GET /api/v2/ticket/comments/7aaef40c060d2e8be8e5e23e3f7ea0a9/23463b99b62a72f26ed677cc556c44e8 HTTP/1.1" 200 -
+19-Mar-24 20:44:28 - [INFO] - 127.0.0.1 - - [19/Mar/2024 20:44:28] "GET /api/v2/ticket/comments/7aaef40c060d2e8be8e5e23e3f7ea0a9/23463b99b62a72f26ed677cc556c44e8 HTTP/1.1" 200 -
+19-Mar-24 20:44:56 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+19-Mar-24 20:44:56 - [INFO] -  * Restarting with stat
+19-Mar-24 20:44:57 - [INFO] - Development environment configured.
+19-Mar-24 20:44:57 - [WARNING] -  * Debugger is active!
+19-Mar-24 20:44:57 - [INFO] -  * Debugger PIN: 615-108-927
+19-Mar-24 20:45:01 - [INFO] - 127.0.0.1 - - [19/Mar/2024 20:45:01] "GET /api/v2/ticket/comments/7aaef40c060d2e8be8e5e23e3f7ea0a9/23463b99b62a72f26ed677cc556c44e8 HTTP/1.1" 200 -
+19-Mar-24 20:45:32 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+19-Mar-24 20:45:32 - [INFO] -  * Restarting with stat
+19-Mar-24 20:45:33 - [INFO] - Development environment configured.
+19-Mar-24 20:45:34 - [WARNING] -  * Debugger is active!
+19-Mar-24 20:45:34 - [INFO] -  * Debugger PIN: 615-108-927
+19-Mar-24 20:45:40 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+19-Mar-24 20:45:40 - [INFO] -  * Restarting with stat
+19-Mar-24 20:45:41 - [INFO] - Development environment configured.
+19-Mar-24 20:45:41 - [WARNING] -  * Debugger is active!
+19-Mar-24 20:45:41 - [INFO] -  * Debugger PIN: 615-108-927
+19-Mar-24 20:45:51 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+19-Mar-24 20:45:51 - [INFO] -  * Restarting with stat
+19-Mar-24 20:45:53 - [INFO] - Development environment configured.
+19-Mar-24 20:45:53 - [WARNING] -  * Debugger is active!
+19-Mar-24 20:45:53 - [INFO] -  * Debugger PIN: 615-108-927
+19-Mar-24 20:46:25 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+19-Mar-24 20:46:26 - [INFO] -  * Restarting with stat
+19-Mar-24 20:49:09 - [INFO] - Development environment configured.
+19-Mar-24 20:49:09 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+19-Mar-24 20:49:09 - [INFO] - [33mPress CTRL+C to quit[0m
+19-Mar-24 20:49:09 - [INFO] -  * Restarting with stat
+19-Mar-24 20:49:10 - [INFO] - Development environment configured.
+19-Mar-24 20:49:10 - [WARNING] -  * Debugger is active!
+19-Mar-24 20:49:10 - [INFO] -  * Debugger PIN: 615-108-927
+19-Mar-24 20:49:22 - [INFO] - 127.0.0.1 - - [19/Mar/2024 20:49:22] "GET /api/v2/ticket/comments/7aaef40c060d2e8be8e5e23e3f7ea0a9/23463b99b62a72f26ed677cc556c44e8 HTTP/1.1" 200 -
+19-Mar-24 20:52:45 - [INFO] - 404 - Ticket does not exists
+19-Mar-24 20:52:45 - [INFO] - 127.0.0.1 - - [19/Mar/2024 20:52:45] "[33mGET /api/v2/ticket/comments/23463b99b62a72f26ed677cc556c44e8 HTTP/1.1[0m" 404 -
+19-Mar-24 20:52:54 - [INFO] - 127.0.0.1 - - [19/Mar/2024 20:52:54] "[32mGET /api/v2/ticket/comments//23463b99b62a72f26ed677cc556c44e8 HTTP/1.1[0m" 308 -
+19-Mar-24 20:52:54 - [INFO] - 404 - Ticket does not exists
+19-Mar-24 20:52:54 - [INFO] - 127.0.0.1 - - [19/Mar/2024 20:52:54] "[33mGET /api/v2/ticket/comments/23463b99b62a72f26ed677cc556c44e8 HTTP/1.1[0m" 404 -
+19-Mar-24 20:52:58 - [INFO] - 127.0.0.1 - - [19/Mar/2024 20:52:58] "GET /api/v2/ticket/comments/7aaef40c060d2e8be8e5e23e3f7ea0a9/23463b99b62a72f26ed677cc556c44e8 HTTP/1.1" 200 -
+19-Mar-24 20:53:05 - [INFO] - 127.0.0.1 - - [19/Mar/2024 20:53:05] "[33mGET /api/v2/ticket/comments/7aaef40c060d2e8be8e5e23e3f7ea0a9/ HTTP/1.1[0m" 404 -
+19-Mar-24 20:53:09 - [INFO] - 127.0.0.1 - - [19/Mar/2024 20:53:09] "[35m[1mGET /api/v2/ticket/comments/7aaef40c060d2e8be8e5e23e3f7ea0a9/2 HTTP/1.1[0m" 500 -
+19-Mar-24 20:53:15 - [INFO] - 127.0.0.1 - - [19/Mar/2024 20:53:15] "GET /api/v2/ticket/comments/7aaef40c060d2e8be8e5e23e3f7ea0a9/23463b99b62a72f26ed677cc556c44e8 HTTP/1.1" 200 -
+>>>>>>> Stashed changes
+19-Mar-24 21:26:10 - [INFO] - Development environment configured.
+19-Mar-24 21:26:10 - [WARNING] -  * Debugger is active!
+19-Mar-24 21:26:10 - [INFO] -  * Debugger PIN: 615-108-927

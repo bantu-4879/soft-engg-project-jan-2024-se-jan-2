@@ -89,7 +89,6 @@ class TagsAPI(Resource):
                 logger.info("Tag created successfully.")
                 raise Success_200(status_msg="Tag created successfully")
 
-
     # is there a need to update/edit the tags?
     def put(self):
         return ""
@@ -180,7 +179,13 @@ class TicketTagsAPI(Resource):
                             )
 
     def put(self):
+        details = {
+            "tags_ids":[]
+        }
         return ""
+
+#[1,4,6,7,8,0]
+#[1,4,6,8,0,9]
 
     def delete(self):
         return ""
