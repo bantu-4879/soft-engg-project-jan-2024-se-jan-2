@@ -29,4 +29,9 @@ SMTP_SERVER_PORT = 1025
 SENDER_ADDRESS = "osts_group_14@gmail.com"  # dummy mail and password
 SENDER_PASSWORD = "1234"
 
+
+#Discourse runs at http://127.0.0.1:4200/
+DISCOURSE_BASE_URL='http://127.0.0.1:4200'
+API_USERNAME='ticketAppAdmin'
+API_KEY='6e42f16cbd5b3058c002d81bbf2cf08d6c34e63a0dbd027c61ea5acb33462f2d'
 # --------------------  END  --------------------
