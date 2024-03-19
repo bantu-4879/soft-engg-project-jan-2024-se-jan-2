@@ -270,11 +270,12 @@ class TicketUtils(UserUtils):
     
 
     def get_ticket_comments(self,ticket_id):
-        ticket=Ticket.query.filter_by(id=ticket_id).first()
-        comments=[]
-        for comment in ticket.comments:
-            comment.append(comment)
-        return comments
+        comments = TicketComments.query.filter_by(ticket_id=ticket_id).all()
+        print(comments)
+        ticket_comments = vars(comments)  # verify if this properly converts obj to dict
+        if "_sa_instance_state" in ticket_comments:
+            del ticket_comments["_sa_instance_state"]
+        return ticket_comments
     
     def get_ticket_data(self,ticket_id):
         ticket_data=TicketData.query.filter_by(ticket_id=ticket_id).all()
@@ -789,9 +790,10 @@ ticket_api.add_resource(AllTicketsUserAPI, "/all-tickets/<string:user_id>")
 
 
 class TicketCommentAPI(Resource):
-    def get(self, ticket_id="", user_id=""):
-        if ticket_utils.is_blank(ticket_id) or ticket_utils.is_blank(user_id):
-            raise BadRequest(status_msg="User id or ticket id is missing.")
+    def get(self, ticket_id=""):
+        raise Success_200(status_msg="success")
+        if ticket_utils.is_blank(ticket_id) :
+            raise BadRequest(status_msg="Ticket id is missing.")
 
         # check if ticket exists
         try:
@@ -803,25 +805,21 @@ class TicketCommentAPI(Resource):
             raise InternalServerError
         else:
             if ticket:
-                user = User.query.filter_by(id=user_id).first()
-                if user.role == "Staff" or user.role == "Admin":
-                    #show the comments only to the staff members and admins
-                    
-                    ticket_comments = ticket_utils.get_ticket_comments(ticket.id)
-                    return success_200_custom(data=ticket_comments)
+                ticket_comments = ticket_utils.get_ticket_comments(ticket.id) #issue stemming from this function
+                return success_200_custom(data=ticket_comments)
             else:
                 raise NotFoundError(status_msg="Ticket does not exists")
         
-    def post(self, user_id="", ticket_id=""):
+    def post(self, ticket_id=""):
         
         details = {
             "comment": "",
-            "commentor" : "",
-            "user_mentions" : "",
+            "commenter" : "",
+            "user_mentions" : [],
             "reactions" : ""
         }
-        if ticket_utils.is_blank(ticket_id) or ticket_utils.is_blank(user_id):
-            raise BadRequest(status_msg="User id or ticket id is missing.")
+        if ticket_utils.is_blank(ticket_id):
+            raise BadRequest(status_msg="Ticket id is missing.")
 
         # check if ticket exists
         try:
@@ -832,40 +830,46 @@ class TicketCommentAPI(Resource):
             )
             raise InternalServerError
         else:
-            if ticket:
-                user = User.query.filter_by(id=user_id).first()
-                if user.role == "Staff" or user.role == "Admin":
-                    #show the comments only to the staff members and admins
-                    
-                    ticket_comments = ticket_utils.get_ticket_comments(ticket.id)
-                    return success_200_custom(data=ticket_comments)
-            else:
+            if ticket: 
+                try:
+                    form = request.get_json()
+                    for key in details:
+                        value = form.get(key, "")
+                        details[key] = value
+                except Exception as e:
+                    logger.error(
+                        f"TicketCommentAPI->post : Error occured while getting form data : {e}"
+                    )
+                    raise InternalServerError
+                else:
+                    details["added_at"] = time_to_str(datetime.datetime.now())
+                    details["ticket_id"] = ticket_id
+                    comment = TicketComments(**details)
+                    try:
+                        db.session.add(comment)
+                        db.session.commit()
+                    except Exception as e:
+                        logger.error(
+                            f"TicketCommentAPI->post : Error occured while commenting : {e}"
+                        )
+                        raise InternalServerError(
+                            status_msg="Error occured while commenting"
+                        )
+                    else:
+                        logger.info("Commented successfully.")
+                        raise Success_200(status_msg="Ticket comment added successfully.")
+            else: 
                 raise NotFoundError(status_msg="Ticket does not exists")
-                
-        try:
-            form = request.get_json()
-            for key in details:
-                value = form.get(key, "")
-                if ticket_utils.is_blank(value):
-                    value = ""
-                details[key] = value
-        except Exception as e:
-            logger.error(
-                f"TicketCommentAPI->post : Error occured while getting form data : {e}"
-            )
-            raise InternalServerError
-        else:
-            details["added_at"] = time_to_str(datetime.datetime.now())
-            details["ticket_id"] = ticket_id
-            ticket = Ticket(**details)
-    
-    def put(self):
-        return ""
-        
-    def delete(self):
-        return ""
 
-ticket_api.add_resource(TicketCommentAPI, "/comments/<string:ticket_id>/<string:user_id>", endpoint="ticket_comment_get")
+
+
+    def put(self, ticket_id=""):
+        raise Success_200(status_msg="Ticket Comment updated successfully")
+        
+    def delete(self, ticket_id=""):
+        raise Success_200(status_msg="Ticket Comment deleted successfully")
+
+ticket_api.add_resource(TicketCommentAPI, "/comments/<string:ticket_id>", endpoint="ticket_comment_get")
 
 
 

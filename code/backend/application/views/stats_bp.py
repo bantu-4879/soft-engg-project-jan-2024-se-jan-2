@@ -20,16 +20,19 @@ from application.views.user_utils import time_to_str
 now = time_to_str(datetime.now())
 
 
-class StatsUtils(): 
+class StatsUtils(UserUtils): 
     def get_data_for_admin():
         return ""
 
+stats_bp = Blueprint("stats_bp", __name__)
+stats_api = Api(stats_bp)
+stats_util = StatsUtils()
 
-
-class StatsAPI(): 
+class StatsAPI(Resource): 
     def get(self): 
-        return ""
+        info = []
+        return success_200_custom(data=info)
+
+stats_api.add_resource(StatsAPI, "/", endpoint="stats_get")
     
-    def post(self): 
-        return ""
 
