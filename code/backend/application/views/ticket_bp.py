@@ -788,7 +788,7 @@ ticket_api.add_resource(AllTicketsUserAPI, "/all-tickets/<string:user_id>")
 # - delete comment &
 
 
-class TicketComment(Resource):
+class TicketCommentAPI(Resource):
     def get(self, ticket_id="", user_id=""):
         if ticket_utils.is_blank(ticket_id) or ticket_utils.is_blank(user_id):
             raise BadRequest(status_msg="User id or ticket id is missing.")
@@ -865,7 +865,7 @@ class TicketComment(Resource):
     def delete(self):
         return ""
 
-
+ticket_api.add_resource(TicketCommentAPI, "/comments/<string:ticket_id>/<string:user_id>", endpoint="ticket_comment_get")
 
 
 

@@ -3717,6 +3717,7 @@
 16-Mar-24 21:02:30 - [INFO] - All FAQs found : 2
 16-Mar-24 21:02:30 - [INFO] - 200 - Custom success 200 response sent
 16-Mar-24 21:02:30 - [INFO] - 127.0.0.1 - - [16/Mar/2024 21:02:30] "GET /api/v2/faq/ HTTP/1.1" 200 -
+<<<<<<< Updated upstream
 19-Mar-24 12:10:52 - [INFO] - Development environment configured.
 19-Mar-24 12:10:52 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
@@ -4047,6 +4048,7 @@
 19-Mar-24 14:49:42 - [INFO] - Development environment configured.
 19-Mar-24 14:49:43 - [WARNING] -  * Debugger is active!
 19-Mar-24 14:49:43 - [INFO] -  * Debugger PIN: 144-740-991
+<<<<<<< HEAD
 19-Mar-24 15:27:50 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\tags_bp.py', reloading
 19-Mar-24 15:27:50 - [INFO] -  * Restarting with stat
 19-Mar-24 15:27:53 - [INFO] - Development environment configured.
@@ -4072,3 +4074,116 @@
 19-Mar-24 15:52:31 - [INFO] - Development environment configured.
 19-Mar-24 15:52:31 - [WARNING] -  * Debugger is active!
 19-Mar-24 15:52:31 - [INFO] -  * Debugger PIN: 144-740-991
+=======
+=======
+19-Mar-24 12:33:28 - [INFO] - Development environment configured.
+19-Mar-24 12:33:28 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+19-Mar-24 12:33:28 - [INFO] - [33mPress CTRL+C to quit[0m
+19-Mar-24 12:33:28 - [INFO] -  * Restarting with stat
+19-Mar-24 12:33:29 - [INFO] - Development environment configured.
+19-Mar-24 12:33:29 - [WARNING] -  * Debugger is active!
+19-Mar-24 12:33:29 - [INFO] -  * Debugger PIN: 615-108-927
+19-Mar-24 12:42:17 - [INFO] - All Messages found
+19-Mar-24 12:42:17 - [INFO] - 200 - Custom success 200 response sent
+19-Mar-24 12:42:17 - [INFO] - 127.0.0.1 - - [19/Mar/2024 12:42:17] "GET /api/v2/inbox/23463b99b62a72f26ed677cc556c44e8 HTTP/1.1" 200 -
+19-Mar-24 12:42:36 - [INFO] - All Messages found
+19-Mar-24 12:42:36 - [INFO] - 200 - Custom success 200 response sent
+19-Mar-24 12:42:36 - [INFO] - 127.0.0.1 - - [19/Mar/2024 12:42:36] "GET /api/v2/inbox/0 HTTP/1.1" 200 -
+19-Mar-24 12:42:45 - [INFO] - All Messages found
+19-Mar-24 12:42:45 - [INFO] - 200 - Custom success 200 response sent
+19-Mar-24 12:42:45 - [INFO] - 127.0.0.1 - - [19/Mar/2024 12:42:45] "GET /api/v2/inbox/23463b99b62a72f26ed677cc556c44e8 HTTP/1.1" 200 -
+19-Mar-24 12:47:29 - [INFO] - 200 - Message Deleted!
+19-Mar-24 12:47:29 - [INFO] - 127.0.0.1 - - [19/Mar/2024 12:47:29] "DELETE /api/v2/inbox/23463b99b62a72f26ed677cc556c44e8/139 HTTP/1.1" 200 -
+19-Mar-24 12:54:05 - [INFO] - 127.0.0.1 - - [19/Mar/2024 12:54:05] "[33mGET /api/v2/tags HTTP/1.1[0m" 404 -
+19-Mar-24 12:54:40 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/__init__.py', reloading
+19-Mar-24 12:54:41 - [INFO] -  * Restarting with stat
+19-Mar-24 12:54:42 - [INFO] - Development environment configured.
+19-Mar-24 12:55:25 - [INFO] - Development environment configured.
+19-Mar-24 12:55:25 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+19-Mar-24 12:55:25 - [INFO] - [33mPress CTRL+C to quit[0m
+19-Mar-24 12:55:25 - [INFO] -  * Restarting with stat
+19-Mar-24 12:55:26 - [INFO] - Development environment configured.
+19-Mar-24 12:55:26 - [WARNING] -  * Debugger is active!
+19-Mar-24 12:55:26 - [INFO] -  * Debugger PIN: 615-108-927
+19-Mar-24 12:55:29 - [INFO] - 127.0.0.1 - - [19/Mar/2024 12:55:29] "[33mGET /api/v2/tags HTTP/1.1[0m" 404 -
+19-Mar-24 12:55:51 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/tags_bp.py', reloading
+19-Mar-24 12:55:51 - [INFO] -  * Restarting with stat
+19-Mar-24 12:55:52 - [INFO] - Development environment configured.
+19-Mar-24 12:55:52 - [WARNING] -  * Debugger is active!
+19-Mar-24 12:55:52 - [INFO] -  * Debugger PIN: 615-108-927
+19-Mar-24 12:56:04 - [INFO] - All tags found!
+19-Mar-24 12:56:04 - [INFO] - 200 - Custom success 200 response sent
+19-Mar-24 12:56:04 - [INFO] - 127.0.0.1 - - [19/Mar/2024 12:56:04] "GET /api/v2/tags/all_tags HTTP/1.1" 200 -
+19-Mar-24 12:56:48 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/tags_bp.py', reloading
+19-Mar-24 12:56:48 - [INFO] -  * Restarting with stat
+19-Mar-24 12:56:49 - [INFO] - Development environment configured.
+19-Mar-24 12:56:49 - [WARNING] -  * Debugger is active!
+19-Mar-24 12:56:49 - [INFO] -  * Debugger PIN: 615-108-927
+19-Mar-24 12:58:01 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/tags_bp.py', reloading
+19-Mar-24 12:58:01 - [INFO] -  * Restarting with stat
+19-Mar-24 12:58:02 - [INFO] - Development environment configured.
+19-Mar-24 12:58:02 - [WARNING] -  * Debugger is active!
+19-Mar-24 12:58:02 - [INFO] -  * Debugger PIN: 615-108-927
+19-Mar-24 12:58:39 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+19-Mar-24 12:58:39 - [INFO] -  * Restarting with stat
+19-Mar-24 12:59:33 - [INFO] - Development environment configured.
+19-Mar-24 12:59:33 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+19-Mar-24 12:59:33 - [INFO] - [33mPress CTRL+C to quit[0m
+19-Mar-24 12:59:33 - [INFO] -  * Restarting with stat
+19-Mar-24 12:59:34 - [INFO] - Development environment configured.
+19-Mar-24 12:59:34 - [WARNING] -  * Debugger is active!
+19-Mar-24 12:59:34 - [INFO] -  * Debugger PIN: 615-108-927
+19-Mar-24 12:59:37 - [INFO] - 127.0.0.1 - - [19/Mar/2024 12:59:37] "[33mGET /api/v2/tags/all_tags HTTP/1.1[0m" 404 -
+19-Mar-24 12:59:42 - [INFO] - All tags found!
+19-Mar-24 12:59:42 - [INFO] - 200 - Custom success 200 response sent
+19-Mar-24 12:59:42 - [INFO] - 127.0.0.1 - - [19/Mar/2024 12:59:42] "GET /api/v2/tags/all-tags HTTP/1.1" 200 -
+19-Mar-24 13:00:01 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+19-Mar-24 13:00:01 - [INFO] -  * Restarting with stat
+19-Mar-24 13:00:02 - [INFO] - Development environment configured.
+19-Mar-24 13:00:02 - [WARNING] -  * Debugger is active!
+19-Mar-24 13:00:02 - [INFO] -  * Debugger PIN: 615-108-927
+19-Mar-24 13:00:07 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+19-Mar-24 13:00:08 - [INFO] -  * Restarting with stat
+19-Mar-24 13:00:09 - [INFO] - Development environment configured.
+19-Mar-24 13:00:09 - [WARNING] -  * Debugger is active!
+19-Mar-24 13:00:09 - [INFO] -  * Debugger PIN: 615-108-927
+19-Mar-24 13:00:10 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+19-Mar-24 13:00:10 - [INFO] -  * Restarting with stat
+19-Mar-24 13:00:11 - [INFO] - Development environment configured.
+19-Mar-24 13:01:07 - [INFO] - Development environment configured.
+19-Mar-24 13:01:07 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+19-Mar-24 13:01:07 - [INFO] - [33mPress CTRL+C to quit[0m
+19-Mar-24 13:01:07 - [INFO] -  * Restarting with stat
+19-Mar-24 13:01:08 - [INFO] - Development environment configured.
+19-Mar-24 13:01:08 - [WARNING] -  * Debugger is active!
+19-Mar-24 13:01:08 - [INFO] -  * Debugger PIN: 615-108-927
+19-Mar-24 13:01:09 - [INFO] - 404 - Ticket does not exists
+19-Mar-24 13:01:09 - [INFO] - 127.0.0.1 - - [19/Mar/2024 13:01:09] "[33mGET /api/v2/ticket/004bfc68cfef180e37b6c4b540d1e719/23463b99b62a72f26ed677cc556c44e8 HTTP/1.1[0m" 404 -
+19-Mar-24 13:01:55 - [INFO] - 200 - Custom success 200 response sent
+19-Mar-24 13:01:55 - [INFO] - 127.0.0.1 - - [19/Mar/2024 13:01:55] "GET /api/v2/ticket/7aaef40c060d2e8be8e5e23e3f7ea0a9/23463b99b62a72f26ed677cc556c44e8 HTTP/1.1" 200 -
+19-Mar-24 13:03:01 - [INFO] - 127.0.0.1 - - [19/Mar/2024 13:03:01] "[33mGET /api/v2/ticket/comment/7aaef40c060d2e8be8e5e23e3f7ea0a9/23463b99b62a72f26ed677cc556c44e8 HTTP/1.1[0m" 404 -
+19-Mar-24 13:03:15 - [INFO] - 127.0.0.1 - - [19/Mar/2024 13:03:15] "GET /api/v2/ticket/comments/7aaef40c060d2e8be8e5e23e3f7ea0a9/23463b99b62a72f26ed677cc556c44e8 HTTP/1.1" 200 -
+19-Mar-24 13:16:45 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/tags_bp.py', reloading
+19-Mar-24 13:16:46 - [INFO] -  * Restarting with stat
+19-Mar-24 13:16:47 - [INFO] - Development environment configured.
+19-Mar-24 13:16:47 - [WARNING] -  * Debugger is active!
+19-Mar-24 13:16:47 - [INFO] -  * Debugger PIN: 615-108-927
+19-Mar-24 13:16:48 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/tags_bp.py', reloading
+19-Mar-24 13:16:48 - [INFO] -  * Restarting with stat
+19-Mar-24 13:16:49 - [INFO] - Development environment configured.
+19-Mar-24 13:16:49 - [WARNING] -  * Debugger is active!
+19-Mar-24 13:16:49 - [INFO] -  * Debugger PIN: 615-108-927
+19-Mar-24 13:16:51 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/tags_bp.py', reloading
+19-Mar-24 13:16:52 - [INFO] -  * Restarting with stat
+19-Mar-24 13:16:52 - [INFO] - Development environment configured.
+19-Mar-24 13:16:52 - [WARNING] -  * Debugger is active!
+19-Mar-24 13:16:52 - [INFO] -  * Debugger PIN: 615-108-927
+19-Mar-24 13:16:57 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/tags_bp.py', reloading
+19-Mar-24 13:16:57 - [INFO] -  * Restarting with stat
+19-Mar-24 13:16:58 - [INFO] - Development environment configured.
+>>>>>>> Stashed changes
+>>>>>>> e09ae27648307b5747805c456169ad3fa6f24879
