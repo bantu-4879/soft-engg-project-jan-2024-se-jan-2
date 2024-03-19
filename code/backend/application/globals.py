@@ -11,7 +11,7 @@ DEBUG = True
 ENV_TYPE = "dev"  # "test"
 BASE = f"http://{HOST}:{PORT}"
 API_VERSION = "v2"
-TOKEN_VALIDITY = 60  # seconds
+TOKEN_VALIDITY = 240  # seconds
 ACCEPTED_IMAGE_EXTENSIONS = ["jpg", "jpeg", "png", "gif"]
 PROFILE_PIC_PATH = os.path.join(
     BACKEND_ROOT_PATH, "databases", "images", "profile_pics"
@@ -31,7 +31,7 @@ SENDER_PASSWORD = "1234"
 
 
 #Discourse runs at http://127.0.0.1:4200/
-DISCOURSE_BASE_URL='http://127.0.0.1:4200'
+DISCOURSE_BASE_URL='http://127.0.0.1:3000'
 API_USERNAME='ticketAppAdmin'
 API_KEY='6e42f16cbd5b3058c002d81bbf2cf08d6c34e63a0dbd027c61ea5acb33462f2d'
 # --------------------  END  --------------------

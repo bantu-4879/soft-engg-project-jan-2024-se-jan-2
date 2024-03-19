@@ -27,7 +27,7 @@ def token_required(f):
             if user:
                 if user.is_logged:
                     # if token is expired then update auth table and ask user to login again
-                    if int(time.time()) > user.token_expiry_on:
+                    if int(time.time()) > user.authentication.token_expired:
                         user.is_logged = False
                         user.authentication.token = ""
                         user.authentication.token_created = 0
@@ -75,7 +75,7 @@ def admin_required(f):
         else:
             user = User.query.filter_by(id=user_id_rec).first()
             role = user.role.name
-            if role == "admin":
+            if role == "Admin":
                 # role verified
                 logger.info(f"Admin role is verified for the user: {user_id_rec}")
                 return f(*args, **kwargs)
@@ -102,7 +102,7 @@ def users_required(users):
                 user = User.query.filter_by(id=user_id_rec).first()
                 if user:
                     role = user.role.name
-                    if user.is_approved or role == "admin":
+                    if user.is_approved or role == "Admin":
                         logger.info(
                         f"User role : {role} : is verified for the user: {user_id_rec}"
                         )

@@ -14,6 +14,7 @@ from application.views.admin_bp import admin_bp
 from application.views.faq_bp import faq_bp
 from application.views.ticket_bp import ticket_bp
 from application.views.inbox_bp import inbox_bp
+from application.views.discourseAuth_bp import discourseAuth_bp
 from flask_cors import CORS
 from application.models import *
 import os
@@ -45,6 +46,7 @@ def create_app(env_type="dev"):
     app.register_blueprint(faq_bp, url_prefix=f"/api/{API_VERSION}/faq") 
     app.register_blueprint(user_management_bp,url_prefix=f"/api/{API_VERSION}/management")
     app.register_blueprint(inbox_bp, url_prefix=f"/api/{API_VERSION}/inbox")
+    app.register_blueprint(discourseAuth_bp, url_prefix=f"/api/{API_VERSION}/discourseAuth")
     # tags_bp
     # ticket_tracking_bp
     # stats_bp

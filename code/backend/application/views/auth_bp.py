@@ -66,12 +66,12 @@ class AuthUtils(UserUtils):
             db.session.commit()
 
         if details["operation"] == "verify_user":
-            user = User.query.filter_by(id=details["id"]).first()
+            user = User.query.filter_by(id=details["user_id"]).first()
             user.is_approved = True
             db.session.commit()
 
         if details["operation"] == "delete_user":
-            user = User.query.filter_by(user_id=details["user.id"]).first()
+            user = User.query.filter_by(user_id=details["user_id"]).first()
             db.session.delete(user)
             db.session.commit()
 
@@ -291,9 +291,7 @@ class NewUsers(Resource):
         # get new users data from auth table
         try:
             all_users = (
-                User.query.filter(User.role.name.in_(["student", "support"]))
-                .filter_by(is_verified=False)
-                .all()
+                User.query.join(User.role).filter(Role.name.in_(["Student", "Staff"])).all()
             )
         except Exception as e:
             logger.error(f"NewUsers->get : Error occured while fetching db data : {e}")
@@ -305,7 +303,7 @@ class NewUsers(Resource):
                 _d = {}
                 _d["user_id"] = user.id
                 _d["first_name"] = user.first_name
-                _d["last_name"] = user.last_name
+                _d["last_name"] = user.second_name
                 _d["email"] = user.email
                 _d["role"] = user.role.name
                 data.append(_d)
