@@ -4305,3 +4305,13 @@
 19-Mar-24 20:20:35 - [INFO] - Development environment configured.
 19-Mar-24 20:20:35 - [WARNING] -  * Debugger is active!
 19-Mar-24 20:20:35 - [INFO] -  * Debugger PIN: 144-740-991
+19-Mar-24 20:27:28 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+19-Mar-24 20:27:28 - [INFO] -  * Restarting with stat
+19-Mar-24 20:27:31 - [INFO] - Development environment configured.
+19-Mar-24 20:27:31 - [WARNING] -  * Debugger is active!
+19-Mar-24 20:27:31 - [INFO] -  * Debugger PIN: 144-740-991
+19-Mar-24 20:34:31 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+19-Mar-24 20:34:31 - [INFO] -  * Restarting with stat
+19-Mar-24 20:34:34 - [INFO] - Development environment configured.
+19-Mar-24 20:34:34 - [WARNING] -  * Debugger is active!
+19-Mar-24 20:34:34 - [INFO] -  * Debugger PIN: 144-740-991

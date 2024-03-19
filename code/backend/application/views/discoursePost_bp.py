@@ -27,4 +27,13 @@ discoursePost_bp=Blueprint("discoursePost_bp",__name__)
 discourseAuth_api=Api(discoursePost_bp)
 discourseUserUtils=DiscourseUserUtils()
 
+class Categories(Resource):
+    print("")
+    #get,post,put,delete
 
+class Tags(Resource):
+    print("resource")
+    #get,#post
+
+class TicketThread(Resource):
+    print("")
