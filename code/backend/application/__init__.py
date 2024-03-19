@@ -16,6 +16,7 @@ from application.views.ticket_bp import ticket_bp
 from application.views.inbox_bp import inbox_bp
 from application.views.tags_bp import tags_bp
 from application.views.discourseAuth_bp import discourseAuth_bp
+from application.views.stats_bp import stats_bp
 from flask_cors import CORS
 from application.models import *
 import os
@@ -50,7 +51,7 @@ def create_app(env_type="dev"):
     app.register_blueprint(discourseAuth_bp, url_prefix=f"/api/{API_VERSION}/discourseAuth")
     app.register_blueprint(tags_bp, url_prefix=f"/api/{API_VERSION}/tags")
     # ticket_tracking_bp
-    # stats_bp
+    app.register_blueprint(stats_bp,url_prefix=f"/api/{API_VERSION}/data" )
 
     app.app_context().push()
 

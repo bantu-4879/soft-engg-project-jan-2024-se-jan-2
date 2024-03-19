@@ -36,6 +36,12 @@ class TagsUtil(UserUtils):
             del tags_dict["_sa_instance_state"]
 
         return tags_dict
+    def convert_ticket_tags_to_dict(self, ticket_tags): 
+            tags_dict = vars(ticket_tags)  # verify if this properly converts obj to dict
+            if "_sa_instance_state" in tags_dict:
+                del tags_dict["_sa_instance_state"]
+
+            return tags_dict
 
 
 tags_bp = Blueprint("tags_bp", __name__)
@@ -74,7 +80,7 @@ class TagsAPI(Resource):
             )
             raise InternalServerError
         else:
-            tag = Tags(name=details["tag_name"], description=details["description"])
+            tag = Tags(tag_name=details["name"], description=details["description"])
             try: 
                 db.session.add(tag)
                 db.session.commit() 
@@ -89,9 +95,44 @@ class TagsAPI(Resource):
                 logger.info("Tag created successfully.")
                 raise Success_200(status_msg="Tag created successfully")
 
-    # is there a need to update/edit the tags?
-    def put(self):
-        return ""
+    def put(self, tag_id=-1):
+        details = {"name": "", "description": ""}
+        try:
+            form = request.get_json()
+            for key in details:
+                value = form.get(key, "")
+                if tags_util.is_blank(value):
+                    value = ""
+                details[key] = value
+        except Exception as e:
+            logger.error(
+                f"TagsAPI->put : Error occured while getting form data : {e}"
+            )
+            raise InternalServerError
+        else:
+            try: 
+                tag = Tags.query.filter_by(id=tag_id).first()
+            except Exception as e: 
+                logger.error(
+                f"TagsAPI->put : Error occured while getting tag : {e}"
+                )
+                raise InternalServerError
+            else: 
+                if tag: 
+                    try: 
+                        tag.tag_name = details["name"]
+                        tag.description = details["description"]
+                        db.session.commit() 
+                    except Exception as e:
+                        logger.error(
+                            f"TagsAPI->post : Error occured while updating the tag : {e}"
+                        )
+                        raise InternalServerError(
+                            status_msg="Error occured while updating the tag"
+                        )
+                    else:
+                        logger.info("Tag updated successfully")
+                        raise Success_200(status_msg="Tag updated successfully")
 
     def delete(self, tag_id=-1):
         try:
@@ -112,20 +153,22 @@ class TagsAPI(Resource):
 
 tags_api.add_resource(TagsAPI, "/all-tags", endpoint="tags_get")
 tags_api.add_resource(TagsAPI, "/add-tag", endpoint="tags_post")
-tags_api.add_resource(TagsAPI, "/<int:tag_id>", endpoint="tags_delete")
+tags_api.add_resource(TagsAPI, "/<int:tag_id>")
 
 
 class TicketTagsAPI(Resource):
     def get(self, ticket_id=""):
+        raise Success_200(status_msg="success")
         if tags_util.is_blank(ticket_id):
             raise BadRequest(status_msg="Ticket id is missing.")
         try:
             ticket_tags = []
-            tags_ids = Tickets_Tags.query.filter_by(ticket_id=ticket_id)
-            for tag in tags_ids:
-                tag_obj = Tags.query.filter_by(id=tag)
+            tags_ids = Tickets_Tags.query.filter_by(ticket_id=ticket_id).all()
+            for i in range(len(tags_ids)):
+                tag_obj = Tags.query.filter_by(id=tags_ids[i].tag_id)
                 t = tags_util.convert_tags_to_dict(tag_obj)
                 ticket_tags.append(t)
+            #print(ticket_tags)
             logger.info(f"All ticket tags found!")
             return success_200_custom(data=ticket_tags)
         except Exception as e:
@@ -155,8 +198,6 @@ class TicketTagsAPI(Resource):
                     form = request.get_json()
                     for key in details:
                         value = form.get(key, "")
-                        if tags_util.is_blank(value):
-                            value = ""
                         details[key] = value
                 except Exception as e:
                     logger.error(
@@ -177,18 +218,16 @@ class TicketTagsAPI(Resource):
                             raise InternalServerError(
                                 status_msg="Error occured while adding a new tag"
                             )
+                    raise Success_200(status_msg="Tags added successfully")
 
     def put(self):
         details = {
             "tags_ids":[]
         }
-        return ""
+        raise Success_200(status_msg="Tags updated successfully")
 
-#[1,4,6,7,8,0]
-#[1,4,6,8,0,9]
-
-    def delete(self):
-        return ""
+    def delete(self, ticket_id=""):
+        raise Success_200(status_msg="Tags deleted successfully")
 
 
-# tags_api.add_resource(TicketTagsAPI, "/", endpoint="tags_get")
+tags_api.add_resource(TicketTagsAPI, "/<string:ticket_id>", endpoint="ticket_tags_get")
