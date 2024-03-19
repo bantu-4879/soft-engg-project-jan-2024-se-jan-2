@@ -58,7 +58,7 @@ def token_required(f):
                     )
             else:
                 raise NotFoundError(
-                    status_msg="Provided used id does not exists. Please create account."
+                    status_msg="Provided user id does not exists. Please create account."
                 )
 
     return decorated
