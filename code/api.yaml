@@ -84,6 +84,16 @@ info:
         <td>Integer</td>
         <td>Not Null</td>
       </tr>
+      <tr>
+        <td>Authentication</td>
+        <td>Integer</td>
+        <td>Not Null, Foreign Key</td>
+      </tr>
+      <tr>
+        <td>discourse_username</td>
+        <td>String</td>
+        <td>Not Null</td>
+      </tr>
       </tbody>
 
     </table>
@@ -100,6 +110,11 @@ info:
         <td>id</td>
         <td>Integer</td>
         <td>Primary Key</td>
+      </tr>
+      <tr>
+        <td>name</td>
+        <td>Sting</td>
+        <td>Not Null, Unique</td>
       </tr>
       </tbody>
     </table>
@@ -335,6 +350,11 @@ info:
         <td>Foreign Key</td>
       </tr>
       <tr>
+        <td>user_mentions</td>
+        <td>List</td>
+        <td>Foreign Key, Nullable</td>
+      </tr>
+      <tr>
         <td>reactions</td>
         <td>String</td>
         <td>Nullable</td>
@@ -519,6 +539,11 @@ info:
         <td>String</td>
         <td>Nullable</td>
       </tr>
+      <tr>
+        <td>reopened_at</td>
+        <td>String</td>
+        <td>Nullable</td>
+      </tr>
       </tbody>
     </table>
     
@@ -556,9 +581,85 @@ info:
         <td>String</td>
         <td>Not Null</td>
       </tr>
+      <tr>
+        <td>flagged_users</td>
+        <td>String</td>
+        <td>Foreign Key</td>
+      </tr>
+      <tr>
+        <td>flagging_staff</td>
+        <td>String</td>
+        <td>Foreign Key</td>
+      </tr>
+      <tr>
+        <td>approving_satff</td>
+        <td>String</td>
+        <td>Foreign Key</td>
+      </tr>
       </tbody>
     </table>
-    /br></br>
+    <h3> [15] FAQ Schema</h3>
+    <h4>...</h4>
+    <table>
+      <thead>
+        <th>Column Name</th>
+        <th>Column Type</th>
+        <th>Constraints</th>
+      </thead>
+      <tbody>
+      <tr>
+        <td>id</td>
+        <td>Integer</td>
+        <td>Primary Key</td>
+      </tr>
+      <tr>
+        <td>question</td>
+        <td>String</td>
+        <td>Not Null</td>
+      </tr>
+      <tr>
+        <td>solution</td>
+        <td>String</td>
+        <td>Not Null</td>
+      </tr>
+      <tr>
+        <td>tags_list</td>
+        <td>String</td>
+        <td>Nullable</td>
+      </tr>
+      <tr>
+        <td>created_by</td>
+        <td>String</td>
+        <td>Not Null, Foreign Key</td>
+      </tr>
+      </tbody>
+      </table>
+    <h3> [16] FAQAttachment Schema</h3>
+    <h4>...</h4>
+    <table>
+      <thead>
+        <th>Column Name</th>
+        <th>Column Type</th>
+        <th>Constraints</th>
+      </thead>
+      <tbody>
+      <tr>
+        <td>id</td>
+        <td>Integer</td>
+        <td>Primary Key</td>
+      </tr>
+      <tr>
+        <td>faq_id</td>
+        <td>String</td>
+        <td>Not Null, Foreign Key</td>
+      </tr>
+      <tr>
+        <td>solution</td>
+        <td>String</td>
+        <td>Not Null</td>
+      </tr>
+      </tbody> 
+    </table>
 
   termsOfService: http://swagger.io/terms/
   contact:
