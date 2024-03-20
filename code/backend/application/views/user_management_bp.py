@@ -112,8 +112,8 @@ user_management_util = UserManagementUtils()
 
 class BadgeAPI(Resource):
 
-    # @token_required
-    # @users_required(users=["Admin"])
+    @token_required
+    @users_required(users=["Admin"])
     def post(self):
         """
         Usage
@@ -168,8 +168,8 @@ class BadgeAPI(Resource):
                     status_msg="Cannot create Badge"
                 )
 
-    # @token_required
-    # @users_required(users=["Admin"])       
+    @token_required
+    @users_required(users=["Admin"])       
     def delete(self,badge_id):
         """
         Delete a badge from the database.
@@ -204,8 +204,8 @@ class BadgeAPI(Resource):
 
 class AssignBadgeAPI(Resource):
 
-    # @token_required
-    # @users_required(users=["Admin"])
+    @token_required
+    @users_required(users=["Admin"])
     def post(self):
         """
         Usage
@@ -267,8 +267,8 @@ class AssignBadgeAPI(Resource):
                     status_msg="Cannot assign Badge"
                 )
     
-    # @token_required
-    # @users_required(users=["Admin"])        
+    @token_required
+    @users_required(users=["Admin"])        
     def delete(self,badge_assign_id):
         """
         Revoke a badge.
@@ -304,8 +304,8 @@ class AssignBadgeAPI(Resource):
             raise e
 
 class UserManagementAPI(Resource):
-    # @token_required
-    # @users_required(users=["Admin"])
+    @token_required
+    @users_required(users=["Admin"])
     def put(self, user_id):
         """
         Usage

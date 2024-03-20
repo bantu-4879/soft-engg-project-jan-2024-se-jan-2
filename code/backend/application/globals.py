@@ -11,7 +11,7 @@ DEBUG = True
 ENV_TYPE = "dev"  # "test"
 BASE = f"http://{HOST}:{PORT}"
 API_VERSION = "v2"
-TOKEN_VALIDITY = 240  # seconds
+TOKEN_VALIDITY = 864000  # seconds
 ACCEPTED_IMAGE_EXTENSIONS = ["jpg", "jpeg", "png", "gif"]
 PROFILE_PIC_PATH = os.path.join(
     BACKEND_ROOT_PATH, "databases", "images", "profile_pics"
