@@ -573,6 +573,8 @@ servers:
   description: Local Host
 
 tags:
+- name: Discourse
+  description: Discourse API's
 - name: Login
   description: Login a user
 - name: Register
@@ -583,18 +585,9 @@ tags:
   description: To perform CRUD operations on single ticket
 - name: AllTickets
   description: Get all tickets for different categories and different types of users.
-- name: Student
-  description: Get or update user details
-- name: Support
-  description: Get or update support staff details
-- name: Admin
-  description: Get or update admin details
-- name: FAQ
-  description: Get all FAQs or create a new FAQ.
 - name: Management
   description: Management API's
-- name: Discourse
-  description: Discourse API's
+
 
 paths:
   /api/v2/discourseAuth/discourseRegister:
@@ -608,11 +601,11 @@ paths:
             schema:
               type: object
               example: 
-              name: string,
-              email: string
-              password: string
-              username: string
-              user_id: string  
+                name: string
+                email: string
+                password: string
+                username: string
+                user_id: string  
 
       responses:
         '200':
@@ -668,14 +661,17 @@ paths:
             application/json:
               schema:
                 type: object
-              message:
-                user_id: string
-                first_name: string
-                last_name: string
-                email: string
-                Discourse_Username: string
-              category: success
-              status: 200
+              example:
+                message:
+                  user_id: string
+                  first_name: string
+                  last_name: string
+                  email: string
+                  discourse_Username: string
+                category: success
+                status: 200
+              
+          
     
         "500":
           description: Internal server error
@@ -700,14 +696,15 @@ paths:
             application/json:
               schema:
                 type: object
-              message:
-                id: integer
-                name: strinh
-                color: integer
-                text_color: string
-                description: string
-              category: success
-              status: 200
+              example:
+                message:
+                  id: integer
+                  name: strinh
+                  color: integer
+                  text_color: string
+                  description: string
+                category: success
+                status: 200
     
         "500":
           description: Internal server error
@@ -720,7 +717,7 @@ paths:
                   category: string
                   message: Error occured while fetching database
 
-  /api/v2/discourseAuth/addStaff/{username}: 
+  /api/v2/discourseAuth/addStaff/<username>: 
     put:
       tags:
       - Discourse
@@ -897,14 +894,15 @@ paths:
             application/json:
               schema:
                 type: object
-              message:
-                user_id: string
-                first_name: Max
-                last_name: Doe
-                email: max.doe@example.com
-                role: Staff
-              category: success
-              status: 200
+              example:
+                message:
+                  user_id: string
+                  first_name: Max
+                  last_name: Doe
+                  email: max.doe@example.com
+                  role: Staff
+                category: success
+                status: 200
     
         "500":
           description: Internal server error
@@ -917,7 +915,7 @@ paths:
                   category: string
                   message: Error occured while fetching database
 
-  /api/v2/auth/newUsers/{user_id}:
+  /api/v2/auth/newUsers/<user_id>:
     put:
       tags:
       - NewUsers
@@ -1021,7 +1019,7 @@ paths:
                   category: string
                   message: string
 
-  /api/v2/ticket/{ticket_id}/{user_id}:
+  /api/v2/ticket/<ticket_id>/<user_id>:
     get:
       tags:
       - Ticket
@@ -1186,7 +1184,7 @@ paths:
                   category: string
                   message: Error occured while fetching ticket data
 
-  /api/v2/ticket/{user_id}:
+  /api/v2/ticket/<user_id>:
     post:
       tags:
       - Ticket
@@ -1304,7 +1302,7 @@ paths:
                   category: string
                   message: string
 
-  /api/v2/ticket/all-tickets/{user_id}:
+  /api/v2/ticket/all-tickets/<user_id>:
     get:
       tags:
       - AllTickets
@@ -1351,7 +1349,7 @@ paths:
                   category: string
                   message: string
 
-  /api/v2/management/{user_id}/card:
+  /api/v2/management/<user_id>/card:
     put:
       tags:
       - Management
@@ -1520,7 +1518,7 @@ paths:
                   category: string
                   message: string
     
-  /api/v2/management/badge/{badge_id}:
+  /api/v2/management/badge/<badge_id>:
     delete:
       tags:
       - Management
@@ -1567,7 +1565,7 @@ paths:
                   category: string
                   message: string
 
-  /api/v2/management/assign/badge/{badge_assign_id}:
+  /api/v2/management/assign/badge/<badge_assign_id>:
     delete:
       tags:
       - Management
