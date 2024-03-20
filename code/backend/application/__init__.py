@@ -22,7 +22,7 @@ from application.models import *
 import os
 #from application.g_webhook import gchat_webhook
 from application.views.inbox_bp import post_message
-
+from application.views.discoursePost_bp import discoursePost_bp
 # --------------------  Code  --------------------
 
 
@@ -52,7 +52,7 @@ def create_app(env_type="dev"):
     app.register_blueprint(tags_bp, url_prefix=f"/api/{API_VERSION}/tags")
     # ticket_tracking_bp
     app.register_blueprint(stats_bp,url_prefix=f"/api/{API_VERSION}/data" )
-
+    app.register_blueprint(discoursePost_bp,url_prefix=f"/api/{API_VERSION}/discourse")
     app.app_context().push()
 
     print("the app context is there")

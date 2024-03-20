@@ -5373,3 +5373,630 @@
 19-Mar-24 23:59:55 - [WARNING] -  * Debugger is active!
 19-Mar-24 23:59:55 - [INFO] -  * Debugger PIN: 615-108-927
 >>>>>>> 6e754e318cf33cd089217870021095308bbebb95
+20-Mar-24 12:24:55 - [INFO] - Development environment configured.
+20-Mar-24 12:24:55 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+20-Mar-24 12:24:55 - [INFO] - [33mPress CTRL+C to quit[0m
+20-Mar-24 12:24:55 - [INFO] -  * Restarting with stat
+20-Mar-24 12:24:58 - [INFO] - Development environment configured.
+20-Mar-24 12:24:58 - [WARNING] -  * Debugger is active!
+20-Mar-24 12:24:58 - [INFO] -  * Debugger PIN: 144-740-991
+20-Mar-24 12:32:42 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discourseAuth_bp.py', reloading
+20-Mar-24 12:32:42 - [INFO] -  * Restarting with stat
+20-Mar-24 12:32:45 - [INFO] - Development environment configured.
+20-Mar-24 12:32:45 - [WARNING] -  * Debugger is active!
+20-Mar-24 12:32:45 - [INFO] -  * Debugger PIN: 144-740-991
+20-Mar-24 13:50:15 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+20-Mar-24 13:50:16 - [INFO] -  * Restarting with stat
+20-Mar-24 13:50:20 - [INFO] - Development environment configured.
+20-Mar-24 13:50:20 - [WARNING] -  * Debugger is active!
+20-Mar-24 13:50:20 - [INFO] -  * Debugger PIN: 144-740-991
+20-Mar-24 13:50:45 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+20-Mar-24 13:50:45 - [INFO] -  * Restarting with stat
+20-Mar-24 13:50:48 - [INFO] - Development environment configured.
+20-Mar-24 13:50:48 - [WARNING] -  * Debugger is active!
+20-Mar-24 13:50:48 - [INFO] -  * Debugger PIN: 144-740-991
+20-Mar-24 13:55:29 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+20-Mar-24 13:55:29 - [INFO] -  * Restarting with stat
+20-Mar-24 13:55:32 - [INFO] - Development environment configured.
+20-Mar-24 13:55:32 - [WARNING] -  * Debugger is active!
+20-Mar-24 13:55:32 - [INFO] -  * Debugger PIN: 144-740-991
+20-Mar-24 14:14:53 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+20-Mar-24 14:14:53 - [INFO] -  * Restarting with stat
+20-Mar-24 14:15:14 - [INFO] - Development environment configured.
+20-Mar-24 14:15:14 - [WARNING] -  * Debugger is active!
+20-Mar-24 14:15:14 - [INFO] -  * Debugger PIN: 144-740-991
+20-Mar-24 14:57:36 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+20-Mar-24 14:57:36 - [INFO] -  * Restarting with stat
+20-Mar-24 14:57:37 - [INFO] - Development environment configured.
+20-Mar-24 14:57:37 - [WARNING] -  * Debugger is active!
+20-Mar-24 14:57:37 - [INFO] -  * Debugger PIN: 144-740-991
+20-Mar-24 15:04:21 - [INFO] - 404 - Provided user id does not exists. Please create account.
+20-Mar-24 15:04:21 - [INFO] - 127.0.0.1 - - [20/Mar/2024 15:04:21] "[33mPOST /api/v2/discourseAuth/discourseRegister HTTP/1.1[0m" 404 -
+20-Mar-24 15:05:02 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discourseAuth_bp.py', reloading
+20-Mar-24 15:05:03 - [INFO] -  * Restarting with stat
+20-Mar-24 15:05:04 - [INFO] - Development environment configured.
+20-Mar-24 15:05:04 - [WARNING] -  * Debugger is active!
+20-Mar-24 15:05:04 - [INFO] -  * Debugger PIN: 144-740-991
+20-Mar-24 15:07:24 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discourseAuth_bp.py', reloading
+20-Mar-24 15:07:25 - [INFO] -  * Restarting with stat
+20-Mar-24 15:07:26 - [INFO] - Development environment configured.
+20-Mar-24 15:07:26 - [WARNING] -  * Debugger is active!
+20-Mar-24 15:07:26 - [INFO] -  * Debugger PIN: 144-740-991
+20-Mar-24 15:08:00 - [INFO] - 404 - User does not exists
+20-Mar-24 15:08:00 - [INFO] - 127.0.0.1 - - [20/Mar/2024 15:08:00] "[33mPOST /api/v2/discourseAuth/discourseRegister HTTP/1.1[0m" 404 -
+20-Mar-24 15:09:35 - [INFO] - File path is not valid: D:\GitHub\soft-engg-project-jan-2024-se-jan-2\code\backend\databases\images\profile_pics\dummy_profile.png
+20-Mar-24 15:09:35 - [INFO] - User logged in.
+20-Mar-24 15:09:35 - [INFO] - 200 - Custom success 200 response sent
+20-Mar-24 15:09:35 - [INFO] - 127.0.0.1 - - [20/Mar/2024 15:09:35] "POST /api/v2/auth/login HTTP/1.1" 200 -
+20-Mar-24 15:10:22 - [INFO] - 404 - User does not exists
+20-Mar-24 15:10:22 - [INFO] - 127.0.0.1 - - [20/Mar/2024 15:10:22] "[33mPOST /api/v2/discourseAuth/discourseRegister HTTP/1.1[0m" 404 -
+20-Mar-24 15:12:17 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discourseAuth_bp.py', reloading
+20-Mar-24 15:12:17 - [INFO] -  * Restarting with stat
+20-Mar-24 15:12:18 - [INFO] - Development environment configured.
+20-Mar-24 15:12:18 - [WARNING] -  * Debugger is active!
+20-Mar-24 15:12:18 - [INFO] -  * Debugger PIN: 144-740-991
+20-Mar-24 15:12:47 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+20-Mar-24 15:12:47 - [DEBUG] - http://127.0.0.1:3000 "GET /u/Maxdoe.json HTTP/1.1" 404 None
+20-Mar-24 15:12:47 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+20-Mar-24 15:12:47 - [DEBUG] - http://127.0.0.1:3000 "POST /users.json HTTP/1.1" 200 None
+20-Mar-24 15:12:47 - [INFO] - New account created
+20-Mar-24 15:12:48 - [INFO] - 127.0.0.1 - - [20/Mar/2024 15:12:48] "[35m[1mPOST /api/v2/discourseAuth/discourseRegister HTTP/1.1[0m" 500 -
+20-Mar-24 15:13:28 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discourseAuth_bp.py', reloading
+20-Mar-24 15:13:28 - [INFO] -  * Restarting with stat
+20-Mar-24 15:13:29 - [INFO] - Development environment configured.
+20-Mar-24 15:13:29 - [WARNING] -  * Debugger is active!
+20-Mar-24 15:13:29 - [INFO] -  * Debugger PIN: 144-740-991
+20-Mar-24 15:13:35 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+20-Mar-24 15:13:35 - [DEBUG] - http://127.0.0.1:3000 "GET /u/Maxdoe.json HTTP/1.1" 200 None
+20-Mar-24 15:13:35 - [INFO] - 409 - Username is already in use
+20-Mar-24 15:13:35 - [INFO] - 127.0.0.1 - - [20/Mar/2024 15:13:35] "[31m[1mPOST /api/v2/discourseAuth/discourseRegister HTTP/1.1[0m" 409 -
+20-Mar-24 15:13:43 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+20-Mar-24 15:13:43 - [DEBUG] - http://127.0.0.1:3000 "GET /u/Maxdoe342.json HTTP/1.1" 404 None
+20-Mar-24 15:13:43 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+20-Mar-24 15:13:43 - [DEBUG] - http://127.0.0.1:3000 "POST /users.json HTTP/1.1" 200 None
+20-Mar-24 15:13:43 - [INFO] - New account created
+20-Mar-24 15:13:43 - [INFO] - 127.0.0.1 - - [20/Mar/2024 15:13:43] "[35m[1mPOST /api/v2/discourseAuth/discourseRegister HTTP/1.1[0m" 500 -
+20-Mar-24 15:14:19 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discourseAuth_bp.py', reloading
+20-Mar-24 15:14:19 - [INFO] -  * Restarting with stat
+20-Mar-24 15:14:20 - [INFO] - Development environment configured.
+20-Mar-24 15:14:20 - [WARNING] -  * Debugger is active!
+20-Mar-24 15:14:20 - [INFO] -  * Debugger PIN: 144-740-991
+20-Mar-24 15:14:21 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+20-Mar-24 15:14:21 - [DEBUG] - http://127.0.0.1:3000 "GET /u/Maxdoe342.json HTTP/1.1" 404 None
+20-Mar-24 15:14:21 - [INFO] - 127.0.0.1 - - [20/Mar/2024 15:14:21] "[35m[1mPOST /api/v2/discourseAuth/discourseRegister HTTP/1.1[0m" 500 -
+20-Mar-24 15:15:16 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+20-Mar-24 15:15:16 - [DEBUG] - http://127.0.0.1:3000 "GET /u/Maxdoe342.json HTTP/1.1" 404 None
+20-Mar-24 15:15:16 - [INFO] - 127.0.0.1 - - [20/Mar/2024 15:15:16] "[35m[1mPOST /api/v2/discourseAuth/discourseRegister HTTP/1.1[0m" 500 -
+20-Mar-24 15:15:29 - [INFO] - File path is not valid: D:\GitHub\soft-engg-project-jan-2024-se-jan-2\code\backend\databases\images\profile_pics\dummy_profile.png
+20-Mar-24 15:15:29 - [INFO] - User logged in.
+20-Mar-24 15:15:29 - [INFO] - 200 - Custom success 200 response sent
+20-Mar-24 15:15:29 - [INFO] - 127.0.0.1 - - [20/Mar/2024 15:15:29] "POST /api/v2/auth/login HTTP/1.1" 200 -
+20-Mar-24 15:15:53 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+20-Mar-24 15:15:53 - [DEBUG] - http://127.0.0.1:3000 "GET /u/Maxdoe342.json HTTP/1.1" 404 None
+20-Mar-24 15:15:53 - [INFO] - 127.0.0.1 - - [20/Mar/2024 15:15:53] "[35m[1mPOST /api/v2/discourseAuth/discourseRegister HTTP/1.1[0m" 500 -
+20-Mar-24 15:16:21 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discourseAuth_bp.py', reloading
+20-Mar-24 15:16:21 - [INFO] -  * Restarting with stat
+20-Mar-24 15:16:22 - [INFO] - Development environment configured.
+20-Mar-24 15:16:22 - [WARNING] -  * Debugger is active!
+20-Mar-24 15:16:22 - [INFO] -  * Debugger PIN: 144-740-991
+20-Mar-24 15:16:28 - [INFO] - File path is not valid: D:\GitHub\soft-engg-project-jan-2024-se-jan-2\code\backend\databases\images\profile_pics\dummy_profile.png
+20-Mar-24 15:16:28 - [INFO] - User logged in.
+20-Mar-24 15:16:28 - [INFO] - 200 - Custom success 200 response sent
+20-Mar-24 15:16:28 - [INFO] - 127.0.0.1 - - [20/Mar/2024 15:16:28] "POST /api/v2/auth/login HTTP/1.1" 200 -
+20-Mar-24 15:17:01 - [INFO] - 404 - Provided user id does not exists. Please create account.
+20-Mar-24 15:17:01 - [INFO] - 127.0.0.1 - - [20/Mar/2024 15:17:01] "[33mPOST /api/v2/discourseAuth/discourseRegister HTTP/1.1[0m" 404 -
+20-Mar-24 15:18:00 - [INFO] - 404 - Provided user id does not exists. Please create account.
+20-Mar-24 15:18:00 - [INFO] - 127.0.0.1 - - [20/Mar/2024 15:18:00] "[33mPOST /api/v2/discourseAuth/discourseRegister HTTP/1.1[0m" 404 -
+20-Mar-24 15:21:50 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discourseAuth_bp.py', reloading
+20-Mar-24 15:21:50 - [INFO] -  * Restarting with stat
+20-Mar-24 15:21:51 - [INFO] - Development environment configured.
+20-Mar-24 15:21:51 - [WARNING] -  * Debugger is active!
+20-Mar-24 15:21:51 - [INFO] -  * Debugger PIN: 144-740-991
+20-Mar-24 15:22:06 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discourseAuth_bp.py', reloading
+20-Mar-24 15:22:06 - [INFO] -  * Restarting with stat
+20-Mar-24 15:22:07 - [INFO] - Development environment configured.
+20-Mar-24 15:22:07 - [WARNING] -  * Debugger is active!
+20-Mar-24 15:22:07 - [INFO] -  * Debugger PIN: 144-740-991
+20-Mar-24 15:22:53 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discourseAuth_bp.py', reloading
+20-Mar-24 15:22:53 - [INFO] -  * Restarting with stat
+20-Mar-24 15:22:54 - [INFO] - Development environment configured.
+20-Mar-24 15:22:54 - [WARNING] -  * Debugger is active!
+20-Mar-24 15:22:54 - [INFO] -  * Debugger PIN: 144-740-991
+20-Mar-24 15:23:06 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discourseAuth_bp.py', reloading
+20-Mar-24 15:23:06 - [INFO] -  * Restarting with stat
+20-Mar-24 15:23:07 - [INFO] - Development environment configured.
+20-Mar-24 15:23:07 - [WARNING] -  * Debugger is active!
+20-Mar-24 15:23:07 - [INFO] -  * Debugger PIN: 144-740-991
+20-Mar-24 15:23:09 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+20-Mar-24 15:23:09 - [DEBUG] - http://127.0.0.1:3000 "GET /u/Maxdoe342.json HTTP/1.1" 404 None
+20-Mar-24 15:23:09 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+20-Mar-24 15:23:09 - [DEBUG] - http://127.0.0.1:3000 "POST /users.json HTTP/1.1" 200 None
+20-Mar-24 15:23:09 - [INFO] - New account created
+20-Mar-24 15:23:09 - [INFO] - 127.0.0.1 - - [20/Mar/2024 15:23:09] "[35m[1mPOST /api/v2/discourseAuth/discourseRegister HTTP/1.1[0m" 500 -
+20-Mar-24 15:24:46 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discourseAuth_bp.py', reloading
+20-Mar-24 15:24:46 - [INFO] -  * Restarting with stat
+20-Mar-24 15:24:47 - [INFO] - Development environment configured.
+20-Mar-24 15:24:47 - [WARNING] -  * Debugger is active!
+20-Mar-24 15:24:47 - [INFO] -  * Debugger PIN: 144-740-991
+20-Mar-24 15:24:50 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+20-Mar-24 15:24:50 - [DEBUG] - http://127.0.0.1:3000 "GET /u/Maxdoe342.json HTTP/1.1" 404 None
+20-Mar-24 15:24:50 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+20-Mar-24 15:24:50 - [DEBUG] - http://127.0.0.1:3000 "POST /users.json HTTP/1.1" 200 None
+20-Mar-24 15:24:50 - [INFO] - New account created
+20-Mar-24 15:24:50 - [INFO] - 127.0.0.1 - - [20/Mar/2024 15:24:50] "[35m[1mPOST /api/v2/discourseAuth/discourseRegister HTTP/1.1[0m" 500 -
+20-Mar-24 15:27:57 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discourseAuth_bp.py', reloading
+20-Mar-24 15:27:57 - [INFO] -  * Restarting with stat
+20-Mar-24 15:27:58 - [INFO] - Development environment configured.
+20-Mar-24 15:27:58 - [WARNING] -  * Debugger is active!
+20-Mar-24 15:27:58 - [INFO] -  * Debugger PIN: 144-740-991
+20-Mar-24 15:28:07 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discourseAuth_bp.py', reloading
+20-Mar-24 15:28:07 - [INFO] -  * Restarting with stat
+20-Mar-24 15:28:08 - [INFO] - Development environment configured.
+20-Mar-24 15:28:08 - [WARNING] -  * Debugger is active!
+20-Mar-24 15:28:08 - [INFO] -  * Debugger PIN: 144-740-991
+20-Mar-24 15:28:14 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+20-Mar-24 15:28:14 - [DEBUG] - http://127.0.0.1:3000 "GET /u/Maxdoe342.json HTTP/1.1" 404 None
+20-Mar-24 15:28:14 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+20-Mar-24 15:28:14 - [DEBUG] - http://127.0.0.1:3000 "POST /users.json HTTP/1.1" 200 None
+20-Mar-24 15:28:14 - [INFO] - New account created
+20-Mar-24 15:28:14 - [INFO] - 127.0.0.1 - - [20/Mar/2024 15:28:14] "[35m[1mPOST /api/v2/discourseAuth/discourseRegister HTTP/1.1[0m" 500 -
+20-Mar-24 15:29:10 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discourseAuth_bp.py', reloading
+20-Mar-24 15:29:10 - [INFO] -  * Restarting with stat
+20-Mar-24 15:29:11 - [INFO] - Development environment configured.
+20-Mar-24 15:29:11 - [WARNING] -  * Debugger is active!
+20-Mar-24 15:29:11 - [INFO] -  * Debugger PIN: 144-740-991
+20-Mar-24 15:29:13 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+20-Mar-24 15:29:13 - [DEBUG] - http://127.0.0.1:3000 "GET /u/Maxdoe342.json HTTP/1.1" 404 None
+20-Mar-24 15:29:13 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+20-Mar-24 15:29:13 - [DEBUG] - http://127.0.0.1:3000 "POST /users.json HTTP/1.1" 200 None
+20-Mar-24 15:29:13 - [INFO] - New account created
+20-Mar-24 15:29:13 - [INFO] - 200 - Primary email has already been taken
+20-Mar-24 15:29:13 - [INFO] - 127.0.0.1 - - [20/Mar/2024 15:29:13] "POST /api/v2/discourseAuth/discourseRegister HTTP/1.1" 200 -
+20-Mar-24 15:30:48 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discourseAuth_bp.py', reloading
+20-Mar-24 15:30:48 - [INFO] -  * Restarting with stat
+20-Mar-24 15:30:49 - [INFO] - Development environment configured.
+20-Mar-24 15:30:49 - [WARNING] -  * Debugger is active!
+20-Mar-24 15:30:49 - [INFO] -  * Debugger PIN: 144-740-991
+20-Mar-24 15:30:58 - [INFO] - File path is not valid: D:\GitHub\soft-engg-project-jan-2024-se-jan-2\code\backend\databases\images\profile_pics\dummy_profile.png
+20-Mar-24 15:30:58 - [INFO] - User logged in.
+20-Mar-24 15:30:58 - [INFO] - 200 - Custom success 200 response sent
+20-Mar-24 15:30:58 - [INFO] - 127.0.0.1 - - [20/Mar/2024 15:30:58] "POST /api/v2/auth/login HTTP/1.1" 200 -
+20-Mar-24 15:31:15 - [INFO] - 404 - Provided user id does not exists. Please create account.
+20-Mar-24 15:31:15 - [INFO] - 127.0.0.1 - - [20/Mar/2024 15:31:15] "[33mPOST /api/v2/discourseAuth/discourseRegister HTTP/1.1[0m" 404 -
+20-Mar-24 15:31:27 - [INFO] - 404 - Provided user id does not exists. Please create account.
+20-Mar-24 15:31:27 - [INFO] - 127.0.0.1 - - [20/Mar/2024 15:31:27] "[33mPOST /api/v2/discourseAuth/discourseRegister HTTP/1.1[0m" 404 -
+20-Mar-24 15:31:58 - [INFO] - 401 - Token is incorrect
+20-Mar-24 15:31:58 - [INFO] - 127.0.0.1 - - [20/Mar/2024 15:31:58] "[31m[1mPOST /api/v2/discourseAuth/discourseRegister HTTP/1.1[0m" 401 -
+20-Mar-24 15:32:06 - [INFO] - Token is verified for the user: fb58cddff315e18f87a86f94dc191891
+20-Mar-24 15:32:06 - [INFO] - User role : Staff : is verified for the user: fb58cddff315e18f87a86f94dc191891
+20-Mar-24 15:32:06 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+20-Mar-24 15:32:06 - [DEBUG] - http://127.0.0.1:3000 "GET /u/Maxdoe342.json HTTP/1.1" 404 None
+20-Mar-24 15:32:06 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+20-Mar-24 15:32:06 - [DEBUG] - http://127.0.0.1:3000 "POST /users.json HTTP/1.1" 200 None
+20-Mar-24 15:32:06 - [INFO] - New account created
+20-Mar-24 15:32:06 - [INFO] - 200 - Primary email has already been taken
+20-Mar-24 15:32:06 - [INFO] - 127.0.0.1 - - [20/Mar/2024 15:32:06] "POST /api/v2/discourseAuth/discourseRegister HTTP/1.1" 200 -
+20-Mar-24 15:36:06 - [INFO] - 404 - Provided user id does not exists. Please create account.
+20-Mar-24 15:36:06 - [INFO] - 127.0.0.1 - - [20/Mar/2024 15:36:06] "[33mGET /api/v2/discourseAuth/addStaff HTTP/1.1[0m" 404 -
+20-Mar-24 15:38:00 - [INFO] - 404 - Provided user id does not exists. Please create account.
+20-Mar-24 15:38:00 - [INFO] - 127.0.0.1 - - [20/Mar/2024 15:38:00] "[33mGET /api/v2/discourseAuth/addStaff HTTP/1.1[0m" 404 -
+20-Mar-24 16:38:14 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+20-Mar-24 16:38:14 - [INFO] -  * Restarting with stat
+20-Mar-24 16:38:22 - [INFO] - Development environment configured.
+20-Mar-24 16:38:23 - [WARNING] -  * Debugger is active!
+20-Mar-24 16:38:23 - [INFO] -  * Debugger PIN: 144-740-991
+20-Mar-24 16:39:13 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+20-Mar-24 16:39:13 - [INFO] -  * Restarting with stat
+20-Mar-24 16:39:16 - [INFO] - Development environment configured.
+20-Mar-24 16:39:16 - [WARNING] -  * Debugger is active!
+20-Mar-24 16:39:16 - [INFO] -  * Debugger PIN: 144-740-991
+20-Mar-24 16:39:22 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+20-Mar-24 16:39:22 - [INFO] -  * Restarting with stat
+20-Mar-24 16:39:24 - [INFO] - Development environment configured.
+20-Mar-24 16:39:24 - [WARNING] -  * Debugger is active!
+20-Mar-24 16:39:24 - [INFO] -  * Debugger PIN: 144-740-991
+20-Mar-24 16:39:35 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+20-Mar-24 16:39:35 - [INFO] -  * Restarting with stat
+20-Mar-24 16:39:38 - [INFO] - Development environment configured.
+20-Mar-24 16:39:38 - [WARNING] -  * Debugger is active!
+20-Mar-24 16:39:38 - [INFO] -  * Debugger PIN: 144-740-991
+20-Mar-24 16:40:26 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\__init__.py', reloading
+20-Mar-24 16:40:26 - [INFO] -  * Restarting with stat
+20-Mar-24 16:41:34 - [INFO] - Development environment configured.
+20-Mar-24 16:41:34 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+20-Mar-24 16:41:34 - [INFO] - [33mPress CTRL+C to quit[0m
+20-Mar-24 16:41:34 - [INFO] -  * Restarting with stat
+20-Mar-24 16:41:37 - [INFO] - Development environment configured.
+20-Mar-24 16:41:37 - [WARNING] -  * Debugger is active!
+20-Mar-24 16:41:37 - [INFO] -  * Debugger PIN: 144-740-991
+20-Mar-24 16:42:05 - [INFO] - 127.0.0.1 - - [20/Mar/2024 16:42:05] "[35m[1mGET /api/v2/discourse/categories HTTP/1.1[0m" 500 -
+20-Mar-24 16:43:30 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+20-Mar-24 16:43:30 - [INFO] -  * Restarting with stat
+20-Mar-24 16:43:33 - [INFO] - Development environment configured.
+20-Mar-24 16:43:33 - [WARNING] -  * Debugger is active!
+20-Mar-24 16:43:33 - [INFO] -  * Debugger PIN: 144-740-991
+20-Mar-24 16:43:33 - [INFO] - 127.0.0.1 - - [20/Mar/2024 16:43:33] "[35m[1mGET /api/v2/discourse/categories HTTP/1.1[0m" 500 -
+20-Mar-24 16:43:53 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+20-Mar-24 16:43:53 - [INFO] -  * Restarting with stat
+20-Mar-24 16:43:55 - [INFO] - Development environment configured.
+20-Mar-24 16:43:56 - [WARNING] -  * Debugger is active!
+20-Mar-24 16:43:56 - [INFO] -  * Debugger PIN: 144-740-991
+20-Mar-24 16:43:56 - [INFO] - 127.0.0.1 - - [20/Mar/2024 16:43:56] "[35m[1mGET /api/v2/discourse/categories HTTP/1.1[0m" 500 -
+20-Mar-24 16:44:10 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+20-Mar-24 16:44:10 - [INFO] -  * Restarting with stat
+20-Mar-24 16:44:12 - [INFO] - Development environment configured.
+20-Mar-24 16:44:13 - [WARNING] -  * Debugger is active!
+20-Mar-24 16:44:13 - [INFO] -  * Debugger PIN: 144-740-991
+20-Mar-24 16:44:13 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+20-Mar-24 16:44:13 - [DEBUG] - http://127.0.0.1:3000 "GET /categories.json HTTP/1.1" 200 None
+20-Mar-24 16:44:13 - [INFO] - 127.0.0.1 - - [20/Mar/2024 16:44:13] "[35m[1mGET /api/v2/discourse/categories HTTP/1.1[0m" 500 -
+20-Mar-24 16:44:38 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+20-Mar-24 16:44:38 - [INFO] -  * Restarting with stat
+20-Mar-24 16:44:41 - [INFO] - Development environment configured.
+20-Mar-24 16:44:41 - [WARNING] -  * Debugger is active!
+20-Mar-24 16:44:41 - [INFO] -  * Debugger PIN: 144-740-991
+20-Mar-24 16:44:41 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+20-Mar-24 16:44:41 - [DEBUG] - http://127.0.0.1:3000 "GET /categories.json HTTP/1.1" 200 None
+20-Mar-24 16:44:41 - [INFO] - 127.0.0.1 - - [20/Mar/2024 16:44:41] "[35m[1mGET /api/v2/discourse/categories HTTP/1.1[0m" 500 -
+20-Mar-24 16:45:17 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+20-Mar-24 16:45:17 - [INFO] -  * Restarting with stat
+20-Mar-24 16:45:20 - [INFO] - Development environment configured.
+20-Mar-24 16:45:20 - [WARNING] -  * Debugger is active!
+20-Mar-24 16:45:20 - [INFO] -  * Debugger PIN: 144-740-991
+20-Mar-24 16:45:20 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+20-Mar-24 16:45:20 - [DEBUG] - http://127.0.0.1:3000 "GET /categories.json HTTP/1.1" 200 None
+20-Mar-24 16:45:20 - [INFO] - 127.0.0.1 - - [20/Mar/2024 16:45:20] "[35m[1mGET /api/v2/discourse/categories HTTP/1.1[0m" 500 -
+20-Mar-24 16:46:38 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+20-Mar-24 16:46:38 - [INFO] -  * Restarting with stat
+20-Mar-24 16:46:40 - [INFO] - Development environment configured.
+20-Mar-24 16:46:40 - [WARNING] -  * Debugger is active!
+20-Mar-24 16:46:40 - [INFO] -  * Debugger PIN: 144-740-991
+20-Mar-24 16:46:42 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+20-Mar-24 16:46:42 - [DEBUG] - http://127.0.0.1:3000 "GET /categories.json HTTP/1.1" 200 None
+20-Mar-24 16:46:42 - [INFO] - 127.0.0.1 - - [20/Mar/2024 16:46:42] "[35m[1mGET /api/v2/discourse/categories HTTP/1.1[0m" 500 -
+20-Mar-24 16:47:13 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+20-Mar-24 16:47:13 - [INFO] -  * Restarting with stat
+20-Mar-24 16:47:16 - [INFO] - Development environment configured.
+20-Mar-24 16:47:16 - [WARNING] -  * Debugger is active!
+20-Mar-24 16:47:16 - [INFO] -  * Debugger PIN: 144-740-991
+20-Mar-24 16:47:16 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+20-Mar-24 16:47:16 - [DEBUG] - http://127.0.0.1:3000 "GET /categories.json HTTP/1.1" 200 None
+20-Mar-24 16:47:16 - [INFO] - 127.0.0.1 - - [20/Mar/2024 16:47:16] "[35m[1mGET /api/v2/discourse/categories HTTP/1.1[0m" 500 -
+20-Mar-24 16:47:58 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+20-Mar-24 16:47:59 - [INFO] -  * Restarting with stat
+20-Mar-24 16:48:01 - [INFO] - Development environment configured.
+20-Mar-24 16:48:01 - [WARNING] -  * Debugger is active!
+20-Mar-24 16:48:01 - [INFO] -  * Debugger PIN: 144-740-991
+20-Mar-24 16:48:02 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+20-Mar-24 16:48:02 - [DEBUG] - http://127.0.0.1:3000 "GET /categories.json HTTP/1.1" 200 None
+20-Mar-24 16:48:02 - [INFO] - 200 - Custom success 200 response sent
+20-Mar-24 16:48:02 - [INFO] - 127.0.0.1 - - [20/Mar/2024 16:48:02] "[35m[1mGET /api/v2/discourse/categories HTTP/1.1[0m" 500 -
+20-Mar-24 16:48:38 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+20-Mar-24 16:48:39 - [INFO] -  * Restarting with stat
+20-Mar-24 16:48:41 - [INFO] - Development environment configured.
+20-Mar-24 16:48:41 - [WARNING] -  * Debugger is active!
+20-Mar-24 16:48:41 - [INFO] -  * Debugger PIN: 144-740-991
+20-Mar-24 16:48:41 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+20-Mar-24 16:48:41 - [DEBUG] - http://127.0.0.1:3000 "GET /categories.json HTTP/1.1" 200 None
+20-Mar-24 16:48:41 - [INFO] - 200 - Custom success 200 response sent
+20-Mar-24 16:48:42 - [INFO] - 127.0.0.1 - - [20/Mar/2024 16:48:42] "[35m[1mGET /api/v2/discourse/categories HTTP/1.1[0m" 500 -
+20-Mar-24 16:49:19 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+20-Mar-24 16:49:20 - [INFO] -  * Restarting with stat
+20-Mar-24 16:49:22 - [INFO] - Development environment configured.
+20-Mar-24 16:49:22 - [WARNING] -  * Debugger is active!
+20-Mar-24 16:49:22 - [INFO] -  * Debugger PIN: 144-740-991
+20-Mar-24 16:49:22 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+20-Mar-24 16:49:23 - [DEBUG] - http://127.0.0.1:3000 "GET /categories.json HTTP/1.1" 200 None
+20-Mar-24 16:49:23 - [INFO] - 200 - Custom success 200 response sent
+20-Mar-24 16:49:23 - [INFO] - 127.0.0.1 - - [20/Mar/2024 16:49:23] "[35m[1mGET /api/v2/discourse/categories HTTP/1.1[0m" 500 -
+20-Mar-24 16:52:04 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+20-Mar-24 16:52:05 - [INFO] -  * Restarting with stat
+20-Mar-24 16:52:07 - [INFO] - Development environment configured.
+20-Mar-24 16:52:07 - [WARNING] -  * Debugger is active!
+20-Mar-24 16:52:07 - [INFO] -  * Debugger PIN: 144-740-991
+20-Mar-24 16:52:11 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+20-Mar-24 16:52:11 - [DEBUG] - http://127.0.0.1:3000 "GET /categories.json HTTP/1.1" 200 None
+20-Mar-24 16:52:11 - [INFO] - 127.0.0.1 - - [20/Mar/2024 16:52:11] "GET /api/v2/discourse/categories HTTP/1.1" 200 -
+20-Mar-24 16:52:25 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+20-Mar-24 16:52:25 - [DEBUG] - http://127.0.0.1:3000 "GET /categories.json HTTP/1.1" 200 None
+20-Mar-24 16:52:25 - [INFO] - 127.0.0.1 - - [20/Mar/2024 16:52:25] "GET /api/v2/discourse/categories HTTP/1.1" 200 -
+20-Mar-24 16:52:26 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+20-Mar-24 16:52:27 - [INFO] -  * Restarting with stat
+20-Mar-24 16:52:29 - [INFO] - Development environment configured.
+20-Mar-24 16:52:29 - [WARNING] -  * Debugger is active!
+20-Mar-24 16:52:29 - [INFO] -  * Debugger PIN: 144-740-991
+20-Mar-24 16:52:29 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+20-Mar-24 16:52:29 - [DEBUG] - http://127.0.0.1:3000 "GET /categories.json HTTP/1.1" 200 None
+20-Mar-24 16:52:29 - [INFO] - 127.0.0.1 - - [20/Mar/2024 16:52:29] "GET /api/v2/discourse/categories HTTP/1.1" 200 -
+20-Mar-24 17:01:37 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+20-Mar-24 17:01:38 - [INFO] -  * Restarting with stat
+20-Mar-24 17:01:41 - [INFO] - Development environment configured.
+20-Mar-24 17:01:41 - [WARNING] -  * Debugger is active!
+20-Mar-24 17:01:41 - [INFO] -  * Debugger PIN: 144-740-991
+20-Mar-24 17:01:41 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+20-Mar-24 17:01:41 - [DEBUG] - http://127.0.0.1:3000 "GET /categories.json HTTP/1.1" 200 None
+20-Mar-24 17:01:41 - [INFO] - 200 - Custom success 200 response sent
+20-Mar-24 17:01:41 - [INFO] - 127.0.0.1 - - [20/Mar/2024 17:01:41] "[35m[1mGET /api/v2/discourse/categories HTTP/1.1[0m" 500 -
+20-Mar-24 17:02:11 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+20-Mar-24 17:02:11 - [INFO] -  * Restarting with stat
+20-Mar-24 17:02:14 - [INFO] - Development environment configured.
+20-Mar-24 17:02:14 - [WARNING] -  * Debugger is active!
+20-Mar-24 17:02:14 - [INFO] -  * Debugger PIN: 144-740-991
+20-Mar-24 17:02:14 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+20-Mar-24 17:02:14 - [DEBUG] - http://127.0.0.1:3000 "GET /categories.json HTTP/1.1" 200 None
+20-Mar-24 17:02:14 - [INFO] - 127.0.0.1 - - [20/Mar/2024 17:02:14] "GET /api/v2/discourse/categories HTTP/1.1" 200 -
+20-Mar-24 17:02:42 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+20-Mar-24 17:02:43 - [INFO] -  * Restarting with stat
+20-Mar-24 17:02:45 - [INFO] - Development environment configured.
+20-Mar-24 17:02:45 - [WARNING] -  * Debugger is active!
+20-Mar-24 17:02:45 - [INFO] -  * Debugger PIN: 144-740-991
+20-Mar-24 17:03:05 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+20-Mar-24 17:03:05 - [INFO] -  * Restarting with stat
+20-Mar-24 17:03:08 - [INFO] - Development environment configured.
+20-Mar-24 17:03:08 - [WARNING] -  * Debugger is active!
+20-Mar-24 17:03:08 - [INFO] -  * Debugger PIN: 144-740-991
+20-Mar-24 17:03:17 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+20-Mar-24 17:03:18 - [INFO] -  * Restarting with stat
+20-Mar-24 17:03:20 - [INFO] - Development environment configured.
+20-Mar-24 17:03:20 - [WARNING] -  * Debugger is active!
+20-Mar-24 17:03:20 - [INFO] -  * Debugger PIN: 144-740-991
+20-Mar-24 17:09:29 - [INFO] - 404 - Provided user id does not exists. Please create account.
+20-Mar-24 17:09:29 - [INFO] - 127.0.0.1 - - [20/Mar/2024 17:09:29] "[33mGET /api/v2/discourseAuth/addStaff HTTP/1.1[0m" 404 -
+20-Mar-24 17:11:47 - [INFO] - 404 - Provided user id does not exists. Please create account.
+20-Mar-24 17:11:47 - [INFO] - 127.0.0.1 - - [20/Mar/2024 17:11:47] "[33mPUT /api/v2/discourseAuth/addStaff/randomuserid HTTP/1.1[0m" 404 -
+20-Mar-24 17:16:10 - [INFO] - New account created
+20-Mar-24 17:16:10 - [INFO] - 200 - Account created successfully. Now please login.
+20-Mar-24 17:16:10 - [INFO] - 127.0.0.1 - - [20/Mar/2024 17:16:10] "POST /api/v2/auth/register HTTP/1.1" 200 -
+20-Mar-24 17:16:45 - [INFO] - File path is not valid: D:\GitHub\soft-engg-project-jan-2024-se-jan-2\code\backend\databases\images\profile_pics\dummy_profile.png
+20-Mar-24 17:16:45 - [INFO] - User logged in.
+20-Mar-24 17:16:45 - [INFO] - 200 - Custom success 200 response sent
+20-Mar-24 17:16:45 - [INFO] - 127.0.0.1 - - [20/Mar/2024 17:16:45] "POST /api/v2/auth/login HTTP/1.1" 200 -
+20-Mar-24 17:18:12 - [INFO] - Token is verified for the user: 5b44fac7cdc51b2a9ad3ccb87d5cbf08
+20-Mar-24 17:18:12 - [INFO] - Admin role is verified for the user: 5b44fac7cdc51b2a9ad3ccb87d5cbf08
+20-Mar-24 17:18:12 - [INFO] - 200 - Custom success 200 response sent
+20-Mar-24 17:18:12 - [INFO] - 127.0.0.1 - - [20/Mar/2024 17:18:12] "[35m[1mGET /api/v2/discourseAuth/addStaff HTTP/1.1[0m" 500 -
+20-Mar-24 17:18:56 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discourseAuth_bp.py', reloading
+20-Mar-24 17:18:56 - [INFO] -  * Restarting with stat
+20-Mar-24 17:18:59 - [INFO] - Development environment configured.
+20-Mar-24 17:18:59 - [WARNING] -  * Debugger is active!
+20-Mar-24 17:18:59 - [INFO] -  * Debugger PIN: 144-740-991
+20-Mar-24 17:18:59 - [INFO] - Token is verified for the user: 5b44fac7cdc51b2a9ad3ccb87d5cbf08
+20-Mar-24 17:18:59 - [INFO] - Admin role is verified for the user: 5b44fac7cdc51b2a9ad3ccb87d5cbf08
+20-Mar-24 17:18:59 - [INFO] - 200 - Custom success 200 response sent
+20-Mar-24 17:18:59 - [INFO] - 127.0.0.1 - - [20/Mar/2024 17:18:59] "[35m[1mGET /api/v2/discourseAuth/addStaff HTTP/1.1[0m" 500 -
+20-Mar-24 17:20:09 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discourseAuth_bp.py', reloading
+20-Mar-24 17:20:09 - [INFO] -  * Restarting with stat
+20-Mar-24 17:20:12 - [INFO] - Development environment configured.
+20-Mar-24 17:20:12 - [WARNING] -  * Debugger is active!
+20-Mar-24 17:20:12 - [INFO] -  * Debugger PIN: 144-740-991
+20-Mar-24 17:20:13 - [INFO] - Token is verified for the user: 5b44fac7cdc51b2a9ad3ccb87d5cbf08
+20-Mar-24 17:20:13 - [INFO] - Admin role is verified for the user: 5b44fac7cdc51b2a9ad3ccb87d5cbf08
+20-Mar-24 17:20:13 - [INFO] - 200 - Custom success 200 response sent
+20-Mar-24 17:20:14 - [INFO] - 127.0.0.1 - - [20/Mar/2024 17:20:14] "[35m[1mGET /api/v2/discourseAuth/addStaff HTTP/1.1[0m" 500 -
+20-Mar-24 17:21:49 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discourseAuth_bp.py', reloading
+20-Mar-24 17:21:49 - [INFO] -  * Restarting with stat
+20-Mar-24 17:21:52 - [INFO] - Development environment configured.
+20-Mar-24 17:21:52 - [WARNING] -  * Debugger is active!
+20-Mar-24 17:21:52 - [INFO] -  * Debugger PIN: 144-740-991
+20-Mar-24 17:21:55 - [INFO] - Token is verified for the user: 5b44fac7cdc51b2a9ad3ccb87d5cbf08
+20-Mar-24 17:21:55 - [INFO] - Admin role is verified for the user: 5b44fac7cdc51b2a9ad3ccb87d5cbf08
+20-Mar-24 17:21:55 - [INFO] - 200 - Custom success 200 response sent
+20-Mar-24 17:21:55 - [INFO] - 127.0.0.1 - - [20/Mar/2024 17:21:55] "GET /api/v2/discourseAuth/addStaff HTTP/1.1" 200 -
+20-Mar-24 17:22:33 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discourseAuth_bp.py', reloading
+20-Mar-24 17:22:34 - [INFO] -  * Restarting with stat
+20-Mar-24 17:22:36 - [INFO] - Development environment configured.
+20-Mar-24 17:22:36 - [WARNING] -  * Debugger is active!
+20-Mar-24 17:22:36 - [INFO] -  * Debugger PIN: 144-740-991
+20-Mar-24 17:23:12 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+20-Mar-24 17:23:12 - [INFO] -  * Restarting with stat
+20-Mar-24 17:23:15 - [INFO] - Development environment configured.
+20-Mar-24 17:23:15 - [WARNING] -  * Debugger is active!
+20-Mar-24 17:23:15 - [INFO] -  * Debugger PIN: 144-740-991
+20-Mar-24 17:25:01 - [INFO] - Token is verified for the user: 5b44fac7cdc51b2a9ad3ccb87d5cbf08
+20-Mar-24 17:25:01 - [INFO] - User role : Admin : is verified for the user: 5b44fac7cdc51b2a9ad3ccb87d5cbf08
+20-Mar-24 17:25:01 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+20-Mar-24 17:25:01 - [DEBUG] - http://127.0.0.1:3000 "GET /categories.json HTTP/1.1" 200 None
+20-Mar-24 17:25:01 - [INFO] - 200 - Custom success 200 response sent
+20-Mar-24 17:25:01 - [INFO] - 127.0.0.1 - - [20/Mar/2024 17:25:01] "GET /api/v2/discourse/categories HTTP/1.1" 200 -
+20-Mar-24 17:28:57 - [INFO] - 404 - User does not exists
+20-Mar-24 17:28:57 - [INFO] - 127.0.0.1 - - [20/Mar/2024 17:28:57] "[33mPOST /api/v2/auth/login HTTP/1.1[0m" 404 -
+20-Mar-24 17:29:07 - [INFO] - 404 - User does not exists
+20-Mar-24 17:29:07 - [INFO] - 127.0.0.1 - - [20/Mar/2024 17:29:07] "[33mPOST /api/v2/auth/login HTTP/1.1[0m" 404 -
+20-Mar-24 17:29:31 - [INFO] - File path is not valid: D:\GitHub\soft-engg-project-jan-2024-se-jan-2\code\backend\databases\images\profile_pics\dummy_profile.png
+20-Mar-24 17:29:31 - [INFO] - User logged in.
+20-Mar-24 17:29:31 - [INFO] - 200 - Custom success 200 response sent
+20-Mar-24 17:29:31 - [INFO] - 127.0.0.1 - - [20/Mar/2024 17:29:31] "POST /api/v2/auth/login HTTP/1.1" 200 -
+20-Mar-24 17:29:50 - [INFO] - Token is verified for the user: 5b44fac7cdc51b2a9ad3ccb87d5cbf08
+20-Mar-24 17:29:50 - [INFO] - Admin role is verified for the user: 5b44fac7cdc51b2a9ad3ccb87d5cbf08
+20-Mar-24 17:29:50 - [INFO] - 127.0.0.1 - - [20/Mar/2024 17:29:50] "[35m[1mPUT /api/v2/discourseAuth/addStaff/5b44fac7cdc51b2a9ad3ccb87d5cbf08 HTTP/1.1[0m" 500 -
+20-Mar-24 17:31:24 - [INFO] - Token is verified for the user: 5b44fac7cdc51b2a9ad3ccb87d5cbf08
+20-Mar-24 17:31:24 - [INFO] - Admin role is verified for the user: 5b44fac7cdc51b2a9ad3ccb87d5cbf08
+20-Mar-24 17:31:24 - [INFO] - 127.0.0.1 - - [20/Mar/2024 17:31:24] "[35m[1mPUT /api/v2/discourseAuth/addStaff/fb58cddff315e18f87a86f94dc191891 HTTP/1.1[0m" 500 -
+20-Mar-24 17:33:11 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discourseAuth_bp.py', reloading
+20-Mar-24 17:33:11 - [INFO] -  * Restarting with stat
+20-Mar-24 17:33:13 - [INFO] - Development environment configured.
+20-Mar-24 17:33:14 - [WARNING] -  * Debugger is active!
+20-Mar-24 17:33:14 - [INFO] -  * Debugger PIN: 144-740-991
+20-Mar-24 17:33:23 - [INFO] - Token is verified for the user: 5b44fac7cdc51b2a9ad3ccb87d5cbf08
+20-Mar-24 17:33:23 - [INFO] - Admin role is verified for the user: 5b44fac7cdc51b2a9ad3ccb87d5cbf08
+20-Mar-24 17:33:23 - [ERROR] - DiscourseAddMedorators->put : Error occured while getting form data : 400 Bad Request: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+20-Mar-24 17:33:23 - [INFO] - 500 - Internal Server Error
+20-Mar-24 17:33:23 - [INFO] - 127.0.0.1 - - [20/Mar/2024 17:33:23] "[35m[1mPUT /api/v2/discourseAuth/addStaff/fb58cddff315e18f87a86f94dc191891 HTTP/1.1[0m" 500 -
+20-Mar-24 17:33:49 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discourseAuth_bp.py', reloading
+20-Mar-24 17:33:50 - [INFO] -  * Restarting with stat
+20-Mar-24 17:33:52 - [INFO] - Development environment configured.
+20-Mar-24 17:33:52 - [WARNING] -  * Debugger is active!
+20-Mar-24 17:33:52 - [INFO] -  * Debugger PIN: 144-740-991
+20-Mar-24 17:33:54 - [INFO] - Token is verified for the user: 5b44fac7cdc51b2a9ad3ccb87d5cbf08
+20-Mar-24 17:33:54 - [INFO] - Admin role is verified for the user: 5b44fac7cdc51b2a9ad3ccb87d5cbf08
+20-Mar-24 17:33:54 - [ERROR] - DiscourseAddMedorators->put : Error occured while getting form data : 400 Bad Request: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+20-Mar-24 17:33:54 - [INFO] - 500 - Internal Server Error
+20-Mar-24 17:33:54 - [INFO] - 127.0.0.1 - - [20/Mar/2024 17:33:54] "[35m[1mPUT /api/v2/discourseAuth/addStaff/fb58cddff315e18f87a86f94dc191891 HTTP/1.1[0m" 500 -
+20-Mar-24 17:34:19 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discourseAuth_bp.py', reloading
+20-Mar-24 17:34:19 - [INFO] -  * Restarting with stat
+20-Mar-24 17:34:21 - [INFO] - Development environment configured.
+20-Mar-24 17:34:22 - [WARNING] -  * Debugger is active!
+20-Mar-24 17:34:22 - [INFO] -  * Debugger PIN: 144-740-991
+20-Mar-24 17:34:27 - [INFO] - Token is verified for the user: 5b44fac7cdc51b2a9ad3ccb87d5cbf08
+20-Mar-24 17:34:27 - [INFO] - Admin role is verified for the user: 5b44fac7cdc51b2a9ad3ccb87d5cbf08
+20-Mar-24 17:34:27 - [ERROR] - DiscourseAddMedorators->put : Error occured while getting form data : 400 Bad Request: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+20-Mar-24 17:34:27 - [INFO] - 500 - Internal Server Error
+20-Mar-24 17:34:27 - [INFO] - 127.0.0.1 - - [20/Mar/2024 17:34:27] "[35m[1mPUT /api/v2/discourseAuth/addStaff/fb58cddff315e18f87a86f94dc191891 HTTP/1.1[0m" 500 -
+20-Mar-24 17:35:10 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discourseAuth_bp.py', reloading
+20-Mar-24 17:35:10 - [INFO] -  * Restarting with stat
+20-Mar-24 17:35:13 - [INFO] - Development environment configured.
+20-Mar-24 17:35:13 - [WARNING] -  * Debugger is active!
+20-Mar-24 17:35:13 - [INFO] -  * Debugger PIN: 144-740-991
+20-Mar-24 17:35:17 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discourseAuth_bp.py', reloading
+20-Mar-24 17:35:18 - [INFO] -  * Restarting with stat
+20-Mar-24 17:35:20 - [INFO] - Development environment configured.
+20-Mar-24 17:35:20 - [WARNING] -  * Debugger is active!
+20-Mar-24 17:35:20 - [INFO] -  * Debugger PIN: 144-740-991
+20-Mar-24 17:35:23 - [INFO] - Token is verified for the user: 5b44fac7cdc51b2a9ad3ccb87d5cbf08
+20-Mar-24 17:35:23 - [INFO] - Admin role is verified for the user: 5b44fac7cdc51b2a9ad3ccb87d5cbf08
+20-Mar-24 17:35:23 - [INFO] - 127.0.0.1 - - [20/Mar/2024 17:35:23] "[35m[1mPUT /api/v2/discourseAuth/addStaff/fb58cddff315e18f87a86f94dc191891 HTTP/1.1[0m" 500 -
+20-Mar-24 17:35:36 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discourseAuth_bp.py', reloading
+20-Mar-24 17:35:36 - [INFO] -  * Restarting with stat
+20-Mar-24 17:35:38 - [INFO] - Development environment configured.
+20-Mar-24 17:35:38 - [WARNING] -  * Debugger is active!
+20-Mar-24 17:35:38 - [INFO] -  * Debugger PIN: 144-740-991
+20-Mar-24 17:35:42 - [INFO] - Token is verified for the user: 5b44fac7cdc51b2a9ad3ccb87d5cbf08
+20-Mar-24 17:35:42 - [INFO] - Admin role is verified for the user: 5b44fac7cdc51b2a9ad3ccb87d5cbf08
+20-Mar-24 17:35:42 - [INFO] - 127.0.0.1 - - [20/Mar/2024 17:35:42] "[35m[1mPUT /api/v2/discourseAuth/addStaff/fb58cddff315e18f87a86f94dc191891 HTTP/1.1[0m" 500 -
+20-Mar-24 17:35:51 - [INFO] - Token is verified for the user: 5b44fac7cdc51b2a9ad3ccb87d5cbf08
+20-Mar-24 17:35:51 - [INFO] - Admin role is verified for the user: 5b44fac7cdc51b2a9ad3ccb87d5cbf08
+20-Mar-24 17:35:51 - [INFO] - 127.0.0.1 - - [20/Mar/2024 17:35:51] "[35m[1mPUT /api/v2/discourseAuth/addStaff/fb58cddff315e18f87a86f94dc191891 HTTP/1.1[0m" 500 -
+20-Mar-24 17:36:08 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discourseAuth_bp.py', reloading
+20-Mar-24 17:36:09 - [INFO] -  * Restarting with stat
+20-Mar-24 17:36:11 - [INFO] - Development environment configured.
+20-Mar-24 17:36:11 - [WARNING] -  * Debugger is active!
+20-Mar-24 17:36:11 - [INFO] -  * Debugger PIN: 144-740-991
+20-Mar-24 17:36:12 - [INFO] - Token is verified for the user: 5b44fac7cdc51b2a9ad3ccb87d5cbf08
+20-Mar-24 17:36:12 - [INFO] - Admin role is verified for the user: 5b44fac7cdc51b2a9ad3ccb87d5cbf08
+20-Mar-24 17:36:12 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+20-Mar-24 17:36:12 - [DEBUG] - http://127.0.0.1:3000 "PUT /groups/41/members.json HTTP/1.1" 400 0
+20-Mar-24 17:36:12 - [INFO] - 127.0.0.1 - - [20/Mar/2024 17:36:12] "[35m[1mPUT /api/v2/discourseAuth/addStaff/fb58cddff315e18f87a86f94dc191891 HTTP/1.1[0m" 500 -
+20-Mar-24 17:36:50 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discourseAuth_bp.py', reloading
+20-Mar-24 17:36:50 - [INFO] -  * Restarting with stat
+20-Mar-24 17:36:52 - [INFO] - Development environment configured.
+20-Mar-24 17:36:52 - [WARNING] -  * Debugger is active!
+20-Mar-24 17:36:52 - [INFO] -  * Debugger PIN: 144-740-991
+20-Mar-24 17:36:57 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discourseAuth_bp.py', reloading
+20-Mar-24 17:36:58 - [INFO] -  * Restarting with stat
+20-Mar-24 17:37:00 - [INFO] - Development environment configured.
+20-Mar-24 17:37:00 - [WARNING] -  * Debugger is active!
+20-Mar-24 17:37:00 - [INFO] -  * Debugger PIN: 144-740-991
+20-Mar-24 17:37:00 - [INFO] - Token is verified for the user: 5b44fac7cdc51b2a9ad3ccb87d5cbf08
+20-Mar-24 17:37:00 - [INFO] - Admin role is verified for the user: 5b44fac7cdc51b2a9ad3ccb87d5cbf08
+20-Mar-24 17:37:00 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+20-Mar-24 17:37:01 - [DEBUG] - http://127.0.0.1:3000 "PUT /groups/41/members.json HTTP/1.1" 400 0
+20-Mar-24 17:37:01 - [INFO] - 127.0.0.1 - - [20/Mar/2024 17:37:01] "[35m[1mPUT /api/v2/discourseAuth/addStaff/fb58cddff315e18f87a86f94dc191891 HTTP/1.1[0m" 500 -
+20-Mar-24 17:39:03 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discourseAuth_bp.py', reloading
+20-Mar-24 17:39:04 - [INFO] -  * Restarting with stat
+20-Mar-24 17:39:06 - [INFO] - Development environment configured.
+20-Mar-24 17:39:06 - [WARNING] -  * Debugger is active!
+20-Mar-24 17:39:06 - [INFO] -  * Debugger PIN: 144-740-991
+20-Mar-24 17:40:48 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discourseAuth_bp.py', reloading
+20-Mar-24 17:40:48 - [INFO] -  * Restarting with stat
+20-Mar-24 17:40:51 - [INFO] - Development environment configured.
+20-Mar-24 17:40:51 - [WARNING] -  * Debugger is active!
+20-Mar-24 17:40:51 - [INFO] -  * Debugger PIN: 144-740-991
+20-Mar-24 17:40:58 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discourseAuth_bp.py', reloading
+20-Mar-24 17:40:59 - [INFO] -  * Restarting with stat
+20-Mar-24 17:41:01 - [INFO] - Development environment configured.
+20-Mar-24 17:41:01 - [WARNING] -  * Debugger is active!
+20-Mar-24 17:41:01 - [INFO] -  * Debugger PIN: 144-740-991
+20-Mar-24 17:41:03 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+20-Mar-24 17:41:04 - [DEBUG] - http://127.0.0.1:3000 "PUT /groups/41/members.json HTTP/1.1" 400 0
+20-Mar-24 17:41:04 - [INFO] - 127.0.0.1 - - [20/Mar/2024 17:41:04] "[35m[1mPUT /api/v2/discourseAuth/addStaff/fb58cddff315e18f87a86f94dc191891 HTTP/1.1[0m" 500 -
+20-Mar-24 17:41:26 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discourseAuth_bp.py', reloading
+20-Mar-24 17:41:26 - [INFO] -  * Restarting with stat
+20-Mar-24 17:41:29 - [INFO] - Development environment configured.
+20-Mar-24 17:41:29 - [WARNING] -  * Debugger is active!
+20-Mar-24 17:41:29 - [INFO] -  * Debugger PIN: 144-740-991
+20-Mar-24 17:41:55 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+20-Mar-24 17:41:55 - [DEBUG] - http://127.0.0.1:3000 "PUT /groups/41/members.json HTTP/1.1" 400 0
+20-Mar-24 17:41:56 - [INFO] - 127.0.0.1 - - [20/Mar/2024 17:41:56] "[35m[1mPUT /api/v2/discourseAuth/addStaff/fb58cddff315e18f87a86f94dc191891 HTTP/1.1[0m" 500 -
+20-Mar-24 17:44:00 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discourseAuth_bp.py', reloading
+20-Mar-24 17:44:00 - [INFO] -  * Restarting with stat
+20-Mar-24 17:44:03 - [INFO] - Development environment configured.
+20-Mar-24 17:44:03 - [WARNING] -  * Debugger is active!
+20-Mar-24 17:44:03 - [INFO] -  * Debugger PIN: 144-740-991
+20-Mar-24 17:44:09 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+20-Mar-24 17:44:09 - [DEBUG] - http://127.0.0.1:3000 "PUT /groups/41/members.json HTTP/1.1" 400 0
+20-Mar-24 17:44:09 - [INFO] - 127.0.0.1 - - [20/Mar/2024 17:44:09] "[35m[1mPUT /api/v2/discourseAuth/addStaff/fb58cddff315e18f87a86f94dc191891 HTTP/1.1[0m" 500 -
+20-Mar-24 17:47:13 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discourseAuth_bp.py', reloading
+20-Mar-24 17:47:13 - [INFO] -  * Restarting with stat
+20-Mar-24 17:47:16 - [INFO] - Development environment configured.
+20-Mar-24 17:47:16 - [WARNING] -  * Debugger is active!
+20-Mar-24 17:47:16 - [INFO] -  * Debugger PIN: 144-740-991
+20-Mar-24 17:47:22 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discourseAuth_bp.py', reloading
+20-Mar-24 17:47:23 - [INFO] -  * Restarting with stat
+20-Mar-24 17:47:26 - [INFO] - Development environment configured.
+20-Mar-24 17:47:26 - [WARNING] -  * Debugger is active!
+20-Mar-24 17:47:26 - [INFO] -  * Debugger PIN: 144-740-991
+20-Mar-24 17:47:32 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+20-Mar-24 17:47:33 - [DEBUG] - http://127.0.0.1:3000 "PUT /groups/41/members.json HTTP/1.1" 400 0
+20-Mar-24 17:47:33 - [INFO] - 127.0.0.1 - - [20/Mar/2024 17:47:33] "[35m[1mPUT /api/v2/discourseAuth/addStaff/fb58cddff315e18f87a86f94dc191891 HTTP/1.1[0m" 500 -
+20-Mar-24 17:47:48 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discourseAuth_bp.py', reloading
+20-Mar-24 17:47:48 - [INFO] -  * Restarting with stat
+20-Mar-24 17:47:51 - [INFO] - Development environment configured.
+20-Mar-24 17:47:51 - [WARNING] -  * Debugger is active!
+20-Mar-24 17:47:51 - [INFO] -  * Debugger PIN: 144-740-991
+20-Mar-24 17:47:51 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+20-Mar-24 17:47:52 - [DEBUG] - http://127.0.0.1:3000 "PUT /groups/41/members.json HTTP/1.1" 400 None
+20-Mar-24 17:47:52 - [INFO] - 127.0.0.1 - - [20/Mar/2024 17:47:52] "[35m[1mPUT /api/v2/discourseAuth/addStaff/fb58cddff315e18f87a86f94dc191891 HTTP/1.1[0m" 500 -
+20-Mar-24 18:00:25 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+20-Mar-24 18:00:25 - [DEBUG] - http://127.0.0.1:3000 "PUT /groups/41/members.json HTTP/1.1" 400 None
+20-Mar-24 18:00:25 - [INFO] - 127.0.0.1 - - [20/Mar/2024 18:00:25] "[35m[1mPUT /api/v2/discourseAuth/addStaff/fb58cddff315e18f87a86f94dc191891 HTTP/1.1[0m" 500 -
+20-Mar-24 18:03:29 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+20-Mar-24 18:03:29 - [DEBUG] - http://127.0.0.1:3000 "PUT /groups/41/members.json HTTP/1.1" 400 None
+20-Mar-24 18:03:29 - [INFO] - 127.0.0.1 - - [20/Mar/2024 18:03:29] "[35m[1mPUT /api/v2/discourseAuth/addStaff/fb58cddff315e18f87a86f94dc191891 HTTP/1.1[0m" 500 -
+20-Mar-24 18:04:59 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discourseAuth_bp.py', reloading
+20-Mar-24 18:04:59 - [INFO] -  * Restarting with stat
+20-Mar-24 18:05:02 - [INFO] - Development environment configured.
+20-Mar-24 18:05:02 - [WARNING] -  * Debugger is active!
+20-Mar-24 18:05:02 - [INFO] -  * Debugger PIN: 144-740-991
+20-Mar-24 18:05:07 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+20-Mar-24 18:05:07 - [DEBUG] - http://127.0.0.1:3000 "PUT /groups/41/members.json HTTP/1.1" 400 None
+20-Mar-24 18:05:07 - [INFO] - 127.0.0.1 - - [20/Mar/2024 18:05:07] "[35m[1mPUT /api/v2/discourseAuth/addStaff/fb58cddff315e18f87a86f94dc191891 HTTP/1.1[0m" 500 -
+20-Mar-24 18:07:05 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discourseAuth_bp.py', reloading
+20-Mar-24 18:07:05 - [INFO] -  * Restarting with stat
+20-Mar-24 18:07:08 - [INFO] - Development environment configured.
+20-Mar-24 18:07:08 - [WARNING] -  * Debugger is active!
+20-Mar-24 18:07:08 - [INFO] -  * Debugger PIN: 144-740-991
+20-Mar-24 18:07:10 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+20-Mar-24 18:07:10 - [DEBUG] - http://127.0.0.1:3000 "PUT /groups/41/members.json HTTP/1.1" 200 None
+20-Mar-24 18:07:10 - [INFO] - Member added to the group.
+20-Mar-24 18:07:11 - [INFO] - 127.0.0.1 - - [20/Mar/2024 18:07:11] "[35m[1mPUT /api/v2/discourseAuth/addStaff/fb58cddff315e18f87a86f94dc191891 HTTP/1.1[0m" 500 -
+20-Mar-24 18:08:06 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discourseAuth_bp.py', reloading
+20-Mar-24 18:08:06 - [INFO] -  * Restarting with stat
+20-Mar-24 18:08:09 - [INFO] - Development environment configured.
+20-Mar-24 18:08:09 - [WARNING] -  * Debugger is active!
+20-Mar-24 18:08:09 - [INFO] -  * Debugger PIN: 144-740-991
+20-Mar-24 18:08:09 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+20-Mar-24 18:08:09 - [DEBUG] - http://127.0.0.1:3000 "PUT /groups/41/members.json HTTP/1.1" 422 None
+20-Mar-24 18:08:09 - [INFO] - 400 - The user could not be added.
+20-Mar-24 18:08:09 - [INFO] - 127.0.0.1 - - [20/Mar/2024 18:08:09] "[31m[1mPUT /api/v2/discourseAuth/addStaff/fb58cddff315e18f87a86f94dc191891 HTTP/1.1[0m" 400 -
+20-Mar-24 18:08:33 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discourseAuth_bp.py', reloading
+20-Mar-24 18:08:33 - [INFO] -  * Restarting with stat
+20-Mar-24 18:08:36 - [INFO] - Development environment configured.
+20-Mar-24 18:08:36 - [WARNING] -  * Debugger is active!
+20-Mar-24 18:08:36 - [INFO] -  * Debugger PIN: 144-740-991
+20-Mar-24 18:08:36 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+20-Mar-24 18:08:36 - [DEBUG] - http://127.0.0.1:3000 "PUT /groups/41/members.json HTTP/1.1" 200 None
+20-Mar-24 18:08:36 - [INFO] - Member added to the group.
+20-Mar-24 18:08:36 - [INFO] - 200 - User added successfully.
+20-Mar-24 18:08:36 - [INFO] - 127.0.0.1 - - [20/Mar/2024 18:08:36] "PUT /api/v2/discourseAuth/addStaff/fb58cddff315e18f87a86f94dc191891 HTTP/1.1" 200 -
+20-Mar-24 18:11:01 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+20-Mar-24 18:11:02 - [INFO] -  * Restarting with stat
+20-Mar-24 18:11:04 - [INFO] - Development environment configured.
+20-Mar-24 18:11:04 - [WARNING] -  * Debugger is active!
+20-Mar-24 18:11:04 - [INFO] -  * Debugger PIN: 144-740-991
+20-Mar-24 18:11:07 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+20-Mar-24 18:11:07 - [INFO] -  * Restarting with stat
+20-Mar-24 18:11:09 - [INFO] - Development environment configured.
+20-Mar-24 18:11:09 - [WARNING] -  * Debugger is active!
+20-Mar-24 18:11:09 - [INFO] -  * Debugger PIN: 144-740-991
