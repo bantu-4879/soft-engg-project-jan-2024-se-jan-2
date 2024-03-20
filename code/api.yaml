@@ -558,9 +558,8 @@ info:
       </tr>
       </tbody>
     </table>
+    /br></br>
 
-
-    </br></br>
   termsOfService: http://swagger.io/terms/
   contact:
     name: Aman Kankriya
@@ -572,6 +571,7 @@ info:
 servers:
 - url: http://127.0.0.1:5000/
   description: Local Host
+
 tags:
 - name: Login
   description: Login a user
@@ -591,1562 +591,1027 @@ tags:
   description: Get or update admin details
 - name: FAQ
   description: Get all FAQs or create a new FAQ.
+- name: Management
+  description: Management API's
+- name: Discourse
+  description: Discourse API's
+
 paths:
-  /api/v1/auth/login:
+  /api/v2/discourseAuth/discourseRegister:
+    post:
+      tags:
+      - Discourse
+      summary: Register on Discourse
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example: 
+              name: string,
+              email: string
+              password: string
+              username: string
+              user_id: string  
+
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                category: success
+                message: New account created
+                status: 200
+        "400":
+          description: Email or Password is empty
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
+        "401":
+          description: Username is already in use
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
+
+  /api/v2/discourseAuth/addStaff:
+    get:
+      tags:
+      - Discourse
+      summary: Add Staff to Discourse Group
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+              message:
+                user_id: string
+                first_name: string
+                last_name: string
+                email: string
+                Discourse_Username: string
+              category: success
+              status: 200
+    
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: Error occured while fetching database
+ 
+  /api/v2/discourse/categories:
+    get:
+      tags:
+      - Discourse
+      summary: Get Discourse categories
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+              message:
+                id: integer
+                name: strinh
+                color: integer
+                text_color: string
+                description: string
+              category: success
+              status: 200
+    
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: Error occured while fetching database
+
+  /api/v2/discourseAuth/addStaff/{username}: 
+    put:
+      tags:
+      - Discourse
+      summary: Modify staff to Discourse Ticket system app group
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                user_id: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                category: success
+                message: User updated successfully.
+                status: 200
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: Error occured while getting form data
+      
+  /api/v2/auth/login:
     post:
       tags:
       - Login
-      summary: Log in a user into OSTS
-      operationId: loginUser
+      summary: Log in .. 
       requestBody:
-        $ref: '#/components/requestBodies/LoginForm'
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                email: example@example.com
+                password: password
       responses:
-        "200":
-          description: Successfully logged in.
+        '200':
+          description: OK
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/inline_response_200'
+                type: object
+              example:
+                message:
+                  user_id: string
+                  web_token: string
+                  token_expiry_on: float
+                  role: string
+                  first_name: string
+                  last_name: string
+                  email: string
+                  profile_photo_loc: null
+                category: success
+                status: 200
         "400":
-          description: Client specified an invalid user details.
+          description: Email or Password are not valid as per specification
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/ApiResponse'
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
         "401":
-          description: Request not authenticated due to missing/invalid token.
+          description: Request not authenticated due to missing/invalid token
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/ApiResponse'
-        "403":
-          description: Client does not have sufficient permission.
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
+        "404":
+          description: User does not exist
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/ApiResponse'
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
         "500":
-          description: Internal server error.
+          description: Internal server error
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/ApiResponse'
-  /api/v1/auth/register:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
+        
+  /api/v2/auth/register:
     post:
       tags:
       - Register
-      summary: Register a new user into OSTS
-      operationId: registerUser
+      summary: Register in .. 
       requestBody:
-        $ref: '#/components/requestBodies/RegisterForm'
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                email: example@example.com
+                password: password
+                retype_password: password
+                first_name: john
+                last_name: doe
       responses:
-        "200":
-          description: Successfully account created.
+        '200':
+          description: OK
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/inline_response_200'
+                type: object
+              example:
+                category: success
+                message: Account created successfully. Now please login.
+                status: 200
         "400":
-          description: Client specified an invalid details.
+          description: Email or Password are not valid as per specification OR Password did not match.
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/ApiResponse'
-        "409":
-          description: Email address already exists in database.
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
+        "404":
+          description: Email is already in use
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/ApiResponse'
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
         "500":
-          description: Internal server error.
+          description: Internal server error
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/ApiResponse'
-  /api/v1/auth/newUsers:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
+      
+  /api/v2/auth/newUsers:
     get:
       tags:
       - NewUsers
       summary: Get new users data (which are not verified).
-      operationId: getNewUsers
       responses:
-        "200":
-          description: Successfully new users data retrieved.
+        '200':
+          description: OK
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/inline_response_200_1'
-        "401":
-          description: Request not authenticated due to missing/invalid token.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiResponse'
-        "403":
-          description: Client does not have sufficient permission. Only admins can access this endpoint.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiResponse'
+                type: object
+              message:
+                user_id: string
+                first_name: Max
+                last_name: Doe
+                email: max.doe@example.com
+                role: Staff
+              category: success
+              status: 200
+    
         "500":
-          description: Internal server error.
+          description: Internal server error
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/ApiResponse'
-  /api/v1/auth/newUsers/{user_id}:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: Error occured while fetching database
+
+  /api/v2/auth/newUsers/{user_id}:
     put:
       tags:
       - NewUsers
-      summary: Update user as verified.
-      operationId: updateNewUsers
-      parameters:
-      - name: user_id
-        in: path
-        required: true
-        style: simple
-        explode: false
-        schema:
-          type: string
+      summary: Update User Approvals
       requestBody:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/newUsers_user_id_body'
+              type: object
+              example:
+                user_id: string
+                first_name: string
+                last_name: string
+                email: max.doe@example.com
+                role: Staff/Student
       responses:
-        "200":
-          description: New user details are verified and accepted.
+        '200':
+          description: OK
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/ApiResponse'
+                type: object
+              example:
+                category: success
+                message: User verified and updated in database.
+                status: 200
         "400":
-          description: Client specified an invalid user id.
+          description: User does not exists.
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/ApiResponse'
-        "401":
-          description: Request not authenticated due to missing/invalid token.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiResponse'
-        "403":
-          description: Client does not have sufficient permission. Only admins have access.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiResponse'
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
         "404":
-          description: Provided user id is not found.
+          description: User id is empty or invalid
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/ApiResponse'
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
         "500":
-          description: Internal server error.
+          description: Internal server error
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/ApiResponse'
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
+
     delete:
       tags:
       - NewUsers
       summary: Delete new users data which are rejected by admin during verification.
-      operationId: deleteNewUsers
-      parameters:
-      - name: user_id
-        in: path
-        required: true
-        style: simple
-        explode: false
-        schema:
-          type: string
       responses:
-        "200":
-          description: New user verification failed and user account is deleted by admin.
+        '200':
+          description: OK
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/ApiResponse'
+                type: object
+              example:
+                category: success
+                message: Verification failed so user deleted.
+                status: 200
         "400":
-          description: Client specified an invalid user id.
+          description: User id is empty or invalid
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/ApiResponse'
-        "401":
-          description: Request not authenticated due to missing/invalid token.
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
+        "404":
+          description: User does not exists.
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/ApiResponse'
-        "403":
-          description: Client does not have sufficient permission. Only admins have access.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiResponse'
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
         "500":
-          description: Internal server error.
+          description: Internal server error
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/ApiResponse'
-  /api/v1/ticket/{ticket_id}/{user_id}:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
+
+  /api/v2/ticket/{ticket_id}/{user_id}:
     get:
       tags:
       - Ticket
       summary: Retrieve a ticket.
-      operationId: getTicket
-      parameters:
-      - name: ticket_id
-        in: path
-        required: true
-        style: simple
-        explode: false
-        schema:
-          type: string
-      - name: user_id
-        in: path
-        required: true
-        style: simple
-        explode: false
-        schema:
-          type: string
       responses:
-        "200":
-          description: Successfully retrieved a ticket.
+        '200':
+          description: OK
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/inline_response_200_2'
+                type: object
+              example:
+                message:
+                  id: string
+                  title: string
+                  solution: null
+                  privacy: false
+                  resolved_by: '0'
+                  ticket_status: Open
+                  tags_list: ""
+                  user_id: string
+                  description: string
+                  thread_link: null
+                  created_at: string
+                  solution_satisfaction: false
+                  ticket_priority: float
+                  attachments: []
+                category: success
+                status: 200
         "400":
-          description: Client specified an invalid arguments.
+          description: User id or ticket id is missing.
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/ApiResponse'
-        "401":
-          description: Request not authenticated due to missing/invalid token.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiResponse'
-        "403":
-          description: Client does not have sufficient permission.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiResponse'
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
         "404":
-          description: Given ticket id or user id is not found.
+          description: Ticket does not exists
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/ApiResponse'
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
         "500":
-          description: Internal server error.
+          description: Internal server error
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/ApiResponse'
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: Error occured while fetching ticket data
     put:
       tags:
       - Ticket
       summary: Update ticket data and number of votes
-      operationId: updateTicket
-      parameters:
-      - name: ticket_id
-        in: path
-        required: true
-        style: simple
-        explode: false
-        schema:
-          type: string
-      - name: user_id
-        in: path
-        required: true
-        style: simple
-        explode: false
-        schema:
-          type: string
       requestBody:
-        $ref: '#/components/requestBodies/TicketForm'
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                title: ""
+                description: ""
+                tags: ""
+                priority: ""
+                status: ""
+                votes: 0
+                solution: ""
+                inProgress: ""
       responses:
-        "200":
-          description: Ticket data updated successfully.
+        '200':
+          description: OK
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/ApiResponse'
+                type: object
+              example:
+                category: success
+                message: Successfully updated a ticket.
+                status: 200
         "400":
-          description: Client specified an invalid arguments.
+          description: User id or ticket id is missing.
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/ApiResponse'
-        "401":
-          description: Request not authenticated due to missing/invalid token.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiResponse'
-        "403":
-          description: Client does not have sufficient permission.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiResponse'
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
         "404":
-          description: Ticket id is not found.
+          description: Resolved tickets can't be edited.
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/ApiResponse'
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
         "500":
-          description: Internal server error.
+          description: Internal server error
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/ApiResponse'
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: Error occured while getting form data
     delete:
       tags:
       - Ticket
       summary: Delete a ticket.
-      operationId: deleteTicket
-      parameters:
-      - name: ticket_id
-        in: path
-        required: true
-        style: simple
-        explode: false
-        schema:
-          type: string
-      - name: user_id
-        in: path
-        required: true
-        style: simple
-        explode: false
-        schema:
-          type: string
       responses:
-        "200":
-          description: Ticket successfully deleted.
+        '200':
+          description: OK
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/ApiResponse'
+                type: object
+              example:
+                category: success
+                message: Ticket deleted successfully
+                status: 200
         "400":
-          description: Client specified an invalid user id or ticket id.
+          description: Only a user who created a ticket can delete it.
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/ApiResponse'
-        "401":
-          description: Request not authenticated due to missing/invalid token.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiResponse'
-        "403":
-          description: Client does not have sufficient permission.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiResponse'
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
         "404":
-          description: Ticket id is not found.
+          description: Ticket does not exists.
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/ApiResponse'
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
         "500":
-          description: Internal server error.
+          description: Internal server error
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/ApiResponse'
-  /api/v1/ticket/{user_id}:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: Error occured while fetching ticket data
+
+  /api/v2/ticket/{user_id}:
     post:
       tags:
       - Ticket
       summary: Create a new Ticket
-      operationId: createTicket
-      parameters:
-      - name: user_id
-        in: path
-        required: true
-        style: simple
-        explode: false
-        schema:
-          type: string
       requestBody:
-        $ref: '#/components/requestBodies/CreateTicketForm'
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                title: string
+                description: string
+                ticket_priority: float
+                tag: string
       responses:
-        "200":
-          description: New ticket successfully created.
+        '200':
+          description: OK
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/ApiResponse'
+                type: object
+              example:
+                category: success
+                message: Ticket created successfully. Attachments are empty.
+                status: 200
         "400":
-          description: Client specified an invalid argument.
+          description: Ticket title and at least one tag is required.
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/ApiResponse'
-        "401":
-          description: Request not authenticated due to missing/invalid token.
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
+        "404":
+          description: User id is empty/missing in url
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/ApiResponse'
-        "403":
-          description: Client does not have sufficient permission.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiResponse'
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
         "500":
-          description: Internal server error.
+          description: Internal server error
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/ApiResponse'
-  /api/v1/ticket/all-tickets:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: Error occured while getting form data
+
+  /api/v2/ticket/all-tickets:
     get:
       tags:
       - AllTickets
       summary: Retrieve all tickets for searching.
-      operationId: getAllTickets
       responses:
-        "200":
-          description: Successfully retrieved all tickets as per query.
+        '200':
+          description: OK
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/inline_response_200_3'
+                type: object
+              example:
+                message:
+                    id: string
+                    description: string
+                    thread_link: null
+                    created_at: string
+                    solution_satisfaction: false
+                    ticket_priority: float
+                    user_id: string
+                    title: string
+                    solution: null
+                    privacy: false
+                    resolved_by: string
+                    ticket_status: Open
+                    tags_list: string
+                    attachments: []
+                category: success
+                status: 200
         "400":
-          description: Invalid query string received.
+          description: Error occured while resolving query
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/ApiResponse'
-        "401":
-          description: Request not authenticated due to missing/invalid token.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiResponse'
-        "403":
-          description: Client does not have sufficient permission.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiResponse'
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
         "404":
-          description: A specified resource is not found.
+          description: Only student can search all tickets using query.
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/ApiResponse'
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
         "500":
-          description: Internal server error.
+          description: Internal server error
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/ApiResponse'
-  /api/v1/ticket/all-tickets/{user_id}:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
+
+  /api/v2/ticket/all-tickets/{user_id}:
     get:
       tags:
       - AllTickets
       summary: Retrieve all tickets for the user as per user role.
-      operationId: getAllUserTickets
-      parameters:
-      - name: user_id
-        in: path
-        required: true
-        style: simple
-        explode: false
-        schema:
-          type: string
       responses:
-        "200":
-          description: Successfully retrieved all tickets as per query.
+        '200':
+          description: OK
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/inline_response_200_3'
+                type: object
+              example:
+                category: success
+                message: Retrieve all tickets by the given user.
+                status: 200
         "400":
-          description: Invalid query string received.
+          description: User id is missing.
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/ApiResponse'
-        "401":
-          description: Request not authenticated due to missing/invalid token.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiResponse'
-        "403":
-          description: Client does not have sufficient permission.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiResponse'
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
         "404":
-          description: A specified resource is not found.
+          description: Error occured while resolving query.
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/ApiResponse'
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
         "500":
-          description: Internal server error.
+          description: Internal server error
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/ApiResponse'
-  /api/v1/student/{user_id}:
-    get:
-      tags:
-      - Student
-      summary: Get student details and metadata of activities.
-      operationId: getStudent
-      parameters:
-      - name: user_id
-        in: path
-        required: true
-        style: simple
-        explode: false
-        schema:
-          type: string
-      responses:
-        "200":
-          description: Successfully retrieved student details.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/inline_response_200_4'
-        "400":
-          description: Client specified an invalid user id.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiResponse'
-        "401":
-          description: Request not authenticated due to missing/invalid token.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiResponse'
-        "403":
-          description: Client does not have sufficient permission.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiResponse'
-        "404":
-          description: Student id is not found.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiResponse'
-        "500":
-          description: Internal server error.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiResponse'
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
+
+  /api/v2/management/{user_id}/card:
     put:
       tags:
-      - Student
-      summary: Update student profile data.
-      operationId: updateStudent
-      parameters:
-      - name: user_id
-        in: path
-        required: true
-        style: simple
-        explode: false
-        schema:
-          type: string
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Student'
+      - Management
+      summary: Update Card
       responses:
-        "200":
-          description: Student details updated successfully.
+        '200':
+          description: OK
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/ApiResponse'
+                type: object
+              example:
+                category: success
+                message: User card updated in database.
+                status: 200
         "400":
-          description: Client specified an invalid user id.
+          description: User id is empty or invalid
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/ApiResponse'
-        "401":
-          description: Request not authenticated due to missing/invalid token.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiResponse'
-        "403":
-          description: Client does not have sufficient permission.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiResponse'
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
         "404":
-          description: Student id is not found.
+          description: User does not exists.
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/ApiResponse'
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
         "500":
-          description: Internal server error.
+          description: Internal server error
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/ApiResponse'
-  /api/v1/support/{user_id}:
-    get:
-      tags:
-      - Support
-      summary: Get support details and metadata of activities.
-      operationId: getSupport
-      parameters:
-      - name: user_id
-        in: path
-        required: true
-        style: simple
-        explode: false
-        schema:
-          type: string
-      responses:
-        "200":
-          description: Successfully retrieved support details.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/inline_response_200_5'
-        "400":
-          description: Client specified an invalid user id.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiResponse'
-        "401":
-          description: Request not authenticated due to missing/invalid token.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiResponse'
-        "403":
-          description: Client does not have sufficient permission.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiResponse'
-        "404":
-          description: Support id is not found.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiResponse'
-        "500":
-          description: Internal server error.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiResponse'
-    put:
-      tags:
-      - Support
-      summary: Update support profile data.
-      operationId: updateSupport
-      parameters:
-      - name: user_id
-        in: path
-        required: true
-        style: simple
-        explode: false
-        schema:
-          type: string
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Support'
-      responses:
-        "200":
-          description: Support details updated successfully.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiResponse'
-        "400":
-          description: Client specified an invalid user id.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiResponse'
-        "401":
-          description: Request not authenticated due to missing/invalid token.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiResponse'
-        "403":
-          description: Client does not have sufficient permission.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiResponse'
-        "404":
-          description: Support id is not found.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiResponse'
-        "500":
-          description: Internal server error.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiResponse'
-  /api/v1/admin/{user_id}:
-    get:
-      tags:
-      - Admin
-      summary: Get admin details and metadata of activities.
-      operationId: getAdmin
-      parameters:
-      - name: user_id
-        in: path
-        required: true
-        style: simple
-        explode: false
-        schema:
-          type: string
-      responses:
-        "200":
-          description: Successfully retrieved admin details.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/inline_response_200_6'
-        "400":
-          description: Client specified an invalid user id.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiResponse'
-        "401":
-          description: Request not authenticated due to missing/invalid token.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiResponse'
-        "403":
-          description: Client does not have sufficient permission.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiResponse'
-        "404":
-          description: Admin id is not found.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiResponse'
-        "500":
-          description: Internal server error.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiResponse'
-    put:
-      tags:
-      - Admin
-      summary: Update admin profile data.
-      operationId: updateAdmin
-      parameters:
-      - name: user_id
-        in: path
-        required: true
-        style: simple
-        explode: false
-        schema:
-          type: string
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Admin'
-      responses:
-        "200":
-          description: Admin details updated successfully.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiResponse'
-        "400":
-          description: Client specified an invalid argument.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiResponse'
-        "401":
-          description: Request not authenticated due to missing/invalid token.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiResponse'
-        "403":
-          description: Client does not have sufficient permission.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiResponse'
-        "404":
-          description: Admin id is not found.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiResponse'
-        "500":
-          description: Internal server error.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiResponse'
-  /api/v1/faq:
-    get:
-      tags:
-      - FAQ
-      summary: Get all FAQ question and answer.
-      operationId: getFAQs
-      responses:
-        "200":
-          description: Successfully retrieved all FAQs details.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/inline_response_200_7'
-        "401":
-          description: Request not authenticated due to missing/invalid token.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiResponse'
-        "500":
-          description: Internal server error.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiResponse'
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: Error occured while getting form data
+
+  /api/v2/management/badge:
     post:
       tags:
-      - FAQ
-      summary: Create new FAQ.
-      operationId: createFAQ
+      - Management
+      summary: Create Badge 
+
       requestBody:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/FAQForm'
+              type: object
+              example:
+                badge_name : string
+                badge_picture_location : string
       responses:
-        "200":
-          description: New FAQ successfully created.
+        '200':
+          description: OK
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/ApiResponse'
-        "400":
-          description: Client specified an invalid faq form data.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiResponse'
+                type: object
+              example:
+                category: success
+                message: Badge Assigned Successfully.
+                status: 200
         "401":
-          description: Request not authenticated due to missing/invalid token.
+          description: Cannot assign Badge
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/ApiResponse'
-        "403":
-          description: Client does not have sufficient permission. Only admins can create FAQ.
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
+        "404":
+          description: User does not exist
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/ApiResponse'
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
         "500":
-          description: Internal server error.
+          description: Internal server error
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/ApiResponse'
-components:
-  schemas:
-    Auth:
-      required:
-      - role
-      type: object
-      properties:
-        user_id:
-          type: string
-        role:
-          type: string
-          description: User Role
-          enum:
-          - student
-          - support
-          - admin
-        web_token:
-          type: string
-        is_verified:
-          type: boolean
-          default: false
-        is_logged:
-          type: boolean
-          default: false
-        token_created_on:
-          type: integer
-          description: Timestamp stored as integer
-          format: int64
-        token_expiry_on:
-          type: integer
-          format: int64
-        first_name:
-          type: string
-        last_name:
-          type: string
-        email:
-          type: string
-        password:
-          type: string
-        profile_photo_loc:
-          type: string
-      xml:
-        name: Auth
-    Ticket:
-      required:
-      - created_by
-      - tag_1
-      - title
-      type: object
-      properties:
-        ticket_id:
-          type: string
-        title:
-          type: string
-        description:
-          type: string
-        priority:
-          type: string
-          description: Ticket Priority
-          enum:
-          - low
-          - medium
-          - high
-        tag_1:
-          type: string
-        tag_2:
-          type: string
-        tag_3:
-          type: string
-        status:
-          type: string
-          description: Ticket Status
-          enum:
-          - pending
-          - resolved
-          - duplicate
-          - cancelled
-        votes:
-          type: integer
-          format: int64
-        created_by:
-          type: string
-        created_on:
-          type: integer
-          format: int64
-        resolved_by:
-          type: string
-        resolved_on:
-          type: integer
-          format: int64
-        solution:
-          type: string
-      xml:
-        name: Ticket
-    TicketAttachment:
-      type: object
-      properties:
-        ticket_id:
-          type: string
-        user_id:
-          type: string
-        attachment_loc:
-          type: string
-      xml:
-        name: TicketAttachment
-    TicketVote:
-      type: object
-      properties:
-        ticket_id:
-          type: string
-        user_id:
-          type: string
-      xml:
-        name: TicketVote
-    FAQ:
-      required:
-      - answer
-      - question
-      - tag_1
-      type: object
-      properties:
-        faq_id:
-          type: string
-        question:
-          type: string
-        answer:
-          type: string
-        tag_1:
-          type: string
-        tag_2:
-          type: string
-        tag_3:
-          type: string
-        created_by:
-          type: string
-      xml:
-        name: FAQ
-    FAQAttachment:
-      type: object
-      properties:
-        faq_id:
-          type: string
-        attachment_loc:
-          type: string
-      xml:
-        name: FAQAttachment
-    LoginForm:
-      type: object
-      properties:
-        email:
-          type: string
-        password:
-          type: string
-      xml:
-        name: LoginForm
-    RegisterForm:
-      type: object
-      properties:
-        first_name:
-          type: string
-        last_name:
-          type: string
-        email:
-          type: string
-        password:
-          type: string
-        retype_password:
-          type: string
-        role:
-          type: string
-          description: User Role
-          enum:
-          - student
-          - support
-          - admin
-      xml:
-        name: RegisterForm
-    ApiResponse:
-      required:
-      - category
-      - message
-      - status
-      type: object
-      properties:
-        status:
-          type: integer
-          format: int32
-        category:
-          type: string
-        message:
-          type: string
-    TicketForm:
-      type: object
-      properties:
-        ticket_id:
-          type: string
-        title:
-          type: string
-        description:
-          type: string
-        priority:
-          type: string
-          description: Ticket Priority
-          enum:
-          - low
-          - medium
-          - high
-        tag_1:
-          type: string
-        tag_2:
-          type: string
-        tag_3:
-          type: string
-        status:
-          type: string
-          description: Ticket Status
-          enum:
-          - pending
-          - resolved
-          - duplicate
-          - cancelled
-        votes:
-          type: integer
-          format: int64
-        created_by:
-          type: string
-        created_on:
-          type: integer
-          format: int64
-        resolved_by:
-          type: string
-        resolved_on:
-          type: integer
-          format: int64
-        solution:
-          type: string
-        attachments:
-          type: array
-          description: Array of attachments
-          nullable: true
-          items:
-            $ref: '#/components/schemas/TicketForm_attachments'
-    CreateTicketForm:
-      type: object
-      properties:
-        title:
-          type: string
-        description:
-          type: string
-        priority:
-          type: string
-          description: Ticket Priority
-          enum:
-          - low
-          - medium
-          - high
-        tag_1:
-          type: string
-        tag_2:
-          type: string
-        tag_3:
-          type: string
-        created_by:
-          type: string
-        created_on:
-          type: integer
-          format: int64
-        attachments:
-          type: array
-          description: Array of attachments
-          nullable: true
-          items:
-            $ref: '#/components/schemas/TicketForm_attachments'
-    StudentForm:
-      type: object
-      properties:
-        user_id:
-          type: string
-        first_name:
-          type: string
-        last_name:
-          type: string
-        email:
-          type: string
-        password:
-          type: string
-        profile_photo_loc:
-          type: string
-        n_tickets_created:
-          type: integer
-        n_tickets_resolved:
-          type: integer
-        n_tickets_unresolved:
-          type: integer
-        n_tickets_upvoted:
-          type: integer
-      xml:
-        name: StudentForm
-    SupportForm:
-      type: object
-      properties:
-        user_id:
-          type: string
-        first_name:
-          type: string
-        last_name:
-          type: string
-        email:
-          type: string
-        password:
-          type: string
-        profile_photo_loc:
-          type: string
-        n_tickets_resolved:
-          type: integer
-        n_total_unresolved_tickets:
-          type: integer
-      xml:
-        name: SupportForm
-    AdminForm:
-      type: object
-      properties:
-        user_id:
-          type: string
-        first_name:
-          type: string
-        last_name:
-          type: string
-        email:
-          type: string
-        password:
-          type: string
-        profile_photo_loc:
-          type: string
-        n_total_unresolved_tickets:
-          type: integer
-        n_total_resolved_tickets:
-          type: integer
-        n_tickets_today:
-          type: integer
-        n_tickets_week:
-          type: integer
-        n_tickets_month:
-          type: integer
-        n_student:
-          type: integer
-        n_support:
-          type: integer
-        n_admin:
-          type: integer
-        n_student_new:
-          type: integer
-        n_support_new:
-          type: integer
-      xml:
-        name: AdminForm
-    FAQForm:
-      type: object
-      properties:
-        faq_id:
-          type: string
-        question:
-          type: string
-        answer:
-          type: string
-        tag_1:
-          type: string
-        tag_2:
-          type: string
-        tag_3:
-          type: string
-        created_by:
-          type: string
-        attachments:
-          type: array
-          description: Array of attachments
-          nullable: true
-          items:
-            $ref: '#/components/schemas/FAQForm_attachments'
-      xml:
-        name: FAQForm
-    Student:
-      required:
-      - email
-      - first_name
-      - password
-      type: object
-      properties:
-        user_id:
-          type: string
-        first_name:
-          type: string
-        last_name:
-          type: string
-        email:
-          type: string
-        password:
-          type: string
-        profile_photo_loc:
-          type: string
-      xml:
-        name: Student
-    Support:
-      required:
-      - email
-      - first_name
-      - password
-      type: object
-      properties:
-        user_id:
-          type: string
-        first_name:
-          type: string
-        last_name:
-          type: string
-        email:
-          type: string
-        password:
-          type: string
-        profile_photo_loc:
-          type: string
-      xml:
-        name: Support
-    Admin:
-      required:
-      - email
-      - first_name
-      - password
-      type: object
-      properties:
-        user_id:
-          type: string
-        first_name:
-          type: string
-        last_name:
-          type: string
-        email:
-          type: string
-        password:
-          type: string
-        profile_photo_loc:
-          type: string
-      xml:
-        name: Admin
-    inline_response_200:
-      type: object
-      properties:
-        category:
-          type: string
-        status:
-          type: integer
-        message:
-          $ref: '#/components/schemas/inline_response_200_message'
-    inline_response_200_1:
-      type: object
-      properties:
-        category:
-          type: string
-        status:
-          type: integer
-        message:
-          type: array
-          description: Array of user objects
-          nullable: true
-          items:
-            $ref: '#/components/schemas/inline_response_200_1_message'
-    newUsers_user_id_body:
-      type: object
-      properties:
-        user_id:
-          type: string
-        verified:
-          type: boolean
-    inline_response_200_2:
-      type: object
-      properties:
-        category:
-          type: string
-        status:
-          type: integer
-        message:
-          $ref: '#/components/schemas/TicketForm'
-    inline_response_200_3:
-      type: object
-      properties:
-        category:
-          type: string
-        status:
-          type: integer
-        message:
-          type: array
-          items:
-            $ref: '#/components/schemas/TicketForm'
-    inline_response_200_4:
-      type: object
-      properties:
-        category:
-          type: string
-        status:
-          type: integer
-        message:
-          $ref: '#/components/schemas/StudentForm'
-    inline_response_200_5:
-      type: object
-      properties:
-        category:
-          type: string
-        status:
-          type: integer
-        message:
-          $ref: '#/components/schemas/SupportForm'
-    inline_response_200_6:
-      type: object
-      properties:
-        category:
-          type: string
-        status:
-          type: integer
-        message:
-          $ref: '#/components/schemas/AdminForm'
-    inline_response_200_7:
-      type: object
-      properties:
-        category:
-          type: string
-        status:
-          type: integer
-        message:
-          type: array
-          description: Array of FAQs
-          items:
-            $ref: '#/components/schemas/FAQForm'
-    TicketForm_attachments:
-      type: object
-      properties:
-        user_id:
-          type: string
-        attachment_loc:
-          type: string
-    FAQForm_attachments:
-      type: object
-      properties:
-        attachment_loc:
-          type: string
-    inline_response_200_message:
-      type: object
-      properties:
-        user_id:
-          type: string
-        web_token:
-          type: string
-        token_expiry_on:
-          type: integer
-    inline_response_200_1_message:
-      type: object
-      properties:
-        user_id:
-          type: string
-        first_name:
-          type: string
-        last_name:
-          type: string
-        email:
-          type: string
-        role:
-          type: string
-  responses:
-    Success:
-      description: Operation successfully completed.
-      content:
-        application/json:
-          schema:
-            $ref: '#/components/schemas/ApiResponse'
-    BadRequest:
-      description: Client specified an invalid argument.
-      content:
-        application/json:
-          schema:
-            $ref: '#/components/schemas/ApiResponse'
-    Unauthenticated:
-      description: Request not authenticated due to missing/invalid token.
-      content:
-        application/json:
-          schema:
-            $ref: '#/components/schemas/ApiResponse'
-    PermissionDenied:
-      description: Client does not have sufficient permission.
-      content:
-        application/json:
-          schema:
-            $ref: '#/components/schemas/ApiResponse'
-    NotFound:
-      description: A specified resource is not found.
-      content:
-        application/json:
-          schema:
-            $ref: '#/components/schemas/ApiResponse'
-    MethodNotAllowed:
-      description: Request method is known by the server but is not supported by the target resource.
-      content:
-        application/json:
-          schema:
-            $ref: '#/components/schemas/ApiResponse'
-    AlreadyExists:
-      description: An existing resource conflicts with the request.
-      content:
-        application/json:
-          schema:
-            $ref: '#/components/schemas/ApiResponse'
-    ServerError:
-      description: Internal server error.
-      content:
-        application/json:
-          schema:
-            $ref: '#/components/schemas/ApiResponse'
-  requestBodies:
-    LoginForm:
-      description: LoginForm
-      content:
-        application/json:
-          schema:
-            $ref: '#/components/schemas/LoginForm'
-        application/xml:
-          schema:
-            $ref: '#/components/schemas/LoginForm'
-      required: true
-    RegisterForm:
-      description: RegisterForm
-      content:
-        application/json:
-          schema:
-            $ref: '#/components/schemas/RegisterForm'
-        application/xml:
-          schema:
-            $ref: '#/components/schemas/RegisterForm'
-      required: true
-    TicketForm:
-      description: TicketForm
-      content:
-        application/json:
-          schema:
-            $ref: '#/components/schemas/TicketForm'
-        application/xml:
-          schema:
-            $ref: '#/components/schemas/TicketForm'
-      required: true
-    CreateTicketForm:
-      description: CreateTicketForm
-      content:
-        application/json:
-          schema:
-            $ref: '#/components/schemas/CreateTicketForm'
-        application/xml:
-          schema:
-            $ref: '#/components/schemas/CreateTicketForm'
-      required: true
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
+        
+  /api/v2/management/assign/badge:
+    post:
+      tags:
+      - Management
+      summary: Create Badge 
+
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                user_email : string
+                badge_name : string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                category: success
+                message: Badge Assigned Successfully
+                status: 200
+        "400":
+          description: Error occured while getting form data
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
+        "401":
+          description: Cannot assign Badge
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
+        "404":
+          description: User does not exist
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
+    
+  /api/v2/management/badge/{badge_id}:
+    delete:
+      tags:
+      - Management
+      summary: Delete the badge.
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                category: success
+                message: Badge deleted successfully.
+                status: 200
+        "400":
+          description: Error occurred while deleting badge 
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
+        "404":
+          description: Badge Not Found
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
+
+  /api/v2/management/assign/badge/{badge_assign_id}:
+    delete:
+      tags:
+      - Management
+      summary: Delete assigned badge
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                category: success
+                message: Badge revoked successfully..
+                status: 200
+        "400":
+          description: Error occurred while deleting badge 
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
+        "404":
+          description: Badge Not Found
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
+
+
