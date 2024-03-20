@@ -29,6 +29,7 @@ discourseUserUtils=DiscourseUserUtils()
 class DiscourseUserCreation(Resource):
 
     @token_required
+    @users_required(users=["Student","Staff","Admin"])
     def post(self):
         """
         Usage 
@@ -53,7 +54,7 @@ class DiscourseUserCreation(Resource):
         try:
             form =request.get_json()
             email=form.get("email","")
-            user_id=request.headers.get("user_id", "") 
+            user_id=form.get("user_id", "") 
             password=form.get("password","")
             username=form.get("username","")
             name=form.get("name","")
@@ -67,6 +68,10 @@ class DiscourseUserCreation(Resource):
                 raise AlreadyExistError(status_msg="Username is already in use")
             
             user=User.query.filter_by(id=user_id).first()
+            if(user):
+                print("userExists")
+            else:
+                raise NotFoundError(status_msg="user not present")
             payload={
                 "name": name,
                 "email":email,
@@ -83,11 +88,12 @@ class DiscourseUserCreation(Resource):
             
             if response.status_code == 200:
                 logger.info("New account created")
-                if(response.success):
+                responseJs=response.json()
+                if(responseJs["success"]):
                     user.discourse_username=username
                     db.session.add(user)
                     db.session.commit()
-                raise Success_200(status_msg=response.message,status_code=response.status_code)
+                raise Success_200(status_msg=responseJs["message"],status_code=response.status_code)
             else:
                 raise BadRequest(
                     status_msg=response.error
@@ -148,18 +154,17 @@ class DiscourseAddMedorators(Resource):
         else:
             data=[]
             for user in staff_members:
-                if(user.discourse_username is not None):
-                    _d={}
-                    _d["user_id"] = user.id
-                    _d["first_name"] = user.first_name
-                    _d["last_name"] = user.second_name
-                    _d["email"] = user.email
-                    _d["Discourse_Username"] = user.discourse_username
-                    data.append(_d)
-            raise success_200_custom(data=data)
+                _d={}
+                _d["user_id"] = user.id
+                _d["first_name"] = user.first_name
+                _d["last_name"] = user.second_name
+                _d["email"] = user.email
+                _d["Discourse_Username"] = user.discourse_username
+                data.append(_d)
+            return success_200_custom(data=data)
     
-    @token_required
-    @admin_required
+    #@token_required
+    #@admin_required
     def put(self,user_id):
         """
         Usage
@@ -185,10 +190,13 @@ class DiscourseAddMedorators(Resource):
             
             user=User.query.filter_by(id=user_id).first()
             if user:
-                username=user.discourse_username
+                username="JaneDoeTest"
                 payload={
                     "usernames":username
                 }
+                import json
+                payload_string = json.dumps(payload)
+                print(payload_string)
                 headers={
                     'Api-key':API_KEY,
                     'Api-Username':API_USERNAME,
@@ -196,17 +204,15 @@ class DiscourseAddMedorators(Resource):
                 }
                 id=41
                 url=f'{DISCOURSE_BASE_URL}/groups/{id}/members.json'
-                payload={
-                    "usernames":username
-                }
-                response = request.put(url,payload,headers=headers)
+                response = requests.put(url,payload_string,headers=headers)
                 if response.status_code == 200:
                     logger.info("Member added to the group.")
-                    if(response.success):
-                        raise Success_200(status_msg=response.message,status_code=response.status_code)
+                    response=response.json()
+                    print(response)
+                    if(response["success"] =='OK'):
+                        raise Success_200(status_msg="User added successfully.")
                 else:
-                    raise BadRequest(
-                        status_msg=response.error)
+                    raise BadRequest(status_code=400,status_msg="The user could not be added.")
             
     @token_required
     @admin_required
@@ -249,7 +255,7 @@ class DiscourseAddMedorators(Resource):
                 payload={
                     "usernames":username
                 }
-                response = request.delete(url,payload,headers=headers)
+                response = requests.delete(url,payload,headers=headers)
                 if response.status_code == 200:
                     logger.info("Staff member removed from the group")
                     if(response.success):
@@ -260,4 +266,4 @@ class DiscourseAddMedorators(Resource):
         
 
 discourseAuth_api.add_resource(DiscourseUserCreation,"/discourseRegister", "/discourseRegister/<string:username>")
-discourseAuth_api.add_resource(DiscourseAddMedorators,"/addStaff",'/addStaff/<string:username>')
+discourseAuth_api.add_resource(DiscourseAddMedorators,"/addStaff",'/addStaff/<string:user_id>')
