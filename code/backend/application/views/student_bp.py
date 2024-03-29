@@ -56,7 +56,7 @@ class StudentAPI(Resource):
             raise InternalServerError
         else:
             if user:
-                if user.role.name == "Student":
+                if user.role_id == 3:
                     n_tickets_created = Ticket.query.filter_by(
                         created_by=user_id
                     ).count()

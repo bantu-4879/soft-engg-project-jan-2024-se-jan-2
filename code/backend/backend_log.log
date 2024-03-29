@@ -6000,3 +6000,233 @@
 20-Mar-24 18:11:09 - [INFO] - Development environment configured.
 20-Mar-24 18:11:09 - [WARNING] -  * Debugger is active!
 20-Mar-24 18:11:09 - [INFO] -  * Debugger PIN: 144-740-991
+29-Mar-24 10:22:13 - [INFO] - Development environment configured.
+29-Mar-24 10:22:13 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+29-Mar-24 10:22:13 - [INFO] - [33mPress CTRL+C to quit[0m
+29-Mar-24 10:22:13 - [INFO] -  * Restarting with stat
+29-Mar-24 10:22:14 - [INFO] - Development environment configured.
+29-Mar-24 10:22:14 - [WARNING] -  * Debugger is active!
+29-Mar-24 10:22:14 - [INFO] -  * Debugger PIN: 615-108-927
+29-Mar-24 10:25:07 - [INFO] - 404 - Provided user id does not exists. Please create account.
+29-Mar-24 10:25:07 - [INFO] - 127.0.0.1 - - [29/Mar/2024 10:25:07] "[33mGET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 404 -
+29-Mar-24 10:25:29 - [INFO] - 404 - Provided user id does not exists. Please create account.
+29-Mar-24 10:25:29 - [INFO] - 127.0.0.1 - - [29/Mar/2024 10:25:29] "[33mGET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 404 -
+29-Mar-24 10:26:11 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/admin_bp.py', reloading
+29-Mar-24 10:26:11 - [INFO] -  * Restarting with stat
+29-Mar-24 10:26:13 - [INFO] - Development environment configured.
+29-Mar-24 10:26:13 - [WARNING] -  * Debugger is active!
+29-Mar-24 10:26:13 - [INFO] -  * Debugger PIN: 615-108-927
+29-Mar-24 10:26:17 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/admin_bp.py', reloading
+29-Mar-24 10:26:17 - [INFO] -  * Restarting with stat
+29-Mar-24 10:26:18 - [INFO] - Development environment configured.
+29-Mar-24 10:26:18 - [WARNING] -  * Debugger is active!
+29-Mar-24 10:26:18 - [INFO] -  * Debugger PIN: 615-108-927
+29-Mar-24 10:26:22 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/admin_bp.py', reloading
+29-Mar-24 10:26:22 - [INFO] -  * Restarting with stat
+29-Mar-24 10:26:23 - [INFO] - Development environment configured.
+29-Mar-24 10:26:23 - [WARNING] -  * Debugger is active!
+29-Mar-24 10:26:23 - [INFO] -  * Debugger PIN: 615-108-927
+29-Mar-24 10:26:24 - [INFO] - 127.0.0.1 - - [29/Mar/2024 10:26:24] "[35m[1mGET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 500 -
+29-Mar-24 10:27:11 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/admin_bp.py', reloading
+29-Mar-24 10:27:12 - [INFO] -  * Restarting with stat
+29-Mar-24 10:27:13 - [INFO] - Development environment configured.
+29-Mar-24 10:27:13 - [WARNING] -  * Debugger is active!
+29-Mar-24 10:27:13 - [INFO] -  * Debugger PIN: 615-108-927
+29-Mar-24 10:27:17 - [INFO] - 127.0.0.1 - - [29/Mar/2024 10:27:17] "[35m[1mGET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 500 -
+29-Mar-24 10:27:24 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/admin_bp.py', reloading
+29-Mar-24 10:27:24 - [INFO] -  * Restarting with stat
+29-Mar-24 10:27:25 - [INFO] - Development environment configured.
+29-Mar-24 10:27:25 - [WARNING] -  * Debugger is active!
+29-Mar-24 10:27:25 - [INFO] -  * Debugger PIN: 615-108-927
+29-Mar-24 10:27:26 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/admin_bp.py', reloading
+29-Mar-24 10:27:26 - [INFO] -  * Restarting with stat
+29-Mar-24 10:27:27 - [INFO] - Development environment configured.
+29-Mar-24 10:27:28 - [WARNING] -  * Debugger is active!
+29-Mar-24 10:27:28 - [INFO] -  * Debugger PIN: 615-108-927
+29-Mar-24 10:27:44 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/admin_bp.py', reloading
+29-Mar-24 10:27:44 - [INFO] -  * Restarting with stat
+29-Mar-24 10:28:04 - [INFO] - Development environment configured.
+29-Mar-24 10:28:04 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+29-Mar-24 10:28:04 - [INFO] - [33mPress CTRL+C to quit[0m
+29-Mar-24 10:28:04 - [INFO] -  * Restarting with stat
+29-Mar-24 10:28:05 - [INFO] - Development environment configured.
+29-Mar-24 10:28:05 - [WARNING] -  * Debugger is active!
+29-Mar-24 10:28:05 - [INFO] -  * Debugger PIN: 615-108-927
+29-Mar-24 10:28:07 - [INFO] - 127.0.0.1 - - [29/Mar/2024 10:28:07] "[35m[1mGET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 500 -
+29-Mar-24 10:28:20 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/admin_bp.py', reloading
+29-Mar-24 10:28:20 - [INFO] -  * Restarting with stat
+29-Mar-24 10:28:21 - [INFO] - Development environment configured.
+29-Mar-24 10:28:21 - [WARNING] -  * Debugger is active!
+29-Mar-24 10:28:21 - [INFO] -  * Debugger PIN: 615-108-927
+29-Mar-24 10:28:27 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/admin_bp.py', reloading
+29-Mar-24 10:28:27 - [INFO] -  * Restarting with stat
+29-Mar-24 10:28:28 - [INFO] - Development environment configured.
+29-Mar-24 10:28:28 - [WARNING] -  * Debugger is active!
+29-Mar-24 10:28:28 - [INFO] -  * Debugger PIN: 615-108-927
+29-Mar-24 10:29:14 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/admin_bp.py', reloading
+29-Mar-24 10:29:14 - [INFO] -  * Restarting with stat
+29-Mar-24 10:29:15 - [INFO] - Development environment configured.
+29-Mar-24 10:29:15 - [WARNING] -  * Debugger is active!
+29-Mar-24 10:29:15 - [INFO] -  * Debugger PIN: 615-108-927
+29-Mar-24 10:29:19 - [INFO] - 127.0.0.1 - - [29/Mar/2024 10:29:19] "[35m[1mGET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 500 -
+29-Mar-24 10:29:37 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/admin_bp.py', reloading
+29-Mar-24 10:29:37 - [INFO] -  * Restarting with stat
+29-Mar-24 10:29:38 - [INFO] - Development environment configured.
+29-Mar-24 10:29:38 - [WARNING] -  * Debugger is active!
+29-Mar-24 10:29:38 - [INFO] -  * Debugger PIN: 615-108-927
+29-Mar-24 10:29:40 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/admin_bp.py', reloading
+29-Mar-24 10:29:40 - [INFO] -  * Restarting with stat
+29-Mar-24 10:29:41 - [INFO] - Development environment configured.
+29-Mar-24 10:29:41 - [WARNING] -  * Debugger is active!
+29-Mar-24 10:29:41 - [INFO] -  * Debugger PIN: 615-108-927
+29-Mar-24 10:29:44 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/admin_bp.py', reloading
+29-Mar-24 10:29:45 - [INFO] -  * Restarting with stat
+29-Mar-24 10:29:46 - [INFO] - Development environment configured.
+29-Mar-24 10:29:46 - [WARNING] -  * Debugger is active!
+29-Mar-24 10:29:46 - [INFO] -  * Debugger PIN: 615-108-927
+29-Mar-24 10:29:49 - [INFO] - 127.0.0.1 - - [29/Mar/2024 10:29:49] "[35m[1mGET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 500 -
+29-Mar-24 10:35:32 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/admin_bp.py', reloading
+29-Mar-24 10:35:33 - [INFO] -  * Restarting with stat
+29-Mar-24 10:35:34 - [INFO] - Development environment configured.
+29-Mar-24 10:35:34 - [WARNING] -  * Debugger is active!
+29-Mar-24 10:35:34 - [INFO] -  * Debugger PIN: 615-108-927
+29-Mar-24 10:35:41 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/admin_bp.py', reloading
+29-Mar-24 10:35:41 - [INFO] -  * Restarting with stat
+29-Mar-24 10:35:42 - [INFO] - Development environment configured.
+29-Mar-24 10:35:42 - [WARNING] -  * Debugger is active!
+29-Mar-24 10:35:42 - [INFO] -  * Debugger PIN: 615-108-927
+29-Mar-24 10:36:10 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/admin_bp.py', reloading
+29-Mar-24 10:36:10 - [INFO] -  * Restarting with stat
+29-Mar-24 10:36:11 - [INFO] - Development environment configured.
+29-Mar-24 10:36:11 - [WARNING] -  * Debugger is active!
+29-Mar-24 10:36:11 - [INFO] -  * Debugger PIN: 615-108-927
+29-Mar-24 10:36:15 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/admin_bp.py', reloading
+29-Mar-24 10:36:15 - [INFO] -  * Restarting with stat
+29-Mar-24 10:36:16 - [INFO] - Development environment configured.
+29-Mar-24 10:36:16 - [WARNING] -  * Debugger is active!
+29-Mar-24 10:36:16 - [INFO] -  * Debugger PIN: 615-108-927
+29-Mar-24 10:36:18 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/admin_bp.py', reloading
+29-Mar-24 10:36:19 - [INFO] -  * Restarting with stat
+29-Mar-24 10:36:20 - [INFO] - Development environment configured.
+29-Mar-24 10:36:20 - [WARNING] -  * Debugger is active!
+29-Mar-24 10:36:20 - [INFO] -  * Debugger PIN: 615-108-927
+29-Mar-24 10:36:23 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/admin_bp.py', reloading
+29-Mar-24 10:36:23 - [INFO] -  * Restarting with stat
+29-Mar-24 10:36:24 - [INFO] - Development environment configured.
+29-Mar-24 10:36:24 - [WARNING] -  * Debugger is active!
+29-Mar-24 10:36:24 - [INFO] -  * Debugger PIN: 615-108-927
+29-Mar-24 10:36:36 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/admin_bp.py', reloading
+29-Mar-24 10:36:36 - [INFO] -  * Restarting with stat
+29-Mar-24 10:36:38 - [INFO] - Development environment configured.
+29-Mar-24 10:36:38 - [WARNING] -  * Debugger is active!
+29-Mar-24 10:36:38 - [INFO] -  * Debugger PIN: 615-108-927
+29-Mar-24 10:36:40 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/admin_bp.py', reloading
+29-Mar-24 10:36:40 - [INFO] -  * Restarting with stat
+29-Mar-24 10:36:41 - [INFO] - Development environment configured.
+29-Mar-24 10:36:41 - [WARNING] -  * Debugger is active!
+29-Mar-24 10:36:41 - [INFO] -  * Debugger PIN: 615-108-927
+29-Mar-24 10:36:54 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/admin_bp.py', reloading
+29-Mar-24 10:36:54 - [INFO] -  * Restarting with stat
+29-Mar-24 10:36:55 - [INFO] - Development environment configured.
+29-Mar-24 10:36:55 - [WARNING] -  * Debugger is active!
+29-Mar-24 10:36:55 - [INFO] -  * Debugger PIN: 615-108-927
+29-Mar-24 10:37:00 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/admin_bp.py', reloading
+29-Mar-24 10:37:00 - [INFO] -  * Restarting with stat
+29-Mar-24 10:37:01 - [INFO] - Development environment configured.
+29-Mar-24 10:37:01 - [WARNING] -  * Debugger is active!
+29-Mar-24 10:37:01 - [INFO] -  * Debugger PIN: 615-108-927
+29-Mar-24 10:37:04 - [INFO] - File path is not valid: 
+29-Mar-24 10:37:04 - [INFO] - 200 - Custom success 200 response sent
+29-Mar-24 10:37:04 - [INFO] - 127.0.0.1 - - [29/Mar/2024 10:37:04] "[35m[1mGET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 500 -
+29-Mar-24 10:42:36 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/admin_bp.py', reloading
+29-Mar-24 10:42:36 - [INFO] -  * Restarting with stat
+29-Mar-24 10:42:38 - [INFO] - Development environment configured.
+29-Mar-24 10:42:38 - [WARNING] -  * Debugger is active!
+29-Mar-24 10:42:38 - [INFO] -  * Debugger PIN: 615-108-927
+29-Mar-24 10:42:47 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/admin_bp.py', reloading
+29-Mar-24 10:42:47 - [INFO] -  * Restarting with stat
+29-Mar-24 10:42:48 - [INFO] - Development environment configured.
+29-Mar-24 10:42:48 - [WARNING] -  * Debugger is active!
+29-Mar-24 10:42:48 - [INFO] -  * Debugger PIN: 615-108-927
+29-Mar-24 10:42:49 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/admin_bp.py', reloading
+29-Mar-24 10:42:50 - [INFO] -  * Restarting with stat
+29-Mar-24 10:42:51 - [INFO] - Development environment configured.
+29-Mar-24 10:42:51 - [WARNING] -  * Debugger is active!
+29-Mar-24 10:42:51 - [INFO] -  * Debugger PIN: 615-108-927
+29-Mar-24 10:43:01 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/admin_bp.py', reloading
+29-Mar-24 10:43:01 - [INFO] -  * Restarting with stat
+29-Mar-24 10:43:18 - [INFO] - Development environment configured.
+29-Mar-24 10:43:18 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+29-Mar-24 10:43:18 - [INFO] - [33mPress CTRL+C to quit[0m
+29-Mar-24 10:43:18 - [INFO] -  * Restarting with stat
+29-Mar-24 10:43:19 - [INFO] - Development environment configured.
+29-Mar-24 10:43:19 - [WARNING] -  * Debugger is active!
+29-Mar-24 10:43:19 - [INFO] -  * Debugger PIN: 615-108-927
+29-Mar-24 10:43:20 - [INFO] - File path is not valid: 
+29-Mar-24 10:43:20 - [INFO] - 200 - Custom success 200 response sent
+29-Mar-24 10:43:20 - [INFO] - 127.0.0.1 - - [29/Mar/2024 10:43:20] "GET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+29-Mar-24 10:44:54 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/admin_bp.py', reloading
+29-Mar-24 10:44:55 - [INFO] -  * Restarting with stat
+29-Mar-24 10:44:56 - [INFO] - Development environment configured.
+29-Mar-24 10:44:56 - [WARNING] -  * Debugger is active!
+29-Mar-24 10:44:56 - [INFO] -  * Debugger PIN: 615-108-927
+29-Mar-24 10:45:03 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/admin_bp.py', reloading
+29-Mar-24 10:45:04 - [INFO] -  * Restarting with stat
+29-Mar-24 10:45:05 - [INFO] - Development environment configured.
+29-Mar-24 10:45:05 - [WARNING] -  * Debugger is active!
+29-Mar-24 10:45:05 - [INFO] -  * Debugger PIN: 615-108-927
+29-Mar-24 10:45:06 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/admin_bp.py', reloading
+29-Mar-24 10:45:06 - [INFO] -  * Restarting with stat
+29-Mar-24 10:45:08 - [INFO] - Development environment configured.
+29-Mar-24 10:45:08 - [WARNING] -  * Debugger is active!
+29-Mar-24 10:45:08 - [INFO] -  * Debugger PIN: 615-108-927
+29-Mar-24 10:45:09 - [INFO] - 404 - Provided user id does not exists. Please create account.
+29-Mar-24 10:45:09 - [INFO] - 127.0.0.1 - - [29/Mar/2024 10:45:09] "[33mGET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 404 -
+29-Mar-24 10:45:24 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/admin_bp.py', reloading
+29-Mar-24 10:45:24 - [INFO] -  * Restarting with stat
+29-Mar-24 10:45:26 - [INFO] - Development environment configured.
+29-Mar-24 10:45:26 - [WARNING] -  * Debugger is active!
+29-Mar-24 10:45:26 - [INFO] -  * Debugger PIN: 615-108-927
+29-Mar-24 10:45:27 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/admin_bp.py', reloading
+29-Mar-24 10:45:27 - [INFO] -  * Restarting with stat
+29-Mar-24 10:45:28 - [INFO] - Development environment configured.
+29-Mar-24 10:45:28 - [WARNING] -  * Debugger is active!
+29-Mar-24 10:45:28 - [INFO] -  * Debugger PIN: 615-108-927
+29-Mar-24 10:46:19 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/admin_bp.py', reloading
+29-Mar-24 10:46:19 - [INFO] -  * Restarting with stat
+29-Mar-24 10:46:20 - [INFO] - Development environment configured.
+29-Mar-24 10:46:20 - [WARNING] -  * Debugger is active!
+29-Mar-24 10:46:20 - [INFO] -  * Debugger PIN: 615-108-927
+29-Mar-24 10:46:39 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/student_bp.py', reloading
+29-Mar-24 10:46:39 - [INFO] -  * Restarting with stat
+29-Mar-24 10:46:40 - [INFO] - Development environment configured.
+29-Mar-24 10:46:40 - [WARNING] -  * Debugger is active!
+29-Mar-24 10:46:40 - [INFO] -  * Debugger PIN: 615-108-927
+29-Mar-24 10:46:41 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/student_bp.py', reloading
+29-Mar-24 10:46:41 - [INFO] -  * Restarting with stat
+29-Mar-24 10:46:43 - [INFO] - Development environment configured.
+29-Mar-24 10:46:43 - [WARNING] -  * Debugger is active!
+29-Mar-24 10:46:43 - [INFO] -  * Debugger PIN: 615-108-927
+29-Mar-24 10:46:54 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/student_bp.py', reloading
+29-Mar-24 10:46:54 - [INFO] -  * Restarting with stat
+29-Mar-24 10:46:55 - [INFO] - Development environment configured.
+29-Mar-24 10:46:55 - [WARNING] -  * Debugger is active!
+29-Mar-24 10:46:55 - [INFO] -  * Debugger PIN: 615-108-927
+29-Mar-24 10:47:02 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/staff_bp.py', reloading
+29-Mar-24 10:47:02 - [INFO] -  * Restarting with stat
+29-Mar-24 10:47:03 - [INFO] - Development environment configured.
+29-Mar-24 10:47:03 - [WARNING] -  * Debugger is active!
+29-Mar-24 10:47:03 - [INFO] -  * Debugger PIN: 615-108-927
+29-Mar-24 10:47:05 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/staff_bp.py', reloading
+29-Mar-24 10:47:05 - [INFO] -  * Restarting with stat
+29-Mar-24 10:47:07 - [INFO] - Development environment configured.
+29-Mar-24 10:47:07 - [WARNING] -  * Debugger is active!
+29-Mar-24 10:47:07 - [INFO] -  * Debugger PIN: 615-108-927
+29-Mar-24 10:48:01 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/staff_bp.py', reloading
+29-Mar-24 10:48:01 - [INFO] -  * Restarting with stat
+29-Mar-24 10:48:02 - [INFO] - Development environment configured.
+29-Mar-24 10:48:02 - [WARNING] -  * Debugger is active!
+29-Mar-24 10:48:02 - [INFO] -  * Debugger PIN: 615-108-927

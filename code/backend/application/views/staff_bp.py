@@ -54,7 +54,7 @@ class StaffAPI(Resource):
             raise InternalServerError
         else:
             if user:
-                if user.role == "Staff":
+                if user.role_id == 2:
                     n_tickets_resolved = Ticket.query.filter_by(
                         resolved_by=user_id
                     ).count()
