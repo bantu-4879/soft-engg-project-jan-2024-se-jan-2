@@ -7110,3 +7110,7 @@
 30-Mar-24 13:25:49 - [INFO] - 127.0.0.1 - - [30/Mar/2024 13:25:49] "[33mGET /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1[0m" 404 -
 30-Mar-24 13:25:49 - [INFO] - 404 - Provided user id does not exists. Please create account.
 30-Mar-24 13:25:49 - [INFO] - 127.0.0.1 - - [30/Mar/2024 13:25:49] "[33mGET /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=pending HTTP/1.1[0m" 404 -
+30-Mar-24 13:31:03 - [INFO] - 127.0.0.1 - - [30/Mar/2024 13:31:03] "OPTIONS /api/v2/auth/register HTTP/1.1" 200 -
+30-Mar-24 13:31:03 - [INFO] - New account created
+30-Mar-24 13:31:03 - [INFO] - 200 - Account created successfully. Now please login.
+30-Mar-24 13:31:03 - [INFO] - 127.0.0.1 - - [30/Mar/2024 13:31:03] "POST /api/v2/auth/register HTTP/1.1" 200 -
