@@ -17,8 +17,8 @@ def token_required(f):
     @wraps(f)
     def decorated(*args, **kwargs):
         try:
-            frontend_token = request.headers.get("web_token", "")
-            user_id_rec = request.headers.get("user_id", "")  # user_id sent by frontend
+            frontend_token = request.headers.get("webtoken", "")
+            user_id_rec = request.headers.get("userid", "")  # user_id sent by frontend
         except Exception as e:
             logger.error(f"Error occured while checking request token : {e}")
             raise InternalServerError
@@ -68,14 +68,14 @@ def admin_required(f):
     @wraps(f)
     def decorated(*args, **kwargs):
         try:
-            user_id_rec = request.headers.get("user_id", "")  # user_id sent by frontend
+            user_id_rec = request.headers.get("userid", "")  # user_id sent by frontend
         except Exception as e:
             logger.error(f"Error occured while checking user id : {e}")
             raise InternalServerError
         else:
             user = User.query.filter_by(id=user_id_rec).first()
             role = user.role.name
-            if role == "Admin":
+            if role == "admin":
                 # role verified
                 logger.info(f"Admin role is verified for the user: {user_id_rec}")
                 return f(*args, **kwargs)
@@ -93,7 +93,7 @@ def users_required(users):
         def decorated(*args, **kwargs):
             try:
                 user_id_rec = request.headers.get(
-                    "user_id", ""
+                    "userid", ""
                 )  # user_id sent by frontend
             except Exception as e:
                 logger.error(f"Error occured while checking user id : {e}")
@@ -102,7 +102,7 @@ def users_required(users):
                 user = User.query.filter_by(id=user_id_rec).first()
                 if user:
                     role = user.role.name
-                    if user.is_approved or role == "Admin":
+                    if user.is_approved or role == "admin":
                         logger.info(
                         f"User role : {role} : is verified for the user: {user_id_rec}"
                         )
