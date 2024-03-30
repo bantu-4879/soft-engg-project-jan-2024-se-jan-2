@@ -7079,3 +7079,34 @@
 30-Mar-24 10:22:10 - [INFO] - File path is not valid: 
 30-Mar-24 10:22:10 - [INFO] - 200 - Custom success 200 response sent
 30-Mar-24 10:22:10 - [INFO] - 127.0.0.1 - - [30/Mar/2024 10:22:10] "GET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+30-Mar-24 13:19:51 - [INFO] - Development environment configured.
+30-Mar-24 13:19:51 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+30-Mar-24 13:19:51 - [INFO] - [33mPress CTRL+C to quit[0m
+30-Mar-24 13:19:51 - [INFO] -  * Restarting with stat
+30-Mar-24 13:19:52 - [INFO] - Development environment configured.
+30-Mar-24 13:19:52 - [WARNING] -  * Debugger is active!
+30-Mar-24 13:19:52 - [INFO] -  * Debugger PIN: 951-357-459
+30-Mar-24 13:20:40 - [INFO] - 127.0.0.1 - - [30/Mar/2024 13:20:40] "OPTIONS /api/v2/auth/register HTTP/1.1" 200 -
+30-Mar-24 13:20:40 - [INFO] - 127.0.0.1 - - [30/Mar/2024 13:20:40] "[35m[1mPOST /api/v2/auth/register HTTP/1.1[0m" 500 -
+30-Mar-24 13:24:56 - [INFO] - 127.0.0.1 - - [30/Mar/2024 13:24:56] "OPTIONS /api/v2/auth/register HTTP/1.1" 200 -
+30-Mar-24 13:24:56 - [INFO] - New account created
+30-Mar-24 13:24:56 - [INFO] - 200 - Account created successfully. Now please login.
+30-Mar-24 13:24:56 - [INFO] - 127.0.0.1 - - [30/Mar/2024 13:24:56] "POST /api/v2/auth/register HTTP/1.1" 200 -
+30-Mar-24 13:25:08 - [INFO] - 127.0.0.1 - - [30/Mar/2024 13:25:08] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+30-Mar-24 13:25:08 - [INFO] - 401 - User is not verified by Admin.
+30-Mar-24 13:25:08 - [INFO] - 127.0.0.1 - - [30/Mar/2024 13:25:08] "[31m[1mPOST /api/v2/auth/login HTTP/1.1[0m" 401 -
+30-Mar-24 13:25:42 - [INFO] - 127.0.0.1 - - [30/Mar/2024 13:25:42] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+30-Mar-24 13:25:42 - [INFO] - 401 - Password is incorrect
+30-Mar-24 13:25:42 - [INFO] - 127.0.0.1 - - [30/Mar/2024 13:25:42] "[31m[1mPOST /api/v2/auth/login HTTP/1.1[0m" 401 -
+30-Mar-24 13:25:49 - [INFO] - 127.0.0.1 - - [30/Mar/2024 13:25:49] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+30-Mar-24 13:25:49 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+30-Mar-24 13:25:49 - [INFO] - User logged in.
+30-Mar-24 13:25:49 - [INFO] - 200 - Custom success 200 response sent
+30-Mar-24 13:25:49 - [INFO] - 127.0.0.1 - - [30/Mar/2024 13:25:49] "POST /api/v2/auth/login HTTP/1.1" 200 -
+30-Mar-24 13:25:49 - [INFO] - 127.0.0.1 - - [30/Mar/2024 13:25:49] "OPTIONS /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+30-Mar-24 13:25:49 - [INFO] - 127.0.0.1 - - [30/Mar/2024 13:25:49] "OPTIONS /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=pending HTTP/1.1" 200 -
+30-Mar-24 13:25:49 - [INFO] - 404 - Provided user id does not exists. Please create account.
+30-Mar-24 13:25:49 - [INFO] - 127.0.0.1 - - [30/Mar/2024 13:25:49] "[33mGET /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1[0m" 404 -
+30-Mar-24 13:25:49 - [INFO] - 404 - Provided user id does not exists. Please create account.
+30-Mar-24 13:25:49 - [INFO] - 127.0.0.1 - - [30/Mar/2024 13:25:49] "[33mGET /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=pending HTTP/1.1[0m" 404 -
