@@ -98,9 +98,9 @@ export default {
   data() {
     return {
       role_options: [
-        { text: "Student", value: "Student" },
-        { text: "Staff", value: "Staff" },
-        { text: "Admin", value: "Admin" },
+        { text: "Student", value: "student" },
+        { text: "Staff", value: "staff" },
+        { text: "Admin", value: "admin" },
       ],
       form: {
         first_name: "",
