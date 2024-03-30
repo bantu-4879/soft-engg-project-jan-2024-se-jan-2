@@ -3,3 +3,4 @@ myenv
 node_modules
 new_env
 *.log
+__pycache__
