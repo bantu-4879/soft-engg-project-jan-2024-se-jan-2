@@ -64,7 +64,7 @@ admin_util = AdminUtils()
 
 class AdminAPI(Resource):
     @token_required
-    @users_required(users=["Admin"])
+    @users_required(users=["admin"])
     def get(self, user_id):
         """
         Usage
@@ -140,28 +140,28 @@ class AdminAPI(Resource):
                         [
                             1
                             for elem in all_users_role_verification_list
-                            if elem[0] == "Student"
+                            if elem[0] == "student"
                         ]
                     )
                     n_support = sum(
                         [
                             1
                             for elem in all_users_role_verification_list
-                            if elem[0] == "Staff"
+                            if elem[0] == "staff"
                         ]
                     )
                     n_admin = sum(
                         [
                             1
                             for elem in all_users_role_verification_list
-                            if elem[0] == "Admin"
+                            if elem[0] == "admin"
                         ]
                     )
                     n_student_new = sum(
                         [
                             1
                             for elem in all_users_role_verification_list
-                            if (elem[0] == "Student" and elem[1] == 0)
+                            if (elem[0] == "student" and elem[1] == 0)
                         ]
                     )
                     n_support_new = sum(
@@ -171,8 +171,10 @@ class AdminAPI(Resource):
                             if (elem[0] == "Staff" and elem[1] == 0)
                         ]
                     )
+                    print(user.authentication)
 
                     admin_dict = admin_util.convert_user_data_to_dict(user)
+                    
                     admin_dict[
                         "n_total_unresolved_tickets"
                     ] = n_total_unresolved_tickets
@@ -185,6 +187,7 @@ class AdminAPI(Resource):
                     admin_dict["n_admin"] = n_admin
                     admin_dict["n_student_new"] = n_student_new
                     admin_dict["n_support_new"] = n_support_new
+                    print(admin_dict)
                     return success_200_custom(data=admin_dict)
                 else:
                     raise BadRequest(status_msg="User must be a Admin.")
@@ -192,7 +195,7 @@ class AdminAPI(Resource):
                 raise NotFoundError(status_msg="Admin does not exists")
 
     @token_required
-    @users_required(users=["Admin"])
+    @users_required(users=["admin"])
     def put(self, user_id):
         """
         Usage
