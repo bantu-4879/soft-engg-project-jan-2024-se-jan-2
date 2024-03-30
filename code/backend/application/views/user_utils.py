@@ -139,6 +139,23 @@ class UserUtils:
             del user_dict["_sa_instance_state"]
         if "password" in user_dict:
             del user_dict["password"]
+
+        if hasattr(user, 'authentication'):
+            auth_data = vars(user.authentication)
+            token_data = {
+                'token': auth_data.get('token', ''),
+                'token_created': auth_data.get('token_created', 0),
+                'token_expired': auth_data.get('token_expired', 0)
+            }
+            user_dict['authentication'] = token_data
+
+        if hasattr(user, 'role'):
+            role_data = vars(user.role)
+            role_data = {
+                'role_name': auth_data.get('name', ''),
+            }
+            user_dict['role'] = role_data
+
         profile_pic = user_dict["profile_photo_loc"]
         if is_img_path_valid(profile_pic):
             img_base64 = convert_img_to_base64(profile_pic)
