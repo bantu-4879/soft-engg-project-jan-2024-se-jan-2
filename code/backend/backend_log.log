@@ -6230,3 +6230,852 @@
 29-Mar-24 10:48:02 - [INFO] - Development environment configured.
 29-Mar-24 10:48:02 - [WARNING] -  * Debugger is active!
 29-Mar-24 10:48:02 - [INFO] -  * Debugger PIN: 615-108-927
+29-Mar-24 20:45:14 - [INFO] - Development environment configured.
+29-Mar-24 20:45:14 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+29-Mar-24 20:45:14 - [INFO] - [33mPress CTRL+C to quit[0m
+29-Mar-24 20:45:14 - [INFO] -  * Restarting with stat
+29-Mar-24 20:45:15 - [INFO] - Development environment configured.
+29-Mar-24 20:45:15 - [WARNING] -  * Debugger is active!
+29-Mar-24 20:45:15 - [INFO] -  * Debugger PIN: 951-357-459
+29-Mar-24 20:45:42 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/auth_bp.py', reloading
+29-Mar-24 20:45:42 - [INFO] -  * Restarting with stat
+29-Mar-24 20:45:43 - [INFO] - Development environment configured.
+29-Mar-24 20:45:43 - [WARNING] -  * Debugger is active!
+29-Mar-24 20:45:43 - [INFO] -  * Debugger PIN: 951-357-459
+29-Mar-24 20:51:34 - [INFO] - 127.0.0.1 - - [29/Mar/2024 20:51:34] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 20:51:34 - [INFO] - 401 - User is not verified by Admin.
+29-Mar-24 20:51:34 - [INFO] - 127.0.0.1 - - [29/Mar/2024 20:51:34] "[31m[1mPOST /api/v2/auth/login HTTP/1.1[0m" 401 -
+29-Mar-24 20:52:07 - [INFO] - 127.0.0.1 - - [29/Mar/2024 20:52:07] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 20:52:07 - [INFO] - 401 - User is not verified by Admin.
+29-Mar-24 20:52:07 - [INFO] - 127.0.0.1 - - [29/Mar/2024 20:52:07] "[31m[1mPOST /api/v2/auth/login HTTP/1.1[0m" 401 -
+29-Mar-24 20:54:51 - [INFO] - 127.0.0.1 - - [29/Mar/2024 20:54:51] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 20:54:51 - [INFO] - 401 - Password is incorrect
+29-Mar-24 20:54:51 - [INFO] - 127.0.0.1 - - [29/Mar/2024 20:54:51] "[31m[1mPOST /api/v2/auth/login HTTP/1.1[0m" 401 -
+29-Mar-24 20:54:58 - [INFO] - 127.0.0.1 - - [29/Mar/2024 20:54:58] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 20:54:58 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+29-Mar-24 20:54:58 - [INFO] - User logged in.
+29-Mar-24 20:54:58 - [INFO] - 200 - Custom success 200 response sent
+29-Mar-24 20:54:58 - [INFO] - 127.0.0.1 - - [29/Mar/2024 20:54:58] "POST /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 20:54:58 - [INFO] - 127.0.0.1 - - [29/Mar/2024 20:54:58] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+29-Mar-24 20:54:58 - [INFO] - 404 - Provided user id does not exists. Please create account.
+29-Mar-24 20:54:58 - [INFO] - 127.0.0.1 - - [29/Mar/2024 20:54:58] "[33mGET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 404 -
+29-Mar-24 20:55:04 - [INFO] - 127.0.0.1 - - [29/Mar/2024 20:55:04] "OPTIONS /api/v2/auth/newUsers HTTP/1.1" 200 -
+29-Mar-24 20:55:04 - [INFO] - 404 - Provided user id does not exists. Please create account.
+29-Mar-24 20:55:04 - [INFO] - 127.0.0.1 - - [29/Mar/2024 20:55:04] "[33mGET /api/v2/auth/newUsers HTTP/1.1[0m" 404 -
+29-Mar-24 20:55:07 - [INFO] - 127.0.0.1 - - [29/Mar/2024 20:55:07] "OPTIONS /api/v2/ticket/all-tickets/7e666996a8fddf675ceada5ef31fc342?query=&filter_priority=&filter_status=resolved&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+29-Mar-24 20:55:07 - [INFO] - 404 - Provided user id does not exists. Please create account.
+29-Mar-24 20:55:07 - [INFO] - 127.0.0.1 - - [29/Mar/2024 20:55:07] "[33mGET /api/v2/ticket/all-tickets/7e666996a8fddf675ceada5ef31fc342?query=&filter_priority=&filter_status=resolved&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1[0m" 404 -
+29-Mar-24 20:55:09 - [INFO] - 127.0.0.1 - - [29/Mar/2024 20:55:09] "OPTIONS /api/v2/faq/ HTTP/1.1" 200 -
+29-Mar-24 20:55:09 - [INFO] - All FAQs found : 2
+29-Mar-24 20:55:09 - [INFO] - 200 - Custom success 200 response sent
+29-Mar-24 20:55:09 - [INFO] - 127.0.0.1 - - [29/Mar/2024 20:55:09] "GET /api/v2/faq/ HTTP/1.1" 200 -
+29-Mar-24 20:55:16 - [INFO] - 127.0.0.1 - - [29/Mar/2024 20:55:16] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 20:55:16 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+29-Mar-24 20:55:16 - [INFO] - User logged in.
+29-Mar-24 20:55:16 - [INFO] - 200 - Custom success 200 response sent
+29-Mar-24 20:55:16 - [INFO] - 127.0.0.1 - - [29/Mar/2024 20:55:16] "POST /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 20:55:16 - [INFO] - 127.0.0.1 - - [29/Mar/2024 20:55:16] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+29-Mar-24 20:55:16 - [INFO] - 404 - Provided user id does not exists. Please create account.
+29-Mar-24 20:55:16 - [INFO] - 127.0.0.1 - - [29/Mar/2024 20:55:16] "[33mGET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 404 -
+29-Mar-24 20:56:22 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/admin_bp.py', reloading
+29-Mar-24 20:56:22 - [INFO] -  * Restarting with stat
+29-Mar-24 20:56:22 - [INFO] - Development environment configured.
+29-Mar-24 20:56:22 - [WARNING] -  * Debugger is active!
+29-Mar-24 20:56:22 - [INFO] -  * Debugger PIN: 951-357-459
+29-Mar-24 20:56:30 - [INFO] - 127.0.0.1 - - [29/Mar/2024 20:56:30] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 20:56:30 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+29-Mar-24 20:56:30 - [INFO] - User logged in.
+29-Mar-24 20:56:30 - [INFO] - 200 - Custom success 200 response sent
+29-Mar-24 20:56:30 - [INFO] - 127.0.0.1 - - [29/Mar/2024 20:56:30] "POST /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 20:56:30 - [INFO] - 127.0.0.1 - - [29/Mar/2024 20:56:30] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+29-Mar-24 20:56:30 - [INFO] - File path is not valid: 
+29-Mar-24 20:56:30 - [INFO] - 200 - Custom success 200 response sent
+29-Mar-24 20:56:30 - [INFO] - 127.0.0.1 - - [29/Mar/2024 20:56:30] "GET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+29-Mar-24 20:56:42 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/admin_bp.py', reloading
+29-Mar-24 20:56:42 - [INFO] -  * Restarting with stat
+29-Mar-24 20:56:42 - [INFO] - Development environment configured.
+29-Mar-24 20:56:42 - [WARNING] -  * Debugger is active!
+29-Mar-24 20:56:42 - [INFO] -  * Debugger PIN: 951-357-459
+29-Mar-24 20:56:53 - [INFO] - 127.0.0.1 - - [29/Mar/2024 20:56:53] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 20:56:53 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+29-Mar-24 20:56:53 - [INFO] - User logged in.
+29-Mar-24 20:56:53 - [INFO] - 200 - Custom success 200 response sent
+29-Mar-24 20:56:53 - [INFO] - 127.0.0.1 - - [29/Mar/2024 20:56:53] "POST /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 20:56:53 - [INFO] - 127.0.0.1 - - [29/Mar/2024 20:56:53] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+29-Mar-24 20:56:53 - [INFO] - 404 - Provided user id does not exists. Please create account.
+29-Mar-24 20:56:53 - [INFO] - 127.0.0.1 - - [29/Mar/2024 20:56:53] "[33mGET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 404 -
+29-Mar-24 20:58:46 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/common_utils.py', reloading
+29-Mar-24 20:58:46 - [INFO] -  * Restarting with stat
+29-Mar-24 20:58:46 - [INFO] - Development environment configured.
+29-Mar-24 20:58:46 - [WARNING] -  * Debugger is active!
+29-Mar-24 20:58:46 - [INFO] -  * Debugger PIN: 951-357-459
+29-Mar-24 20:58:54 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/common_utils.py', reloading
+29-Mar-24 20:58:54 - [INFO] -  * Restarting with stat
+29-Mar-24 20:58:54 - [INFO] - Development environment configured.
+29-Mar-24 20:58:54 - [WARNING] -  * Debugger is active!
+29-Mar-24 20:58:54 - [INFO] -  * Debugger PIN: 951-357-459
+29-Mar-24 20:59:11 - [INFO] - 127.0.0.1 - - [29/Mar/2024 20:59:11] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 20:59:11 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+29-Mar-24 20:59:11 - [INFO] - User logged in.
+29-Mar-24 20:59:11 - [INFO] - 200 - Custom success 200 response sent
+29-Mar-24 20:59:11 - [INFO] - 127.0.0.1 - - [29/Mar/2024 20:59:11] "POST /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 20:59:11 - [INFO] - 127.0.0.1 - - [29/Mar/2024 20:59:11] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+29-Mar-24 20:59:11 - [INFO] - 404 - Provided user id does not exists. Please create account.
+29-Mar-24 20:59:11 - [INFO] - 127.0.0.1 - - [29/Mar/2024 20:59:11] "[33mGET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 404 -
+29-Mar-24 21:00:39 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/admin_bp.py', reloading
+29-Mar-24 21:00:39 - [INFO] -  * Restarting with stat
+29-Mar-24 21:00:40 - [INFO] - Development environment configured.
+29-Mar-24 21:00:40 - [WARNING] -  * Debugger is active!
+29-Mar-24 21:00:40 - [INFO] -  * Debugger PIN: 951-357-459
+29-Mar-24 21:01:00 - [INFO] - 127.0.0.1 - - [29/Mar/2024 21:01:00] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 21:01:00 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+29-Mar-24 21:01:00 - [INFO] - User logged in.
+29-Mar-24 21:01:00 - [INFO] - 200 - Custom success 200 response sent
+29-Mar-24 21:01:00 - [INFO] - 127.0.0.1 - - [29/Mar/2024 21:01:00] "POST /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 21:01:00 - [INFO] - 127.0.0.1 - - [29/Mar/2024 21:01:00] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+29-Mar-24 21:01:00 - [INFO] - 404 - Provided user id does not exists. Please create account.
+29-Mar-24 21:01:00 - [INFO] - 127.0.0.1 - - [29/Mar/2024 21:01:00] "[33mGET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 404 -
+29-Mar-24 21:03:47 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/common_utils.py', reloading
+29-Mar-24 21:03:47 - [INFO] -  * Restarting with stat
+29-Mar-24 21:03:47 - [INFO] - Development environment configured.
+29-Mar-24 21:03:47 - [WARNING] -  * Debugger is active!
+29-Mar-24 21:03:47 - [INFO] -  * Debugger PIN: 951-357-459
+29-Mar-24 21:03:58 - [INFO] - 127.0.0.1 - - [29/Mar/2024 21:03:58] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 21:03:58 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+29-Mar-24 21:03:58 - [INFO] - User logged in.
+29-Mar-24 21:03:58 - [INFO] - 200 - Custom success 200 response sent
+29-Mar-24 21:03:58 - [INFO] - 127.0.0.1 - - [29/Mar/2024 21:03:58] "POST /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 21:03:58 - [INFO] - 127.0.0.1 - - [29/Mar/2024 21:03:58] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+29-Mar-24 21:03:58 - [INFO] - 404 - Provided user id does not exists. Please create account.
+29-Mar-24 21:03:58 - [INFO] - 127.0.0.1 - - [29/Mar/2024 21:03:58] "[33mGET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 404 -
+29-Mar-24 21:05:03 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/common_utils.py', reloading
+29-Mar-24 21:05:03 - [INFO] -  * Restarting with stat
+29-Mar-24 21:05:04 - [INFO] - Development environment configured.
+29-Mar-24 21:05:04 - [WARNING] -  * Debugger is active!
+29-Mar-24 21:05:04 - [INFO] -  * Debugger PIN: 951-357-459
+29-Mar-24 21:05:06 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/common_utils.py', reloading
+29-Mar-24 21:05:06 - [INFO] -  * Restarting with stat
+29-Mar-24 21:05:06 - [INFO] - Development environment configured.
+29-Mar-24 21:05:06 - [WARNING] -  * Debugger is active!
+29-Mar-24 21:05:06 - [INFO] -  * Debugger PIN: 951-357-459
+29-Mar-24 21:05:16 - [INFO] - 127.0.0.1 - - [29/Mar/2024 21:05:16] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 21:05:16 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+29-Mar-24 21:05:16 - [INFO] - User logged in.
+29-Mar-24 21:05:16 - [INFO] - 200 - Custom success 200 response sent
+29-Mar-24 21:05:16 - [INFO] - 127.0.0.1 - - [29/Mar/2024 21:05:16] "POST /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 21:05:16 - [INFO] - 127.0.0.1 - - [29/Mar/2024 21:05:16] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+29-Mar-24 21:05:16 - [INFO] - 404 - Provided user id does not exists. Please create account.
+29-Mar-24 21:05:16 - [INFO] - 127.0.0.1 - - [29/Mar/2024 21:05:16] "[33mGET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 404 -
+29-Mar-24 21:05:53 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/common_utils.py', reloading
+29-Mar-24 21:05:53 - [INFO] -  * Restarting with stat
+29-Mar-24 21:05:54 - [INFO] - Development environment configured.
+29-Mar-24 21:05:54 - [WARNING] -  * Debugger is active!
+29-Mar-24 21:05:54 - [INFO] -  * Debugger PIN: 951-357-459
+29-Mar-24 21:06:02 - [INFO] - 127.0.0.1 - - [29/Mar/2024 21:06:02] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 21:06:02 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+29-Mar-24 21:06:02 - [INFO] - User logged in.
+29-Mar-24 21:06:02 - [INFO] - 200 - Custom success 200 response sent
+29-Mar-24 21:06:02 - [INFO] - 127.0.0.1 - - [29/Mar/2024 21:06:02] "POST /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 21:06:02 - [INFO] - 127.0.0.1 - - [29/Mar/2024 21:06:02] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+29-Mar-24 21:06:02 - [INFO] - 404 - Provided user id does not exists. Please create account.
+29-Mar-24 21:06:02 - [INFO] - 127.0.0.1 - - [29/Mar/2024 21:06:02] "[33mGET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 404 -
+29-Mar-24 21:09:07 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/common_utils.py', reloading
+29-Mar-24 21:09:07 - [INFO] -  * Restarting with stat
+29-Mar-24 21:09:07 - [INFO] - Development environment configured.
+29-Mar-24 21:09:07 - [WARNING] -  * Debugger is active!
+29-Mar-24 21:09:07 - [INFO] -  * Debugger PIN: 951-357-459
+29-Mar-24 21:09:15 - [INFO] - 127.0.0.1 - - [29/Mar/2024 21:09:15] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 21:09:15 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+29-Mar-24 21:09:15 - [INFO] - User logged in.
+29-Mar-24 21:09:15 - [INFO] - 200 - Custom success 200 response sent
+29-Mar-24 21:09:15 - [INFO] - 127.0.0.1 - - [29/Mar/2024 21:09:15] "POST /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 21:09:15 - [INFO] - 127.0.0.1 - - [29/Mar/2024 21:09:15] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+29-Mar-24 21:09:15 - [INFO] - 404 - Provided user id does not exists. Please create account.
+29-Mar-24 21:09:15 - [INFO] - 127.0.0.1 - - [29/Mar/2024 21:09:15] "[33mGET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 404 -
+29-Mar-24 21:11:27 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/common_utils.py', reloading
+29-Mar-24 21:11:27 - [INFO] -  * Restarting with stat
+29-Mar-24 21:11:28 - [INFO] - Development environment configured.
+29-Mar-24 21:11:28 - [WARNING] -  * Debugger is active!
+29-Mar-24 21:11:28 - [INFO] -  * Debugger PIN: 951-357-459
+29-Mar-24 21:11:36 - [INFO] - 127.0.0.1 - - [29/Mar/2024 21:11:36] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 21:11:36 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+29-Mar-24 21:11:36 - [INFO] - User logged in.
+29-Mar-24 21:11:36 - [INFO] - 200 - Custom success 200 response sent
+29-Mar-24 21:11:36 - [INFO] - 127.0.0.1 - - [29/Mar/2024 21:11:36] "POST /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 21:11:36 - [INFO] - 127.0.0.1 - - [29/Mar/2024 21:11:36] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+29-Mar-24 21:11:36 - [INFO] - 404 - Provided user id does not exists. Please create account.
+29-Mar-24 21:11:36 - [INFO] - 127.0.0.1 - - [29/Mar/2024 21:11:36] "[33mGET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 404 -
+29-Mar-24 21:15:38 - [INFO] - 127.0.0.1 - - [29/Mar/2024 21:15:38] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 21:15:38 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+29-Mar-24 21:15:38 - [INFO] - User logged in.
+29-Mar-24 21:15:38 - [INFO] - 200 - Custom success 200 response sent
+29-Mar-24 21:15:38 - [INFO] - 127.0.0.1 - - [29/Mar/2024 21:15:38] "POST /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 21:15:38 - [INFO] - 127.0.0.1 - - [29/Mar/2024 21:15:38] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+29-Mar-24 21:15:38 - [INFO] - 404 - Provided user id does not exists. Please create account.
+29-Mar-24 21:15:38 - [INFO] - 127.0.0.1 - - [29/Mar/2024 21:15:38] "[33mGET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 404 -
+29-Mar-24 21:15:56 - [INFO] - 127.0.0.1 - - [29/Mar/2024 21:15:56] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 21:15:56 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+29-Mar-24 21:15:56 - [INFO] - User logged in.
+29-Mar-24 21:15:56 - [INFO] - 200 - Custom success 200 response sent
+29-Mar-24 21:15:56 - [INFO] - 127.0.0.1 - - [29/Mar/2024 21:15:56] "POST /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 21:15:56 - [INFO] - 127.0.0.1 - - [29/Mar/2024 21:15:56] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+29-Mar-24 21:15:56 - [INFO] - 404 - Provided user id does not exists. Please create account.
+29-Mar-24 21:15:56 - [INFO] - 127.0.0.1 - - [29/Mar/2024 21:15:56] "[33mGET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 404 -
+29-Mar-24 21:22:15 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/common_utils.py', reloading
+29-Mar-24 21:22:15 - [INFO] -  * Restarting with stat
+29-Mar-24 21:22:16 - [INFO] - Development environment configured.
+29-Mar-24 21:22:16 - [WARNING] -  * Debugger is active!
+29-Mar-24 21:22:16 - [INFO] -  * Debugger PIN: 951-357-459
+29-Mar-24 21:22:25 - [INFO] - 127.0.0.1 - - [29/Mar/2024 21:22:25] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 21:22:25 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+29-Mar-24 21:22:25 - [INFO] - User logged in.
+29-Mar-24 21:22:25 - [INFO] - 200 - Custom success 200 response sent
+29-Mar-24 21:22:25 - [INFO] - 127.0.0.1 - - [29/Mar/2024 21:22:25] "POST /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 21:22:25 - [INFO] - 127.0.0.1 - - [29/Mar/2024 21:22:25] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+29-Mar-24 21:22:25 - [INFO] - 404 - Provided user id does not exists. Please create account.
+29-Mar-24 21:22:25 - [INFO] - 127.0.0.1 - - [29/Mar/2024 21:22:25] "[33mGET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 404 -
+29-Mar-24 21:22:50 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/common_utils.py', reloading
+29-Mar-24 21:22:50 - [INFO] -  * Restarting with stat
+29-Mar-24 21:22:50 - [INFO] - Development environment configured.
+29-Mar-24 21:22:50 - [WARNING] -  * Debugger is active!
+29-Mar-24 21:22:50 - [INFO] -  * Debugger PIN: 951-357-459
+29-Mar-24 21:22:57 - [INFO] - 127.0.0.1 - - [29/Mar/2024 21:22:57] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 21:22:57 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+29-Mar-24 21:22:57 - [INFO] - User logged in.
+29-Mar-24 21:22:57 - [INFO] - 200 - Custom success 200 response sent
+29-Mar-24 21:22:57 - [INFO] - 127.0.0.1 - - [29/Mar/2024 21:22:57] "POST /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 21:22:57 - [INFO] - 127.0.0.1 - - [29/Mar/2024 21:22:57] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+29-Mar-24 21:22:57 - [INFO] - 404 - Provided user id does not exists. Please create account.
+29-Mar-24 21:22:57 - [INFO] - 127.0.0.1 - - [29/Mar/2024 21:22:57] "[33mGET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 404 -
+29-Mar-24 21:23:06 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/common_utils.py', reloading
+29-Mar-24 21:23:06 - [INFO] -  * Restarting with stat
+29-Mar-24 21:23:06 - [INFO] - Development environment configured.
+29-Mar-24 21:23:06 - [WARNING] -  * Debugger is active!
+29-Mar-24 21:23:06 - [INFO] -  * Debugger PIN: 951-357-459
+29-Mar-24 21:23:14 - [INFO] - 127.0.0.1 - - [29/Mar/2024 21:23:14] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 21:23:14 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+29-Mar-24 21:23:14 - [INFO] - User logged in.
+29-Mar-24 21:23:14 - [INFO] - 200 - Custom success 200 response sent
+29-Mar-24 21:23:14 - [INFO] - 127.0.0.1 - - [29/Mar/2024 21:23:14] "POST /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 21:23:14 - [INFO] - 127.0.0.1 - - [29/Mar/2024 21:23:14] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+29-Mar-24 21:23:14 - [INFO] - 404 - Provided user id does not exists. Please create account.
+29-Mar-24 21:23:14 - [INFO] - 127.0.0.1 - - [29/Mar/2024 21:23:14] "[33mGET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 404 -
+29-Mar-24 21:23:39 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/common_utils.py', reloading
+29-Mar-24 21:23:39 - [INFO] -  * Restarting with stat
+29-Mar-24 21:23:39 - [INFO] - Development environment configured.
+29-Mar-24 21:23:39 - [WARNING] -  * Debugger is active!
+29-Mar-24 21:23:39 - [INFO] -  * Debugger PIN: 951-357-459
+29-Mar-24 21:47:33 - [INFO] - 404 - Provided user id does not exists. Please create account.
+29-Mar-24 21:47:33 - [INFO] - 127.0.0.1 - - [29/Mar/2024 21:47:33] "[33mGET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 404 -
+29-Mar-24 21:47:33 - [INFO] - 127.0.0.1 - - [29/Mar/2024 21:47:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+29-Mar-24 21:52:35 - [INFO] - Development environment configured.
+29-Mar-24 21:52:35 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+29-Mar-24 21:52:35 - [INFO] - [33mPress CTRL+C to quit[0m
+29-Mar-24 21:52:35 - [INFO] -  * Restarting with stat
+29-Mar-24 21:52:36 - [INFO] - Development environment configured.
+29-Mar-24 21:52:36 - [WARNING] -  * Debugger is active!
+29-Mar-24 21:52:36 - [INFO] -  * Debugger PIN: 951-357-459
+29-Mar-24 21:54:26 - [INFO] - 127.0.0.1 - - [29/Mar/2024 21:54:26] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 21:54:26 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+29-Mar-24 21:54:26 - [INFO] - User logged in.
+29-Mar-24 21:54:26 - [INFO] - 200 - Custom success 200 response sent
+29-Mar-24 21:54:26 - [INFO] - 127.0.0.1 - - [29/Mar/2024 21:54:26] "POST /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 21:54:26 - [INFO] - 127.0.0.1 - - [29/Mar/2024 21:54:26] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+29-Mar-24 21:54:26 - [INFO] - 404 - Provided user id does not exists. Please create account.
+29-Mar-24 21:54:26 - [INFO] - 127.0.0.1 - - [29/Mar/2024 21:54:26] "[33mGET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 404 -
+29-Mar-24 21:56:17 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/common_utils.py', reloading
+29-Mar-24 21:56:17 - [INFO] -  * Restarting with stat
+29-Mar-24 21:56:18 - [INFO] - Development environment configured.
+29-Mar-24 21:56:18 - [WARNING] -  * Debugger is active!
+29-Mar-24 21:56:18 - [INFO] -  * Debugger PIN: 951-357-459
+29-Mar-24 21:56:20 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/common_utils.py', reloading
+29-Mar-24 21:56:20 - [INFO] -  * Restarting with stat
+29-Mar-24 21:56:21 - [INFO] - Development environment configured.
+29-Mar-24 21:56:21 - [WARNING] -  * Debugger is active!
+29-Mar-24 21:56:21 - [INFO] -  * Debugger PIN: 951-357-459
+29-Mar-24 21:56:39 - [ERROR] - Error occured while checking request token : Headers.get() missing 1 required positional argument: 'key'
+29-Mar-24 21:56:39 - [INFO] - 500 - Internal Server Error
+29-Mar-24 21:56:39 - [INFO] - 127.0.0.1 - - [29/Mar/2024 21:56:39] "[35m[1mGET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 500 -
+29-Mar-24 21:59:28 - [ERROR] - Error occured while checking request token : Headers.get() missing 1 required positional argument: 'key'
+29-Mar-24 21:59:28 - [INFO] - 500 - Internal Server Error
+29-Mar-24 21:59:28 - [INFO] - 127.0.0.1 - - [29/Mar/2024 21:59:28] "[35m[1mGET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 500 -
+29-Mar-24 22:00:17 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:00:17] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 22:00:17 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+29-Mar-24 22:00:17 - [INFO] - User logged in.
+29-Mar-24 22:00:17 - [INFO] - 200 - Custom success 200 response sent
+29-Mar-24 22:00:17 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:00:17] "POST /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 22:00:17 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:00:17] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+29-Mar-24 22:00:17 - [ERROR] - Error occured while checking request token : Headers.get() missing 1 required positional argument: 'key'
+29-Mar-24 22:00:17 - [INFO] - 500 - Internal Server Error
+29-Mar-24 22:00:17 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:00:17] "[35m[1mGET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 500 -
+29-Mar-24 22:00:57 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:00:57] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 22:00:57 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+29-Mar-24 22:00:57 - [INFO] - User logged in.
+29-Mar-24 22:00:57 - [INFO] - 200 - Custom success 200 response sent
+29-Mar-24 22:00:57 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:00:57] "POST /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 22:00:57 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:00:57] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+29-Mar-24 22:00:57 - [ERROR] - Error occured while checking request token : Headers.get() missing 1 required positional argument: 'key'
+29-Mar-24 22:00:57 - [INFO] - 500 - Internal Server Error
+29-Mar-24 22:00:57 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:00:57] "[35m[1mGET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 500 -
+29-Mar-24 22:01:41 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/common_utils.py', reloading
+29-Mar-24 22:01:41 - [INFO] -  * Restarting with stat
+29-Mar-24 22:01:42 - [INFO] - Development environment configured.
+29-Mar-24 22:01:42 - [WARNING] -  * Debugger is active!
+29-Mar-24 22:01:42 - [INFO] -  * Debugger PIN: 951-357-459
+29-Mar-24 22:01:50 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:01:50] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 22:01:50 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+29-Mar-24 22:01:50 - [INFO] - User logged in.
+29-Mar-24 22:01:50 - [INFO] - 200 - Custom success 200 response sent
+29-Mar-24 22:01:50 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:01:50] "POST /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 22:01:50 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:01:50] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+29-Mar-24 22:01:50 - [INFO] - 404 - Provided user id does not exists. Please create account.
+29-Mar-24 22:01:50 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:01:50] "[33mGET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 404 -
+29-Mar-24 22:02:36 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/common_utils.py', reloading
+29-Mar-24 22:02:36 - [INFO] -  * Restarting with stat
+29-Mar-24 22:02:37 - [INFO] - Development environment configured.
+29-Mar-24 22:02:37 - [WARNING] -  * Debugger is active!
+29-Mar-24 22:02:37 - [INFO] -  * Debugger PIN: 951-357-459
+29-Mar-24 22:02:48 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:02:48] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 22:02:48 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+29-Mar-24 22:02:48 - [INFO] - User logged in.
+29-Mar-24 22:02:48 - [INFO] - 200 - Custom success 200 response sent
+29-Mar-24 22:02:48 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:02:48] "POST /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 22:02:48 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:02:48] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+29-Mar-24 22:02:48 - [INFO] - 404 - Provided user id does not exists. Please create account.
+29-Mar-24 22:02:48 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:02:48] "[33mGET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 404 -
+29-Mar-24 22:03:22 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/common_utils.py', reloading
+29-Mar-24 22:03:22 - [INFO] -  * Restarting with stat
+29-Mar-24 22:03:22 - [INFO] - Development environment configured.
+29-Mar-24 22:03:22 - [WARNING] -  * Debugger is active!
+29-Mar-24 22:03:22 - [INFO] -  * Debugger PIN: 951-357-459
+29-Mar-24 22:03:52 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:03:52] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 22:03:52 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+29-Mar-24 22:03:52 - [INFO] - User logged in.
+29-Mar-24 22:03:52 - [INFO] - 200 - Custom success 200 response sent
+29-Mar-24 22:03:52 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:03:52] "POST /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 22:03:52 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:03:52] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+29-Mar-24 22:03:52 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+29-Mar-24 22:03:52 - [INFO] - 404 - User does not exists
+29-Mar-24 22:03:52 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:03:52] "[33mGET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 404 -
+29-Mar-24 22:05:01 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/common_utils.py', reloading
+29-Mar-24 22:05:01 - [INFO] -  * Restarting with stat
+29-Mar-24 22:05:02 - [INFO] - Development environment configured.
+29-Mar-24 22:05:02 - [WARNING] -  * Debugger is active!
+29-Mar-24 22:05:02 - [INFO] -  * Debugger PIN: 951-357-459
+29-Mar-24 22:05:09 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:05:09] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 22:05:09 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+29-Mar-24 22:05:09 - [INFO] - User logged in.
+29-Mar-24 22:05:09 - [INFO] - 200 - Custom success 200 response sent
+29-Mar-24 22:05:09 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:05:09] "POST /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 22:05:09 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:05:09] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+29-Mar-24 22:05:09 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+29-Mar-24 22:05:09 - [INFO] - 404 - User does not exists
+29-Mar-24 22:05:09 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:05:09] "[33mGET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 404 -
+29-Mar-24 22:07:12 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:07:12] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+29-Mar-24 22:07:12 - [INFO] - 404 - Provided user id does not exists. Please create account.
+29-Mar-24 22:07:12 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:07:12] "[33mGET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 404 -
+29-Mar-24 22:07:44 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/common_utils.py', reloading
+29-Mar-24 22:07:44 - [INFO] -  * Restarting with stat
+29-Mar-24 22:07:45 - [INFO] - Development environment configured.
+29-Mar-24 22:07:45 - [WARNING] -  * Debugger is active!
+29-Mar-24 22:07:45 - [INFO] -  * Debugger PIN: 951-357-459
+29-Mar-24 22:07:52 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:07:52] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 22:07:52 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+29-Mar-24 22:07:52 - [INFO] - User logged in.
+29-Mar-24 22:07:52 - [INFO] - 200 - Custom success 200 response sent
+29-Mar-24 22:07:52 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:07:52] "POST /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 22:07:52 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:07:52] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+29-Mar-24 22:07:52 - [INFO] - 404 - Provided user id does not exists. Please create account.
+29-Mar-24 22:07:52 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:07:52] "[33mGET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 404 -
+29-Mar-24 22:08:21 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/common_utils.py', reloading
+29-Mar-24 22:08:21 - [INFO] -  * Restarting with stat
+29-Mar-24 22:08:21 - [INFO] - Development environment configured.
+29-Mar-24 22:08:21 - [WARNING] -  * Debugger is active!
+29-Mar-24 22:08:21 - [INFO] -  * Debugger PIN: 951-357-459
+29-Mar-24 22:08:33 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:08:33] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+29-Mar-24 22:08:33 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+29-Mar-24 22:08:33 - [INFO] - 404 - User does not exists
+29-Mar-24 22:08:33 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:08:33] "[33mGET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 404 -
+29-Mar-24 22:08:47 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:08:47] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 22:08:47 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+29-Mar-24 22:08:47 - [INFO] - User logged in.
+29-Mar-24 22:08:47 - [INFO] - 200 - Custom success 200 response sent
+29-Mar-24 22:08:47 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:08:47] "POST /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 22:08:47 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:08:47] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+29-Mar-24 22:08:47 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+29-Mar-24 22:08:47 - [INFO] - 404 - User does not exists
+29-Mar-24 22:08:47 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:08:47] "[33mGET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 404 -
+29-Mar-24 22:09:23 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/common_utils.py', reloading
+29-Mar-24 22:09:23 - [INFO] -  * Restarting with stat
+29-Mar-24 22:09:23 - [INFO] - Development environment configured.
+29-Mar-24 22:09:23 - [WARNING] -  * Debugger is active!
+29-Mar-24 22:09:23 - [INFO] -  * Debugger PIN: 951-357-459
+29-Mar-24 22:11:02 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/auth_bp.py', reloading
+29-Mar-24 22:11:02 - [INFO] -  * Restarting with stat
+29-Mar-24 22:11:03 - [INFO] - Development environment configured.
+29-Mar-24 22:11:03 - [WARNING] -  * Debugger is active!
+29-Mar-24 22:11:03 - [INFO] -  * Debugger PIN: 951-357-459
+29-Mar-24 22:11:10 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:11:10] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 22:11:10 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+29-Mar-24 22:11:10 - [INFO] - User logged in.
+29-Mar-24 22:11:10 - [INFO] - 200 - Custom success 200 response sent
+29-Mar-24 22:11:10 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:11:10] "POST /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 22:11:10 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:11:10] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+29-Mar-24 22:11:10 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+29-Mar-24 22:11:10 - [INFO] - 404 - User does not exists
+29-Mar-24 22:11:10 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:11:10] "[33mGET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 404 -
+29-Mar-24 22:12:06 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/auth_bp.py', reloading
+29-Mar-24 22:12:06 - [INFO] -  * Restarting with stat
+29-Mar-24 22:12:07 - [INFO] - Development environment configured.
+29-Mar-24 22:12:07 - [WARNING] -  * Debugger is active!
+29-Mar-24 22:12:07 - [INFO] -  * Debugger PIN: 951-357-459
+29-Mar-24 22:12:10 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/auth_bp.py', reloading
+29-Mar-24 22:12:10 - [INFO] -  * Restarting with stat
+29-Mar-24 22:12:11 - [INFO] - Development environment configured.
+29-Mar-24 22:12:11 - [WARNING] -  * Debugger is active!
+29-Mar-24 22:12:11 - [INFO] -  * Debugger PIN: 951-357-459
+29-Mar-24 22:12:52 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/common_utils.py', reloading
+29-Mar-24 22:12:53 - [INFO] -  * Restarting with stat
+29-Mar-24 22:12:53 - [INFO] - Development environment configured.
+29-Mar-24 22:12:53 - [WARNING] -  * Debugger is active!
+29-Mar-24 22:12:53 - [INFO] -  * Debugger PIN: 951-357-459
+29-Mar-24 22:13:01 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:13:01] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 22:13:02 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+29-Mar-24 22:13:02 - [INFO] - User logged in.
+29-Mar-24 22:13:02 - [INFO] - 200 - Custom success 200 response sent
+29-Mar-24 22:13:02 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:13:02] "POST /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 22:13:02 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:13:02] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+29-Mar-24 22:13:02 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+29-Mar-24 22:13:02 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+29-Mar-24 22:13:02 - [INFO] - File path is not valid: 
+29-Mar-24 22:13:02 - [INFO] - 200 - Custom success 200 response sent
+29-Mar-24 22:13:02 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:13:02] "[35m[1mGET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 500 -
+29-Mar-24 22:16:55 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/admin_bp.py', reloading
+29-Mar-24 22:16:55 - [INFO] -  * Restarting with stat
+29-Mar-24 22:16:56 - [INFO] - Development environment configured.
+29-Mar-24 22:16:56 - [WARNING] -  * Debugger is active!
+29-Mar-24 22:16:56 - [INFO] -  * Debugger PIN: 951-357-459
+29-Mar-24 22:17:07 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:17:07] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 22:17:07 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+29-Mar-24 22:17:07 - [INFO] - User logged in.
+29-Mar-24 22:17:07 - [INFO] - 200 - Custom success 200 response sent
+29-Mar-24 22:17:07 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:17:07] "POST /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 22:17:07 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:17:07] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+29-Mar-24 22:17:07 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+29-Mar-24 22:17:07 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+29-Mar-24 22:17:07 - [INFO] - File path is not valid: 
+29-Mar-24 22:17:07 - [INFO] - 200 - Custom success 200 response sent
+29-Mar-24 22:17:07 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:17:07] "[35m[1mGET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 500 -
+29-Mar-24 22:17:45 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/admin_bp.py', reloading
+29-Mar-24 22:17:45 - [INFO] -  * Restarting with stat
+29-Mar-24 22:17:45 - [INFO] - Development environment configured.
+29-Mar-24 22:17:45 - [WARNING] -  * Debugger is active!
+29-Mar-24 22:17:45 - [INFO] -  * Debugger PIN: 951-357-459
+29-Mar-24 22:17:56 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:17:56] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 22:17:56 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+29-Mar-24 22:17:56 - [INFO] - User logged in.
+29-Mar-24 22:17:56 - [INFO] - 200 - Custom success 200 response sent
+29-Mar-24 22:17:56 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:17:56] "POST /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 22:17:56 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:17:56] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+29-Mar-24 22:17:56 - [INFO] - File path is not valid: 
+29-Mar-24 22:17:56 - [INFO] - 200 - Custom success 200 response sent
+29-Mar-24 22:17:56 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:17:56] "GET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+29-Mar-24 22:18:54 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/admin_bp.py', reloading
+29-Mar-24 22:18:54 - [INFO] -  * Restarting with stat
+29-Mar-24 22:18:55 - [INFO] - Development environment configured.
+29-Mar-24 22:18:55 - [WARNING] -  * Debugger is active!
+29-Mar-24 22:18:55 - [INFO] -  * Debugger PIN: 951-357-459
+29-Mar-24 22:19:01 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:19:01] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 22:19:01 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+29-Mar-24 22:19:01 - [INFO] - User logged in.
+29-Mar-24 22:19:01 - [INFO] - 200 - Custom success 200 response sent
+29-Mar-24 22:19:01 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:19:01] "POST /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 22:19:01 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:19:01] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+29-Mar-24 22:19:01 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+29-Mar-24 22:19:01 - [INFO] - File path is not valid: 
+29-Mar-24 22:19:01 - [INFO] - 200 - Custom success 200 response sent
+29-Mar-24 22:19:01 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:19:01] "[35m[1mGET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 500 -
+29-Mar-24 22:19:13 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/admin_bp.py', reloading
+29-Mar-24 22:19:13 - [INFO] -  * Restarting with stat
+29-Mar-24 22:19:14 - [INFO] - Development environment configured.
+29-Mar-24 22:19:14 - [WARNING] -  * Debugger is active!
+29-Mar-24 22:19:14 - [INFO] -  * Debugger PIN: 951-357-459
+29-Mar-24 22:19:21 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:19:21] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 22:19:21 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+29-Mar-24 22:19:21 - [INFO] - User logged in.
+29-Mar-24 22:19:21 - [INFO] - 200 - Custom success 200 response sent
+29-Mar-24 22:19:21 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:19:21] "POST /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 22:19:21 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:19:21] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+29-Mar-24 22:19:21 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+29-Mar-24 22:19:21 - [INFO] - File path is not valid: 
+29-Mar-24 22:19:21 - [INFO] - 200 - Custom success 200 response sent
+29-Mar-24 22:19:21 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:19:21] "[35m[1mGET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 500 -
+29-Mar-24 22:19:40 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/admin_bp.py', reloading
+29-Mar-24 22:19:40 - [INFO] -  * Restarting with stat
+29-Mar-24 22:19:40 - [INFO] - Development environment configured.
+29-Mar-24 22:19:40 - [WARNING] -  * Debugger is active!
+29-Mar-24 22:19:40 - [INFO] -  * Debugger PIN: 951-357-459
+29-Mar-24 22:19:48 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:19:48] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 22:19:48 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+29-Mar-24 22:19:48 - [INFO] - User logged in.
+29-Mar-24 22:19:48 - [INFO] - 200 - Custom success 200 response sent
+29-Mar-24 22:19:48 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:19:48] "POST /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 22:19:48 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:19:48] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+29-Mar-24 22:19:48 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+29-Mar-24 22:19:48 - [INFO] - File path is not valid: 
+29-Mar-24 22:19:48 - [INFO] - 200 - Custom success 200 response sent
+29-Mar-24 22:19:48 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:19:48] "[35m[1mGET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 500 -
+29-Mar-24 22:19:57 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/admin_bp.py', reloading
+29-Mar-24 22:19:58 - [INFO] -  * Restarting with stat
+29-Mar-24 22:19:58 - [INFO] - Development environment configured.
+29-Mar-24 22:19:58 - [WARNING] -  * Debugger is active!
+29-Mar-24 22:19:58 - [INFO] -  * Debugger PIN: 951-357-459
+29-Mar-24 22:20:07 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:20:07] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 22:20:07 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+29-Mar-24 22:20:07 - [INFO] - User logged in.
+29-Mar-24 22:20:07 - [INFO] - 200 - Custom success 200 response sent
+29-Mar-24 22:20:07 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:20:07] "POST /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 22:20:07 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:20:07] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+29-Mar-24 22:20:07 - [INFO] - File path is not valid: 
+29-Mar-24 22:20:07 - [INFO] - 200 - Custom success 200 response sent
+29-Mar-24 22:20:07 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:20:07] "GET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+29-Mar-24 22:21:12 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/admin_bp.py', reloading
+29-Mar-24 22:21:12 - [INFO] -  * Restarting with stat
+29-Mar-24 22:21:12 - [INFO] - Development environment configured.
+29-Mar-24 22:21:12 - [WARNING] -  * Debugger is active!
+29-Mar-24 22:21:12 - [INFO] -  * Debugger PIN: 951-357-459
+29-Mar-24 22:21:19 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:21:19] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 22:21:19 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+29-Mar-24 22:21:19 - [INFO] - User logged in.
+29-Mar-24 22:21:19 - [INFO] - 200 - Custom success 200 response sent
+29-Mar-24 22:21:19 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:21:19] "POST /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 22:21:19 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:21:19] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+29-Mar-24 22:21:19 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+29-Mar-24 22:21:19 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+29-Mar-24 22:21:19 - [INFO] - File path is not valid: 
+29-Mar-24 22:21:19 - [INFO] - 200 - Custom success 200 response sent
+29-Mar-24 22:21:19 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:21:19] "[35m[1mGET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 500 -
+29-Mar-24 22:25:29 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/common_utils.py', reloading
+29-Mar-24 22:25:29 - [INFO] -  * Restarting with stat
+29-Mar-24 22:25:30 - [INFO] - Development environment configured.
+29-Mar-24 22:25:30 - [WARNING] -  * Debugger is active!
+29-Mar-24 22:25:30 - [INFO] -  * Debugger PIN: 951-357-459
+29-Mar-24 22:25:41 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:25:41] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 22:25:41 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+29-Mar-24 22:25:41 - [INFO] - User logged in.
+29-Mar-24 22:25:41 - [INFO] - 200 - Custom success 200 response sent
+29-Mar-24 22:25:41 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:25:41] "POST /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 22:25:41 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:25:41] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+29-Mar-24 22:25:41 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+29-Mar-24 22:25:41 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+29-Mar-24 22:25:41 - [INFO] - File path is not valid: 
+29-Mar-24 22:25:41 - [INFO] - 200 - Custom success 200 response sent
+29-Mar-24 22:25:41 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:25:41] "[35m[1mGET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 500 -
+29-Mar-24 22:30:11 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/common_utils.py', reloading
+29-Mar-24 22:30:11 - [INFO] -  * Restarting with stat
+29-Mar-24 22:30:12 - [INFO] - Development environment configured.
+29-Mar-24 22:30:12 - [WARNING] -  * Debugger is active!
+29-Mar-24 22:30:12 - [INFO] -  * Debugger PIN: 951-357-459
+29-Mar-24 22:30:21 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:30:21] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 22:30:21 - [INFO] - File path is notyy valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+29-Mar-24 22:30:21 - [INFO] - User logged in.
+29-Mar-24 22:30:21 - [INFO] - 200 - Custom success 200 response sent
+29-Mar-24 22:30:21 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:30:21] "POST /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 22:30:21 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:30:21] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+29-Mar-24 22:30:21 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+29-Mar-24 22:30:21 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+29-Mar-24 22:30:21 - [INFO] - File path is notyy valid: 
+29-Mar-24 22:30:21 - [INFO] - 200 - Custom success 200 response sent
+29-Mar-24 22:30:21 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:30:21] "[35m[1mGET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 500 -
+29-Mar-24 22:30:36 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/common_utils.py', reloading
+29-Mar-24 22:30:36 - [INFO] -  * Restarting with stat
+29-Mar-24 22:30:36 - [INFO] - Development environment configured.
+29-Mar-24 22:30:36 - [WARNING] -  * Debugger is active!
+29-Mar-24 22:30:36 - [INFO] -  * Debugger PIN: 951-357-459
+29-Mar-24 22:32:15 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/auth_bp.py', reloading
+29-Mar-24 22:32:15 - [INFO] -  * Restarting with stat
+29-Mar-24 22:32:16 - [INFO] - Development environment configured.
+29-Mar-24 22:32:16 - [WARNING] -  * Debugger is active!
+29-Mar-24 22:32:16 - [INFO] -  * Debugger PIN: 951-357-459
+29-Mar-24 22:32:25 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:32:25] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 22:32:25 - [INFO] - File path is not valid: False
+29-Mar-24 22:32:25 - [INFO] - User logged in.
+29-Mar-24 22:32:25 - [INFO] - 200 - Custom success 200 response sent
+29-Mar-24 22:32:25 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:32:25] "POST /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 22:32:25 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:32:25] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+29-Mar-24 22:32:25 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+29-Mar-24 22:32:25 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+29-Mar-24 22:32:25 - [INFO] - File path is not valid: 
+29-Mar-24 22:32:25 - [INFO] - 200 - Custom success 200 response sent
+29-Mar-24 22:32:25 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:32:25] "[35m[1mGET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 500 -
+29-Mar-24 22:32:49 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/auth_bp.py', reloading
+29-Mar-24 22:32:49 - [INFO] -  * Restarting with stat
+29-Mar-24 22:32:49 - [INFO] - Development environment configured.
+29-Mar-24 22:32:49 - [WARNING] -  * Debugger is active!
+29-Mar-24 22:32:49 - [INFO] -  * Debugger PIN: 951-357-459
+29-Mar-24 22:37:43 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/auth_bp.py', reloading
+29-Mar-24 22:37:43 - [INFO] -  * Restarting with stat
+29-Mar-24 22:37:44 - [INFO] - Development environment configured.
+29-Mar-24 22:37:44 - [WARNING] -  * Debugger is active!
+29-Mar-24 22:37:44 - [INFO] -  * Debugger PIN: 951-357-459
+29-Mar-24 22:37:57 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:37:57] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 22:37:57 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+29-Mar-24 22:37:57 - [INFO] - User logged in.
+29-Mar-24 22:37:57 - [INFO] - 200 - Custom success 200 response sent
+29-Mar-24 22:37:57 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:37:57] "POST /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 22:37:57 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:37:57] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+29-Mar-24 22:37:57 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+29-Mar-24 22:37:57 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+29-Mar-24 22:37:57 - [INFO] - File path is not valid: 
+29-Mar-24 22:37:57 - [INFO] - 200 - Custom success 200 response sent
+29-Mar-24 22:37:57 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:37:57] "[35m[1mGET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 500 -
+29-Mar-24 22:38:45 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/auth_bp.py', reloading
+29-Mar-24 22:38:45 - [INFO] -  * Restarting with stat
+29-Mar-24 22:38:45 - [INFO] - Development environment configured.
+29-Mar-24 22:38:46 - [WARNING] -  * Debugger is active!
+29-Mar-24 22:38:46 - [INFO] -  * Debugger PIN: 951-357-459
+29-Mar-24 22:39:12 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/admin_bp.py', reloading
+29-Mar-24 22:39:12 - [INFO] -  * Restarting with stat
+29-Mar-24 22:39:13 - [INFO] - Development environment configured.
+29-Mar-24 22:39:13 - [WARNING] -  * Debugger is active!
+29-Mar-24 22:39:13 - [INFO] -  * Debugger PIN: 951-357-459
+29-Mar-24 22:39:20 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:39:20] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 22:39:20 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+29-Mar-24 22:39:20 - [INFO] - User logged in.
+29-Mar-24 22:39:20 - [INFO] - 200 - Custom success 200 response sent
+29-Mar-24 22:39:20 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:39:20] "POST /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 22:39:20 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:39:20] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+29-Mar-24 22:39:20 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+29-Mar-24 22:39:20 - [INFO] - File path is not valid: 
+29-Mar-24 22:39:20 - [INFO] - 200 - Custom success 200 response sent
+29-Mar-24 22:39:20 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:39:20] "[35m[1mGET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 500 -
+29-Mar-24 22:39:31 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/admin_bp.py', reloading
+29-Mar-24 22:39:31 - [INFO] -  * Restarting with stat
+29-Mar-24 22:39:32 - [INFO] - Development environment configured.
+29-Mar-24 22:39:32 - [WARNING] -  * Debugger is active!
+29-Mar-24 22:39:32 - [INFO] -  * Debugger PIN: 951-357-459
+29-Mar-24 22:39:40 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:39:40] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 22:39:40 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+29-Mar-24 22:39:40 - [INFO] - User logged in.
+29-Mar-24 22:39:40 - [INFO] - 200 - Custom success 200 response sent
+29-Mar-24 22:39:40 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:39:40] "POST /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 22:39:40 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:39:40] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+29-Mar-24 22:39:40 - [INFO] - File path is not valid: 
+29-Mar-24 22:39:40 - [INFO] - 200 - Custom success 200 response sent
+29-Mar-24 22:39:40 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:39:40] "GET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+29-Mar-24 22:43:07 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/common_utils.py', reloading
+29-Mar-24 22:43:07 - [INFO] -  * Restarting with stat
+29-Mar-24 22:43:08 - [INFO] - Development environment configured.
+29-Mar-24 22:43:08 - [WARNING] -  * Debugger is active!
+29-Mar-24 22:43:08 - [INFO] -  * Debugger PIN: 951-357-459
+29-Mar-24 22:45:36 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/common_utils.py', reloading
+29-Mar-24 22:45:36 - [INFO] -  * Restarting with stat
+29-Mar-24 22:45:36 - [INFO] - Development environment configured.
+29-Mar-24 22:45:36 - [WARNING] -  * Debugger is active!
+29-Mar-24 22:45:36 - [INFO] -  * Debugger PIN: 951-357-459
+29-Mar-24 22:45:40 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/admin_bp.py', reloading
+29-Mar-24 22:45:40 - [INFO] -  * Restarting with stat
+29-Mar-24 22:45:40 - [INFO] - Development environment configured.
+29-Mar-24 22:45:40 - [WARNING] -  * Debugger is active!
+29-Mar-24 22:45:40 - [INFO] -  * Debugger PIN: 951-357-459
+29-Mar-24 22:45:47 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:45:47] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 22:45:47 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+29-Mar-24 22:45:47 - [INFO] - User logged in.
+29-Mar-24 22:45:47 - [INFO] - 200 - Custom success 200 response sent
+29-Mar-24 22:45:47 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:45:47] "POST /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 22:45:47 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:45:47] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+29-Mar-24 22:45:47 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+29-Mar-24 22:45:47 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+29-Mar-24 22:45:47 - [INFO] - File path is not valid: 
+29-Mar-24 22:45:47 - [INFO] - 200 - Custom success 200 response sent
+29-Mar-24 22:45:47 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:45:47] "[35m[1mGET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 500 -
+29-Mar-24 22:50:40 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/common_utils.py', reloading
+29-Mar-24 22:50:40 - [INFO] -  * Restarting with stat
+29-Mar-24 22:50:41 - [INFO] - Development environment configured.
+29-Mar-24 22:50:41 - [WARNING] -  * Debugger is active!
+29-Mar-24 22:50:41 - [INFO] -  * Debugger PIN: 951-357-459
+29-Mar-24 22:50:50 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:50:50] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 22:50:50 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+29-Mar-24 22:50:50 - [INFO] - User logged in.
+29-Mar-24 22:50:50 - [INFO] - 200 - Custom success 200 response sent
+29-Mar-24 22:50:50 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:50:50] "POST /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 22:50:50 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:50:50] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+29-Mar-24 22:50:50 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+29-Mar-24 22:50:50 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:50:50] "GET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+29-Mar-24 22:51:18 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/common_utils.py', reloading
+29-Mar-24 22:51:18 - [INFO] -  * Restarting with stat
+29-Mar-24 22:51:18 - [INFO] - Development environment configured.
+29-Mar-24 22:51:18 - [WARNING] -  * Debugger is active!
+29-Mar-24 22:51:18 - [INFO] -  * Debugger PIN: 951-357-459
+29-Mar-24 22:51:30 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:51:30] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 22:51:30 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+29-Mar-24 22:51:30 - [INFO] - User logged in.
+29-Mar-24 22:51:30 - [INFO] - 200 - Custom success 200 response sent
+29-Mar-24 22:51:30 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:51:30] "POST /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 22:51:30 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:51:30] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+29-Mar-24 22:51:30 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+29-Mar-24 22:51:30 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+29-Mar-24 22:51:30 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:51:30] "GET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+29-Mar-24 22:52:27 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/common_utils.py', reloading
+29-Mar-24 22:52:27 - [INFO] -  * Restarting with stat
+29-Mar-24 22:52:28 - [INFO] - Development environment configured.
+29-Mar-24 22:52:28 - [WARNING] -  * Debugger is active!
+29-Mar-24 22:52:28 - [INFO] -  * Debugger PIN: 951-357-459
+29-Mar-24 22:52:38 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:52:38] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 22:52:38 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+29-Mar-24 22:52:38 - [INFO] - User logged in.
+29-Mar-24 22:52:38 - [INFO] - 200 - Custom success 200 response sent
+29-Mar-24 22:52:38 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:52:38] "POST /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 22:52:38 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:52:38] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+29-Mar-24 22:52:38 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+29-Mar-24 22:52:38 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+29-Mar-24 22:52:38 - [INFO] - File path is not valid: 
+29-Mar-24 22:52:38 - [INFO] - 200 - Custom success 200 response sent
+29-Mar-24 22:52:38 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:52:38] "[35m[1mGET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 500 -
+29-Mar-24 22:52:57 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/common_utils.py', reloading
+29-Mar-24 22:52:57 - [INFO] -  * Restarting with stat
+29-Mar-24 22:52:58 - [INFO] - Development environment configured.
+29-Mar-24 22:52:58 - [WARNING] -  * Debugger is active!
+29-Mar-24 22:52:58 - [INFO] -  * Debugger PIN: 951-357-459
+29-Mar-24 22:53:07 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:53:06] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 22:53:07 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+29-Mar-24 22:53:07 - [INFO] - User logged in.
+29-Mar-24 22:53:07 - [INFO] - 200 - Custom success 200 response sent
+29-Mar-24 22:53:07 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:53:07] "POST /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 22:53:07 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:53:07] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+29-Mar-24 22:53:07 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+29-Mar-24 22:53:07 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+29-Mar-24 22:53:07 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:53:07] "[35m[1mGET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 500 -
+29-Mar-24 22:54:32 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/common_utils.py', reloading
+29-Mar-24 22:54:32 - [INFO] -  * Restarting with stat
+29-Mar-24 22:54:32 - [INFO] - Development environment configured.
+29-Mar-24 22:54:32 - [WARNING] -  * Debugger is active!
+29-Mar-24 22:54:32 - [INFO] -  * Debugger PIN: 951-357-459
+29-Mar-24 22:54:41 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:54:41] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 22:54:41 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+29-Mar-24 22:54:41 - [INFO] - User logged in.
+29-Mar-24 22:54:41 - [INFO] - 200 - Custom success 200 response sent
+29-Mar-24 22:54:41 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:54:41] "POST /api/v2/auth/login HTTP/1.1" 200 -
+29-Mar-24 22:54:41 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:54:41] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+29-Mar-24 22:54:41 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+29-Mar-24 22:54:41 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+29-Mar-24 22:54:41 - [INFO] - File path is not valid: 
+29-Mar-24 22:54:41 - [INFO] - 200 - Custom success 200 response sent
+29-Mar-24 22:54:41 - [INFO] - 127.0.0.1 - - [29/Mar/2024 22:54:41] "[35m[1mGET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 500 -
+30-Mar-24 09:52:08 - [INFO] - Development environment configured.
+30-Mar-24 09:52:08 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+30-Mar-24 09:52:08 - [INFO] - [33mPress CTRL+C to quit[0m
+30-Mar-24 09:52:08 - [INFO] -  * Restarting with stat
+30-Mar-24 09:52:08 - [INFO] - Development environment configured.
+30-Mar-24 09:52:08 - [WARNING] -  * Debugger is active!
+30-Mar-24 09:52:08 - [INFO] -  * Debugger PIN: 163-373-655
+30-Mar-24 09:52:22 - [INFO] - 127.0.0.1 - - [30/Mar/2024 09:52:22] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+30-Mar-24 09:52:22 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+30-Mar-24 09:52:22 - [INFO] - User logged in.
+30-Mar-24 09:52:22 - [INFO] - 200 - Custom success 200 response sent
+30-Mar-24 09:52:22 - [INFO] - 127.0.0.1 - - [30/Mar/2024 09:52:22] "POST /api/v2/auth/login HTTP/1.1" 200 -
+30-Mar-24 09:52:22 - [INFO] - 127.0.0.1 - - [30/Mar/2024 09:52:22] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+30-Mar-24 09:52:22 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 09:52:22 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 09:52:22 - [INFO] - File path is not valid: 
+30-Mar-24 09:52:22 - [INFO] - 200 - Custom success 200 response sent
+30-Mar-24 09:52:22 - [INFO] - 127.0.0.1 - - [30/Mar/2024 09:52:22] "[35m[1mGET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 500 -
+30-Mar-24 09:55:17 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/admin_bp.py', reloading
+30-Mar-24 09:55:17 - [INFO] -  * Restarting with stat
+30-Mar-24 09:55:18 - [INFO] - Development environment configured.
+30-Mar-24 09:55:18 - [WARNING] -  * Debugger is active!
+30-Mar-24 09:55:18 - [INFO] -  * Debugger PIN: 163-373-655
+30-Mar-24 09:55:24 - [INFO] - 127.0.0.1 - - [30/Mar/2024 09:55:24] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+30-Mar-24 09:55:24 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+30-Mar-24 09:55:24 - [INFO] - User logged in.
+30-Mar-24 09:55:24 - [INFO] - 200 - Custom success 200 response sent
+30-Mar-24 09:55:24 - [INFO] - 127.0.0.1 - - [30/Mar/2024 09:55:24] "POST /api/v2/auth/login HTTP/1.1" 200 -
+30-Mar-24 09:55:24 - [INFO] - 127.0.0.1 - - [30/Mar/2024 09:55:24] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+30-Mar-24 09:55:24 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 09:55:24 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 09:55:24 - [INFO] - File path is not valid: 
+30-Mar-24 09:55:24 - [INFO] - 200 - Custom success 200 response sent
+30-Mar-24 09:55:24 - [INFO] - 127.0.0.1 - - [30/Mar/2024 09:55:24] "[35m[1mGET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 500 -
+30-Mar-24 09:56:20 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/admin_bp.py', reloading
+30-Mar-24 09:56:20 - [INFO] -  * Restarting with stat
+30-Mar-24 09:56:21 - [INFO] - Development environment configured.
+30-Mar-24 09:56:21 - [WARNING] -  * Debugger is active!
+30-Mar-24 09:56:21 - [INFO] -  * Debugger PIN: 163-373-655
+30-Mar-24 09:56:27 - [INFO] - 127.0.0.1 - - [30/Mar/2024 09:56:27] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+30-Mar-24 09:56:27 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+30-Mar-24 09:56:27 - [INFO] - User logged in.
+30-Mar-24 09:56:27 - [INFO] - 200 - Custom success 200 response sent
+30-Mar-24 09:56:27 - [INFO] - 127.0.0.1 - - [30/Mar/2024 09:56:27] "POST /api/v2/auth/login HTTP/1.1" 200 -
+30-Mar-24 09:56:27 - [INFO] - 127.0.0.1 - - [30/Mar/2024 09:56:27] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+30-Mar-24 09:56:27 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 09:56:27 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 09:56:27 - [INFO] - File path is not valid: 
+30-Mar-24 09:56:27 - [INFO] - 200 - Custom success 200 response sent
+30-Mar-24 09:56:27 - [INFO] - 127.0.0.1 - - [30/Mar/2024 09:56:27] "[35m[1mGET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 500 -
+30-Mar-24 09:59:14 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/admin_bp.py', reloading
+30-Mar-24 09:59:14 - [INFO] -  * Restarting with stat
+30-Mar-24 09:59:15 - [INFO] - Development environment configured.
+30-Mar-24 09:59:15 - [WARNING] -  * Debugger is active!
+30-Mar-24 09:59:15 - [INFO] -  * Debugger PIN: 163-373-655
+30-Mar-24 09:59:22 - [INFO] - 127.0.0.1 - - [30/Mar/2024 09:59:22] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+30-Mar-24 09:59:22 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+30-Mar-24 09:59:22 - [INFO] - User logged in.
+30-Mar-24 09:59:22 - [INFO] - 200 - Custom success 200 response sent
+30-Mar-24 09:59:22 - [INFO] - 127.0.0.1 - - [30/Mar/2024 09:59:22] "POST /api/v2/auth/login HTTP/1.1" 200 -
+30-Mar-24 09:59:22 - [INFO] - 127.0.0.1 - - [30/Mar/2024 09:59:22] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+30-Mar-24 09:59:22 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 09:59:22 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 09:59:22 - [INFO] - File path is not valid: 
+30-Mar-24 09:59:22 - [INFO] - 200 - Custom success 200 response sent
+30-Mar-24 09:59:23 - [INFO] - 127.0.0.1 - - [30/Mar/2024 09:59:23] "[35m[1mGET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 500 -
+30-Mar-24 10:02:54 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/admin_bp.py', reloading
+30-Mar-24 10:02:54 - [INFO] -  * Restarting with stat
+30-Mar-24 10:02:54 - [INFO] - Development environment configured.
+30-Mar-24 10:02:54 - [WARNING] -  * Debugger is active!
+30-Mar-24 10:02:54 - [INFO] -  * Debugger PIN: 163-373-655
+30-Mar-24 10:03:04 - [INFO] - 127.0.0.1 - - [30/Mar/2024 10:03:04] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+30-Mar-24 10:03:04 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+30-Mar-24 10:03:04 - [INFO] - User logged in.
+30-Mar-24 10:03:04 - [INFO] - 200 - Custom success 200 response sent
+30-Mar-24 10:03:04 - [INFO] - 127.0.0.1 - - [30/Mar/2024 10:03:04] "POST /api/v2/auth/login HTTP/1.1" 200 -
+30-Mar-24 10:03:04 - [INFO] - 127.0.0.1 - - [30/Mar/2024 10:03:04] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+30-Mar-24 10:03:04 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 10:03:04 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 10:03:04 - [INFO] - File path is not valid: 
+30-Mar-24 10:03:04 - [INFO] - 200 - Custom success 200 response sent
+30-Mar-24 10:03:04 - [INFO] - 127.0.0.1 - - [30/Mar/2024 10:03:04] "[35m[1mGET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 500 -
+30-Mar-24 10:18:06 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/user_utils.py', reloading
+30-Mar-24 10:18:06 - [INFO] -  * Restarting with stat
+30-Mar-24 10:18:06 - [INFO] - Development environment configured.
+30-Mar-24 10:18:06 - [WARNING] -  * Debugger is active!
+30-Mar-24 10:18:06 - [INFO] -  * Debugger PIN: 163-373-655
+30-Mar-24 10:18:14 - [INFO] - 127.0.0.1 - - [30/Mar/2024 10:18:14] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+30-Mar-24 10:18:14 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+30-Mar-24 10:18:14 - [INFO] - User logged in.
+30-Mar-24 10:18:14 - [INFO] - 200 - Custom success 200 response sent
+30-Mar-24 10:18:14 - [INFO] - 127.0.0.1 - - [30/Mar/2024 10:18:14] "POST /api/v2/auth/login HTTP/1.1" 200 -
+30-Mar-24 10:18:14 - [INFO] - 127.0.0.1 - - [30/Mar/2024 10:18:14] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+30-Mar-24 10:18:14 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 10:18:14 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 10:18:14 - [INFO] - File path is not valid: 
+30-Mar-24 10:18:14 - [INFO] - 200 - Custom success 200 response sent
+30-Mar-24 10:18:14 - [INFO] - 127.0.0.1 - - [30/Mar/2024 10:18:14] "[35m[1mGET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 500 -
+30-Mar-24 10:21:56 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/user_utils.py', reloading
+30-Mar-24 10:21:56 - [INFO] -  * Restarting with stat
+30-Mar-24 10:21:57 - [INFO] - Development environment configured.
+30-Mar-24 10:21:57 - [WARNING] -  * Debugger is active!
+30-Mar-24 10:21:57 - [INFO] -  * Debugger PIN: 163-373-655
+30-Mar-24 10:22:10 - [INFO] - 127.0.0.1 - - [30/Mar/2024 10:22:10] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+30-Mar-24 10:22:10 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+30-Mar-24 10:22:10 - [INFO] - User logged in.
+30-Mar-24 10:22:10 - [INFO] - 200 - Custom success 200 response sent
+30-Mar-24 10:22:10 - [INFO] - 127.0.0.1 - - [30/Mar/2024 10:22:10] "POST /api/v2/auth/login HTTP/1.1" 200 -
+30-Mar-24 10:22:10 - [INFO] - 127.0.0.1 - - [30/Mar/2024 10:22:10] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+30-Mar-24 10:22:10 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 10:22:10 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 10:22:10 - [INFO] - File path is not valid: 
+30-Mar-24 10:22:10 - [INFO] - 200 - Custom success 200 response sent
+30-Mar-24 10:22:10 - [INFO] - 127.0.0.1 - - [30/Mar/2024 10:22:10] "GET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
