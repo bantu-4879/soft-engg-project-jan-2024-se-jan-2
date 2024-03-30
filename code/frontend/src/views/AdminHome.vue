@@ -75,8 +75,8 @@ export default {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
-        web_token: this.$store.getters.get_web_token,
-        user_id: this.user_id,
+        webtoken: this.$store.getters.get_web_token,
+        userid: this.user_id,
       },
     })
       .then((response) => response.json())
