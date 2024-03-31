@@ -149,7 +149,7 @@ export default {
 
       this.search_url = this.search_url + `/${this.user_id}`;
     }
-    if (this.user_role === "support" && this.current_page_path === "/support-home") {
+    if (this.user_role === "staff" && this.current_page_path === "/support-home") {
       // show all unresolved tickets, status=pending, filter on priority and tags, sort by created date and votes.
 
       this.filter_status_options = this.filter_status_options.filter(
@@ -158,7 +158,7 @@ export default {
       this.form.filter_status.push("pending");
       this.search_url = this.search_url + `/${this.user_id}`;
     }
-    if (this.user_role === "support" && this.current_page_path === "/support-my-tickets") {
+    if (this.user_role === "staff" && this.current_page_path === "/support-my-tickets") {
       // show user's resolved tickets, status=resolved, filter on priority and tags, sort by created date, resolved date and votes.
 
       this.filter_status_options = this.filter_status_options.filter(
@@ -194,8 +194,8 @@ export default {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
-          web_token: this.$store.getters.get_web_token,
-          user_id: this.user_id,
+          webtoken: this.$store.getters.get_web_token,
+          userid: this.user_id,
         },
       })
         .then((response) => response.json())
@@ -228,13 +228,13 @@ export default {
       this.form.sortdir = "";
       this.form.filter_status = [];
 
-      if (this.user_role === "support" && this.current_page_path === "/support-home") {
+      if (this.user_role === "staff" && this.current_page_path === "/staff-home") {
         this.filter_status_options = this.filter_status_options.filter(
           (value) => value.item == "pending"
         );
         this.form.filter_status.push("pending");
       }
-      if (this.user_role === "support" && this.current_page_path === "/support-my-tickets") {
+      if (this.user_role === "staff" && this.current_page_path === "/staff-my-tickets") {
         this.filter_status_options = this.filter_status_options.filter(
           (value) => value.item == "resolved"
         );
