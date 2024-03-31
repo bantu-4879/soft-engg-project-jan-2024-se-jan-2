@@ -7114,3 +7114,1233 @@
 30-Mar-24 13:31:03 - [INFO] - New account created
 30-Mar-24 13:31:03 - [INFO] - 200 - Account created successfully. Now please login.
 30-Mar-24 13:31:03 - [INFO] - 127.0.0.1 - - [30/Mar/2024 13:31:03] "POST /api/v2/auth/register HTTP/1.1" 200 -
+30-Mar-24 17:17:59 - [INFO] - Development environment configured.
+30-Mar-24 17:17:59 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+30-Mar-24 17:17:59 - [INFO] - [33mPress CTRL+C to quit[0m
+30-Mar-24 17:17:59 - [INFO] -  * Restarting with stat
+30-Mar-24 17:17:59 - [INFO] - Development environment configured.
+30-Mar-24 17:18:00 - [WARNING] -  * Debugger is active!
+30-Mar-24 17:18:00 - [INFO] -  * Debugger PIN: 163-373-655
+30-Mar-24 17:18:17 - [INFO] - 127.0.0.1 - - [30/Mar/2024 17:18:17] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+30-Mar-24 17:18:17 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+30-Mar-24 17:18:17 - [INFO] - User logged in.
+30-Mar-24 17:18:17 - [INFO] - 200 - Custom success 200 response sent
+30-Mar-24 17:18:17 - [INFO] - 127.0.0.1 - - [30/Mar/2024 17:18:17] "POST /api/v2/auth/login HTTP/1.1" 200 -
+30-Mar-24 17:18:17 - [INFO] - 127.0.0.1 - - [30/Mar/2024 17:18:17] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+30-Mar-24 17:18:17 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 17:18:17 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 17:18:17 - [INFO] - File path is not valid: 
+30-Mar-24 17:18:17 - [INFO] - 200 - Custom success 200 response sent
+30-Mar-24 17:18:17 - [INFO] - 127.0.0.1 - - [30/Mar/2024 17:18:17] "GET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+30-Mar-24 17:18:30 - [INFO] - 127.0.0.1 - - [30/Mar/2024 17:18:30] "OPTIONS /api/v2/auth/newUsers HTTP/1.1" 200 -
+30-Mar-24 17:18:30 - [INFO] - 404 - Provided user id does not exists. Please create account.
+30-Mar-24 17:18:30 - [INFO] - 127.0.0.1 - - [30/Mar/2024 17:18:30] "[33mGET /api/v2/auth/newUsers HTTP/1.1[0m" 404 -
+30-Mar-24 17:21:12 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/globals.py', reloading
+30-Mar-24 17:21:13 - [INFO] -  * Restarting with stat
+30-Mar-24 17:21:13 - [INFO] - Development environment configured.
+30-Mar-24 17:21:13 - [WARNING] -  * Debugger is active!
+30-Mar-24 17:21:13 - [INFO] -  * Debugger PIN: 163-373-655
+30-Mar-24 17:21:24 - [INFO] - 127.0.0.1 - - [30/Mar/2024 17:21:24] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+30-Mar-24 17:21:25 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+30-Mar-24 17:21:25 - [INFO] - User logged in.
+30-Mar-24 17:21:25 - [INFO] - 200 - Custom success 200 response sent
+30-Mar-24 17:21:25 - [INFO] - 127.0.0.1 - - [30/Mar/2024 17:21:25] "POST /api/v2/auth/login HTTP/1.1" 200 -
+30-Mar-24 17:21:25 - [INFO] - 127.0.0.1 - - [30/Mar/2024 17:21:25] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+30-Mar-24 17:21:25 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 17:21:25 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 17:21:25 - [INFO] - File path is not valid: 
+30-Mar-24 17:21:25 - [INFO] - 200 - Custom success 200 response sent
+30-Mar-24 17:21:25 - [INFO] - 127.0.0.1 - - [30/Mar/2024 17:21:25] "GET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+30-Mar-24 17:26:32 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/globals.py', reloading
+30-Mar-24 17:26:32 - [INFO] -  * Restarting with stat
+30-Mar-24 17:26:32 - [INFO] - Development environment configured.
+30-Mar-24 17:26:32 - [WARNING] -  * Debugger is active!
+30-Mar-24 17:26:32 - [INFO] -  * Debugger PIN: 163-373-655
+30-Mar-24 17:26:48 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/globals.py', reloading
+30-Mar-24 17:26:48 - [INFO] -  * Restarting with stat
+30-Mar-24 17:26:48 - [INFO] - Development environment configured.
+30-Mar-24 17:26:48 - [WARNING] -  * Debugger is active!
+30-Mar-24 17:26:48 - [INFO] -  * Debugger PIN: 163-373-655
+30-Mar-24 17:27:05 - [INFO] - 127.0.0.1 - - [30/Mar/2024 17:27:05] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+30-Mar-24 17:27:05 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+30-Mar-24 17:27:05 - [INFO] - User logged in.
+30-Mar-24 17:27:05 - [INFO] - 200 - Custom success 200 response sent
+30-Mar-24 17:27:05 - [INFO] - 127.0.0.1 - - [30/Mar/2024 17:27:05] "POST /api/v2/auth/login HTTP/1.1" 200 -
+30-Mar-24 17:27:05 - [INFO] - 127.0.0.1 - - [30/Mar/2024 17:27:05] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+30-Mar-24 17:27:05 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 17:27:05 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 17:27:05 - [INFO] - File path is not valid: 
+30-Mar-24 17:27:05 - [INFO] - 200 - Custom success 200 response sent
+30-Mar-24 17:27:05 - [INFO] - 127.0.0.1 - - [30/Mar/2024 17:27:05] "GET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+30-Mar-24 17:29:33 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/admin_bp.py', reloading
+30-Mar-24 17:29:33 - [INFO] -  * Restarting with stat
+30-Mar-24 17:29:34 - [INFO] - Development environment configured.
+30-Mar-24 17:29:34 - [WARNING] -  * Debugger is active!
+30-Mar-24 17:29:34 - [INFO] -  * Debugger PIN: 163-373-655
+30-Mar-24 17:30:50 - [INFO] - 127.0.0.1 - - [30/Mar/2024 17:30:50] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+30-Mar-24 17:30:50 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+30-Mar-24 17:30:50 - [INFO] - User logged in.
+30-Mar-24 17:30:50 - [INFO] - 200 - Custom success 200 response sent
+30-Mar-24 17:30:50 - [INFO] - 127.0.0.1 - - [30/Mar/2024 17:30:50] "POST /api/v2/auth/login HTTP/1.1" 200 -
+30-Mar-24 17:30:50 - [INFO] - 127.0.0.1 - - [30/Mar/2024 17:30:50] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+30-Mar-24 17:30:50 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 17:30:50 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 17:30:50 - [INFO] - File path is not valid: 
+30-Mar-24 17:30:50 - [INFO] - 200 - Custom success 200 response sent
+30-Mar-24 17:30:50 - [INFO] - 127.0.0.1 - - [30/Mar/2024 17:30:50] "GET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+30-Mar-24 17:35:19 - [INFO] - 127.0.0.1 - - [30/Mar/2024 17:35:19] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+30-Mar-24 17:35:19 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+30-Mar-24 17:35:19 - [INFO] - User logged in.
+30-Mar-24 17:35:19 - [INFO] - 200 - Custom success 200 response sent
+30-Mar-24 17:35:19 - [INFO] - 127.0.0.1 - - [30/Mar/2024 17:35:19] "POST /api/v2/auth/login HTTP/1.1" 200 -
+30-Mar-24 17:35:19 - [INFO] - 127.0.0.1 - - [30/Mar/2024 17:35:19] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+30-Mar-24 17:35:19 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 17:35:19 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 17:35:19 - [INFO] - File path is not valid: 
+30-Mar-24 17:35:19 - [INFO] - 200 - Custom success 200 response sent
+30-Mar-24 17:35:19 - [INFO] - 127.0.0.1 - - [30/Mar/2024 17:35:19] "GET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+30-Mar-24 17:35:57 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/globals.py', reloading
+30-Mar-24 17:35:57 - [INFO] -  * Restarting with stat
+30-Mar-24 17:35:58 - [INFO] - Development environment configured.
+30-Mar-24 17:35:58 - [WARNING] -  * Debugger is active!
+30-Mar-24 17:35:58 - [INFO] -  * Debugger PIN: 163-373-655
+30-Mar-24 17:44:24 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/auth_bp.py', reloading
+30-Mar-24 17:44:24 - [INFO] -  * Restarting with stat
+30-Mar-24 17:44:25 - [INFO] - Development environment configured.
+30-Mar-24 17:44:25 - [WARNING] -  * Debugger is active!
+30-Mar-24 17:44:25 - [INFO] -  * Debugger PIN: 163-373-655
+30-Mar-24 17:45:13 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/auth_bp.py', reloading
+30-Mar-24 17:45:13 - [INFO] -  * Restarting with stat
+30-Mar-24 17:45:13 - [INFO] - Development environment configured.
+30-Mar-24 17:45:13 - [WARNING] -  * Debugger is active!
+30-Mar-24 17:45:13 - [INFO] -  * Debugger PIN: 163-373-655
+30-Mar-24 17:45:31 - [INFO] - 404 - Provided user id does not exists. Please create account.
+30-Mar-24 17:45:31 - [INFO] - 127.0.0.1 - - [30/Mar/2024 17:45:31] "[33mGET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 404 -
+30-Mar-24 17:50:32 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+30-Mar-24 17:50:32 - [INFO] - User logged in.
+30-Mar-24 17:50:32 - [INFO] - 200 - Custom success 200 response sent
+30-Mar-24 17:50:32 - [INFO] - 127.0.0.1 - - [30/Mar/2024 17:50:32] "POST /api/v2/auth/login HTTP/1.1" 200 -
+30-Mar-24 17:51:04 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 17:51:04 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 17:51:04 - [INFO] - File path is not valid: 
+30-Mar-24 17:51:04 - [INFO] - 200 - Custom success 200 response sent
+30-Mar-24 17:51:04 - [INFO] - 127.0.0.1 - - [30/Mar/2024 17:51:04] "GET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+30-Mar-24 17:51:31 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 17:51:31 - [INFO] - Admin role is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 17:51:31 - [INFO] - 200 - Custom success 200 response sent
+30-Mar-24 17:51:31 - [INFO] - 127.0.0.1 - - [30/Mar/2024 17:51:31] "GET /api/v2/auth/newUsers HTTP/1.1" 200 -
+30-Mar-24 17:52:18 - [INFO] - 127.0.0.1 - - [30/Mar/2024 17:52:18] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+30-Mar-24 17:52:18 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+30-Mar-24 17:52:18 - [INFO] - User logged in.
+30-Mar-24 17:52:18 - [INFO] - 200 - Custom success 200 response sent
+30-Mar-24 17:52:18 - [INFO] - 127.0.0.1 - - [30/Mar/2024 17:52:18] "POST /api/v2/auth/login HTTP/1.1" 200 -
+30-Mar-24 17:52:18 - [INFO] - 127.0.0.1 - - [30/Mar/2024 17:52:18] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+30-Mar-24 17:52:18 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 17:52:18 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 17:52:18 - [INFO] - File path is not valid: 
+30-Mar-24 17:52:18 - [INFO] - 200 - Custom success 200 response sent
+30-Mar-24 17:52:18 - [INFO] - 127.0.0.1 - - [30/Mar/2024 17:52:18] "GET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+30-Mar-24 17:52:21 - [INFO] - 127.0.0.1 - - [30/Mar/2024 17:52:21] "OPTIONS /api/v2/auth/newUsers HTTP/1.1" 200 -
+30-Mar-24 17:52:21 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 17:52:21 - [INFO] - Admin role is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 17:52:21 - [INFO] - 200 - Custom success 200 response sent
+30-Mar-24 17:52:21 - [INFO] - 127.0.0.1 - - [30/Mar/2024 17:52:21] "GET /api/v2/auth/newUsers HTTP/1.1" 200 -
+30-Mar-24 17:52:29 - [INFO] - 127.0.0.1 - - [30/Mar/2024 17:52:29] "OPTIONS /api/v2/auth/newUsers/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+30-Mar-24 17:52:29 - [INFO] - 404 - Provided user id does not exists. Please create account.
+30-Mar-24 17:52:29 - [INFO] - 127.0.0.1 - - [30/Mar/2024 17:52:29] "[33mPUT /api/v2/auth/newUsers/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1[0m" 404 -
+30-Mar-24 17:52:37 - [INFO] - 127.0.0.1 - - [30/Mar/2024 17:52:37] "OPTIONS /api/v2/ticket/all-tickets/7e666996a8fddf675ceada5ef31fc342?query=&filter_priority=&filter_status=resolved&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+30-Mar-24 17:52:37 - [INFO] - 404 - Provided user id does not exists. Please create account.
+30-Mar-24 17:52:37 - [INFO] - 127.0.0.1 - - [30/Mar/2024 17:52:37] "[33mGET /api/v2/ticket/all-tickets/7e666996a8fddf675ceada5ef31fc342?query=&filter_priority=&filter_status=resolved&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1[0m" 404 -
+30-Mar-24 17:52:42 - [INFO] - 127.0.0.1 - - [30/Mar/2024 17:52:42] "OPTIONS /api/v2/faq/ HTTP/1.1" 200 -
+30-Mar-24 17:52:42 - [INFO] - All FAQs found : 2
+30-Mar-24 17:52:42 - [INFO] - 200 - Custom success 200 response sent
+30-Mar-24 17:52:42 - [INFO] - 127.0.0.1 - - [30/Mar/2024 17:52:42] "GET /api/v2/faq/ HTTP/1.1" 200 -
+30-Mar-24 17:52:45 - [INFO] - 127.0.0.1 - - [30/Mar/2024 17:52:45] "OPTIONS /api/v2/auth/newUsers HTTP/1.1" 200 -
+30-Mar-24 17:52:45 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 17:52:45 - [INFO] - Admin role is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 17:52:45 - [INFO] - 200 - Custom success 200 response sent
+30-Mar-24 17:52:45 - [INFO] - 127.0.0.1 - - [30/Mar/2024 17:52:45] "GET /api/v2/auth/newUsers HTTP/1.1" 200 -
+30-Mar-24 18:19:24 - [INFO] - 127.0.0.1 - - [30/Mar/2024 18:19:24] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+30-Mar-24 18:19:24 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+30-Mar-24 18:19:24 - [INFO] - User logged in.
+30-Mar-24 18:19:24 - [INFO] - 200 - Custom success 200 response sent
+30-Mar-24 18:19:24 - [INFO] - 127.0.0.1 - - [30/Mar/2024 18:19:24] "POST /api/v2/auth/login HTTP/1.1" 200 -
+30-Mar-24 18:19:24 - [INFO] - 127.0.0.1 - - [30/Mar/2024 18:19:24] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+30-Mar-24 18:19:24 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 18:19:24 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 18:19:24 - [INFO] - File path is not valid: 
+30-Mar-24 18:19:24 - [INFO] - 200 - Custom success 200 response sent
+30-Mar-24 18:19:24 - [INFO] - 127.0.0.1 - - [30/Mar/2024 18:19:24] "GET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+30-Mar-24 18:19:27 - [INFO] - 127.0.0.1 - - [30/Mar/2024 18:19:27] "OPTIONS /api/v2/auth/newUsers HTTP/1.1" 200 -
+30-Mar-24 18:19:27 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 18:19:27 - [INFO] - Admin role is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 18:19:27 - [INFO] - 200 - Custom success 200 response sent
+30-Mar-24 18:19:27 - [INFO] - 127.0.0.1 - - [30/Mar/2024 18:19:27] "GET /api/v2/auth/newUsers HTTP/1.1" 200 -
+30-Mar-24 18:20:05 - [INFO] - 127.0.0.1 - - [30/Mar/2024 18:20:05] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+30-Mar-24 18:20:05 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 18:20:05 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 18:20:05 - [INFO] - File path is not valid: 
+30-Mar-24 18:20:05 - [INFO] - 200 - Custom success 200 response sent
+30-Mar-24 18:20:05 - [INFO] - 127.0.0.1 - - [30/Mar/2024 18:20:05] "GET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+30-Mar-24 18:20:06 - [INFO] - 127.0.0.1 - - [30/Mar/2024 18:20:06] "OPTIONS /api/v2/auth/newUsers HTTP/1.1" 200 -
+30-Mar-24 18:20:06 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 18:20:06 - [INFO] - Admin role is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 18:20:06 - [INFO] - 200 - Custom success 200 response sent
+30-Mar-24 18:20:06 - [INFO] - 127.0.0.1 - - [30/Mar/2024 18:20:06] "GET /api/v2/auth/newUsers HTTP/1.1" 200 -
+30-Mar-24 18:20:13 - [INFO] - 127.0.0.1 - - [30/Mar/2024 18:20:13] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+30-Mar-24 18:20:13 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 18:20:13 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 18:20:13 - [INFO] - File path is not valid: 
+30-Mar-24 18:20:13 - [INFO] - 200 - Custom success 200 response sent
+30-Mar-24 18:20:13 - [INFO] - 127.0.0.1 - - [30/Mar/2024 18:20:13] "GET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+30-Mar-24 18:20:14 - [INFO] - 127.0.0.1 - - [30/Mar/2024 18:20:14] "OPTIONS /api/v2/auth/newUsers HTTP/1.1" 200 -
+30-Mar-24 18:20:14 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 18:20:14 - [INFO] - Admin role is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 18:20:14 - [INFO] - 200 - Custom success 200 response sent
+30-Mar-24 18:20:14 - [INFO] - 127.0.0.1 - - [30/Mar/2024 18:20:14] "GET /api/v2/auth/newUsers HTTP/1.1" 200 -
+30-Mar-24 18:20:22 - [INFO] - 127.0.0.1 - - [30/Mar/2024 18:20:22] "OPTIONS /api/v2/auth/newUsers/935619db4e7697ff1f163e8f40ad71fd HTTP/1.1" 200 -
+30-Mar-24 18:20:22 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 18:20:22 - [INFO] - Admin role is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 18:20:22 - [INFO] - 400 - User id is empty or invalid
+30-Mar-24 18:20:22 - [INFO] - 127.0.0.1 - - [30/Mar/2024 18:20:22] "[31m[1mPUT /api/v2/auth/newUsers/935619db4e7697ff1f163e8f40ad71fd HTTP/1.1[0m" 400 -
+30-Mar-24 18:20:26 - [INFO] - 127.0.0.1 - - [30/Mar/2024 18:20:26] "OPTIONS /api/v2/auth/newUsers/fb58cddff315e18f87a86f94dc191891 HTTP/1.1" 200 -
+30-Mar-24 18:20:26 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 18:20:26 - [INFO] - Admin role is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 18:20:26 - [INFO] - 400 - User id is empty or invalid
+30-Mar-24 18:20:26 - [INFO] - 127.0.0.1 - - [30/Mar/2024 18:20:26] "[31m[1mPUT /api/v2/auth/newUsers/fb58cddff315e18f87a86f94dc191891 HTTP/1.1[0m" 400 -
+30-Mar-24 18:20:28 - [INFO] - 127.0.0.1 - - [30/Mar/2024 18:20:28] "OPTIONS /api/v2/auth/newUsers/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+30-Mar-24 18:20:28 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 18:20:28 - [INFO] - Admin role is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 18:20:28 - [INFO] - 400 - User id is empty or invalid
+30-Mar-24 18:20:28 - [INFO] - 127.0.0.1 - - [30/Mar/2024 18:20:28] "[31m[1mPUT /api/v2/auth/newUsers/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1[0m" 400 -
+30-Mar-24 18:41:47 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/auth_bp.py', reloading
+30-Mar-24 18:41:47 - [INFO] -  * Restarting with stat
+30-Mar-24 18:41:47 - [INFO] - Development environment configured.
+30-Mar-24 18:41:47 - [WARNING] -  * Debugger is active!
+30-Mar-24 18:41:47 - [INFO] -  * Debugger PIN: 163-373-655
+30-Mar-24 18:41:50 - [INFO] - 401 - Token is incorrect
+30-Mar-24 18:41:50 - [INFO] - 127.0.0.1 - - [30/Mar/2024 18:41:50] "[31m[1mGET /api/v2/auth/newUsers HTTP/1.1[0m" 401 -
+30-Mar-24 18:42:10 - [INFO] - 127.0.0.1 - - [30/Mar/2024 18:42:10] "OPTIONS /api/v2/auth/newUsers HTTP/1.1" 200 -
+30-Mar-24 18:42:10 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 18:42:10 - [INFO] - Admin role is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 18:42:10 - [INFO] - 200 - Custom success 200 response sent
+30-Mar-24 18:42:10 - [INFO] - 127.0.0.1 - - [30/Mar/2024 18:42:10] "GET /api/v2/auth/newUsers HTTP/1.1" 200 -
+30-Mar-24 18:42:36 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+30-Mar-24 18:42:36 - [INFO] - User logged in.
+30-Mar-24 18:42:36 - [INFO] - 200 - Custom success 200 response sent
+30-Mar-24 18:42:36 - [INFO] - 127.0.0.1 - - [30/Mar/2024 18:42:36] "POST /api/v2/auth/login HTTP/1.1" 200 -
+30-Mar-24 18:42:52 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 18:42:52 - [INFO] - Admin role is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 18:42:52 - [INFO] - 200 - Custom success 200 response sent
+30-Mar-24 18:42:52 - [INFO] - 127.0.0.1 - - [30/Mar/2024 18:42:52] "GET /api/v2/auth/newUsers HTTP/1.1" 200 -
+30-Mar-24 18:43:29 - [INFO] - 127.0.0.1 - - [30/Mar/2024 18:43:29] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+30-Mar-24 18:43:29 - [INFO] - 401 - Token is incorrect
+30-Mar-24 18:43:29 - [INFO] - 127.0.0.1 - - [30/Mar/2024 18:43:29] "[31m[1mGET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 401 -
+30-Mar-24 18:43:31 - [INFO] - 127.0.0.1 - - [30/Mar/2024 18:43:31] "OPTIONS /api/v2/auth/newUsers HTTP/1.1" 200 -
+30-Mar-24 18:43:31 - [INFO] - 401 - Token is incorrect
+30-Mar-24 18:43:31 - [INFO] - 127.0.0.1 - - [30/Mar/2024 18:43:31] "[31m[1mGET /api/v2/auth/newUsers HTTP/1.1[0m" 401 -
+30-Mar-24 18:47:50 - [INFO] - 127.0.0.1 - - [30/Mar/2024 18:47:50] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+30-Mar-24 18:47:50 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+30-Mar-24 18:47:50 - [INFO] - User logged in.
+30-Mar-24 18:47:50 - [INFO] - 200 - Custom success 200 response sent
+30-Mar-24 18:47:50 - [INFO] - 127.0.0.1 - - [30/Mar/2024 18:47:50] "POST /api/v2/auth/login HTTP/1.1" 200 -
+30-Mar-24 18:47:50 - [INFO] - 127.0.0.1 - - [30/Mar/2024 18:47:50] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+30-Mar-24 18:47:50 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 18:47:50 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 18:47:50 - [INFO] - File path is not valid: 
+30-Mar-24 18:47:50 - [INFO] - 200 - Custom success 200 response sent
+30-Mar-24 18:47:50 - [INFO] - 127.0.0.1 - - [30/Mar/2024 18:47:50] "GET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+30-Mar-24 18:47:53 - [INFO] - 127.0.0.1 - - [30/Mar/2024 18:47:53] "OPTIONS /api/v2/auth/newUsers HTTP/1.1" 200 -
+30-Mar-24 18:47:53 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 18:47:53 - [INFO] - Admin role is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 18:47:53 - [INFO] - 200 - Custom success 200 response sent
+30-Mar-24 18:47:53 - [INFO] - 127.0.0.1 - - [30/Mar/2024 18:47:53] "GET /api/v2/auth/newUsers HTTP/1.1" 200 -
+30-Mar-24 19:01:12 - [INFO] - 127.0.0.1 - - [30/Mar/2024 19:01:12] "OPTIONS /api/v2/auth/register HTTP/1.1" 200 -
+30-Mar-24 19:01:12 - [INFO] - New account created
+30-Mar-24 19:01:12 - [INFO] - 200 - Account created successfully. Now please login.
+30-Mar-24 19:01:12 - [INFO] - 127.0.0.1 - - [30/Mar/2024 19:01:12] "POST /api/v2/auth/register HTTP/1.1" 200 -
+30-Mar-24 19:01:20 - [INFO] - 127.0.0.1 - - [30/Mar/2024 19:01:20] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+30-Mar-24 19:01:20 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+30-Mar-24 19:01:20 - [INFO] - User logged in.
+30-Mar-24 19:01:20 - [INFO] - 200 - Custom success 200 response sent
+30-Mar-24 19:01:20 - [INFO] - 127.0.0.1 - - [30/Mar/2024 19:01:20] "POST /api/v2/auth/login HTTP/1.1" 200 -
+30-Mar-24 19:01:20 - [INFO] - 127.0.0.1 - - [30/Mar/2024 19:01:20] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+30-Mar-24 19:01:20 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 19:01:20 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 19:01:20 - [INFO] - File path is not valid: 
+30-Mar-24 19:01:20 - [INFO] - 200 - Custom success 200 response sent
+30-Mar-24 19:01:20 - [INFO] - 127.0.0.1 - - [30/Mar/2024 19:01:20] "GET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+30-Mar-24 19:01:22 - [INFO] - 127.0.0.1 - - [30/Mar/2024 19:01:22] "OPTIONS /api/v2/auth/newUsers HTTP/1.1" 200 -
+30-Mar-24 19:01:22 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 19:01:22 - [INFO] - Admin role is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 19:01:22 - [INFO] - 200 - Custom success 200 response sent
+30-Mar-24 19:01:22 - [INFO] - 127.0.0.1 - - [30/Mar/2024 19:01:22] "GET /api/v2/auth/newUsers HTTP/1.1" 200 -
+30-Mar-24 19:02:09 - [INFO] - 127.0.0.1 - - [30/Mar/2024 19:02:09] "OPTIONS /api/v2/auth/register HTTP/1.1" 200 -
+30-Mar-24 19:02:09 - [INFO] - New account created
+30-Mar-24 19:02:09 - [INFO] - 200 - Account created successfully. Now please login.
+30-Mar-24 19:02:09 - [INFO] - 127.0.0.1 - - [30/Mar/2024 19:02:09] "POST /api/v2/auth/register HTTP/1.1" 200 -
+30-Mar-24 19:05:07 - [INFO] - 127.0.0.1 - - [30/Mar/2024 19:05:07] "OPTIONS /api/v2/auth/register HTTP/1.1" 200 -
+30-Mar-24 19:05:07 - [INFO] - New account created
+30-Mar-24 19:05:07 - [INFO] - 200 - Account created successfully. Now please login.
+30-Mar-24 19:05:07 - [INFO] - 127.0.0.1 - - [30/Mar/2024 19:05:07] "POST /api/v2/auth/register HTTP/1.1" 200 -
+30-Mar-24 19:05:20 - [INFO] - 127.0.0.1 - - [30/Mar/2024 19:05:20] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+30-Mar-24 19:05:20 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+30-Mar-24 19:05:20 - [INFO] - User logged in.
+30-Mar-24 19:05:20 - [INFO] - 200 - Custom success 200 response sent
+30-Mar-24 19:05:20 - [INFO] - 127.0.0.1 - - [30/Mar/2024 19:05:20] "POST /api/v2/auth/login HTTP/1.1" 200 -
+30-Mar-24 19:05:20 - [INFO] - 127.0.0.1 - - [30/Mar/2024 19:05:20] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+30-Mar-24 19:05:20 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 19:05:20 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 19:05:20 - [INFO] - File path is not valid: 
+30-Mar-24 19:05:20 - [INFO] - 200 - Custom success 200 response sent
+30-Mar-24 19:05:20 - [INFO] - 127.0.0.1 - - [30/Mar/2024 19:05:20] "GET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+30-Mar-24 19:05:24 - [INFO] - 127.0.0.1 - - [30/Mar/2024 19:05:24] "OPTIONS /api/v2/auth/newUsers HTTP/1.1" 200 -
+30-Mar-24 19:05:24 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 19:05:24 - [INFO] - Admin role is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 19:05:24 - [INFO] - 200 - Custom success 200 response sent
+30-Mar-24 19:05:24 - [INFO] - 127.0.0.1 - - [30/Mar/2024 19:05:24] "GET /api/v2/auth/newUsers HTTP/1.1" 200 -
+30-Mar-24 19:07:22 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/user_utils.py', reloading
+30-Mar-24 19:07:22 - [INFO] -  * Restarting with stat
+30-Mar-24 19:07:22 - [INFO] - Development environment configured.
+30-Mar-24 19:07:22 - [WARNING] -  * Debugger is active!
+30-Mar-24 19:07:23 - [INFO] -  * Debugger PIN: 163-373-655
+30-Mar-24 19:07:25 - [INFO] - 401 - Token is incorrect
+30-Mar-24 19:07:25 - [INFO] - 127.0.0.1 - - [30/Mar/2024 19:07:25] "[31m[1mGET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 401 -
+30-Mar-24 19:07:33 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+30-Mar-24 19:07:33 - [INFO] - User logged in.
+30-Mar-24 19:07:33 - [INFO] - 200 - Custom success 200 response sent
+30-Mar-24 19:07:33 - [INFO] - 127.0.0.1 - - [30/Mar/2024 19:07:33] "POST /api/v2/auth/login HTTP/1.1" 200 -
+30-Mar-24 19:07:45 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 19:07:45 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 19:07:45 - [INFO] - File path is not valid: 
+30-Mar-24 19:07:45 - [INFO] - 200 - Custom success 200 response sent
+30-Mar-24 19:07:45 - [INFO] - 127.0.0.1 - - [30/Mar/2024 19:07:45] "GET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+30-Mar-24 19:10:16 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 19:10:16 - [INFO] - Admin role is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 19:10:16 - [INFO] - 200 - Custom success 200 response sent
+30-Mar-24 19:10:16 - [INFO] - 127.0.0.1 - - [30/Mar/2024 19:10:16] "GET /api/v2/auth/newUsers HTTP/1.1" 200 -
+30-Mar-24 19:11:55 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 19:11:55 - [INFO] - Admin role is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 19:11:55 - [INFO] - 127.0.0.1 - - [30/Mar/2024 19:11:55] "[35m[1mPUT /api/v2/auth/newUsers HTTP/1.1[0m" 500 -
+30-Mar-24 19:12:45 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 19:12:45 - [INFO] - Admin role is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 19:12:45 - [INFO] - 400 - User id is empty or invalid
+30-Mar-24 19:12:45 - [INFO] - 127.0.0.1 - - [30/Mar/2024 19:12:45] "[31m[1mPUT /api/v2/auth/newUsers/978e56405b1a49111b844b6deef7959f HTTP/1.1[0m" 400 -
+30-Mar-24 19:14:19 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/auth_bp.py', reloading
+30-Mar-24 19:14:19 - [INFO] -  * Restarting with stat
+30-Mar-24 19:14:20 - [INFO] - Development environment configured.
+30-Mar-24 19:14:20 - [WARNING] -  * Debugger is active!
+30-Mar-24 19:14:20 - [INFO] -  * Debugger PIN: 163-373-655
+30-Mar-24 19:14:23 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 19:14:23 - [INFO] - Admin role is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 19:14:23 - [INFO] - 200 - User verified and updated in database.
+30-Mar-24 19:14:23 - [INFO] - 127.0.0.1 - - [30/Mar/2024 19:14:23] "PUT /api/v2/auth/newUsers/978e56405b1a49111b844b6deef7959f HTTP/1.1" 200 -
+30-Mar-24 19:14:50 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/auth_bp.py', reloading
+30-Mar-24 19:14:50 - [INFO] -  * Restarting with stat
+30-Mar-24 19:14:51 - [INFO] - Development environment configured.
+30-Mar-24 19:14:51 - [WARNING] -  * Debugger is active!
+30-Mar-24 19:14:51 - [INFO] -  * Debugger PIN: 163-373-655
+30-Mar-24 19:15:33 - [INFO] - 127.0.0.1 - - [30/Mar/2024 19:15:33] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+30-Mar-24 19:15:33 - [INFO] - 401 - Token is incorrect
+30-Mar-24 19:15:33 - [INFO] - 127.0.0.1 - - [30/Mar/2024 19:15:33] "[31m[1mGET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 401 -
+30-Mar-24 19:15:35 - [INFO] - 127.0.0.1 - - [30/Mar/2024 19:15:35] "OPTIONS /api/v2/auth/newUsers HTTP/1.1" 200 -
+30-Mar-24 19:15:35 - [INFO] - 401 - Token is incorrect
+30-Mar-24 19:15:35 - [INFO] - 127.0.0.1 - - [30/Mar/2024 19:15:35] "[31m[1mGET /api/v2/auth/newUsers HTTP/1.1[0m" 401 -
+30-Mar-24 19:15:37 - [INFO] - 401 - Token is incorrect
+30-Mar-24 19:15:37 - [INFO] - 127.0.0.1 - - [30/Mar/2024 19:15:37] "[31m[1mGET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 401 -
+30-Mar-24 19:15:44 - [INFO] - 127.0.0.1 - - [30/Mar/2024 19:15:44] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+30-Mar-24 19:15:44 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+30-Mar-24 19:15:44 - [INFO] - User logged in.
+30-Mar-24 19:15:44 - [INFO] - 200 - Custom success 200 response sent
+30-Mar-24 19:15:44 - [INFO] - 127.0.0.1 - - [30/Mar/2024 19:15:44] "POST /api/v2/auth/login HTTP/1.1" 200 -
+30-Mar-24 19:15:44 - [INFO] - 127.0.0.1 - - [30/Mar/2024 19:15:44] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+30-Mar-24 19:15:44 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 19:15:44 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 19:15:44 - [INFO] - File path is not valid: 
+30-Mar-24 19:15:44 - [INFO] - 200 - Custom success 200 response sent
+30-Mar-24 19:15:44 - [INFO] - 127.0.0.1 - - [30/Mar/2024 19:15:44] "GET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+30-Mar-24 19:15:47 - [INFO] - 127.0.0.1 - - [30/Mar/2024 19:15:47] "OPTIONS /api/v2/auth/newUsers HTTP/1.1" 200 -
+30-Mar-24 19:15:47 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 19:15:47 - [INFO] - Admin role is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 19:15:47 - [INFO] - 200 - Custom success 200 response sent
+30-Mar-24 19:15:47 - [INFO] - 127.0.0.1 - - [30/Mar/2024 19:15:47] "GET /api/v2/auth/newUsers HTTP/1.1" 200 -
+30-Mar-24 19:15:52 - [INFO] - 127.0.0.1 - - [30/Mar/2024 19:15:52] "OPTIONS /api/v2/auth/newUsers/2a5c752d0ead723dec945eaa8b106ab1 HTTP/1.1" 200 -
+30-Mar-24 19:15:52 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 19:15:52 - [INFO] - Admin role is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 19:15:52 - [INFO] - 200 - User verified and updated in database.
+30-Mar-24 19:15:52 - [INFO] - 127.0.0.1 - - [30/Mar/2024 19:15:52] "PUT /api/v2/auth/newUsers/2a5c752d0ead723dec945eaa8b106ab1 HTTP/1.1" 200 -
+30-Mar-24 19:15:57 - [INFO] - 127.0.0.1 - - [30/Mar/2024 19:15:57] "OPTIONS /api/v2/ticket/all-tickets/7e666996a8fddf675ceada5ef31fc342?query=&filter_priority=&filter_status=resolved&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+30-Mar-24 19:15:57 - [INFO] - 404 - Provided user id does not exists. Please create account.
+30-Mar-24 19:15:57 - [INFO] - 127.0.0.1 - - [30/Mar/2024 19:15:57] "[33mGET /api/v2/ticket/all-tickets/7e666996a8fddf675ceada5ef31fc342?query=&filter_priority=&filter_status=resolved&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1[0m" 404 -
+30-Mar-24 20:43:07 - [INFO] - 127.0.0.1 - - [30/Mar/2024 20:43:07] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+30-Mar-24 20:43:07 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+30-Mar-24 20:43:07 - [INFO] - User logged in.
+30-Mar-24 20:43:07 - [INFO] - 200 - Custom success 200 response sent
+30-Mar-24 20:43:07 - [INFO] - 127.0.0.1 - - [30/Mar/2024 20:43:07] "POST /api/v2/auth/login HTTP/1.1" 200 -
+30-Mar-24 20:43:07 - [INFO] - 127.0.0.1 - - [30/Mar/2024 20:43:07] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+30-Mar-24 20:43:07 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 20:43:07 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 20:43:07 - [INFO] - File path is not valid: 
+30-Mar-24 20:43:07 - [INFO] - 200 - Custom success 200 response sent
+30-Mar-24 20:43:07 - [INFO] - 127.0.0.1 - - [30/Mar/2024 20:43:07] "GET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+30-Mar-24 20:43:10 - [INFO] - 127.0.0.1 - - [30/Mar/2024 20:43:10] "OPTIONS /api/v2/auth/newUsers HTTP/1.1" 200 -
+30-Mar-24 20:43:10 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 20:43:10 - [INFO] - Admin role is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 20:43:10 - [INFO] - 200 - Custom success 200 response sent
+30-Mar-24 20:43:10 - [INFO] - 127.0.0.1 - - [30/Mar/2024 20:43:10] "GET /api/v2/auth/newUsers HTTP/1.1" 200 -
+30-Mar-24 20:44:50 - [INFO] - 127.0.0.1 - - [30/Mar/2024 20:44:50] "OPTIONS /api/v2/auth/register HTTP/1.1" 200 -
+30-Mar-24 20:44:50 - [INFO] - New account created
+30-Mar-24 20:44:50 - [INFO] - 200 - Account created successfully. Now please login.
+30-Mar-24 20:44:50 - [INFO] - 127.0.0.1 - - [30/Mar/2024 20:44:50] "POST /api/v2/auth/register HTTP/1.1" 200 -
+30-Mar-24 20:44:57 - [INFO] - 127.0.0.1 - - [30/Mar/2024 20:44:57] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+30-Mar-24 20:44:57 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+30-Mar-24 20:44:57 - [INFO] - User logged in.
+30-Mar-24 20:44:57 - [INFO] - 200 - Custom success 200 response sent
+30-Mar-24 20:44:57 - [INFO] - 127.0.0.1 - - [30/Mar/2024 20:44:57] "POST /api/v2/auth/login HTTP/1.1" 200 -
+30-Mar-24 20:44:57 - [INFO] - 127.0.0.1 - - [30/Mar/2024 20:44:57] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+30-Mar-24 20:44:57 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 20:44:57 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 20:44:57 - [INFO] - File path is not valid: 
+30-Mar-24 20:44:57 - [INFO] - 200 - Custom success 200 response sent
+30-Mar-24 20:44:57 - [INFO] - 127.0.0.1 - - [30/Mar/2024 20:44:57] "GET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+30-Mar-24 20:45:01 - [INFO] - 127.0.0.1 - - [30/Mar/2024 20:45:01] "OPTIONS /api/v2/auth/newUsers HTTP/1.1" 200 -
+30-Mar-24 20:45:01 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 20:45:01 - [INFO] - Admin role is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 20:45:01 - [INFO] - 200 - Custom success 200 response sent
+30-Mar-24 20:45:01 - [INFO] - 127.0.0.1 - - [30/Mar/2024 20:45:01] "GET /api/v2/auth/newUsers HTTP/1.1" 200 -
+30-Mar-24 20:45:20 - [INFO] - 127.0.0.1 - - [30/Mar/2024 20:45:20] "OPTIONS /api/v2/auth/newUsers/b3174bffa140dcb462e03af1c7c38fb7 HTTP/1.1" 200 -
+30-Mar-24 20:45:20 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 20:45:20 - [INFO] - Admin role is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 20:45:20 - [INFO] - 200 - Verification failed so user deleted in database.
+30-Mar-24 20:45:20 - [INFO] - 127.0.0.1 - - [30/Mar/2024 20:45:20] "DELETE /api/v2/auth/newUsers/b3174bffa140dcb462e03af1c7c38fb7 HTTP/1.1" 200 -
+30-Mar-24 21:24:50 - [INFO] - 127.0.0.1 - - [30/Mar/2024 21:24:50] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+30-Mar-24 21:24:50 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+30-Mar-24 21:24:50 - [INFO] - User logged in.
+30-Mar-24 21:24:50 - [INFO] - 200 - Custom success 200 response sent
+30-Mar-24 21:24:50 - [INFO] - 127.0.0.1 - - [30/Mar/2024 21:24:50] "POST /api/v2/auth/login HTTP/1.1" 200 -
+30-Mar-24 21:25:51 - [INFO] - 127.0.0.1 - - [30/Mar/2024 21:25:51] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+30-Mar-24 21:25:51 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+30-Mar-24 21:25:51 - [INFO] - User logged in.
+30-Mar-24 21:25:51 - [INFO] - 200 - Custom success 200 response sent
+30-Mar-24 21:25:51 - [INFO] - 127.0.0.1 - - [30/Mar/2024 21:25:51] "POST /api/v2/auth/login HTTP/1.1" 200 -
+30-Mar-24 21:25:51 - [INFO] - 127.0.0.1 - - [30/Mar/2024 21:25:51] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+30-Mar-24 21:25:51 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 21:25:51 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 21:25:51 - [INFO] - File path is not valid: 
+30-Mar-24 21:25:51 - [INFO] - 200 - Custom success 200 response sent
+30-Mar-24 21:25:51 - [INFO] - 127.0.0.1 - - [30/Mar/2024 21:25:51] "GET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+30-Mar-24 21:25:54 - [INFO] - 127.0.0.1 - - [30/Mar/2024 21:25:54] "OPTIONS /api/v2/auth/newUsers HTTP/1.1" 200 -
+30-Mar-24 21:25:54 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 21:25:54 - [INFO] - Admin role is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+30-Mar-24 21:25:54 - [INFO] - 200 - Custom success 200 response sent
+30-Mar-24 21:25:54 - [INFO] - 127.0.0.1 - - [30/Mar/2024 21:25:54] "GET /api/v2/auth/newUsers HTTP/1.1" 200 -
+30-Mar-24 21:25:59 - [INFO] - 127.0.0.1 - - [30/Mar/2024 21:25:59] "OPTIONS /api/v2/ticket/all-tickets/7e666996a8fddf675ceada5ef31fc342?query=&filter_priority=&filter_status=resolved&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+30-Mar-24 21:25:59 - [INFO] - 404 - Provided user id does not exists. Please create account.
+30-Mar-24 21:25:59 - [INFO] - 127.0.0.1 - - [30/Mar/2024 21:25:59] "[33mGET /api/v2/ticket/all-tickets/7e666996a8fddf675ceada5ef31fc342?query=&filter_priority=&filter_status=resolved&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1[0m" 404 -
+31-Mar-24 07:17:13 - [INFO] - Development environment configured.
+31-Mar-24 07:17:13 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+31-Mar-24 07:17:13 - [INFO] - [33mPress CTRL+C to quit[0m
+31-Mar-24 07:17:13 - [INFO] -  * Restarting with stat
+31-Mar-24 07:17:14 - [INFO] - Development environment configured.
+31-Mar-24 07:17:14 - [WARNING] -  * Debugger is active!
+31-Mar-24 07:17:14 - [INFO] -  * Debugger PIN: 163-373-655
+31-Mar-24 07:17:39 - [INFO] - 127.0.0.1 - - [31/Mar/2024 07:17:39] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+31-Mar-24 07:17:39 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+31-Mar-24 07:17:39 - [INFO] - User logged in.
+31-Mar-24 07:17:39 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 07:17:39 - [INFO] - 127.0.0.1 - - [31/Mar/2024 07:17:39] "POST /api/v2/auth/login HTTP/1.1" 200 -
+31-Mar-24 07:17:39 - [INFO] - 127.0.0.1 - - [31/Mar/2024 07:17:39] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+31-Mar-24 07:17:39 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+31-Mar-24 07:17:39 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+31-Mar-24 07:17:39 - [INFO] - File path is not valid: 
+31-Mar-24 07:17:39 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 07:17:39 - [INFO] - 127.0.0.1 - - [31/Mar/2024 07:17:39] "GET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+31-Mar-24 07:21:58 - [INFO] - 127.0.0.1 - - [31/Mar/2024 07:21:58] "OPTIONS /api/v2/ticket/all-tickets/7e666996a8fddf675ceada5ef31fc342?query=&filter_priority=&filter_status=resolved&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+31-Mar-24 07:21:58 - [INFO] - 404 - Provided user id does not exists. Please create account.
+31-Mar-24 07:21:58 - [INFO] - 127.0.0.1 - - [31/Mar/2024 07:21:58] "[33mGET /api/v2/ticket/all-tickets/7e666996a8fddf675ceada5ef31fc342?query=&filter_priority=&filter_status=resolved&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1[0m" 404 -
+31-Mar-24 07:24:33 - [INFO] - 127.0.0.1 - - [31/Mar/2024 07:24:33] "OPTIONS /api/v2/faq/ HTTP/1.1" 200 -
+31-Mar-24 07:24:33 - [INFO] - All FAQs found : 2
+31-Mar-24 07:24:33 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 07:24:33 - [INFO] - 127.0.0.1 - - [31/Mar/2024 07:24:33] "GET /api/v2/faq/ HTTP/1.1" 200 -
+31-Mar-24 07:24:47 - [INFO] - 127.0.0.1 - - [31/Mar/2024 07:24:47] "OPTIONS /api/v2/ticket/all-tickets/7e666996a8fddf675ceada5ef31fc342?query=&filter_priority=&filter_status=resolved&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+31-Mar-24 07:24:47 - [INFO] - 404 - Provided user id does not exists. Please create account.
+31-Mar-24 07:24:47 - [INFO] - 127.0.0.1 - - [31/Mar/2024 07:24:47] "[33mGET /api/v2/ticket/all-tickets/7e666996a8fddf675ceada5ef31fc342?query=&filter_priority=&filter_status=resolved&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1[0m" 404 -
+31-Mar-24 07:24:48 - [INFO] - 127.0.0.1 - - [31/Mar/2024 07:24:48] "OPTIONS /api/v2/faq/ HTTP/1.1" 200 -
+31-Mar-24 07:24:48 - [INFO] - All FAQs found : 2
+31-Mar-24 07:24:48 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 07:24:48 - [INFO] - 127.0.0.1 - - [31/Mar/2024 07:24:48] "GET /api/v2/faq/ HTTP/1.1" 200 -
+31-Mar-24 07:25:04 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+31-Mar-24 07:25:04 - [INFO] -  * Restarting with stat
+31-Mar-24 07:25:05 - [INFO] - Development environment configured.
+31-Mar-24 07:25:05 - [WARNING] -  * Debugger is active!
+31-Mar-24 07:25:05 - [INFO] -  * Debugger PIN: 163-373-655
+31-Mar-24 07:27:09 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+31-Mar-24 07:27:09 - [INFO] - User logged in.
+31-Mar-24 07:27:09 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 07:27:09 - [INFO] - 127.0.0.1 - - [31/Mar/2024 07:27:09] "POST /api/v2/auth/login HTTP/1.1" 200 -
+31-Mar-24 07:28:13 - [INFO] - 127.0.0.1 - - [31/Mar/2024 07:28:13] "[32mGET /api/v2/faq HTTP/1.1[0m" 308 -
+31-Mar-24 07:28:13 - [INFO] - All FAQs found : 2
+31-Mar-24 07:28:13 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 07:28:13 - [INFO] - 127.0.0.1 - - [31/Mar/2024 07:28:13] "GET /api/v2/faq/ HTTP/1.1" 200 -
+31-Mar-24 07:30:40 - [INFO] - 127.0.0.1 - - [31/Mar/2024 07:30:40] "OPTIONS /api/v2/ticket/all-tickets/7e666996a8fddf675ceada5ef31fc342?query=&filter_priority=&filter_status=resolved&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+31-Mar-24 07:30:40 - [INFO] - 404 - Provided user id does not exists. Please create account.
+31-Mar-24 07:30:40 - [INFO] - 127.0.0.1 - - [31/Mar/2024 07:30:40] "[33mGET /api/v2/ticket/all-tickets/7e666996a8fddf675ceada5ef31fc342?query=&filter_priority=&filter_status=resolved&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1[0m" 404 -
+31-Mar-24 07:44:09 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+31-Mar-24 07:44:09 - [INFO] -  * Restarting with stat
+31-Mar-24 07:44:10 - [INFO] - Development environment configured.
+31-Mar-24 07:44:10 - [WARNING] -  * Debugger is active!
+31-Mar-24 07:44:10 - [INFO] -  * Debugger PIN: 163-373-655
+31-Mar-24 07:46:27 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+31-Mar-24 07:46:27 - [INFO] - User logged in.
+31-Mar-24 07:46:27 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 07:46:27 - [INFO] - 127.0.0.1 - - [31/Mar/2024 07:46:27] "POST /api/v2/auth/login HTTP/1.1" 200 -
+31-Mar-24 07:46:53 - [INFO] - 127.0.0.1 - - [31/Mar/2024 07:46:53] "[33mPOST /api/v2/ticket HTTP/1.1[0m" 404 -
+31-Mar-24 07:47:08 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+31-Mar-24 07:47:08 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+31-Mar-24 07:47:08 - [ERROR] - TicketAPI->post : Error occured while getting form data : 400 Bad Request: Failed to decode JSON object: Expecting value: line 1 column 1 (char 0)
+31-Mar-24 07:47:08 - [INFO] - 500 - Internal Server Error
+31-Mar-24 07:47:08 - [INFO] - 127.0.0.1 - - [31/Mar/2024 07:47:08] "[35m[1mPOST /api/v2/ticket/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1[0m" 500 -
+31-Mar-24 07:59:51 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+31-Mar-24 07:59:51 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+31-Mar-24 07:59:51 - [ERROR] - TicketAPI->post : Error occured while getting form data : 'float' object has no attribute 'isspace'
+31-Mar-24 07:59:51 - [INFO] - 500 - Internal Server Error
+31-Mar-24 07:59:51 - [INFO] - 127.0.0.1 - - [31/Mar/2024 07:59:51] "[35m[1mPOST /api/v2/ticket/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1[0m" 500 -
+31-Mar-24 08:00:25 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+31-Mar-24 08:00:25 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+31-Mar-24 08:00:25 - [INFO] - Ticket created successfully.
+31-Mar-24 08:00:25 - [INFO] - 200 - Ticket created successfully. Attachments are empty.
+31-Mar-24 08:00:25 - [INFO] - 127.0.0.1 - - [31/Mar/2024 08:00:25] "POST /api/v2/ticket/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+31-Mar-24 08:00:52 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+31-Mar-24 08:00:52 - [INFO] -  * Restarting with stat
+31-Mar-24 08:00:53 - [INFO] - Development environment configured.
+31-Mar-24 08:00:53 - [WARNING] -  * Debugger is active!
+31-Mar-24 08:00:53 - [INFO] -  * Debugger PIN: 163-373-655
+31-Mar-24 08:01:42 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+31-Mar-24 08:01:42 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+31-Mar-24 08:01:42 - [INFO] - Ticket created successfully.
+31-Mar-24 08:01:42 - [INFO] - 200 - Ticket created successfully. Attachments are empty.
+31-Mar-24 08:01:42 - [INFO] - 127.0.0.1 - - [31/Mar/2024 08:01:42] "POST /api/v2/ticket/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+31-Mar-24 08:01:59 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+31-Mar-24 08:01:59 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+31-Mar-24 08:01:59 - [INFO] - Ticket created successfully.
+31-Mar-24 08:01:59 - [INFO] - 200 - Ticket created successfully. Attachments are empty.
+31-Mar-24 08:01:59 - [INFO] - 127.0.0.1 - - [31/Mar/2024 08:01:59] "POST /api/v2/ticket/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+31-Mar-24 08:12:32 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+31-Mar-24 08:12:32 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+31-Mar-24 08:12:32 - [INFO] - Ticket created successfully.
+31-Mar-24 08:12:32 - [INFO] - 200 - Ticket created successfully. Attachments are empty.
+31-Mar-24 08:12:32 - [INFO] - 127.0.0.1 - - [31/Mar/2024 08:12:32] "POST /api/v2/ticket/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+31-Mar-24 08:19:59 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+31-Mar-24 08:19:59 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+31-Mar-24 08:19:59 - [ERROR] - TicketAPI->put : Error occured while getting form data : 'int' object has no attribute 'isspace'
+31-Mar-24 08:19:59 - [INFO] - 500 - Internal Server Error
+31-Mar-24 08:19:59 - [INFO] - 127.0.0.1 - - [31/Mar/2024 08:19:59] "[35m[1mPUT /api/v2/ticket/c9ec3fb572a0fe7000d0cebe496f80ff/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1[0m" 500 -
+31-Mar-24 08:20:13 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+31-Mar-24 08:20:13 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+31-Mar-24 08:20:13 - [INFO] - 127.0.0.1 - - [31/Mar/2024 08:20:13] "PUT /api/v2/ticket/c9ec3fb572a0fe7000d0cebe496f80ff/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+31-Mar-24 08:20:28 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+31-Mar-24 08:20:28 - [INFO] -  * Restarting with stat
+31-Mar-24 08:20:29 - [INFO] - Development environment configured.
+31-Mar-24 08:20:29 - [WARNING] -  * Debugger is active!
+31-Mar-24 08:20:29 - [INFO] -  * Debugger PIN: 163-373-655
+31-Mar-24 08:21:00 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+31-Mar-24 08:21:00 - [INFO] -  * Restarting with stat
+31-Mar-24 08:21:01 - [INFO] - Development environment configured.
+31-Mar-24 08:21:01 - [WARNING] -  * Debugger is active!
+31-Mar-24 08:21:01 - [INFO] -  * Debugger PIN: 163-373-655
+31-Mar-24 08:41:01 - [INFO] - 127.0.0.1 - - [31/Mar/2024 08:41:01] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+31-Mar-24 08:41:01 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+31-Mar-24 08:41:01 - [INFO] - User logged in.
+31-Mar-24 08:41:01 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 08:41:01 - [INFO] - 127.0.0.1 - - [31/Mar/2024 08:41:01] "POST /api/v2/auth/login HTTP/1.1" 200 -
+31-Mar-24 08:41:01 - [INFO] - 127.0.0.1 - - [31/Mar/2024 08:41:01] "OPTIONS /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=pending HTTP/1.1" 200 -
+31-Mar-24 08:41:01 - [INFO] - 127.0.0.1 - - [31/Mar/2024 08:41:01] "OPTIONS /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+31-Mar-24 08:41:01 - [INFO] - 404 - Provided user id does not exists. Please create account.
+31-Mar-24 08:41:01 - [INFO] - 127.0.0.1 - - [31/Mar/2024 08:41:01] "[33mGET /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1[0m" 404 -
+31-Mar-24 08:41:01 - [INFO] - 404 - Provided user id does not exists. Please create account.
+31-Mar-24 08:41:01 - [INFO] - 127.0.0.1 - - [31/Mar/2024 08:41:01] "[33mGET /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=pending HTTP/1.1[0m" 404 -
+31-Mar-24 08:41:07 - [INFO] - 127.0.0.1 - - [31/Mar/2024 08:41:07] "OPTIONS /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+31-Mar-24 08:41:07 - [INFO] - 404 - Provided user id does not exists. Please create account.
+31-Mar-24 08:41:07 - [INFO] - 127.0.0.1 - - [31/Mar/2024 08:41:07] "[33mGET /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1[0m" 404 -
+31-Mar-24 08:45:45 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+31-Mar-24 08:45:45 - [INFO] -  * Restarting with stat
+31-Mar-24 08:45:46 - [INFO] - Development environment configured.
+31-Mar-24 08:45:46 - [WARNING] -  * Debugger is active!
+31-Mar-24 08:45:46 - [INFO] -  * Debugger PIN: 163-373-655
+31-Mar-24 08:46:57 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+31-Mar-24 08:46:57 - [INFO] - User logged in.
+31-Mar-24 08:46:57 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 08:46:57 - [INFO] - 127.0.0.1 - - [31/Mar/2024 08:46:57] "POST /api/v2/auth/login HTTP/1.1" 200 -
+31-Mar-24 08:48:36 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+31-Mar-24 08:48:36 - [INFO] -  * Restarting with stat
+31-Mar-24 08:48:37 - [INFO] - Development environment configured.
+31-Mar-24 08:48:37 - [WARNING] -  * Debugger is active!
+31-Mar-24 08:48:37 - [INFO] -  * Debugger PIN: 163-373-655
+31-Mar-24 08:49:19 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+31-Mar-24 08:49:19 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+31-Mar-24 08:49:20 - [INFO] - 127.0.0.1 - - [31/Mar/2024 08:49:20] "[35m[1mPOST /api/v2/ticket/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1[0m" 500 -
+31-Mar-24 08:49:44 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+31-Mar-24 08:49:45 - [INFO] -  * Restarting with stat
+31-Mar-24 08:49:45 - [INFO] - Development environment configured.
+31-Mar-24 08:49:45 - [WARNING] -  * Debugger is active!
+31-Mar-24 08:49:45 - [INFO] -  * Debugger PIN: 163-373-655
+31-Mar-24 08:49:47 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+31-Mar-24 08:49:47 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+31-Mar-24 08:49:47 - [INFO] - Ticket created successfully.
+31-Mar-24 08:49:47 - [INFO] - 200 - Ticket created successfully. Attachments are empty.
+31-Mar-24 08:49:47 - [INFO] - 127.0.0.1 - - [31/Mar/2024 08:49:47] "POST /api/v2/ticket/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+31-Mar-24 08:52:09 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+31-Mar-24 08:52:10 - [INFO] -  * Restarting with stat
+31-Mar-24 08:52:10 - [INFO] - Development environment configured.
+31-Mar-24 08:52:10 - [WARNING] -  * Debugger is active!
+31-Mar-24 08:52:10 - [INFO] -  * Debugger PIN: 163-373-655
+31-Mar-24 08:54:15 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+31-Mar-24 08:54:15 - [INFO] -  * Restarting with stat
+31-Mar-24 08:54:15 - [INFO] - Development environment configured.
+31-Mar-24 08:54:15 - [WARNING] -  * Debugger is active!
+31-Mar-24 08:54:15 - [INFO] -  * Debugger PIN: 163-373-655
+31-Mar-24 08:54:19 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+31-Mar-24 08:54:19 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+31-Mar-24 08:54:19 - [INFO] - 200 - Successfully updated a ticket.
+31-Mar-24 08:54:19 - [INFO] - 127.0.0.1 - - [31/Mar/2024 08:54:19] "PUT /api/v2/ticket/91fbdd210bad6de742f3dcd810289fda/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+31-Mar-24 08:55:59 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+31-Mar-24 08:55:59 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+31-Mar-24 08:55:59 - [INFO] - 200 - Successfully updated a ticket.
+31-Mar-24 08:55:59 - [INFO] - 127.0.0.1 - - [31/Mar/2024 08:55:59] "PUT /api/v2/ticket/91fbdd210bad6de742f3dcd810289fda/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+31-Mar-24 08:56:40 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+31-Mar-24 08:56:40 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+31-Mar-24 08:56:40 - [INFO] - 200 - Ticket deleted successfully
+31-Mar-24 08:56:40 - [INFO] - 127.0.0.1 - - [31/Mar/2024 08:56:40] "DELETE /api/v2/ticket/91fbdd210bad6de742f3dcd810289fda/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+31-Mar-24 09:01:00 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+31-Mar-24 09:01:00 - [INFO] -  * Restarting with stat
+31-Mar-24 09:01:00 - [INFO] - Development environment configured.
+31-Mar-24 09:01:00 - [WARNING] -  * Debugger is active!
+31-Mar-24 09:01:00 - [INFO] -  * Debugger PIN: 163-373-655
+31-Mar-24 09:03:15 - [INFO] - 127.0.0.1 - - [31/Mar/2024 09:03:15] "OPTIONS /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+31-Mar-24 09:03:15 - [INFO] - 127.0.0.1 - - [31/Mar/2024 09:03:15] "OPTIONS /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=pending HTTP/1.1" 200 -
+31-Mar-24 09:03:15 - [INFO] - 404 - Provided user id does not exists. Please create account.
+31-Mar-24 09:03:15 - [INFO] - 404 - Provided user id does not exists. Please create account.
+31-Mar-24 09:03:15 - [INFO] - 127.0.0.1 - - [31/Mar/2024 09:03:15] "[33mGET /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1[0m" 404 -
+31-Mar-24 09:03:15 - [INFO] - 127.0.0.1 - - [31/Mar/2024 09:03:15] "[33mGET /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=pending HTTP/1.1[0m" 404 -
+31-Mar-24 09:07:18 - [INFO] - 127.0.0.1 - - [31/Mar/2024 09:07:18] "OPTIONS /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+31-Mar-24 09:07:18 - [INFO] - 404 - Provided user id does not exists. Please create account.
+31-Mar-24 09:07:18 - [INFO] - 127.0.0.1 - - [31/Mar/2024 09:07:18] "[33mGET /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1[0m" 404 -
+31-Mar-24 09:07:23 - [INFO] - 127.0.0.1 - - [31/Mar/2024 09:07:23] "OPTIONS /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?query=&filter_priority=&filter_status=&sortby=&sortdir=&filter_tags= HTTP/1.1" 200 -
+31-Mar-24 09:07:23 - [INFO] - 404 - Provided user id does not exists. Please create account.
+31-Mar-24 09:07:23 - [INFO] - 127.0.0.1 - - [31/Mar/2024 09:07:23] "[33mGET /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?query=&filter_priority=&filter_status=&sortby=&sortdir=&filter_tags= HTTP/1.1[0m" 404 -
+31-Mar-24 09:07:26 - [INFO] - 127.0.0.1 - - [31/Mar/2024 09:07:26] "OPTIONS /api/v2/faq/ HTTP/1.1" 200 -
+31-Mar-24 09:07:26 - [INFO] - All FAQs found : 2
+31-Mar-24 09:07:26 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 09:07:26 - [INFO] - 127.0.0.1 - - [31/Mar/2024 09:07:26] "GET /api/v2/faq/ HTTP/1.1" 200 -
+31-Mar-24 09:07:28 - [INFO] - 127.0.0.1 - - [31/Mar/2024 09:07:28] "OPTIONS /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+31-Mar-24 09:07:28 - [INFO] - 127.0.0.1 - - [31/Mar/2024 09:07:28] "OPTIONS /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=pending HTTP/1.1" 200 -
+31-Mar-24 09:07:28 - [INFO] - 404 - Provided user id does not exists. Please create account.
+31-Mar-24 09:07:28 - [INFO] - 404 - Provided user id does not exists. Please create account.
+31-Mar-24 09:07:28 - [INFO] - 127.0.0.1 - - [31/Mar/2024 09:07:28] "[33mGET /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1[0m" 404 -
+31-Mar-24 09:07:28 - [INFO] - 127.0.0.1 - - [31/Mar/2024 09:07:28] "[33mGET /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=pending HTTP/1.1[0m" 404 -
+31-Mar-24 09:10:34 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+31-Mar-24 09:10:34 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+31-Mar-24 09:10:34 - [INFO] - All tickets found : 5
+31-Mar-24 09:10:34 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 09:10:34 - [INFO] - 127.0.0.1 - - [31/Mar/2024 09:10:34] "GET /api/v2/ticket/all-tickets HTTP/1.1" 200 -
+31-Mar-24 09:12:01 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+31-Mar-24 09:12:01 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+31-Mar-24 09:12:01 - [INFO] - 127.0.0.1 - - [31/Mar/2024 09:12:01] "[35m[1mGET /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1[0m" 500 -
+31-Mar-24 09:12:39 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+31-Mar-24 09:12:39 - [INFO] -  * Restarting with stat
+31-Mar-24 09:12:40 - [INFO] - Development environment configured.
+31-Mar-24 09:12:40 - [WARNING] -  * Debugger is active!
+31-Mar-24 09:12:40 - [INFO] -  * Debugger PIN: 163-373-655
+31-Mar-24 09:12:47 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+31-Mar-24 09:12:47 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+31-Mar-24 09:12:47 - [INFO] - All tickets found : 4
+31-Mar-24 09:12:47 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 09:12:47 - [INFO] - 127.0.0.1 - - [31/Mar/2024 09:12:47] "GET /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+31-Mar-24 09:13:20 - [INFO] - 127.0.0.1 - - [31/Mar/2024 09:13:20] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+31-Mar-24 09:13:20 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+31-Mar-24 09:13:20 - [INFO] - User logged in.
+31-Mar-24 09:13:20 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 09:13:20 - [INFO] - 127.0.0.1 - - [31/Mar/2024 09:13:20] "POST /api/v2/auth/login HTTP/1.1" 200 -
+31-Mar-24 09:13:20 - [INFO] - 127.0.0.1 - - [31/Mar/2024 09:13:20] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+31-Mar-24 09:13:20 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+31-Mar-24 09:13:20 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+31-Mar-24 09:13:20 - [INFO] - File path is not valid: 
+31-Mar-24 09:13:20 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 09:13:20 - [INFO] - 127.0.0.1 - - [31/Mar/2024 09:13:20] "GET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+31-Mar-24 09:13:22 - [INFO] - 127.0.0.1 - - [31/Mar/2024 09:13:22] "OPTIONS /api/v2/auth/newUsers HTTP/1.1" 200 -
+31-Mar-24 09:13:22 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+31-Mar-24 09:13:22 - [INFO] - Admin role is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+31-Mar-24 09:13:22 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 09:13:22 - [INFO] - 127.0.0.1 - - [31/Mar/2024 09:13:22] "GET /api/v2/auth/newUsers HTTP/1.1" 200 -
+31-Mar-24 09:13:25 - [INFO] - 127.0.0.1 - - [31/Mar/2024 09:13:25] "OPTIONS /api/v2/ticket/all-tickets/7e666996a8fddf675ceada5ef31fc342?query=&filter_priority=&filter_status=resolved&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+31-Mar-24 09:13:25 - [INFO] - 404 - Provided user id does not exists. Please create account.
+31-Mar-24 09:13:25 - [INFO] - 127.0.0.1 - - [31/Mar/2024 09:13:25] "[33mGET /api/v2/ticket/all-tickets/7e666996a8fddf675ceada5ef31fc342?query=&filter_priority=&filter_status=resolved&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1[0m" 404 -
+31-Mar-24 09:55:34 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/faq_bp.py', reloading
+31-Mar-24 09:55:34 - [INFO] -  * Restarting with stat
+31-Mar-24 09:55:35 - [INFO] - Development environment configured.
+31-Mar-24 09:55:35 - [WARNING] -  * Debugger is active!
+31-Mar-24 09:55:35 - [INFO] -  * Debugger PIN: 163-373-655
+31-Mar-24 12:06:11 - [INFO] - 127.0.0.1 - - [31/Mar/2024 12:06:11] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+31-Mar-24 12:06:11 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+31-Mar-24 12:06:11 - [INFO] - User logged in.
+31-Mar-24 12:06:11 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 12:06:11 - [INFO] - 127.0.0.1 - - [31/Mar/2024 12:06:11] "POST /api/v2/auth/login HTTP/1.1" 200 -
+31-Mar-24 12:08:39 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+31-Mar-24 12:08:39 - [INFO] - User logged in.
+31-Mar-24 12:08:39 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 12:08:39 - [INFO] - 127.0.0.1 - - [31/Mar/2024 12:08:39] "POST /api/v2/auth/login HTTP/1.1" 200 -
+31-Mar-24 12:09:44 - [INFO] - 404 - Provided user id does not exists. Please create account.
+31-Mar-24 12:09:44 - [INFO] - 127.0.0.1 - - [31/Mar/2024 12:09:44] "[33mGET /api/v2/staff/935619db4e7697ff1f163e8f40ad71fd HTTP/1.1[0m" 404 -
+31-Mar-24 12:10:49 - [INFO] - Token is verified for the user: 935619db4e7697ff1f163e8f40ad71fd
+31-Mar-24 12:10:49 - [INFO] - User role : staff : is verified for the user: 935619db4e7697ff1f163e8f40ad71fd
+31-Mar-24 12:10:49 - [INFO] - File path is not valid: 
+31-Mar-24 12:10:49 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 12:10:49 - [INFO] - 127.0.0.1 - - [31/Mar/2024 12:10:49] "GET /api/v2/staff/935619db4e7697ff1f163e8f40ad71fd HTTP/1.1" 200 -
+31-Mar-24 12:14:19 - [INFO] - 127.0.0.1 - - [31/Mar/2024 12:14:19] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+31-Mar-24 12:14:19 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+31-Mar-24 12:14:19 - [INFO] - User logged in.
+31-Mar-24 12:14:19 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 12:14:19 - [INFO] - 127.0.0.1 - - [31/Mar/2024 12:14:19] "POST /api/v2/auth/login HTTP/1.1" 200 -
+31-Mar-24 12:14:19 - [INFO] - 127.0.0.1 - - [31/Mar/2024 12:14:19] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+31-Mar-24 12:14:19 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+31-Mar-24 12:14:19 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+31-Mar-24 12:14:19 - [INFO] - File path is not valid: 
+31-Mar-24 12:14:19 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 12:14:19 - [INFO] - 127.0.0.1 - - [31/Mar/2024 12:14:19] "GET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+31-Mar-24 12:14:35 - [INFO] - 127.0.0.1 - - [31/Mar/2024 12:14:35] "OPTIONS /api/v2/auth/newUsers HTTP/1.1" 200 -
+31-Mar-24 12:14:35 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+31-Mar-24 12:14:35 - [INFO] - Admin role is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+31-Mar-24 12:14:35 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 12:14:35 - [INFO] - 127.0.0.1 - - [31/Mar/2024 12:14:35] "GET /api/v2/auth/newUsers HTTP/1.1" 200 -
+31-Mar-24 12:14:44 - [INFO] - 127.0.0.1 - - [31/Mar/2024 12:14:44] "OPTIONS /api/v2/ticket/all-tickets/7e666996a8fddf675ceada5ef31fc342?query=&filter_priority=&filter_status=resolved&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+31-Mar-24 12:14:44 - [INFO] - 404 - Provided user id does not exists. Please create account.
+31-Mar-24 12:14:44 - [INFO] - 127.0.0.1 - - [31/Mar/2024 12:14:44] "[33mGET /api/v2/ticket/all-tickets/7e666996a8fddf675ceada5ef31fc342?query=&filter_priority=&filter_status=resolved&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1[0m" 404 -
+31-Mar-24 12:16:22 - [INFO] - 127.0.0.1 - - [31/Mar/2024 12:16:22] "OPTIONS /api/v2/faq/ HTTP/1.1" 200 -
+31-Mar-24 12:16:22 - [INFO] - 404 - Provided user id does not exists. Please create account.
+31-Mar-24 12:16:22 - [INFO] - 127.0.0.1 - - [31/Mar/2024 12:16:22] "[33mGET /api/v2/faq/ HTTP/1.1[0m" 404 -
+31-Mar-24 12:16:25 - [INFO] - 127.0.0.1 - - [31/Mar/2024 12:16:25] "OPTIONS /api/v2/ticket/all-tickets/7e666996a8fddf675ceada5ef31fc342?query=&filter_priority=&filter_status=resolved&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+31-Mar-24 12:16:25 - [INFO] - 404 - Provided user id does not exists. Please create account.
+31-Mar-24 12:16:25 - [INFO] - 127.0.0.1 - - [31/Mar/2024 12:16:25] "[33mGET /api/v2/ticket/all-tickets/7e666996a8fddf675ceada5ef31fc342?query=&filter_priority=&filter_status=resolved&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1[0m" 404 -
+31-Mar-24 17:06:56 - [INFO] - 127.0.0.1 - - [31/Mar/2024 17:06:56] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+31-Mar-24 17:06:56 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+31-Mar-24 17:06:56 - [INFO] - User logged in.
+31-Mar-24 17:06:56 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 17:06:56 - [INFO] - 127.0.0.1 - - [31/Mar/2024 17:06:56] "POST /api/v2/auth/login HTTP/1.1" 200 -
+31-Mar-24 17:06:56 - [INFO] - 127.0.0.1 - - [31/Mar/2024 17:06:56] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+31-Mar-24 17:06:56 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+31-Mar-24 17:06:56 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+31-Mar-24 17:06:56 - [INFO] - File path is not valid: 
+31-Mar-24 17:06:56 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 17:06:56 - [INFO] - 127.0.0.1 - - [31/Mar/2024 17:06:56] "GET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+31-Mar-24 17:06:59 - [INFO] - 127.0.0.1 - - [31/Mar/2024 17:06:59] "OPTIONS /api/v2/auth/newUsers HTTP/1.1" 200 -
+31-Mar-24 17:06:59 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+31-Mar-24 17:06:59 - [INFO] - Admin role is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+31-Mar-24 17:06:59 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 17:06:59 - [INFO] - 127.0.0.1 - - [31/Mar/2024 17:06:59] "GET /api/v2/auth/newUsers HTTP/1.1" 200 -
+31-Mar-24 17:07:03 - [INFO] - 127.0.0.1 - - [31/Mar/2024 17:07:03] "OPTIONS /api/v2/ticket/all-tickets/7e666996a8fddf675ceada5ef31fc342?query=&filter_priority=&filter_status=resolved&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+31-Mar-24 17:07:03 - [INFO] - 404 - Provided user id does not exists. Please create account.
+31-Mar-24 17:07:03 - [INFO] - 127.0.0.1 - - [31/Mar/2024 17:07:03] "[33mGET /api/v2/ticket/all-tickets/7e666996a8fddf675ceada5ef31fc342?query=&filter_priority=&filter_status=resolved&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1[0m" 404 -
+31-Mar-24 17:24:40 - [INFO] - 127.0.0.1 - - [31/Mar/2024 17:24:40] "OPTIONS /api/v2/faq/ HTTP/1.1" 200 -
+31-Mar-24 17:24:40 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+31-Mar-24 17:24:40 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+31-Mar-24 17:24:40 - [ERROR] - FAQAPI->post : Error occured while getting form data : 'list' object has no attribute 'isspace'
+31-Mar-24 17:24:40 - [INFO] - 500 - Internal Server Error
+31-Mar-24 17:24:40 - [INFO] - 127.0.0.1 - - [31/Mar/2024 17:24:40] "[35m[1mPOST /api/v2/faq/ HTTP/1.1[0m" 500 -
+31-Mar-24 17:29:10 - [INFO] - 127.0.0.1 - - [31/Mar/2024 17:29:10] "OPTIONS /api/v2/faq/ HTTP/1.1" 200 -
+31-Mar-24 17:29:10 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+31-Mar-24 17:29:10 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+31-Mar-24 17:29:10 - [ERROR] - FAQAPI->post : Error occured while getting form data : 'list' object has no attribute 'isspace'
+31-Mar-24 17:29:10 - [INFO] - 500 - Internal Server Error
+31-Mar-24 17:29:10 - [INFO] - 127.0.0.1 - - [31/Mar/2024 17:29:10] "[35m[1mPOST /api/v2/faq/ HTTP/1.1[0m" 500 -
+31-Mar-24 17:30:31 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/staff_bp.py', reloading
+31-Mar-24 17:30:31 - [INFO] -  * Restarting with stat
+31-Mar-24 17:30:32 - [INFO] - Development environment configured.
+31-Mar-24 17:30:32 - [WARNING] -  * Debugger is active!
+31-Mar-24 17:30:32 - [INFO] -  * Debugger PIN: 163-373-655
+31-Mar-24 17:31:12 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/faq_bp.py', reloading
+31-Mar-24 17:31:12 - [INFO] -  * Restarting with stat
+31-Mar-24 17:31:13 - [INFO] - Development environment configured.
+31-Mar-24 17:31:13 - [WARNING] -  * Debugger is active!
+31-Mar-24 17:31:13 - [INFO] -  * Debugger PIN: 163-373-655
+31-Mar-24 17:32:15 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/models.py', reloading
+31-Mar-24 17:32:15 - [INFO] -  * Restarting with stat
+31-Mar-24 17:32:16 - [INFO] - Development environment configured.
+31-Mar-24 17:32:16 - [WARNING] -  * Debugger is active!
+31-Mar-24 17:32:16 - [INFO] -  * Debugger PIN: 163-373-655
+31-Mar-24 17:33:19 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+31-Mar-24 17:33:19 - [INFO] - User logged in.
+31-Mar-24 17:33:19 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 17:33:19 - [INFO] - 127.0.0.1 - - [31/Mar/2024 17:33:19] "POST /api/v2/auth/login HTTP/1.1" 200 -
+31-Mar-24 17:36:01 - [INFO] - 127.0.0.1 - - [31/Mar/2024 17:36:01] "[32mGET /api/v2/faq HTTP/1.1[0m" 308 -
+31-Mar-24 17:36:01 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+31-Mar-24 17:36:01 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+31-Mar-24 17:36:01 - [INFO] - All FAQs found : 2
+31-Mar-24 17:36:01 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 17:36:01 - [INFO] - 127.0.0.1 - - [31/Mar/2024 17:36:01] "GET /api/v2/faq/ HTTP/1.1" 200 -
+31-Mar-24 17:37:39 - [INFO] - 127.0.0.1 - - [31/Mar/2024 17:37:39] "[32mPOST /api/v2/faq HTTP/1.1[0m" 308 -
+31-Mar-24 17:37:39 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+31-Mar-24 17:37:39 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+31-Mar-24 17:37:40 - [INFO] - 127.0.0.1 - - [31/Mar/2024 17:37:40] "[35m[1mPOST /api/v2/faq/ HTTP/1.1[0m" 500 -
+31-Mar-24 17:39:55 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/faq_bp.py', reloading
+31-Mar-24 17:39:55 - [INFO] -  * Restarting with stat
+31-Mar-24 17:39:56 - [INFO] - Development environment configured.
+31-Mar-24 17:39:56 - [WARNING] -  * Debugger is active!
+31-Mar-24 17:39:56 - [INFO] -  * Debugger PIN: 163-373-655
+31-Mar-24 17:40:02 - [INFO] - 127.0.0.1 - - [31/Mar/2024 17:40:02] "[32mPOST /api/v2/faq HTTP/1.1[0m" 308 -
+31-Mar-24 17:40:02 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+31-Mar-24 17:40:02 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+31-Mar-24 17:40:02 - [INFO] - FAQ created successfully.
+31-Mar-24 17:40:02 - [INFO] - 200 - FAQ created successfully. Attachments are empty.
+31-Mar-24 17:40:02 - [INFO] - 127.0.0.1 - - [31/Mar/2024 17:40:02] "POST /api/v2/faq/ HTTP/1.1" 200 -
+31-Mar-24 17:41:13 - [INFO] - 127.0.0.1 - - [31/Mar/2024 17:41:13] "OPTIONS /api/v2/faq/ HTTP/1.1" 200 -
+31-Mar-24 17:41:13 - [INFO] - 401 - Token is incorrect
+31-Mar-24 17:41:13 - [INFO] - 127.0.0.1 - - [31/Mar/2024 17:41:13] "[31m[1mPOST /api/v2/faq/ HTTP/1.1[0m" 401 -
+31-Mar-24 17:41:26 - [INFO] - 127.0.0.1 - - [31/Mar/2024 17:41:26] "OPTIONS /api/v2/auth/newUsers HTTP/1.1" 200 -
+31-Mar-24 17:41:26 - [INFO] - 401 - Token is incorrect
+31-Mar-24 17:41:26 - [INFO] - 127.0.0.1 - - [31/Mar/2024 17:41:26] "[31m[1mGET /api/v2/auth/newUsers HTTP/1.1[0m" 401 -
+31-Mar-24 17:41:27 - [INFO] - 127.0.0.1 - - [31/Mar/2024 17:41:27] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+31-Mar-24 17:41:27 - [INFO] - 401 - Token is incorrect
+31-Mar-24 17:41:27 - [INFO] - 127.0.0.1 - - [31/Mar/2024 17:41:27] "[31m[1mGET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 401 -
+31-Mar-24 17:41:33 - [INFO] - 127.0.0.1 - - [31/Mar/2024 17:41:33] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+31-Mar-24 17:41:33 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+31-Mar-24 17:41:33 - [INFO] - User logged in.
+31-Mar-24 17:41:33 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 17:41:33 - [INFO] - 127.0.0.1 - - [31/Mar/2024 17:41:33] "POST /api/v2/auth/login HTTP/1.1" 200 -
+31-Mar-24 17:41:33 - [INFO] - 127.0.0.1 - - [31/Mar/2024 17:41:33] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+31-Mar-24 17:41:33 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+31-Mar-24 17:41:33 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+31-Mar-24 17:41:33 - [INFO] - File path is not valid: 
+31-Mar-24 17:41:33 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 17:41:33 - [INFO] - 127.0.0.1 - - [31/Mar/2024 17:41:33] "GET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+31-Mar-24 17:41:39 - [INFO] - 127.0.0.1 - - [31/Mar/2024 17:41:39] "OPTIONS /api/v2/ticket/all-tickets/7e666996a8fddf675ceada5ef31fc342?query=&filter_priority=&filter_status=resolved&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+31-Mar-24 17:41:39 - [INFO] - 404 - Provided user id does not exists. Please create account.
+31-Mar-24 17:41:39 - [INFO] - 127.0.0.1 - - [31/Mar/2024 17:41:39] "[33mGET /api/v2/ticket/all-tickets/7e666996a8fddf675ceada5ef31fc342?query=&filter_priority=&filter_status=resolved&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1[0m" 404 -
+31-Mar-24 17:42:07 - [INFO] - 127.0.0.1 - - [31/Mar/2024 17:42:07] "OPTIONS /api/v2/faq/ HTTP/1.1" 200 -
+31-Mar-24 17:42:07 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+31-Mar-24 17:42:07 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+31-Mar-24 17:42:07 - [ERROR] - FAQAPI->post : Error occured while getting form data : 'list' object has no attribute 'isspace'
+31-Mar-24 17:42:07 - [INFO] - 500 - Internal Server Error
+31-Mar-24 17:42:07 - [INFO] - 127.0.0.1 - - [31/Mar/2024 17:42:07] "[35m[1mPOST /api/v2/faq/ HTTP/1.1[0m" 500 -
+31-Mar-24 17:42:56 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/faq_bp.py', reloading
+31-Mar-24 17:42:56 - [INFO] -  * Restarting with stat
+31-Mar-24 17:42:57 - [INFO] - Development environment configured.
+31-Mar-24 17:42:57 - [WARNING] -  * Debugger is active!
+31-Mar-24 17:42:57 - [INFO] -  * Debugger PIN: 163-373-655
+31-Mar-24 17:43:14 - [INFO] - 127.0.0.1 - - [31/Mar/2024 17:43:14] "[32mPOST /api/v2/faq HTTP/1.1[0m" 308 -
+31-Mar-24 17:43:14 - [INFO] - 401 - Token is incorrect
+31-Mar-24 17:43:14 - [INFO] - 127.0.0.1 - - [31/Mar/2024 17:43:14] "[31m[1mPOST /api/v2/faq/ HTTP/1.1[0m" 401 -
+31-Mar-24 17:43:20 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+31-Mar-24 17:43:20 - [INFO] - User logged in.
+31-Mar-24 17:43:20 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 17:43:20 - [INFO] - 127.0.0.1 - - [31/Mar/2024 17:43:20] "POST /api/v2/auth/login HTTP/1.1" 200 -
+31-Mar-24 17:43:31 - [INFO] - 127.0.0.1 - - [31/Mar/2024 17:43:31] "[32mPOST /api/v2/faq HTTP/1.1[0m" 308 -
+31-Mar-24 17:43:31 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+31-Mar-24 17:43:31 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+31-Mar-24 17:43:31 - [ERROR] - FAQAPI->post : Error occured while getting form data : 'list' object has no attribute 'isspace'
+31-Mar-24 17:43:31 - [INFO] - 500 - Internal Server Error
+31-Mar-24 17:43:31 - [INFO] - 127.0.0.1 - - [31/Mar/2024 17:43:31] "[35m[1mPOST /api/v2/faq/ HTTP/1.1[0m" 500 -
+31-Mar-24 17:43:38 - [INFO] - 127.0.0.1 - - [31/Mar/2024 17:43:38] "[32mPOST /api/v2/faq HTTP/1.1[0m" 308 -
+31-Mar-24 17:43:38 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+31-Mar-24 17:43:38 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+31-Mar-24 17:43:38 - [ERROR] - FAQAPI->post : Error occured while getting form data : 'list' object has no attribute 'isspace'
+31-Mar-24 17:43:38 - [INFO] - 500 - Internal Server Error
+31-Mar-24 17:43:38 - [INFO] - 127.0.0.1 - - [31/Mar/2024 17:43:38] "[35m[1mPOST /api/v2/faq/ HTTP/1.1[0m" 500 -
+31-Mar-24 17:44:17 - [INFO] - 127.0.0.1 - - [31/Mar/2024 17:44:17] "[32mPOST /api/v2/faq HTTP/1.1[0m" 308 -
+31-Mar-24 17:44:17 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+31-Mar-24 17:44:17 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+31-Mar-24 17:44:17 - [INFO] - 400 - FAQ question and at least one tag is required
+31-Mar-24 17:44:17 - [INFO] - 127.0.0.1 - - [31/Mar/2024 17:44:17] "[31m[1mPOST /api/v2/faq/ HTTP/1.1[0m" 400 -
+31-Mar-24 17:44:58 - [INFO] - 127.0.0.1 - - [31/Mar/2024 17:44:58] "[32mPOST /api/v2/faq HTTP/1.1[0m" 308 -
+31-Mar-24 17:44:58 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+31-Mar-24 17:44:58 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+31-Mar-24 17:44:58 - [INFO] - FAQ created successfully.
+31-Mar-24 17:44:58 - [INFO] - 200 - FAQ created successfully. Attachments are empty.
+31-Mar-24 17:44:58 - [INFO] - 127.0.0.1 - - [31/Mar/2024 17:44:58] "POST /api/v2/faq/ HTTP/1.1" 200 -
+31-Mar-24 17:45:38 - [INFO] - 127.0.0.1 - - [31/Mar/2024 17:45:38] "OPTIONS /api/v2/faq/ HTTP/1.1" 200 -
+31-Mar-24 17:45:38 - [INFO] - 401 - Token is incorrect
+31-Mar-24 17:45:38 - [INFO] - 127.0.0.1 - - [31/Mar/2024 17:45:38] "[31m[1mPOST /api/v2/faq/ HTTP/1.1[0m" 401 -
+31-Mar-24 17:45:42 - [INFO] - 127.0.0.1 - - [31/Mar/2024 17:45:42] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+31-Mar-24 17:45:42 - [INFO] - 401 - Token is incorrect
+31-Mar-24 17:45:42 - [INFO] - 127.0.0.1 - - [31/Mar/2024 17:45:42] "[31m[1mGET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 401 -
+31-Mar-24 17:45:48 - [INFO] - 127.0.0.1 - - [31/Mar/2024 17:45:48] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+31-Mar-24 17:45:48 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+31-Mar-24 17:45:48 - [INFO] - User logged in.
+31-Mar-24 17:45:48 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 17:45:48 - [INFO] - 127.0.0.1 - - [31/Mar/2024 17:45:48] "POST /api/v2/auth/login HTTP/1.1" 200 -
+31-Mar-24 17:45:48 - [INFO] - 127.0.0.1 - - [31/Mar/2024 17:45:48] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+31-Mar-24 17:45:48 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+31-Mar-24 17:45:48 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+31-Mar-24 17:45:48 - [INFO] - File path is not valid: 
+31-Mar-24 17:45:48 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 17:45:48 - [INFO] - 127.0.0.1 - - [31/Mar/2024 17:45:48] "GET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+31-Mar-24 17:45:51 - [INFO] - 127.0.0.1 - - [31/Mar/2024 17:45:51] "OPTIONS /api/v2/auth/newUsers HTTP/1.1" 200 -
+31-Mar-24 17:45:51 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+31-Mar-24 17:45:51 - [INFO] - Admin role is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+31-Mar-24 17:45:51 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 17:45:51 - [INFO] - 127.0.0.1 - - [31/Mar/2024 17:45:51] "GET /api/v2/auth/newUsers HTTP/1.1" 200 -
+31-Mar-24 17:45:54 - [INFO] - 127.0.0.1 - - [31/Mar/2024 17:45:54] "OPTIONS /api/v2/ticket/all-tickets/7e666996a8fddf675ceada5ef31fc342?query=&filter_priority=&filter_status=resolved&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+31-Mar-24 17:45:54 - [INFO] - 404 - Provided user id does not exists. Please create account.
+31-Mar-24 17:45:54 - [INFO] - 127.0.0.1 - - [31/Mar/2024 17:45:54] "[33mGET /api/v2/ticket/all-tickets/7e666996a8fddf675ceada5ef31fc342?query=&filter_priority=&filter_status=resolved&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1[0m" 404 -
+31-Mar-24 17:46:09 - [INFO] - 127.0.0.1 - - [31/Mar/2024 17:46:09] "OPTIONS /api/v2/faq/ HTTP/1.1" 200 -
+31-Mar-24 17:46:09 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+31-Mar-24 17:46:09 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+31-Mar-24 17:46:09 - [ERROR] - FAQAPI->post : Error occured while getting form data : 'list' object has no attribute 'isspace'
+31-Mar-24 17:46:09 - [INFO] - 500 - Internal Server Error
+31-Mar-24 17:46:09 - [INFO] - 127.0.0.1 - - [31/Mar/2024 17:46:09] "[35m[1mPOST /api/v2/faq/ HTTP/1.1[0m" 500 -
+31-Mar-24 17:46:23 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/faq_bp.py', reloading
+31-Mar-24 17:46:23 - [INFO] -  * Restarting with stat
+31-Mar-24 17:46:23 - [INFO] - Development environment configured.
+31-Mar-24 17:46:23 - [WARNING] -  * Debugger is active!
+31-Mar-24 17:46:23 - [INFO] -  * Debugger PIN: 163-373-655
+31-Mar-24 17:47:24 - [INFO] - 127.0.0.1 - - [31/Mar/2024 17:47:24] "OPTIONS /api/v2/faq/ HTTP/1.1" 200 -
+31-Mar-24 17:47:24 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+31-Mar-24 17:47:24 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+31-Mar-24 17:47:24 - [ERROR] - FAQAPI->post : Error occured while getting form data : 'list' object has no attribute 'isspace'
+31-Mar-24 17:47:24 - [INFO] - 500 - Internal Server Error
+31-Mar-24 17:47:24 - [INFO] - 127.0.0.1 - - [31/Mar/2024 17:47:24] "[35m[1mPOST /api/v2/faq/ HTTP/1.1[0m" 500 -
+31-Mar-24 17:53:24 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/faq_bp.py', reloading
+31-Mar-24 17:53:24 - [INFO] -  * Restarting with stat
+31-Mar-24 17:53:24 - [INFO] - Development environment configured.
+31-Mar-24 17:53:24 - [WARNING] -  * Debugger is active!
+31-Mar-24 17:53:24 - [INFO] -  * Debugger PIN: 163-373-655
+31-Mar-24 17:53:31 - [INFO] - 127.0.0.1 - - [31/Mar/2024 17:53:31] "OPTIONS /api/v2/faq/ HTTP/1.1" 200 -
+31-Mar-24 17:53:31 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+31-Mar-24 17:53:31 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+31-Mar-24 17:53:31 - [ERROR] - FAQAPI->post : Error occured while getting form data : 'list' object has no attribute 'isspace'
+31-Mar-24 17:53:31 - [INFO] - 500 - Internal Server Error
+31-Mar-24 17:53:31 - [INFO] - 127.0.0.1 - - [31/Mar/2024 17:53:31] "[35m[1mPOST /api/v2/faq/ HTTP/1.1[0m" 500 -
+31-Mar-24 17:53:51 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/faq_bp.py', reloading
+31-Mar-24 17:53:51 - [INFO] -  * Restarting with stat
+31-Mar-24 17:53:51 - [INFO] - Development environment configured.
+31-Mar-24 17:53:52 - [WARNING] -  * Debugger is active!
+31-Mar-24 17:53:52 - [INFO] -  * Debugger PIN: 163-373-655
+31-Mar-24 17:53:57 - [INFO] - 127.0.0.1 - - [31/Mar/2024 17:53:57] "OPTIONS /api/v2/faq/ HTTP/1.1" 200 -
+31-Mar-24 17:53:57 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+31-Mar-24 17:53:57 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+31-Mar-24 17:53:57 - [ERROR] - FAQAPI->post : Error occured while creating a new faq : (sqlite3.ProgrammingError) Error binding parameter 4: type 'list' is not supported
+[SQL: INSERT INTO faq (id, question, solution, tags_list, created_by) VALUES (?, ?, ?, ?, ?)]
+[parameters: ('7fb5fc8d295a2eaf1c0b544644573c4e', 'this is a test faq question', 'yt hyu hihnbf fcvt', ['SE Course', 'Practice Assignment', 'OPPE'], '7e666996a8fddf675ceada5ef31fc342')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+31-Mar-24 17:53:57 - [INFO] - 500 - Error occured while creating a new faq
+31-Mar-24 17:53:57 - [INFO] - 127.0.0.1 - - [31/Mar/2024 17:53:57] "[35m[1mPOST /api/v2/faq/ HTTP/1.1[0m" 500 -
+31-Mar-24 17:55:57 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/faq_bp.py', reloading
+31-Mar-24 17:55:57 - [INFO] -  * Restarting with stat
+31-Mar-24 17:55:57 - [INFO] - Development environment configured.
+31-Mar-24 17:55:57 - [WARNING] -  * Debugger is active!
+31-Mar-24 17:55:57 - [INFO] -  * Debugger PIN: 163-373-655
+31-Mar-24 17:56:03 - [INFO] - 127.0.0.1 - - [31/Mar/2024 17:56:03] "OPTIONS /api/v2/faq/ HTTP/1.1" 200 -
+31-Mar-24 17:56:03 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+31-Mar-24 17:56:03 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+31-Mar-24 17:56:03 - [INFO] - FAQ created successfully.
+31-Mar-24 17:56:03 - [INFO] - 200 - FAQ created successfully. Attachments are empty.
+31-Mar-24 17:56:03 - [INFO] - 127.0.0.1 - - [31/Mar/2024 17:56:03] "POST /api/v2/faq/ HTTP/1.1" 200 -
+31-Mar-24 18:18:28 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:18:28] "OPTIONS /api/v2/ticket/all-tickets/7e666996a8fddf675ceada5ef31fc342?query=&filter_priority=&filter_status=resolved&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+31-Mar-24 18:18:28 - [INFO] - 404 - Provided user id does not exists. Please create account.
+31-Mar-24 18:18:28 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:18:28] "[33mGET /api/v2/ticket/all-tickets/7e666996a8fddf675ceada5ef31fc342?query=&filter_priority=&filter_status=resolved&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1[0m" 404 -
+31-Mar-24 18:21:15 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:21:15] "OPTIONS /api/v2/ticket/all-tickets/7e666996a8fddf675ceada5ef31fc342?query=ticket&filter_priority=high&filter_status=resolved&sortby=votes&sortdir=desc&filter_tags=Help,Subject,Graded+Assignment HTTP/1.1" 200 -
+31-Mar-24 18:21:15 - [INFO] - 404 - Provided user id does not exists. Please create account.
+31-Mar-24 18:21:15 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:21:15] "[33mGET /api/v2/ticket/all-tickets/7e666996a8fddf675ceada5ef31fc342?query=ticket&filter_priority=high&filter_status=resolved&sortby=votes&sortdir=desc&filter_tags=Help,Subject,Graded+Assignment HTTP/1.1[0m" 404 -
+31-Mar-24 18:22:18 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:22:18] "OPTIONS /api/v2/ticket/all-tickets/7e666996a8fddf675ceada5ef31fc342?query=&filter_priority=&filter_status=resolved&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+31-Mar-24 18:22:18 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+31-Mar-24 18:22:18 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+31-Mar-24 18:22:18 - [INFO] - All tickets found : 0
+31-Mar-24 18:22:18 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 18:22:18 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:22:18] "GET /api/v2/ticket/all-tickets/7e666996a8fddf675ceada5ef31fc342?query=&filter_priority=&filter_status=resolved&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+31-Mar-24 18:22:21 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+31-Mar-24 18:22:21 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+31-Mar-24 18:22:21 - [INFO] - All tickets found : 0
+31-Mar-24 18:22:21 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 18:22:21 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:22:21] "GET /api/v2/ticket/all-tickets/7e666996a8fddf675ceada5ef31fc342?query=&filter_priority=&filter_status=resolved&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+31-Mar-24 18:22:28 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:22:28] "OPTIONS /api/v2/auth/newUsers HTTP/1.1" 200 -
+31-Mar-24 18:22:28 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+31-Mar-24 18:22:28 - [INFO] - Admin role is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+31-Mar-24 18:22:28 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 18:22:28 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:22:28] "GET /api/v2/auth/newUsers HTTP/1.1" 200 -
+31-Mar-24 18:22:31 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:22:31] "OPTIONS /api/v2/ticket/all-tickets/7e666996a8fddf675ceada5ef31fc342?query=&filter_priority=&filter_status=resolved&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+31-Mar-24 18:22:31 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+31-Mar-24 18:22:31 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+31-Mar-24 18:22:31 - [INFO] - All tickets found : 0
+31-Mar-24 18:22:31 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 18:22:31 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:22:31] "GET /api/v2/ticket/all-tickets/7e666996a8fddf675ceada5ef31fc342?query=&filter_priority=&filter_status=resolved&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+31-Mar-24 18:22:44 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:22:44] "OPTIONS /api/v2/faq/ HTTP/1.1" 200 -
+31-Mar-24 18:22:44 - [INFO] - 404 - Provided user id does not exists. Please create account.
+31-Mar-24 18:22:44 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:22:44] "[33mGET /api/v2/faq/ HTTP/1.1[0m" 404 -
+31-Mar-24 18:24:06 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:24:06] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+31-Mar-24 18:24:06 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+31-Mar-24 18:24:06 - [INFO] - User logged in.
+31-Mar-24 18:24:06 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 18:24:06 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:24:06] "POST /api/v2/auth/login HTTP/1.1" 200 -
+31-Mar-24 18:24:06 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:24:06] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+31-Mar-24 18:24:06 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+31-Mar-24 18:24:06 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+31-Mar-24 18:24:06 - [INFO] - File path is not valid: 
+31-Mar-24 18:24:06 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 18:24:06 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:24:06] "GET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+31-Mar-24 18:24:12 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:24:12] "OPTIONS /api/v2/faq/ HTTP/1.1" 200 -
+31-Mar-24 18:24:12 - [INFO] - 404 - Provided user id does not exists. Please create account.
+31-Mar-24 18:24:12 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:24:12] "[33mGET /api/v2/faq/ HTTP/1.1[0m" 404 -
+31-Mar-24 18:25:00 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:25:00] "OPTIONS /api/v2/faq/ HTTP/1.1" 200 -
+31-Mar-24 18:25:00 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+31-Mar-24 18:25:00 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+31-Mar-24 18:25:00 - [INFO] - All FAQs found : 5
+31-Mar-24 18:25:00 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 18:25:00 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:25:00] "GET /api/v2/faq/ HTTP/1.1" 200 -
+31-Mar-24 18:25:06 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:25:06] "OPTIONS /api/v2/ticket/all-tickets/7e666996a8fddf675ceada5ef31fc342?query=&filter_priority=&filter_status=resolved&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+31-Mar-24 18:25:06 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+31-Mar-24 18:25:06 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+31-Mar-24 18:25:06 - [INFO] - All tickets found : 0
+31-Mar-24 18:25:06 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 18:25:06 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:25:06] "GET /api/v2/ticket/all-tickets/7e666996a8fddf675ceada5ef31fc342?query=&filter_priority=&filter_status=resolved&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+31-Mar-24 18:25:09 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:25:09] "OPTIONS /api/v2/auth/newUsers HTTP/1.1" 200 -
+31-Mar-24 18:25:09 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+31-Mar-24 18:25:09 - [INFO] - Admin role is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+31-Mar-24 18:25:09 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 18:25:09 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:25:09] "GET /api/v2/auth/newUsers HTTP/1.1" 200 -
+31-Mar-24 18:25:11 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:25:11] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+31-Mar-24 18:25:11 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+31-Mar-24 18:25:11 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+31-Mar-24 18:25:11 - [INFO] - File path is not valid: 
+31-Mar-24 18:25:11 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 18:25:11 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:25:11] "GET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+31-Mar-24 18:25:32 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:25:32] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+31-Mar-24 18:25:32 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+31-Mar-24 18:25:32 - [INFO] - User logged in.
+31-Mar-24 18:25:32 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 18:25:32 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:25:32] "POST /api/v2/auth/login HTTP/1.1" 200 -
+31-Mar-24 18:29:30 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:29:30] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+31-Mar-24 18:29:30 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+31-Mar-24 18:29:30 - [INFO] - User logged in.
+31-Mar-24 18:29:30 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 18:29:30 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:29:30] "POST /api/v2/auth/login HTTP/1.1" 200 -
+31-Mar-24 18:29:51 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:29:51] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+31-Mar-24 18:29:51 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+31-Mar-24 18:29:51 - [INFO] - User logged in.
+31-Mar-24 18:29:51 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 18:29:51 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:29:51] "POST /api/v2/auth/login HTTP/1.1" 200 -
+31-Mar-24 18:31:50 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:31:50] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+31-Mar-24 18:31:50 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+31-Mar-24 18:31:50 - [INFO] - User logged in.
+31-Mar-24 18:31:50 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 18:31:50 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:31:50] "POST /api/v2/auth/login HTTP/1.1" 200 -
+31-Mar-24 18:32:20 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:32:20] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+31-Mar-24 18:32:20 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+31-Mar-24 18:32:20 - [INFO] - User logged in.
+31-Mar-24 18:32:20 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 18:32:20 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:32:20] "POST /api/v2/auth/login HTTP/1.1" 200 -
+31-Mar-24 18:34:08 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:34:08] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+31-Mar-24 18:34:08 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+31-Mar-24 18:34:08 - [INFO] - User logged in.
+31-Mar-24 18:34:08 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 18:34:08 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:34:08] "POST /api/v2/auth/login HTTP/1.1" 200 -
+31-Mar-24 18:35:44 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:35:44] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+31-Mar-24 18:35:44 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+31-Mar-24 18:35:44 - [INFO] - User logged in.
+31-Mar-24 18:35:44 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 18:35:44 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:35:44] "POST /api/v2/auth/login HTTP/1.1" 200 -
+31-Mar-24 18:35:44 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:35:44] "OPTIONS /api/v2/staff/935619db4e7697ff1f163e8f40ad71fd HTTP/1.1" 200 -
+31-Mar-24 18:35:44 - [INFO] - Token is verified for the user: 935619db4e7697ff1f163e8f40ad71fd
+31-Mar-24 18:35:44 - [INFO] - User role : staff : is verified for the user: 935619db4e7697ff1f163e8f40ad71fd
+31-Mar-24 18:35:44 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:35:44] "OPTIONS /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=&sortdir=&filter_tags= HTTP/1.1" 200 -
+31-Mar-24 18:35:44 - [INFO] - File path is not valid: 
+31-Mar-24 18:35:44 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 18:35:44 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:35:44] "GET /api/v2/staff/935619db4e7697ff1f163e8f40ad71fd HTTP/1.1" 200 -
+31-Mar-24 18:35:44 - [INFO] - Token is verified for the user: 935619db4e7697ff1f163e8f40ad71fd
+31-Mar-24 18:35:44 - [INFO] - User role : staff : is verified for the user: 935619db4e7697ff1f163e8f40ad71fd
+31-Mar-24 18:35:44 - [INFO] - All tickets found : 5
+31-Mar-24 18:35:44 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 18:35:44 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:35:44] "GET /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=&sortdir=&filter_tags= HTTP/1.1" 200 -
+31-Mar-24 18:35:58 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:35:58] "OPTIONS /api/v2/ticket/all-tickets?query=&filter_priority=medium&filter_status=&sortby=&sortdir=&filter_tags=Help HTTP/1.1" 200 -
+31-Mar-24 18:35:58 - [INFO] - Token is verified for the user: 935619db4e7697ff1f163e8f40ad71fd
+31-Mar-24 18:35:58 - [INFO] - User role : staff : is verified for the user: 935619db4e7697ff1f163e8f40ad71fd
+31-Mar-24 18:35:58 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:35:58] "[35m[1mGET /api/v2/ticket/all-tickets?query=&filter_priority=medium&filter_status=&sortby=&sortdir=&filter_tags=Help HTTP/1.1[0m" 500 -
+31-Mar-24 18:37:04 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+31-Mar-24 18:37:04 - [INFO] -  * Restarting with stat
+31-Mar-24 18:37:05 - [INFO] - Development environment configured.
+31-Mar-24 18:37:05 - [WARNING] -  * Debugger is active!
+31-Mar-24 18:37:05 - [INFO] -  * Debugger PIN: 163-373-655
+31-Mar-24 18:37:38 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+31-Mar-24 18:37:39 - [INFO] -  * Restarting with stat
+31-Mar-24 18:37:39 - [INFO] - Development environment configured.
+31-Mar-24 18:37:39 - [WARNING] -  * Debugger is active!
+31-Mar-24 18:37:39 - [INFO] -  * Debugger PIN: 163-373-655
+31-Mar-24 18:38:06 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:38:06] "OPTIONS /api/v2/ticket/all-tickets?query=&filter_priority=medium&filter_status=&sortby=&sortdir=&filter_tags=Help,Live+Session HTTP/1.1" 200 -
+31-Mar-24 18:38:07 - [INFO] - Token is verified for the user: 935619db4e7697ff1f163e8f40ad71fd
+31-Mar-24 18:38:07 - [INFO] - User role : staff : is verified for the user: 935619db4e7697ff1f163e8f40ad71fd
+31-Mar-24 18:38:07 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:38:07] "[35m[1mGET /api/v2/ticket/all-tickets?query=&filter_priority=medium&filter_status=&sortby=&sortdir=&filter_tags=Help,Live+Session HTTP/1.1[0m" 500 -
+31-Mar-24 18:38:31 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:38:31] "OPTIONS /api/v2/ticket/all-tickets?query=&filter_priority=medium&filter_status=&sortby=&sortdir=&filter_tags=Help,Live+Session HTTP/1.1" 200 -
+31-Mar-24 18:38:31 - [INFO] - Token is verified for the user: 935619db4e7697ff1f163e8f40ad71fd
+31-Mar-24 18:38:31 - [INFO] - User role : staff : is verified for the user: 935619db4e7697ff1f163e8f40ad71fd
+31-Mar-24 18:38:31 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:38:31] "[35m[1mGET /api/v2/ticket/all-tickets?query=&filter_priority=medium&filter_status=&sortby=&sortdir=&filter_tags=Help,Live+Session HTTP/1.1[0m" 500 -
+31-Mar-24 18:39:25 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+31-Mar-24 18:39:26 - [INFO] -  * Restarting with stat
+31-Mar-24 18:39:26 - [INFO] - Development environment configured.
+31-Mar-24 18:39:26 - [WARNING] -  * Debugger is active!
+31-Mar-24 18:39:26 - [INFO] -  * Debugger PIN: 163-373-655
+31-Mar-24 18:39:28 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:39:28] "OPTIONS /api/v2/ticket/all-tickets?query=&filter_priority=medium&filter_status=&sortby=&sortdir=&filter_tags=Help,Live+Session HTTP/1.1" 200 -
+31-Mar-24 18:39:29 - [INFO] - Token is verified for the user: 935619db4e7697ff1f163e8f40ad71fd
+31-Mar-24 18:39:29 - [INFO] - User role : staff : is verified for the user: 935619db4e7697ff1f163e8f40ad71fd
+31-Mar-24 18:39:29 - [INFO] - All tickets found : 0
+31-Mar-24 18:39:29 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 18:39:29 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:39:29] "GET /api/v2/ticket/all-tickets?query=&filter_priority=medium&filter_status=&sortby=&sortdir=&filter_tags=Help,Live+Session HTTP/1.1" 200 -
+31-Mar-24 18:39:33 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:39:33] "OPTIONS /api/v2/ticket/all-tickets?query=&filter_priority=medium&filter_status=&sortby=&sortdir=&filter_tags= HTTP/1.1" 200 -
+31-Mar-24 18:39:33 - [INFO] - Token is verified for the user: 935619db4e7697ff1f163e8f40ad71fd
+31-Mar-24 18:39:33 - [INFO] - User role : staff : is verified for the user: 935619db4e7697ff1f163e8f40ad71fd
+31-Mar-24 18:39:33 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:39:33] "[35m[1mGET /api/v2/ticket/all-tickets?query=&filter_priority=medium&filter_status=&sortby=&sortdir=&filter_tags= HTTP/1.1[0m" 500 -
+31-Mar-24 18:39:34 - [INFO] - Token is verified for the user: 935619db4e7697ff1f163e8f40ad71fd
+31-Mar-24 18:39:34 - [INFO] - User role : staff : is verified for the user: 935619db4e7697ff1f163e8f40ad71fd
+31-Mar-24 18:39:34 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:39:34] "[35m[1mGET /api/v2/ticket/all-tickets?query=&filter_priority=medium&filter_status=&sortby=&sortdir=&filter_tags= HTTP/1.1[0m" 500 -
+31-Mar-24 18:40:09 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+31-Mar-24 18:40:09 - [INFO] -  * Restarting with stat
+31-Mar-24 18:40:10 - [INFO] - Development environment configured.
+31-Mar-24 18:40:10 - [WARNING] -  * Debugger is active!
+31-Mar-24 18:40:10 - [INFO] -  * Debugger PIN: 163-373-655
+31-Mar-24 18:40:16 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:40:16] "OPTIONS /api/v2/ticket/all-tickets?query=&filter_priority=medium&filter_status=&sortby=&sortdir=&filter_tags= HTTP/1.1" 200 -
+31-Mar-24 18:40:16 - [INFO] - Token is verified for the user: 935619db4e7697ff1f163e8f40ad71fd
+31-Mar-24 18:40:16 - [INFO] - User role : staff : is verified for the user: 935619db4e7697ff1f163e8f40ad71fd
+31-Mar-24 18:40:16 - [INFO] - All tickets found : 0
+31-Mar-24 18:40:16 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 18:40:16 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:40:16] "GET /api/v2/ticket/all-tickets?query=&filter_priority=medium&filter_status=&sortby=&sortdir=&filter_tags= HTTP/1.1" 200 -
+31-Mar-24 18:40:20 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:40:20] "OPTIONS /api/v2/ticket/all-tickets?query=&filter_priority=high&filter_status=&sortby=&sortdir=&filter_tags= HTTP/1.1" 200 -
+31-Mar-24 18:40:20 - [INFO] - Token is verified for the user: 935619db4e7697ff1f163e8f40ad71fd
+31-Mar-24 18:40:20 - [INFO] - User role : staff : is verified for the user: 935619db4e7697ff1f163e8f40ad71fd
+31-Mar-24 18:40:20 - [INFO] - All tickets found : 0
+31-Mar-24 18:40:20 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 18:40:20 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:40:20] "GET /api/v2/ticket/all-tickets?query=&filter_priority=high&filter_status=&sortby=&sortdir=&filter_tags= HTTP/1.1" 200 -
+31-Mar-24 18:40:26 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:40:26] "OPTIONS /api/v2/ticket/all-tickets?query=&filter_priority=high,low,medium&filter_status=&sortby=&sortdir=&filter_tags= HTTP/1.1" 200 -
+31-Mar-24 18:40:26 - [INFO] - Token is verified for the user: 935619db4e7697ff1f163e8f40ad71fd
+31-Mar-24 18:40:26 - [INFO] - User role : staff : is verified for the user: 935619db4e7697ff1f163e8f40ad71fd
+31-Mar-24 18:40:26 - [INFO] - All tickets found : 0
+31-Mar-24 18:40:26 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 18:40:26 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:40:26] "GET /api/v2/ticket/all-tickets?query=&filter_priority=high,low,medium&filter_status=&sortby=&sortdir=&filter_tags= HTTP/1.1" 200 -
+31-Mar-24 18:40:31 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:40:31] "OPTIONS /api/v2/ticket/all-tickets?query=&filter_priority=high,low,medium&filter_status=pending,resolved&sortby=&sortdir=&filter_tags= HTTP/1.1" 200 -
+31-Mar-24 18:40:31 - [INFO] - Token is verified for the user: 935619db4e7697ff1f163e8f40ad71fd
+31-Mar-24 18:40:31 - [INFO] - User role : staff : is verified for the user: 935619db4e7697ff1f163e8f40ad71fd
+31-Mar-24 18:40:31 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:40:31] "[35m[1mGET /api/v2/ticket/all-tickets?query=&filter_priority=high,low,medium&filter_status=pending,resolved&sortby=&sortdir=&filter_tags= HTTP/1.1[0m" 500 -
+31-Mar-24 18:40:48 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+31-Mar-24 18:40:48 - [INFO] -  * Restarting with stat
+31-Mar-24 18:40:48 - [INFO] - Development environment configured.
+31-Mar-24 18:40:48 - [WARNING] -  * Debugger is active!
+31-Mar-24 18:40:48 - [INFO] -  * Debugger PIN: 163-373-655
+31-Mar-24 18:40:50 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:40:50] "OPTIONS /api/v2/ticket/all-tickets?query=&filter_priority=high,low,medium&filter_status=pending,resolved&sortby=&sortdir=&filter_tags= HTTP/1.1" 200 -
+31-Mar-24 18:40:51 - [INFO] - Token is verified for the user: 935619db4e7697ff1f163e8f40ad71fd
+31-Mar-24 18:40:51 - [INFO] - User role : staff : is verified for the user: 935619db4e7697ff1f163e8f40ad71fd
+31-Mar-24 18:40:51 - [INFO] - All tickets found : 0
+31-Mar-24 18:40:51 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 18:40:51 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:40:51] "GET /api/v2/ticket/all-tickets?query=&filter_priority=high,low,medium&filter_status=pending,resolved&sortby=&sortdir=&filter_tags= HTTP/1.1" 200 -
+31-Mar-24 18:41:01 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:41:01] "OPTIONS /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=&sortdir=&filter_tags= HTTP/1.1" 200 -
+31-Mar-24 18:41:01 - [INFO] - Token is verified for the user: 935619db4e7697ff1f163e8f40ad71fd
+31-Mar-24 18:41:01 - [INFO] - User role : staff : is verified for the user: 935619db4e7697ff1f163e8f40ad71fd
+31-Mar-24 18:41:01 - [INFO] - All tickets found : 5
+31-Mar-24 18:41:01 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 18:41:01 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:41:01] "GET /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=&sortdir=&filter_tags= HTTP/1.1" 200 -
+31-Mar-24 18:41:09 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:41:09] "OPTIONS /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=&sortdir=&filter_tags= HTTP/1.1" 200 -
+31-Mar-24 18:41:09 - [INFO] - Token is verified for the user: 935619db4e7697ff1f163e8f40ad71fd
+31-Mar-24 18:41:09 - [INFO] - User role : staff : is verified for the user: 935619db4e7697ff1f163e8f40ad71fd
+31-Mar-24 18:41:09 - [INFO] - All tickets found : 5
+31-Mar-24 18:41:09 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 18:41:09 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:41:09] "GET /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=&sortdir=&filter_tags= HTTP/1.1" 200 -
+31-Mar-24 18:43:01 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:43:01] "OPTIONS /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=&sortdir=&filter_tags= HTTP/1.1" 200 -
+31-Mar-24 18:43:01 - [INFO] - Token is verified for the user: 935619db4e7697ff1f163e8f40ad71fd
+31-Mar-24 18:43:01 - [INFO] - User role : staff : is verified for the user: 935619db4e7697ff1f163e8f40ad71fd
+31-Mar-24 18:43:01 - [INFO] - All tickets found : 5
+31-Mar-24 18:43:01 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 18:43:01 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:43:01] "GET /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=&sortdir=&filter_tags= HTTP/1.1" 200 -
+31-Mar-24 18:44:31 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:44:31] "OPTIONS /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=&sortdir=&filter_tags= HTTP/1.1" 200 -
+31-Mar-24 18:44:31 - [INFO] - Token is verified for the user: 935619db4e7697ff1f163e8f40ad71fd
+31-Mar-24 18:44:31 - [INFO] - User role : staff : is verified for the user: 935619db4e7697ff1f163e8f40ad71fd
+31-Mar-24 18:44:31 - [INFO] - All tickets found : 5
+31-Mar-24 18:44:31 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 18:44:31 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:44:31] "GET /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=&sortdir=&filter_tags= HTTP/1.1" 200 -
+31-Mar-24 18:44:34 - [INFO] - Token is verified for the user: 935619db4e7697ff1f163e8f40ad71fd
+31-Mar-24 18:44:34 - [INFO] - User role : staff : is verified for the user: 935619db4e7697ff1f163e8f40ad71fd
+31-Mar-24 18:44:34 - [INFO] - All tickets found : 5
+31-Mar-24 18:44:34 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 18:44:34 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:44:34] "GET /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=&sortdir=&filter_tags= HTTP/1.1" 200 -
+31-Mar-24 18:45:41 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:45:41] "OPTIONS /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=&sortdir=&filter_tags= HTTP/1.1" 200 -
+31-Mar-24 18:45:41 - [INFO] - Token is verified for the user: 935619db4e7697ff1f163e8f40ad71fd
+31-Mar-24 18:45:41 - [INFO] - User role : staff : is verified for the user: 935619db4e7697ff1f163e8f40ad71fd
+31-Mar-24 18:45:41 - [INFO] - All tickets found : 5
+31-Mar-24 18:45:41 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 18:45:41 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:45:41] "GET /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=&sortdir=&filter_tags= HTTP/1.1" 200 -
+31-Mar-24 18:45:48 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:45:48] "OPTIONS /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=pending&sortby=&sortdir=&filter_tags= HTTP/1.1" 200 -
+31-Mar-24 18:45:48 - [INFO] - Token is verified for the user: 935619db4e7697ff1f163e8f40ad71fd
+31-Mar-24 18:45:48 - [INFO] - User role : staff : is verified for the user: 935619db4e7697ff1f163e8f40ad71fd
+31-Mar-24 18:45:48 - [INFO] - All tickets found : 0
+31-Mar-24 18:45:48 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 18:45:48 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:45:48] "GET /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=pending&sortby=&sortdir=&filter_tags= HTTP/1.1" 200 -
+31-Mar-24 18:45:49 - [INFO] - Token is verified for the user: 935619db4e7697ff1f163e8f40ad71fd
+31-Mar-24 18:45:49 - [INFO] - User role : staff : is verified for the user: 935619db4e7697ff1f163e8f40ad71fd
+31-Mar-24 18:45:49 - [INFO] - All tickets found : 0
+31-Mar-24 18:45:49 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 18:45:49 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:45:49] "GET /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=pending&sortby=&sortdir=&filter_tags= HTTP/1.1" 200 -
+31-Mar-24 18:45:52 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:45:52] "OPTIONS /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=&sortdir=&filter_tags= HTTP/1.1" 200 -
+31-Mar-24 18:45:52 - [INFO] - Token is verified for the user: 935619db4e7697ff1f163e8f40ad71fd
+31-Mar-24 18:45:52 - [INFO] - User role : staff : is verified for the user: 935619db4e7697ff1f163e8f40ad71fd
+31-Mar-24 18:45:52 - [INFO] - All tickets found : 5
+31-Mar-24 18:45:52 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 18:45:52 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:45:52] "GET /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=&sortdir=&filter_tags= HTTP/1.1" 200 -
+31-Mar-24 18:46:37 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:46:37] "OPTIONS /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=&sortdir=&filter_tags= HTTP/1.1" 200 -
+31-Mar-24 18:46:37 - [INFO] - Token is verified for the user: 935619db4e7697ff1f163e8f40ad71fd
+31-Mar-24 18:46:37 - [INFO] - User role : staff : is verified for the user: 935619db4e7697ff1f163e8f40ad71fd
+31-Mar-24 18:46:37 - [INFO] - All tickets found : 5
+31-Mar-24 18:46:37 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 18:46:37 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:46:37] "GET /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=&sortdir=&filter_tags= HTTP/1.1" 200 -
+31-Mar-24 18:46:41 - [INFO] - Token is verified for the user: 935619db4e7697ff1f163e8f40ad71fd
+31-Mar-24 18:46:41 - [INFO] - User role : staff : is verified for the user: 935619db4e7697ff1f163e8f40ad71fd
+31-Mar-24 18:46:41 - [INFO] - All tickets found : 5
+31-Mar-24 18:46:41 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 18:46:41 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:46:41] "GET /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=&sortdir=&filter_tags= HTTP/1.1" 200 -
+31-Mar-24 18:46:52 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:46:52] "OPTIONS /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=&sortdir=&filter_tags= HTTP/1.1" 200 -
+31-Mar-24 18:46:52 - [INFO] - Token is verified for the user: 935619db4e7697ff1f163e8f40ad71fd
+31-Mar-24 18:46:52 - [INFO] - User role : staff : is verified for the user: 935619db4e7697ff1f163e8f40ad71fd
+31-Mar-24 18:46:52 - [INFO] - All tickets found : 5
+31-Mar-24 18:46:52 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 18:46:52 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:46:52] "GET /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=&sortdir=&filter_tags= HTTP/1.1" 200 -
+31-Mar-24 18:47:31 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:47:31] "OPTIONS /api/v2/staff/935619db4e7697ff1f163e8f40ad71fd HTTP/1.1" 200 -
+31-Mar-24 18:47:31 - [INFO] - Token is verified for the user: 935619db4e7697ff1f163e8f40ad71fd
+31-Mar-24 18:47:31 - [INFO] - User role : staff : is verified for the user: 935619db4e7697ff1f163e8f40ad71fd
+31-Mar-24 18:47:31 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:47:31] "OPTIONS /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=&sortdir=&filter_tags= HTTP/1.1" 200 -
+31-Mar-24 18:47:31 - [INFO] - File path is not valid: 
+31-Mar-24 18:47:31 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 18:47:31 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:47:31] "GET /api/v2/staff/935619db4e7697ff1f163e8f40ad71fd HTTP/1.1" 200 -
+31-Mar-24 18:47:31 - [INFO] - Token is verified for the user: 935619db4e7697ff1f163e8f40ad71fd
+31-Mar-24 18:47:31 - [INFO] - User role : staff : is verified for the user: 935619db4e7697ff1f163e8f40ad71fd
+31-Mar-24 18:47:31 - [INFO] - All tickets found : 5
+31-Mar-24 18:47:31 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 18:47:31 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:47:31] "GET /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=&sortdir=&filter_tags= HTTP/1.1" 200 -
+31-Mar-24 18:47:34 - [INFO] - Token is verified for the user: 935619db4e7697ff1f163e8f40ad71fd
+31-Mar-24 18:47:34 - [INFO] - User role : staff : is verified for the user: 935619db4e7697ff1f163e8f40ad71fd
+31-Mar-24 18:47:34 - [INFO] - All tickets found : 5
+31-Mar-24 18:47:34 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 18:47:34 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:47:34] "GET /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=&sortdir=&filter_tags= HTTP/1.1" 200 -
+31-Mar-24 18:47:48 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:47:48] "OPTIONS /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=&sortdir=&filter_tags= HTTP/1.1" 200 -
+31-Mar-24 18:47:48 - [INFO] - Token is verified for the user: 935619db4e7697ff1f163e8f40ad71fd
+31-Mar-24 18:47:48 - [INFO] - User role : staff : is verified for the user: 935619db4e7697ff1f163e8f40ad71fd
+31-Mar-24 18:47:48 - [INFO] - All tickets found : 5
+31-Mar-24 18:47:48 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 18:47:48 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:47:48] "GET /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=&sortdir=&filter_tags= HTTP/1.1" 200 -
+31-Mar-24 18:48:42 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:48:42] "OPTIONS /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=&sortdir=&filter_tags= HTTP/1.1" 200 -
+31-Mar-24 18:48:42 - [INFO] - Token is verified for the user: 935619db4e7697ff1f163e8f40ad71fd
+31-Mar-24 18:48:42 - [INFO] - User role : staff : is verified for the user: 935619db4e7697ff1f163e8f40ad71fd
+31-Mar-24 18:48:43 - [INFO] - All tickets found : 5
+31-Mar-24 18:48:43 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 18:48:43 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:48:43] "GET /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=&sortdir=&filter_tags= HTTP/1.1" 200 -
+31-Mar-24 18:49:03 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:49:03] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+31-Mar-24 18:49:03 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+31-Mar-24 18:49:03 - [INFO] - User logged in.
+31-Mar-24 18:49:03 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 18:49:03 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:49:03] "POST /api/v2/auth/login HTTP/1.1" 200 -
+31-Mar-24 18:49:03 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:49:03] "OPTIONS /api/v2/staff/935619db4e7697ff1f163e8f40ad71fd HTTP/1.1" 200 -
+31-Mar-24 18:49:03 - [INFO] - Token is verified for the user: 935619db4e7697ff1f163e8f40ad71fd
+31-Mar-24 18:49:03 - [INFO] - User role : staff : is verified for the user: 935619db4e7697ff1f163e8f40ad71fd
+31-Mar-24 18:49:03 - [INFO] - File path is not valid: 
+31-Mar-24 18:49:03 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 18:49:03 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:49:03] "GET /api/v2/staff/935619db4e7697ff1f163e8f40ad71fd HTTP/1.1" 200 -
+31-Mar-24 18:49:03 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:49:03] "OPTIONS /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=&sortdir=&filter_tags= HTTP/1.1" 200 -
+31-Mar-24 18:49:03 - [INFO] - Token is verified for the user: 935619db4e7697ff1f163e8f40ad71fd
+31-Mar-24 18:49:03 - [INFO] - User role : staff : is verified for the user: 935619db4e7697ff1f163e8f40ad71fd
+31-Mar-24 18:49:03 - [INFO] - All tickets found : 5
+31-Mar-24 18:49:03 - [INFO] - 200 - Custom success 200 response sent
+31-Mar-24 18:49:03 - [INFO] - 127.0.0.1 - - [31/Mar/2024 18:49:03] "GET /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=&sortdir=&filter_tags= HTTP/1.1" 200 -
