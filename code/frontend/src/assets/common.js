@@ -5,7 +5,7 @@ const VERSION = "v2";
 
 const AUTH_API_PREFIX = `/api/${VERSION}/auth`;
 const STUDENT_API_PREFIX = `/api/${VERSION}/student`;
-const SUPPORT_API_PREFIX = `/api/${VERSION}/support`;
+const SUPPORT_API_PREFIX = `/api/${VERSION}/staff`;
 const ADMIN_API_PREFIX = `/api/${VERSION}/admin`;
 const FAQ_API_PREFIX = `/api/${VERSION}/faq/`;
 const TICKET_API_PREFIX = `/api/${VERSION}/ticket`
@@ -24,7 +24,7 @@ const TICKET_API_ALLTICKETS = `${BASEURL}${TICKET_API_PREFIX}/all-tickets`
 
 
 const STUDENT_ROUTES = ['/student', '/student-home', "/student-create-ticket", "/student-my-tickets", "/common-faqs", "/user-profile"]
-const SUPPORT_ROUTES = ['/support', '/support-home', "/support-my-tickets", "/common-faqs", "/user-profile"]
+const SUPPORT_ROUTES = ['/staff', '/staff-home', "/staff-my-tickets", "/common-faqs", "/user-profile"]
 const ADMIN_ROUTES = ['/admin', '/admin-home', "/admin-create-faq", "/admin-validate-users", "/common-faqs", "/user-profile"]
 
 const STUDENT_NAV_BUTTONS = [
@@ -36,8 +36,8 @@ const STUDENT_NAV_BUTTONS = [
 ]
 
 const SUPPORT_NAV_BUTTONS = [
-  { id: 1, title: "Home", link: "/support-home", active: false },
-  { id: 2, title: "My Tickets", link: "/support-my-tickets", active: false },
+  { id: 1, title: "Home", link: "/staff-home", active: false },
+  { id: 2, title: "My Tickets", link: "/staff-my-tickets", active: false },
   { id: 3, title: "FAQs", link: "/common-faqs", active: false },
   { id: 4, title: "Logout", link: "#", active: false },
 ]
