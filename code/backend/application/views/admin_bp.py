@@ -171,7 +171,7 @@ class AdminAPI(Resource):
                             if (elem[0] == "Staff" and elem[1] == 0)
                         ]
                     )
-                    print(user.authentication)
+                    
 
                     admin_dict = admin_util.convert_user_data_to_dict(user)
                     
@@ -187,7 +187,7 @@ class AdminAPI(Resource):
                     admin_dict["n_admin"] = n_admin
                     admin_dict["n_student_new"] = n_student_new
                     admin_dict["n_support_new"] = n_support_new
-                    print(admin_dict)
+                    
                     return success_200_custom(data=admin_dict)
                 else:
                     raise BadRequest(status_msg="User must be a Admin.")
