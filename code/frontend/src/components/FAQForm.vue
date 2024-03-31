@@ -66,12 +66,9 @@ export default {
       form: {
         question: "",
         solution: "",
-        tags: [],
-        tag_1: "",
-        tag_2: "",
-        tag_3: "",
-        attachments: [],
+        tags_list: [],
         created_by: "",
+        attachments: [],
       },
       show: true,
       user_id: this.$store.getters.get_user_id,
@@ -81,13 +78,14 @@ export default {
   methods: {
     onFileUpload(value) {
       this.form.attachments.splice(0, this.form.attachments.length, ...value);
+      console.log("Attachments uploaded:", this.form.attachments);
     },
     onSubmit(event) {
       if (event && event.preventDefault) {
         event.preventDefault();
       }
 
-      if (this.form.tags.length == 0 && this.check_question && this.check_solution) {
+      if (this.form.tags_list.length == 0 && this.check_question == false && this.check_solution == false) {
         alert(
           "Choose atleast 1 tag, question should be atleast 5 characters long and solution should be 5 character long."
         );
@@ -95,20 +93,16 @@ export default {
         alert('Submitting form. Click "Ok" to proceed?');
         this.$log.info("Submitting FAQ form");
 
-        for (let i in this.form.tags) {
-          if (this.form.tags[i]) {
-            this.form[`tag_${parseInt(i) + 1}`] = this.form.tags[i];
-          }
-        }
 
         this.form.created_by = this.user_id.toString();
+        console.log("Form data:", this.form);
 
         fetch(common.FAQ_API, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
-            web_token: this.$store.getters.get_web_token,
-            user_id: this.user_id,
+            webtoken: this.$store.getters.get_web_token,
+            userid: this.user_id,
           },
           body: JSON.stringify(this.form),
         })
@@ -140,10 +134,7 @@ export default {
       }
       this.form.question = "";
       this.form.solution = "";
-      this.form.tags = [];
-      this.form.tag_1 = "";
-      this.form.tag_2 = "";
-      this.form.tag_3 = "";
+      this.form.tags_list = [];
       this.form.attachments = [];
       this.form.created_by = "";
       this.show = false;
@@ -152,12 +143,14 @@ export default {
       });
     },
     onTagsChanged(value) {
-      this.form.tags = value;
+      this.form.tags_list = value;
+      console.log("Tags changed:", this.form.tags_list);
     },
   },
   computed: {
     check_question() {
       return this.form.question.length > 5 ? true : false;
+      
     },
     check_solution() {
       return this.form.solution.length > 5 ? true : false;
