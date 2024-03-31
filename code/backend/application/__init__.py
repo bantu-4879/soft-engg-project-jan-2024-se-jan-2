@@ -74,6 +74,24 @@ def create_app(env_type="dev"):
         db.session.add(role3)
         db.session.commit()
 
+    if not os.path.exists(TestingConfig.db_path):
+        db.create_all()
+        app.app_context().push()
+        print("the database is getting created.")
+        role1=Role(
+            name="Admin"
+        )
+        role2=Role(
+            name="Staff"
+        )
+        role3=Role(
+            name="Student"
+        )
+        db.session.add(role1)
+        db.session.add(role2)
+        db.session.add(role3)
+        db.session.commit()
+
     #gchat_webhook()
     #post_message(0,"This is a test message!","inbox")
     return app

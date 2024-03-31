@@ -16,7 +16,7 @@ headers = {
 def test_register_page_with_fixture_get(test_client):
     """
     GIVEN a Flask application configured for testing
-    WHEN the '/api/v1/auth/register' page is requested (GET)
+    WHEN the '/api/v2/auth/register' page is requested (GET)
     THEN check that the response is 405 i.e. method not allowed as no get method is defined for that endpoint
     """
     response = test_client.get(

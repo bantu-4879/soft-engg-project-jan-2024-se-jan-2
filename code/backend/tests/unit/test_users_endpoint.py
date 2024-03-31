@@ -8,7 +8,7 @@ from conftest import (
     admin_web_token,
 )
 from application.database import db
-from application.models import Auth
+from application.models import Authentication
 
 # --------------------  Tests  --------------------
 

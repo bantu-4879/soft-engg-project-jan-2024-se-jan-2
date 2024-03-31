@@ -1,6 +1,6 @@
 from application import create_app
 import pytest
-from application.logger import logger
+from application.logger import logger 
 
 
 
