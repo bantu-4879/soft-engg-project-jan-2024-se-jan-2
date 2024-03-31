@@ -61,12 +61,12 @@ const routes = [
     component: UserProfile,
   },
   {
-    path: '/support-home',
+    path: '/staff-home',
     name: 'SupportHome',
     component: SupportHome,
   },
   {
-    path: '/support-my-tickets',
+    path: '/staff-my-tickets',
     name: 'SupportMyTickets',
     component: SupportMyTickets,
   },
@@ -114,7 +114,7 @@ router.beforeEach((to, from, next) => {
     const role = store.state.user.role;
 
     if (((role === 'student') && (common.STUDENT_ROUTES.includes(to.path)))
-      || ((role === 'support') && (common.SUPPORT_ROUTES.includes(to.path)))
+      || ((role === 'staff') && (common.SUPPORT_ROUTES.includes(to.path)))
       || ((role === 'admin') && (common.ADMIN_ROUTES.includes(to.path)))) {
       return next();
     }
