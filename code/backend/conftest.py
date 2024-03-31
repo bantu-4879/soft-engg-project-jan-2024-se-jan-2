@@ -7,15 +7,15 @@ from application.logger import logger
 # Please set following required constants to mimic a specific user role.
 
 # STUDENT
-student_user_id = "963144cc7c2592c25b6e9ec020f90e3d"
-student_web_token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hcnkuZG9lQGV4YW1wbGUuY29tIiwiZXhwaXJ5IjoxNzEyNzMzODEzfQ.0Q2fmfFRYyDlM0Bw5CyU5wdMrtEq2GWfK643nc5Iy1Q"
+student_user_id = "7e2a3837cce86cdc7d198ab20275984f"
+student_web_token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InR1c2hhckBnbWFpbC5jb20iLCJleHBpcnkiOjE3MTI3NTczNDF9.gDMGW_A8Bc0sVIWM464wI6i6qBn9g2KGGkBQJx56YM8"
  
 # SUPPORT
 support_user_id = "fb58cddff315e18f87a86f94dc191891"
 support_web_token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1heC5kb2VAZXhhbXBsZS5jb20iLCJleHBpcnkiOjE3MTE3OTI4NTh9.-E6BeaQRSb9ULY2spHRBDE5obB5Hy6HD4TzYajcpCSI"
 # ADMIN
-admin_user_id = "23463b99b62a72f26ed677cc556c44e8"
-admin_web_token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImV4YW1wbGVAZXhhbXBsZS5jb20iLCJleHBpcnkiOjE3MTE3Mzc5NDd9.COw3CXy9EpT2RDDaQgZ54k8ap4V0x-dGi7gSv2molJo"
+admin_user_id = "7a848f03778ea5e30de4dc6850c6b67e"
+admin_web_token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1heEBnbWFpbC5jb20iLCJleHBpcnkiOjE3MTI3NTcxNzF9.Te9-HyOU-ihXOlRKIn2Tiq1xHw6HBmyKTLG062Fc15k"
 # --------------------  Code  --------------------
 
 # before testing set current dir to `\code\backend`

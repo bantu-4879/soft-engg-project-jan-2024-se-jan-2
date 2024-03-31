@@ -58,11 +58,11 @@ def test_register_page_with_fixture_post_200_success(test_client):
         f"/api/{API_VERSION}/auth/register",
         json={
             "first_name": "tushar",
-            "last_name": "",
+            "second_name": "",
             "email": random_email,
             "password": "1234",
             "retype_password": "1234",
-            "role": "student",
+            "role": "Student",
         },
         headers=headers,
     )
@@ -81,11 +81,11 @@ def test_register_page_with_fixture_post_409_email_exists(test_client):
         f"/api/{API_VERSION}/auth/register",
         json={
             "first_name": "tushar",
-            "last_name": "",
+            "second_name": "",
             "email": "tushar@gmail.com",
             "password": "1234",
             "retype_password": "1234",
-            "role": "student",
+            "role": "Student",
         },
         headers=headers,
     )
@@ -104,7 +104,7 @@ def test_register_page_with_fixture_post_400_invalid_data(test_client):
         f"/api/{API_VERSION}/auth/register",
         json={
             "first_name": "tushar",
-            "last_name": "",
+            "second_name": "",
             "email": "tushar@gmail.com",
             "password": "12345",
             "retype_password": "1234",
@@ -184,14 +184,14 @@ def test_login_page_with_fixture_post_200_success(test_client):
     response = test_client.post(
         f"/api/{API_VERSION}/auth/login",
         json={
-            "email": "tushar_dummy@gmail.com",
+            "email": "tushar@gmail.com",
             "password": "1234",
         },
         headers=headers,
     )
     response = response.get_json()
     assert response["status"] == 200
-    assert response["message"]["first_name"] == "dummy"
+    assert response["message"]["first_name"] == "tushar"
 
 
 def test_newusers_page_with_fixture_get_200(test_client):
