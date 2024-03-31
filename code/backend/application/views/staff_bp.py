@@ -25,7 +25,7 @@ staff_util = StaffUtils()
 
 class StaffAPI(Resource):
     @token_required
-    @users_required(users=["Staff"])
+    @users_required(users=["staff"])
     def get(self, user_id):
         """
         Usage
@@ -74,7 +74,7 @@ class StaffAPI(Resource):
                 raise NotFoundError(status_msg="Support staff does not exists")
 
     @token_required
-    @users_required(users=["Staff"])
+    @users_required(users=["staff"])
     def put(self, user_id):
         """
         Usage
