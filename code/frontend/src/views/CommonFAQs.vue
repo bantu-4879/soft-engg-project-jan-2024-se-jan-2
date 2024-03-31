@@ -69,7 +69,7 @@ export default {
     if (user_role == "student") {
       this.id_ = 4;
     }
-    if (user_role == "support") {
+    if (user_role == "staff") {
       this.id_ = 3;
     }
     if (user_role == "admin") {
@@ -85,8 +85,8 @@ export default {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
-        web_token: this.$store.getters.get_web_token,
-        user_id: this.user_id,
+        webtoken: this.$store.getters.get_web_token,
+        userid: this.user_id,
       },
     })
       .then((response) => response.json())
