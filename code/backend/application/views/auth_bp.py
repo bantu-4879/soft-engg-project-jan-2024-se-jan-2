@@ -297,7 +297,8 @@ class NewUsers(Resource):
         # get new users data from auth table
         try:
             all_users = (
-                User.query.join(User.role).filter(Role.name.in_(["Student", "Staff"])).all()
+                User.query.join(User.role).filter(Role.name.in_(["student", "staff"])).filter(User.is_approved == 0).all()
+
             )
         except Exception as e:
             logger.error(f"NewUsers->get : Error occured while fetching db data : {e}")
