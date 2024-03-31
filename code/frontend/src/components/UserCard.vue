@@ -44,8 +44,8 @@ export default {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
-          web_token: this.$store.getters.get_web_token,
-          user_id: this.user_id,
+          webtoken: this.$store.getters.get_web_token,
+          userid: this.user_id,
         },
         body: JSON.stringify({
           user_id: this.new_user_id,
@@ -79,8 +79,8 @@ export default {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
-          web_token: this.$store.getters.get_web_token,
-          user_id: this.user_id,
+          webtoken: this.$store.getters.get_web_token,
+          userid: this.user_id,
         },
         body: JSON.stringify({
           user_id: this.new_user_id,
