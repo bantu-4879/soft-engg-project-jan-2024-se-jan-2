@@ -151,10 +151,10 @@ class UserUtils:
 
         if hasattr(user, 'role'):
             role_data = vars(user.role)
-            role_data = {
-                'role_name': auth_data.get('name', ''),
+            rol_data = {
+                'role_name': role_data.get('name', ''),
             }
-            user_dict['role'] = role_data
+            user_dict['role'] = rol_data
 
         profile_pic = user_dict["profile_photo_loc"]
         if is_img_path_valid(profile_pic):
