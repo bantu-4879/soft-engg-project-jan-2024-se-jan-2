@@ -77,7 +77,7 @@ class Tags(db.Model):
 #Following is the relationship table between tickets and tags 
 class Tickets_Tags(db.Model):
     id=db.Column(db.Integer, primary_key=True)
-    tag_id=db.Column(db.Integer,db.ForeignKey('tag.id'),nullable=False),
+    tag_id=db.Column(db.Integer,db.ForeignKey('tag.id'),nullable=False)
     ticket_id=db.Column(db.String(100),db.ForeignKey('ticket.id'),nullable=False)
 
 
