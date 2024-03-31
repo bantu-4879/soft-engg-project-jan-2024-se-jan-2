@@ -3,8 +3,8 @@
 # - update tags
 # - delete tags
 
-
-from flask import Blueprint, request
+import json
+from flask import Blueprint, request, jsonify
 from flask_restful import Api, Resource
 from application.logger import logger
 import hashlib
@@ -50,7 +50,8 @@ tags_util = TagsUtil()
 
 
 class TagsAPI(Resource):
-
+    @token_required
+    @users_required(users=["Student", "Staff","Admin"])
     def get(self):
         # this method is used to get all of the available tags
         try:
@@ -65,6 +66,8 @@ class TagsAPI(Resource):
             logger.error(f"TagsAPI->get : Error occured while fetching Tag data : {e}")
             raise InternalServerError
 
+    @token_required
+    @users_required(users=["Staff","Admin"])
     def post(self):
         details = {"name": "", "description": ""}
         try:
@@ -95,6 +98,8 @@ class TagsAPI(Resource):
                 logger.info("Tag created successfully.")
                 raise Success_200(status_msg="Tag created successfully")
 
+    @token_required
+    @users_required(users=["Staff","Admin"])
     def put(self, tag_id=-1):
         details = {"name": "", "description": ""}
         try:
@@ -134,6 +139,9 @@ class TagsAPI(Resource):
                         logger.info("Tag updated successfully")
                         raise Success_200(status_msg="Tag updated successfully")
 
+
+    @token_required
+    @users_required(users=["Staff","Admin"])
     def delete(self, tag_id=-1):
         try:
             tag = Tags.query.filter_by(id=tag_id).first()
@@ -157,17 +165,30 @@ tags_api.add_resource(TagsAPI, "/<int:tag_id>")
 
 
 class TicketTagsAPI(Resource):
+
+    # @token_required
+    # @users_required(users=["Student", "Staff","Admin"])
     def get(self, ticket_id=""):
-        raise Success_200(status_msg="success")
+        #raise Success_200(status_msg="success")
         if tags_util.is_blank(ticket_id):
             raise BadRequest(status_msg="Ticket id is missing.")
         try:
             ticket_tags = []
+            ticket_tag_ids = []
             tags_ids = Tickets_Tags.query.filter_by(ticket_id=ticket_id).all()
-            for i in range(len(tags_ids)):
-                tag_obj = Tags.query.filter_by(id=tags_ids[i].tag_id)
-                t = tags_util.convert_tags_to_dict(tag_obj)
+            for tag in tags_ids:
+                t = tags_util.convert_ticket_tags_to_dict(tag)
+                ticket_tag_ids.append(t)
+            #print(ticket_tag_ids)
+            tag_objs = []
+            for i in range(len(ticket_tag_ids)):
+                tag_obj = Tags.query.filter_by(id=ticket_tag_ids[i]['id']).first()
+                tag_objs.append(tag_obj)
+
+            for tag in tag_objs: 
+                t = tags_util.convert_tags_to_dict(tag)
                 ticket_tags.append(t)
+
             #print(ticket_tags)
             logger.info(f"All ticket tags found!")
             return success_200_custom(data=ticket_tags)
@@ -177,6 +198,8 @@ class TicketTagsAPI(Resource):
             )
             raise InternalServerError
 
+    # @token_required
+    # @users_required(users=["Student", "Staff","Admin"])
     def post(self, ticket_id=""):
         details = {
             "tag_ids": [],
@@ -220,13 +243,32 @@ class TicketTagsAPI(Resource):
                             )
                     raise Success_200(status_msg="Tags added successfully")
 
+    # @token_required
+    # @users_required(users=["Student", "Staff","Admin"])
     def put(self):
         details = {
             "tags_ids":[]
         }
         raise Success_200(status_msg="Tags updated successfully")
 
+    # @token_required
+    # @users_required(users=["Student", "Staff","Admin"])
     def delete(self, ticket_id=""):
+        try:
+            #deletes the first instance of the ticket tags in the model Tickets_Tags
+            tags = Tickets_Tags.query.filter_by(ticket_id=ticket_id).first()
+        except Exception as e:
+            logger.error(
+                f"TicketTagsAPI->delete : Error occured while fetching the tags : {e}"
+            )
+            raise InternalServerError
+        else:
+            if tags:
+                db.session.delete(tags)
+                db.session.commit()
+                raise Success_200(status_msg="Tag Deleted")
+            else:
+                raise NotFoundError(status_msg="Tag Does Not Exist")
         raise Success_200(status_msg="Tags deleted successfully")
 
 

@@ -269,9 +269,7 @@ class TicketUtils(UserUtils):
         return voter_list
     
 
-    def get_ticket_comments(self,ticket_id):
-        comments = TicketComments.query.filter_by(ticket_id=ticket_id).all()
-        print(comments)
+    def get_ticket_comments(self,comments):
         ticket_comments = vars(comments)  # verify if this properly converts obj to dict
         if "_sa_instance_state" in ticket_comments:
             del ticket_comments["_sa_instance_state"]
@@ -791,7 +789,6 @@ ticket_api.add_resource(AllTicketsUserAPI, "/all-tickets/<string:user_id>")
 
 class TicketCommentAPI(Resource):
     def get(self, ticket_id=""):
-        raise Success_200(status_msg="success")
         if ticket_utils.is_blank(ticket_id) :
             raise BadRequest(status_msg="Ticket id is missing.")
 
@@ -805,7 +802,12 @@ class TicketCommentAPI(Resource):
             raise InternalServerError
         else:
             if ticket:
-                ticket_comments = ticket_utils.get_ticket_comments(ticket.id) #issue stemming from this function
+                ticket_comments = []
+                comments = TicketComments.query.filter_by(ticket_id=ticket.id).all()
+                for comment in comments: 
+                    c = ticket_utils.get_ticket_comments(comment)
+                    #ticket_comments = ticket_utils.get_ticket_comments(comments) #issue stemming from this function
+                    ticket_comments.append(c)
                 return success_200_custom(data=ticket_comments)
             else:
                 raise NotFoundError(status_msg="Ticket does not exists")
@@ -861,15 +863,99 @@ class TicketCommentAPI(Resource):
             else: 
                 raise NotFoundError(status_msg="Ticket does not exists")
 
+#ISSUE - commenter updating to null every time the put method is called
+    def put(self, comment_id=-1, ticket_id="", user_id=""):
+        details = {
+            "comment": "",
+            "user_mentions" : [],
+            "reactions" : ""
+        }
+        if ticket_utils.is_blank(ticket_id) or comment_id == -1:
+            raise BadRequest(status_msg="Ticket id or comment id is missing.")
+
+        # check if ticket exists
+        try:
+            ticket = Ticket.query.filter_by(id=ticket_id).first()
+        except Exception as e:
+            logger.error(
+                f"TicketCommentAPI->post : Error occured while fetching ticket data : {e}"
+            )
+            raise InternalServerError
+        else:
+            if ticket: 
+                try:
+                    form = request.get_json()
+                    for key in details:
+                        value = form.get(key, "")
+                        details[key] = value
+                except Exception as e:
+                    logger.error(
+                        f"TicketCommentAPI->put : Error occured while getting form data : {e}"
+                    )
+                    raise InternalServerError
+                else:
+                    try:
+                        comment = TicketComments.query.filter_by(id=comment_id).first()
+                    except Exception as e:
+                        logger.error(
+                            f"TicketCommentAPI->put : Error occured while fetching the comment : {e}"
+                        )
+                        raise InternalServerError
+                    else: 
+                        print(comment.commenter)
+                        if comment and comment.commenter == user_id: 
+                            comment.comment = details['comment']
+                            comment.commenter = user_id
+                            comment.user_mentions = details["user_mentions"]
+                            comment.reactions = details["reactions"]
+                    try:
+                        db.session.commit()
+                    except Exception as e:
+                        logger.error(
+                            f"TicketCommentAPI->put : Error occured while updating comment : {e}"
+                        )
+                        raise InternalServerError(
+                            status_msg="Error occured while updating comment"
+                        )
+                    else:
+                        logger.info("Comment updated successfully.")
+                        raise Success_200(status_msg="Ticket comment updated successfully.")
+            else: 
+                raise NotFoundError(status_msg="Ticket does not exists")
+        #raise Success_200(status_msg="Ticket Comment updated successfully")
 
 
-    def put(self, ticket_id=""):
-        raise Success_200(status_msg="Ticket Comment updated successfully")
+    def delete(self, ticket_id="", comment_id=-1, user_id=""):
+        if ticket_utils.is_blank(ticket_id) :
+            raise BadRequest(status_msg="Ticket id is missing.")
         
-    def delete(self, ticket_id=""):
-        raise Success_200(status_msg="Ticket Comment deleted successfully")
+        try: 
+            ticket = Ticket.query.filter_by(id=ticket_id).first()
+        except: 
+            logger.error(f"TicketCommentAPI->get : Error occured while fetching ticket data : {e}")
+            raise InternalServerError
+        else: 
+            if ticket: 
 
-ticket_api.add_resource(TicketCommentAPI, "/comments/<string:ticket_id>", endpoint="ticket_comment_get")
+                try:
+                    comment = TicketComments.query.filter_by(id=comment_id).first()
+                except Exception as e:
+                    logger.error(
+                        f"TicketCommentAPI->delete : Error occured while fetching the comment : {e}"
+                    )
+                    raise InternalServerError
+                else:
+                    if comment and comment.commenter == user_id:
+                        db.session.delete(comment)
+                        db.session.commit()
+                        raise Success_200(status_msg="Comment Deleted")
+                    else:
+                        raise NotFoundError(status_msg="Comment Does Not Exist")
+
+ticket_api.add_resource(TicketCommentAPI, "/comments/<string:ticket_id>", endpoint="ticket_comment")
+ticket_api.add_resource(TicketCommentAPI, "/comments/<string:ticket_id>/<int:comment_id>/<string:user_id>", endpoint="comment_update_delete")
+#ticket_api.add_resource(TicketCommentAPI, "/comments/<string:ticket_id>/<int:comment_id>/", endpoint="comment_delete")
+
 
 
 
