@@ -104,7 +104,7 @@ export default new Vuex.Store({
         alert("Token Expired. Please login again");
         context.commit('SET_STATE_AFTER_LOGOUT', payload);
         router.push("/login");
-      }, 1 * 60 * 1000);  // 1000 means 1 sec
+      }, 60 * 60 * 1000);  // 1000 means 1 sec
       context.commit('SET_TIMEOUT_ID', timeout_id);
     },
   },
