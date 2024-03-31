@@ -1,10 +1,3 @@
-# Online Support Ticket Application
-# Tushar Supe : 21f1003637
-# Vaidehi Agarwal: 21f1003880
-# File Info: This is testing file for ticket endpoints.
-
-# --------------------  Imports  --------------------
-
 from application.globals import API_VERSION
 from conftest import (
     student_user_id,

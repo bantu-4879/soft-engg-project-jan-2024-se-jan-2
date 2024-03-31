@@ -1,10 +1,3 @@
-# Online Support Ticket Application
-# Tushar Supe : 21f1003637
-# Vaidehi Agarwal: 21f1003880
-# File Info: This is testing file for common utils.
-
-# --------------------  Imports  --------------------
-
 from application.globals import API_VERSION
 from conftest import (
     admin_user_id,
