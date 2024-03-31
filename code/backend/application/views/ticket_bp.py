@@ -168,7 +168,7 @@ class TicketUtils(UserUtils):
         filtered_tickets = []
         if tags:
             for ticket in all_tickets:
-                ticket_tags = ticket["tags"].split(',') #converts tags list into a list
+                ticket_tags = ticket["tags_list"].split(',') #converts tags list into a list
                 if set(ticket_tags).intersection(set(tags)):
                     filtered_tickets.append(ticket)
 
@@ -183,7 +183,7 @@ class TicketUtils(UserUtils):
         filtered_tickets = []
         if status:
             for ticket in all_tickets:
-                if ticket["status"] in status:
+                if ticket["ticket_status"] in status:
                     filtered_tickets.append(ticket)
 
             return filtered_tickets
@@ -197,7 +197,7 @@ class TicketUtils(UserUtils):
         filtered_tickets = []
         if priority:
             for ticket in all_tickets:
-                if ticket["priority"] in priority:
+                if ticket["ticket_priority"] in priority:
                     filtered_tickets.append(ticket)
 
             return filtered_tickets
@@ -291,8 +291,8 @@ ticket_api = Api(ticket_bp)
 ticket_utils = TicketUtils()
 
 class TicketAPI(Resource):
-    # @token_required
-    # @users_required(users=["Student", "Staff", "Admin"])
+    @token_required
+    @users_required(users=["student", "staff", "admin"])
     def get(self, ticket_id="", user_id=""):
         """
         Usage
@@ -323,7 +323,7 @@ class TicketAPI(Resource):
         else:
             if ticket:
                 user = User.query.filter_by(id=user_id).first()
-                if user_id == ticket.user_id or user.role == "Staff":
+                if user_id == ticket.user_id or user.role == "staff":
                     # the ticket and its user are matched or its a support staff
                     # convert to list of dict
                     ticket_dict = ticket_utils.convert_ticket_to_dict(ticket)
@@ -332,7 +332,7 @@ class TicketAPI(Resource):
                 raise NotFoundError(status_msg="Ticket does not exists")
 
     @token_required
-    @users_required(users=["Student"])
+    @users_required(users=["student"])
     def post(self, user_id):
         """
         Usage
@@ -350,9 +350,9 @@ class TicketAPI(Resource):
         details = {
             "title": "",
             "description": "",
-            "ticket_priority": "",
-            "tag": "",
-            "ticket_status":"Open",
+            "priority": "",
+            "tags": "",
+            "status":"Open",
             "solution_satisfaction":"False"
         }
 
@@ -380,14 +380,13 @@ class TicketAPI(Resource):
                 if ticket_utils.is_blank(value):
                     value = ""
                 details[key] = value
-            print(details)
         except Exception as e:
             logger.error(
                 f"TicketAPI->post : Error occured while getting form data : {e}"
             )
             raise InternalServerError
         else:
-            if details["title"] == "" or details["tag"] == "":
+            if details["title"] == "" or details["tags"] == "":
                 raise BadRequest(
                     status_msg=f"Ticket title and at least one tag is required"
                 )
@@ -396,12 +395,19 @@ class TicketAPI(Resource):
             details["ticket_id"] = ticket_id
             details["created_by"] = user_id
             details["created_on"] = time_to_str(datetime.datetime.now())
+            if(details["priority"]=="low"):
+                ticket_priority=0.15
+            if(details["priority"]=="medium"):
+                ticket_priority=0.50
+            if(details["priority"]=="high"):
+                ticket_priority=0.75
+
             ticket = Ticket(
                 id = details["ticket_id"],
                 title = details["title"],
                 description = details["description"],
-                ticket_priority = details["ticket_priority"],
-                tags_list = details["tag"],
+                ticket_priority = ticket_priority,
+                tags_list = details["tags"],
                 ticket_status = "Open",
                 solution_satisfaction = False,
                 created_at = details["created_on"],
@@ -433,7 +439,7 @@ class TicketAPI(Resource):
                 raise Success_200(status_msg=f"Ticket created successfully. {message}")
 
     @token_required
-    @users_required(users=["Student", "Staff"])
+    @users_required(users=["student", "staff"])
     def put(self, ticket_id="", user_id=""):
         """
         Usage
@@ -459,7 +465,7 @@ class TicketAPI(Resource):
             "tags": "",
             "priority": "",
             "status": "",
-            "votes": 0,
+            "votes": "0",
             "solution": "",
             "inProgress":" ",
         }
@@ -506,8 +512,8 @@ class TicketAPI(Resource):
 
             role = user.role.name
 
-            if role == "Staff" or (
-                role == "Student" and user_id == ticket.user_id
+            if role == "staff" or (
+                role == "student" and user_id == ticket.user_id
             ):
                 # add attachments now
                 status, message = ticket_utils.save_ticket_attachments(
@@ -515,7 +521,7 @@ class TicketAPI(Resource):
                 )
                 #solution 
 
-            if role == "Student":   #it would be "Student" but for the time being changed it to Admin
+            if role == "student":   #it would be "Student" but for the time being changed it to Admin
                 if user_id == ticket.user_id:
                     # student is creator of the ticket
                     if details["title"] == "" or details["tags"] == "":
@@ -556,7 +562,7 @@ class TicketAPI(Resource):
                         db.session.commit()
                         raise Success_200(status_msg="Successfully upvoted ticket.")
 
-            if role == "Staff":
+            if role == "staff":
                 ticket_data=TicketData.query.filter_by(ticket_id=ticket.id).first()
 
                 if(details["inProgress"] == "yes"):
@@ -585,8 +591,8 @@ class TicketAPI(Resource):
             #         status_msg="Admin don't have access to this endpoint."
             #     )
 
-    # @token_required
-    # @users_required(users=["Student"])
+    @token_required
+    @users_required(users=["student"])
     def delete(self, ticket_id="", user_id=""):
         """
         Usage
@@ -647,7 +653,7 @@ class TicketAPI(Resource):
 
 class AllTicketsAPI(Resource):
     @token_required
-    @users_required(users=["Student", "Staff", "Admin"])
+    @users_required(users=["student", "staff", "admin"])
     def get(self):
         """
         Usage
@@ -704,7 +710,7 @@ class AllTicketsAPI(Resource):
 # Also had other APIs
 class AllTicketsUserAPI(Resource):
     @token_required
-    @users_required(users=["Student", "Staff", "Admin"])
+    @users_required(users=["student", "staff", "admin"])
     def get(self, user_id=""):
         # tickets retrieved based on user role.
 
@@ -727,11 +733,11 @@ class AllTicketsUserAPI(Resource):
         # verify user role
         role = user.role.name
 
-        if role == "Student":
+        if role == "student":
             # student : all tickets created or upvoted by him/her
             # status, priority, sort, filter will be as per filter options received
             # upvoted ticket can be checked by comparing created_by with user_id
-            upvoted_ticket_ids = VoteTable.query.filter_by(voter_id=user.user_id).all()
+            upvoted_ticket_ids = VoteTable.query.filter_by(voter_id=user.id).all()
             upvoted_ticket_ids = [elem.ticket_id for elem in upvoted_ticket_ids]
             user_tickets = Ticket.query.filter_by(user_id=user.id).all()
             for ticket in user_tickets:
@@ -742,7 +748,7 @@ class AllTicketsUserAPI(Resource):
                 tick = ticket_utils.convert_ticket_to_dict(ticket)
                 all_tickets.append(tick)
 
-        if role == "Staff":
+        if role == "staff":
             # support : all tickets resolvedby him/her
             # get all pending tickets
             # status, priority, sort, filter will be as per filter options received
@@ -759,7 +765,7 @@ class AllTicketsUserAPI(Resource):
                 tick = ticket_utils.convert_ticket_to_dict(ticket)
                 all_tickets.append(tick)
 
-        if role == "Admin":
+        if role == "admin":
             # admin : get all tickets resolved globally (for creating faq)
             # status, priority, sort, filter will be as per filter options received
             user_tickets = Ticket.query.filter_by(ticket_status="Resolved").all()
