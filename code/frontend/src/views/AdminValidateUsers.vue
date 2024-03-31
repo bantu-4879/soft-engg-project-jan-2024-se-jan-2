@@ -24,7 +24,7 @@
           <h3 style="text-align: center">New Support Staff</h3>
           <div style="height: 550px; overflow: auto; padding: 10px">
             <div v-for="user in unverified_new_user" :key="user.user_id">
-              <div v-if="user.role == 'support'">
+              <div v-if="user.role == 'staff'">
                 <UserCard
                   :n_user_id="user.user_id"
                   :first_name="user.first_name"
@@ -69,8 +69,8 @@ export default {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
-        web_token: this.$store.getters.get_web_token,
-        user_id: this.user_id,
+        webtoken: this.$store.getters.get_web_token,
+        userid: this.user_id,
       },
     })
       .then((response) => response.json())
@@ -78,6 +78,7 @@ export default {
         if (data.category == "success") {
           this.unverified_new_user = data.message;
           if (this.unverified_new_user.length > 0) {
+            
             this.flashMessage.success({
               message: `${this.unverified_new_user.length} unverified users found.`,
             });
