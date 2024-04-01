@@ -75,6 +75,7 @@ def create_app(env_type="dev"):
         db.session.commit()
 
     if not os.path.exists(TestingConfig.db_path):
+        print("Creating Testing Database")
         db.create_all()
         app.app_context().push()
         print("the database is getting created.")

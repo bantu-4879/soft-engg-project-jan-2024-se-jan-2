@@ -58,16 +58,16 @@ class StudentAPI(Resource):
             if user:
                 if user.role_id == 3:
                     n_tickets_created = Ticket.query.filter_by(
-                        created_by=user_id
+                        user_id=user_id
                     ).count()
                     n_tickets_resolved = Ticket.query.filter_by(
-                        created_by=user_id, status="resolved"
+                        user_id=user_id, ticket_status="resolved"
                     ).count()
                     n_tickets_pending = n_tickets_created - n_tickets_resolved
                     n_tickets_upvoted = VoteTable.query.filter_by(
                         voter_id=user_id
                     ).count()
-                    student_dict = student_util.convert_user_data_to_dict(user)
+                    student_dict = user.to_dict()
                     student_dict["n_tickets_created"] = n_tickets_created
                     student_dict["n_tickets_resolved"] = n_tickets_resolved
                     student_dict["n_tickets_pending"] = n_tickets_pending

@@ -8,7 +8,7 @@ from conftest import (
     admin_web_token,
 )
 from application.database import db
-from application.models import Authentication
+from application.models import Authentication, User
 
 # --------------------  Tests  --------------------
 
@@ -48,7 +48,7 @@ def test_student_api_with_fixture_put_200(test_client):
     }
 
     response = test_client.put(
-        f"/api/{API_VERSION}/student/{student_user_id}",
+        f"/api/{API_VERSION}/{student_user_id}",
         json={
             "first_name": "tushar",
             "last_name": "supe",
@@ -58,7 +58,7 @@ def test_student_api_with_fixture_put_200(test_client):
     )
     response = response.get_json()
     assert response["status"] == 200
-    user = Auth.query.filter_by(user_id=student_user_id).first()
+    user = User.query.filter_by(id=student_user_id).first()
     assert user.last_name == "supe"
 
 

@@ -28,6 +28,21 @@ class User(db.Model):
     #approving_actions = db.relationship('DisciplinaryAction',  foreign_keys='DisciplinaryAction.approved_by',backref='approved_by_user', lazy='dynamic')
     discourse_username=db.Column(db.String(100))
 
+    def to_dict(self):
+        return {
+            "id": self.id,
+            "first_name": self.first_name,
+            "second_name": self.second_name,
+            "email": self.email,
+            "is_approved": self.is_approved,
+            "is_logged": self.is_logged,
+            "role_id": self.role_id,
+            "card": self.card,
+            "profile_photo_loc": self.profile_photo_loc,
+            "number_DA": self.number_DA,
+            "discourse_username": self.discourse_username
+        }
+
 class Role(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(64), unique=True, nullable=False)
