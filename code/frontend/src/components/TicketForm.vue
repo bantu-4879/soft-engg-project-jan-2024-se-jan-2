@@ -96,10 +96,7 @@ export default {
         description: this.description ? this.description : "",
         priority: this.priority ? this.priority : "low",
         solution: "",
-        tags: [],
-        tag_1: "",
-        tag_2: "",
-        tag_3: "",
+        tags_list: [],
         attachments: [],
       },
       user_role: this.$store.getters.get_user_role,
@@ -117,17 +114,11 @@ export default {
         event.preventDefault();
       }
 
-      if (this.user_role == "student" && this.form.tags.length == 0 && this.check_title) {
+      if (this.form.tags_list.length == 0 && this.check_title) {
         alert("Choose atleast 1 tag and title should be atleast 5 characters long.");
       } else {
         alert('Submitting form. Click "Ok" to proceed?');
         this.$log.info("Submitting Ticket form");
-
-        for (let i in this.form.tags) {
-          if (this.form.tags[i]) {
-            this.form[`tag_${parseInt(i) + 1}`] = this.form.tags[i];
-          }
-        }
 
         let fetch_url = "";
         let method = "";
@@ -144,8 +135,8 @@ export default {
           method: method,
           headers: {
             "Content-Type": "application/json",
-            web_token: this.$store.getters.get_web_token,
-            user_id: this.$store.getters.get_user_id,
+            webtoken: this.$store.getters.get_web_token,
+            userid: this.$store.getters.get_user_id,
           },
           body: JSON.stringify(this.form),
         })
@@ -184,14 +175,14 @@ export default {
       this.form.description = "";
       this.solution = "";
       this.form.attachments = [];
-      this.form.tags = [];
+      this.form.tags_list = [];
       this.show = false;
       this.$nextTick(() => {
         this.show = true;
       });
     },
     onTagsChanged(value) {
-      this.form.tags = value;
+      this.form.tags_list = value;
     },
   },
   computed: {
