@@ -10,11 +10,10 @@
             <div v-for="ticket in ticket_card_details" :key="ticket.ticket_id">
               <TicketCard
                 :ticket_id="ticket.ticket_id"
-                :created_on="ticket.created_on"
+                :created_at="ticket.created_at"
                 :title="ticket.title"
                 :description="ticket.description"
-                :votes="ticket.votes"
-                :created_by="ticket.created_by"
+                :user_id="ticket.user_id"
                 :upvote_disabled="true"
                 :delete_disabled="false"
                 :edit_disabled="false"
@@ -67,8 +66,8 @@ export default {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
-        web_token: this.$store.getters.get_web_token,
-        user_id: this.user_id,
+        webtoken: this.$store.getters.get_web_token,
+        userid: this.user_id,
       },
     })
       .then((response) => response.json())
@@ -99,8 +98,8 @@ export default {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
-        web_token: this.$store.getters.get_web_token,
-        user_id: this.user_id,
+        webtoken: this.$store.getters.get_web_token,
+        userid: this.user_id,
       },
     })
       .then((response) => response.json())
