@@ -210,7 +210,7 @@ class TicketUtils(UserUtils):
         # sort (if present)
         if sortby:
             # sortby should be 'created_on', 'resolved_on', 'votes'
-            if sortby not in ["created_at", "resolved_on", "votes"]:
+            if sortby not in ["created_at", "resolved_on"]:
                 sortby = "created_at"
         else:
             sortby = "created_at"
@@ -351,7 +351,6 @@ class TicketAPI(Resource):
             "title": "",
             "description": "",
             "priority": "",
-            "tags": "",
             "status":"Open",
             "solution_satisfaction":"False"
         }
@@ -375,18 +374,21 @@ class TicketAPI(Resource):
         try:
             form = request.get_json()
             attachments = form.get("attachments", [])
+            tags_list = form.get("tags_list", [])
             for key in details:
                 value = form.get(key, "")
                 if ticket_utils.is_blank(value):
                     value = ""
                 details[key] = value
+
+            
         except Exception as e:
             logger.error(
                 f"TicketAPI->post : Error occured while getting form data : {e}"
             )
             raise InternalServerError
         else:
-            if details["title"] == "" or details["tags"] == "":
+            if details["title"] == "" or tags_list == 0:
                 raise BadRequest(
                     status_msg=f"Ticket title and at least one tag is required"
                 )
@@ -395,6 +397,8 @@ class TicketAPI(Resource):
             details["ticket_id"] = ticket_id
             details["created_by"] = user_id
             details["created_on"] = time_to_str(datetime.datetime.now())
+            details['tags_list'] = ", ".join(tags_list)
+
             if(details["priority"]=="low"):
                 ticket_priority=0.15
             if(details["priority"]=="medium"):
@@ -407,7 +411,7 @@ class TicketAPI(Resource):
                 title = details["title"],
                 description = details["description"],
                 ticket_priority = ticket_priority,
-                tags_list = details["tags"],
+                tags_list = details["tags_list"],
                 ticket_status = "Open",
                 solution_satisfaction = False,
                 created_at = details["created_on"],
