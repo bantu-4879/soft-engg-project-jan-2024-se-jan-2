@@ -172,7 +172,7 @@ class AdminAPI(Resource):
                         ]
                     )
 
-                    admin_dict = admin_util.convert_user_data_to_dict(user)
+                    admin_dict = user.to_dict()
                     admin_dict[
                         "n_total_unresolved_tickets"
                     ] = n_total_unresolved_tickets

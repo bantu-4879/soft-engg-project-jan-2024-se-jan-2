@@ -2,8 +2,8 @@ from application.globals import API_VERSION
 from conftest import (
     student_user_id,
     student_web_token,
-    support_user_id,
-    support_web_token,
+    staff_user_id,
+    staff_web_token,
     admin_user_id,
     admin_web_token,
 )
@@ -70,18 +70,18 @@ def test_support_api_with_fixture_get_200(test_client):
     """
     headers = {
         "Content-type": "application/json",
-        "web_token": support_web_token,
-        "user_id": support_user_id,
+        "web_token": staff_web_token,
+        "user_id": staff_user_id,
     }
 
     response = test_client.get(
-        f"/api/{API_VERSION}/support/{support_user_id}",
+        f"/api/{API_VERSION}/staff/{staff_user_id}",
         headers=headers,
     )
     response = response.get_json()
     assert response["status"] == 200
-    assert response["message"]["user_id"] == support_user_id
-    assert response["message"]["first_name"] == "support"
+    assert response["message"]["id"] == staff_user_id
+    assert response["message"]["first_name"] == "Leo"
 
 
 def test_admin_api_with_fixture_get_200(test_client):
@@ -102,5 +102,5 @@ def test_admin_api_with_fixture_get_200(test_client):
     )
     response = response.get_json()
     assert response["status"] == 200
-    assert response["message"]["user_id"] == admin_user_id
-    assert response["message"]["first_name"] == "admin"
+    assert response["message"]["id"] == admin_user_id
+    assert response["message"]["first_name"] == "max"
