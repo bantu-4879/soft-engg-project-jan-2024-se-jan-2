@@ -72,18 +72,17 @@
 
     <h3 style="text-align: center">Results</h3>
     <div style="height: 500px; overflow: auto; padding: 10px">
-      <div v-for="ticket in ticket_card_details" :key="ticket.ticket_id">
+      <div v-for="ticket in ticket_card_details" :key="ticket.id">
         <TicketCard
-          :ticket_id="ticket.ticket_id"
-          :created_on="ticket.created_on"
+          :id="ticket.id"
+          :created_at="ticket.created_at"
           :title="ticket.title"
           :description="ticket.description"
-          :votes="ticket.votes"
-          :created_by="ticket.created_by"
+          :user_id="ticket.user_id"
           :upvote_disabled="upvote_disabled"
           :delete_disabled="delete_disabled"
           :edit_disabled="edit_disabled"
-          :is_resolved="ticket.status == 'resolved'"
+          :is_resolved="ticket.ticket_status == 'resolved'"
         ></TicketCard>
       </div>
     </div>
@@ -149,7 +148,7 @@ export default {
 
       this.search_url = this.search_url + `/${this.user_id}`;
     }
-    if (this.user_role === "staff" && this.current_page_path === "/support-home") {
+    if (this.user_role === "staff" && this.current_page_path === "/staff-home") {
       // show all unresolved tickets, status=pending, filter on priority and tags, sort by created date and votes.
 
       this.filter_status_options = this.filter_status_options.filter(
@@ -158,7 +157,7 @@ export default {
       this.form.filter_status.push("pending");
       this.search_url = this.search_url + `/${this.user_id}`;
     }
-    if (this.user_role === "staff" && this.current_page_path === "/support-my-tickets") {
+    if (this.user_role === "staff" && this.current_page_path === "/staff-my-tickets") {
       // show user's resolved tickets, status=resolved, filter on priority and tags, sort by created date, resolved date and votes.
 
       this.filter_status_options = this.filter_status_options.filter(
