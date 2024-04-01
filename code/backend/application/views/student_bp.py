@@ -27,7 +27,7 @@ student_util = StudentUtils()
 
 class StudentAPI(Resource):
     @token_required
-    @users_required(users=["Student"])
+    @users_required(users=["student"])
     def get(self, user_id):
         """
         Usage
@@ -58,10 +58,10 @@ class StudentAPI(Resource):
             if user:
                 if user.role_id == 3:
                     n_tickets_created = Ticket.query.filter_by(
-                        created_by=user_id
+                        user_id=user_id
                     ).count()
                     n_tickets_resolved = Ticket.query.filter_by(
-                        created_by=user_id, status="resolved"
+                        user_id=user_id, ticket_status="resolved"
                     ).count()
                     n_tickets_pending = n_tickets_created - n_tickets_resolved
                     n_tickets_upvoted = VoteTable.query.filter_by(
@@ -80,7 +80,7 @@ class StudentAPI(Resource):
                 raise NotFoundError(status_msg="Student user id does not exists")
 
     @token_required
-    @users_required(users=["Student"])
+    @users_required(users=["student"])
     def put(self, user_id):
         """
         Usage
