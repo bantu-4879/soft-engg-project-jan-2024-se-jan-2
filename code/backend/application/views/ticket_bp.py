@@ -183,7 +183,7 @@ class TicketUtils(UserUtils):
         filtered_tickets = []
         if status:
             for ticket in all_tickets:
-                if ticket["status"] in status:
+                if ticket["ticket_status"] in status:
                     filtered_tickets.append(ticket)
 
             return filtered_tickets
@@ -197,7 +197,7 @@ class TicketUtils(UserUtils):
         filtered_tickets = []
         if priority:
             for ticket in all_tickets:
-                if ticket["priority"] in priority:
+                if ticket["ticket_priority"] in priority:
                     filtered_tickets.append(ticket)
 
             return filtered_tickets
@@ -289,8 +289,8 @@ ticket_api = Api(ticket_bp)
 ticket_utils = TicketUtils()
 
 class TicketAPI(Resource):
-    # @token_required
-    # @users_required(users=["Student", "Staff", "Admin"])
+    @token_required
+    @users_required(users=["Student", "Staff", "Admin"])
     def get(self, ticket_id="", user_id=""):
         """
         Usage
@@ -729,7 +729,7 @@ class AllTicketsUserAPI(Resource):
             # student : all tickets created or upvoted by him/her
             # status, priority, sort, filter will be as per filter options received
             # upvoted ticket can be checked by comparing created_by with user_id
-            upvoted_ticket_ids = VoteTable.query.filter_by(voter_id=user.user_id).all()
+            upvoted_ticket_ids = VoteTable.query.filter_by(voter_id=user.id).all()
             upvoted_ticket_ids = [elem.ticket_id for elem in upvoted_ticket_ids]
             user_tickets = Ticket.query.filter_by(user_id=user.id).all()
             for ticket in user_tickets:

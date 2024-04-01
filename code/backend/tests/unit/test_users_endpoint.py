@@ -52,7 +52,7 @@ def test_student_api_with_fixture_put_200(test_client):
         json={
             "first_name": "tushar",
             "second_name": "supe",
-            "email": "tushar@gmail.com",
+            "email": "tushar1711892521@gmail.com",
         },
         headers=headers,
     )
