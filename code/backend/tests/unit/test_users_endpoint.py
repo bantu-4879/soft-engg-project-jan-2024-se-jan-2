@@ -31,7 +31,7 @@ def test_student_api_with_fixture_get_200(test_client):
     )
     response = response.get_json()
     assert response["status"] == 200
-    assert response["message"]["user_id"] == student_user_id
+    assert response["message"]["id"] == student_user_id
     assert response["message"]["first_name"] == "tushar"
 
 

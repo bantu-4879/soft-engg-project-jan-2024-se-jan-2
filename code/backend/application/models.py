@@ -33,6 +33,7 @@ class User(db.Model):
             "id": self.id,
             "first_name": self.first_name,
             "second_name": self.second_name,
+            "password": self.password,
             "email": self.email,
             "is_approved": self.is_approved,
             "is_logged": self.is_logged,

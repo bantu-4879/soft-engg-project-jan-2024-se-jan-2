@@ -8,7 +8,7 @@ from application.logger import logger
 
 # STUDENT
 student_user_id = "7e2a3837cce86cdc7d198ab20275984f"
-student_web_token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InR1c2hhckBnbWFpbC5jb20iLCJleHBpcnkiOjE3MTI4Mzk4NDB9.W5rJyvLD-p7kUKYwhOa3FCFx-dVxqtKwqCWP74mttPI"
+student_web_token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InR1c2hhckBnbWFpbC5jb20iLCJleHBpcnkiOjE3MTI4NDAyNzZ9.ifdHNv6chQFofdnMOw2xvC1sL_hGKGG7pPClCrRk-Rw"
  
 # SUPPORT
 support_user_id = "fb58cddff315e18f87a86f94dc191891"
