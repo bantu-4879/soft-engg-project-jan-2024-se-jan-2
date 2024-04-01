@@ -5,7 +5,7 @@
         class="ticket-card-container"
         v-show="!ticket_deleted"
         :style="[
-          user_id == created_by && $route.path == '/student-create-ticket'
+          user_id == user_id && $route.path == '/student-create-ticket'
             ? { 'background-color': 'rgb(225, 245, 250)' }
             : { 'background-color': 'rgb(251, 252, 252)' },
         ]"
@@ -62,7 +62,7 @@
                   v-show="
                     edit_disabled
                       ? !edit_disabled
-                      : (user_id == created_by || user_role == 'support') && !is_resolved
+                      : (user_id == user_id || user_role == 'staff') && !is_resolved
                   "
                   ><b-icon
                     icon="pencil-fill"
@@ -123,19 +123,15 @@
           </tr>
           <tr>
             <td>Status:</td>
-            <td>{{ status }}</td>
+            <td>{{ ticket_status }}</td>
           </tr>
           <tr>
             <td>Priority:</td>
-            <td>{{ priority }}</td>
+            <td>{{ ticket_priority }}</td>
           </tr>
           <tr>
             <td>Tags:</td>
-            <td>{{ tag_1 + tag_2 + tag_3 }}</td>
-          </tr>
-          <tr>
-            <td>Votes:</td>
-            <td>{{ votes }}</td>
+            <td>{{ tags_list }}</td>
           </tr>
           <tr>
             <td>Created on:</td>
@@ -143,15 +139,11 @@
           </tr>
           <tr>
             <td>Created by:</td>
-            <td>{{ created_by }}</td>
+            <td>{{ user_id }}</td>
           </tr>
           <tr>
             <td>Resolved by:</td>
             <td>{{ resolved_by ? resolved_by : "" }}</td>
-          </tr>
-          <tr>
-            <td>Resolved on:</td>
-            <td>{{ resolved_on == 0 ? "" : Date(resolved_on).toLocaleString() }}</td>
           </tr>
           <tr>
             <td>Solution:</td>
@@ -204,11 +196,11 @@
         <h5 style="text-align: center">Edit Ticket Details</h5>
         <!-- display as a table -->
         <TicketForm
-          :ticket_id="ticket_id"
+          :id="ticket_id"
           :title="title"
           :description="description"
-          :priority="priority"
-          :tags="tags"
+          :ticket_priority="ticket_priority"
+          :tags_list="tags_list"
           :hideReset="true"
           :editTicket="true"
           @ticketResolved="ticketResolvedFn"
@@ -229,12 +221,12 @@ import TicketForm from "../components/TicketForm.vue";
 export default {
   name: "TicketCard",
   props: [
-    "ticket_id",
-    "created_on",
-    "created_by",
+    "id",
+    "created_at",
+    "user_id",
     "title",
     "description",
-    "votes",
+    //"votes",
     "upvote_disabled",
     "delete_disabled",
     "edit_disabled",
@@ -246,18 +238,15 @@ export default {
       button_1_active: false,
       user_id: this.$store.getters.get_user_id,
       user_role: this.$store.getters.get_user_role,
-      show_ticket_modal_id: "show_ticket_modal_" + this.ticket_id,
-      edit_ticket_modal_id: "edit_ticket_modal_" + this.ticket_id,
-      delete_ticket_modal_id: "delete_ticket_modal_" + this.ticket_id,
-      priority: "",
-      status: "",
+      show_ticket_modal_id: "show_ticket_modal_" + this.id,
+      edit_ticket_modal_id: "edit_ticket_modal_" + this.id,
+      delete_ticket_modal_id: "delete_ticket_modal_" + this.id,
+      ticket_priority: "",
+      ticket_status: "",
       solution: "",
       resolved_by: "",
-      resolved_on: "",
-      tag_1: "",
-      tag_2: "",
-      tag_3: "",
-      tags: [],
+      //resolved_on: "",
+      tags_list: "",
       attachments: [],
       ticket_deleted: false,
     };
@@ -269,12 +258,12 @@ export default {
       this.ticket_deleted = true; // its not deletd, its resolved , so its hidden
     },
     getTicketDetails() {
-      fetch(common.TICKET_API + `/${this.ticket_id}` + `/${this.created_by}`, {
+      fetch(common.TICKET_API + `/${this.ticket_id}` + `/${this.user_id}`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
-          web_token: this.$store.getters.get_web_token,
-          user_id: this.user_id,
+          webtoken: this.$store.getters.get_web_token,
+          userid: this.user_id,
         },
       })
         .then((response) => response.json())
@@ -283,25 +272,13 @@ export default {
             // load data
             this.title = data.message.title;
             this.description = data.message.description;
-            this.votes = data.message.votes;
-            this.priority = data.message.priority;
-            this.status = data.message.status;
+            // this.votes = data.message.votes;
+            this.ticket_priority = data.message.ticket_priority;
+            this.ticket_status = data.message.ticket_status;
             this.solution = data.message.solution;
             this.resolved_by = data.message.resolved_by;
-            this.resolved_on = data.message.resolved_on;
-            this.tag_1 = data.message.tag_1;
-            this.tag_2 = data.message.tag_2 ? ", " + data.message.tag_2 : "";
-            this.tag_3 = data.message.tag_3 ? ", " + data.message.tag_3 : "";
-            this.tags = [];
-            if (this.tag_1) {
-              this.tags.push(this.tag_1);
-            }
-            if (this.tag_2) {
-              this.tags.push(this.tag_2);
-            }
-            if (this.tag_3) {
-              this.tags.push(this.tag_3);
-            }
+            // this.resolved_on = data.message.resolved_on;
+            this.tags_list = data.message.tags_list;
             this.attachments = data.message.attachments;
           }
           if (data.category == "error") {
@@ -339,8 +316,8 @@ export default {
           method: "PUT",
           headers: {
             "Content-Type": "application/json",
-            web_token: this.$store.getters.get_web_token,
-            user_id: this.user_id,
+            webtoken: this.$store.getters.get_web_token,
+            userid: this.user_id,
           },
           body: JSON.stringify({}),
         })
@@ -370,8 +347,8 @@ export default {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
-          web_token: this.$store.getters.get_web_token,
-          user_id: this.user_id,
+          webtoken: this.$store.getters.get_web_token,
+          userid: this.user_id,
         },
       })
         .then((response) => response.json())
