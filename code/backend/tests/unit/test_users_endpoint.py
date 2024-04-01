@@ -48,10 +48,10 @@ def test_student_api_with_fixture_put_200(test_client):
     }
 
     response = test_client.put(
-        f"/api/{API_VERSION}/{student_user_id}",
+        f"/api/{API_VERSION}/student/{student_user_id}",
         json={
             "first_name": "tushar",
-            "last_name": "supe",
+            "second_name": "supe",
             "email": "tushar@gmail.com",
         },
         headers=headers,
@@ -59,7 +59,7 @@ def test_student_api_with_fixture_put_200(test_client):
     response = response.get_json()
     assert response["status"] == 200
     user = User.query.filter_by(id=student_user_id).first()
-    assert user.last_name == "supe"
+    assert user.second_name == "supe"
 
 
 def test_support_api_with_fixture_get_200(test_client):
