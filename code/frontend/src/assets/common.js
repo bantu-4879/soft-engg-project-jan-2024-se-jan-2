@@ -21,6 +21,7 @@ const FAQ_API = `${BASEURL}${FAQ_API_PREFIX}`;
 const TICKET_API = `${BASEURL}${TICKET_API_PREFIX}`;
 
 const TICKET_API_ALLTICKETS = `${BASEURL}${TICKET_API_PREFIX}/all-tickets`
+const WEBHOOK_URL = `https://chat.googleapis.com/v1/spaces/AAAAsTbnkos/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=2ZVePrYB_1cEwSrlkdUstzpUGCFBW9a6_RtzylmGdQE`
 
 
 const STUDENT_ROUTES = ['/student', '/student-home', "/student-create-ticket", "/student-my-tickets", "/common-faqs", "/user-profile"]
@@ -70,5 +71,6 @@ export {
   ADMIN_ROUTES,
   STUDENT_NAV_BUTTONS,
   SUPPORT_NAV_BUTTONS,
-  ADMIN_NAV_BUTTONS
+  ADMIN_NAV_BUTTONS, 
+  WEBHOOK_URL
 };
