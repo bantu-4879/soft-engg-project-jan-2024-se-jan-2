@@ -100,7 +100,7 @@
       scrollable
     >
       <template #modal-header="{ cancel }">
-        <span style="font-size: 20px">Ticket ID: {{ ticket_id }}</span>
+        <span style="font-size: 20px">Ticket ID: {{ id }}</span>
         <b-button size="sm" variant="outline-danger" @click="cancel()"> Close </b-button>
       </template>
 
@@ -255,7 +255,7 @@ export default {
       this.ticket_deleted = true; // its not deletd, its resolved , so its hidden
     },
     getTicketDetails() {
-      fetch(common.TICKET_API + `/${this.ticket_id}` + `/${this.user_id}`, {
+      fetch(common.TICKET_API + `/${this.id}` + `/${this.user_id}`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -309,14 +309,14 @@ export default {
           message: "Can't upvote own ticket.",
         });
       } else {
-        fetch(common.TICKET_API + `/${this.ticket_id}` + `/${this.user_id}`, {
+        fetch(common.TICKET_API + `/${this.id}` + `/${this.user_id}`, {
           method: "PUT",
           headers: {
             "Content-Type": "application/json",
             webtoken: this.$store.getters.get_web_token,
             userid: this.user_id,
           },
-          body: JSON.stringify({}),
+          body: JSON.stringify({}), // empty body
         })
           .then((response) => response.json())
           .then((data) => {
@@ -340,7 +340,7 @@ export default {
       }
     },
     deleteTicket() {
-      fetch(common.TICKET_API + `/${this.ticket_id}` + `/${this.user_id}`, {
+      fetch(common.TICKET_API + `/${this.id}` + `/${this.user_id}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
