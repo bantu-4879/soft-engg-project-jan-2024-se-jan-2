@@ -1,6 +1,6 @@
 <template>
   <div>
-    <template v-if="ticket_id">
+    <template v-if="id">
       <b-container
         class="ticket-card-container"
         v-show="!ticket_deleted"
@@ -13,10 +13,9 @@
         <!-- Stack the columns on mobile by making one full-width and the other half-width -->
         <b-row class="row" @click="getTicketDetails">
           <b-col class="col" cols="12" lg="5" sm="12"
-            ><i>Id: </i>{{ ticket_id.slice(0, 15) }}</b-col
+            ><i>Id: </i>{{ id.slice(0, 15) }}</b-col
           >
-          <b-col class="col" cols="12" lg="5" sm="8"><i>Created On: </i>{{ created_on }}</b-col>
-          <b-col class="col" cols="12" lg="2" sm="4"><i>Votes: </i>{{ votes }}</b-col>
+          <b-col class="col" cols="12" lg="5" sm="8"><i>Created At: </i>{{ created_at }}</b-col>
         </b-row>
         <b-row class="row">
           <b-col class="col" cols="12" sm="10" lg="11" @click="getTicketDetails">
@@ -41,7 +40,7 @@
                   v-show="
                     upvote_disabled
                       ? !upvote_disabled
-                      : user_id !== created_by && user_role == 'student' && !is_resolved
+                      : user_id !== user_id && user_role == 'student' && !is_resolved
                   "
                   ><b-icon
                     icon="heart-fill"
@@ -80,7 +79,7 @@
                   size="sm"
                   class="ticket-card-buttons"
                   :disabled="delete_disabled"
-                  v-show="delete_disabled ? !delete_disabled : user_id == created_by"
+                  v-show="delete_disabled ? !delete_disabled : user_id == user_id"
                   ><b-icon
                     icon="trash-fill"
                     aria-hidden="true"
@@ -135,7 +134,7 @@
           </tr>
           <tr>
             <td>Created on:</td>
-            <td>{{ Date(created_on).toLocaleString() }}</td>
+            <td>{{ Date(created_at).toLocaleString() }}</td>
           </tr>
           <tr>
             <td>Created by:</td>
@@ -188,7 +187,7 @@
       scrollable
     >
       <template #modal-header="{ cancel }">
-        <span style="font-size: 20px">Ticket ID: {{ ticket_id }}</span>
+        <span style="font-size: 20px">Ticket ID: {{ id }}</span>
         <b-button size="sm" variant="outline-danger" @click="cancel()"> Close </b-button>
       </template>
 
@@ -196,7 +195,7 @@
         <h5 style="text-align: center">Edit Ticket Details</h5>
         <!-- display as a table -->
         <TicketForm
-          :id="ticket_id"
+          :id="id"
           :title="title"
           :description="description"
           :ticket_priority="ticket_priority"
@@ -223,10 +222,9 @@ export default {
   props: [
     "id",
     "created_at",
-    "user_id",
     "title",
     "description",
-    //"votes",
+    "user_id",
     "upvote_disabled",
     "delete_disabled",
     "edit_disabled",
@@ -245,7 +243,6 @@ export default {
       ticket_status: "",
       solution: "",
       resolved_by: "",
-      //resolved_on: "",
       tags_list: "",
       attachments: [],
       ticket_deleted: false,
@@ -307,7 +304,7 @@ export default {
       this.$bvModal.show(this.edit_ticket_modal_id);
     },
     upvoteTicket() {
-      if (this.user_id == this.created_by) {
+      if (this.user_id == this.user_id) {
         this.flashMessage.error({
           message: "Can't upvote own ticket.",
         });
