@@ -165,7 +165,7 @@
     <b-modal
       :id="delete_ticket_modal_id"
       @cancel="$bvModal.hide(delete_ticket_modal_id)"
-      @ok="deleteTicket"
+      @ok="deleteTicket()"
       size="sm"
       scrollable
     >
