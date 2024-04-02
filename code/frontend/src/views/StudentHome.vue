@@ -7,9 +7,9 @@
         <b-col cols="12" sm="7" md="8">
           <h3 style="text-align: center">My Unresolved Tickets</h3>
           <div style="height: 550px; overflow: auto; padding: 10px">
-            <div v-for="ticket in ticket_card_details" :key="ticket.ticket_id">
+            <div v-for="ticket in ticket_card_details" :key="ticket.id">
               <TicketCard
-                :ticket_id="ticket.ticket_id"
+                :id="ticket.id"
                 :created_at="ticket.created_at"
                 :title="ticket.title"
                 :description="ticket.description"
@@ -57,7 +57,7 @@ export default {
   },
   created() {
     let form = {
-      filter_status: ["pending"],
+      filter_status: ["Open"],
     };
     let params = "";
     params = new URLSearchParams(form).toString();
