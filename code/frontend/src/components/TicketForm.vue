@@ -82,7 +82,7 @@ import Tagging from "./Tagging.vue";
 
 export default {
   name: "TicketForm",
-  props: ["ticket_id", "title", "description", "priority", "tags", "hideReset", "editTicket"],
+  props: ["id", "title", "description", "priority", "tags", "hideReset", "editTicket"],
   components: { Tagging, FileUpload },
   data() {
     return {
@@ -101,6 +101,9 @@ export default {
       },
       user_role: this.$store.getters.get_user_role,
       show: true,
+      webhook_message: {
+        "text": "This is high priority ticket. Please resolve it as soon as possible."
+      }
     };
   },
   created() {},
@@ -124,7 +127,7 @@ export default {
         let method = "";
         if (this.editTicket) {
           fetch_url =
-            common.TICKET_API + `/${this.ticket_id}` + `/${this.$store.getters.get_user_id}`;
+            common.TICKET_API + `/${this.id}` + `/${this.$store.getters.get_user_id}`;
           method = "PUT";
         } else {
           fetch_url = common.TICKET_API + `/${this.$store.getters.get_user_id}`;
@@ -166,6 +169,26 @@ export default {
             });
           });
       }
+
+      if(this.form.priority == "high" && this.user_role == "student") {
+        let webhook_url = common.WEBHOOK_URL;
+
+        fetch(webhook_url, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json; charset=UTF-8", 
+          },
+          body: JSON.stringify(this.webhook_message),
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            this.flashMessage.success({
+                message: "Notified support team staff about high priority ticket.",
+              });
+          })
+        
+      }
+
     },
     onReset(event) {
       if (event && event.preventDefault) {
