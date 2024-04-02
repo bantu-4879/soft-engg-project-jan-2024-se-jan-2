@@ -64,7 +64,7 @@ export default {
       this.user_profile_page_url = "/user-profile";
       this.nav_buttons = common.STUDENT_NAV_BUTTONS;
     }
-    if (this.user_role === "support") {
+    if (this.user_role === "staff") {
       this.user_profile_page_url = "/user-profile";
       this.nav_buttons = common.SUPPORT_NAV_BUTTONS;
     }
