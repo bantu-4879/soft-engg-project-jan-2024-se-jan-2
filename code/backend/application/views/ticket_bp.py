@@ -466,12 +466,8 @@ class TicketAPI(Resource):
         details = {
             "title": "",
             "description": "",
-            "tags": "",
             "priority": "",
-            "status": "",
-            "votes": "0",
             "solution": "",
-            "inProgress":" ",
         }
 
         
@@ -482,6 +478,8 @@ class TicketAPI(Resource):
         try:
             form = request.get_json()
             attachments = form.get("attachments", [])
+            tags_list = form.get("tags_list", [])
+
             for key in details:
                 value = form.get(key, "")
                 if ticket_utils.is_blank(value):
@@ -528,16 +526,17 @@ class TicketAPI(Resource):
             if role == "student":   #it would be "Student" but for the time being changed it to Admin
                 if user_id == ticket.user_id:
                     # student is creator of the ticket
-                    if details["title"] == "" or details["tags"] == "":
+                    if details["title"] == "" or len(tags_list) == 0:
                         raise BadRequest(
                             status_msg=f"Ticket title and at least one tag is required"
                         )
 
                     ticket.title = details["title"]
                     ticket.description = details["description"]
-                    ticket.tags_list = details["tags"]
+                    ticket.tags_list = ", ".join(tags_list)
                     priority = details["priority"]
-                    ticket.ticket_status=details["status"]
+                    
+
                     if(priority=="low"):
                         ticket.ticket_priority=0.15
                     if(priority=="medium"):
