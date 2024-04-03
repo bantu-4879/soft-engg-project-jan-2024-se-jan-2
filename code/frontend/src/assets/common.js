@@ -1,7 +1,7 @@
 /* eslint-disable */
 
 const BASEURL = "http://127.0.0.1:5000";
-const VERSION = "v1";
+const VERSION = "v2";
 
 const AUTH_API_PREFIX = `/api/${VERSION}/auth`;
 const STUDENT_API_PREFIX = `/api/${VERSION}/student`;

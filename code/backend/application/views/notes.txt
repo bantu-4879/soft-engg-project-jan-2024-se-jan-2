@@ -1,3 +1,105 @@
+TICKET BP 
+
+APIs
+
+numbered( a,b,) -- base code is present 
+// --> new from scratch 
+ 
+- Ticket UTils -- init --
+a - convert ticket to dict 
+b- get ticket attachments 
+c- generate ticket id
+d- save ticket attachments 
+e- tickets filter by query 
+f- tickets filters by tags 
+g - ticket filter by status  --( Open | InProgress | Resolved | Closed )
+h - ticket filter by priority  -- float ( 0-30 % --> Low , 30-80 % --> Medium 80-99% --> High )
+i- tickets sort 
+j- tickets + filter sort 
+k- get arguments from queries 
+// who resolved the tickets 
+// who assigned the tickets 
+// get thread link of ticket - and corresponding tickets 
+// who all votes to a ticket -
+// get ticket comments 
+// get ticket data dictionary 
+
+
+Ticket APIs 
+
+
+- get specific ticket *
+- post a new ticket *  # add the details to the ticket_tags 
+- update a ticket *
+- delete a ticket *
+- vote a ticket  *
+
+
+
+- solving a ticket & 
+- assigning a ticket & 
+- get tickets by assigned tickets &
+
+- get comments of a ticket % 
+- post comment &
+- edit comment &
+- delete comment &
+
+
+Tags Utils 
+
+
+// isTagValid - parameter
+
+- TAGS BP 
+
+
+- Creating tags
+- getting tags 
+- update tags 
+- delete tags 
+
+
+
+OTHER BPs 
+
+- Ticket Tracking BP 
+        a - change ticket status 
+        b- change priority (manual) 
+        c- create ticket data - ( open , time resolve etc )
+        d- send notifications when assigning -- > jobs 
+        e- send status report 
+        f- escalation + ( adding a new entry to the ticket data table , with the same ticket id )
+        g- 
+
+-Stats BP 
+    - getting ticket statistics $
+    - generate report API $
+
+- user_management BP 
+    - get_user_activity () // 
+    - assign card -- ( yellow | Red )
+    - enable again 
+    - send notification 
+    - assign badge 
+    - create badge // create the logic 
+    - revoke badge
+    - delete badge 
+    - send notification for badge 
+
+- Inbox BP 
+    - get messages 
+    - post messages 
+    - delete messages 
+
+
+
+JOBS 
+1. calculate and commit db - priority 
+2. send mails 
+
+
+#LOGIC QUESTIONS
 1. DO we need the discourse id while registration
 2. 
 
@@ -5,14 +107,20 @@
 Current API Blueprints 
 
 BACKEND
-- admin_bp.py - @muskansindhu
-- auth_bp.py - @muskansindhu
+- admin_bp.py - @muskansindhu - DONE (in this branch might be different from Muskan)
+- auth_bp.py - @muskansindhu - DONE (in this branch might be different from Muskan)
 - faq_bp.py - @bantu-4879
-- student_bp.py - @akritii-3107
-- support_bp.py - @akritii-3107
+- student_bp.py - @akritii-3107  - DONE 
+- support_bp.py - @akritii-3107  - DONE 
 - ticket_bp.py - @sahithid
 
 FRONTEND
 - Frontend - @Ishika-0105, Steve
 - user_utils.py (planning to implement in the frontend)
     - this consists of validation functions for emails and passwords
+
+
+
+
+
+

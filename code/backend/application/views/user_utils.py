@@ -3,6 +3,7 @@
 import os
 from flask import current_app as app
 import jwt
+import time
 import hashlib
 from application.common_utils import (
     convert_base64_to_img,
@@ -15,10 +16,14 @@ from application.responses import *
 from application.logger import logger
 from application.models import *
 from application.globals import *
-
+from datetime import datetime
 
 # --------------------  Code  --------------------
 
+#datetime to the function
+
+def time_to_str(timestamp):
+    return time.strftime("%Y-%m-%d %H:%M:%S", timestamp.timetuple())
 
 class UserUtils:
     def is_blank(self, string):
@@ -128,22 +133,22 @@ class UserUtils:
         user_id = hashlib.md5(email.encode()).hexdigest()
         return user_id
 
-    def convert_user_data_to_dict(self, user) -> dict:
-        user_dict = vars(user)
-        if "_sa_instance_state" in user_dict:
-            del user_dict["_sa_instance_state"]
-        if "password" in user_dict:
-            del user_dict["password"]
-        profile_pic = user_dict["profile_photo_loc"]
-        if is_img_path_valid(profile_pic):
-            img_base64 = convert_img_to_base64(profile_pic)
-            if img_base64 != "":
-                user_dict["profile_photo_loc"] = img_base64
-            else:
-                user_dict["profile_photo_loc"] = ""
-        else:
-            user_dict["profile_photo_loc"] = ""
-        return user_dict
+    # def convert_user_data_to_dict(self, user) -> dict:
+    #     user_dict = vars(user)
+    #     if "_sa_instance_state" in user_dict:
+    #         del user_dict["_sa_instance_state"]
+    #     if "password" in user_dict:
+    #         del user_dict["password"]
+    #     profile_pic = user_dict["profile_photo_loc"]
+    #     if is_img_path_valid(profile_pic):
+    #         img_base64 = convert_img_to_base64(profile_pic)
+    #         if img_base64 != "":
+    #             user_dict["profile_photo_loc"] = img_base64
+    #         else:
+    #             user_dict["profile_photo_loc"] = ""
+    #     else:
+    #         user_dict["profile_photo_loc"] = ""
+    #     return user_dict
 
     def update_user_profile_data(self, user_id, form):
         # check url data
@@ -152,7 +157,7 @@ class UserUtils:
 
         details = {
             "first_name": "",
-            "last_name": "",
+            "second_name": "",
             "email": "",
             "password": "",
             "retype_password": "",
@@ -166,7 +171,7 @@ class UserUtils:
                 if self.is_blank(value):
                     value = ""
                 details[key] = value
-            user = Auth.query.filter_by(user_id=user_id).first()
+            user = User.query.filter_by(id=user_id).first()
         except Exception as e:
             logger.error(f"UserUtils : Error occured while getting form data : {e}")
             raise InternalServerError
@@ -176,7 +181,6 @@ class UserUtils:
             if not user:
                 raise NotFoundError(status_msg="User does not exists")
 
-            role = user.role
 
             # checks if first name is empty
             if self.is_blank(details["first_name"]):
@@ -184,16 +188,16 @@ class UserUtils:
             else:
                 user.first_name = details["first_name"]
 
-            user.last_name = details["last_name"]  # last name can be empty
+            user.second_name = details["second_name"]  # last name can be empty
 
             # checks if email is valid
             if not (self.is_email_valid(details["email"])):
                 raise BadRequest(status_msg=f"Email is required annd should be valid.")
             else:
-                user_ = Auth.query.filter_by(email=details["email"]).first()
+                user_ = User.query.filter_by(email=details["email"]).first()
                 if user_:
                     # if user id dont match means email already in use
-                    if user_.user_id != user.user_id:
+                    if user_.id != user.id:
                         raise AlreadyExistError(status_msg="Email is already in use")
                 else:
                     user.email = details["email"]
@@ -238,6 +242,9 @@ class UserUtils:
             else:
                 logger.info("User details Updated successfully.")
                 raise Success_200(status_msg="User details Updated successfully.")
+            
+
+
 
 
 # --------------------  END  --------------------

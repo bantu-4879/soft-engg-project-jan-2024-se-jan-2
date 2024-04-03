@@ -21,10 +21,10 @@
 
         <b-form-group
           ><b-form-input
-            id="input-last-name-register"
-            v-model="form.last_name"
+            id="input-second-name-register"
+            v-model="form.second_name"
             type="text"
-            placeholder="Enter last name (Optional)"
+            placeholder="Enter second name (Optional)"
           ></b-form-input
         ></b-form-group>
 
@@ -98,13 +98,13 @@ export default {
   data() {
     return {
       role_options: [
-        { text: "Student", value: "student" },
-        { text: "Support", value: "support" },
-        { text: "Admin", value: "admin" },
+        { text: "Student", value: "Student" },
+        { text: "Staff", value: "Staff" },
+        { text: "Admin", value: "Admin" },
       ],
       form: {
         first_name: "",
-        last_name: "",
+        second_name: "",
         role: "student",
         email: "",
         password: "",
@@ -153,7 +153,7 @@ export default {
     onReset(event) {
       event.preventDefault();
       this.form.first_name = "";
-      this.form.last_name = "";
+      this.form.second_name = "";
       this.form.email = "";
       this.form.password = "";
       this.form.retype_password = "";

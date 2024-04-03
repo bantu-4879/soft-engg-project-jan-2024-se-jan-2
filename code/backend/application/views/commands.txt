@@ -1,0 +1,9 @@
+pip install Flask-Migrate
+
+flask db init
+
+flask db migrate -m "Migration no. "
+
+flask db upgrade
+
+// Each time the database models change, repeat the migrate and upgrade commands.
