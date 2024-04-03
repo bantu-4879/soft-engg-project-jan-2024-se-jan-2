@@ -7054,6 +7054,7 @@
 01-Apr-24 00:27:20 - [INFO] - Development environment configured.
 01-Apr-24 00:27:20 - [WARNING] -  * Debugger is active!
 01-Apr-24 00:27:20 - [INFO] -  * Debugger PIN: 615-108-927
+<<<<<<< Updated upstream
 01-Apr-24 17:02:21 - [INFO] - Development environment configured.
 01-Apr-24 17:02:22 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
@@ -7556,3 +7557,350 @@
 03-Apr-24 17:54:56 - [INFO] - Token is verified for the user: 7a848f03778ea5e30de4dc6850c6b67e
 03-Apr-24 17:54:56 - [INFO] - User role : Admin : is verified for the user: 7a848f03778ea5e30de4dc6850c6b67e
 03-Apr-24 17:54:56 - [INFO] - 200 - Custom success 200 response sent
+=======
+02-Apr-24 17:03:59 - [INFO] - Development environment configured.
+02-Apr-24 17:03:59 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+02-Apr-24 17:03:59 - [INFO] - [33mPress CTRL+C to quit[0m
+02-Apr-24 17:03:59 - [INFO] -  * Restarting with stat
+02-Apr-24 17:04:00 - [INFO] - Development environment configured.
+02-Apr-24 17:04:00 - [WARNING] -  * Debugger is active!
+02-Apr-24 17:04:00 - [INFO] -  * Debugger PIN: 299-872-502
+02-Apr-24 17:04:10 - [INFO] - 200 - Custom success 200 response sent
+02-Apr-24 17:04:10 - [INFO] - 127.0.0.1 - - [02/Apr/2024 17:04:10] "GET /api/v2/ticket/comments/7aaef40c060d2e8be8e5e23e3f7ea0a9 HTTP/1.1" 200 -
+02-Apr-24 17:04:41 - [INFO] - Commented successfully.
+02-Apr-24 17:04:41 - [INFO] - 200 - Ticket comment added successfully.
+02-Apr-24 17:04:41 - [INFO] - 127.0.0.1 - - [02/Apr/2024 17:04:41] "POST /api/v2/ticket/comments/7aaef40c060d2e8be8e5e23e3f7ea0a9 HTTP/1.1" 200 -
+02-Apr-24 17:04:44 - [INFO] - 200 - Custom success 200 response sent
+02-Apr-24 17:04:44 - [INFO] - 127.0.0.1 - - [02/Apr/2024 17:04:44] "GET /api/v2/ticket/comments/7aaef40c060d2e8be8e5e23e3f7ea0a9 HTTP/1.1" 200 -
+02-Apr-24 17:05:06 - [INFO] - Comment updated successfully.
+02-Apr-24 17:05:06 - [INFO] - 200 - Ticket comment updated successfully.
+02-Apr-24 17:05:06 - [INFO] - 127.0.0.1 - - [02/Apr/2024 17:05:06] "PUT /api/v2/ticket/comments/7aaef40c060d2e8be8e5e23e3f7ea0a9/7/23463b99b62a72f26ed677cc556c44e8 HTTP/1.1" 200 -
+02-Apr-24 17:05:11 - [INFO] - 200 - Custom success 200 response sent
+02-Apr-24 17:05:11 - [INFO] - 127.0.0.1 - - [02/Apr/2024 17:05:11] "GET /api/v2/ticket/comments/7aaef40c060d2e8be8e5e23e3f7ea0a9 HTTP/1.1" 200 -
+02-Apr-24 17:06:29 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+02-Apr-24 17:06:29 - [INFO] -  * Restarting with stat
+02-Apr-24 17:06:30 - [INFO] - Development environment configured.
+02-Apr-24 17:06:30 - [WARNING] -  * Debugger is active!
+02-Apr-24 17:06:30 - [INFO] -  * Debugger PIN: 299-872-502
+02-Apr-24 17:06:33 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+02-Apr-24 17:06:33 - [INFO] -  * Restarting with stat
+02-Apr-24 17:06:34 - [INFO] - Development environment configured.
+02-Apr-24 17:06:34 - [WARNING] -  * Debugger is active!
+02-Apr-24 17:06:34 - [INFO] -  * Debugger PIN: 299-872-502
+02-Apr-24 17:06:37 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+02-Apr-24 17:06:37 - [INFO] -  * Restarting with stat
+02-Apr-24 17:06:38 - [INFO] - Development environment configured.
+02-Apr-24 17:06:39 - [WARNING] -  * Debugger is active!
+02-Apr-24 17:06:39 - [INFO] -  * Debugger PIN: 299-872-502
+02-Apr-24 17:06:46 - [INFO] - Comment updated successfully.
+02-Apr-24 17:06:46 - [INFO] - 200 - Ticket comment updated successfully.
+02-Apr-24 17:06:46 - [INFO] - 127.0.0.1 - - [02/Apr/2024 17:06:46] "PUT /api/v2/ticket/comments/7aaef40c060d2e8be8e5e23e3f7ea0a9/7/23463b99b62a72f26ed677cc556c44e8 HTTP/1.1" 200 -
+02-Apr-24 17:06:58 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+02-Apr-24 17:06:58 - [INFO] -  * Restarting with stat
+02-Apr-24 17:06:59 - [INFO] - Development environment configured.
+02-Apr-24 17:06:59 - [WARNING] -  * Debugger is active!
+02-Apr-24 17:06:59 - [INFO] -  * Debugger PIN: 299-872-502
+02-Apr-24 17:07:03 - [INFO] - Comment updated successfully.
+02-Apr-24 17:07:03 - [INFO] - 200 - Ticket comment updated successfully.
+02-Apr-24 17:07:03 - [INFO] - 127.0.0.1 - - [02/Apr/2024 17:07:03] "PUT /api/v2/ticket/comments/7aaef40c060d2e8be8e5e23e3f7ea0a9/7/23463b99b62a72f26ed677cc556c44e8 HTTP/1.1" 200 -
+02-Apr-24 17:07:34 - [INFO] - Commented successfully.
+02-Apr-24 17:07:34 - [INFO] - 200 - Ticket comment added successfully.
+02-Apr-24 17:07:34 - [INFO] - 127.0.0.1 - - [02/Apr/2024 17:07:34] "POST /api/v2/ticket/comments/7aaef40c060d2e8be8e5e23e3f7ea0a9 HTTP/1.1" 200 -
+02-Apr-24 17:08:06 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+02-Apr-24 17:08:06 - [INFO] -  * Restarting with stat
+02-Apr-24 17:08:07 - [INFO] - Development environment configured.
+02-Apr-24 17:08:07 - [WARNING] -  * Debugger is active!
+02-Apr-24 17:08:07 - [INFO] -  * Debugger PIN: 299-872-502
+02-Apr-24 17:08:15 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+02-Apr-24 17:08:15 - [INFO] -  * Restarting with stat
+02-Apr-24 17:08:16 - [INFO] - Development environment configured.
+02-Apr-24 17:08:16 - [WARNING] -  * Debugger is active!
+02-Apr-24 17:08:16 - [INFO] -  * Debugger PIN: 299-872-502
+02-Apr-24 17:08:19 - [INFO] - Comment updated successfully.
+02-Apr-24 17:08:19 - [INFO] - 200 - Ticket comment updated successfully.
+02-Apr-24 17:08:19 - [INFO] - 127.0.0.1 - - [02/Apr/2024 17:08:19] "PUT /api/v2/ticket/comments/7aaef40c060d2e8be8e5e23e3f7ea0a9/8/23463b99b62a72f26ed677cc556c44e8 HTTP/1.1" 200 -
+02-Apr-24 17:09:51 - [INFO] - 200 - Custom success 200 response sent
+02-Apr-24 17:09:51 - [INFO] - 127.0.0.1 - - [02/Apr/2024 17:09:51] "GET /api/v2/ticket/comments/7aaef40c060d2e8be8e5e23e3f7ea0a9 HTTP/1.1" 200 -
+02-Apr-24 17:10:58 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+02-Apr-24 17:10:58 - [INFO] -  * Restarting with stat
+02-Apr-24 17:10:59 - [INFO] - Development environment configured.
+02-Apr-24 17:10:59 - [WARNING] -  * Debugger is active!
+02-Apr-24 17:10:59 - [INFO] -  * Debugger PIN: 299-872-502
+02-Apr-24 17:11:16 - [INFO] - Commented successfully.
+02-Apr-24 17:11:16 - [INFO] - 200 - Ticket comment added successfully.
+02-Apr-24 17:11:16 - [INFO] - 127.0.0.1 - - [02/Apr/2024 17:11:16] "POST /api/v2/ticket/comments/7aaef40c060d2e8be8e5e23e3f7ea0a9 HTTP/1.1" 200 -
+02-Apr-24 17:11:20 - [INFO] - 200 - Custom success 200 response sent
+02-Apr-24 17:11:20 - [INFO] - 127.0.0.1 - - [02/Apr/2024 17:11:20] "GET /api/v2/ticket/comments/7aaef40c060d2e8be8e5e23e3f7ea0a9 HTTP/1.1" 200 -
+02-Apr-24 17:11:38 - [INFO] - Comment updated successfully.
+02-Apr-24 17:11:38 - [INFO] - 200 - Ticket comment updated successfully.
+02-Apr-24 17:11:38 - [INFO] - 127.0.0.1 - - [02/Apr/2024 17:11:38] "PUT /api/v2/ticket/comments/7aaef40c060d2e8be8e5e23e3f7ea0a9/9/23463b99b62a72f26ed677cc556c44e8 HTTP/1.1" 200 -
+02-Apr-24 17:11:42 - [INFO] - 200 - Custom success 200 response sent
+02-Apr-24 17:11:42 - [INFO] - 127.0.0.1 - - [02/Apr/2024 17:11:42] "GET /api/v2/ticket/comments/7aaef40c060d2e8be8e5e23e3f7ea0a9 HTTP/1.1" 200 -
+02-Apr-24 17:12:02 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+02-Apr-24 17:12:02 - [INFO] -  * Restarting with stat
+02-Apr-24 17:12:03 - [INFO] - Development environment configured.
+02-Apr-24 17:12:03 - [WARNING] -  * Debugger is active!
+02-Apr-24 17:12:03 - [INFO] -  * Debugger PIN: 299-872-502
+02-Apr-24 17:12:06 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+02-Apr-24 17:12:06 - [INFO] -  * Restarting with stat
+02-Apr-24 17:12:08 - [INFO] - Development environment configured.
+02-Apr-24 17:12:08 - [WARNING] -  * Debugger is active!
+02-Apr-24 17:12:08 - [INFO] -  * Debugger PIN: 299-872-502
+02-Apr-24 17:13:07 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+02-Apr-24 17:13:07 - [INFO] -  * Restarting with stat
+02-Apr-24 17:13:08 - [INFO] - Development environment configured.
+02-Apr-24 17:13:08 - [WARNING] -  * Debugger is active!
+02-Apr-24 17:13:08 - [INFO] -  * Debugger PIN: 299-872-502
+02-Apr-24 17:13:29 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+02-Apr-24 17:13:29 - [INFO] -  * Restarting with stat
+02-Apr-24 17:13:30 - [INFO] - Development environment configured.
+02-Apr-24 17:13:30 - [WARNING] -  * Debugger is active!
+02-Apr-24 17:13:30 - [INFO] -  * Debugger PIN: 299-872-502
+02-Apr-24 17:13:37 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+02-Apr-24 17:13:37 - [INFO] -  * Restarting with stat
+02-Apr-24 17:13:39 - [INFO] - Development environment configured.
+02-Apr-24 17:13:39 - [WARNING] -  * Debugger is active!
+02-Apr-24 17:13:39 - [INFO] -  * Debugger PIN: 299-872-502
+02-Apr-24 17:13:46 - [INFO] - Commented successfully.
+02-Apr-24 17:13:46 - [INFO] - 200 - Ticket comment added successfully.
+02-Apr-24 17:13:46 - [INFO] - 127.0.0.1 - - [02/Apr/2024 17:13:46] "POST /api/v2/ticket/comments/7aaef40c060d2e8be8e5e23e3f7ea0a9 HTTP/1.1" 200 -
+02-Apr-24 17:13:55 - [INFO] - Comment updated successfully.
+02-Apr-24 17:13:55 - [INFO] - 200 - Ticket comment updated successfully.
+02-Apr-24 17:13:55 - [INFO] - 127.0.0.1 - - [02/Apr/2024 17:13:55] "PUT /api/v2/ticket/comments/7aaef40c060d2e8be8e5e23e3f7ea0a9/10/23463b99b62a72f26ed677cc556c44e8 HTTP/1.1" 200 -
+02-Apr-24 17:14:00 - [INFO] - 200 - Custom success 200 response sent
+02-Apr-24 17:14:00 - [INFO] - 127.0.0.1 - - [02/Apr/2024 17:14:00] "GET /api/v2/ticket/comments/7aaef40c060d2e8be8e5e23e3f7ea0a9 HTTP/1.1" 200 -
+02-Apr-24 17:21:50 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+02-Apr-24 17:21:51 - [INFO] -  * Restarting with stat
+02-Apr-24 17:21:52 - [INFO] - Development environment configured.
+02-Apr-24 17:21:52 - [WARNING] -  * Debugger is active!
+02-Apr-24 17:21:52 - [INFO] -  * Debugger PIN: 299-872-502
+02-Apr-24 17:21:57 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+02-Apr-24 17:21:57 - [INFO] -  * Restarting with stat
+02-Apr-24 17:21:58 - [INFO] - Development environment configured.
+02-Apr-24 17:21:58 - [WARNING] -  * Debugger is active!
+02-Apr-24 17:21:58 - [INFO] -  * Debugger PIN: 299-872-502
+02-Apr-24 17:22:02 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+02-Apr-24 17:22:03 - [INFO] -  * Restarting with stat
+02-Apr-24 17:22:04 - [INFO] - Development environment configured.
+02-Apr-24 17:22:04 - [WARNING] -  * Debugger is active!
+02-Apr-24 17:22:04 - [INFO] -  * Debugger PIN: 299-872-502
+02-Apr-24 17:22:24 - [INFO] - Commented successfully.
+02-Apr-24 17:22:24 - [INFO] - 200 - Ticket comment added successfully.
+02-Apr-24 17:22:24 - [INFO] - 127.0.0.1 - - [02/Apr/2024 17:22:24] "POST /api/v2/ticket/comments/7aaef40c060d2e8be8e5e23e3f7ea0a9 HTTP/1.1" 200 -
+02-Apr-24 17:22:31 - [INFO] - 200 - Custom success 200 response sent
+02-Apr-24 17:22:31 - [INFO] - 127.0.0.1 - - [02/Apr/2024 17:22:31] "GET /api/v2/ticket/comments/7aaef40c060d2e8be8e5e23e3f7ea0a9 HTTP/1.1" 200 -
+02-Apr-24 17:22:40 - [INFO] - Comment updated successfully.
+02-Apr-24 17:22:40 - [INFO] - 200 - Ticket comment updated successfully.
+02-Apr-24 17:22:40 - [INFO] - 127.0.0.1 - - [02/Apr/2024 17:22:40] "PUT /api/v2/ticket/comments/7aaef40c060d2e8be8e5e23e3f7ea0a9/11/23463b99b62a72f26ed677cc556c44e8 HTTP/1.1" 200 -
+02-Apr-24 17:22:44 - [INFO] - 200 - Custom success 200 response sent
+02-Apr-24 17:22:44 - [INFO] - 127.0.0.1 - - [02/Apr/2024 17:22:44] "GET /api/v2/ticket/comments/7aaef40c060d2e8be8e5e23e3f7ea0a9 HTTP/1.1" 200 -
+02-Apr-24 17:23:04 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+02-Apr-24 17:23:04 - [INFO] -  * Restarting with stat
+02-Apr-24 17:23:05 - [INFO] - Development environment configured.
+02-Apr-24 17:23:05 - [WARNING] -  * Debugger is active!
+02-Apr-24 17:23:05 - [INFO] -  * Debugger PIN: 299-872-502
+02-Apr-24 17:23:33 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+02-Apr-24 17:23:33 - [INFO] -  * Restarting with stat
+02-Apr-24 17:23:34 - [INFO] - Development environment configured.
+02-Apr-24 17:23:35 - [WARNING] -  * Debugger is active!
+02-Apr-24 17:23:35 - [INFO] -  * Debugger PIN: 299-872-502
+02-Apr-24 17:23:36 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+02-Apr-24 17:23:36 - [INFO] -  * Restarting with stat
+02-Apr-24 17:23:37 - [INFO] - Development environment configured.
+02-Apr-24 17:23:37 - [WARNING] -  * Debugger is active!
+02-Apr-24 17:23:37 - [INFO] -  * Debugger PIN: 299-872-502
+02-Apr-24 17:30:32 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+02-Apr-24 17:30:32 - [INFO] -  * Restarting with stat
+02-Apr-24 17:30:34 - [INFO] - Development environment configured.
+02-Apr-24 17:30:34 - [WARNING] -  * Debugger is active!
+02-Apr-24 17:30:34 - [INFO] -  * Debugger PIN: 299-872-502
+02-Apr-24 17:30:36 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+02-Apr-24 17:30:36 - [INFO] -  * Restarting with stat
+02-Apr-24 17:30:37 - [INFO] - Development environment configured.
+02-Apr-24 17:30:37 - [WARNING] -  * Debugger is active!
+02-Apr-24 17:30:37 - [INFO] -  * Debugger PIN: 299-872-502
+02-Apr-24 17:30:38 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+02-Apr-24 17:30:38 - [INFO] -  * Restarting with stat
+02-Apr-24 17:30:39 - [INFO] - Development environment configured.
+02-Apr-24 17:30:39 - [WARNING] -  * Debugger is active!
+02-Apr-24 17:30:39 - [INFO] -  * Debugger PIN: 299-872-502
+02-Apr-24 17:30:44 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+02-Apr-24 17:30:44 - [INFO] -  * Restarting with stat
+02-Apr-24 17:30:45 - [INFO] - Development environment configured.
+02-Apr-24 17:30:45 - [WARNING] -  * Debugger is active!
+02-Apr-24 17:30:45 - [INFO] -  * Debugger PIN: 299-872-502
+02-Apr-24 17:30:50 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+02-Apr-24 17:30:50 - [INFO] -  * Restarting with stat
+02-Apr-24 17:30:52 - [INFO] - Development environment configured.
+02-Apr-24 17:30:52 - [WARNING] -  * Debugger is active!
+02-Apr-24 17:30:52 - [INFO] -  * Debugger PIN: 299-872-502
+02-Apr-24 17:30:55 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+02-Apr-24 17:30:55 - [INFO] -  * Restarting with stat
+02-Apr-24 17:31:10 - [INFO] - Development environment configured.
+02-Apr-24 17:31:10 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+02-Apr-24 17:31:10 - [INFO] - [33mPress CTRL+C to quit[0m
+02-Apr-24 17:31:10 - [INFO] -  * Restarting with stat
+02-Apr-24 17:31:11 - [INFO] - Development environment configured.
+02-Apr-24 17:31:11 - [WARNING] -  * Debugger is active!
+02-Apr-24 17:31:11 - [INFO] -  * Debugger PIN: 299-872-502
+02-Apr-24 17:31:21 - [INFO] - Commented successfully.
+02-Apr-24 17:31:21 - [INFO] - 200 - Ticket comment added successfully.
+02-Apr-24 17:31:21 - [INFO] - 127.0.0.1 - - [02/Apr/2024 17:31:21] "POST /api/v2/ticket/comments/7aaef40c060d2e8be8e5e23e3f7ea0a9 HTTP/1.1" 200 -
+02-Apr-24 17:31:28 - [INFO] - 200 - Custom success 200 response sent
+02-Apr-24 17:31:28 - [INFO] - 127.0.0.1 - - [02/Apr/2024 17:31:28] "GET /api/v2/ticket/comments/7aaef40c060d2e8be8e5e23e3f7ea0a9 HTTP/1.1" 200 -
+02-Apr-24 17:31:43 - [INFO] - Comment updated successfully.
+02-Apr-24 17:31:43 - [INFO] - 200 - Ticket comment updated successfully.
+02-Apr-24 17:31:43 - [INFO] - 127.0.0.1 - - [02/Apr/2024 17:31:43] "PUT /api/v2/ticket/comments/7aaef40c060d2e8be8e5e23e3f7ea0a9/11/23463b99b62a72f26ed677cc556c44e8 HTTP/1.1" 200 -
+02-Apr-24 17:31:58 - [INFO] - Comment updated successfully.
+02-Apr-24 17:31:58 - [INFO] - 200 - Ticket comment updated successfully.
+02-Apr-24 17:31:58 - [INFO] - 127.0.0.1 - - [02/Apr/2024 17:31:58] "PUT /api/v2/ticket/comments/7aaef40c060d2e8be8e5e23e3f7ea0a9/12/23463b99b62a72f26ed677cc556c44e8 HTTP/1.1" 200 -
+02-Apr-24 17:32:04 - [INFO] - 200 - Custom success 200 response sent
+02-Apr-24 17:32:04 - [INFO] - 127.0.0.1 - - [02/Apr/2024 17:32:04] "GET /api/v2/ticket/comments/7aaef40c060d2e8be8e5e23e3f7ea0a9 HTTP/1.1" 200 -
+02-Apr-24 17:33:28 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+02-Apr-24 17:33:28 - [INFO] -  * Restarting with stat
+02-Apr-24 17:34:35 - [INFO] - Development environment configured.
+02-Apr-24 17:34:35 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+02-Apr-24 17:34:35 - [INFO] - [33mPress CTRL+C to quit[0m
+02-Apr-24 17:34:35 - [INFO] -  * Restarting with stat
+02-Apr-24 17:34:36 - [INFO] - Development environment configured.
+02-Apr-24 17:34:36 - [WARNING] -  * Debugger is active!
+02-Apr-24 17:34:36 - [INFO] -  * Debugger PIN: 299-872-502
+02-Apr-24 17:34:42 - [INFO] - Commented successfully.
+02-Apr-24 17:34:42 - [INFO] - 200 - Ticket comment added successfully.
+02-Apr-24 17:34:42 - [INFO] - 127.0.0.1 - - [02/Apr/2024 17:34:42] "POST /api/v2/ticket/comments/7aaef40c060d2e8be8e5e23e3f7ea0a9 HTTP/1.1" 200 -
+02-Apr-24 17:34:57 - [INFO] - Comment updated successfully.
+02-Apr-24 17:34:57 - [INFO] - 200 - Ticket comment updated successfully.
+02-Apr-24 17:34:57 - [INFO] - 127.0.0.1 - - [02/Apr/2024 17:34:57] "PUT /api/v2/ticket/comments/7aaef40c060d2e8be8e5e23e3f7ea0a9/13/23463b99b62a72f26ed677cc556c44e8 HTTP/1.1" 200 -
+02-Apr-24 17:35:02 - [INFO] - 200 - Custom success 200 response sent
+02-Apr-24 17:35:02 - [INFO] - 127.0.0.1 - - [02/Apr/2024 17:35:02] "GET /api/v2/ticket/comments/7aaef40c060d2e8be8e5e23e3f7ea0a9 HTTP/1.1" 200 -
+02-Apr-24 17:35:35 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+02-Apr-24 17:35:36 - [INFO] -  * Restarting with stat
+02-Apr-24 17:35:37 - [INFO] - Development environment configured.
+02-Apr-24 17:35:37 - [WARNING] -  * Debugger is active!
+02-Apr-24 17:35:37 - [INFO] -  * Debugger PIN: 299-872-502
+02-Apr-24 17:35:45 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+02-Apr-24 17:35:45 - [INFO] -  * Restarting with stat
+02-Apr-24 17:35:46 - [INFO] - Development environment configured.
+02-Apr-24 17:35:46 - [WARNING] -  * Debugger is active!
+02-Apr-24 17:35:46 - [INFO] -  * Debugger PIN: 299-872-502
+02-Apr-24 17:35:47 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+02-Apr-24 17:35:48 - [INFO] -  * Restarting with stat
+02-Apr-24 17:35:49 - [INFO] - Development environment configured.
+02-Apr-24 17:35:49 - [WARNING] -  * Debugger is active!
+02-Apr-24 17:35:49 - [INFO] -  * Debugger PIN: 299-872-502
+02-Apr-24 17:35:55 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+02-Apr-24 17:35:55 - [INFO] -  * Restarting with stat
+02-Apr-24 17:35:56 - [INFO] - Development environment configured.
+02-Apr-24 17:35:56 - [WARNING] -  * Debugger is active!
+02-Apr-24 17:35:56 - [INFO] -  * Debugger PIN: 299-872-502
+02-Apr-24 17:36:11 - [INFO] - Commented successfully.
+02-Apr-24 17:36:11 - [INFO] - 200 - Ticket comment added successfully.
+02-Apr-24 17:36:11 - [INFO] - 127.0.0.1 - - [02/Apr/2024 17:36:11] "POST /api/v2/ticket/comments/7aaef40c060d2e8be8e5e23e3f7ea0a9 HTTP/1.1" 200 -
+02-Apr-24 17:36:14 - [INFO] - 200 - Custom success 200 response sent
+02-Apr-24 17:36:14 - [INFO] - 127.0.0.1 - - [02/Apr/2024 17:36:14] "GET /api/v2/ticket/comments/7aaef40c060d2e8be8e5e23e3f7ea0a9 HTTP/1.1" 200 -
+02-Apr-24 17:36:21 - [INFO] - Comment updated successfully.
+02-Apr-24 17:36:21 - [INFO] - 200 - Ticket comment updated successfully.
+02-Apr-24 17:36:21 - [INFO] - 127.0.0.1 - - [02/Apr/2024 17:36:21] "PUT /api/v2/ticket/comments/7aaef40c060d2e8be8e5e23e3f7ea0a9/14/23463b99b62a72f26ed677cc556c44e8 HTTP/1.1" 200 -
+02-Apr-24 17:36:24 - [INFO] - 200 - Custom success 200 response sent
+02-Apr-24 17:36:24 - [INFO] - 127.0.0.1 - - [02/Apr/2024 17:36:24] "GET /api/v2/ticket/comments/7aaef40c060d2e8be8e5e23e3f7ea0a9 HTTP/1.1" 200 -
+02-Apr-24 17:37:39 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+02-Apr-24 17:37:39 - [INFO] -  * Restarting with stat
+02-Apr-24 17:37:40 - [INFO] - Development environment configured.
+02-Apr-24 17:37:40 - [WARNING] -  * Debugger is active!
+02-Apr-24 17:37:40 - [INFO] -  * Debugger PIN: 299-872-502
+02-Apr-24 17:37:46 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+02-Apr-24 17:37:46 - [INFO] -  * Restarting with stat
+02-Apr-24 17:37:47 - [INFO] - Development environment configured.
+02-Apr-24 17:37:47 - [WARNING] -  * Debugger is active!
+02-Apr-24 17:37:47 - [INFO] -  * Debugger PIN: 299-872-502
+02-Apr-24 17:37:55 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+02-Apr-24 17:37:56 - [INFO] -  * Restarting with stat
+02-Apr-24 17:37:57 - [INFO] - Development environment configured.
+02-Apr-24 17:37:57 - [WARNING] -  * Debugger is active!
+02-Apr-24 17:37:57 - [INFO] -  * Debugger PIN: 299-872-502
+02-Apr-24 17:37:58 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+02-Apr-24 17:37:58 - [INFO] -  * Restarting with stat
+02-Apr-24 17:37:59 - [INFO] - Development environment configured.
+02-Apr-24 17:37:59 - [WARNING] -  * Debugger is active!
+02-Apr-24 17:37:59 - [INFO] -  * Debugger PIN: 299-872-502
+02-Apr-24 17:38:06 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+02-Apr-24 17:38:06 - [INFO] -  * Restarting with stat
+02-Apr-24 17:38:07 - [INFO] - Development environment configured.
+02-Apr-24 17:38:07 - [WARNING] -  * Debugger is active!
+02-Apr-24 17:38:07 - [INFO] -  * Debugger PIN: 299-872-502
+02-Apr-24 17:38:16 - [INFO] - Commented successfully.
+02-Apr-24 17:38:16 - [INFO] - 200 - Ticket comment added successfully.
+02-Apr-24 17:38:16 - [INFO] - 127.0.0.1 - - [02/Apr/2024 17:38:16] "POST /api/v2/ticket/comments/7aaef40c060d2e8be8e5e23e3f7ea0a9 HTTP/1.1" 200 -
+02-Apr-24 17:38:29 - [INFO] - Comment updated successfully.
+02-Apr-24 17:38:29 - [INFO] - 200 - Ticket comment updated successfully.
+02-Apr-24 17:38:29 - [INFO] - 127.0.0.1 - - [02/Apr/2024 17:38:29] "PUT /api/v2/ticket/comments/7aaef40c060d2e8be8e5e23e3f7ea0a9/15/23463b99b62a72f26ed677cc556c44e8 HTTP/1.1" 200 -
+02-Apr-24 17:38:33 - [INFO] - 200 - Custom success 200 response sent
+02-Apr-24 17:38:33 - [INFO] - 127.0.0.1 - - [02/Apr/2024 17:38:33] "GET /api/v2/ticket/comments/7aaef40c060d2e8be8e5e23e3f7ea0a9 HTTP/1.1" 200 -
+02-Apr-24 17:38:54 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+02-Apr-24 17:38:54 - [INFO] -  * Restarting with stat
+02-Apr-24 17:38:55 - [INFO] - Development environment configured.
+02-Apr-24 17:38:55 - [WARNING] -  * Debugger is active!
+02-Apr-24 17:38:55 - [INFO] -  * Debugger PIN: 299-872-502
+02-Apr-24 17:38:56 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+02-Apr-24 17:38:56 - [INFO] -  * Restarting with stat
+02-Apr-24 17:38:58 - [INFO] - Development environment configured.
+02-Apr-24 17:38:58 - [WARNING] -  * Debugger is active!
+02-Apr-24 17:38:58 - [INFO] -  * Debugger PIN: 299-872-502
+02-Apr-24 17:39:12 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+02-Apr-24 17:39:12 - [INFO] -  * Restarting with stat
+02-Apr-24 17:39:13 - [INFO] - Development environment configured.
+02-Apr-24 17:39:13 - [WARNING] -  * Debugger is active!
+02-Apr-24 17:39:13 - [INFO] -  * Debugger PIN: 299-872-502
+02-Apr-24 17:39:27 - [INFO] - Commented successfully.
+02-Apr-24 17:39:27 - [INFO] - 200 - Ticket comment added successfully.
+02-Apr-24 17:39:27 - [INFO] - 127.0.0.1 - - [02/Apr/2024 17:39:27] "POST /api/v2/ticket/comments/7aaef40c060d2e8be8e5e23e3f7ea0a9 HTTP/1.1" 200 -
+02-Apr-24 17:39:39 - [INFO] - Comment updated successfully.
+02-Apr-24 17:39:39 - [INFO] - 200 - Ticket comment updated successfully.
+02-Apr-24 17:39:39 - [INFO] - 127.0.0.1 - - [02/Apr/2024 17:39:39] "PUT /api/v2/ticket/comments/7aaef40c060d2e8be8e5e23e3f7ea0a9/16/23463b99b62a72f26ed677cc556c44e8 HTTP/1.1" 200 -
+02-Apr-24 17:39:43 - [INFO] - 200 - Custom success 200 response sent
+02-Apr-24 17:39:43 - [INFO] - 127.0.0.1 - - [02/Apr/2024 17:39:43] "GET /api/v2/ticket/comments/7aaef40c060d2e8be8e5e23e3f7ea0a9 HTTP/1.1" 200 -
+02-Apr-24 17:40:26 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+02-Apr-24 17:40:26 - [INFO] -  * Restarting with stat
+02-Apr-24 17:40:27 - [INFO] - Development environment configured.
+02-Apr-24 17:40:27 - [WARNING] -  * Debugger is active!
+02-Apr-24 17:40:27 - [INFO] -  * Debugger PIN: 299-872-502
+02-Apr-24 17:40:34 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+02-Apr-24 17:40:34 - [INFO] -  * Restarting with stat
+02-Apr-24 17:40:35 - [INFO] - Development environment configured.
+02-Apr-24 17:40:35 - [WARNING] -  * Debugger is active!
+02-Apr-24 17:40:35 - [INFO] -  * Debugger PIN: 299-872-502
+02-Apr-24 17:40:42 - [INFO] - Commented successfully.
+02-Apr-24 17:40:42 - [INFO] - 200 - Ticket comment added successfully.
+02-Apr-24 17:40:42 - [INFO] - 127.0.0.1 - - [02/Apr/2024 17:40:42] "POST /api/v2/ticket/comments/7aaef40c060d2e8be8e5e23e3f7ea0a9 HTTP/1.1" 200 -
+02-Apr-24 17:40:53 - [INFO] - Comment updated successfully.
+02-Apr-24 17:40:53 - [INFO] - 200 - Ticket comment updated successfully.
+02-Apr-24 17:40:53 - [INFO] - 127.0.0.1 - - [02/Apr/2024 17:40:53] "PUT /api/v2/ticket/comments/7aaef40c060d2e8be8e5e23e3f7ea0a9/17/23463b99b62a72f26ed677cc556c44e8 HTTP/1.1" 200 -
+02-Apr-24 17:40:56 - [INFO] - 200 - Custom success 200 response sent
+02-Apr-24 17:40:56 - [INFO] - 127.0.0.1 - - [02/Apr/2024 17:40:56] "GET /api/v2/ticket/comments/7aaef40c060d2e8be8e5e23e3f7ea0a9 HTTP/1.1" 200 -
+02-Apr-24 17:41:41 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+02-Apr-24 17:41:41 - [INFO] -  * Restarting with stat
+02-Apr-24 17:41:42 - [INFO] - Development environment configured.
+02-Apr-24 17:41:42 - [WARNING] -  * Debugger is active!
+02-Apr-24 17:41:42 - [INFO] -  * Debugger PIN: 299-872-502
+02-Apr-24 17:41:55 - [INFO] - Commented successfully.
+02-Apr-24 17:41:55 - [INFO] - 200 - Ticket comment added successfully.
+02-Apr-24 17:41:55 - [INFO] - 127.0.0.1 - - [02/Apr/2024 17:41:55] "POST /api/v2/ticket/comments/7aaef40c060d2e8be8e5e23e3f7ea0a9 HTTP/1.1" 200 -
+02-Apr-24 17:42:05 - [INFO] - Comment updated successfully.
+02-Apr-24 17:42:05 - [INFO] - 200 - Ticket comment updated successfully.
+02-Apr-24 17:42:05 - [INFO] - 127.0.0.1 - - [02/Apr/2024 17:42:05] "PUT /api/v2/ticket/comments/7aaef40c060d2e8be8e5e23e3f7ea0a9/18/23463b99b62a72f26ed677cc556c44e8 HTTP/1.1" 200 -
+02-Apr-24 17:42:10 - [INFO] - 200 - Custom success 200 response sent
+02-Apr-24 17:42:10 - [INFO] - 127.0.0.1 - - [02/Apr/2024 17:42:10] "GET /api/v2/ticket/comments/7aaef40c060d2e8be8e5e23e3f7ea0a9 HTTP/1.1" 200 -
+02-Apr-24 17:42:26 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+02-Apr-24 17:42:26 - [INFO] -  * Restarting with stat
+02-Apr-24 17:42:27 - [INFO] - Development environment configured.
+02-Apr-24 17:42:27 - [WARNING] -  * Debugger is active!
+02-Apr-24 17:42:27 - [INFO] -  * Debugger PIN: 299-872-502
+02-Apr-24 17:42:33 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+02-Apr-24 17:42:34 - [INFO] -  * Restarting with stat
+02-Apr-24 17:42:35 - [INFO] - Development environment configured.
+02-Apr-24 17:42:35 - [WARNING] -  * Debugger is active!
+02-Apr-24 17:42:35 - [INFO] -  * Debugger PIN: 299-872-502
+>>>>>>> Stashed changes
