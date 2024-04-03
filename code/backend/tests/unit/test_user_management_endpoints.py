@@ -64,7 +64,7 @@ def test_asssign_disciplinary_card_api_with_fixture_post_200(test_client):
     """
     GIVEN a Flask application configured for testing
     WHEN the '/api/v2/management/<string:user_id>/card' page is requested (POST) by admin to assign a badge 
-    THEN check that the response is 200 and database added the badge successfully to the user
+    THEN check that the response is 200 and database added the card successfully to the user
     """
 
     headers = {

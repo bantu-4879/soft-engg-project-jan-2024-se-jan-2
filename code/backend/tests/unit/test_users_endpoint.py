@@ -16,7 +16,7 @@ from application.models import Authentication, User
 def test_student_api_with_fixture_get_200(test_client):
     """
     GIVEN a Flask application configured for testing
-    WHEN the '/api/v1/student/<string:user_id>' page is requested (GET) by student
+    WHEN the '/api/v2/student/<string:user_id>' page is requested (GET) by student
     THEN check that the response is 200 and data contains students personal data
     """
     headers = {
@@ -38,7 +38,7 @@ def test_student_api_with_fixture_get_200(test_client):
 def test_student_api_with_fixture_put_200(test_client):
     """
     GIVEN a Flask application configured for testing
-    WHEN the '/api/v1/student/<string:user_id>' page is requested (PUT) by student to update details
+    WHEN the '/api/v2/student/<string:user_id>' page is requested (PUT) by student to update details
     THEN check that the response is 200 and database contains updated data
     """
     headers = {
@@ -65,7 +65,7 @@ def test_student_api_with_fixture_put_200(test_client):
 def test_support_api_with_fixture_get_200(test_client):
     """
     GIVEN a Flask application configured for testing
-    WHEN the '/api/v1/support/<string:user_id>' page is requested (GET) by support
+    WHEN the '/api/v2/support/<string:user_id>' page is requested (GET) by support
     THEN check that the response is 200 and data contains supports personal data
     """
     headers = {
@@ -87,7 +87,7 @@ def test_support_api_with_fixture_get_200(test_client):
 def test_admin_api_with_fixture_get_200(test_client):
     """
     GIVEN a Flask application configured for testing
-    WHEN the '/api/v1/admin/<string:user_id>' page is requested (GET) by admin
+    WHEN the '/api/v2/admin/<string:user_id>' page is requested (GET) by admin
     THEN check that the response is 200 and data contains admins personal data
     """
     headers = {

@@ -16,7 +16,7 @@ headers = {
 def test_common_utils_token_required_with_fixture_get_401(test_client):
     """
     GIVEN a Flask application configured for testing
-    WHEN the '/api/v1/auth/newusers' page is requested (GET) with missing or invalid token
+    WHEN the '/api/v2/auth/newusers' page is requested (GET) with missing or invalid token
     THEN check that the response is 401
     """
     headers = {
@@ -37,7 +37,7 @@ def test_common_utils_token_required_with_fixture_get_401(test_client):
 def test_common_utils_token_required_with_fixture_get_200(test_client):
     """
     GIVEN a Flask application configured for testing
-    WHEN the '/api/v1/auth/newusers' page is requested (GET) with valid token for admin
+    WHEN the '/api/v2/auth/newusers' page is requested (GET) with valid token for admin
     THEN check that the response is 200
     """
 

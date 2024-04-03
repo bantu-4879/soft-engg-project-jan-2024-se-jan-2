@@ -8,7 +8,7 @@ from conftest import (
 def test_comment_api_with_fixture_post_200(test_client):
     """
     GIVEN a Flask application configured for testing
-    WHEN the '/api/v2/comments/<string:ticket_id>' page is requested (POST) by student to add a comment
+    WHEN the '/api/v2/ticket/comments/<string:ticket_id>' page is requested (POST) by user to add a comment
     THEN check that the response is 200 and database added the comment successfully
     """
     headers = {
@@ -35,7 +35,7 @@ def test_comment_api_with_fixture_post_200(test_client):
 def test_comment_api_with_fixture_get_200(test_client):
     """
     GIVEN a Flask application configured for testing
-    WHEN the '/api/v2/comments/<string:ticket_id>' page is requested (GET) by user to get all comments on a ticket 
+    WHEN the '/api/v2/ticket/comments/<string:ticket_id>' page is requested (GET) by user to get all comments on a ticket 
     THEN check that the response is 200 
     """
     headers = {
@@ -56,7 +56,7 @@ def test_comment_api_with_fixture_get_200(test_client):
 def test_ticket_comment_api_with_fixture_put_200(test_client):
     """
     GIVEN a Flask application configured for testing
-    WHEN the '/api/v2/comments/<string:ticket_id>' page is requested (PUT) by user to update a comment
+    WHEN the '/api/v2/ticket/comments/<string:ticket_id>' page is requested (PUT) by user to update a comment
     THEN check that the response is 200 and database added the comment successfully
     """
     headers = {

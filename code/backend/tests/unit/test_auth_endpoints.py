@@ -29,7 +29,7 @@ def test_register_page_with_fixture_get(test_client):
 def test_register_page_with_fixture_post_400_missing_data(test_client):
     """
     GIVEN a Flask application configured for testing
-    WHEN the '/api/v1/auth/register' page is requested (POST) with empty data fields
+    WHEN the '/api/v2/auth/register' page is requested (POST) with empty data fields
     THEN check that the response is 400 i.e. bad request
     """
 
@@ -48,7 +48,7 @@ def test_register_page_with_fixture_post_400_missing_data(test_client):
 def test_register_page_with_fixture_post_200_success(test_client):
     """
     GIVEN a Flask application configured for testing
-    WHEN the '/api/v1/auth/register' page is requested (POST) with all correctly filled data fields for a new user
+    WHEN the '/api/v2/auth/register' page is requested (POST) with all correctly filled data fields for a new user
     THEN check that the response is 200 i.e. the account is created successfully
     """
 
@@ -73,7 +73,7 @@ def test_register_page_with_fixture_post_200_success(test_client):
 def test_register_page_with_fixture_post_409_email_exists(test_client):
     """
     GIVEN a Flask application configured for testing
-    WHEN the '/api/v1/auth/register' page is requested (POST) with already existing email id
+    WHEN the '/api/v2/auth/register' page is requested (POST) with already existing email id
     THEN check that the response is 409 i.e. Email already exists
     """
 
@@ -96,7 +96,7 @@ def test_register_page_with_fixture_post_409_email_exists(test_client):
 def test_register_page_with_fixture_post_400_invalid_data(test_client):
     """
     GIVEN a Flask application configured for testing
-    WHEN the '/api/v1/auth/register' page is requested (POST) with invalid or non matching passwords
+    WHEN the '/api/v2/auth/register' page is requested (POST) with invalid or non matching passwords
     THEN check that the response is 400.
     """
 
@@ -119,7 +119,7 @@ def test_register_page_with_fixture_post_400_invalid_data(test_client):
 def test_login_page_with_fixture_post_400_missing_data(test_client):
     """
     GIVEN a Flask application configured for testing
-    WHEN the '/api/v1/auth/login' page is requested (POST) with empty fields
+    WHEN the '/api/v2/auth/login' page is requested (POST) with empty fields
     THEN check that the response is 400.
     """
 
@@ -139,7 +139,7 @@ def test_login_page_with_fixture_post_400_missing_data(test_client):
 def test_login_page_with_fixture_post_401_unauthenticated(test_client):
     """
     GIVEN a Flask application configured for testing
-    WHEN the '/api/v1/auth/login' page is requested (POST) with wrong password
+    WHEN the '/api/v2/auth/login' page is requested (POST) with wrong password
     THEN check that the response is 401
     """
 
@@ -158,7 +158,7 @@ def test_login_page_with_fixture_post_401_unauthenticated(test_client):
 def test_login_page_with_fixture_post_404_user_not_exist(test_client):
     """
     GIVEN a Flask application configured for testing
-    WHEN the '/api/v1/auth/login' page is requested (POST) with wrong email
+    WHEN the '/api/v2/auth/login' page is requested (POST) with wrong email
     THEN check that the response is 404
     """
 
@@ -177,7 +177,7 @@ def test_login_page_with_fixture_post_404_user_not_exist(test_client):
 def test_login_page_with_fixture_post_200_success(test_client):
     """
     GIVEN a Flask application configured for testing
-    WHEN the '/api/v1/auth/login' page is requested (POST) with correct user details
+    WHEN the '/api/v2/auth/login' page is requested (POST) with correct user details
     THEN check that the response is 200 and user name is correct
     """
 
@@ -197,7 +197,7 @@ def test_login_page_with_fixture_post_200_success(test_client):
 def test_newusers_page_with_fixture_get_200(test_client):
     """
     GIVEN a Flask application configured for testing
-    WHEN the '/api/v1/auth/newUsers' page is requested (GET) with correct admin details
+    WHEN the '/api/v2/auth/newUsers' page is requested (GET) with correct admin details
     THEN check that the response is 200.
     """
 

@@ -14,7 +14,7 @@ from conftest import (
 def test_student_all_tickets_with_fixture_get_200_success(test_client):
     """
     GIVEN a Flask application configured for testing
-    WHEN the '/api/v1/ticket/all-tickets' page is requested (GET) by student
+    WHEN the '/api/v2/ticket/all-tickets' page is requested (GET) by student
     THEN check that the response is 200 and data contains tickets details
     """
     headers = {
@@ -35,7 +35,7 @@ def test_student_all_tickets_with_fixture_get_200_success(test_client):
 def test_staff_all_tickets_with_fixture_get_200_success(test_client):
     """
     GIVEN a Flask application configured for testing
-    WHEN the '/api/v1/ticket/all-tickets' page is requested (GET) by user other than student
+    WHEN the '/api/v2/ticket/all-tickets' page is requested (GET) by user other than student
     THEN check that the response is 403 as that endpoint is only accessible to students
     """
     headers = {
@@ -55,7 +55,7 @@ def test_staff_all_tickets_with_fixture_get_200_success(test_client):
 def test_all_students_tickets_with_fixture_get_200_success_1(test_client):
     """
     GIVEN a Flask application configured for testing
-    WHEN the '/api/v1/ticket/all-tickets/<string:user_id>' page is requested (GET) by student
+    WHEN the '/api/v2/ticket/all-tickets/<string:user_id>' page is requested (GET) by student
     THEN check that the response is 200 and data contains tickets as per query
     """
     headers = {
@@ -79,7 +79,7 @@ def test_all_students_tickets_with_fixture_get_200_success_1(test_client):
 def test_all_students_tickets_with_fixture_get_200_success_2(test_client):
     """
     GIVEN a Flask application configured for testing
-    WHEN the '/api/v1/ticket/all-tickets/<string:user_id>' page is requested (GET) by student
+    WHEN the '/api/v2/ticket/all-tickets/<string:user_id>' page is requested (GET) by student
     THEN check that the response is 200 and data contains tickets as per query
     """
     headers = {
@@ -103,7 +103,7 @@ def test_all_students_tickets_with_fixture_get_200_success_2(test_client):
 def test_all_support_tickets_with_fixture_get_200_success(test_client):
     """
     GIVEN a Flask application configured for testing
-    WHEN the '/api/v1/ticket/all-tickets/<string:user_id>' page is requested (GET) by support
+    WHEN the '/api/v2/ticket/all-tickets/<string:user_id>' page is requested (GET) by support
     THEN check that the response is 200 and data contains unresolved tickets as per query
     """
     headers = {
@@ -127,7 +127,7 @@ def test_all_support_tickets_with_fixture_get_200_success(test_client):
 def test_all_admin_tickets_with_fixture_get_200_success(test_client):
     """
     GIVEN a Flask application configured for testing
-    WHEN the '/api/v1/ticket/all-tickets/<string:user_id>' page is requested (GET) by admin
+    WHEN the '/api/v2/ticket/all-tickets/<string:user_id>' page is requested (GET) by admin
     THEN check that the response is 200 and data contains resolved tickets as per query and in descending order of votes by default
     """
     headers = {
@@ -150,7 +150,7 @@ def test_all_admin_tickets_with_fixture_get_200_success(test_client):
 def test_ticket_api_with_fixture_post_200_success(test_client):
     """
     GIVEN a Flask application configured for testing
-    WHEN the '/api/v1/ticket/<string:user_id>' page is requested (POST) by student to create a new ticket
+    WHEN the '/api/v2/ticket/<string:user_id>' page is requested (POST) by student to create a new ticket
     THEN check that the response is 200.
     """
     headers = {
@@ -177,7 +177,7 @@ def test_ticket_api_with_fixture_post_200_success(test_client):
 def test_ticket_api_with_fixture_get_200_success(test_client):
     """
     GIVEN a Flask application configured for testing
-    WHEN the '/api/v1/ticket/<string:ticket_id>/<string:user_id>' page is requested (GET)
+    WHEN the '/api/v2/ticket/<string:ticket_id>/<string:user_id>' page is requested (GET)
     THEN check that the response is 200 and data contains ticket details
     """
     headers = {
