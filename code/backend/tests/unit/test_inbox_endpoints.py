@@ -4,6 +4,7 @@ from conftest import (
     student_web_token,
 )
 
+
 def test_inbox_api_with_fixture_get_200(test_client):
     """
     GIVEN a Flask application configured for testing
