@@ -175,7 +175,7 @@ class Tags(Resource):
         self.user_id=user_id
 
     
-    @token_required
+    #@token_required
     def get(self):
         headers={
             'Api-Key':API_KEY,
@@ -192,14 +192,14 @@ class Tags(Resource):
                 _d["id"] = tag["id"]
                 _d["name"] = tag["name"]
                 _d["tag_names_list"] = tag["tag_names"]
-                _d["permission"] = tag["permission"]
+                _d["permission"] = tag["permissions"]
                 data.append(_d)
             return success_200_custom(data=data)
         else:
             raise NotFoundError(status_msg="could not load Tags data")
     
-    @token_required
-    @users_required(users='Staff')
+    #@token_required
+    #@users_required(users='Staff')
     def post(self):
         try:
             form = request.get_json()
@@ -218,7 +218,7 @@ class Tags(Resource):
         }
         # Send request to Discourse API
         headers = {'Api-Key': API_KEY, 'Api-Username': API_USERNAME}
-        url = f'{DISCOURSE_BASE_URL}/tags.json'
+        url = f'{DISCOURSE_BASE_URL}/tag_groups.json'
         try:
             response = requests.post(url, json=payload, headers=headers)
             response_data = response.json()

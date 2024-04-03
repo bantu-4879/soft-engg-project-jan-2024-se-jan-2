@@ -7318,3 +7318,121 @@
 03-Apr-24 17:26:06 - [INFO] - Development environment configured.
 03-Apr-24 17:26:06 - [WARNING] -  * Debugger is active!
 03-Apr-24 17:26:06 - [INFO] -  * Debugger PIN: 144-740-991
+03-Apr-24 17:30:38 - [INFO] - Testing environment configured.
+03-Apr-24 17:30:38 - [INFO] - Testing fixture set.
+03-Apr-24 17:30:38 - [INFO] - 400 - email is empty or invalid
+03-Apr-24 17:30:39 - [INFO] - New account created
+03-Apr-24 17:30:39 - [INFO] - 200 - Account created successfully. Now please login.
+03-Apr-24 17:30:39 - [INFO] - 409 - Email is already in use
+03-Apr-24 17:30:39 - [INFO] - 400 - Email or Password are not valid as per specification OR Password did not match.
+03-Apr-24 17:30:39 - [INFO] - 400 - Email or Password is empty
+03-Apr-24 17:30:39 - [INFO] - 401 - Password is incorrect
+03-Apr-24 17:30:39 - [INFO] - 404 - User does not exists
+03-Apr-24 17:30:39 - [INFO] - File path is not valid: D:\GitHub\soft-engg-project-jan-2024-se-jan-2\code\backend\databases\images\profile_pics\dummy_profile.png
+03-Apr-24 17:30:39 - [INFO] - User logged in.
+03-Apr-24 17:30:39 - [INFO] - 200 - Custom success 200 response sent
+03-Apr-24 17:30:39 - [INFO] - Token is verified for the user: 7a848f03778ea5e30de4dc6850c6b67e
+03-Apr-24 17:30:39 - [INFO] - Admin role is verified for the user: 7a848f03778ea5e30de4dc6850c6b67e
+03-Apr-24 17:30:39 - [INFO] - 200 - Custom success 200 response sent
+03-Apr-24 17:30:39 - [INFO] - Testing environment configured.
+03-Apr-24 17:30:39 - [INFO] - Testing fixture set.
+03-Apr-24 17:30:39 - [INFO] - 401 - Token is empty or missing
+03-Apr-24 17:30:39 - [INFO] - Token is verified for the user: 7a848f03778ea5e30de4dc6850c6b67e
+03-Apr-24 17:30:39 - [INFO] - Admin role is verified for the user: 7a848f03778ea5e30de4dc6850c6b67e
+03-Apr-24 17:30:39 - [INFO] - 200 - Custom success 200 response sent
+03-Apr-24 17:30:39 - [INFO] - Testing environment configured.
+03-Apr-24 17:30:39 - [INFO] - Testing fixture set.
+03-Apr-24 17:30:39 - [INFO] - Token is verified for the user: cf1367a9f74b7d6377f42438d3e6680b
+03-Apr-24 17:30:39 - [INFO] - User role : Student : is verified for the user: cf1367a9f74b7d6377f42438d3e6680b
+03-Apr-24 17:30:39 - [INFO] - All tickets found : 13
+03-Apr-24 17:30:39 - [INFO] - 200 - Custom success 200 response sent
+03-Apr-24 17:30:39 - [INFO] - Token is verified for the user: 288abb7d329012b2d3b8d01c497f620a
+03-Apr-24 17:30:39 - [INFO] - User role : Staff : is verified for the user: 288abb7d329012b2d3b8d01c497f620a
+03-Apr-24 17:30:39 - [INFO] - All tickets found : 13
+03-Apr-24 17:30:39 - [INFO] - 200 - Custom success 200 response sent
+03-Apr-24 17:30:39 - [INFO] - Token is verified for the user: cf1367a9f74b7d6377f42438d3e6680b
+03-Apr-24 17:30:39 - [INFO] - User role : Student : is verified for the user: cf1367a9f74b7d6377f42438d3e6680b
+03-Apr-24 17:30:39 - [INFO] - All tickets found : 0
+03-Apr-24 17:30:39 - [INFO] - 200 - Custom success 200 response sent
+03-Apr-24 17:30:39 - [INFO] - Token is verified for the user: cf1367a9f74b7d6377f42438d3e6680b
+03-Apr-24 17:30:39 - [INFO] - User role : Student : is verified for the user: cf1367a9f74b7d6377f42438d3e6680b
+03-Apr-24 17:30:39 - [INFO] - All tickets found : 0
+03-Apr-24 17:30:39 - [INFO] - 200 - Custom success 200 response sent
+03-Apr-24 17:30:39 - [INFO] - Token is verified for the user: 288abb7d329012b2d3b8d01c497f620a
+03-Apr-24 17:30:39 - [INFO] - User role : Staff : is verified for the user: 288abb7d329012b2d3b8d01c497f620a
+03-Apr-24 17:30:39 - [INFO] - All tickets found : 0
+03-Apr-24 17:30:39 - [INFO] - 200 - Custom success 200 response sent
+03-Apr-24 17:30:39 - [INFO] - Token is verified for the user: 7a848f03778ea5e30de4dc6850c6b67e
+03-Apr-24 17:30:39 - [INFO] - User role : Admin : is verified for the user: 7a848f03778ea5e30de4dc6850c6b67e
+03-Apr-24 17:30:39 - [INFO] - All tickets found : 0
+03-Apr-24 17:30:39 - [INFO] - 200 - Custom success 200 response sent
+03-Apr-24 17:30:39 - [INFO] - Token is verified for the user: cf1367a9f74b7d6377f42438d3e6680b
+03-Apr-24 17:30:39 - [INFO] - User role : Student : is verified for the user: cf1367a9f74b7d6377f42438d3e6680b
+03-Apr-24 17:30:39 - [INFO] - Ticket created successfully.
+03-Apr-24 17:30:39 - [INFO] - 200 - Ticket created successfully. Attachments are empty.
+03-Apr-24 17:30:39 - [INFO] - Token is verified for the user: cf1367a9f74b7d6377f42438d3e6680b
+03-Apr-24 17:30:39 - [INFO] - User role : Student : is verified for the user: cf1367a9f74b7d6377f42438d3e6680b
+03-Apr-24 17:30:39 - [INFO] - 200 - Custom success 200 response sent
+03-Apr-24 17:30:39 - [INFO] - Testing environment configured.
+03-Apr-24 17:30:39 - [INFO] - Testing fixture set.
+03-Apr-24 17:30:39 - [INFO] - Token is verified for the user: cf1367a9f74b7d6377f42438d3e6680b
+03-Apr-24 17:30:39 - [INFO] - User role : Student : is verified for the user: cf1367a9f74b7d6377f42438d3e6680b
+03-Apr-24 17:30:39 - [INFO] - 200 - Custom success 200 response sent
+03-Apr-24 17:30:39 - [INFO] - Token is verified for the user: cf1367a9f74b7d6377f42438d3e6680b
+03-Apr-24 17:30:39 - [INFO] - User role : Student : is verified for the user: cf1367a9f74b7d6377f42438d3e6680b
+03-Apr-24 17:30:39 - [INFO] - User details Updated successfully.
+03-Apr-24 17:30:39 - [INFO] - 200 - User details Updated successfully.
+03-Apr-24 17:30:39 - [INFO] - Token is verified for the user: 288abb7d329012b2d3b8d01c497f620a
+03-Apr-24 17:30:39 - [INFO] - User role : Staff : is verified for the user: 288abb7d329012b2d3b8d01c497f620a
+03-Apr-24 17:30:39 - [INFO] - 200 - Custom success 200 response sent
+03-Apr-24 17:30:39 - [INFO] - Token is verified for the user: 7a848f03778ea5e30de4dc6850c6b67e
+03-Apr-24 17:30:39 - [INFO] - User role : Admin : is verified for the user: 7a848f03778ea5e30de4dc6850c6b67e
+03-Apr-24 17:30:39 - [INFO] - 200 - Custom success 200 response sent
+03-Apr-24 17:33:48 - [INFO] - 404 - Provided user id does not exists. Please create account.
+03-Apr-24 17:33:48 - [INFO] - 127.0.0.1 - - [03/Apr/2024 17:33:48] "[33mPOST /api/v2/discourse/tags HTTP/1.1[0m" 404 -
+03-Apr-24 17:34:00 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+03-Apr-24 17:34:00 - [INFO] -  * Restarting with stat
+03-Apr-24 17:34:01 - [INFO] - Development environment configured.
+03-Apr-24 17:34:01 - [WARNING] -  * Debugger is active!
+03-Apr-24 17:34:01 - [INFO] -  * Debugger PIN: 144-740-991
+03-Apr-24 17:34:05 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+03-Apr-24 17:34:06 - [INFO] -  * Restarting with stat
+03-Apr-24 17:34:07 - [INFO] - Development environment configured.
+03-Apr-24 17:34:07 - [WARNING] -  * Debugger is active!
+03-Apr-24 17:34:07 - [INFO] -  * Debugger PIN: 144-740-991
+03-Apr-24 17:34:10 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+03-Apr-24 17:34:11 - [DEBUG] - http://127.0.0.1:3000 "POST /tags.json HTTP/1.1" 404 411730
+03-Apr-24 17:34:11 - [INFO] - 127.0.0.1 - - [03/Apr/2024 17:34:11] "[35m[1mPOST /api/v2/discourse/tags HTTP/1.1[0m" 500 -
+03-Apr-24 17:35:57 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+03-Apr-24 17:35:57 - [INFO] -  * Restarting with stat
+03-Apr-24 17:35:58 - [INFO] - Development environment configured.
+03-Apr-24 17:35:58 - [WARNING] -  * Debugger is active!
+03-Apr-24 17:35:58 - [INFO] -  * Debugger PIN: 144-740-991
+03-Apr-24 17:35:59 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+03-Apr-24 17:36:00 - [DEBUG] - http://127.0.0.1:3000 "POST /tag_groups.json HTTP/1.1" 200 None
+03-Apr-24 17:36:00 - [INFO] - 127.0.0.1 - - [03/Apr/2024 17:36:00] "POST /api/v2/discourse/tags HTTP/1.1" 200 -
+03-Apr-24 17:37:25 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+03-Apr-24 17:37:25 - [DEBUG] - http://127.0.0.1:3000 "GET /tag_groups.json HTTP/1.1" 200 None
+03-Apr-24 17:37:25 - [INFO] - 127.0.0.1 - - [03/Apr/2024 17:37:25] "[35m[1mGET /api/v2/discourse/tags HTTP/1.1[0m" 500 -
+03-Apr-24 17:37:43 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+03-Apr-24 17:37:43 - [INFO] -  * Restarting with stat
+03-Apr-24 17:37:44 - [INFO] - Development environment configured.
+03-Apr-24 17:37:44 - [WARNING] -  * Debugger is active!
+03-Apr-24 17:37:44 - [INFO] -  * Debugger PIN: 144-740-991
+03-Apr-24 17:37:52 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+03-Apr-24 17:37:52 - [DEBUG] - http://127.0.0.1:3000 "GET /tag_groups.json HTTP/1.1" 200 None
+03-Apr-24 17:37:52 - [INFO] - 200 - Custom success 200 response sent
+03-Apr-24 17:37:52 - [INFO] - 127.0.0.1 - - [03/Apr/2024 17:37:52] "GET /api/v2/discourse/tags HTTP/1.1" 200 -
+03-Apr-24 17:39:47 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+03-Apr-24 17:39:47 - [DEBUG] - http://127.0.0.1:3000 "POST /tag_groups.json HTTP/1.1" 422 None
+03-Apr-24 17:39:47 - [INFO] - 127.0.0.1 - - [03/Apr/2024 17:39:47] "[31m[1mPOST /api/v2/discourse/tags HTTP/1.1[0m" 422 -
+03-Apr-24 17:41:15 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+03-Apr-24 17:41:15 - [DEBUG] - http://127.0.0.1:3000 "POST /tag_groups.json HTTP/1.1" 422 None
+03-Apr-24 17:41:15 - [INFO] - 127.0.0.1 - - [03/Apr/2024 17:41:15] "[31m[1mPOST /api/v2/discourse/tags HTTP/1.1[0m" 422 -
+03-Apr-24 17:41:58 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+03-Apr-24 17:41:58 - [DEBUG] - http://127.0.0.1:3000 "POST /tag_groups.json HTTP/1.1" 200 None
+03-Apr-24 17:41:58 - [INFO] - 127.0.0.1 - - [03/Apr/2024 17:41:58] "POST /api/v2/discourse/tags HTTP/1.1" 200 -
+03-Apr-24 17:42:10 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+03-Apr-24 17:42:10 - [DEBUG] - http://127.0.0.1:3000 "GET /tag_groups.json HTTP/1.1" 200 None
+03-Apr-24 17:42:10 - [INFO] - 200 - Custom success 200 response sent
+03-Apr-24 17:42:10 - [INFO] - 127.0.0.1 - - [03/Apr/2024 17:42:10] "GET /api/v2/discourse/tags HTTP/1.1" 200 -
