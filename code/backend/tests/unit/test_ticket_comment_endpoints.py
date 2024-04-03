@@ -53,7 +53,7 @@ def test_comment_api_with_fixture_get_200(test_client):
     assert response["status"] == 200
 
 
-def test_comment_api_with_fixture_put_200(test_client):
+def test_ticket_comment_api_with_fixture_put_200(test_client):
     """
     GIVEN a Flask application configured for testing
     WHEN the '/api/v2/comments/<string:ticket_id>' page is requested (PUT) by user to update a comment

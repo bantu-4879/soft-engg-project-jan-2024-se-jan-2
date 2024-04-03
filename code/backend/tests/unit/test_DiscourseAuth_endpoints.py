@@ -49,11 +49,9 @@ def test_discourse_auth_api_with_fixture_get(test_client):
     "user_id": admin_user_id,
     }
 
-    response = test_client.post(
-        f"/api/{API_VERSION}/discourseAuth/discourseRegister",
-        json={
-            "username": "tushar",
-        },
+    username="tushar"
+    response = test_client.get(
+        f"/api/{API_VERSION}/discourseAuth/discourseRegister/{username}",
         headers=headers,
     )
     response = response.get_json()

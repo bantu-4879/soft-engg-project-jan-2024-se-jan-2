@@ -121,7 +121,7 @@ class DiscourseUserCreation(Resource):
         }
         response=requests.get(url,headers=headers)
         if(response.status_code==200):
-            return response.json(),200
+            return response.json(),response.status_code
         else:
             return response.json(), response.status_code
 
