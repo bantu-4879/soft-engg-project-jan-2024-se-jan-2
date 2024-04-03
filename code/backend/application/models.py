@@ -48,6 +48,12 @@ class Role(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(64), unique=True, nullable=False)
 
+    def to_dict(self):
+        return {
+            "id": self.id,
+            "name": self.name
+        }
+
 
 class Authentication(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -55,6 +61,15 @@ class Authentication(db.Model):
     token = db.Column(db.String(100), nullable=True)
     token_created = db.Column(db.Integer,default=0, nullable=True)
     token_expired = db.Column(db.Integer, nullable=True,default=0)
+
+    def to_dict(self):
+        return {
+            "id": self.id,
+            "user_id" : self.user_id, 
+            "token" : self.token, 
+            "token_created": self.token_created, 
+            "token_expired": self.token_expired
+        }
 
 class Ticket(db.Model):
     id = db.Column(db.String(100), primary_key=True)
@@ -89,12 +104,29 @@ class Tags(db.Model):
     tag_name = db.Column(db.String(100)) 
     description = db.Column(db.String(200))
 
+    def to_dict(self):
+        return {
+            "id": self.id,
+            "tag_name": self.tag_name,
+            "description": self.description,
+
+        }
+
 
 #Following is the relationship table between tickets and tags 
-class Tickets_Tags(db.Model):
+class TicketsTags(db.Model):
     id=db.Column(db.Integer, primary_key=True)
-    tag_id=db.Column(db.Integer,db.ForeignKey('tag.id'),nullable=False),
+    tag_id=db.Column(db.Integer,db.ForeignKey('tags.id'),nullable=False)
     ticket_id=db.Column(db.String(100),db.ForeignKey('ticket.id'),nullable=False)
+
+    def to_dict(self):
+        return {
+            "id": self.id,
+            "tag_id": self.tag_id,
+            "ticket_id": self.ticket_id,
+
+        }
+
 
 
 class TicketComments(db.Model):
@@ -105,6 +137,18 @@ class TicketComments(db.Model):
     commenter = db.Column(db.String(100), db.ForeignKey('user.id'))
     user_mentions = db.relationship('User',backref='TicketComments',uselist=True)
     reactions = db.Column(db.String(100))
+
+    def to_dict(self):
+        return {
+            "id": self.id,
+            "ticket_id": self.ticket_id,
+            "comment": self.comment,
+            "added_at": self.added_at,
+            "commenter": self.commenter,
+            "user_mentions": self.user_mentions,
+            "reactions": self.reactions
+
+        }
 
 class TicketAttachment(db.Model):
     id = db.Column(db.Integer, primary_key=True)
