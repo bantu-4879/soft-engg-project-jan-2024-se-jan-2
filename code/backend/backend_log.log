@@ -9270,3 +9270,110 @@
 02-Apr-24 18:22:02 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
 02-Apr-24 18:22:02 - [INFO] - 400 - User id or ticket id is missing.
 02-Apr-24 18:22:02 - [INFO] - 127.0.0.1 - - [02/Apr/2024 18:22:02] "[31m[1mDELETE /api/v2/ticket/undefined/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1[0m" 400 -
+03-Apr-24 09:24:42 - [INFO] - Development environment configured.
+03-Apr-24 09:24:42 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+03-Apr-24 09:24:42 - [INFO] - [33mPress CTRL+C to quit[0m
+03-Apr-24 09:24:42 - [INFO] -  * Restarting with stat
+03-Apr-24 09:24:43 - [INFO] - Development environment configured.
+03-Apr-24 09:24:43 - [WARNING] -  * Debugger is active!
+03-Apr-24 09:24:43 - [INFO] -  * Debugger PIN: 163-373-655
+03-Apr-24 09:27:18 - [INFO] - 127.0.0.1 - - [03/Apr/2024 09:27:18] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+03-Apr-24 09:27:18 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+03-Apr-24 09:27:18 - [INFO] - User logged in.
+03-Apr-24 09:27:18 - [INFO] - 200 - Custom success 200 response sent
+03-Apr-24 09:27:18 - [INFO] - 127.0.0.1 - - [03/Apr/2024 09:27:18] "POST /api/v2/auth/login HTTP/1.1" 200 -
+03-Apr-24 09:27:18 - [INFO] - 127.0.0.1 - - [03/Apr/2024 09:27:18] "OPTIONS /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+03-Apr-24 09:27:18 - [INFO] - 127.0.0.1 - - [03/Apr/2024 09:27:18] "OPTIONS /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=Open HTTP/1.1" 200 -
+03-Apr-24 09:27:18 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+03-Apr-24 09:27:18 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+03-Apr-24 09:27:18 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+03-Apr-24 09:27:18 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+03-Apr-24 09:27:18 - [INFO] - File path is not valid: 
+03-Apr-24 09:27:18 - [INFO] - 200 - Custom success 200 response sent
+03-Apr-24 09:27:18 - [INFO] - 127.0.0.1 - - [03/Apr/2024 09:27:18] "GET /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+03-Apr-24 09:27:18 - [INFO] - All tickets found : 12
+03-Apr-24 09:27:18 - [INFO] - 200 - Custom success 200 response sent
+03-Apr-24 09:27:18 - [INFO] - 127.0.0.1 - - [03/Apr/2024 09:27:18] "GET /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=Open HTTP/1.1" 200 -
+03-Apr-24 09:27:22 - [INFO] - 127.0.0.1 - - [03/Apr/2024 09:27:22] "OPTIONS /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?query=&filter_priority=&filter_status=&sortby=&sortdir=&filter_tags= HTTP/1.1" 200 -
+03-Apr-24 09:27:22 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+03-Apr-24 09:27:22 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+03-Apr-24 09:27:22 - [INFO] - All tickets found : 12
+03-Apr-24 09:27:22 - [INFO] - 200 - Custom success 200 response sent
+03-Apr-24 09:27:22 - [INFO] - 127.0.0.1 - - [03/Apr/2024 09:27:22] "GET /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?query=&filter_priority=&filter_status=&sortby=&sortdir=&filter_tags= HTTP/1.1" 200 -
+03-Apr-24 09:27:43 - [INFO] - 127.0.0.1 - - [03/Apr/2024 09:27:43] "OPTIONS /api/v2/ticket/b9bf537987e8b501632397edee3148f0/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+03-Apr-24 09:27:43 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+03-Apr-24 09:27:43 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+03-Apr-24 09:27:43 - [INFO] - 400 - Ticket title and at least one tag is required
+03-Apr-24 09:27:43 - [INFO] - 127.0.0.1 - - [03/Apr/2024 09:27:43] "[31m[1mPUT /api/v2/ticket/b9bf537987e8b501632397edee3148f0/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1[0m" 400 -
+03-Apr-24 09:30:40 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+03-Apr-24 09:30:40 - [INFO] -  * Restarting with stat
+03-Apr-24 09:30:40 - [INFO] - Development environment configured.
+03-Apr-24 09:30:40 - [WARNING] -  * Debugger is active!
+03-Apr-24 09:30:40 - [INFO] -  * Debugger PIN: 163-373-655
+03-Apr-24 09:30:46 - [INFO] - 127.0.0.1 - - [03/Apr/2024 09:30:46] "OPTIONS /api/v2/ticket/b9bf537987e8b501632397edee3148f0/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+03-Apr-24 09:30:46 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+03-Apr-24 09:30:46 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+03-Apr-24 09:30:46 - [INFO] - 127.0.0.1 - - [03/Apr/2024 09:30:46] "[35m[1mPUT /api/v2/ticket/b9bf537987e8b501632397edee3148f0/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1[0m" 500 -
+03-Apr-24 09:31:12 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+03-Apr-24 09:31:12 - [INFO] -  * Restarting with stat
+03-Apr-24 09:31:12 - [INFO] - Development environment configured.
+03-Apr-24 09:31:12 - [WARNING] -  * Debugger is active!
+03-Apr-24 09:31:12 - [INFO] -  * Debugger PIN: 163-373-655
+03-Apr-24 09:31:26 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+03-Apr-24 09:31:26 - [INFO] -  * Restarting with stat
+03-Apr-24 09:31:26 - [INFO] - Development environment configured.
+03-Apr-24 09:31:26 - [WARNING] -  * Debugger is active!
+03-Apr-24 09:31:26 - [INFO] -  * Debugger PIN: 163-373-655
+03-Apr-24 09:31:28 - [INFO] - 127.0.0.1 - - [03/Apr/2024 09:31:28] "OPTIONS /api/v2/ticket/b9bf537987e8b501632397edee3148f0/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+03-Apr-24 09:31:28 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+03-Apr-24 09:31:28 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+03-Apr-24 09:31:28 - [INFO] - 127.0.0.1 - - [03/Apr/2024 09:31:28] "[35m[1mPUT /api/v2/ticket/b9bf537987e8b501632397edee3148f0/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1[0m" 500 -
+03-Apr-24 09:31:41 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+03-Apr-24 09:31:41 - [INFO] -  * Restarting with stat
+03-Apr-24 09:31:41 - [INFO] - Development environment configured.
+03-Apr-24 09:31:41 - [WARNING] -  * Debugger is active!
+03-Apr-24 09:31:41 - [INFO] -  * Debugger PIN: 163-373-655
+03-Apr-24 09:31:48 - [INFO] - 127.0.0.1 - - [03/Apr/2024 09:31:48] "OPTIONS /api/v2/ticket/b9bf537987e8b501632397edee3148f0/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+03-Apr-24 09:31:48 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+03-Apr-24 09:31:48 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+03-Apr-24 09:31:48 - [INFO] - 127.0.0.1 - - [03/Apr/2024 09:31:48] "[35m[1mPUT /api/v2/ticket/b9bf537987e8b501632397edee3148f0/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1[0m" 500 -
+03-Apr-24 09:32:47 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+03-Apr-24 09:32:48 - [INFO] -  * Restarting with stat
+03-Apr-24 09:32:48 - [INFO] - Development environment configured.
+03-Apr-24 09:32:48 - [WARNING] -  * Debugger is active!
+03-Apr-24 09:32:48 - [INFO] -  * Debugger PIN: 163-373-655
+03-Apr-24 09:32:50 - [INFO] - 127.0.0.1 - - [03/Apr/2024 09:32:50] "OPTIONS /api/v2/ticket/b9bf537987e8b501632397edee3148f0/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+03-Apr-24 09:32:50 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+03-Apr-24 09:32:50 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+03-Apr-24 09:32:50 - [INFO] - 200 - Successfully updated a ticket.
+03-Apr-24 09:32:50 - [INFO] - 127.0.0.1 - - [03/Apr/2024 09:32:50] "PUT /api/v2/ticket/b9bf537987e8b501632397edee3148f0/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+03-Apr-24 09:33:05 - [INFO] - 127.0.0.1 - - [03/Apr/2024 09:33:05] "OPTIONS /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+03-Apr-24 09:33:05 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+03-Apr-24 09:33:05 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+03-Apr-24 09:33:05 - [INFO] - All tickets found : 13
+03-Apr-24 09:33:05 - [INFO] - 200 - Custom success 200 response sent
+03-Apr-24 09:33:05 - [INFO] - 127.0.0.1 - - [03/Apr/2024 09:33:05] "GET /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+03-Apr-24 09:33:05 - [INFO] - 127.0.0.1 - - [03/Apr/2024 09:33:05] "OPTIONS /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?query=&filter_priority=&filter_status=&sortby=&sortdir=&filter_tags= HTTP/1.1" 200 -
+03-Apr-24 09:33:05 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+03-Apr-24 09:33:05 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+03-Apr-24 09:33:05 - [INFO] - All tickets found : 12
+03-Apr-24 09:33:05 - [INFO] - 200 - Custom success 200 response sent
+03-Apr-24 09:33:05 - [INFO] - 127.0.0.1 - - [03/Apr/2024 09:33:05] "GET /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?query=&filter_priority=&filter_status=&sortby=&sortdir=&filter_tags= HTTP/1.1" 200 -
+03-Apr-24 09:33:10 - [INFO] - 127.0.0.1 - - [03/Apr/2024 09:33:10] "OPTIONS /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+03-Apr-24 09:33:10 - [INFO] - 127.0.0.1 - - [03/Apr/2024 09:33:10] "OPTIONS /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=Open HTTP/1.1" 200 -
+03-Apr-24 09:33:10 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+03-Apr-24 09:33:10 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+03-Apr-24 09:33:10 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+03-Apr-24 09:33:10 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+03-Apr-24 09:33:10 - [INFO] - File path is not valid: 
+03-Apr-24 09:33:10 - [INFO] - 200 - Custom success 200 response sent
+03-Apr-24 09:33:10 - [INFO] - 127.0.0.1 - - [03/Apr/2024 09:33:10] "GET /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+03-Apr-24 09:33:10 - [INFO] - All tickets found : 12
+03-Apr-24 09:33:10 - [INFO] - 200 - Custom success 200 response sent
+03-Apr-24 09:33:10 - [INFO] - 127.0.0.1 - - [03/Apr/2024 09:33:10] "GET /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=Open HTTP/1.1" 200 -
+03-Apr-24 09:33:30 - [INFO] - 127.0.0.1 - - [03/Apr/2024 09:33:30] "OPTIONS /api/v2/ticket/b9bf537987e8b501632397edee3148f0/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+03-Apr-24 09:33:30 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+03-Apr-24 09:33:30 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+03-Apr-24 09:33:30 - [INFO] - 200 - Successfully updated a ticket.
+03-Apr-24 09:33:30 - [INFO] - 127.0.0.1 - - [03/Apr/2024 09:33:30] "PUT /api/v2/ticket/b9bf537987e8b501632397edee3148f0/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
