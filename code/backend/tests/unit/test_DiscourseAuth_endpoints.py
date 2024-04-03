@@ -22,7 +22,7 @@ def test_discourse_auth_api_with_fixture_post(test_client):
     }
 
     response = test_client.post(
-        f"/api/{API_VERSION}/discourse/discourseRegister",
+        f"/api/{API_VERSION}/discourseAuth/discourseRegister",
         json={
             "user_id": student_user_id,
             "email": "tushar1711892521@gmail.com",
