@@ -8070,3 +8070,8 @@ WHERE tickets_tags.ticket_id = ?]
 03-Apr-24 19:32:55 - [INFO] - Development environment configured.
 03-Apr-24 19:32:55 - [WARNING] -  * Debugger is active!
 03-Apr-24 19:32:55 - [INFO] -  * Debugger PIN: 144-740-991
+03-Apr-24 19:35:42 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\globals.py', reloading
+03-Apr-24 19:35:43 - [INFO] -  * Restarting with stat
+03-Apr-24 19:35:44 - [INFO] - Development environment configured.
+03-Apr-24 19:35:44 - [WARNING] -  * Debugger is active!
+03-Apr-24 19:35:44 - [INFO] -  * Debugger PIN: 144-740-991
