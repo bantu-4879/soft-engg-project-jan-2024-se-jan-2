@@ -227,7 +227,7 @@ class AssignBadgeAPI(Resource):
         """
 
         details = {
-            "user_email":"",
+            "user_id":"",
             "badge_name":"",
         }
 
@@ -249,7 +249,7 @@ class AssignBadgeAPI(Resource):
 
             print(details)
             if details:        
-                user = User.query.filter_by(email=details["user_email"]).first()
+                user = User.query.filter_by(id=details["user_id"]).first()
                 if user: 
                     user_id = user.id
                     details["user_id"] = user_id
