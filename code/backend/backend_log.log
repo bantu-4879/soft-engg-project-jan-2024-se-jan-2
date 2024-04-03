@@ -8047,3 +8047,26 @@ WHERE tickets_tags.ticket_id = ?]
 03-Apr-24 19:03:35 - [INFO] - Token is verified for the user: 7a848f03778ea5e30de4dc6850c6b67e
 03-Apr-24 19:03:35 - [INFO] - User role : Admin : is verified for the user: 7a848f03778ea5e30de4dc6850c6b67e
 03-Apr-24 19:03:35 - [INFO] - 200 - Custom success 200 response sent
+03-Apr-24 19:17:00 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+03-Apr-24 19:17:00 - [DEBUG] - http://127.0.0.1:3000 "POST /tag_groups.json HTTP/1.1" 200 None
+03-Apr-24 19:17:00 - [INFO] - 127.0.0.1 - - [03/Apr/2024 19:17:00] "POST /api/v2/discourse/tags HTTP/1.1" 200 -
+03-Apr-24 19:20:30 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+03-Apr-24 19:20:30 - [DEBUG] - http://127.0.0.1:3000 "POST /tag_groups.json HTTP/1.1" 200 None
+03-Apr-24 19:20:30 - [INFO] - 127.0.0.1 - - [03/Apr/2024 19:20:30] "POST /api/v2/discourse/tags HTTP/1.1" 200 -
+03-Apr-24 19:22:23 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+03-Apr-24 19:22:23 - [DEBUG] - http://127.0.0.1:3000 "POST /tag_groups.json HTTP/1.1" 200 None
+03-Apr-24 19:22:23 - [INFO] - 127.0.0.1 - - [03/Apr/2024 19:22:23] "POST /api/v2/discourse/tags HTTP/1.1" 200 -
+03-Apr-24 19:22:32 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+03-Apr-24 19:22:32 - [DEBUG] - http://127.0.0.1:3000 "GET /tag_groups.json HTTP/1.1" 200 None
+03-Apr-24 19:22:32 - [INFO] - 200 - Custom success 200 response sent
+03-Apr-24 19:22:32 - [INFO] - 127.0.0.1 - - [03/Apr/2024 19:22:32] "GET /api/v2/discourse/tags HTTP/1.1" 200 -
+03-Apr-24 19:28:20 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\globals.py', reloading
+03-Apr-24 19:28:20 - [INFO] -  * Restarting with stat
+03-Apr-24 19:28:21 - [INFO] - Testing environment configured.
+03-Apr-24 19:28:21 - [WARNING] -  * Debugger is active!
+03-Apr-24 19:28:21 - [INFO] -  * Debugger PIN: 144-740-991
+03-Apr-24 19:32:54 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\globals.py', reloading
+03-Apr-24 19:32:54 - [INFO] -  * Restarting with stat
+03-Apr-24 19:32:55 - [INFO] - Development environment configured.
+03-Apr-24 19:32:55 - [WARNING] -  * Debugger is active!
+03-Apr-24 19:32:55 - [INFO] -  * Debugger PIN: 144-740-991
