@@ -867,6 +867,7 @@ class TicketCommentAPI(Resource):
     def put(self, comment_id=-1, ticket_id="", user_id=""):
         details = {
             "comment": "",
+            "commenter": user_id,
             "user_mentions" : [],
             "reactions" : ""
         }
@@ -888,6 +889,7 @@ class TicketCommentAPI(Resource):
                     for key in details:
                         value = form.get(key, "")
                         details[key] = value
+                    print(details)
                 except Exception as e:
                     logger.error(
                         f"TicketCommentAPI->put : Error occured while getting form data : {e}"
@@ -896,6 +898,7 @@ class TicketCommentAPI(Resource):
                 else:
                     try:
                         comment = TicketComments.query.filter_by(id=comment_id).first()
+                        details['commenter'] = comment.commenter
                     except Exception as e:
                         logger.error(
                             f"TicketCommentAPI->put : Error occured while fetching the comment : {e}"
@@ -905,21 +908,25 @@ class TicketCommentAPI(Resource):
                         print(comment.commenter)
                         if comment and comment.commenter == user_id: 
                             comment.comment = details['comment']
-                            comment.commenter = user_id
+                            print(details["commenter"])
+                            comment.commenter = details["commenter"]
+                            print(comment.commenter)
                             comment.user_mentions = details["user_mentions"]
                             comment.reactions = details["reactions"]
-                    try:
-                        db.session.commit()
-                    except Exception as e:
-                        logger.error(
-                            f"TicketCommentAPI->put : Error occured while updating comment : {e}"
-                        )
-                        raise InternalServerError(
-                            status_msg="Error occured while updating comment"
-                        )
-                    else:
-                        logger.info("Comment updated successfully.")
-                        raise Success_200(status_msg="Ticket comment updated successfully.")
+                        print(comment.commenter)
+                        try:
+                            db.session.add(comment)
+                            db.session.commit()
+                        except Exception as e:
+                            logger.error(
+                                f"TicketCommentAPI->put : Error occured while updating comment : {e}"
+                            )
+                            raise InternalServerError(
+                                status_msg="Error occured while updating comment"
+                            )
+                        else:
+                            logger.info("Comment updated successfully.")
+                            raise Success_200(status_msg="Ticket comment updated successfully.")
             else: 
                 raise NotFoundError(status_msg="Ticket does not exists")
         #raise Success_200(status_msg="Ticket Comment updated successfully")
