@@ -101,9 +101,7 @@ export default {
       },
       user_role: this.$store.getters.get_user_role,
       show: true,
-      webhook_message: {
-        "text": "This is high priority ticket. Please resolve it as soon as possible."
-      }
+
     };
   },
   created() {},
@@ -172,13 +170,46 @@ export default {
 
       if(this.form.priority == "high" && this.user_role == "student") {
         let webhook_url = common.WEBHOOK_URL;
+        let webhook_message = {
+          "cards": [
+            {
+              "header": {
+                "title": "High Priority Ticket",
+                "subtitle": "Title: " + this.form.title,
+                "imageUrl": "https://workable-application-form.s3.amazonaws.com/advanced/production/61557f91d9510741dc62e7f8/c3635b59-a3d2-444a-b636-a9d0061dcdde", // Optional: You can include an image URL here
+              },
+              "sections": [
+                {
+                  "widgets": [
+                    {
+                      "keyValue": {
+                        "topLabel": "Created By",
+                        "content": this.$store.getters.get_user_name,
+                        "contentMultiline": false
+                      }
+                    }
+                  ]
+                },
+                {
+                  "widgets": [
+                    {
+                      "textParagraph": {
+                        "text": "Description: " + this.form.description
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        };
 
         fetch(webhook_url, {
           method: "POST",
           headers: {
             "Content-Type": "application/json; charset=UTF-8", 
           },
-          body: JSON.stringify(this.webhook_message),
+          body: JSON.stringify(webhook_message),
         })
           .then((response) => response.json())
           .then((data) => {
