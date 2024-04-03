@@ -34,3 +34,27 @@ def test_discourse_auth_api_with_fixture_post(test_client):
     )
     response = response.get_json()
     assert response["status"] == 200  
+
+
+def test_discourse_auth_api_with_fixture_get(test_client):
+    """
+    GIVEN a Flask application configured for testing
+    WHEN the '/api/v2/dicourse/discourseRegister' page is requested (GET) the user with username
+    THEN check that the response is 200 
+    """
+
+    headers = {
+    "Content-type": "application/json",
+    "web_token": admin_web_token,
+    "user_id": admin_user_id,
+    }
+
+    response = test_client.post(
+        f"/api/{API_VERSION}/discourseAuth/discourseRegister",
+        json={
+            "username": "tushar",
+        },
+        headers=headers,
+    )
+    response = response.get_json()
+    assert response["status"] == 200  
