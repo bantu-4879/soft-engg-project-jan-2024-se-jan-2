@@ -7904,3 +7904,146 @@
 02-Apr-24 17:42:35 - [WARNING] -  * Debugger is active!
 02-Apr-24 17:42:35 - [INFO] -  * Debugger PIN: 299-872-502
 >>>>>>> Stashed changes
+03-Apr-24 18:51:57 - [INFO] - Development environment configured.
+03-Apr-24 18:51:57 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+03-Apr-24 18:51:57 - [INFO] - [33mPress CTRL+C to quit[0m
+03-Apr-24 18:51:57 - [INFO] -  * Restarting with stat
+03-Apr-24 18:51:59 - [INFO] - Development environment configured.
+03-Apr-24 18:51:59 - [WARNING] -  * Debugger is active!
+03-Apr-24 18:51:59 - [INFO] -  * Debugger PIN: 525-991-647
+03-Apr-24 19:03:13 - [INFO] - Development environment configured.
+03-Apr-24 19:03:13 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+03-Apr-24 19:03:13 - [INFO] - [33mPress CTRL+C to quit[0m
+03-Apr-24 19:03:13 - [INFO] -  * Restarting with stat
+03-Apr-24 19:03:14 - [INFO] - Development environment configured.
+03-Apr-24 19:03:14 - [WARNING] -  * Debugger is active!
+03-Apr-24 19:03:14 - [INFO] -  * Debugger PIN: 144-740-991
+03-Apr-24 19:03:32 - [INFO] - Testing environment configured.
+03-Apr-24 19:03:32 - [INFO] - Testing fixture set.
+03-Apr-24 19:03:32 - [INFO] - Token is verified for the user: cf1367a9f74b7d6377f42438d3e6680b
+03-Apr-24 19:03:32 - [INFO] - User role : Student : is verified for the user: cf1367a9f74b7d6377f42438d3e6680b
+03-Apr-24 19:03:32 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+03-Apr-24 19:03:33 - [DEBUG] - http://127.0.0.1:3000 "GET /u/tushar.json HTTP/1.1" 404 None
+03-Apr-24 19:03:33 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+03-Apr-24 19:03:33 - [DEBUG] - http://127.0.0.1:3000 "POST /users.json HTTP/1.1" 200 None
+03-Apr-24 19:03:33 - [INFO] - New account created
+03-Apr-24 19:03:33 - [INFO] - 200 - <p>You’re almost done! We sent an activation mail to <b>tushar1711892521@gmail.com</b>. Please follow the instructions in the mail to activate your account.</p><p>If it doesn’t arrive, check your spam folder.</p>
+03-Apr-24 19:03:33 - [INFO] - Testing environment configured.
+03-Apr-24 19:03:34 - [INFO] - Testing fixture set.
+03-Apr-24 19:03:34 - [INFO] - 400 - email is empty or invalid
+03-Apr-24 19:03:34 - [INFO] - New account created
+03-Apr-24 19:03:34 - [INFO] - 200 - Account created successfully. Now please login.
+03-Apr-24 19:03:34 - [INFO] - 409 - Email is already in use
+03-Apr-24 19:03:34 - [INFO] - 400 - Email or Password are not valid as per specification OR Password did not match.
+03-Apr-24 19:03:34 - [INFO] - 400 - Email or Password is empty
+03-Apr-24 19:03:34 - [INFO] - 401 - Password is incorrect
+03-Apr-24 19:03:34 - [INFO] - 404 - User does not exists
+03-Apr-24 19:03:34 - [INFO] - File path is not valid: D:\GitHub\soft-engg-project-jan-2024-se-jan-2\code\backend\databases\images\profile_pics\dummy_profile.png
+03-Apr-24 19:03:34 - [INFO] - User logged in.
+03-Apr-24 19:03:34 - [INFO] - 200 - Custom success 200 response sent
+03-Apr-24 19:03:34 - [INFO] - Token is verified for the user: 7a848f03778ea5e30de4dc6850c6b67e
+03-Apr-24 19:03:34 - [INFO] - Admin role is verified for the user: 7a848f03778ea5e30de4dc6850c6b67e
+03-Apr-24 19:03:34 - [INFO] - 200 - Custom success 200 response sent
+03-Apr-24 19:03:34 - [INFO] - Testing environment configured.
+03-Apr-24 19:03:34 - [INFO] - Testing fixture set.
+03-Apr-24 19:03:34 - [INFO] - 401 - Token is empty or missing
+03-Apr-24 19:03:34 - [INFO] - Token is verified for the user: 7a848f03778ea5e30de4dc6850c6b67e
+03-Apr-24 19:03:34 - [INFO] - Admin role is verified for the user: 7a848f03778ea5e30de4dc6850c6b67e
+03-Apr-24 19:03:34 - [INFO] - 200 - Custom success 200 response sent
+03-Apr-24 19:03:34 - [INFO] - Testing environment configured.
+03-Apr-24 19:03:34 - [INFO] - Testing fixture set.
+03-Apr-24 19:03:34 - [INFO] - All Messages found
+03-Apr-24 19:03:34 - [INFO] - 200 - Custom success 200 response sent
+03-Apr-24 19:03:34 - [INFO] - Testing environment configured.
+03-Apr-24 19:03:34 - [INFO] - Testing fixture set.
+03-Apr-24 19:03:34 - [INFO] - Commented successfully.
+03-Apr-24 19:03:34 - [INFO] - 200 - Ticket comment added successfully.
+03-Apr-24 19:03:34 - [INFO] - 200 - Custom success 200 response sent
+03-Apr-24 19:03:34 - [INFO] - Comment updated successfully.
+03-Apr-24 19:03:34 - [INFO] - 200 - Ticket comment updated successfully.
+03-Apr-24 19:03:34 - [INFO] - Testing environment configured.
+03-Apr-24 19:03:34 - [INFO] - Testing fixture set.
+03-Apr-24 19:03:34 - [INFO] - Token is verified for the user: cf1367a9f74b7d6377f42438d3e6680b
+03-Apr-24 19:03:34 - [INFO] - User role : Student : is verified for the user: cf1367a9f74b7d6377f42438d3e6680b
+03-Apr-24 19:03:34 - [INFO] - All tickets found : 43
+03-Apr-24 19:03:34 - [INFO] - 200 - Custom success 200 response sent
+03-Apr-24 19:03:34 - [INFO] - Token is verified for the user: 288abb7d329012b2d3b8d01c497f620a
+03-Apr-24 19:03:34 - [INFO] - User role : Staff : is verified for the user: 288abb7d329012b2d3b8d01c497f620a
+03-Apr-24 19:03:34 - [INFO] - All tickets found : 43
+03-Apr-24 19:03:34 - [INFO] - 200 - Custom success 200 response sent
+03-Apr-24 19:03:34 - [INFO] - Token is verified for the user: cf1367a9f74b7d6377f42438d3e6680b
+03-Apr-24 19:03:34 - [INFO] - User role : Student : is verified for the user: cf1367a9f74b7d6377f42438d3e6680b
+03-Apr-24 19:03:34 - [INFO] - All tickets found : 0
+03-Apr-24 19:03:34 - [INFO] - 200 - Custom success 200 response sent
+03-Apr-24 19:03:34 - [INFO] - Token is verified for the user: cf1367a9f74b7d6377f42438d3e6680b
+03-Apr-24 19:03:34 - [INFO] - User role : Student : is verified for the user: cf1367a9f74b7d6377f42438d3e6680b
+03-Apr-24 19:03:34 - [INFO] - All tickets found : 0
+03-Apr-24 19:03:34 - [INFO] - 200 - Custom success 200 response sent
+03-Apr-24 19:03:34 - [INFO] - Token is verified for the user: 288abb7d329012b2d3b8d01c497f620a
+03-Apr-24 19:03:34 - [INFO] - User role : Staff : is verified for the user: 288abb7d329012b2d3b8d01c497f620a
+03-Apr-24 19:03:34 - [INFO] - All tickets found : 0
+03-Apr-24 19:03:34 - [INFO] - 200 - Custom success 200 response sent
+03-Apr-24 19:03:34 - [INFO] - Token is verified for the user: 7a848f03778ea5e30de4dc6850c6b67e
+03-Apr-24 19:03:34 - [INFO] - User role : Admin : is verified for the user: 7a848f03778ea5e30de4dc6850c6b67e
+03-Apr-24 19:03:34 - [INFO] - All tickets found : 0
+03-Apr-24 19:03:34 - [INFO] - 200 - Custom success 200 response sent
+03-Apr-24 19:03:34 - [INFO] - Token is verified for the user: cf1367a9f74b7d6377f42438d3e6680b
+03-Apr-24 19:03:34 - [INFO] - User role : Student : is verified for the user: cf1367a9f74b7d6377f42438d3e6680b
+03-Apr-24 19:03:34 - [INFO] - Ticket created successfully.
+03-Apr-24 19:03:34 - [INFO] - 200 - Ticket created successfully. Attachments are empty.
+03-Apr-24 19:03:34 - [INFO] - Token is verified for the user: cf1367a9f74b7d6377f42438d3e6680b
+03-Apr-24 19:03:34 - [INFO] - User role : Student : is verified for the user: cf1367a9f74b7d6377f42438d3e6680b
+03-Apr-24 19:03:34 - [INFO] - 200 - Custom success 200 response sent
+03-Apr-24 19:03:34 - [INFO] - Testing environment configured.
+03-Apr-24 19:03:34 - [INFO] - Testing fixture set.
+03-Apr-24 19:03:34 - [INFO] - Tag created successfully.
+03-Apr-24 19:03:34 - [INFO] - 200 - Tag created successfully
+03-Apr-24 19:03:34 - [INFO] - Tag updated successfully
+03-Apr-24 19:03:34 - [INFO] - 200 - Tag updated successfully
+03-Apr-24 19:03:34 - [INFO] - All tags found!
+03-Apr-24 19:03:34 - [INFO] - 200 - Custom success 200 response sent
+03-Apr-24 19:03:34 - [ERROR] - TicketTagsAPI->get : Error occured while fetching ticket tags : (sqlite3.OperationalError) no such table: tickets_tags
+[SQL: SELECT tickets_tags.id AS tickets_tags_id, tickets_tags.tag_id AS tickets_tags_tag_id, tickets_tags.ticket_id AS tickets_tags_ticket_id 
+FROM tickets_tags 
+WHERE tickets_tags.ticket_id = ?]
+[parameters: ('dc292bf4bde7700762e0a07e84c831b0',)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+03-Apr-24 19:03:34 - [INFO] - 500 - Internal Server Error
+03-Apr-24 19:03:34 - [ERROR] - TicketTagsAPI->get : Error occured while fetching ticket tags : (sqlite3.OperationalError) no such table: tickets_tags
+[SQL: SELECT tickets_tags.id AS tickets_tags_id, tickets_tags.tag_id AS tickets_tags_tag_id, tickets_tags.ticket_id AS tickets_tags_ticket_id 
+FROM tickets_tags 
+WHERE tickets_tags.ticket_id = ?]
+[parameters: ('dc292bf4bde7700762e0a07e84c831b0',)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+03-Apr-24 19:03:34 - [INFO] - 500 - Internal Server Error
+03-Apr-24 19:03:34 - [INFO] - Testing environment configured.
+03-Apr-24 19:03:34 - [INFO] - Testing fixture set.
+03-Apr-24 19:03:34 - [INFO] - Token is verified for the user: 7a848f03778ea5e30de4dc6850c6b67e
+03-Apr-24 19:03:34 - [INFO] - User role : Admin : is verified for the user: 7a848f03778ea5e30de4dc6850c6b67e
+03-Apr-24 19:03:34 - [INFO] - Badge Created
+03-Apr-24 19:03:34 - [INFO] - 200 - Badge Created Successfully.
+03-Apr-24 19:03:34 - [INFO] - Token is verified for the user: 7a848f03778ea5e30de4dc6850c6b67e
+03-Apr-24 19:03:34 - [INFO] - User role : Admin : is verified for the user: 7a848f03778ea5e30de4dc6850c6b67e
+03-Apr-24 19:03:34 - [INFO] - Badge Assigned
+03-Apr-24 19:03:34 - [INFO] - Message sent successfully.
+03-Apr-24 19:03:34 - [INFO] - 200 - Badge Assigned Successfully
+03-Apr-24 19:03:34 - [INFO] - Token is verified for the user: 7a848f03778ea5e30de4dc6850c6b67e
+03-Apr-24 19:03:34 - [INFO] - User role : Admin : is verified for the user: 7a848f03778ea5e30de4dc6850c6b67e
+03-Apr-24 19:03:34 - [INFO] - 200 - User card updated in database.
+03-Apr-24 19:03:34 - [INFO] - Testing environment configured.
+03-Apr-24 19:03:34 - [INFO] - Testing fixture set.
+03-Apr-24 19:03:34 - [INFO] - Token is verified for the user: cf1367a9f74b7d6377f42438d3e6680b
+03-Apr-24 19:03:34 - [INFO] - User role : Student : is verified for the user: cf1367a9f74b7d6377f42438d3e6680b
+03-Apr-24 19:03:34 - [INFO] - 200 - Custom success 200 response sent
+03-Apr-24 19:03:34 - [INFO] - Token is verified for the user: cf1367a9f74b7d6377f42438d3e6680b
+03-Apr-24 19:03:34 - [INFO] - User role : Student : is verified for the user: cf1367a9f74b7d6377f42438d3e6680b
+03-Apr-24 19:03:34 - [INFO] - User details Updated successfully.
+03-Apr-24 19:03:34 - [INFO] - 200 - User details Updated successfully.
+03-Apr-24 19:03:34 - [INFO] - Token is verified for the user: 288abb7d329012b2d3b8d01c497f620a
+03-Apr-24 19:03:34 - [INFO] - User role : Staff : is verified for the user: 288abb7d329012b2d3b8d01c497f620a
+03-Apr-24 19:03:35 - [INFO] - 200 - Custom success 200 response sent
+03-Apr-24 19:03:35 - [INFO] - Token is verified for the user: 7a848f03778ea5e30de4dc6850c6b67e
+03-Apr-24 19:03:35 - [INFO] - User role : Admin : is verified for the user: 7a848f03778ea5e30de4dc6850c6b67e
+03-Apr-24 19:03:35 - [INFO] - 200 - Custom success 200 response sent
