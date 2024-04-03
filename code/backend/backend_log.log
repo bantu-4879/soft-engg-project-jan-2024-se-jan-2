@@ -7904,6 +7904,7 @@
 02-Apr-24 17:42:35 - [WARNING] -  * Debugger is active!
 02-Apr-24 17:42:35 - [INFO] -  * Debugger PIN: 299-872-502
 >>>>>>> Stashed changes
+<<<<<<< Updated upstream
 03-Apr-24 18:51:57 - [INFO] - Development environment configured.
 03-Apr-24 18:51:57 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
@@ -8047,3 +8048,14 @@ WHERE tickets_tags.ticket_id = ?]
 03-Apr-24 19:03:35 - [INFO] - Token is verified for the user: 7a848f03778ea5e30de4dc6850c6b67e
 03-Apr-24 19:03:35 - [INFO] - User role : Admin : is verified for the user: 7a848f03778ea5e30de4dc6850c6b67e
 03-Apr-24 19:03:35 - [INFO] - 200 - Custom success 200 response sent
+=======
+03-Apr-24 19:08:56 - [INFO] - Development environment configured.
+03-Apr-24 19:09:15 - [INFO] - Development environment configured.
+03-Apr-24 19:09:57 - [INFO] - Testing environment configured.
+03-Apr-24 19:10:01 - [INFO] - Testing environment configured.
+>>>>>>> Stashed changes
+03-Apr-24 19:17:32 - [INFO] - Testing environment configured.
+03-Apr-24 19:17:43 - [INFO] - Testing environment configured.
+03-Apr-24 19:24:02 - [INFO] - Testing environment configured.
+03-Apr-24 19:24:17 - [INFO] - Testing environment configured.
+03-Apr-24 19:24:27 - [INFO] - Testing environment configured.
