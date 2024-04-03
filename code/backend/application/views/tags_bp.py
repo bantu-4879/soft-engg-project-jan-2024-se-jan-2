@@ -198,8 +198,8 @@ class TicketTagsAPI(Resource):
             )
             raise InternalServerError
 
-    # @token_required
-    # @users_required(users=["Student", "Staff","Admin"])
+    @token_required
+    @users_required(users=["Student", "Staff","Admin"])
     def post(self, ticket_id=""):
         details = {
             "tag_ids": [],
