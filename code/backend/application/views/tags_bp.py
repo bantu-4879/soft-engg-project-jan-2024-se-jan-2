@@ -50,8 +50,8 @@ tags_util = TagsUtil()
 
 
 class TagsAPI(Resource):
-    @token_required
-    @users_required(users=["Student", "Staff","Admin"])
+    # @token_required
+    # @users_required(users=["Student", "Staff","Admin"])
     def get(self):
         # this method is used to get all of the available tags
         try:
@@ -66,8 +66,8 @@ class TagsAPI(Resource):
             logger.error(f"TagsAPI->get : Error occured while fetching Tag data : {e}")
             raise InternalServerError
 
-    @token_required
-    @users_required(users=["Staff","Admin"])
+    # @token_required
+    # @users_required(users=["Staff","Admin"])
     def post(self):
         details = {"name": "", "description": ""}
         try:
@@ -98,8 +98,8 @@ class TagsAPI(Resource):
                 logger.info("Tag created successfully.")
                 raise Success_200(status_msg="Tag created successfully")
 
-    @token_required
-    @users_required(users=["Staff","Admin"])
+    # @token_required
+    # @users_required(users=["Staff","Admin"])
     def put(self, tag_id=-1):
         details = {"name": "", "description": ""}
         try:
@@ -140,8 +140,8 @@ class TagsAPI(Resource):
                         raise Success_200(status_msg="Tag updated successfully")
 
 
-    @token_required
-    @users_required(users=["Staff","Admin"])
+    # @token_required
+    # @users_required(users=["Staff","Admin"])
     def delete(self, tag_id=-1):
         try:
             tag = Tags.query.filter_by(id=tag_id).first()
@@ -175,7 +175,7 @@ class TicketTagsAPI(Resource):
         try:
             ticket_tags = []
             ticket_tag_ids = []
-            tags_ids = Tickets_Tags.query.filter_by(ticket_id=ticket_id).all()
+            tags_ids = TicketsTags.query.filter_by(ticket_id=ticket_id).all()
             for tag in tags_ids:
                 t = tags_util.convert_ticket_tags_to_dict(tag)
                 ticket_tag_ids.append(t)
@@ -229,7 +229,7 @@ class TicketTagsAPI(Resource):
                     raise InternalServerError
                 else:
                     for tag in details["tag_ids"]:
-                        each_ticket_tag = Tickets_Tags(tag_id=tag, ticket_id=ticket_id)
+                        each_ticket_tag = TicketsTags(tag_id=tag, ticket_id=ticket_id)
                         try:
                             db.session.add(each_ticket_tag)
                             db.session.commit()
@@ -255,8 +255,8 @@ class TicketTagsAPI(Resource):
     # @users_required(users=["Student", "Staff","Admin"])
     def delete(self, ticket_id=""):
         try:
-            #deletes the first instance of the ticket tags in the model Tickets_Tags
-            tags = Tickets_Tags.query.filter_by(ticket_id=ticket_id).first()
+            #deletes the first instance of the ticket tags in the model TicketsTags
+            tags = TicketsTags.query.filter_by(ticket_id=ticket_id).first()
         except Exception as e:
             logger.error(
                 f"TicketTagsAPI->delete : Error occured while fetching the tags : {e}"

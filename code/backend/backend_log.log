@@ -7054,6 +7054,7 @@
 01-Apr-24 00:27:20 - [INFO] - Development environment configured.
 01-Apr-24 00:27:20 - [WARNING] -  * Debugger is active!
 01-Apr-24 00:27:20 - [INFO] -  * Debugger PIN: 615-108-927
+<<<<<<< Updated upstream
 01-Apr-24 17:02:21 - [INFO] - Development environment configured.
 01-Apr-24 17:02:22 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
@@ -7436,3 +7437,33 @@
 03-Apr-24 17:42:10 - [DEBUG] - http://127.0.0.1:3000 "GET /tag_groups.json HTTP/1.1" 200 None
 03-Apr-24 17:42:10 - [INFO] - 200 - Custom success 200 response sent
 03-Apr-24 17:42:10 - [INFO] - 127.0.0.1 - - [03/Apr/2024 17:42:10] "GET /api/v2/discourse/tags HTTP/1.1" 200 -
+=======
+03-Apr-24 17:41:09 - [INFO] - Development environment configured.
+03-Apr-24 17:45:38 - [INFO] - Development environment configured.
+03-Apr-24 17:46:21 - [INFO] - Development environment configured.
+03-Apr-24 17:48:26 - [INFO] - Development environment configured.
+03-Apr-24 17:48:26 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+03-Apr-24 17:48:26 - [INFO] - [33mPress CTRL+C to quit[0m
+03-Apr-24 17:48:26 - [INFO] -  * Restarting with stat
+03-Apr-24 17:48:27 - [INFO] - Development environment configured.
+03-Apr-24 17:48:27 - [WARNING] -  * Debugger is active!
+03-Apr-24 17:48:27 - [INFO] -  * Debugger PIN: 299-872-502
+03-Apr-24 17:48:33 - [INFO] - All ticket tags found!
+03-Apr-24 17:48:33 - [INFO] - 200 - Custom success 200 response sent
+03-Apr-24 17:48:33 - [INFO] - 127.0.0.1 - - [03/Apr/2024 17:48:33] "GET /api/v2/tags/7aaef40c060d2e8be8e5e23e3f7ea0a9 HTTP/1.1" 200 -
+03-Apr-24 17:48:41 - [INFO] - All tags found!
+03-Apr-24 17:48:41 - [INFO] - 200 - Custom success 200 response sent
+03-Apr-24 17:48:41 - [INFO] - 127.0.0.1 - - [03/Apr/2024 17:48:41] "GET /api/v2/tags/all-tags HTTP/1.1" 200 -
+03-Apr-24 17:48:49 - [INFO] - Tag created successfully.
+03-Apr-24 17:48:49 - [INFO] - 200 - Tag created successfully
+03-Apr-24 17:48:49 - [INFO] - 127.0.0.1 - - [03/Apr/2024 17:48:49] "POST /api/v2/tags/add-tag HTTP/1.1" 200 -
+03-Apr-24 17:48:52 - [INFO] - All tags found!
+03-Apr-24 17:48:52 - [INFO] - 200 - Custom success 200 response sent
+03-Apr-24 17:48:52 - [INFO] - 127.0.0.1 - - [03/Apr/2024 17:48:52] "GET /api/v2/tags/all-tags HTTP/1.1" 200 -
+03-Apr-24 17:49:01 - [INFO] - 200 - Tags added successfully
+03-Apr-24 17:49:01 - [INFO] - 127.0.0.1 - - [03/Apr/2024 17:49:01] "POST /api/v2/tags/7aaef40c060d2e8be8e5e23e3f7ea0a9 HTTP/1.1" 200 -
+03-Apr-24 17:49:04 - [INFO] - All ticket tags found!
+03-Apr-24 17:49:04 - [INFO] - 200 - Custom success 200 response sent
+03-Apr-24 17:49:04 - [INFO] - 127.0.0.1 - - [03/Apr/2024 17:49:04] "GET /api/v2/tags/7aaef40c060d2e8be8e5e23e3f7ea0a9 HTTP/1.1" 200 -
+>>>>>>> Stashed changes
