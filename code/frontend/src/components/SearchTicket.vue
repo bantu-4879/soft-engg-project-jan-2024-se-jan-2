@@ -82,7 +82,7 @@
           :upvote_disabled="upvote_disabled"
           :delete_disabled="delete_disabled"
           :edit_disabled="edit_disabled"
-          :is_resolved="ticket.ticket_status == 'resolved'"
+          :is_resolved="ticket.ticket_status == 'Resolved'"
         ></TicketCard>
       </div>
     </div>
@@ -152,27 +152,27 @@ export default {
       // show all unresolved tickets, status=pending, filter on priority and tags, sort by created date and votes.
 
       this.filter_status_options = this.filter_status_options.filter(
-        (value) => value.item == "pending"
+        (value) => value.item == "Open"
       );
-      this.form.filter_status.push("pending");
+      this.form.filter_status.push("Open");
       this.search_url = this.search_url + `/${this.user_id}`;
     }
     if (this.user_role === "staff" && this.current_page_path === "/staff-my-tickets") {
       // show user's resolved tickets, status=resolved, filter on priority and tags, sort by created date, resolved date and votes.
 
       this.filter_status_options = this.filter_status_options.filter(
-        (value) => value.item == "resolved"
+        (value) => value.item == "Resolved"
       );
-      this.form.filter_status.push("resolved");
+      this.form.filter_status.push("Resolved");
       this.search_url = this.search_url + `/${this.user_id}`;
     }
     if (this.user_role === "admin" && this.current_page_path === "/admin-create-faq") {
       // show all resolved tickets, status=resolved, filter on priority and tags, sort by created date, resolved date and votes.
 
       this.filter_status_options = this.filter_status_options.filter(
-        (value) => value.item == "resolved"
+        (value) => value.item == "Resolved"
       );
-      this.form.filter_status.push("resolved");
+      this.form.filter_status.push("Resolved");
       this.form.sortdir = "desc";
       this.sort_by_options = this.sort_by_options.filter((value) => value.value == "votes");
       this.search_url = this.search_url + `/${this.user_id}`;
@@ -229,9 +229,9 @@ export default {
 
       if (this.user_role === "staff" && this.current_page_path === "/staff-home") {
         this.filter_status_options = this.filter_status_options.filter(
-          (value) => value.item == "pending"
+          (value) => value.item == "Open"
         );
-        this.form.filter_status.push("pending");
+        this.form.filter_status.push("Open");
       }
       if (this.user_role === "staff" && this.current_page_path === "/staff-my-tickets") {
         this.filter_status_options = this.filter_status_options.filter(
@@ -260,6 +260,7 @@ export default {
     onTagsChanged(value) {
       this.form.filter_tags = value;
     },
+    
   },
   computed: {
     check_query() {
