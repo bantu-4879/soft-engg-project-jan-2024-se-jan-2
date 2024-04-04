@@ -255,6 +255,7 @@ export default {
       this.ticket_deleted = true; // its not deletd, its resolved , so its hidden
     },
     getTicketDetails() {
+      
       fetch(common.TICKET_API + `/${this.id}` + `/${this.user_id}`, {
         method: "GET",
         headers: {
