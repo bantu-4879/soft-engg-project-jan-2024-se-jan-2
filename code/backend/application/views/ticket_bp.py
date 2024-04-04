@@ -568,23 +568,18 @@ class TicketAPI(Resource):
             if role == "staff":
                 ticket_data=TicketData.query.filter_by(ticket_id=ticket.id).first()
 
-                if(details["inProgress"] == "yes"):
-                    ticket_data.inProgress=time_to_str(datetime.datetime.now())
+                
+                sol = details["solution"]
+                if ticket_utils.is_blank(sol):
+                    raise BadRequest(status_msg="Solution can not be empty")
+                else:
+                    ticket.solution = sol
+                    ticket.ticket_status = "Resolved"
+                    ticket.resolved_by = user_id
+                    db.session.add(ticket)
                     db.session.add(ticket_data)
                     db.session.commit()
-            
-                elif(details["inProgress"]=="no"):
-                    sol = details["Solution"]
-                    if ticket_utils.is_blank(sol):
-                        raise BadRequest(status_msg="Solution can not be empty")
-                    else:
-                        ticket.solution = sol
-                        ticket.ticket_status = "Resolved"
-                        ticket.resolved_by = user_id
-                        ticket_data.resolved_at = time_to_str(time.time())
-                        db.session.add(ticket)
-                        db.session.add(ticket_data)
-                        db.session.commit()
+                    raise Success_200(status_msg=f"Ticket solved successfully.")
 
                     # send notification to user who created as well as voted , separately handled.
 
