@@ -59,7 +59,7 @@ class StaffAPI(Resource):
                         resolved_by=user_id
                     ).count()
                     n_total_unresolved_tickets = Ticket.query.filter_by(
-                        ticket_status="pending"
+                        ticket_status="Open"
                     ).count()
                     staff_dict = staff_util.convert_user_data_to_dict(user)
                     staff_dict["n_tickets_resolved"] = n_tickets_resolved
