@@ -26,7 +26,7 @@ class DiscourseUserUtils(UserUtils):
 discoursePost_bp=Blueprint("discoursePost_bp",__name__)
 discoursePost_api=Api(discoursePost_bp)
 discourseUserUtils=DiscourseUserUtils()
-
+TicketUtils=DiscourseUserUtils()
 class AllCategories(Resource):
     """
     usage 
@@ -181,18 +181,16 @@ class Tags(Resource):
             'Api-Key':API_KEY,
             'Api-Username':API_USERNAME,
         }
-        url=f'{DISCOURSE_BASE_URL}/tag_groups.json'
+        url=f'{DISCOURSE_BASE_URL}/tags.json'
         response=requests.get(url,headers=headers)
         if(response.status_code == 200):
             response=response.json()
-            tag_groups=response["tag_groups"]
+            tags=response["tags"]
             data=[]
-            for tag in tag_groups:
+            for tag in tags:
                 _d = {}
                 _d["id"] = tag["id"]
-                _d["name"] = tag["name"]
-                _d["tag_names_list"] = tag["tag_names"]
-                _d["permission"] = tag["permissions"]
+                _d["name"] = tag["text"]
                 data.append(_d)
             return success_200_custom(data=data)
         else:
@@ -230,10 +228,139 @@ class Tags(Resource):
             return {"error": f"Error occurred while making request to Discourse API: {e}"}, 500
 
 
-
-
 class DiscourseTopics(Resource):
-    print("")
+    def __init__(self,user_id=None):
+        self.user_id=user_id
+
+    
+    @token_required
+    @users_required(users='Student')
+    def post(self,user_id,ticket_id):
+        """
+        Usage
+        -----
+        Create a new topic thread on discourse. Only a student can create.
+
+        Parameters
+        ----------
+        form data sent with request
+
+        Returns
+        -------
+
+        """
+        details={
+            "title":"",
+            "raw":"",
+            "topic_id":"", #required for a new Post.
+            "category_id":"", #required for a new Topic
+            "sub_category":"",
+            "target_recepients":"",
+            "created_at":"",
+            "reply_to_post_number":"",
+            "embed_url":"",
+
+        }
+        try:
+            user=User.query.filter_by(id=user_id).first()
+            if not user:
+                raise NotFoundError(status_msg="User does not exist.")
+        except Exception as e:
+            logger.error(
+                f"Discourse API TicketAPI->post : Error occured while getting the user : {e}"
+            )
+            raise InternalServerError
+        if (user.discourse_username):
+            username=user.discourse_username
+        else:
+            raise BadRequest(status_msg="The user is not registered on Discourse register on discourse first.")
+
+        if TicketUtils.is_blank(user_id) or TicketUtils.is_blank(ticket_id):
+            raise BadRequest(status_msg="User id or Ticket Id is missing for discourse Post.")
+        try:
+            form=request.get_json()
+            for key in details:
+                value=form.get(key,"")
+                if TicketUtils.is_blank(value):
+                    value=""
+                    details[key]=value
+                print(details)
+        except Exception as e:
+            logger.error(
+                f"TicketAPI->post : Error occured while getting form data : {e}"
+            )
+            raise InternalServerError
+        else:
+            if details["title"] =="" or details["raw"]=="":
+                raise BadRequest(
+                    status_msg="Ticket title or the message cannot be empty"
+                )
+        try:
+            ticket=Ticket.query.filter_by(id=ticket_id).first()
+        except Exception as e:
+            logger.error(
+                f"Discourse API TicketAPI->post : Error occured while getting the ticket data : {e}"
+            )
+            raise InternalServerError
+        else:
+            logger.info("Uploading the attachments to discourse.")
+            header1={
+                'Api-Key':API_KEY,
+                'Api-Username':username,
+                'Content-type':'multipart/form-data'
+            }
+            params={
+                "type":'composer',
+                "synchronous":'true'
+            }
+            raw+=f"\n\n"
+            url=f"{DISCOURSE_BASE_URL}/uploads.json"
+            if 'files' in request.files:
+                files=request.files.getlist('files')
+                if len(files) !=0 :
+                    image_urls=[]
+                    for i,file in enumerate(files):
+                        file_name=file.filename
+                        with open(file,'rb') as f:
+                            files={
+                                "file":(f.read())}
+                        try:
+                            response=requests.posts(url,headers=header1,files=files,data=params) 
+                        except Exception as e:
+                            logger.error(
+                                f"Discourse API TicketAPI->post : Error occured while uploading image {file_name}to discourse  : {e}"
+                            )    
+                            raise InternalServerError(status_msg="Cannot upload image to discourse.")
+                        else:
+                            response=response.json()
+                            image_urls.append(response["short_url"])
+                    for image_url in image_urls:
+                        details["raw"]+=f"![]({image_url})\n"
+            header={
+                'Api-Key':API_KEY,
+                'Api-Username':username,
+                'Content-type':'application/json'
+            }
+            payload={
+                "title":details["title"],
+                "raw":details["raw"],
+                "topic_id":details["topic_id"],
+                "category":details["category_id"],
+                "sub_category":details["sub_category"],
+                "reply_to_post_number":details["reply_to_post_number"],
+                "created_at":details["created_at"],
+                "embed_url":details["embed_url"]
+            }
+
+
+        headers={
+            'Api-key':API_KEY,
+            'Api-username':username,
+            'Content-Type':'application/x-www-form-urlencoded'
+        }
+
+
+
 
 class TicketThread(Resource):
     @token_required

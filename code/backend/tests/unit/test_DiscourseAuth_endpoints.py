@@ -54,5 +54,5 @@ def test_discourse_auth_api_with_fixture_get(test_client):
         f"/api/{API_VERSION}/discourseAuth/discourseRegister/{username}",
         headers=headers,
     )
-    response = response.get_json()
-    assert response["status"] == 200  
+    #response = response.get_json()
+    assert response.status_code == 200  

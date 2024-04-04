@@ -77,7 +77,7 @@ def test_discourse_category_api_with_fixture_post(test_client):
         headers=headers,
     )
     response = response.get_json()
-    assert response["status"] == 200  
+    assert  response["status_code"] == 200  
 
 
 def test_discourse_tag_api_with_fixture_get(test_client):
