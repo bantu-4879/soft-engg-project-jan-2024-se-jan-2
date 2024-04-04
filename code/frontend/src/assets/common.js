@@ -21,8 +21,9 @@ const FAQ_API = `${BASEURL}${FAQ_API_PREFIX}`;
 const TICKET_API = `${BASEURL}${TICKET_API_PREFIX}`;
 
 const TICKET_API_ALLTICKETS = `${BASEURL}${TICKET_API_PREFIX}/all-tickets`
-const WEBHOOK_URL = `https://chat.googleapis.com/v1/spaces/AAAAsTbnkos/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=2ZVePrYB_1cEwSrlkdUstzpUGCFBW9a6_RtzylmGdQE`
-
+const WEBHOOK_URL_STAFF = `https://chat.googleapis.com/v1/spaces/AAAAsTbnkos/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=2ZVePrYB_1cEwSrlkdUstzpUGCFBW9a6_RtzylmGdQE`
+const WEBHOOK_URL_STUDENT = `https://chat.googleapis.com/v1/spaces/AAAAsTbnkos/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=aJjfYWhYMscOv6l-VukfKhX3c3GhRmN3Xpg_KAt03p4`
+const WEBHOOK_URL_ADMIN = `https://chat.googleapis.com/v1/spaces/AAAAsTbnkos/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=VgCumRm7zG5aykpSjHoQ9bZ9FG3i2LSZEdmMlcD_CBA`
 
 const STUDENT_ROUTES = ['/student', '/student-home', "/student-create-ticket", "/student-my-tickets", "/common-faqs", "/user-profile"]
 const SUPPORT_ROUTES = ['/staff', '/staff-home', "/staff-my-tickets", "/common-faqs", "/user-profile"]
@@ -72,5 +73,7 @@ export {
   STUDENT_NAV_BUTTONS,
   SUPPORT_NAV_BUTTONS,
   ADMIN_NAV_BUTTONS, 
-  WEBHOOK_URL
+  WEBHOOK_URL_ADMIN,
+  WEBHOOK_URL_STUDENT,
+  WEBHOOK_URL_STAFF
 };
