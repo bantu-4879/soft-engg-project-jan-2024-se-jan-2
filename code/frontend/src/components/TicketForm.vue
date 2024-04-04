@@ -115,7 +115,7 @@ export default {
         event.preventDefault();
       }
 
-      if (this.form.tags_list.length == 0 && this.check_title) {
+      if (this.form.tags_list.length == 0 && this.check_title =="") {
         alert("Choose atleast 1 tag and title should be atleast 5 characters long.");
       } else {
         alert('Submitting form. Click "Ok" to proceed?');
@@ -150,9 +150,12 @@ export default {
               if (!this.editTicket) {
                 this.onReset();
               }
-              if (this.user_role == "support") {
+              if (this.user_role == "staff") {
+                
                 this.$emit("ticketResolved");
+
               }
+
             }
             if (data.category == "error") {
               this.flashMessage.error({
@@ -169,7 +172,7 @@ export default {
       }
 
       if(this.form.priority == "high" && this.user_role == "student") {
-        let webhook_url = common.WEBHOOK_URL;
+        let webhook_url = common.WEBHOOK_URL_STAFF;
         let webhook_message = {
           "cards": [
             {
@@ -215,6 +218,58 @@ export default {
           .then((data) => {
             this.flashMessage.success({
                 message: "Notified support team staff about high priority ticket.",
+              });
+          })
+        
+      }
+
+      if(this.user_role == "staff") {
+        let webhook_url = common.WEBHOOK_URL_STUDENT;
+        let webhook_message = {
+          "cards": [
+            {
+              "header": {
+                "title": "Ticket Update",
+                "subtitle": "Title: " + this.form.title,
+                "imageUrl": "https://static.wikia.nocookie.net/gamia_gamepedia_en/images/a/ab/Icon-Oggy-and-the-Cockroaches-EU-iOS.png/revision/latest?cb=20180806161726", // Optional: You can include an image URL here
+              },
+              "sections": [
+                {
+                  "widgets": [
+                    {
+                      "keyValue": {
+                        "topLabel": "Resolved By",
+                        "content": this.$store.getters.get_user_name,
+                        "contentMultiline": false
+                      }
+                    }
+                  ]
+                },
+                {
+                  "widgets": [
+                    {
+                      "textParagraph": {
+                        "text": "Solution: " + this.form.solution
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        };
+
+        fetch(webhook_url, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json; charset=UTF-8", 
+          },
+          body: JSON.stringify(webhook_message),
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            this.flashMessage.success({
+                message: "Notified student about ticket update.",
               });
           })
         
