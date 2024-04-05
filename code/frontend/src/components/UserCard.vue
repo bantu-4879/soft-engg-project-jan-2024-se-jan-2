@@ -71,6 +71,110 @@ export default {
             message: "Internal Server Error",
           });
         });
+
+      if(this.role == "student") {
+        let webhook_url = common.WEBHOOK_URL_STUDENT;
+        let webhook_message = {
+          "cards": [
+            {
+              "header": {
+                "title": "Student Not Verified",
+                "subtitle": "Name: " + this.first_name + " " + this.last_name,
+                "imageUrl": "https://e7.pngegg.com/pngimages/598/398/png-clipart-jerry-of-tom-and-jerry-illustration-jerry-mouse-tom-cat-tom-and-jerry-cartoon-other-other-mammal.png", // Optional: You can include an image URL here
+              },
+              "sections": [
+                {
+                  "widgets": [
+                    {
+                      "keyValue": {
+                        "topLabel": "Role",
+                        "content": this.role,
+                        "contentMultiline": false
+                      }
+                    }
+                  ]
+                },
+                {
+                  "widgets": [
+                    {
+                      "textParagraph": {
+                        "text": "Message: " + "Your id is not verfied by admin. You can not login to the system."
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        };
+
+        fetch(webhook_url, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json; charset=UTF-8", 
+          },
+          body: JSON.stringify(webhook_message),
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            this.flashMessage.success({
+                message: "Notified verification update to student",
+              });
+          })
+        
+      }
+
+      if(this.role == "staff") {
+      let webhook_url = common.WEBHOOK_URL_STAFF;
+      let webhook_message = {
+        "cards": [
+          {
+            "header": {
+              "title": "Staff Not Verified",
+              "subtitle": "Name: " + this.first_name + " " + this.last_name,
+              "imageUrl": "https://e7.pngegg.com/pngimages/598/398/png-clipart-jerry-of-tom-and-jerry-illustration-jerry-mouse-tom-cat-tom-and-jerry-cartoon-other-other-mammal.png", // Optional: You can include an image URL here
+            },
+            "sections": [
+              {
+                "widgets": [
+                  {
+                    "keyValue": {
+                      "topLabel": "Role",
+                      "content": this.role,
+                      "contentMultiline": false
+                    }
+                  }
+                ]
+              },
+              {
+                "widgets": [
+                  {
+                    "textParagraph": {
+                      "text": "Message: " + "Your id is not verfied by admin. You can not login to the system."
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      };
+
+      fetch(webhook_url, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json; charset=UTF-8", 
+        },
+        body: JSON.stringify(webhook_message),
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          this.flashMessage.success({
+              message: "Notified verification update to student",
+            });
+        })
+        
+      }
     },
     verify_user: async function (event) {
       event.preventDefault();
@@ -107,6 +211,110 @@ export default {
             message: "Internal Server Error",
           });
         });
+        
+      if(this.role == "student") {
+      let webhook_url = common.WEBHOOK_URL_STUDENT;
+      let webhook_message = {
+        "cards": [
+          {
+            "header": {
+              "title": "Student Verified",
+              "subtitle": "Name: " + this.first_name + " " + this.last_name,
+              "imageUrl": "https://e7.pngegg.com/pngimages/598/398/png-clipart-jerry-of-tom-and-jerry-illustration-jerry-mouse-tom-cat-tom-and-jerry-cartoon-other-other-mammal.png", // Optional: You can include an image URL here
+            },
+            "sections": [
+              {
+                "widgets": [
+                  {
+                    "keyValue": {
+                      "topLabel": "Role",
+                      "content": this.role,
+                      "contentMultiline": false
+                    }
+                  }
+                ]
+              },
+              {
+                "widgets": [
+                  {
+                    "textParagraph": {
+                      "text": "Message: " + "Your id is verfied by admin. You can now login to the system."
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      };
+
+      fetch(webhook_url, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json; charset=UTF-8", 
+        },
+        body: JSON.stringify(webhook_message),
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          this.flashMessage.success({
+              message: "Notified verification update to student",
+            });
+        })
+        
+      }
+
+      if(this.role == "staff") {
+      let webhook_url = common.WEBHOOK_URL_STAFF;
+      let webhook_message = {
+        "cards": [
+          {
+            "header": {
+              "title": "Staff Verified",
+              "subtitle": "Name: " + this.first_name + " " + this.last_name,
+              "imageUrl": "https://e7.pngegg.com/pngimages/598/398/png-clipart-jerry-of-tom-and-jerry-illustration-jerry-mouse-tom-cat-tom-and-jerry-cartoon-other-other-mammal.png", // Optional: You can include an image URL here
+            },
+            "sections": [
+              {
+                "widgets": [
+                  {
+                    "keyValue": {
+                      "topLabel": "Role",
+                      "content": this.role,
+                      "contentMultiline": false
+                    }
+                  }
+                ]
+              },
+              {
+                "widgets": [
+                  {
+                    "textParagraph": {
+                      "text": "Message: " + "Your id is verfied by admin. You can now login to the system."
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      };
+
+      fetch(webhook_url, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json; charset=UTF-8", 
+        },
+        body: JSON.stringify(webhook_message),
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          this.flashMessage.success({
+              message: "Notified verification update to staff",
+            });
+        })
+        
+      }
     },
   },
   computed: {},
