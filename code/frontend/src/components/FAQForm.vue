@@ -127,6 +127,58 @@ export default {
             });
           });
       }
+
+      if(this.user_id) {
+      let webhook_url = common.WEBHOOK_URL_STUDENT;
+      let webhook_message = {
+        "cards": [
+          {
+            "header": {
+              "title": "FAQ Updated",
+              "subtitle": "Question: " + this.form.question,
+              "imageUrl": "https://static.independent.co.uk/s3fs-public/thumbnails/image/2016/08/26/13/mr-bean.jpg?quality=75&width=1200&auto=webp", // Optional: You can include an image URL here
+            },
+            "sections": [
+              {
+                "widgets": [
+                  {
+                    "keyValue": {
+                      "topLabel": "Solution:",
+                      "content": this.form.solution,
+                      "contentMultiline": false
+                    }
+                  }
+                ]
+              },
+              {
+                "widgets": [
+                  {
+                    "textParagraph": {
+                      "text": "Message: " + "Please check the FAQ section for the updates."
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      };
+
+      fetch(webhook_url, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json; charset=UTF-8", 
+        },
+        body: JSON.stringify(webhook_message),
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          this.flashMessage.success({
+              message: "Notified FAQ update to students",
+            });
+        })
+        
+      }
     },
     onReset(event) {
       if (event && event.preventDefault) {
