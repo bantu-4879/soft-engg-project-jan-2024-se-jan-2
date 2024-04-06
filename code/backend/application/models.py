@@ -80,6 +80,7 @@ class Ticket(db.Model):
     thread_link = db.Column(db.String(500))
     privacy=db.Column(db.Boolean, default=False, nullable=False)
     created_at = db.Column(db.String,nullable=False)
+    date_posted = db.Column(db.Date)
     resolved_by = db.Column(db.String(100), db.ForeignKey('user.id'),default=0,nullable=False)
     solution_satisfaction = db.Column(db.Boolean,nullable=False) 
     comments = db.Column(db.String(500))
@@ -92,6 +93,30 @@ class Ticket(db.Model):
                                      backref='assigned_tickets', lazy='dynamic') #many to many relationship assigned staff
     comments=db.relationship('TicketComments', backref='ticket',uselist=True) #the comments made by staff to the ticket one - many relationship
     attachments=db.relationship('TicketAttachment', backref='ticket',uselist=True) #ticket attachments one - many relationship (we can limit to 2)
+
+    def to_dict(self):
+        return {
+            "id": self.id,
+            "user_id": self.user_id,
+            "title": self.title,
+            "description": self.description,
+            "solution": self.solution,
+            "thread_link": self.thread_link,
+            "privacy": self.privacy,
+            "created_at": self.created_at,
+            "date_posted": self.date_posted,
+            "resolved_by": self.resolved_by,
+            "solution_satisfaction": self.solution_satisfaction,
+            "comments": self.comments,
+            "ticket_status": self.ticket_status,
+            "ticket_priority": self.ticket_priority,
+            "tags_list": self.tags_list,
+            "votes": self.votes,
+            "assigned_staff": self.assigned_staff,
+            "comments": self.comments,
+            "attachments": self.attachments
+
+        }
 
 class VoteTable(db.Model):
     id = db.Column(db.Integer, primary_key=True)
