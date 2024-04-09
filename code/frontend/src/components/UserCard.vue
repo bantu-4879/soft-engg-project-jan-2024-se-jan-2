@@ -170,7 +170,7 @@ export default {
         .then((response) => response.json())
         .then((data) => {
           this.flashMessage.success({
-              message: "Notified verification update to student",
+              message: "Notified verification update to staff",
             });
         })
         
