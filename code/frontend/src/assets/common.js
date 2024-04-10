@@ -27,14 +27,15 @@ const WEBHOOK_URL_ADMIN = `https://chat.googleapis.com/v1/spaces/AAAAsTbnkos/mes
 
 const STUDENT_ROUTES = ['/student', '/student-home', "/student-create-ticket", "/student-my-tickets", "/common-faqs", "/user-profile"]
 const SUPPORT_ROUTES = ['/staff', '/staff-home', "/staff-my-tickets", "/common-faqs", "/user-profile"]
-const ADMIN_ROUTES = ['/admin', '/admin-home', "/admin-create-faq", "/admin-validate-users", "/common-faqs", "/user-profile"]
+const ADMIN_ROUTES = ['/admin', '/admin-home', "/admin-create-faq", "/admin-validate-users", "/common-faqs", "/user-profile","/inbox"]
 
 const STUDENT_NAV_BUTTONS = [
   { id: 1, title: "Home", link: "/student-home", active: false },
   { id: 2, title: "Create Ticket", link: "/student-create-ticket", active: false },
   { id: 3, title: "My Tickets", link: "/student-my-tickets", active: false },
   { id: 4, title: "FAQs", link: "/common-faqs", active: false },
-  { id: 5, title: "Logout", link: "#", active: false },
+  { id: 5, title: "Inbox", link: "/inbox", active: false },
+  { id: 6, title: "Logout", link: "#", active: false },
 ]
 
 const SUPPORT_NAV_BUTTONS = [
@@ -49,7 +50,8 @@ const ADMIN_NAV_BUTTONS = [
   { id: 2, title: "Validate Users", link: "/admin-validate-users", active: false },
   { id: 3, title: "Create FAQ", link: "/admin-create-faq", active: false },
   { id: 4, title: "FAQs", link: "/common-faqs", active: false },
-  { id: 5, title: "Logout", link: "#", active: false },
+  { id: 5, title: "Inbox", link: "/inbox", active: false },
+  { id: 6, title: "Logout", link: "#", active: false },
 ]
 
 export {

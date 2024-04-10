@@ -15,6 +15,7 @@ import AdminCreateFAQ from '../views/AdminCreateFAQ.vue';
 import AdminValidateUsers from '../views/AdminValidateUsers.vue';
 import AppHomeView from '../views/AppHomeView.vue';
 import UserProfile from '../views/UserProfile.vue';
+import InboxView from '../views/InboxView.vue'; 
 
 Vue.use(VueRouter);
 
@@ -84,6 +85,11 @@ const routes = [
     path: '/admin-create-faq',
     name: 'AdminCreateFAQ',
     component: AdminCreateFAQ,
+  },
+  {
+    path: '/inbox',
+    name: 'Inbox',
+    component: InboxView,
   },
   {
     path: '*',
