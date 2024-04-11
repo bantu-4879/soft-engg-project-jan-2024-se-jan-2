@@ -4,3 +4,4 @@ node_modules
 new_env
 *.log
 __pycache__
+/backend/backend_log.log
