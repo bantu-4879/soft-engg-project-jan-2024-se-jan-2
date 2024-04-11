@@ -260,7 +260,7 @@ class DiscourseTopics(Resource):
         else:
             raise BadRequest(status_msg="The user is not registered on Discourse register on discourse first.")
         
-        if TicketUtils.is_blank(user_id) or TicketUtils.is_blank(topic_id):
+        if TicketUtils.is_blank(user_id):
             raise BadRequest(status_msg="User id or Topic Id is missing for discourse.")
         
         headers={
@@ -272,15 +272,15 @@ class DiscourseTopics(Resource):
         }
         url=f"{DISCOURSE_BASE_URL}/t/{topic_id}.json"
         try:
-            response=requests.get(url,headers=headers,payload=payload) 
+            response=requests.get(url,headers=headers) 
         except Exception as e:
             logger.error(
                 f"Discourse API TicketAPI->post : Error occured while getting topic from discourse : {e}"
             )    
             raise InternalServerError(status_msg="Cannot get topic from discourse")
-        response=response.json()
-        print(response)
-        if(response["status"]==200):
+        if(response.status_code==200):
+            response=response.json()
+            print(response)
             return success_200_custom(data=response)
         else:
             raise BadRequest(status_code=401,status_msg="Cannot load topic")
@@ -356,6 +356,8 @@ class DiscourseTopics(Resource):
             )
             raise InternalServerError
         else:
+            if(ticket.user_id != user_id):
+                raise BadRequest(status_code=403,status_msg="You cannot create discourse thread for this topic.")
             logger.info("Uploading the attachments to discourse.")
             header1={
                 'Api-Key':API_KEY,
@@ -410,9 +412,118 @@ class DiscourseTopics(Resource):
                 'Api-Username':username,
                 'Content-Type':'application/x-www-form-urlencoded'
             }
+            url2=f"{DISCOURSE_BASE_URL}/posts.json"
+            try:
+                response=requests.post(url=url2,headers=header,json=payload)
+            except Exception as e:
+                    logger.error(
+                            f"Discourse API TicketAPI->post : Error occured while uploading image {file_name}to discourse  : {e}"
+                        )    
+                    raise InternalServerError(status_msg="Cannot upload image to discourse.")
+            if(response.status_code==200):
+                response=response.json()
+                ticket.thread_link=response["id"]
+                try:
+                    db.session.add(ticket)
+                    db.session.commit()
+                except Exception as e:
+                    logger.error(
+                        f"Discourse API TicketAPI->post : Error while adding thread link to discourse: {e}"
+                    )
+                    raise InternalServerError(status_msg="Cannot add the discourse topic data to database.")
+
+                data={}
+                data["id"] = response["id"]
+                data["name"] = response["name"]
+                data["created_at"] = response["created_at"]
+                data["raw"] = response["raw"]
+                return success_200_custom(data=data)
+            else:
+                raise BadRequest(status_code=403,status_msg="Cannot create post.pictures uploaded")
 
 
+    @token_required
+    @users_required(users=['Student','Staff'])
+    def delete(self,user_id,topic_id):
+        """
+        Usage
+        -----
+        Deletes a single topic from its topic Id , if it is by that user or the user is staff.
 
+        Parameters
+        ----------
+        parameters sent in the path.
+
+        Returns
+        -------
+        """
+        try:
+            user=User.query.filter_by(id=user_id).first()
+            if not user:
+                raise NotFoundError(status_msg="User does not exist.")
+        except Exception as e:
+            logger.error(
+                f"Discourse API TicketAPI->delete : Error occured while getting the user : {e}"
+            )
+            raise InternalServerError
+        if (user.discourse_username):
+            username=user.discourse_username
+        else:
+            raise BadRequest(status_msg="The user is not registered on Discourse register on discourse first.")
+        
+        if TicketUtils.is_blank(user_id):
+            raise BadRequest(status_msg="User id or Topic Id is missing for discourse.")
+        headers={
+            'Api-Key':API_KEY,
+            'Api-Username':username
+        }
+        payload={
+            'topic_id':topic_id
+        }
+        url=f"{DISCOURSE_BASE_URL}/t/{topic_id}.json"
+        try:
+            response=requests.get(url,headers=headers) 
+        except Exception as e:
+            logger.error(
+                f"Discourse API TicketAPI->delete : Error occured while deleting topic from discourse : {e}"
+            )    
+            raise InternalServerError(status_msg="Cannot delete topic from discourse")
+        if(response.status_code==200):
+            response=response.json()
+            post_username=response["name"]
+            if(post_username!=username):
+                if(user.role.name !='staff'):
+                    raise BadRequest(status_code=403,status_msg="You cannot delete this post.")
+                else:
+                    header2={
+                        'Api-Key':API_KEY,
+                        'Api-Username':API_USERNAME
+                    }
+                    try:
+                        response=requests.delete(url=url,headers=header2)
+                    except Exception as e:
+                        logger.error(
+                f"Discourse API TicketAPI->delete : Error occured while deleting topic from discourse : {e}"
+            )       
+                    if(response.status_code==200):
+                        raise Success_200(status_code=response.status_code,response_msg="Successfully deleted the thread")
+                    else:
+                        raise InternalServerError(status_msg="Cannot delete the topic.")
+            else:
+                try:
+                    response=requests.delete(url=url,headers=headers)
+                except Exception as e:
+                    logger.error(
+                        f"Discourse API TicketAPI->delete : Error occured while deleting topic from discourse : {e}"
+                    )
+                if(response.status_code==200):
+                    raise Success_200(status_code=response.status_code,response_msg="Successfully deleted the thread")
+                else:
+                    raise InternalServerError(status_msg="Cannot delete the topic.")
+        else:
+            raise BadRequest(status_code=401,status_msg="Cannot load topic with this topic id")
+        
+        
 
 class TicketThread(Resource):
     @token_required
