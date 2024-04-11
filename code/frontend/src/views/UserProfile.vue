@@ -129,12 +129,13 @@ export default {
     if (this.user_role === "student") {
       this.user_url_to_fetch_data = common.STUDENT_API + `/${this.user_id}`;
     }
-    if (this.user_role === "support") {
+    if (this.user_role === "staff") {
       this.user_url_to_fetch_data = common.SUPPORT_API + `/${this.user_id}`;
     }
     if (this.user_role === "admin") {
       this.user_url_to_fetch_data = common.ADMIN_API + `/${this.user_id}`;
     }
+    this.registerdiscourse();
   },
   methods: {
     onSubmit(event) {
@@ -196,6 +197,40 @@ export default {
     onFileUpload(value) {
       this.form.profile_photo_loc = value[0].attachment_loc;
     },
+    registerdiscourse(){
+      fetch(common.DISCOURSE_REGISTER_API + '/discourseRegister', {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email: this.form.email,
+          user_id: this.$store.getters.get_user_id,
+          password: this.form.password,
+          username: this.form.first_name + "_" + this.form.second_name,
+          name: this.form.first_name + " " + this.form.second_name
+        }),
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          if (data.category == "success") {
+            this.flashMessage.success({
+              message: data.message,
+            });
+          }
+          if (data.category == "error") {
+            this.flashMessage.error({
+              message: data.message,
+            });
+          }
+        })
+        .catch((error) => {
+          this.$log.error(`Error : ${error}`);
+          this.flashMessage.error({
+            message: "Internal Server Error due to discourse",
+          });
+        });
+    }
   },
   computed: {
     check_name() {
