@@ -28,8 +28,8 @@ discourseAuth_api=Api(discourseAuth_bp)
 discourseUserUtils=DiscourseUserUtils()
 class DiscourseUserCreation(Resource):
 
-    @token_required
-    @users_required(users=["Student","Staff","Admin"])
+    #@token_required
+    #@users_required(users=["Student","Staff","Admin"])
     def post(self):
         """
         Usage 
@@ -121,17 +121,17 @@ class DiscourseUserCreation(Resource):
         }
         response=requests.get(url,headers=headers)
         if(response.status_code==200):
-            return response.json(),200
+            return response.json(),response.status_code
         else:
             return response.json(), response.status_code
-        
+
 
 class DiscourseAddMedorators(Resource):
     def __init__(self,user_id=None):
         self.user_id=user_id
     
-    @token_required
-    @admin_required
+    #@token_required
+    #@admin_required
     def get(self):
         """
         usage
@@ -190,7 +190,7 @@ class DiscourseAddMedorators(Resource):
             
             user=User.query.filter_by(id=user_id).first()
             if user:
-                username="JaneDoeTest"
+                username=user.discourse_username
                 payload={
                     "usernames":username
                 }
@@ -263,7 +263,68 @@ class DiscourseAddMedorators(Resource):
                 else:
                     raise BadRequest(
                         status_msg=response.error)
+
+class DiscourseGroupMessages(Resource):
+    def __init__(self,user_id=None):
+        self.user_id=user_id
+    
+    #@token_required
+    #@users_required(users=['Staff','Admin'])
+    def get(self,user_id):
+        """
+        usage
+        -------
+        This is used to get the messages of a user , who is part of the staff team and part of the group.
+
+        parameters
+        ------
+        This takes the user_id and finds the username from discourse
+
+        returns
+
+        -------
+        it returns the messages of the corresponding user if he exists
+
+        """
+
+        if discourseUserUtils.is_blank(user_id):
+            raise BadRequest(status_msg="User id is missing.")
+
+        # check if user exists
+        try:
+            user = User.query.filter_by(id=user_id).first()
+        except Exception as e:
+            logger.error(
+                f"Discourse group Messages API->get : Error occured while fetching user data : {e}"
+            )
+            raise InternalServerError
+        else:
+            if user.discourse_username:
+                username=user.discourse_username
+                headers={
+                    "Api-Key":API_KEY,
+                    "Api-Username":username
+                }
+                url=f'{DISCOURSE_BASE_URL}/topics/private-messages/{username}.json'
+                try:
+                    response=requests.get(url,headers=headers)
+                except Exception as e:
+                    logger.error(
+                f"Discourse group Messages API->get : Error occured while fetching data from discourse : {e}"
+            )
+                if response.status_code == 200:
+                    logger.info("Messages received from discourse")
+                    return success_200_custom(data=response.json())    
+                else:
+                    raise BadRequest(status_msg=response.message)
+            else:
+                raise NotFoundError(status_msg="Staff not registered on discourse , register on discourse first.")
+        
+
+
+        
         
 
 discourseAuth_api.add_resource(DiscourseUserCreation,"/discourseRegister", "/discourseRegister/<string:username>")
 discourseAuth_api.add_resource(DiscourseAddMedorators,"/addStaff",'/addStaff/<string:user_id>')
+discourseAuth_api.add_resource(DiscourseGroupMessages,"/getMessages/<string:user_id>")
