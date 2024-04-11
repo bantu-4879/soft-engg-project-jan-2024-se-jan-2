@@ -175,7 +175,7 @@ class Tags(Resource):
         self.user_id=user_id
 
     
-    #@token_required
+    @token_required
     def get(self):
         headers={
             'Api-Key':API_KEY,
@@ -196,8 +196,8 @@ class Tags(Resource):
         else:
             raise NotFoundError(status_msg="could not load Tags data")
     
-    #@token_required
-    #@users_required(users='Staff')
+    @token_required
+    @users_required(users='Staff')
     def post(self):
         try:
             form = request.get_json()
@@ -232,7 +232,65 @@ class DiscourseTopics(Resource):
     def __init__(self,user_id=None):
         self.user_id=user_id
 
-    
+    #@token_required
+    def get(self,user_id,topic_id):
+        """
+        Usage
+        -----
+        Gets a single topic from its topic Id , if it can be viewed by a username.
+
+        Parameters
+        ----------
+        form data sent with request
+
+        Returns
+        -------
+        """
+        try:
+            user=User.query.filter_by(id=user_id).first()
+            if not user:
+                raise NotFoundError(status_msg="User does not exist.")
+        except Exception as e:
+            logger.error(
+                f"Discourse API TicketAPI->post : Error occured while getting the user : {e}"
+            )
+            raise InternalServerError
+        if (user.discourse_username):
+            username=user.discourse_username
+        else:
+            raise BadRequest(status_msg="The user is not registered on Discourse register on discourse first.")
+        
+        if TicketUtils.is_blank(user_id) or TicketUtils.is_blank(topic_id):
+            raise BadRequest(status_msg="User id or Topic Id is missing for discourse.")
+        
+        headers={
+            'Api-Key':API_KEY,
+            'Api-Username':username
+        }
+        payload={
+            'topic_id':topic_id
+        }
+        url=f"{DISCOURSE_BASE_URL}/t/{topic_id}.json"
+        try:
+            response=requests.get(url,headers=headers,payload=payload) 
+        except Exception as e:
+            logger.error(
+                f"Discourse API TicketAPI->post : Error occured while getting topic from discourse : {e}"
+            )    
+            raise InternalServerError(status_msg="Cannot get topic from discourse")
+        else:
+            response=response.json()
+            print(response)
+            if(response["status"]==200):
+                return success_200_custom(data=response)
+            else:
+                raise BadRequest(status_code=401,status_msg="Cannot load topic")
+
+
+        
+        
+        
+
     @token_required
     @users_required(users='Student')
     def post(self,user_id,ticket_id):
@@ -249,11 +307,11 @@ class DiscourseTopics(Resource):
         -------
 
         """
+
         details={
             "title":"",
             "raw":"",
-            "topic_id":"", #required for a new Post.
-            "category_id":"", #required for a new Topic
+            "topic_id":"", #required for a new Post
             "sub_category":"",
             "target_recepients":"",
             "created_at":"",
@@ -313,7 +371,7 @@ class DiscourseTopics(Resource):
                 "type":'composer',
                 "synchronous":'true'
             }
-            raw+=f"\n\n"
+            raw+=f"\n"
             url=f"{DISCOURSE_BASE_URL}/uploads.json"
             if 'files' in request.files:
                 files=request.files.getlist('files')
@@ -325,7 +383,7 @@ class DiscourseTopics(Resource):
                             files={
                                 "file":(f.read())}
                         try:
-                            response=requests.posts(url,headers=header1,files=files,data=params) 
+                            response=requests.post(url,headers=header1,files=files,data=params) 
                         except Exception as e:
                             logger.error(
                                 f"Discourse API TicketAPI->post : Error occured while uploading image {file_name}to discourse  : {e}"
@@ -341,23 +399,22 @@ class DiscourseTopics(Resource):
                 'Api-Username':username,
                 'Content-type':'application/json'
             }
+            default_category=4
             payload={
                 "title":details["title"],
                 "raw":details["raw"],
                 "topic_id":details["topic_id"],
-                "category":details["category_id"],
+                "category":default_category,
                 "sub_category":details["sub_category"],
                 "reply_to_post_number":details["reply_to_post_number"],
                 "created_at":details["created_at"],
                 "embed_url":details["embed_url"]
             }
-
-
-        headers={
-            'Api-key':API_KEY,
-            'Api-username':username,
-            'Content-Type':'application/x-www-form-urlencoded'
-        }
+            headers={
+                'Api-Key':API_KEY,
+                'Api-Username':username,
+                'Content-Type':'application/x-www-form-urlencoded'
+            }
 
 
 

@@ -28,8 +28,8 @@ discourseAuth_api=Api(discourseAuth_bp)
 discourseUserUtils=DiscourseUserUtils()
 class DiscourseUserCreation(Resource):
 
-    @token_required
-    @users_required(users=["Student","Staff","Admin"])
+    #@token_required
+    #@users_required(users=["Student","Staff","Admin"])
     def post(self):
         """
         Usage 
@@ -130,8 +130,8 @@ class DiscourseAddMedorators(Resource):
     def __init__(self,user_id=None):
         self.user_id=user_id
     
-    @token_required
-    @admin_required
+    #@token_required
+    #@admin_required
     def get(self):
         """
         usage
@@ -163,8 +163,8 @@ class DiscourseAddMedorators(Resource):
                 data.append(_d)
             return success_200_custom(data=data)
     
-    @token_required
-    @admin_required
+    #@token_required
+    #@admin_required
     def put(self,user_id):
         """
         Usage
@@ -268,8 +268,8 @@ class DiscourseGroupMessages(Resource):
     def __init__(self,user_id=None):
         self.user_id=user_id
     
-    @token_required
-    @users_required(users=['Staff','Admin'])
+    #@token_required
+    #@users_required(users=['Staff','Admin'])
     def get(self,user_id):
         """
         usage
@@ -314,8 +314,7 @@ class DiscourseGroupMessages(Resource):
             )
                 if response.status_code == 200:
                     logger.info("Messages received from discourse")
-                    if(response.success):
-                        raise Success_200(status_msg=response.message,status_code=response.status_code)    
+                    return success_200_custom(data=response.json())    
                 else:
                     raise BadRequest(status_msg=response.message)
             else:
@@ -328,4 +327,4 @@ class DiscourseGroupMessages(Resource):
 
 discourseAuth_api.add_resource(DiscourseUserCreation,"/discourseRegister", "/discourseRegister/<string:username>")
 discourseAuth_api.add_resource(DiscourseAddMedorators,"/addStaff",'/addStaff/<string:user_id>')
-discourseAuth_api.add_resource(DiscourseGroupMessages,"/getMessages/<string:userid>")
+discourseAuth_api.add_resource(DiscourseGroupMessages,"/getMessages/<string:user_id>")

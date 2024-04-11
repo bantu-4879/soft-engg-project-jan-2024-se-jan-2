@@ -6230,3 +6230,176 @@
 29-Mar-24 10:48:02 - [INFO] - Development environment configured.
 29-Mar-24 10:48:02 - [WARNING] -  * Debugger is active!
 29-Mar-24 10:48:02 - [INFO] -  * Debugger PIN: 615-108-927
+11-Apr-24 13:22:35 - [INFO] - Development environment configured.
+11-Apr-24 13:22:35 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+11-Apr-24 13:22:35 - [INFO] - [33mPress CTRL+C to quit[0m
+11-Apr-24 13:22:35 - [INFO] -  * Restarting with stat
+11-Apr-24 13:22:36 - [INFO] - Development environment configured.
+11-Apr-24 13:22:36 - [WARNING] -  * Debugger is active!
+11-Apr-24 13:22:36 - [INFO] -  * Debugger PIN: 144-740-991
+11-Apr-24 15:06:59 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+11-Apr-24 15:06:59 - [INFO] -  * Restarting with stat
+11-Apr-24 15:07:01 - [INFO] - Development environment configured.
+11-Apr-24 15:07:01 - [WARNING] -  * Debugger is active!
+11-Apr-24 15:07:01 - [INFO] -  * Debugger PIN: 144-740-991
+11-Apr-24 15:07:49 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+11-Apr-24 15:07:49 - [INFO] -  * Restarting with stat
+11-Apr-24 15:07:50 - [INFO] - Development environment configured.
+11-Apr-24 15:07:50 - [WARNING] -  * Debugger is active!
+11-Apr-24 15:07:50 - [INFO] -  * Debugger PIN: 144-740-991
+11-Apr-24 15:08:00 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+11-Apr-24 15:08:01 - [INFO] -  * Restarting with stat
+11-Apr-24 15:08:02 - [INFO] - Development environment configured.
+11-Apr-24 15:08:02 - [WARNING] -  * Debugger is active!
+11-Apr-24 15:08:02 - [INFO] -  * Debugger PIN: 144-740-991
+11-Apr-24 15:08:24 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+11-Apr-24 15:08:24 - [INFO] -  * Restarting with stat
+11-Apr-24 15:08:25 - [INFO] - Development environment configured.
+11-Apr-24 15:08:25 - [WARNING] -  * Debugger is active!
+11-Apr-24 15:08:25 - [INFO] -  * Debugger PIN: 144-740-991
+11-Apr-24 15:09:39 - [INFO] - 404 - Provided user id does not exists. Please create account.
+11-Apr-24 15:09:39 - [INFO] - 127.0.0.1 - - [11/Apr/2024 15:09:39] "[33mGET /api/v2/auth/newUsers HTTP/1.1[0m" 404 -
+11-Apr-24 15:12:22 - [INFO] - 404 - Provided user id does not exists. Please create account.
+11-Apr-24 15:12:22 - [INFO] - 127.0.0.1 - - [11/Apr/2024 15:12:22] "[33mPOST /api/v2/discourseAuth/discourseRegister HTTP/1.1[0m" 404 -
+11-Apr-24 15:12:47 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discourseAuth_bp.py', reloading
+11-Apr-24 15:12:47 - [INFO] -  * Restarting with stat
+11-Apr-24 15:12:48 - [INFO] - Development environment configured.
+11-Apr-24 15:12:48 - [WARNING] -  * Debugger is active!
+11-Apr-24 15:12:48 - [INFO] -  * Debugger PIN: 144-740-991
+11-Apr-24 15:12:52 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+11-Apr-24 15:12:52 - [DEBUG] - http://127.0.0.1:3000 "GET /u/studentthree.json HTTP/1.1" 404 None
+11-Apr-24 15:12:52 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+11-Apr-24 15:12:53 - [DEBUG] - http://127.0.0.1:3000 "POST /users.json HTTP/1.1" 200 None
+11-Apr-24 15:12:53 - [INFO] - New account created
+11-Apr-24 15:12:53 - [INFO] - 200 - <p>You’re almost done! We sent an activation mail to <b>studentthree@gmail.com</b>. Please follow the instructions in the mail to activate your account.</p><p>If it doesn’t arrive, check your spam folder.</p>
+11-Apr-24 15:12:53 - [INFO] - 127.0.0.1 - - [11/Apr/2024 15:12:53] "POST /api/v2/discourseAuth/discourseRegister HTTP/1.1" 200 -
+11-Apr-24 15:15:02 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discourseAuth_bp.py', reloading
+11-Apr-24 15:15:02 - [INFO] -  * Restarting with stat
+11-Apr-24 15:15:03 - [INFO] - Development environment configured.
+11-Apr-24 15:15:03 - [WARNING] -  * Debugger is active!
+11-Apr-24 15:15:03 - [INFO] -  * Debugger PIN: 144-740-991
+11-Apr-24 15:15:09 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+11-Apr-24 15:15:09 - [DEBUG] - http://127.0.0.1:3000 "PUT /groups/2/members.json HTTP/1.1" 403 None
+11-Apr-24 15:15:09 - [INFO] - 400 - The user could not be added.
+11-Apr-24 15:15:09 - [INFO] - 127.0.0.1 - - [11/Apr/2024 15:15:09] "[31m[1mPUT /api/v2/discourseAuth/addStaff/978e56405b1a49111b844b6deef7959f HTTP/1.1[0m" 400 -
+11-Apr-24 15:16:29 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+11-Apr-24 15:16:29 - [DEBUG] - http://127.0.0.1:3000 "PUT /groups/2/members.json HTTP/1.1" 403 None
+11-Apr-24 15:16:29 - [INFO] - 400 - The user could not be added.
+11-Apr-24 15:16:29 - [INFO] - 127.0.0.1 - - [11/Apr/2024 15:16:29] "[31m[1mPUT /api/v2/discourseAuth/addStaff/978e56405b1a49111b844b6deef7959f HTTP/1.1[0m" 400 -
+11-Apr-24 15:16:37 - [INFO] - 127.0.0.1 - - [11/Apr/2024 15:16:37] "[35m[1mPUT /api/v2/discourseAuth/addStaff HTTP/1.1[0m" 500 -
+11-Apr-24 15:17:11 - [INFO] - 127.0.0.1 - - [11/Apr/2024 15:17:11] "[35m[1mPUT /api/v2/discourseAuth/addStaff HTTP/1.1[0m" 500 -
+11-Apr-24 15:18:03 - [INFO] - 127.0.0.1 - - [11/Apr/2024 15:18:03] "[35m[1mPUT /api/v2/discourseAuth/addStaff HTTP/1.1[0m" 500 -
+11-Apr-24 15:18:13 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+11-Apr-24 15:18:13 - [DEBUG] - http://127.0.0.1:3000 "PUT /groups/2/members.json HTTP/1.1" 403 None
+11-Apr-24 15:18:13 - [INFO] - 400 - The user could not be added.
+11-Apr-24 15:18:13 - [INFO] - 127.0.0.1 - - [11/Apr/2024 15:18:13] "[31m[1mPUT /api/v2/discourseAuth/addStaff/978e56405b1a49111b844b6deef7959f HTTP/1.1[0m" 400 -
+11-Apr-24 15:19:05 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+11-Apr-24 15:19:05 - [DEBUG] - http://127.0.0.1:3000 "PUT /groups/2/members.json HTTP/1.1" 403 None
+11-Apr-24 15:19:05 - [INFO] - 400 - The user could not be added.
+11-Apr-24 15:19:05 - [INFO] - 127.0.0.1 - - [11/Apr/2024 15:19:05] "[31m[1mPUT /api/v2/discourseAuth/addStaff/978e56405b1a49111b844b6deef7959f HTTP/1.1[0m" 400 -
+11-Apr-24 15:35:41 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discourseAuth_bp.py', reloading
+11-Apr-24 15:35:41 - [INFO] -  * Restarting with stat
+11-Apr-24 15:35:42 - [INFO] - Development environment configured.
+11-Apr-24 15:35:42 - [WARNING] -  * Debugger is active!
+11-Apr-24 15:35:42 - [INFO] -  * Debugger PIN: 144-740-991
+11-Apr-24 15:35:55 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+11-Apr-24 15:35:55 - [DEBUG] - http://127.0.0.1:3000 "PUT /groups/41/members.json HTTP/1.1" 200 None
+11-Apr-24 15:35:55 - [INFO] - Member added to the group.
+11-Apr-24 15:35:55 - [INFO] - 200 - User added successfully.
+11-Apr-24 15:35:55 - [INFO] - 127.0.0.1 - - [11/Apr/2024 15:35:55] "PUT /api/v2/discourseAuth/addStaff/978e56405b1a49111b844b6deef7959f HTTP/1.1" 200 -
+11-Apr-24 15:37:39 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discourseAuth_bp.py', reloading
+11-Apr-24 15:37:40 - [INFO] -  * Restarting with stat
+11-Apr-24 15:37:41 - [INFO] - Development environment configured.
+11-Apr-24 15:37:41 - [WARNING] -  * Debugger is active!
+11-Apr-24 15:37:41 - [INFO] -  * Debugger PIN: 144-740-991
+11-Apr-24 15:38:37 - [INFO] - 404 - Provided user id does not exists. Please create account.
+11-Apr-24 15:38:37 - [INFO] - 127.0.0.1 - - [11/Apr/2024 15:38:37] "[33mGET /api/v2/discourseAuth/getMessages/978e56405b1a49111b844b6deef7959f HTTP/1.1[0m" 404 -
+11-Apr-24 15:38:46 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discourseAuth_bp.py', reloading
+11-Apr-24 15:38:47 - [INFO] -  * Restarting with stat
+11-Apr-24 15:38:48 - [INFO] - Development environment configured.
+11-Apr-24 15:38:48 - [WARNING] -  * Debugger is active!
+11-Apr-24 15:38:48 - [INFO] -  * Debugger PIN: 144-740-991
+11-Apr-24 15:38:49 - [INFO] - 127.0.0.1 - - [11/Apr/2024 15:38:49] "[35m[1mGET /api/v2/discourseAuth/getMessages/978e56405b1a49111b844b6deef7959f HTTP/1.1[0m" 500 -
+11-Apr-24 15:39:23 - [INFO] - 127.0.0.1 - - [11/Apr/2024 15:39:23] "[35m[1mGET /api/v2/discourseAuth/getMessages/978e56405b1a49111b844b6deef7959f HTTP/1.1[0m" 500 -
+11-Apr-24 15:39:47 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discourseAuth_bp.py', reloading
+11-Apr-24 15:39:47 - [INFO] -  * Restarting with stat
+11-Apr-24 15:39:48 - [INFO] - Development environment configured.
+11-Apr-24 15:39:48 - [WARNING] -  * Debugger is active!
+11-Apr-24 15:39:48 - [INFO] -  * Debugger PIN: 144-740-991
+11-Apr-24 15:39:50 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+11-Apr-24 15:39:50 - [DEBUG] - http://127.0.0.1:3000 "GET /topics/private-messages/studentthree.json HTTP/1.1" 200 None
+11-Apr-24 15:39:50 - [INFO] - Messages received from discourse
+11-Apr-24 15:39:50 - [INFO] - 127.0.0.1 - - [11/Apr/2024 15:39:50] "[35m[1mGET /api/v2/discourseAuth/getMessages/978e56405b1a49111b844b6deef7959f HTTP/1.1[0m" 500 -
+11-Apr-24 15:40:30 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discourseAuth_bp.py', reloading
+11-Apr-24 15:40:31 - [INFO] -  * Restarting with stat
+11-Apr-24 15:40:32 - [INFO] - Development environment configured.
+11-Apr-24 15:40:32 - [WARNING] -  * Debugger is active!
+11-Apr-24 15:40:32 - [INFO] -  * Debugger PIN: 144-740-991
+11-Apr-24 15:40:52 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+11-Apr-24 15:40:52 - [DEBUG] - http://127.0.0.1:3000 "GET /topics/private-messages/studentthree.json HTTP/1.1" 200 None
+11-Apr-24 15:40:52 - [INFO] - Messages received from discourse
+11-Apr-24 15:40:52 - [INFO] - 127.0.0.1 - - [11/Apr/2024 15:40:52] "[35m[1mGET /api/v2/discourseAuth/getMessages/978e56405b1a49111b844b6deef7959f HTTP/1.1[0m" 500 -
+11-Apr-24 15:41:07 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discourseAuth_bp.py', reloading
+11-Apr-24 15:41:07 - [INFO] -  * Restarting with stat
+11-Apr-24 15:41:08 - [INFO] - Development environment configured.
+11-Apr-24 15:41:08 - [WARNING] -  * Debugger is active!
+11-Apr-24 15:41:08 - [INFO] -  * Debugger PIN: 144-740-991
+11-Apr-24 15:41:10 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+11-Apr-24 15:41:10 - [DEBUG] - http://127.0.0.1:3000 "GET /topics/private-messages/studentthree.json HTTP/1.1" 200 None
+11-Apr-24 15:41:10 - [INFO] - Messages received from discourse
+11-Apr-24 15:41:10 - [INFO] - 127.0.0.1 - - [11/Apr/2024 15:41:10] "[35m[1mGET /api/v2/discourseAuth/getMessages/978e56405b1a49111b844b6deef7959f HTTP/1.1[0m" 500 -
+11-Apr-24 15:42:21 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discourseAuth_bp.py', reloading
+11-Apr-24 15:42:21 - [INFO] -  * Restarting with stat
+11-Apr-24 15:42:22 - [INFO] - Development environment configured.
+11-Apr-24 15:42:22 - [WARNING] -  * Debugger is active!
+11-Apr-24 15:42:22 - [INFO] -  * Debugger PIN: 144-740-991
+11-Apr-24 15:42:24 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+11-Apr-24 15:42:24 - [DEBUG] - http://127.0.0.1:3000 "GET /topics/private-messages/studentthree.json HTTP/1.1" 200 None
+11-Apr-24 15:42:24 - [INFO] - Messages received from discourse
+11-Apr-24 15:42:24 - [INFO] - 200 - Custom success 200 response sent
+11-Apr-24 15:42:24 - [INFO] - 127.0.0.1 - - [11/Apr/2024 15:42:24] "GET /api/v2/discourseAuth/getMessages/978e56405b1a49111b844b6deef7959f HTTP/1.1" 200 -
+11-Apr-24 15:44:17 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discourseAuth_bp.py', reloading
+11-Apr-24 15:44:17 - [INFO] -  * Restarting with stat
+11-Apr-24 15:44:18 - [INFO] - Development environment configured.
+11-Apr-24 15:44:18 - [WARNING] -  * Debugger is active!
+11-Apr-24 15:44:18 - [INFO] -  * Debugger PIN: 144-740-991
+11-Apr-24 15:44:19 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+11-Apr-24 15:44:20 - [DEBUG] - http://127.0.0.1:3000 "GET /topics/private-messages-group/studentthree/TicketAppStaff.json HTTP/1.1" 200 6742
+11-Apr-24 15:44:20 - [INFO] - Messages received from discourse
+11-Apr-24 15:44:20 - [INFO] - 127.0.0.1 - - [11/Apr/2024 15:44:20] "[35m[1mGET /api/v2/discourseAuth/getMessages/978e56405b1a49111b844b6deef7959f HTTP/1.1[0m" 500 -
+11-Apr-24 15:44:45 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+11-Apr-24 15:44:45 - [DEBUG] - http://127.0.0.1:3000 "GET /topics/private-messages-group/studentthree/TicketAppStaff.json HTTP/1.1" 200 6763
+11-Apr-24 15:44:45 - [INFO] - Messages received from discourse
+11-Apr-24 15:44:45 - [INFO] - 127.0.0.1 - - [11/Apr/2024 15:44:45] "[35m[1mGET /api/v2/discourseAuth/getMessages/978e56405b1a49111b844b6deef7959f HTTP/1.1[0m" 500 -
+11-Apr-24 15:46:20 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+11-Apr-24 15:46:20 - [DEBUG] - http://127.0.0.1:3000 "GET /topics/private-messages-group/studentthree/TicketAppStaff.json HTTP/1.1" 200 6784
+11-Apr-24 15:46:20 - [INFO] - Messages received from discourse
+11-Apr-24 15:46:21 - [INFO] - 127.0.0.1 - - [11/Apr/2024 15:46:21] "[35m[1mGET /api/v2/discourseAuth/getMessages/978e56405b1a49111b844b6deef7959f HTTP/1.1[0m" 500 -
+11-Apr-24 15:47:24 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discourseAuth_bp.py', reloading
+11-Apr-24 15:47:24 - [INFO] -  * Restarting with stat
+11-Apr-24 15:47:26 - [INFO] - Development environment configured.
+11-Apr-24 15:47:26 - [WARNING] -  * Debugger is active!
+11-Apr-24 15:47:26 - [INFO] -  * Debugger PIN: 144-740-991
+11-Apr-24 15:47:29 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+11-Apr-24 15:47:29 - [DEBUG] - http://127.0.0.1:3000 "GET /topics/private-messages/studentthree.json HTTP/1.1" 200 None
+11-Apr-24 15:47:29 - [INFO] - Messages received from discourse
+11-Apr-24 15:47:29 - [INFO] - 200 - Custom success 200 response sent
+11-Apr-24 15:47:29 - [INFO] - 127.0.0.1 - - [11/Apr/2024 15:47:29] "GET /api/v2/discourseAuth/getMessages/978e56405b1a49111b844b6deef7959f HTTP/1.1" 200 -
+11-Apr-24 15:53:00 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\globals.py', reloading
+11-Apr-24 15:53:00 - [INFO] -  * Restarting with stat
+11-Apr-24 15:53:01 - [INFO] - Development environment configured.
+11-Apr-24 15:53:01 - [WARNING] -  * Debugger is active!
+11-Apr-24 15:53:01 - [INFO] -  * Debugger PIN: 144-740-991
+11-Apr-24 15:58:39 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+11-Apr-24 15:58:39 - [INFO] -  * Restarting with stat
+11-Apr-24 15:58:40 - [INFO] - Development environment configured.
+11-Apr-24 15:58:40 - [WARNING] -  * Debugger is active!
+11-Apr-24 15:58:40 - [INFO] -  * Debugger PIN: 144-740-991
+11-Apr-24 15:59:23 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+11-Apr-24 15:59:23 - [INFO] -  * Restarting with stat
+11-Apr-24 15:59:24 - [INFO] - Development environment configured.
+11-Apr-24 15:59:24 - [WARNING] -  * Debugger is active!
+11-Apr-24 15:59:24 - [INFO] -  * Debugger PIN: 144-740-991
+11-Apr-24 16:01:14 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+11-Apr-24 16:01:14 - [INFO] -  * Restarting with stat
