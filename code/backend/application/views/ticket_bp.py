@@ -1,16 +1,15 @@
 # - get specific ticket *
-# - post a new ticket *  # add the details to the ticket_tags 
+# - post a new ticket *  # add the details to the ticket_tags
 # - update a ticket *
 # - delete a ticket *
 # - vote a ticket  *
 
 
-
-# - solving a ticket & 
-# - assigning a ticket & 
+# - solving a ticket &
+# - assigning a ticket &
 # - get tickets by assigned tickets &
 
-# - get comments of a ticket % 
+# - get comments of a ticket %
 # - post comment &
 # - edit comment &
 # - delete comment &
@@ -34,7 +33,7 @@ from application.common_utils import (
     is_base64,
     get_encoded_file_details,
 )
-from application.views.user_utils import UserUtils,time_to_str
+from application.views.user_utils import UserUtils, time_to_str
 from application.responses import *
 from application.globals import *
 from application.models import *
@@ -43,12 +42,13 @@ from application.notifications import send_email
 
 # --------------------  Code  --------------------
 
-# -- Ticket Utils -- 
+# -- Ticket Utils --
+
 
 class TicketUtils(UserUtils):
     def __init__(self, user_id=None):
-        self.user_id=user_id
-    
+        self.user_id = user_id
+
     def convert_ticket_to_dict(self, ticket):
         ticket_dict = vars(ticket)  # verify if this properly converts obj to dict
         if "_sa_instance_state" in ticket_dict:
@@ -56,8 +56,8 @@ class TicketUtils(UserUtils):
         attachments = self.get_ticket_attachments(ticket_id=ticket.id)
         ticket_dict["attachments"] = attachments
         return ticket_dict
-    
-    def get_ticket_attachments(self,ticket_id):
+
+    def get_ticket_attachments(self, ticket_id):
         ticket_attch = TicketAttachment.query.filter_by(ticket_id=ticket_id).all()
         attachments = []
         for att in ticket_attch:
@@ -68,7 +68,7 @@ class TicketUtils(UserUtils):
             d_ = {"ticket_id": att.ticket_id, "attachment_loc": img_base64}
             attachments.append(d_)
         return attachments
-    
+
     def generate_ticket_id(self, title: str, user_id: str) -> str:
         """
         Ticket id is generated from ticket title and ticket id and timestamp
@@ -129,7 +129,7 @@ class TicketUtils(UserUtils):
                                 attach["attachment_loc"] = file_path
                                 ticket_attach = TicketAttachment(
                                     ticket_id=attach["ticket_id"],
-                                    attachment_location=attach["attachment_loc"]
+                                    attachment_location=attach["attachment_loc"],
                                 )
                                 db.session.add(ticket_attach)
                                 db.session.commit()
@@ -143,7 +143,7 @@ class TicketUtils(UserUtils):
             True,
             f"Total {num_successful_attachments} / {total_attachments} attchements are valid and added successfully.",
         )
-    
+
     def tickets_filter_by_query(self, all_tickets, query=""):
         # match tickets with query
         filtered_tickets = []
@@ -257,38 +257,35 @@ class TicketUtils(UserUtils):
         _args["priority"] = convert_arg_to_list("filter_priority")
         _args["tags"] = convert_arg_to_list("filter_tags")
 
-        return _args 
-    
-    def get_voter_list(self,ticket):
-        #print("This is a function to return who all voted for the ticket")
-        ticket_id=ticket["ticket_id"]
-        ticket=Ticket.query.filter_by(id=ticket_id).first()
-        voter_list=[]
+        return _args
+
+    def get_voter_list(self, ticket):
+        # print("This is a function to return who all voted for the ticket")
+        ticket_id = ticket["ticket_id"]
+        ticket = Ticket.query.filter_by(id=ticket_id).first()
+        voter_list = []
         for vote in ticket.votes:
             voter_list.append(vote.voter_id)
         return voter_list
-    
 
-    def get_ticket_comments(self,ticket_id):
-        comments = TicketComments.query.filter_by(ticket_id=ticket_id).all()
-        print(comments)
+    def get_ticket_comments(self, comments):
         ticket_comments = vars(comments)  # verify if this properly converts obj to dict
         if "_sa_instance_state" in ticket_comments:
             del ticket_comments["_sa_instance_state"]
         return ticket_comments
-    
-    def get_ticket_data(self,ticket_id):
-        ticket_data=TicketData.query.filter_by(ticket_id=ticket_id).all()
-        ticket_data_list=[]
+
+    def get_ticket_data(self, ticket_id):
+        ticket_data = TicketData.query.filter_by(ticket_id=ticket_id).all()
+        ticket_data_list = []
         for each_data in ticket_data:
             ticket_data_list.append(each_data)
         return ticket_data_list
-    
 
 
 ticket_bp = Blueprint("ticket_bp", __name__)
 ticket_api = Api(ticket_bp)
 ticket_utils = TicketUtils()
+
 
 class TicketAPI(Resource):
     #@token_required
@@ -417,9 +414,9 @@ class TicketAPI(Resource):
                 created_at = details["created_on"],
                 user_id = details["created_by"]
             )
-            ticket_data=TicketData(
+            ticket_data = TicketData(
                 ticket_id=details["ticket_id"],
-                opened_at=time_to_str(datetime.datetime.now())
+                opened_at=time_to_str(datetime.datetime.now()),
             )
 
             try:
@@ -468,9 +465,9 @@ class TicketAPI(Resource):
             "description": "",
             "priority": "",
             "solution": "",
+            "inProgress": " ",
         }
 
-        
         if ticket_utils.is_blank(ticket_id) or ticket_utils.is_blank(user_id):
             raise BadRequest(status_msg="User id or ticket id is missing.")
 
@@ -521,7 +518,7 @@ class TicketAPI(Resource):
                 status, message = ticket_utils.save_ticket_attachments(
                     attachments, ticket_id, user_id, operation="update_ticket"
                 )
-                #solution 
+                # solution
 
             if role == "student":   #it would be "Student" but for the time being changed it to Admin
                 if user_id == ticket.user_id:
@@ -704,7 +701,8 @@ class AllTicketsAPI(Resource):
 
         return success_200_custom(data=all_tickets)
 
-#start working from here 
+
+# start working from here
 # Also had other APIs
 class AllTicketsUserAPI(Resource):
     @token_required
@@ -723,7 +721,8 @@ class AllTicketsUserAPI(Resource):
         except Exception as e:
             logger.error(f"AllTickets->get : Error occured while resolving query : {e}")
             raise InternalServerError
-        user = User.query.filter_by(id=user_id
+        user = User.query.filter_by(
+            id=user_id
         ).first()  # user already exists as user_required verified it
 
         all_tickets = []
@@ -795,8 +794,7 @@ ticket_api.add_resource(AllTicketsUserAPI, "/all-tickets/<string:user_id>")
 
 class TicketCommentAPI(Resource):
     def get(self, ticket_id=""):
-        raise Success_200(status_msg="success")
-        if ticket_utils.is_blank(ticket_id) :
+        if ticket_utils.is_blank(ticket_id):
             raise BadRequest(status_msg="Ticket id is missing.")
 
         # check if ticket exists
@@ -809,19 +807,19 @@ class TicketCommentAPI(Resource):
             raise InternalServerError
         else:
             if ticket:
-                ticket_comments = ticket_utils.get_ticket_comments(ticket.id) #issue stemming from this function
+                ticket_comments = []
+                comments = TicketComments.query.filter_by(ticket_id=ticket.id).all()
+                for comment in comments:
+                    c = ticket_utils.get_ticket_comments(comment)
+                    # ticket_comments = ticket_utils.get_ticket_comments(comments) #issue stemming from this function
+                    ticket_comments.append(c)
                 return success_200_custom(data=ticket_comments)
             else:
                 raise NotFoundError(status_msg="Ticket does not exists")
-        
+
     def post(self, ticket_id=""):
-        
-        details = {
-            "comment": "",
-            "commenter" : "",
-            "user_mentions" : [],
-            "reactions" : ""
-        }
+
+        details = {"comment": "", "commenter": "", "user_mentions": [], "reactions": ""}
         if ticket_utils.is_blank(ticket_id):
             raise BadRequest(status_msg="Ticket id is missing.")
 
@@ -834,7 +832,7 @@ class TicketCommentAPI(Resource):
             )
             raise InternalServerError
         else:
-            if ticket: 
+            if ticket:
                 try:
                     form = request.get_json()
                     for key in details:
@@ -861,19 +859,113 @@ class TicketCommentAPI(Resource):
                         )
                     else:
                         logger.info("Commented successfully.")
-                        raise Success_200(status_msg="Ticket comment added successfully.")
-            else: 
+                        raise Success_200(
+                            status_msg="Ticket comment added successfully."
+                        )
+            else:
                 raise NotFoundError(status_msg="Ticket does not exists")
 
+    # ISSUE - commenter updating to null every time the put method is called
+    def put(self, comment_id=-1, ticket_id="", user_id=""):
+        details = {
+            "comment": "",
+            "commenter": user_id,
+            "user_mentions": [],
+            "reactions": "",
+        }
+        if ticket_utils.is_blank(ticket_id) or comment_id == -1:
+            raise BadRequest(status_msg="Ticket id or comment id is missing.")
 
+        # check if ticket exists
+        try:
+            ticket = Ticket.query.filter_by(id=ticket_id).first()
+        except Exception as e:
+            logger.error(
+                f"TicketCommentAPI->post : Error occured while fetching ticket data : {e}"
+            )
+            raise InternalServerError
+        if ticket:
+            try:
+                form = request.get_json()
+                for key in details:
+                    value = form.get(key, "")
+                    details[key] = value
+                print(details)
+            except Exception as e:
+                logger.error(
+                    f"TicketCommentAPI->put : Error occured while getting form data : {e}"
+                )
+                raise InternalServerError
 
-    def put(self, ticket_id=""):
-        raise Success_200(status_msg="Ticket Comment updated successfully")
+            try:
+                comment = TicketComments.query.filter_by(id=comment_id).first()
+                details["commenter"] = comment.commenter
+            except Exception as e:
+                logger.error(
+                    f"TicketCommentAPI->put : Error occured while fetching the comment : {e}"
+                )
+                raise InternalServerError
+
+            if comment and comment.commenter == user_id:
+                comment.comment = details["comment"]
+                print(details["commenter"])
+                comment.commenter = details["commenter"]
+                print(comment.commenter)
+                comment.user_mentions = details["user_mentions"]
+                comment.reactions = details["reactions"]
+                print(comment.commenter)
+                try:
+                    # db.session.add(comment)
+                    db.session.commit()
+                    logger.info("Comment updated successfully.")
+                    raise Success_200(status_msg="Ticket comment updated successfully.")
+                except Exception as e:
+                    logger.error(
+                        f"TicketCommentAPI->put : Error occured while updating comment : {e}"
+                    )
+                    raise InternalServerError(
+                        status_msg="Error occured while updating comment"
         
-    def delete(self, ticket_id=""):
-        raise Success_200(status_msg="Ticket Comment deleted successfully")
+                    )
+        else: 
+            raise NotFoundError(status_msg="Ticket does not exists")
 
-ticket_api.add_resource(TicketCommentAPI, "/comments/<string:ticket_id>", endpoint="ticket_comment_get")
+    def delete(self, ticket_id="", comment_id=-1, user_id=""):
+        if ticket_utils.is_blank(ticket_id):
+            raise BadRequest(status_msg="Ticket id is missing.")
+
+        try:
+            ticket = Ticket.query.filter_by(id=ticket_id).first()
+        except:
+            logger.error(
+                f"TicketCommentAPI->get : Error occured while fetching ticket data : {e}"
+            )
+            raise InternalServerError
+        else:
+            if ticket:
+
+                try:
+                    comment = TicketComments.query.filter_by(id=comment_id).first()
+                except Exception as e:
+                    logger.error(
+                        f"TicketCommentAPI->delete : Error occured while fetching the comment : {e}"
+                    )
+                    raise InternalServerError
+                else:
+                    if comment and comment.commenter == user_id:
+                        db.session.delete(comment)
+                        db.session.commit()
+                        raise Success_200(status_msg="Comment Deleted")
+                    else:
+                        raise NotFoundError(status_msg="Comment Does Not Exist")
 
 
-
+ticket_api.add_resource(
+    TicketCommentAPI, "/comments/<string:ticket_id>", endpoint="ticket_comment"
+)
+ticket_api.add_resource(
+    TicketCommentAPI,
+    "/comments/<string:ticket_id>/<int:comment_id>/<string:user_id>",
+    endpoint="comment_update_delete",
+)
+# ticket_api.add_resource(TicketCommentAPI, "/comments/<string:ticket_id>/<int:comment_id>/", endpoint="comment_delete")

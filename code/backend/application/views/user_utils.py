@@ -174,7 +174,7 @@ class UserUtils:
 
         details = {
             "first_name": "",
-            "last_name": "",
+            "second_name": "",
             "email": "",
             "password": "",
             "retype_password": "",
@@ -198,7 +198,6 @@ class UserUtils:
             if not user:
                 raise NotFoundError(status_msg="User does not exists")
 
-            role = user.role.name
 
             # checks if first name is empty
             if self.is_blank(details["first_name"]):
@@ -206,7 +205,7 @@ class UserUtils:
             else:
                 user.first_name = details["first_name"]
 
-            user.second_name = details["last_name"]  # last name can be empty
+            user.second_name = details["second_name"]  # last name can be empty
 
             # checks if email is valid
             if not (self.is_email_valid(details["email"])):
@@ -215,7 +214,7 @@ class UserUtils:
                 user_ = User.query.filter_by(email=details["email"]).first()
                 if user_:
                     # if user id dont match means email already in use
-                    if user_.user_id != user.user_id:
+                    if user_.id != user.id:
                         raise AlreadyExistError(status_msg="Email is already in use")
                 else:
                     user.email = details["email"]
