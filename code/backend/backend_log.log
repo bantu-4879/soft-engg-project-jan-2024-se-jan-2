@@ -10273,3 +10273,310 @@
 10-Apr-24 08:36:17 - [INFO] - File path is not valid: 
 10-Apr-24 08:36:17 - [INFO] - 200 - Custom success 200 response sent
 10-Apr-24 08:36:17 - [INFO] - 127.0.0.1 - - [10/Apr/2024 08:36:17] "GET /api/v2/admin/828e867cb0264eb30f700b1dffb75e2c HTTP/1.1" 200 -
+11-Apr-24 16:30:34 - [INFO] - Development environment configured.
+11-Apr-24 16:33:11 - [INFO] - Development environment configured.
+11-Apr-24 16:34:12 - [INFO] - Development environment configured.
+11-Apr-24 16:37:57 - [INFO] - Development environment configured.
+11-Apr-24 16:37:57 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+11-Apr-24 16:37:57 - [INFO] - [33mPress CTRL+C to quit[0m
+11-Apr-24 16:37:57 - [INFO] -  * Restarting with stat
+11-Apr-24 16:37:58 - [INFO] - Development environment configured.
+11-Apr-24 16:37:58 - [WARNING] -  * Debugger is active!
+11-Apr-24 16:37:58 - [INFO] -  * Debugger PIN: 144-740-991
+11-Apr-24 16:40:20 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+11-Apr-24 16:40:20 - [INFO] -  * Restarting with stat
+11-Apr-24 16:40:21 - [INFO] - Development environment configured.
+11-Apr-24 16:40:21 - [WARNING] -  * Debugger is active!
+11-Apr-24 16:40:21 - [INFO] -  * Debugger PIN: 144-740-991
+11-Apr-24 16:44:42 - [INFO] - 127.0.0.1 - - [11/Apr/2024 16:44:42] "[35m[1mGET /api/v2/discourse/topic/fb58cddff315e18f87a86f94dc191891/46 HTTP/1.1[0m" 500 -
+11-Apr-24 16:45:25 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+11-Apr-24 16:45:26 - [INFO] -  * Restarting with stat
+11-Apr-24 16:45:52 - [INFO] - Development environment configured.
+11-Apr-24 16:45:52 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+11-Apr-24 16:45:52 - [INFO] - [33mPress CTRL+C to quit[0m
+11-Apr-24 16:45:52 - [INFO] -  * Restarting with stat
+11-Apr-24 16:45:53 - [INFO] - Development environment configured.
+11-Apr-24 16:45:53 - [WARNING] -  * Debugger is active!
+11-Apr-24 16:45:53 - [INFO] -  * Debugger PIN: 144-740-991
+11-Apr-24 16:45:57 - [ERROR] - Discourse API TicketAPI->post : Error occured while getting topic from discourse : Session.request() got an unexpected keyword argument 'payload'
+11-Apr-24 16:45:57 - [INFO] - 500 - Cannot get topic from discourse
+11-Apr-24 16:45:57 - [INFO] - 127.0.0.1 - - [11/Apr/2024 16:45:57] "[35m[1mGET /api/v2/discourse/topic/fb58cddff315e18f87a86f94dc191891/46 HTTP/1.1[0m" 500 -
+11-Apr-24 16:46:35 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+11-Apr-24 16:46:35 - [INFO] -  * Restarting with stat
+11-Apr-24 16:46:36 - [INFO] - Development environment configured.
+11-Apr-24 16:46:36 - [WARNING] -  * Debugger is active!
+11-Apr-24 16:46:36 - [INFO] -  * Debugger PIN: 144-740-991
+11-Apr-24 16:46:39 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+11-Apr-24 16:46:39 - [DEBUG] - http://127.0.0.1:3000 "GET /t/46.json HTTP/1.1" 403 None
+11-Apr-24 16:46:39 - [INFO] - 127.0.0.1 - - [11/Apr/2024 16:46:39] "[35m[1mGET /api/v2/discourse/topic/fb58cddff315e18f87a86f94dc191891/46 HTTP/1.1[0m" 500 -
+11-Apr-24 16:47:58 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+11-Apr-24 16:47:58 - [DEBUG] - http://127.0.0.1:3000 "GET /u/JohnDoe342.json HTTP/1.1" 200 None
+11-Apr-24 16:47:58 - [INFO] - 409 - Username is already in use
+11-Apr-24 16:47:58 - [INFO] - 127.0.0.1 - - [11/Apr/2024 16:47:58] "[31m[1mPOST /api/v2/discourseAuth/discourseRegister HTTP/1.1[0m" 409 -
+11-Apr-24 16:48:19 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+11-Apr-24 16:48:19 - [DEBUG] - http://127.0.0.1:3000 "GET /u/HelloJohn.json HTTP/1.1" 404 None
+11-Apr-24 16:48:19 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+11-Apr-24 16:48:19 - [DEBUG] - http://127.0.0.1:3000 "POST /users.json HTTP/1.1" 200 None
+11-Apr-24 16:48:19 - [INFO] - New account created
+11-Apr-24 16:48:19 - [INFO] - 200 - Primary email has already been taken
+11-Apr-24 16:48:19 - [INFO] - 127.0.0.1 - - [11/Apr/2024 16:48:19] "POST /api/v2/discourseAuth/discourseRegister HTTP/1.1" 200 -
+11-Apr-24 16:50:17 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+11-Apr-24 16:50:17 - [DEBUG] - http://127.0.0.1:3000 "GET /u/HelloStudent.json HTTP/1.1" 404 None
+11-Apr-24 16:50:17 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+11-Apr-24 16:50:18 - [DEBUG] - http://127.0.0.1:3000 "POST /users.json HTTP/1.1" 200 None
+11-Apr-24 16:50:18 - [INFO] - New account created
+11-Apr-24 16:50:18 - [INFO] - 200 - <p>You’re almost done! We sent an activation mail to <b>studenttwo@gmail.com</b>. Please follow the instructions in the mail to activate your account.</p><p>If it doesn’t arrive, check your spam folder.</p>
+11-Apr-24 16:50:18 - [INFO] - 127.0.0.1 - - [11/Apr/2024 16:50:18] "POST /api/v2/discourseAuth/discourseRegister HTTP/1.1" 200 -
+11-Apr-24 16:51:16 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+11-Apr-24 16:51:17 - [DEBUG] - http://127.0.0.1:3000 "GET /t/46.json HTTP/1.1" 200 None
+11-Apr-24 16:51:17 - [INFO] - 127.0.0.1 - - [11/Apr/2024 16:51:17] "[35m[1mGET /api/v2/discourse/topic/2a5c752d0ead723dec945eaa8b106ab1/46 HTTP/1.1[0m" 500 -
+11-Apr-24 16:52:25 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+11-Apr-24 16:52:25 - [INFO] -  * Restarting with stat
+11-Apr-24 16:52:26 - [INFO] - Development environment configured.
+11-Apr-24 16:52:26 - [WARNING] -  * Debugger is active!
+11-Apr-24 16:52:26 - [INFO] -  * Debugger PIN: 144-740-991
+11-Apr-24 16:52:28 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+11-Apr-24 16:52:28 - [DEBUG] - http://127.0.0.1:3000 "GET /t/46.json HTTP/1.1" 200 None
+11-Apr-24 16:52:28 - [INFO] - 200 - Custom success 200 response sent
+11-Apr-24 16:52:28 - [INFO] - 127.0.0.1 - - [11/Apr/2024 16:52:28] "GET /api/v2/discourse/topic/2a5c752d0ead723dec945eaa8b106ab1/46 HTTP/1.1" 200 -
+11-Apr-24 17:08:19 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+11-Apr-24 17:08:19 - [INFO] -  * Restarting with stat
+11-Apr-24 17:08:20 - [INFO] - Development environment configured.
+11-Apr-24 17:08:20 - [WARNING] -  * Debugger is active!
+11-Apr-24 17:08:20 - [INFO] -  * Debugger PIN: 144-740-991
+11-Apr-24 17:09:30 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+11-Apr-24 17:09:30 - [INFO] -  * Restarting with stat
+11-Apr-24 17:50:20 - [INFO] - Development environment configured.
+11-Apr-24 17:50:20 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+11-Apr-24 17:50:20 - [INFO] - [33mPress CTRL+C to quit[0m
+11-Apr-24 17:50:20 - [INFO] -  * Restarting with stat
+11-Apr-24 17:50:21 - [INFO] - Development environment configured.
+11-Apr-24 17:50:21 - [WARNING] -  * Debugger is active!
+11-Apr-24 17:50:21 - [INFO] -  * Debugger PIN: 144-740-991
+11-Apr-24 18:01:34 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+11-Apr-24 18:01:34 - [INFO] -  * Restarting with stat
+11-Apr-24 18:05:34 - [INFO] - Development environment configured.
+11-Apr-24 18:05:34 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+11-Apr-24 18:05:34 - [INFO] - [33mPress CTRL+C to quit[0m
+11-Apr-24 18:05:34 - [INFO] -  * Restarting with stat
+11-Apr-24 18:05:35 - [INFO] - Development environment configured.
+11-Apr-24 18:05:35 - [WARNING] -  * Debugger is active!
+11-Apr-24 18:05:35 - [INFO] -  * Debugger PIN: 144-740-991
+11-Apr-24 18:14:39 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+11-Apr-24 18:14:39 - [INFO] -  * Restarting with stat
+11-Apr-24 18:14:40 - [INFO] - Development environment configured.
+11-Apr-24 18:14:40 - [WARNING] -  * Debugger is active!
+11-Apr-24 18:14:40 - [INFO] -  * Debugger PIN: 144-740-991
+11-Apr-24 18:14:53 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+11-Apr-24 18:14:53 - [INFO] -  * Restarting with stat
+11-Apr-24 18:14:54 - [INFO] - Development environment configured.
+11-Apr-24 18:14:54 - [WARNING] -  * Debugger is active!
+11-Apr-24 18:14:54 - [INFO] -  * Debugger PIN: 144-740-991
+11-Apr-24 18:36:09 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+11-Apr-24 18:36:10 - [INFO] -  * Restarting with stat
+11-Apr-24 18:36:11 - [INFO] - Development environment configured.
+11-Apr-24 18:36:11 - [WARNING] -  * Debugger is active!
+11-Apr-24 18:36:11 - [INFO] -  * Debugger PIN: 144-740-991
+11-Apr-24 18:37:27 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+11-Apr-24 18:37:27 - [INFO] -  * Restarting with stat
+11-Apr-24 18:37:28 - [INFO] - Development environment configured.
+11-Apr-24 18:37:28 - [WARNING] -  * Debugger is active!
+11-Apr-24 18:37:28 - [INFO] -  * Debugger PIN: 144-740-991
+11-Apr-24 18:52:42 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+11-Apr-24 18:52:42 - [INFO] -  * Restarting with stat
+11-Apr-24 18:52:43 - [INFO] - Development environment configured.
+11-Apr-24 18:52:43 - [WARNING] -  * Debugger is active!
+11-Apr-24 18:52:43 - [INFO] -  * Debugger PIN: 144-740-991
+11-Apr-24 18:55:02 - [INFO] - 127.0.0.1 - - [11/Apr/2024 18:55:02] "[31m[1mPOST /api/v2/discourse/categories HTTP/1.1[0m" 405 -
+11-Apr-24 18:56:50 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+11-Apr-24 18:56:50 - [DEBUG] - http://127.0.0.1:3000 "GET /categories.json HTTP/1.1" 200 None
+11-Apr-24 18:56:50 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+11-Apr-24 18:56:50 - [DEBUG] - http://127.0.0.1:3000 "POST /categories.json HTTP/1.1" 200 None
+11-Apr-24 18:56:50 - [INFO] - Success.
+11-Apr-24 18:56:50 - [INFO] - 200 - category created successfully
+11-Apr-24 18:56:50 - [INFO] - 127.0.0.1 - - [11/Apr/2024 18:56:50] "POST /api/v2/discourse/category HTTP/1.1" 200 -
+11-Apr-24 18:57:25 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+11-Apr-24 18:57:25 - [DEBUG] - http://127.0.0.1:3000 "GET /categories.json HTTP/1.1" 200 None
+11-Apr-24 18:57:25 - [INFO] - 200 - Custom success 200 response sent
+11-Apr-24 18:57:25 - [INFO] - 127.0.0.1 - - [11/Apr/2024 18:57:25] "GET /api/v2/discourse/categories HTTP/1.1" 200 -
+11-Apr-24 18:57:51 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+11-Apr-24 18:57:52 - [INFO] -  * Restarting with stat
+11-Apr-24 18:57:53 - [INFO] - Development environment configured.
+11-Apr-24 18:57:53 - [WARNING] -  * Debugger is active!
+11-Apr-24 18:57:53 - [INFO] -  * Debugger PIN: 144-740-991
+11-Apr-24 18:58:08 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+11-Apr-24 18:58:08 - [INFO] -  * Restarting with stat
+11-Apr-24 18:58:09 - [INFO] - Development environment configured.
+11-Apr-24 18:58:09 - [WARNING] -  * Debugger is active!
+11-Apr-24 18:58:09 - [INFO] -  * Debugger PIN: 144-740-991
+11-Apr-24 18:58:22 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+11-Apr-24 18:58:22 - [INFO] -  * Restarting with stat
+11-Apr-24 18:58:23 - [INFO] - Development environment configured.
+11-Apr-24 18:58:23 - [WARNING] -  * Debugger is active!
+11-Apr-24 18:58:23 - [INFO] -  * Debugger PIN: 144-740-991
+11-Apr-24 19:01:01 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+11-Apr-24 19:01:01 - [INFO] -  * Restarting with stat
+11-Apr-24 19:01:02 - [INFO] - Development environment configured.
+11-Apr-24 19:01:02 - [WARNING] -  * Debugger is active!
+11-Apr-24 19:01:02 - [INFO] -  * Debugger PIN: 144-740-991
+11-Apr-24 19:01:11 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+11-Apr-24 19:01:11 - [INFO] -  * Restarting with stat
+11-Apr-24 19:01:12 - [INFO] - Development environment configured.
+11-Apr-24 19:01:12 - [WARNING] -  * Debugger is active!
+11-Apr-24 19:01:12 - [INFO] -  * Debugger PIN: 144-740-991
+11-Apr-24 19:04:28 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+11-Apr-24 19:04:28 - [DEBUG] - http://127.0.0.1:3000 "GET /categories.json HTTP/1.1" 200 None
+11-Apr-24 19:04:28 - [INFO] - 200 - Custom success 200 response sent
+11-Apr-24 19:04:28 - [INFO] - 127.0.0.1 - - [11/Apr/2024 19:04:28] "GET /api/v2/discourse/categories HTTP/1.1" 200 -
+11-Apr-24 19:04:52 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+11-Apr-24 19:04:53 - [INFO] -  * Restarting with stat
+11-Apr-24 19:04:54 - [INFO] - Development environment configured.
+11-Apr-24 19:04:54 - [WARNING] -  * Debugger is active!
+11-Apr-24 19:04:54 - [INFO] -  * Debugger PIN: 144-740-991
+11-Apr-24 19:04:55 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+11-Apr-24 19:04:55 - [DEBUG] - http://127.0.0.1:3000 "GET /categories.json HTTP/1.1" 200 None
+11-Apr-24 19:04:55 - [INFO] - 200 - Custom success 200 response sent
+11-Apr-24 19:04:55 - [INFO] - 127.0.0.1 - - [11/Apr/2024 19:04:55] "GET /api/v2/discourse/categories HTTP/1.1" 200 -
+11-Apr-24 19:05:01 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+11-Apr-24 19:05:01 - [DEBUG] - http://127.0.0.1:3000 "GET /categories.json HTTP/1.1" 200 None
+11-Apr-24 19:05:01 - [INFO] - 200 - Custom success 200 response sent
+11-Apr-24 19:05:01 - [INFO] - 127.0.0.1 - - [11/Apr/2024 19:05:01] "GET /api/v2/discourse/categories HTTP/1.1" 200 -
+11-Apr-24 19:05:44 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+11-Apr-24 19:05:44 - [INFO] -  * Restarting with stat
+11-Apr-24 19:05:45 - [INFO] - Development environment configured.
+11-Apr-24 19:05:45 - [WARNING] -  * Debugger is active!
+11-Apr-24 19:05:45 - [INFO] -  * Debugger PIN: 144-740-991
+11-Apr-24 19:05:46 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+11-Apr-24 19:05:46 - [DEBUG] - http://127.0.0.1:3000 "GET /categories.json HTTP/1.1" 200 None
+11-Apr-24 19:05:46 - [INFO] - 200 - Custom success 200 response sent
+11-Apr-24 19:05:46 - [INFO] - 127.0.0.1 - - [11/Apr/2024 19:05:46] "GET /api/v2/discourse/categories HTTP/1.1" 200 -
+11-Apr-24 19:06:34 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+11-Apr-24 19:06:35 - [INFO] -  * Restarting with stat
+11-Apr-24 19:06:35 - [INFO] - Development environment configured.
+11-Apr-24 19:06:36 - [WARNING] -  * Debugger is active!
+11-Apr-24 19:06:36 - [INFO] -  * Debugger PIN: 144-740-991
+11-Apr-24 19:06:38 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+11-Apr-24 19:06:38 - [DEBUG] - http://127.0.0.1:3000 "GET /categories.json HTTP/1.1" 200 None
+11-Apr-24 19:06:38 - [INFO] - 200 - Custom success 200 response sent
+11-Apr-24 19:06:38 - [INFO] - 127.0.0.1 - - [11/Apr/2024 19:06:38] "GET /api/v2/discourse/categories HTTP/1.1" 200 -
+11-Apr-24 19:14:39 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+11-Apr-24 19:14:39 - [INFO] -  * Restarting with stat
+11-Apr-24 19:14:40 - [INFO] - Development environment configured.
+11-Apr-24 19:14:40 - [WARNING] -  * Debugger is active!
+11-Apr-24 19:14:40 - [INFO] -  * Debugger PIN: 144-740-991
+11-Apr-24 19:15:41 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+11-Apr-24 19:15:41 - [INFO] -  * Restarting with stat
+11-Apr-24 19:15:42 - [INFO] - Development environment configured.
+11-Apr-24 19:15:42 - [WARNING] -  * Debugger is active!
+11-Apr-24 19:15:42 - [INFO] -  * Debugger PIN: 144-740-991
+11-Apr-24 19:15:45 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+11-Apr-24 19:15:45 - [INFO] -  * Restarting with stat
+11-Apr-24 19:15:46 - [INFO] - Development environment configured.
+11-Apr-24 19:15:46 - [WARNING] -  * Debugger is active!
+11-Apr-24 19:15:46 - [INFO] -  * Debugger PIN: 144-740-991
+11-Apr-24 19:16:45 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+11-Apr-24 19:16:45 - [DEBUG] - http://127.0.0.1:3000 "GET /c/general/4.json HTTP/1.1" 200 None
+11-Apr-24 19:16:45 - [INFO] - 200 - Custom success 200 response sent
+11-Apr-24 19:16:45 - [INFO] - 127.0.0.1 - - [11/Apr/2024 19:16:45] "GET /api/v2/discourse/category/topics/general/4 HTTP/1.1" 200 -
+11-Apr-24 19:23:41 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+11-Apr-24 19:23:42 - [INFO] -  * Restarting with stat
+11-Apr-24 19:23:43 - [INFO] - Development environment configured.
+11-Apr-24 19:23:43 - [WARNING] -  * Debugger is active!
+11-Apr-24 19:23:43 - [INFO] -  * Debugger PIN: 144-740-991
+11-Apr-24 19:23:48 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+11-Apr-24 19:23:48 - [DEBUG] - http://127.0.0.1:3000 "GET /c/general/4.json HTTP/1.1" 200 None
+11-Apr-24 19:23:48 - [INFO] - 200 - Custom success 200 response sent
+11-Apr-24 19:23:48 - [INFO] - 127.0.0.1 - - [11/Apr/2024 19:23:48] "GET /api/v2/discourse/category/topics/general/4 HTTP/1.1" 200 -
+11-Apr-24 19:35:09 - [INFO] - 127.0.0.1 - - [11/Apr/2024 19:35:09] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+11-Apr-24 19:35:09 - [INFO] - File path is not valid: D:\GitHub\soft-engg-project-jan-2024-se-jan-2\code\backend\databases\images\profile_pics\dummy_profile.png
+11-Apr-24 19:35:09 - [INFO] - User logged in.
+11-Apr-24 19:35:09 - [INFO] - 200 - Custom success 200 response sent
+11-Apr-24 19:35:09 - [INFO] - 127.0.0.1 - - [11/Apr/2024 19:35:09] "POST /api/v2/auth/login HTTP/1.1" 200 -
+11-Apr-24 19:35:09 - [INFO] - 127.0.0.1 - - [11/Apr/2024 19:35:09] "OPTIONS /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+11-Apr-24 19:35:09 - [INFO] - 127.0.0.1 - - [11/Apr/2024 19:35:09] "OPTIONS /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=Open HTTP/1.1" 200 -
+11-Apr-24 19:35:09 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+11-Apr-24 19:35:09 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+11-Apr-24 19:35:09 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+11-Apr-24 19:35:09 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+11-Apr-24 19:35:09 - [INFO] - File path is not valid: 
+11-Apr-24 19:35:09 - [INFO] - 200 - Custom success 200 response sent
+11-Apr-24 19:35:09 - [INFO] - 127.0.0.1 - - [11/Apr/2024 19:35:09] "GET /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+11-Apr-24 19:35:09 - [INFO] - All tickets found : 8
+11-Apr-24 19:35:09 - [INFO] - 200 - Custom success 200 response sent
+11-Apr-24 19:35:09 - [INFO] - 127.0.0.1 - - [11/Apr/2024 19:35:09] "GET /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=Open HTTP/1.1" 200 -
+11-Apr-24 19:42:34 - [INFO] - 127.0.0.1 - - [11/Apr/2024 19:42:34] "OPTIONS /api/v2/discourseAuth/discourseRegister HTTP/1.1" 200 -
+11-Apr-24 19:42:34 - [INFO] - 400 - Email or Password is empty
+11-Apr-24 19:42:34 - [INFO] - 127.0.0.1 - - [11/Apr/2024 19:42:34] "[31m[1mPOST /api/v2/discourseAuth/discourseRegister HTTP/1.1[0m" 400 -
+11-Apr-24 19:42:37 - [INFO] - 127.0.0.1 - - [11/Apr/2024 19:42:37] "OPTIONS /api/v2/discourseAuth/discourseRegister HTTP/1.1" 200 -
+11-Apr-24 19:42:37 - [INFO] - 400 - Email or Password is empty
+11-Apr-24 19:42:37 - [INFO] - 127.0.0.1 - - [11/Apr/2024 19:42:37] "[31m[1mPOST /api/v2/discourseAuth/discourseRegister HTTP/1.1[0m" 400 -
+11-Apr-24 19:43:55 - [INFO] - 127.0.0.1 - - [11/Apr/2024 19:43:55] "OPTIONS /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+11-Apr-24 19:43:55 - [INFO] - 404 - Provided user id does not exists. Please create account.
+11-Apr-24 19:43:55 - [INFO] - 127.0.0.1 - - [11/Apr/2024 19:43:55] "[33mPUT /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1[0m" 404 -
+11-Apr-24 19:45:55 - [INFO] - 127.0.0.1 - - [11/Apr/2024 19:45:55] "OPTIONS /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+11-Apr-24 19:45:55 - [INFO] - 127.0.0.1 - - [11/Apr/2024 19:45:55] "OPTIONS /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=Open HTTP/1.1" 200 -
+11-Apr-24 19:45:55 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+11-Apr-24 19:45:55 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+11-Apr-24 19:45:55 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+11-Apr-24 19:45:55 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+11-Apr-24 19:45:55 - [INFO] - File path is not valid: 
+11-Apr-24 19:45:55 - [INFO] - 200 - Custom success 200 response sent
+11-Apr-24 19:45:55 - [INFO] - 127.0.0.1 - - [11/Apr/2024 19:45:55] "GET /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+11-Apr-24 19:45:55 - [INFO] - All tickets found : 8
+11-Apr-24 19:45:55 - [INFO] - 200 - Custom success 200 response sent
+11-Apr-24 19:45:55 - [INFO] - 127.0.0.1 - - [11/Apr/2024 19:45:55] "GET /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=Open HTTP/1.1" 200 -
+11-Apr-24 19:45:59 - [INFO] - 127.0.0.1 - - [11/Apr/2024 19:45:59] "OPTIONS /api/v2/discourseAuth/discourseRegister HTTP/1.1" 200 -
+11-Apr-24 19:45:59 - [INFO] - 400 - Email or Password is empty
+11-Apr-24 19:45:59 - [INFO] - 127.0.0.1 - - [11/Apr/2024 19:45:59] "[31m[1mPOST /api/v2/discourseAuth/discourseRegister HTTP/1.1[0m" 400 -
+11-Apr-24 19:49:30 - [INFO] - 127.0.0.1 - - [11/Apr/2024 19:49:30] "OPTIONS /api/v2/discourseAuth/discourseRegister HTTP/1.1" 200 -
+11-Apr-24 19:49:30 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+11-Apr-24 19:49:30 - [DEBUG] - http://127.0.0.1:3000 "GET /u/student_undefined.json HTTP/1.1" 404 None
+11-Apr-24 19:49:30 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+11-Apr-24 19:49:31 - [DEBUG] - http://127.0.0.1:3000 "POST /users.json HTTP/1.1" 200 None
+11-Apr-24 19:49:31 - [INFO] - New account created
+11-Apr-24 19:49:31 - [INFO] - 200 - <p>You’re almost done! We sent an activation mail to <b>student@gmail.com</b>. Please follow the instructions in the mail to activate your account.</p><p>If it doesn’t arrive, check your spam folder.</p>
+11-Apr-24 19:49:31 - [INFO] - 127.0.0.1 - - [11/Apr/2024 19:49:31] "POST /api/v2/discourseAuth/discourseRegister HTTP/1.1" 200 -
+11-Apr-24 19:49:38 - [INFO] - 127.0.0.1 - - [11/Apr/2024 19:49:38] "OPTIONS /api/v2/discourseAuth/discourseRegister HTTP/1.1" 200 -
+11-Apr-24 19:49:38 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+11-Apr-24 19:49:38 - [DEBUG] - http://127.0.0.1:3000 "GET /u/student_undefined.json HTTP/1.1" 200 None
+11-Apr-24 19:49:38 - [INFO] - 409 - Username is already in use
+11-Apr-24 19:49:38 - [INFO] - 127.0.0.1 - - [11/Apr/2024 19:49:38] "[31m[1mPOST /api/v2/discourseAuth/discourseRegister HTTP/1.1[0m" 409 -
+11-Apr-24 19:50:22 - [INFO] - 127.0.0.1 - - [11/Apr/2024 19:50:22] "OPTIONS /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?query=&filter_priority=&filter_status=&sortby=&sortdir=&filter_tags= HTTP/1.1" 200 -
+11-Apr-24 19:50:22 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+11-Apr-24 19:50:22 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+11-Apr-24 19:50:22 - [INFO] - All tickets found : 21
+11-Apr-24 19:50:22 - [INFO] - 200 - Custom success 200 response sent
+11-Apr-24 19:50:22 - [INFO] - 127.0.0.1 - - [11/Apr/2024 19:50:22] "GET /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?query=&filter_priority=&filter_status=&sortby=&sortdir=&filter_tags= HTTP/1.1" 200 -
+11-Apr-24 19:50:28 - [INFO] - 127.0.0.1 - - [11/Apr/2024 19:50:28] "OPTIONS /api/v2/discourseAuth/discourseRegister HTTP/1.1" 200 -
+11-Apr-24 19:50:28 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+11-Apr-24 19:50:28 - [DEBUG] - http://127.0.0.1:3000 "GET /u/student_undefined.json HTTP/1.1" 200 None
+11-Apr-24 19:50:28 - [INFO] - 409 - Username is already in use
+11-Apr-24 19:50:28 - [INFO] - 127.0.0.1 - - [11/Apr/2024 19:50:28] "[31m[1mPOST /api/v2/discourseAuth/discourseRegister HTTP/1.1[0m" 409 -
+11-Apr-24 19:55:59 - [INFO] - 127.0.0.1 - - [11/Apr/2024 19:55:59] "OPTIONS /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?query=&filter_priority=&filter_status=&sortby=&sortdir=&filter_tags= HTTP/1.1" 200 -
+11-Apr-24 19:55:59 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+11-Apr-24 19:55:59 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+11-Apr-24 19:55:59 - [INFO] - All tickets found : 21
+11-Apr-24 19:55:59 - [INFO] - 200 - Custom success 200 response sent
+11-Apr-24 19:55:59 - [INFO] - 127.0.0.1 - - [11/Apr/2024 19:55:59] "GET /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?query=&filter_priority=&filter_status=&sortby=&sortdir=&filter_tags= HTTP/1.1" 200 -
+11-Apr-24 19:56:31 - [INFO] - 127.0.0.1 - - [11/Apr/2024 19:56:31] "OPTIONS /api/v2/faq/ HTTP/1.1" 200 -
+11-Apr-24 19:56:31 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+11-Apr-24 19:56:31 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+11-Apr-24 19:56:31 - [INFO] - All FAQs found : 5
+11-Apr-24 19:56:31 - [INFO] - 200 - Custom success 200 response sent
+11-Apr-24 19:56:31 - [INFO] - 127.0.0.1 - - [11/Apr/2024 19:56:31] "GET /api/v2/faq/ HTTP/1.1" 200 -
+11-Apr-24 19:56:32 - [INFO] - 127.0.0.1 - - [11/Apr/2024 19:56:32] "OPTIONS /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?query=&filter_priority=&filter_status=&sortby=&sortdir=&filter_tags= HTTP/1.1" 200 -
+11-Apr-24 19:56:32 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+11-Apr-24 19:56:32 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+11-Apr-24 19:56:32 - [INFO] - All tickets found : 21
+11-Apr-24 19:56:32 - [INFO] - 200 - Custom success 200 response sent
+11-Apr-24 19:56:32 - [INFO] - 127.0.0.1 - - [11/Apr/2024 19:56:32] "GET /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?query=&filter_priority=&filter_status=&sortby=&sortdir=&filter_tags= HTTP/1.1" 200 -
+11-Apr-24 19:56:33 - [INFO] - 127.0.0.1 - - [11/Apr/2024 19:56:33] "OPTIONS /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+11-Apr-24 19:56:33 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+11-Apr-24 19:56:33 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+11-Apr-24 19:56:33 - [INFO] - All tickets found : 22
+11-Apr-24 19:56:33 - [INFO] - 200 - Custom success 200 response sent
+11-Apr-24 19:56:33 - [INFO] - 127.0.0.1 - - [11/Apr/2024 19:56:33] "GET /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -

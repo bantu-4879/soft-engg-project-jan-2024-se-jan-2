@@ -9,8 +9,8 @@ const SUPPORT_API_PREFIX = `/api/${VERSION}/staff`;
 const ADMIN_API_PREFIX = `/api/${VERSION}/admin`;
 const FAQ_API_PREFIX = `/api/${VERSION}/faq/`;
 const TICKET_API_PREFIX = `/api/${VERSION}/ticket`
-const DISCOURSE_AUTH_PREFIX = `api/${VERSION}/discourseAuth`
-const DISCOURSE_POST_PREFIX = `api/${VERSION}/discourse`
+const DISCOURSE_AUTH_PREFIX = `/api/${VERSION}/discourseAuth`
+const DISCOURSE_POST_PREFIX = `/api/${VERSION}/discourse`
 
 const AUTH_API_LOGIN = `${BASEURL}${AUTH_API_PREFIX}/login`
 const AUTH_API_REGISTER = `${BASEURL}${AUTH_API_PREFIX}/register`

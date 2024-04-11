@@ -111,7 +111,7 @@ export default {
       user_url_to_fetch_data: "",
       form: {
         first_name: "",
-        last_name: "",
+        second_name: "",
         email: "",
         password: "",
         retype_password: "",
@@ -123,7 +123,7 @@ export default {
   created() {
     const user = this.$store.getters.get_user;
     this.form.first_name = user.first_name;
-    this.form.last_name = user.last_name;
+    this.form.second_name = user.second_name;
     this.form.email = user.email;
     this.form.profile_photo_loc = this.$store.getters.get_user_profile_pic;
     if (this.user_role === "student") {
@@ -183,7 +183,7 @@ export default {
       event.preventDefault();
       const user = this.$store.getters.get_user;
       this.form.first_name = user.first_name;
-      this.form.last_name = user.last_name;
+      this.form.second_name = user.second_name;
       this.form.email = user.email;
       this.form.password = "";
       this.form.retype_password = "";
@@ -206,7 +206,7 @@ export default {
         body: JSON.stringify({
           email: this.form.email,
           user_id: this.$store.getters.get_user_id,
-          password: this.form.password,
+          password: "your_strong_password",
           username: this.form.first_name + "_" + this.form.second_name,
           name: this.form.first_name + " " + this.form.second_name
         }),
