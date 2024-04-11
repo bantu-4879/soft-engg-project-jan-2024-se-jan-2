@@ -6403,3 +6403,135 @@
 11-Apr-24 15:59:24 - [INFO] -  * Debugger PIN: 144-740-991
 11-Apr-24 16:01:14 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
 11-Apr-24 16:01:14 - [INFO] -  * Restarting with stat
+11-Apr-24 20:49:11 - [INFO] - Development environment configured.
+11-Apr-24 20:49:12 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+11-Apr-24 20:49:12 - [INFO] - [33mPress CTRL+C to quit[0m
+11-Apr-24 20:49:12 - [INFO] -  * Restarting with stat
+11-Apr-24 20:49:12 - [INFO] - Development environment configured.
+11-Apr-24 20:49:12 - [WARNING] -  * Debugger is active!
+11-Apr-24 20:49:12 - [INFO] -  * Debugger PIN: 299-872-502
+11-Apr-24 20:50:38 - [INFO] - 127.0.0.1 - - [11/Apr/2024 20:50:38] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+11-Apr-24 20:50:38 - [INFO] - File path is not valid: /Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+11-Apr-24 20:50:38 - [INFO] - User logged in.
+11-Apr-24 20:50:38 - [INFO] - 200 - Custom success 200 response sent
+11-Apr-24 20:50:38 - [INFO] - 127.0.0.1 - - [11/Apr/2024 20:50:38] "POST /api/v2/auth/login HTTP/1.1" 200 -
+11-Apr-24 20:50:38 - [INFO] - 127.0.0.1 - - [11/Apr/2024 20:50:38] "OPTIONS /api/v2/admin/828e867cb0264eb30f700b1dffb75e2c HTTP/1.1" 200 -
+11-Apr-24 20:50:38 - [INFO] - Token is verified for the user: 828e867cb0264eb30f700b1dffb75e2c
+11-Apr-24 20:50:38 - [INFO] - User role : admin : is verified for the user: 828e867cb0264eb30f700b1dffb75e2c
+11-Apr-24 20:50:38 - [INFO] - 127.0.0.1 - - [11/Apr/2024 20:50:38] "[35m[1mGET /api/v2/admin/828e867cb0264eb30f700b1dffb75e2c HTTP/1.1[0m" 500 -
+11-Apr-24 20:51:33 - [INFO] - 127.0.0.1 - - [11/Apr/2024 20:51:33] "OPTIONS /api/v2/auth/register HTTP/1.1" 200 -
+11-Apr-24 20:51:33 - [INFO] - New account created
+11-Apr-24 20:51:33 - [INFO] - 200 - Account created successfully. Now please login.
+11-Apr-24 20:51:33 - [INFO] - 127.0.0.1 - - [11/Apr/2024 20:51:33] "POST /api/v2/auth/register HTTP/1.1" 200 -
+11-Apr-24 20:51:50 - [INFO] - 127.0.0.1 - - [11/Apr/2024 20:51:50] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+11-Apr-24 20:51:50 - [INFO] - File path is not valid: /Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+11-Apr-24 20:51:50 - [INFO] - User logged in.
+11-Apr-24 20:51:50 - [INFO] - 200 - Custom success 200 response sent
+11-Apr-24 20:51:50 - [INFO] - 127.0.0.1 - - [11/Apr/2024 20:51:50] "POST /api/v2/auth/login HTTP/1.1" 200 -
+11-Apr-24 20:51:50 - [INFO] - 127.0.0.1 - - [11/Apr/2024 20:51:50] "OPTIONS /api/v2/admin/0ecd00c35e6914b2846832bd22677f3a HTTP/1.1" 200 -
+11-Apr-24 20:51:50 - [INFO] - Token is verified for the user: 0ecd00c35e6914b2846832bd22677f3a
+11-Apr-24 20:51:50 - [INFO] - User role : admin : is verified for the user: 0ecd00c35e6914b2846832bd22677f3a
+11-Apr-24 20:51:50 - [INFO] - 127.0.0.1 - - [11/Apr/2024 20:51:50] "[35m[1mGET /api/v2/admin/0ecd00c35e6914b2846832bd22677f3a HTTP/1.1[0m" 500 -
+11-Apr-24 20:55:44 - [INFO] - Development environment configured.
+11-Apr-24 20:55:44 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+11-Apr-24 20:55:44 - [INFO] - [33mPress CTRL+C to quit[0m
+11-Apr-24 20:55:44 - [INFO] -  * Restarting with stat
+11-Apr-24 20:55:45 - [INFO] - Development environment configured.
+11-Apr-24 20:55:45 - [WARNING] -  * Debugger is active!
+11-Apr-24 20:55:45 - [INFO] -  * Debugger PIN: 299-872-502
+11-Apr-24 20:55:46 - [INFO] - 127.0.0.1 - - [11/Apr/2024 20:55:46] "OPTIONS /api/v2/admin/0ecd00c35e6914b2846832bd22677f3a HTTP/1.1" 200 -
+11-Apr-24 20:55:46 - [INFO] - Token is verified for the user: 0ecd00c35e6914b2846832bd22677f3a
+11-Apr-24 20:55:46 - [INFO] - User role : admin : is verified for the user: 0ecd00c35e6914b2846832bd22677f3a
+11-Apr-24 20:55:46 - [INFO] - 127.0.0.1 - - [11/Apr/2024 20:55:46] "[35m[1mGET /api/v2/admin/0ecd00c35e6914b2846832bd22677f3a HTTP/1.1[0m" 500 -
+11-Apr-24 20:55:51 - [INFO] - 127.0.0.1 - - [11/Apr/2024 20:55:51] "OPTIONS /api/v2/auth/newUsers HTTP/1.1" 200 -
+11-Apr-24 20:55:51 - [INFO] - Token is verified for the user: 0ecd00c35e6914b2846832bd22677f3a
+11-Apr-24 20:55:51 - [INFO] - Admin role is verified for the user: 0ecd00c35e6914b2846832bd22677f3a
+11-Apr-24 20:55:51 - [INFO] - 200 - Custom success 200 response sent
+11-Apr-24 20:55:51 - [INFO] - 127.0.0.1 - - [11/Apr/2024 20:55:51] "GET /api/v2/auth/newUsers HTTP/1.1" 200 -
+11-Apr-24 20:55:54 - [INFO] - 127.0.0.1 - - [11/Apr/2024 20:55:54] "OPTIONS /api/v2/ticket/all-tickets/0ecd00c35e6914b2846832bd22677f3a?query=&filter_priority=&filter_status=Resolved&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+11-Apr-24 20:55:54 - [INFO] - Token is verified for the user: 0ecd00c35e6914b2846832bd22677f3a
+11-Apr-24 20:55:54 - [INFO] - User role : admin : is verified for the user: 0ecd00c35e6914b2846832bd22677f3a
+11-Apr-24 20:55:54 - [INFO] - 127.0.0.1 - - [11/Apr/2024 20:55:54] "[35m[1mGET /api/v2/ticket/all-tickets/0ecd00c35e6914b2846832bd22677f3a?query=&filter_priority=&filter_status=Resolved&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1[0m" 500 -
+11-Apr-24 20:56:20 - [INFO] - 127.0.0.1 - - [11/Apr/2024 20:56:20] "OPTIONS /api/v2/faq/ HTTP/1.1" 200 -
+11-Apr-24 20:56:20 - [INFO] - Token is verified for the user: 0ecd00c35e6914b2846832bd22677f3a
+11-Apr-24 20:56:20 - [INFO] - User role : admin : is verified for the user: 0ecd00c35e6914b2846832bd22677f3a
+11-Apr-24 20:56:20 - [INFO] - All FAQs found : 5
+11-Apr-24 20:56:20 - [INFO] - 200 - Custom success 200 response sent
+11-Apr-24 20:56:20 - [INFO] - 127.0.0.1 - - [11/Apr/2024 20:56:20] "GET /api/v2/faq/ HTTP/1.1" 200 -
+11-Apr-24 20:56:22 - [INFO] - 127.0.0.1 - - [11/Apr/2024 20:56:22] "OPTIONS /api/v2/admin/0ecd00c35e6914b2846832bd22677f3a HTTP/1.1" 200 -
+11-Apr-24 20:56:22 - [INFO] - Token is verified for the user: 0ecd00c35e6914b2846832bd22677f3a
+11-Apr-24 20:56:22 - [INFO] - User role : admin : is verified for the user: 0ecd00c35e6914b2846832bd22677f3a
+11-Apr-24 20:56:22 - [INFO] - 127.0.0.1 - - [11/Apr/2024 20:56:22] "[35m[1mGET /api/v2/admin/0ecd00c35e6914b2846832bd22677f3a HTTP/1.1[0m" 500 -
+11-Apr-24 20:57:40 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/admin_bp.py', reloading
+11-Apr-24 20:57:40 - [INFO] -  * Restarting with stat
+11-Apr-24 20:57:41 - [INFO] - Development environment configured.
+11-Apr-24 20:57:41 - [WARNING] -  * Debugger is active!
+11-Apr-24 20:57:41 - [INFO] -  * Debugger PIN: 299-872-502
+11-Apr-24 20:57:49 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/models.py', reloading
+11-Apr-24 20:57:49 - [INFO] -  * Restarting with stat
+11-Apr-24 20:57:50 - [INFO] - Development environment configured.
+11-Apr-24 20:57:50 - [WARNING] -  * Debugger is active!
+11-Apr-24 20:57:50 - [INFO] -  * Debugger PIN: 299-872-502
+11-Apr-24 20:57:57 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/models.py', reloading
+11-Apr-24 20:57:57 - [INFO] -  * Restarting with stat
+11-Apr-24 20:57:58 - [INFO] - Development environment configured.
+11-Apr-24 20:57:58 - [WARNING] -  * Debugger is active!
+11-Apr-24 20:57:58 - [INFO] -  * Debugger PIN: 299-872-502
+11-Apr-24 20:58:43 - [INFO] - Development environment configured.
+11-Apr-24 20:59:14 - [INFO] - Development environment configured.
+11-Apr-24 20:59:56 - [INFO] - Development environment configured.
+11-Apr-24 21:00:05 - [INFO] - Development environment configured.
+11-Apr-24 21:00:10 - [INFO] - Development environment configured.
+11-Apr-24 21:00:50 - [INFO] - Testing environment configured.
+11-Apr-24 21:00:54 - [INFO] - Testing environment configured.
+11-Apr-24 21:00:57 - [INFO] - Testing environment configured.
+11-Apr-24 21:01:01 - [INFO] - Testing environment configured.
+11-Apr-24 21:01:11 - [INFO] - Testing environment configured.
+11-Apr-24 21:01:11 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+11-Apr-24 21:01:11 - [INFO] - [33mPress CTRL+C to quit[0m
+11-Apr-24 21:01:11 - [INFO] -  * Restarting with stat
+11-Apr-24 21:01:11 - [INFO] - Testing environment configured.
+11-Apr-24 21:01:12 - [WARNING] -  * Debugger is active!
+11-Apr-24 21:01:12 - [INFO] -  * Debugger PIN: 299-872-502
+11-Apr-24 21:01:30 - [INFO] - 127.0.0.1 - - [11/Apr/2024 21:01:30] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+11-Apr-24 21:01:30 - [INFO] - 404 - User does not exists
+11-Apr-24 21:01:30 - [INFO] - 127.0.0.1 - - [11/Apr/2024 21:01:30] "[33mPOST /api/v2/auth/login HTTP/1.1[0m" 404 -
+11-Apr-24 21:01:39 - [INFO] - 127.0.0.1 - - [11/Apr/2024 21:01:39] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+11-Apr-24 21:01:39 - [INFO] - 404 - User does not exists
+11-Apr-24 21:01:39 - [INFO] - 127.0.0.1 - - [11/Apr/2024 21:01:39] "[33mPOST /api/v2/auth/login HTTP/1.1[0m" 404 -
+11-Apr-24 21:01:45 - [INFO] - 127.0.0.1 - - [11/Apr/2024 21:01:45] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+11-Apr-24 21:01:45 - [INFO] - 404 - User does not exists
+11-Apr-24 21:01:45 - [INFO] - 127.0.0.1 - - [11/Apr/2024 21:01:45] "[33mPOST /api/v2/auth/login HTTP/1.1[0m" 404 -
+11-Apr-24 21:02:05 - [INFO] - Development environment configured.
+11-Apr-24 21:02:05 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+11-Apr-24 21:02:05 - [INFO] - [33mPress CTRL+C to quit[0m
+11-Apr-24 21:02:05 - [INFO] -  * Restarting with stat
+11-Apr-24 21:02:06 - [INFO] - Development environment configured.
+11-Apr-24 21:02:06 - [WARNING] -  * Debugger is active!
+11-Apr-24 21:02:06 - [INFO] -  * Debugger PIN: 299-872-502
+11-Apr-24 21:02:13 - [INFO] - 127.0.0.1 - - [11/Apr/2024 21:02:13] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+11-Apr-24 21:02:13 - [INFO] - File path is not valid: /Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+11-Apr-24 21:02:13 - [INFO] - User logged in.
+11-Apr-24 21:02:13 - [INFO] - 200 - Custom success 200 response sent
+11-Apr-24 21:02:13 - [INFO] - 127.0.0.1 - - [11/Apr/2024 21:02:13] "POST /api/v2/auth/login HTTP/1.1" 200 -
+11-Apr-24 21:02:13 - [INFO] - 127.0.0.1 - - [11/Apr/2024 21:02:13] "OPTIONS /api/v2/admin/0ecd00c35e6914b2846832bd22677f3a HTTP/1.1" 200 -
+11-Apr-24 21:02:13 - [INFO] - Token is verified for the user: 0ecd00c35e6914b2846832bd22677f3a
+11-Apr-24 21:02:13 - [INFO] - User role : admin : is verified for the user: 0ecd00c35e6914b2846832bd22677f3a
+11-Apr-24 21:02:13 - [INFO] - File path is not valid: 
+11-Apr-24 21:02:13 - [INFO] - 200 - Custom success 200 response sent
+11-Apr-24 21:02:13 - [INFO] - 127.0.0.1 - - [11/Apr/2024 21:02:13] "GET /api/v2/admin/0ecd00c35e6914b2846832bd22677f3a HTTP/1.1" 200 -
+11-Apr-24 21:02:18 - [INFO] - 127.0.0.1 - - [11/Apr/2024 21:02:18] "OPTIONS /api/v2/auth/newUsers HTTP/1.1" 200 -
+11-Apr-24 21:02:18 - [INFO] - Token is verified for the user: 0ecd00c35e6914b2846832bd22677f3a
+11-Apr-24 21:02:18 - [INFO] - Admin role is verified for the user: 0ecd00c35e6914b2846832bd22677f3a
+11-Apr-24 21:02:18 - [INFO] - 200 - Custom success 200 response sent
+11-Apr-24 21:02:18 - [INFO] - 127.0.0.1 - - [11/Apr/2024 21:02:18] "GET /api/v2/auth/newUsers HTTP/1.1" 200 -
+11-Apr-24 21:02:19 - [INFO] - 127.0.0.1 - - [11/Apr/2024 21:02:19] "OPTIONS /api/v2/ticket/all-tickets/0ecd00c35e6914b2846832bd22677f3a?query=&filter_priority=&filter_status=Resolved&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+11-Apr-24 21:02:19 - [INFO] - Token is verified for the user: 0ecd00c35e6914b2846832bd22677f3a
+11-Apr-24 21:02:19 - [INFO] - User role : admin : is verified for the user: 0ecd00c35e6914b2846832bd22677f3a
+11-Apr-24 21:02:19 - [INFO] - All tickets found : 13
+11-Apr-24 21:02:19 - [INFO] - 200 - Custom success 200 response sent
+11-Apr-24 21:02:19 - [INFO] - 127.0.0.1 - - [11/Apr/2024 21:02:19] "GET /api/v2/ticket/all-tickets/0ecd00c35e6914b2846832bd22677f3a?query=&filter_priority=&filter_status=Resolved&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -

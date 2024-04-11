@@ -80,7 +80,7 @@ class Ticket(db.Model):
     thread_link = db.Column(db.String(500))
     privacy=db.Column(db.Boolean, default=False, nullable=False)
     created_at = db.Column(db.String,nullable=False)
-    date_posted = db.Column(db.Date)
+    #date_posted = db.Column(db.Date)
     resolved_by = db.Column(db.String(100), db.ForeignKey('user.id'),default=0,nullable=False)
     solution_satisfaction = db.Column(db.Boolean,nullable=False) 
     comments = db.Column(db.String(500))
@@ -104,7 +104,6 @@ class Ticket(db.Model):
             "thread_link": self.thread_link,
             "privacy": self.privacy,
             "created_at": self.created_at,
-            "date_posted": self.date_posted,
             "resolved_by": self.resolved_by,
             "solution_satisfaction": self.solution_satisfaction,
             #"comments": self.comments,

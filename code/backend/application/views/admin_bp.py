@@ -180,7 +180,7 @@ class AdminAPI(Resource):
                     ] = n_total_unresolved_tickets
                     admin_dict["n_total_resolved_tickets"] = n_total_resolved_tickets
                     admin_dict["n_tickets_today"] = n_tickets_today
-                    admin_dict["n_tickets_week"] = n_tickets_week
+                    admin_dict["n_tickets_week"] = n_tickets_week 
                     admin_dict["n_tickets_month"] = n_tickets_month
                     admin_dict["n_student"] = n_student
                     admin_dict["n_support"] = n_support
