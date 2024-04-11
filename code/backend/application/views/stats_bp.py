@@ -37,6 +37,11 @@ class StatsUtils(UserUtils):
         ).all()
 
         return tickets_found
+    
+    def str_to_date(self,date_str): 
+        format = '%Y-%m-%d'
+        date = datetime.strptime(date_str, format).date()
+        return date
 
 
 stats_bp = Blueprint("stats_bp", __name__)
@@ -65,15 +70,18 @@ class StatsAPI(Resource):
         else:
             d1 = details["date1"]
             d2 = details["date2"]
-            date1 = date(int(d1[:4]), int(d1[4:5]), int(d1[5:]))
-            date2 = date(int(d2[:4]), int(d2[4:5]), int(d2[5:]))
+            date1 = stats_util.str_to_date(d1)
+            date2 = stats_util.str_to_date(d2)
             if details["resolved"] == False:
                 tickets = stats_util.num_tickets_in_time_period(date1, date2)
             else: 
                 tickets = stats_util.num_resolved_tickets_in_time_period(date1, date2)
 
         #convert tickets into json objects!!
-            return success_200_custom(data=tickets)
+            tickets_found = []
+            for t in tickets:
+                tickets_found.append(Ticket.to_dict(t))
+            return success_200_custom(data=tickets_found)
 
 
 stats_api.add_resource(StatsAPI, "/", endpoint="stats_get")

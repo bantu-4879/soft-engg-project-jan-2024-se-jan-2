@@ -50,21 +50,24 @@ class TicketTrackingAPI(Resource):
             raise  BadRequest(status_msg="Ticket id is missing")
         
         try: 
-            tracking_data = []
             #check if ticket_id is unique or not 
-            data = TicketData.query.filtery_by(ticket_id=ticket_id).first()
-            record = tracking_utils.convert_data_to_dict(data)
-            tracking_data.append(record)
+            data = TicketData.query.filter_by(ticket_id=ticket_id).first()
+            tracking_data = TicketData.to_dict(data)
             logger.info(f"Tracking data found!")
             return success_200_custom(data=tracking_data)
         except Exception as e: 
             logger.error(f"TicketTrackingAPI->get : Error occured while fetching ticket tracking data: {e}")
             raise InternalServerError
     
-    def put(self, ticket_id="", status=""): 
+    def put(self, ticket_id=""): 
         
         details = {
-            status : ""
+            "resolved_at" : "",
+            "assigned_at" : "",
+            "inProgress_at" : "",
+            "closed_at" : "",
+            "reopened_at" : ""
+
         }
 
         try: 
@@ -72,17 +75,22 @@ class TicketTrackingAPI(Resource):
         except Exception as e: 
             logger.error(f"TicketTrackingAPI->put : Error occured while fetching the ticket data : {e}")
             raise InternalServerError
-        else: 
-            if data: 
-                try: 
-                    data.status = details[status]
-                    db.session.commit()
-                except Exception as e: 
-                    logger.error(f"TicketTrackingAPI->put Error occured while updating ticket data: {e}")
-                    raise InternalServerError
-                else: 
-                    logger.info(f"TicketTracking data updated")
-                    raise Success_200(status_msg="TicketTracking data updated successfully.")
+        if data: 
+            data.resolved_at = details["resolved_at"]
+            data.assigned_at = details["assigned_at"]
+            data.inProgress_at = details["inProgress_at"]
+            data.closed_at = details["closed_at"]
+            data.reopened_at = details["reopened_at"]
+            try: 
+                db.session.commit()
+                logger.info(f"TicketTracking data updated")
+                raise Success_200(status_msg="TicketTracking data updated successfully.")
+            except Exception as e: 
+                logger.error(f"TicketTrackingAPI->put Error occured while updating ticket data: {e}")
+                raise InternalServerError
             
-    def delete(self, ticket_id): 
+    def delete(self, ticket_id=""): 
         return 
+    
+tracking_api.add_resource(TicketTrackingAPI, "/<string:ticket_id>", endpoint="ticket_tracking")
+#tracking_api.add_resource(TicketTrackingAPI, "/<string:ticket_id>/<string:status>", endpoint="ticket_tracking_update")

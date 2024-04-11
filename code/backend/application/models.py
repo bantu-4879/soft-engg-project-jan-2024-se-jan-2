@@ -107,14 +107,14 @@ class Ticket(db.Model):
             "date_posted": self.date_posted,
             "resolved_by": self.resolved_by,
             "solution_satisfaction": self.solution_satisfaction,
-            "comments": self.comments,
+            #"comments": self.comments,
             "ticket_status": self.ticket_status,
             "ticket_priority": self.ticket_priority,
             "tags_list": self.tags_list,
-            "votes": self.votes,
-            "assigned_staff": self.assigned_staff,
-            "comments": self.comments,
-            "attachments": self.attachments
+            #"votes": self.votes,
+            #"assigned_staff": self.assigned_staff,
+            #"comments": self.comments,
+            #"attachments": self.attachments
 
         }
 
@@ -209,6 +209,19 @@ class TicketData(db.Model):
     resolved_at = db.Column(db.String)
     closed_at= db.Column(db.String)
     reopened_at=db.Column(db.String)
+
+    def to_dict(self):
+        return {
+            "id": self.id,
+            "ticket_id": self.ticket_id,
+            "opened_at": self.opened_at,
+            "assigned_at": self.assigned_at,
+            "inProgress_at": self.inProgress_at,
+            "resolved_at": self.resolved_at,
+            "closed_at": self.closed_at,
+            "reopened_at": self.reopened_at
+
+        }
 
 class DisciplinaryAction(db.Model):
     id = db.Column(db.Integer, primary_key=True)

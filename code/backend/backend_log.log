@@ -11119,3 +11119,572 @@ WHERE tickets_tags.ticket_id = ?]
 07-Apr-24 00:26:28 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/models.py', reloading
 07-Apr-24 00:26:29 - [INFO] -  * Restarting with stat
 07-Apr-24 00:29:29 - [INFO] - Development environment configured.
+08-Apr-24 17:19:08 - [INFO] - Development environment configured.
+08-Apr-24 17:19:08 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+08-Apr-24 17:19:08 - [INFO] - [33mPress CTRL+C to quit[0m
+08-Apr-24 17:19:08 - [INFO] -  * Restarting with stat
+08-Apr-24 17:19:09 - [INFO] - Development environment configured.
+08-Apr-24 17:19:09 - [WARNING] -  * Debugger is active!
+08-Apr-24 17:19:09 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 17:19:12 - [INFO] - 127.0.0.1 - - [08/Apr/2024 17:19:12] "[32mPOST /api/v2/data HTTP/1.1[0m" 308 -
+08-Apr-24 17:19:12 - [INFO] - 200 - Custom success 200 response sent
+08-Apr-24 17:19:12 - [INFO] - 127.0.0.1 - - [08/Apr/2024 17:19:12] "[35m[1mPOST /api/v2/data/ HTTP/1.1[0m" 500 -
+08-Apr-24 17:19:26 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/stats_bp.py', reloading
+08-Apr-24 17:19:26 - [INFO] -  * Restarting with stat
+08-Apr-24 17:19:27 - [INFO] - Development environment configured.
+08-Apr-24 17:19:27 - [WARNING] -  * Debugger is active!
+08-Apr-24 17:19:27 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 17:19:38 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/stats_bp.py', reloading
+08-Apr-24 17:19:38 - [INFO] -  * Restarting with stat
+08-Apr-24 17:19:39 - [INFO] - Development environment configured.
+08-Apr-24 17:19:39 - [WARNING] -  * Debugger is active!
+08-Apr-24 17:19:39 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 17:19:47 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/stats_bp.py', reloading
+08-Apr-24 17:19:47 - [INFO] -  * Restarting with stat
+08-Apr-24 17:19:48 - [INFO] - Development environment configured.
+08-Apr-24 17:19:48 - [WARNING] -  * Debugger is active!
+08-Apr-24 17:19:48 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 17:19:49 - [INFO] - 127.0.0.1 - - [08/Apr/2024 17:19:49] "[32mPOST /api/v2/data HTTP/1.1[0m" 308 -
+08-Apr-24 17:19:49 - [INFO] - 127.0.0.1 - - [08/Apr/2024 17:19:49] "[35m[1mPOST /api/v2/data/ HTTP/1.1[0m" 500 -
+08-Apr-24 17:20:02 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/stats_bp.py', reloading
+08-Apr-24 17:20:02 - [INFO] -  * Restarting with stat
+08-Apr-24 17:20:48 - [INFO] - Development environment configured.
+08-Apr-24 17:20:48 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+08-Apr-24 17:20:48 - [INFO] - [33mPress CTRL+C to quit[0m
+08-Apr-24 17:20:48 - [INFO] -  * Restarting with stat
+08-Apr-24 17:20:49 - [INFO] - Development environment configured.
+08-Apr-24 17:20:49 - [WARNING] -  * Debugger is active!
+08-Apr-24 17:20:49 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 17:20:50 - [INFO] - 127.0.0.1 - - [08/Apr/2024 17:20:50] "[32mPOST /api/v2/data HTTP/1.1[0m" 308 -
+08-Apr-24 17:20:50 - [INFO] - 200 - Custom success 200 response sent
+08-Apr-24 17:20:50 - [INFO] - 127.0.0.1 - - [08/Apr/2024 17:20:50] "[35m[1mPOST /api/v2/data/ HTTP/1.1[0m" 500 -
+08-Apr-24 17:21:19 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/models.py', reloading
+08-Apr-24 17:21:20 - [INFO] -  * Restarting with stat
+08-Apr-24 17:21:20 - [INFO] - Development environment configured.
+08-Apr-24 17:21:20 - [WARNING] -  * Debugger is active!
+08-Apr-24 17:21:20 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 17:21:23 - [INFO] - 127.0.0.1 - - [08/Apr/2024 17:21:23] "[32mPOST /api/v2/data HTTP/1.1[0m" 308 -
+08-Apr-24 17:21:23 - [INFO] - 200 - Custom success 200 response sent
+08-Apr-24 17:21:23 - [INFO] - 127.0.0.1 - - [08/Apr/2024 17:21:23] "[35m[1mPOST /api/v2/data/ HTTP/1.1[0m" 500 -
+08-Apr-24 17:21:28 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/models.py', reloading
+08-Apr-24 17:21:28 - [INFO] -  * Restarting with stat
+08-Apr-24 17:21:29 - [INFO] - Development environment configured.
+08-Apr-24 17:21:29 - [WARNING] -  * Debugger is active!
+08-Apr-24 17:21:29 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 17:21:30 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/models.py', reloading
+08-Apr-24 17:21:30 - [INFO] -  * Restarting with stat
+08-Apr-24 17:21:31 - [INFO] - Development environment configured.
+08-Apr-24 17:21:31 - [WARNING] -  * Debugger is active!
+08-Apr-24 17:21:31 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 17:21:32 - [INFO] - 127.0.0.1 - - [08/Apr/2024 17:21:32] "[32mPOST /api/v2/data HTTP/1.1[0m" 308 -
+08-Apr-24 17:21:32 - [INFO] - 200 - Custom success 200 response sent
+08-Apr-24 17:21:32 - [INFO] - 127.0.0.1 - - [08/Apr/2024 17:21:32] "[35m[1mPOST /api/v2/data/ HTTP/1.1[0m" 500 -
+08-Apr-24 17:21:57 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/models.py', reloading
+08-Apr-24 17:21:57 - [INFO] -  * Restarting with stat
+08-Apr-24 17:21:58 - [INFO] - Development environment configured.
+08-Apr-24 17:21:58 - [WARNING] -  * Debugger is active!
+08-Apr-24 17:21:58 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 17:22:06 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/models.py', reloading
+08-Apr-24 17:22:06 - [INFO] -  * Restarting with stat
+08-Apr-24 17:22:07 - [INFO] - Development environment configured.
+08-Apr-24 17:22:07 - [WARNING] -  * Debugger is active!
+08-Apr-24 17:22:07 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 17:22:14 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/models.py', reloading
+08-Apr-24 17:22:14 - [INFO] -  * Restarting with stat
+08-Apr-24 17:22:15 - [INFO] - Development environment configured.
+08-Apr-24 17:22:15 - [WARNING] -  * Debugger is active!
+08-Apr-24 17:22:15 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 17:22:22 - [INFO] - 127.0.0.1 - - [08/Apr/2024 17:22:22] "[32mPOST /api/v2/data HTTP/1.1[0m" 308 -
+08-Apr-24 17:22:22 - [INFO] - 200 - Custom success 200 response sent
+08-Apr-24 17:22:22 - [INFO] - 127.0.0.1 - - [08/Apr/2024 17:22:22] "POST /api/v2/data/ HTTP/1.1" 200 -
+08-Apr-24 17:22:38 - [INFO] - 127.0.0.1 - - [08/Apr/2024 17:22:38] "[32mPOST /api/v2/data HTTP/1.1[0m" 308 -
+08-Apr-24 17:22:38 - [INFO] - 200 - Custom success 200 response sent
+08-Apr-24 17:22:38 - [INFO] - 127.0.0.1 - - [08/Apr/2024 17:22:38] "POST /api/v2/data/ HTTP/1.1" 200 -
+08-Apr-24 17:22:43 - [INFO] - 127.0.0.1 - - [08/Apr/2024 17:22:43] "[32mPOST /api/v2/data HTTP/1.1[0m" 308 -
+08-Apr-24 17:22:43 - [INFO] - 200 - Custom success 200 response sent
+08-Apr-24 17:22:43 - [INFO] - 127.0.0.1 - - [08/Apr/2024 17:22:43] "POST /api/v2/data/ HTTP/1.1" 200 -
+08-Apr-24 17:24:57 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/stats_bp.py', reloading
+08-Apr-24 17:24:57 - [INFO] -  * Restarting with stat
+08-Apr-24 17:24:58 - [INFO] - Development environment configured.
+08-Apr-24 17:24:58 - [WARNING] -  * Debugger is active!
+08-Apr-24 17:24:58 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 17:25:33 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_tracking_bp.py', reloading
+08-Apr-24 17:25:33 - [INFO] -  * Restarting with stat
+08-Apr-24 17:25:34 - [INFO] - Development environment configured.
+08-Apr-24 17:25:34 - [WARNING] -  * Debugger is active!
+08-Apr-24 17:25:34 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 17:26:09 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_tracking_bp.py', reloading
+08-Apr-24 17:26:09 - [INFO] -  * Restarting with stat
+08-Apr-24 17:26:10 - [INFO] - Development environment configured.
+08-Apr-24 17:26:10 - [WARNING] -  * Debugger is active!
+08-Apr-24 17:26:10 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 17:26:13 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_tracking_bp.py', reloading
+08-Apr-24 17:26:13 - [INFO] -  * Restarting with stat
+08-Apr-24 17:26:14 - [INFO] - Development environment configured.
+08-Apr-24 17:26:14 - [WARNING] -  * Debugger is active!
+08-Apr-24 17:26:14 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 17:26:20 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_tracking_bp.py', reloading
+08-Apr-24 17:26:20 - [INFO] -  * Restarting with stat
+08-Apr-24 17:26:21 - [INFO] - Development environment configured.
+08-Apr-24 17:26:21 - [WARNING] -  * Debugger is active!
+08-Apr-24 17:26:21 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 17:26:26 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_tracking_bp.py', reloading
+08-Apr-24 17:26:26 - [INFO] -  * Restarting with stat
+08-Apr-24 17:26:27 - [INFO] - Development environment configured.
+08-Apr-24 17:26:27 - [WARNING] -  * Debugger is active!
+08-Apr-24 17:26:27 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 17:26:32 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_tracking_bp.py', reloading
+08-Apr-24 17:26:32 - [INFO] -  * Restarting with stat
+08-Apr-24 17:26:33 - [INFO] - Development environment configured.
+08-Apr-24 17:26:33 - [WARNING] -  * Debugger is active!
+08-Apr-24 17:26:33 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 17:26:39 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_tracking_bp.py', reloading
+08-Apr-24 17:26:40 - [INFO] -  * Restarting with stat
+08-Apr-24 17:26:40 - [INFO] - Development environment configured.
+08-Apr-24 17:26:41 - [WARNING] -  * Debugger is active!
+08-Apr-24 17:26:41 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 17:27:05 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/__init__.py', reloading
+08-Apr-24 17:27:05 - [INFO] -  * Restarting with stat
+08-Apr-24 17:27:06 - [INFO] - Development environment configured.
+08-Apr-24 17:29:10 - [INFO] - Development environment configured.
+08-Apr-24 17:29:10 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+08-Apr-24 17:29:10 - [INFO] - [33mPress CTRL+C to quit[0m
+08-Apr-24 17:29:10 - [INFO] -  * Restarting with stat
+08-Apr-24 17:29:11 - [INFO] - Development environment configured.
+08-Apr-24 17:29:11 - [WARNING] -  * Debugger is active!
+08-Apr-24 17:29:11 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 17:29:13 - [ERROR] - TicketTrackingAPI->get : Error occured while fetching ticket tracking data: 'Query' object has no attribute 'filtery_by'
+08-Apr-24 17:29:13 - [INFO] - 500 - Internal Server Error
+08-Apr-24 17:29:13 - [INFO] - 127.0.0.1 - - [08/Apr/2024 17:29:13] "[35m[1mGET /api/v2/tracking/%7B%7Bticket_id%7D%7D HTTP/1.1[0m" 500 -
+08-Apr-24 17:29:54 - [ERROR] - TicketTrackingAPI->get : Error occured while fetching ticket tracking data: 'Query' object has no attribute 'filtery_by'
+08-Apr-24 17:29:54 - [INFO] - 500 - Internal Server Error
+08-Apr-24 17:29:54 - [INFO] - 127.0.0.1 - - [08/Apr/2024 17:29:54] "[35m[1mGET /api/v2/tracking/7aaef40c060d2e8be8e5e23e3f7ea0a9 HTTP/1.1[0m" 500 -
+08-Apr-24 17:30:13 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_tracking_bp.py', reloading
+08-Apr-24 17:30:13 - [INFO] -  * Restarting with stat
+08-Apr-24 17:30:14 - [INFO] - Development environment configured.
+08-Apr-24 17:30:14 - [WARNING] -  * Debugger is active!
+08-Apr-24 17:30:14 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 17:30:16 - [ERROR] - TicketTrackingAPI->get : Error occured while fetching ticket tracking data: vars() argument must have __dict__ attribute
+08-Apr-24 17:30:16 - [INFO] - 500 - Internal Server Error
+08-Apr-24 17:30:16 - [INFO] - 127.0.0.1 - - [08/Apr/2024 17:30:16] "[35m[1mGET /api/v2/tracking/7aaef40c060d2e8be8e5e23e3f7ea0a9 HTTP/1.1[0m" 500 -
+08-Apr-24 17:30:35 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_tracking_bp.py', reloading
+08-Apr-24 17:30:35 - [INFO] -  * Restarting with stat
+08-Apr-24 17:30:36 - [INFO] - Development environment configured.
+08-Apr-24 17:30:36 - [WARNING] -  * Debugger is active!
+08-Apr-24 17:30:36 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 17:30:46 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_tracking_bp.py', reloading
+08-Apr-24 17:30:46 - [INFO] -  * Restarting with stat
+08-Apr-24 17:30:47 - [INFO] - Development environment configured.
+08-Apr-24 17:30:47 - [WARNING] -  * Debugger is active!
+08-Apr-24 17:30:47 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 17:31:05 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/models.py', reloading
+08-Apr-24 17:31:05 - [INFO] -  * Restarting with stat
+08-Apr-24 17:31:06 - [INFO] - Development environment configured.
+08-Apr-24 17:31:06 - [WARNING] -  * Debugger is active!
+08-Apr-24 17:31:06 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 17:31:08 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/models.py', reloading
+08-Apr-24 17:31:08 - [INFO] -  * Restarting with stat
+08-Apr-24 17:31:09 - [INFO] - Development environment configured.
+08-Apr-24 17:31:09 - [WARNING] -  * Debugger is active!
+08-Apr-24 17:31:09 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 17:31:13 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/models.py', reloading
+08-Apr-24 17:31:14 - [INFO] -  * Restarting with stat
+08-Apr-24 17:31:14 - [INFO] - Development environment configured.
+08-Apr-24 17:31:14 - [WARNING] -  * Debugger is active!
+08-Apr-24 17:31:14 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 17:31:19 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/models.py', reloading
+08-Apr-24 17:31:19 - [INFO] -  * Restarting with stat
+08-Apr-24 17:31:20 - [INFO] - Development environment configured.
+08-Apr-24 17:31:20 - [WARNING] -  * Debugger is active!
+08-Apr-24 17:31:20 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 17:31:24 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/models.py', reloading
+08-Apr-24 17:31:24 - [INFO] -  * Restarting with stat
+08-Apr-24 17:31:25 - [INFO] - Development environment configured.
+08-Apr-24 17:31:25 - [WARNING] -  * Debugger is active!
+08-Apr-24 17:31:25 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 17:31:31 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/models.py', reloading
+08-Apr-24 17:31:31 - [INFO] -  * Restarting with stat
+08-Apr-24 17:31:32 - [INFO] - Development environment configured.
+08-Apr-24 17:31:32 - [WARNING] -  * Debugger is active!
+08-Apr-24 17:31:32 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 17:31:36 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/models.py', reloading
+08-Apr-24 17:31:37 - [INFO] -  * Restarting with stat
+08-Apr-24 17:31:37 - [INFO] - Development environment configured.
+08-Apr-24 17:31:37 - [WARNING] -  * Debugger is active!
+08-Apr-24 17:31:37 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 17:31:45 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/models.py', reloading
+08-Apr-24 17:31:45 - [INFO] -  * Restarting with stat
+08-Apr-24 17:31:46 - [INFO] - Development environment configured.
+08-Apr-24 17:31:46 - [WARNING] -  * Debugger is active!
+08-Apr-24 17:31:46 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 17:31:50 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/models.py', reloading
+08-Apr-24 17:31:50 - [INFO] -  * Restarting with stat
+08-Apr-24 17:31:51 - [INFO] - Development environment configured.
+08-Apr-24 17:31:51 - [WARNING] -  * Debugger is active!
+08-Apr-24 17:31:51 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 17:31:52 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/models.py', reloading
+08-Apr-24 17:31:52 - [INFO] -  * Restarting with stat
+08-Apr-24 17:31:53 - [INFO] - Development environment configured.
+08-Apr-24 17:31:53 - [WARNING] -  * Debugger is active!
+08-Apr-24 17:31:53 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 17:31:54 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/models.py', reloading
+08-Apr-24 17:31:55 - [INFO] -  * Restarting with stat
+08-Apr-24 17:31:55 - [INFO] - Development environment configured.
+08-Apr-24 17:31:55 - [WARNING] -  * Debugger is active!
+08-Apr-24 17:31:55 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 17:32:00 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/models.py', reloading
+08-Apr-24 17:32:00 - [INFO] -  * Restarting with stat
+08-Apr-24 17:32:01 - [INFO] - Development environment configured.
+08-Apr-24 17:32:01 - [WARNING] -  * Debugger is active!
+08-Apr-24 17:32:01 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 17:32:04 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/models.py', reloading
+08-Apr-24 17:32:04 - [INFO] -  * Restarting with stat
+08-Apr-24 17:32:05 - [INFO] - Development environment configured.
+08-Apr-24 17:32:05 - [WARNING] -  * Debugger is active!
+08-Apr-24 17:32:05 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 17:32:13 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/models.py', reloading
+08-Apr-24 17:32:13 - [INFO] -  * Restarting with stat
+08-Apr-24 17:32:14 - [INFO] - Development environment configured.
+08-Apr-24 17:32:14 - [WARNING] -  * Debugger is active!
+08-Apr-24 17:32:14 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 17:32:20 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/models.py', reloading
+08-Apr-24 17:32:20 - [INFO] -  * Restarting with stat
+08-Apr-24 17:32:21 - [INFO] - Development environment configured.
+08-Apr-24 17:32:21 - [WARNING] -  * Debugger is active!
+08-Apr-24 17:32:21 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 17:32:22 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/models.py', reloading
+08-Apr-24 17:32:22 - [INFO] -  * Restarting with stat
+08-Apr-24 17:32:23 - [INFO] - Development environment configured.
+08-Apr-24 17:32:23 - [WARNING] -  * Debugger is active!
+08-Apr-24 17:32:23 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 17:32:26 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/models.py', reloading
+08-Apr-24 17:32:26 - [INFO] -  * Restarting with stat
+08-Apr-24 17:32:27 - [INFO] - Development environment configured.
+08-Apr-24 17:32:27 - [WARNING] -  * Debugger is active!
+08-Apr-24 17:32:27 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 17:32:29 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/models.py', reloading
+08-Apr-24 17:32:30 - [INFO] -  * Restarting with stat
+08-Apr-24 17:32:30 - [INFO] - Development environment configured.
+08-Apr-24 17:32:30 - [WARNING] -  * Debugger is active!
+08-Apr-24 17:32:30 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 17:32:32 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/models.py', reloading
+08-Apr-24 17:32:32 - [INFO] -  * Restarting with stat
+08-Apr-24 17:32:33 - [INFO] - Development environment configured.
+08-Apr-24 17:32:33 - [WARNING] -  * Debugger is active!
+08-Apr-24 17:32:33 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 17:32:42 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_tracking_bp.py', reloading
+08-Apr-24 17:32:42 - [INFO] -  * Restarting with stat
+08-Apr-24 17:32:48 - [INFO] - Development environment configured.
+08-Apr-24 17:32:48 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+08-Apr-24 17:32:48 - [INFO] - [33mPress CTRL+C to quit[0m
+08-Apr-24 17:32:48 - [INFO] -  * Restarting with stat
+08-Apr-24 17:32:48 - [INFO] - Development environment configured.
+08-Apr-24 17:32:49 - [WARNING] -  * Debugger is active!
+08-Apr-24 17:32:49 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 17:32:52 - [ERROR] - TicketTrackingAPI->get : Error occured while fetching ticket tracking data: 'NoneType' object has no attribute 'id'
+08-Apr-24 17:32:52 - [INFO] - 500 - Internal Server Error
+08-Apr-24 17:32:52 - [INFO] - 127.0.0.1 - - [08/Apr/2024 17:32:52] "[35m[1mGET /api/v2/tracking/7aaef40c060d2e8be8e5e23e3f7ea0a9 HTTP/1.1[0m" 500 -
+08-Apr-24 17:33:55 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_tracking_bp.py', reloading
+08-Apr-24 17:33:55 - [INFO] -  * Restarting with stat
+08-Apr-24 17:33:56 - [INFO] - Development environment configured.
+08-Apr-24 17:33:56 - [WARNING] -  * Debugger is active!
+08-Apr-24 17:33:56 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 17:34:00 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_tracking_bp.py', reloading
+08-Apr-24 17:34:01 - [INFO] -  * Restarting with stat
+08-Apr-24 17:34:18 - [INFO] - Development environment configured.
+08-Apr-24 17:34:18 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+08-Apr-24 17:34:18 - [INFO] - [33mPress CTRL+C to quit[0m
+08-Apr-24 17:34:18 - [INFO] -  * Restarting with stat
+08-Apr-24 17:34:19 - [INFO] - Development environment configured.
+08-Apr-24 17:34:19 - [WARNING] -  * Debugger is active!
+08-Apr-24 17:34:19 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 17:34:28 - [INFO] - Tracking data found!
+08-Apr-24 17:34:28 - [INFO] - 200 - Custom success 200 response sent
+08-Apr-24 17:34:28 - [INFO] - 127.0.0.1 - - [08/Apr/2024 17:34:28] "GET /api/v2/tracking/4f5a09abb3fbb7cd18b90c095739f7c4 HTTP/1.1" 200 -
+08-Apr-24 17:35:16 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_tracking_bp.py', reloading
+08-Apr-24 17:35:16 - [INFO] -  * Restarting with stat
+08-Apr-24 17:35:17 - [INFO] - Development environment configured.
+08-Apr-24 17:35:17 - [WARNING] -  * Debugger is active!
+08-Apr-24 17:35:17 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 17:35:20 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_tracking_bp.py', reloading
+08-Apr-24 17:35:21 - [INFO] -  * Restarting with stat
+08-Apr-24 17:37:35 - [INFO] - Development environment configured.
+08-Apr-24 17:37:35 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+08-Apr-24 17:37:35 - [INFO] - [33mPress CTRL+C to quit[0m
+08-Apr-24 17:37:35 - [INFO] -  * Restarting with stat
+08-Apr-24 17:37:36 - [INFO] - Development environment configured.
+08-Apr-24 17:37:36 - [WARNING] -  * Debugger is active!
+08-Apr-24 17:37:36 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 17:37:37 - [INFO] - 127.0.0.1 - - [08/Apr/2024 17:37:37] "[33mPUT /api/v2/tracking/4f5a09abb3fbb7cd18b90c095739f7c4/resolved_at HTTP/1.1[0m" 404 -
+08-Apr-24 17:37:48 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_tracking_bp.py', reloading
+08-Apr-24 17:37:48 - [INFO] -  * Restarting with stat
+08-Apr-24 17:37:49 - [INFO] - Development environment configured.
+08-Apr-24 17:38:05 - [INFO] - Development environment configured.
+08-Apr-24 17:38:05 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+08-Apr-24 17:38:05 - [INFO] - [33mPress CTRL+C to quit[0m
+08-Apr-24 17:38:05 - [INFO] -  * Restarting with stat
+08-Apr-24 17:38:06 - [INFO] - Development environment configured.
+08-Apr-24 17:38:06 - [WARNING] -  * Debugger is active!
+08-Apr-24 17:38:06 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 17:38:07 - [INFO] - TicketTracking data updated
+08-Apr-24 17:38:07 - [INFO] - 200 - TicketTracking data updated successfully.
+08-Apr-24 17:38:07 - [INFO] - 127.0.0.1 - - [08/Apr/2024 17:38:07] "PUT /api/v2/tracking/4f5a09abb3fbb7cd18b90c095739f7c4/resolved_at HTTP/1.1" 200 -
+08-Apr-24 17:38:13 - [INFO] - Tracking data found!
+08-Apr-24 17:38:13 - [INFO] - 200 - Custom success 200 response sent
+08-Apr-24 17:38:13 - [INFO] - 127.0.0.1 - - [08/Apr/2024 17:38:13] "GET /api/v2/tracking/4f5a09abb3fbb7cd18b90c095739f7c4 HTTP/1.1" 200 -
+08-Apr-24 17:39:15 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_tracking_bp.py', reloading
+08-Apr-24 17:39:15 - [INFO] -  * Restarting with stat
+08-Apr-24 17:39:16 - [INFO] - Development environment configured.
+08-Apr-24 17:39:16 - [WARNING] -  * Debugger is active!
+08-Apr-24 17:39:16 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 17:39:24 - [INFO] - TicketTracking data updated
+08-Apr-24 17:39:24 - [INFO] - 200 - TicketTracking data updated successfully.
+08-Apr-24 17:39:24 - [INFO] - 127.0.0.1 - - [08/Apr/2024 17:39:24] "PUT /api/v2/tracking/4f5a09abb3fbb7cd18b90c095739f7c4/resolved_at HTTP/1.1" 200 -
+08-Apr-24 17:39:32 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_tracking_bp.py', reloading
+08-Apr-24 17:39:32 - [INFO] -  * Restarting with stat
+08-Apr-24 17:39:33 - [INFO] - Development environment configured.
+08-Apr-24 17:39:33 - [WARNING] -  * Debugger is active!
+08-Apr-24 17:39:33 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 17:39:40 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_tracking_bp.py', reloading
+08-Apr-24 17:39:40 - [INFO] -  * Restarting with stat
+08-Apr-24 17:39:41 - [INFO] - Development environment configured.
+08-Apr-24 17:39:41 - [WARNING] -  * Debugger is active!
+08-Apr-24 17:39:41 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 17:39:42 - [INFO] - TicketTracking data updated
+08-Apr-24 17:39:42 - [INFO] - 200 - TicketTracking data updated successfully.
+08-Apr-24 17:39:42 - [INFO] - 127.0.0.1 - - [08/Apr/2024 17:39:42] "PUT /api/v2/tracking/4f5a09abb3fbb7cd18b90c095739f7c4/resolved_at HTTP/1.1" 200 -
+08-Apr-24 17:39:51 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_tracking_bp.py', reloading
+08-Apr-24 17:39:51 - [INFO] -  * Restarting with stat
+08-Apr-24 17:39:52 - [INFO] - Development environment configured.
+08-Apr-24 17:39:52 - [WARNING] -  * Debugger is active!
+08-Apr-24 17:39:52 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 17:39:59 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_tracking_bp.py', reloading
+08-Apr-24 17:40:00 - [INFO] -  * Restarting with stat
+08-Apr-24 17:40:00 - [INFO] - Development environment configured.
+08-Apr-24 17:40:00 - [WARNING] -  * Debugger is active!
+08-Apr-24 17:40:00 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 17:40:03 - [INFO] - TicketTracking data updated
+08-Apr-24 17:40:03 - [INFO] - 200 - TicketTracking data updated successfully.
+08-Apr-24 17:40:03 - [INFO] - 127.0.0.1 - - [08/Apr/2024 17:40:03] "PUT /api/v2/tracking/4f5a09abb3fbb7cd18b90c095739f7c4/resolved_at HTTP/1.1" 200 -
+08-Apr-24 17:40:07 - [INFO] - Tracking data found!
+08-Apr-24 17:40:07 - [INFO] - 200 - Custom success 200 response sent
+08-Apr-24 17:40:07 - [INFO] - 127.0.0.1 - - [08/Apr/2024 17:40:07] "GET /api/v2/tracking/4f5a09abb3fbb7cd18b90c095739f7c4 HTTP/1.1" 200 -
+08-Apr-24 17:40:15 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_tracking_bp.py', reloading
+08-Apr-24 17:40:15 - [INFO] -  * Restarting with stat
+08-Apr-24 17:40:29 - [INFO] - Development environment configured.
+08-Apr-24 17:40:29 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+08-Apr-24 17:40:29 - [INFO] - [33mPress CTRL+C to quit[0m
+08-Apr-24 17:40:29 - [INFO] -  * Restarting with stat
+08-Apr-24 17:40:30 - [INFO] - Development environment configured.
+08-Apr-24 17:40:30 - [WARNING] -  * Debugger is active!
+08-Apr-24 17:40:30 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 17:40:31 - [INFO] - Tracking data found!
+08-Apr-24 17:40:31 - [INFO] - 200 - Custom success 200 response sent
+08-Apr-24 17:40:31 - [INFO] - 127.0.0.1 - - [08/Apr/2024 17:40:31] "GET /api/v2/tracking/4f5a09abb3fbb7cd18b90c095739f7c4 HTTP/1.1" 200 -
+08-Apr-24 17:40:35 - [INFO] - TicketTracking data updated
+08-Apr-24 17:40:35 - [INFO] - 200 - TicketTracking data updated successfully.
+08-Apr-24 17:40:35 - [INFO] - 127.0.0.1 - - [08/Apr/2024 17:40:35] "PUT /api/v2/tracking/4f5a09abb3fbb7cd18b90c095739f7c4/resolved_at HTTP/1.1" 200 -
+08-Apr-24 17:41:15 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_tracking_bp.py', reloading
+08-Apr-24 17:41:15 - [INFO] -  * Restarting with stat
+08-Apr-24 17:41:16 - [INFO] - Development environment configured.
+08-Apr-24 17:41:16 - [WARNING] -  * Debugger is active!
+08-Apr-24 17:41:16 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 17:41:17 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_tracking_bp.py', reloading
+08-Apr-24 17:41:18 - [INFO] -  * Restarting with stat
+08-Apr-24 17:46:18 - [INFO] - Development environment configured.
+08-Apr-24 17:46:18 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+08-Apr-24 17:46:18 - [INFO] - [33mPress CTRL+C to quit[0m
+08-Apr-24 17:46:18 - [INFO] -  * Restarting with stat
+08-Apr-24 17:46:19 - [INFO] - Development environment configured.
+08-Apr-24 17:46:19 - [WARNING] -  * Debugger is active!
+08-Apr-24 17:46:19 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 17:46:21 - [INFO] - TicketTracking data updated
+08-Apr-24 17:46:21 - [INFO] - 200 - TicketTracking data updated successfully.
+08-Apr-24 17:46:21 - [INFO] - 127.0.0.1 - - [08/Apr/2024 17:46:21] "PUT /api/v2/tracking/4f5a09abb3fbb7cd18b90c095739f7c4 HTTP/1.1" 200 -
+08-Apr-24 17:46:25 - [INFO] - Tracking data found!
+08-Apr-24 17:46:25 - [INFO] - 200 - Custom success 200 response sent
+08-Apr-24 17:46:25 - [INFO] - 127.0.0.1 - - [08/Apr/2024 17:46:25] "GET /api/v2/tracking/4f5a09abb3fbb7cd18b90c095739f7c4 HTTP/1.1" 200 -
+08-Apr-24 17:47:18 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_tracking_bp.py', reloading
+08-Apr-24 17:47:18 - [INFO] -  * Restarting with stat
+08-Apr-24 17:47:19 - [INFO] - Development environment configured.
+08-Apr-24 17:47:19 - [WARNING] -  * Debugger is active!
+08-Apr-24 17:47:19 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 17:47:20 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_tracking_bp.py', reloading
+08-Apr-24 17:47:20 - [INFO] -  * Restarting with stat
+08-Apr-24 17:47:21 - [INFO] - Development environment configured.
+08-Apr-24 17:47:21 - [WARNING] -  * Debugger is active!
+08-Apr-24 17:47:21 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 17:47:22 - [INFO] - TicketTracking data updated
+08-Apr-24 17:47:22 - [INFO] - 200 - TicketTracking data updated successfully.
+08-Apr-24 17:47:22 - [INFO] - 127.0.0.1 - - [08/Apr/2024 17:47:22] "PATCH /api/v2/tracking/4f5a09abb3fbb7cd18b90c095739f7c4 HTTP/1.1" 200 -
+08-Apr-24 17:47:30 - [INFO] - Tracking data found!
+08-Apr-24 17:47:30 - [INFO] - 200 - Custom success 200 response sent
+08-Apr-24 17:47:30 - [INFO] - 127.0.0.1 - - [08/Apr/2024 17:47:30] "GET /api/v2/tracking/4f5a09abb3fbb7cd18b90c095739f7c4 HTTP/1.1" 200 -
+08-Apr-24 17:47:36 - [INFO] - TicketTracking data updated
+08-Apr-24 17:47:36 - [INFO] - 200 - TicketTracking data updated successfully.
+08-Apr-24 17:47:36 - [INFO] - 127.0.0.1 - - [08/Apr/2024 17:47:36] "PATCH /api/v2/tracking/4f5a09abb3fbb7cd18b90c095739f7c4 HTTP/1.1" 200 -
+08-Apr-24 17:47:39 - [INFO] - Tracking data found!
+08-Apr-24 17:47:39 - [INFO] - 200 - Custom success 200 response sent
+08-Apr-24 17:47:39 - [INFO] - 127.0.0.1 - - [08/Apr/2024 17:47:39] "GET /api/v2/tracking/4f5a09abb3fbb7cd18b90c095739f7c4 HTTP/1.1" 200 -
+08-Apr-24 17:49:38 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_tracking_bp.py', reloading
+08-Apr-24 17:49:39 - [INFO] -  * Restarting with stat
+08-Apr-24 17:50:02 - [INFO] - Development environment configured.
+08-Apr-24 17:50:02 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+08-Apr-24 17:50:02 - [INFO] - [33mPress CTRL+C to quit[0m
+08-Apr-24 17:50:02 - [INFO] -  * Restarting with stat
+08-Apr-24 17:50:03 - [INFO] - Development environment configured.
+08-Apr-24 17:50:03 - [WARNING] -  * Debugger is active!
+08-Apr-24 17:50:03 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 17:50:07 - [INFO] - Tracking data found!
+08-Apr-24 17:50:07 - [INFO] - 200 - Custom success 200 response sent
+08-Apr-24 17:50:07 - [INFO] - 127.0.0.1 - - [08/Apr/2024 17:50:07] "GET /api/v2/tracking/4f5a09abb3fbb7cd18b90c095739f7c4 HTTP/1.1" 200 -
+08-Apr-24 17:50:19 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_tracking_bp.py', reloading
+08-Apr-24 17:50:19 - [INFO] -  * Restarting with stat
+08-Apr-24 17:50:20 - [INFO] - Development environment configured.
+08-Apr-24 17:50:20 - [WARNING] -  * Debugger is active!
+08-Apr-24 17:50:20 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 17:50:24 - [INFO] - TicketTracking data updated
+08-Apr-24 17:50:24 - [INFO] - 200 - TicketTracking data updated successfully.
+08-Apr-24 17:50:24 - [INFO] - 127.0.0.1 - - [08/Apr/2024 17:50:24] "PUT /api/v2/tracking/4f5a09abb3fbb7cd18b90c095739f7c4 HTTP/1.1" 200 -
+08-Apr-24 17:50:27 - [INFO] - Tracking data found!
+08-Apr-24 17:50:27 - [INFO] - 200 - Custom success 200 response sent
+08-Apr-24 17:50:27 - [INFO] - 127.0.0.1 - - [08/Apr/2024 17:50:27] "GET /api/v2/tracking/4f5a09abb3fbb7cd18b90c095739f7c4 HTTP/1.1" 200 -
+08-Apr-24 17:51:25 - [INFO] - TicketTracking data updated
+08-Apr-24 17:51:25 - [INFO] - 200 - TicketTracking data updated successfully.
+08-Apr-24 17:51:25 - [INFO] - 127.0.0.1 - - [08/Apr/2024 17:51:25] "PUT /api/v2/tracking/4f5a09abb3fbb7cd18b90c095739f7c4 HTTP/1.1" 200 -
+08-Apr-24 17:51:29 - [INFO] - Tracking data found!
+08-Apr-24 17:51:29 - [INFO] - 200 - Custom success 200 response sent
+08-Apr-24 17:51:29 - [INFO] - 127.0.0.1 - - [08/Apr/2024 17:51:29] "GET /api/v2/tracking/4f5a09abb3fbb7cd18b90c095739f7c4 HTTP/1.1" 200 -
+08-Apr-24 17:52:29 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_tracking_bp.py', reloading
+08-Apr-24 17:52:29 - [INFO] -  * Restarting with stat
+08-Apr-24 17:52:30 - [INFO] - Development environment configured.
+08-Apr-24 17:52:30 - [WARNING] -  * Debugger is active!
+08-Apr-24 17:52:30 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 17:52:31 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_tracking_bp.py', reloading
+08-Apr-24 17:52:31 - [INFO] -  * Restarting with stat
+08-Apr-24 17:52:32 - [INFO] - Development environment configured.
+08-Apr-24 17:52:32 - [WARNING] -  * Debugger is active!
+08-Apr-24 17:52:32 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 17:52:33 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_tracking_bp.py', reloading
+08-Apr-24 17:52:34 - [INFO] -  * Restarting with stat
+08-Apr-24 17:53:04 - [INFO] - Development environment configured.
+08-Apr-24 17:53:04 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+08-Apr-24 17:53:04 - [INFO] - [33mPress CTRL+C to quit[0m
+08-Apr-24 17:53:04 - [INFO] -  * Restarting with stat
+08-Apr-24 17:53:05 - [INFO] - Development environment configured.
+08-Apr-24 17:53:05 - [WARNING] -  * Debugger is active!
+08-Apr-24 17:53:05 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 17:53:08 - [INFO] - TicketTracking data updated
+08-Apr-24 17:53:08 - [INFO] - 200 - TicketTracking data updated successfully.
+08-Apr-24 17:53:08 - [ERROR] - TicketTrackingAPI->put Error occured while updating ticket data: ??? Unknown Error: None
+08-Apr-24 17:53:08 - [INFO] - 500 - Internal Server Error
+08-Apr-24 17:53:08 - [INFO] - 127.0.0.1 - - [08/Apr/2024 17:53:08] "[35m[1mPUT /api/v2/tracking/4f5a09abb3fbb7cd18b90c095739f7c4 HTTP/1.1[0m" 500 -
+08-Apr-24 17:53:28 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_tracking_bp.py', reloading
+08-Apr-24 17:53:28 - [INFO] -  * Restarting with stat
+08-Apr-24 17:53:29 - [INFO] - Development environment configured.
+08-Apr-24 17:53:29 - [WARNING] -  * Debugger is active!
+08-Apr-24 17:53:29 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 17:53:34 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_tracking_bp.py', reloading
+08-Apr-24 17:53:34 - [INFO] -  * Restarting with stat
+08-Apr-24 17:53:35 - [INFO] - Development environment configured.
+08-Apr-24 17:53:35 - [WARNING] -  * Debugger is active!
+08-Apr-24 17:53:35 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 17:53:38 - [INFO] - TicketTracking data updated
+08-Apr-24 17:53:38 - [INFO] - 200 - TicketTracking data updated successfully.
+08-Apr-24 17:53:38 - [ERROR] - TicketTrackingAPI->put Error occured while updating ticket data: ??? Unknown Error: None
+08-Apr-24 17:53:38 - [INFO] - 500 - Internal Server Error
+08-Apr-24 17:53:38 - [INFO] - 127.0.0.1 - - [08/Apr/2024 17:53:38] "[35m[1mPUT /api/v2/tracking/4f5a09abb3fbb7cd18b90c095739f7c4 HTTP/1.1[0m" 500 -
+08-Apr-24 17:53:47 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_tracking_bp.py', reloading
+08-Apr-24 17:53:48 - [INFO] -  * Restarting with stat
+08-Apr-24 17:53:48 - [INFO] - Development environment configured.
+08-Apr-24 17:53:49 - [WARNING] -  * Debugger is active!
+08-Apr-24 17:53:49 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 17:54:10 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+08-Apr-24 17:54:10 - [INFO] -  * Restarting with stat
+08-Apr-24 17:54:11 - [INFO] - Development environment configured.
+08-Apr-24 17:54:11 - [WARNING] -  * Debugger is active!
+08-Apr-24 17:54:11 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 17:54:12 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+08-Apr-24 17:54:12 - [INFO] -  * Restarting with stat
+08-Apr-24 17:57:21 - [INFO] - Development environment configured.
+08-Apr-24 17:57:21 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+08-Apr-24 17:57:21 - [INFO] - [33mPress CTRL+C to quit[0m
+08-Apr-24 17:57:21 - [INFO] -  * Restarting with stat
+08-Apr-24 17:57:22 - [INFO] - Development environment configured.
+08-Apr-24 17:57:22 - [WARNING] -  * Debugger is active!
+08-Apr-24 17:57:22 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 17:57:32 - [ERROR] - TicketCommentAPI->put : Error occured while fetching the comment : 'NoneType' object has no attribute 'commenter'
+08-Apr-24 17:57:32 - [INFO] - 500 - Internal Server Error
+08-Apr-24 17:57:32 - [INFO] - 127.0.0.1 - - [08/Apr/2024 17:57:32] "[35m[1mPUT /api/v2/ticket/comments/7aaef40c060d2e8be8e5e23e3f7ea0a9/18/23463b99b62a72f26ed677cc556c44e8 HTTP/1.1[0m" 500 -
+08-Apr-24 17:58:38 - [INFO] - 200 - Custom success 200 response sent
+08-Apr-24 17:58:38 - [INFO] - 127.0.0.1 - - [08/Apr/2024 17:58:38] "GET /api/v2/ticket/comments/7aaef40c060d2e8be8e5e23e3f7ea0a9 HTTP/1.1" 200 -
+08-Apr-24 17:59:09 - [INFO] - 127.0.0.1 - - [08/Apr/2024 17:59:09] "PUT /api/v2/ticket/comments/7aaef40c060d2e8be8e5e23e3f7ea0a9/6/23463b99b62a72f26ed677cc556c44e8 HTTP/1.1" 200 -
+08-Apr-24 17:59:17 - [INFO] - 200 - Custom success 200 response sent
+08-Apr-24 17:59:17 - [INFO] - 127.0.0.1 - - [08/Apr/2024 17:59:17] "GET /api/v2/ticket/comments/7aaef40c060d2e8be8e5e23e3f7ea0a9 HTTP/1.1" 200 -
+08-Apr-24 17:59:27 - [INFO] - Commented successfully.
+08-Apr-24 17:59:27 - [INFO] - 200 - Ticket comment added successfully.
+08-Apr-24 17:59:27 - [INFO] - 127.0.0.1 - - [08/Apr/2024 17:59:27] "POST /api/v2/ticket/comments/7aaef40c060d2e8be8e5e23e3f7ea0a9 HTTP/1.1" 200 -
+08-Apr-24 17:59:31 - [INFO] - 200 - Custom success 200 response sent
+08-Apr-24 17:59:31 - [INFO] - 127.0.0.1 - - [08/Apr/2024 17:59:31] "GET /api/v2/ticket/comments/7aaef40c060d2e8be8e5e23e3f7ea0a9 HTTP/1.1" 200 -
+08-Apr-24 17:59:45 - [INFO] - Comment updated successfully.
+08-Apr-24 17:59:45 - [INFO] - 200 - Ticket comment updated successfully.
+08-Apr-24 17:59:45 - [ERROR] - TicketCommentAPI->put : Error occured while updating comment : ??? Unknown Error: None
+08-Apr-24 17:59:45 - [INFO] - 500 - Error occured while updating comment
+08-Apr-24 17:59:45 - [INFO] - 127.0.0.1 - - [08/Apr/2024 17:59:45] "[35m[1mPUT /api/v2/ticket/comments/7aaef40c060d2e8be8e5e23e3f7ea0a9/7/23463b99b62a72f26ed677cc556c44e8 HTTP/1.1[0m" 500 -
+08-Apr-24 18:00:04 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/app.py', reloading
+08-Apr-24 18:00:04 - [INFO] -  * Restarting with stat
+08-Apr-24 18:00:05 - [INFO] - Development environment configured.
+08-Apr-24 18:00:05 - [WARNING] -  * Debugger is active!
+08-Apr-24 18:00:05 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 19:08:49 - [INFO] - TicketTracking data updated
+08-Apr-24 19:08:49 - [INFO] - 200 - TicketTracking data updated successfully.
+08-Apr-24 19:08:49 - [ERROR] - TicketTrackingAPI->put Error occured while updating ticket data: ??? Unknown Error: None
+08-Apr-24 19:08:49 - [INFO] - 500 - Internal Server Error
+08-Apr-24 19:08:49 - [INFO] - 127.0.0.1 - - [08/Apr/2024 19:08:49] "[35m[1mPUT /api/v2/tracking/4f5a09abb3fbb7cd18b90c095739f7c4 HTTP/1.1[0m" 500 -
+08-Apr-24 19:11:05 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_tracking_bp.py', reloading
+08-Apr-24 19:11:05 - [INFO] -  * Restarting with stat
+08-Apr-24 19:11:07 - [INFO] - Development environment configured.
+08-Apr-24 19:11:07 - [WARNING] -  * Debugger is active!
+08-Apr-24 19:11:07 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 19:11:08 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_tracking_bp.py', reloading
+08-Apr-24 19:11:08 - [INFO] -  * Restarting with stat
+08-Apr-24 19:11:09 - [INFO] - Development environment configured.
+08-Apr-24 19:11:10 - [WARNING] -  * Debugger is active!
+08-Apr-24 19:11:10 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 19:11:11 - [INFO] - TicketTracking data updated
+08-Apr-24 19:11:11 - [INFO] - 200 - TicketTracking data updated successfully.
+08-Apr-24 19:11:11 - [ERROR] - TicketTrackingAPI->put Error occured while updating ticket data: ??? Unknown Error: None
+08-Apr-24 19:11:11 - [INFO] - 500 - Internal Server Error
+08-Apr-24 19:11:11 - [INFO] - 127.0.0.1 - - [08/Apr/2024 19:11:11] "[35m[1mPUT /api/v2/tracking/4f5a09abb3fbb7cd18b90c095739f7c4 HTTP/1.1[0m" 500 -
+08-Apr-24 19:11:22 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_tracking_bp.py', reloading
+08-Apr-24 19:11:22 - [INFO] -  * Restarting with stat
+08-Apr-24 19:11:23 - [INFO] - Development environment configured.
+08-Apr-24 19:11:23 - [WARNING] -  * Debugger is active!
+08-Apr-24 19:11:23 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 19:11:43 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_tracking_bp.py', reloading
+08-Apr-24 19:11:44 - [INFO] -  * Restarting with stat
+08-Apr-24 19:11:45 - [INFO] - Development environment configured.
+08-Apr-24 19:11:45 - [WARNING] -  * Debugger is active!
+08-Apr-24 19:11:45 - [INFO] -  * Debugger PIN: 299-872-502
+08-Apr-24 19:11:45 - [INFO] - TicketTracking data updated
+08-Apr-24 19:11:45 - [INFO] - 200 - TicketTracking data updated successfully.
+08-Apr-24 19:11:45 - [ERROR] - TicketTrackingAPI->put Error occured while updating ticket data: ??? Unknown Error: None
+08-Apr-24 19:11:45 - [INFO] - 500 - Internal Server Error
+08-Apr-24 19:11:45 - [INFO] - 127.0.0.1 - - [08/Apr/2024 19:11:45] "[35m[1mPUT /api/v2/tracking/4f5a09abb3fbb7cd18b90c095739f7c4 HTTP/1.1[0m" 500 -
+08-Apr-24 19:11:52 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_tracking_bp.py', reloading
+08-Apr-24 19:11:52 - [INFO] -  * Restarting with stat
+08-Apr-24 19:11:53 - [INFO] - Development environment configured.
+08-Apr-24 19:11:53 - [WARNING] -  * Debugger is active!
+08-Apr-24 19:11:53 - [INFO] -  * Debugger PIN: 299-872-502
