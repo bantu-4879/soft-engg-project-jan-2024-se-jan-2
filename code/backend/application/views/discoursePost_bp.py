@@ -278,17 +278,12 @@ class DiscourseTopics(Resource):
                 f"Discourse API TicketAPI->post : Error occured while getting topic from discourse : {e}"
             )    
             raise InternalServerError(status_msg="Cannot get topic from discourse")
+        response=response.json()
+        print(response)
+        if(response["status"]==200):
+            return success_200_custom(data=response)
         else:
-            response=response.json()
-            print(response)
-            if(response["status"]==200):
-                return success_200_custom(data=response)
-            else:
-                raise BadRequest(status_code=401,status_msg="Cannot load topic")
-
-
-        
-        
+            raise BadRequest(status_code=401,status_msg="Cannot load topic")
         
 
     @token_required
@@ -435,6 +430,12 @@ class TicketThread(Resource):
 discoursePost_api.add_resource(AllCategories,"/categories")
 discoursePost_api.add_resource(Categories,"/category","/category/<int:category_id>")
 discoursePost_api.add_resource(Tags,'/tags')
+discoursePost_api.add_resource(
+    DiscourseTopics,
+    '/topic/<string:user_id>/<int:topic_id>',
+   '/topic/<string:user_id>/<string:ticket_id>'
+)
+
 
 
 
