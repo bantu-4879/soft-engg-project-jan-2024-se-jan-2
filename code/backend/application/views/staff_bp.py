@@ -25,7 +25,7 @@ staff_util = StaffUtils()
 
 class StaffAPI(Resource):
     @token_required
-    @users_required(users=["Staff"])
+    @users_required(users=["staff"])
     def get(self, user_id):
         """
         Usage
@@ -59,7 +59,7 @@ class StaffAPI(Resource):
                         resolved_by=user_id
                     ).count()
                     n_total_unresolved_tickets = Ticket.query.filter_by(
-                        ticket_status="pending"
+                        ticket_status="Open"
                     ).count()
                     staff_dict = user.to_dict()
                     staff_dict["n_tickets_resolved"] = n_tickets_resolved
@@ -74,7 +74,7 @@ class StaffAPI(Resource):
                 raise NotFoundError(status_msg="Support staff does not exists")
 
     @token_required
-    @users_required(users=["Staff"])
+    @users_required(users=["staff"])
     def put(self, user_id):
         """
         Usage

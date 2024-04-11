@@ -27,7 +27,7 @@ student_util = StudentUtils()
 
 class StudentAPI(Resource):
     @token_required
-    @users_required(users=["Student"])
+    @users_required(users=["student"])
     def get(self, user_id):
         """
         Usage
@@ -82,7 +82,7 @@ class StudentAPI(Resource):
                 raise NotFoundError(status_msg="Student user id does not exists")
 
     @token_required
-    @users_required(users=["Student"])
+    @users_required(users=["student"])
     def put(self, user_id):
         """
         Usage

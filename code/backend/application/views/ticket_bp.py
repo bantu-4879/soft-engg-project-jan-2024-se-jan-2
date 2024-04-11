@@ -168,9 +168,7 @@ class TicketUtils(UserUtils):
         filtered_tickets = []
         if tags:
             for ticket in all_tickets:
-                ticket_tags = ticket["tags"].split(
-                    ","
-                )  # converts tags list into a list
+                ticket_tags = ticket["tags_list"].split(',') #converts tags list into a list
                 if set(ticket_tags).intersection(set(tags)):
                     filtered_tickets.append(ticket)
 
@@ -212,7 +210,7 @@ class TicketUtils(UserUtils):
         # sort (if present)
         if sortby:
             # sortby should be 'created_on', 'resolved_on', 'votes'
-            if sortby not in ["created_at", "resolved_on", "votes"]:
+            if sortby not in ["created_at", "resolved_on"]:
                 sortby = "created_at"
         else:
             sortby = "created_at"
@@ -290,8 +288,8 @@ ticket_utils = TicketUtils()
 
 
 class TicketAPI(Resource):
-    @token_required
-    @users_required(users=["Student", "Staff", "Admin"])
+    #@token_required
+    @users_required(users=["student", "staff", "admin"])
     def get(self, ticket_id="", user_id=""):
         """
         Usage
@@ -322,7 +320,7 @@ class TicketAPI(Resource):
         else:
             if ticket:
                 user = User.query.filter_by(id=user_id).first()
-                if user_id == ticket.user_id or user.role == "Staff":
+                if user_id == ticket.user_id or user.role == "staff":
                     # the ticket and its user are matched or its a support staff
                     # convert to list of dict
                     ticket_dict = ticket_utils.convert_ticket_to_dict(ticket)
@@ -331,7 +329,7 @@ class TicketAPI(Resource):
                 raise NotFoundError(status_msg="Ticket does not exists")
 
     @token_required
-    @users_required(users=["Student"])
+    @users_required(users=["student"])
     def post(self, user_id):
         """
         Usage
@@ -349,10 +347,9 @@ class TicketAPI(Resource):
         details = {
             "title": "",
             "description": "",
-            "ticket_priority": "",
-            "tag": "",
-            "ticket_status": "Open",
-            "solution_satisfaction": "False",
+            "priority": "",
+            "status":"Open",
+            "solution_satisfaction":"False"
         }
 
         # check user_id
@@ -374,19 +371,21 @@ class TicketAPI(Resource):
         try:
             form = request.get_json()
             attachments = form.get("attachments", [])
+            tags_list = form.get("tags_list", [])
             for key in details:
                 value = form.get(key, "")
                 if ticket_utils.is_blank(value):
                     value = ""
                 details[key] = value
-            print(details)
+
+            
         except Exception as e:
             logger.error(
                 f"TicketAPI->post : Error occured while getting form data : {e}"
             )
             raise InternalServerError
         else:
-            if details["title"] == "" or details["tag"] == "":
+            if details["title"] == "" or tags_list == 0:
                 raise BadRequest(
                     status_msg=f"Ticket title and at least one tag is required"
                 )
@@ -395,16 +394,25 @@ class TicketAPI(Resource):
             details["ticket_id"] = ticket_id
             details["created_by"] = user_id
             details["created_on"] = time_to_str(datetime.datetime.now())
+            details['tags_list'] = ", ".join(tags_list)
+
+            if(details["priority"]=="low"):
+                ticket_priority=0.15
+            if(details["priority"]=="medium"):
+                ticket_priority=0.50
+            if(details["priority"]=="high"):
+                ticket_priority=0.75
+
             ticket = Ticket(
-                id=details["ticket_id"],
-                title=details["title"],
-                description=details["description"],
-                ticket_priority=details["ticket_priority"],
-                tags_list=details["tag"],
-                ticket_status="Open",
-                solution_satisfaction=False,
-                created_at=details["created_on"],
-                user_id=details["created_by"],
+                id = details["ticket_id"],
+                title = details["title"],
+                description = details["description"],
+                ticket_priority = ticket_priority,
+                tags_list = details["tags_list"],
+                ticket_status = "Open",
+                solution_satisfaction = False,
+                created_at = details["created_on"],
+                user_id = details["created_by"]
             )
             ticket_data = TicketData(
                 ticket_id=details["ticket_id"],
@@ -432,7 +440,7 @@ class TicketAPI(Resource):
                 raise Success_200(status_msg=f"Ticket created successfully. {message}")
 
     @token_required
-    @users_required(users=["Student", "Staff"])
+    @users_required(users=["student", "staff"])
     def put(self, ticket_id="", user_id=""):
         """
         Usage
@@ -455,10 +463,7 @@ class TicketAPI(Resource):
         details = {
             "title": "",
             "description": "",
-            "tags": "",
             "priority": "",
-            "status": "",
-            "votes": 0,
             "solution": "",
             "inProgress": " ",
         }
@@ -470,6 +475,8 @@ class TicketAPI(Resource):
         try:
             form = request.get_json()
             attachments = form.get("attachments", [])
+            tags_list = form.get("tags_list", [])
+
             for key in details:
                 value = form.get(key, "")
                 if ticket_utils.is_blank(value):
@@ -504,34 +511,35 @@ class TicketAPI(Resource):
 
             role = user.role.name
 
-            if role == "Staff" or (role == "Student" and user_id == ticket.user_id):
+            if role == "staff" or (
+                role == "student" and user_id == ticket.user_id
+            ):
                 # add attachments now
                 status, message = ticket_utils.save_ticket_attachments(
                     attachments, ticket_id, user_id, operation="update_ticket"
                 )
                 # solution
 
-            if (
-                role == "Student"
-            ):  # it would be "Student" but for the time being changed it to Admin
+            if role == "student":   #it would be "Student" but for the time being changed it to Admin
                 if user_id == ticket.user_id:
                     # student is creator of the ticket
-                    if details["title"] == "" or details["tags"] == "":
+                    if details["title"] == "" or len(tags_list) == 0:
                         raise BadRequest(
                             status_msg=f"Ticket title and at least one tag is required"
                         )
 
                     ticket.title = details["title"]
                     ticket.description = details["description"]
-                    ticket.tags_list = details["tags"]
+                    ticket.tags_list = ", ".join(tags_list)
                     priority = details["priority"]
-                    ticket.ticket_status = details["status"]
-                    if priority == "low":
-                        ticket.ticket_priority = 0.15
-                    if priority == "medium":
-                        ticket.ticket_priority = 0.50
-                    if priority == "high":
-                        ticket.ticket_priority = 0.75
+                    
+
+                    if(priority=="low"):
+                        ticket.ticket_priority=0.15
+                    if(priority=="medium"):
+                        ticket.ticket_priority=0.50
+                    if(priority=="high"):
+                        ticket.ticket_priority=0.75
                     db.session.add(ticket)
                     db.session.commit()
 
@@ -554,26 +562,21 @@ class TicketAPI(Resource):
                         db.session.commit()
                         raise Success_200(status_msg="Successfully upvoted ticket.")
 
-            if role == "Staff":
-                ticket_data = TicketData.query.filter_by(ticket_id=ticket.id).first()
+            if role == "staff":
+                ticket_data=TicketData.query.filter_by(ticket_id=ticket.id).first()
 
-                if details["inProgress"] == "yes":
-                    ticket_data.inProgress = time_to_str(datetime.datetime.now())
+                
+                sol = details["solution"]
+                if ticket_utils.is_blank(sol):
+                    raise BadRequest(status_msg="Solution can not be empty")
+                else:
+                    ticket.solution = sol
+                    ticket.ticket_status = "Resolved"
+                    ticket.resolved_by = user_id
+                    db.session.add(ticket)
                     db.session.add(ticket_data)
                     db.session.commit()
-
-                elif details["inProgress"] == "no":
-                    sol = details["Solution"]
-                    if ticket_utils.is_blank(sol):
-                        raise BadRequest(status_msg="Solution can not be empty")
-                    else:
-                        ticket.solution = sol
-                        ticket.ticket_status = "Resolved"
-                        ticket.resolved_by = user_id
-                        ticket_data.resolved_at = time_to_str(time.time())
-                        db.session.add(ticket)
-                        db.session.add(ticket_data)
-                        db.session.commit()
+                    raise Success_200(status_msg=f"Ticket solved successfully.")
 
                     # send notification to user who created as well as voted , separately handled.
 
@@ -583,8 +586,8 @@ class TicketAPI(Resource):
             #         status_msg="Admin don't have access to this endpoint."
             #     )
 
-    # @token_required
-    # @users_required(users=["Student"])
+    @token_required
+    @users_required(users=["student"])
     def delete(self, ticket_id="", user_id=""):
         """
         Usage
@@ -645,7 +648,7 @@ class TicketAPI(Resource):
 
 class AllTicketsAPI(Resource):
     @token_required
-    @users_required(users=["Student", "Staff", "Admin"])
+    @users_required(users=["student", "staff", "admin"])
     def get(self):
         """
         Usage
@@ -703,7 +706,7 @@ class AllTicketsAPI(Resource):
 # Also had other APIs
 class AllTicketsUserAPI(Resource):
     @token_required
-    @users_required(users=["Student", "Staff", "Admin"])
+    @users_required(users=["student", "staff", "admin"])
     def get(self, user_id=""):
         # tickets retrieved based on user role.
 
@@ -727,7 +730,7 @@ class AllTicketsUserAPI(Resource):
         # verify user role
         role = user.role.name
 
-        if role == "Student":
+        if role == "student":
             # student : all tickets created or upvoted by him/her
             # status, priority, sort, filter will be as per filter options received
             # upvoted ticket can be checked by comparing created_by with user_id
@@ -742,7 +745,7 @@ class AllTicketsUserAPI(Resource):
                 tick = ticket_utils.convert_ticket_to_dict(ticket)
                 all_tickets.append(tick)
 
-        if role == "Staff":
+        if role == "staff":
             # support : all tickets resolvedby him/her
             # get all pending tickets
             # status, priority, sort, filter will be as per filter options received
@@ -759,7 +762,7 @@ class AllTicketsUserAPI(Resource):
                 tick = ticket_utils.convert_ticket_to_dict(ticket)
                 all_tickets.append(tick)
 
-        if role == "Admin":
+        if role == "admin":
             # admin : get all tickets resolved globally (for creating faq)
             # status, priority, sort, filter will be as per filter options received
             user_tickets = Ticket.query.filter_by(ticket_status="Resolved").all()

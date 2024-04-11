@@ -123,8 +123,8 @@ faq_util = FAQUtils()
 
 
 class FAQAPI(Resource):
-    #@token_required
-    #@users_required(users=["student", "support", "admin"])
+    @token_required
+    @users_required(users=["student", "support", "admin"])
     def get(self):
         # get all faq and return
         """
@@ -154,23 +154,26 @@ class FAQAPI(Resource):
             logger.error(f"FAQAPI->get : Error occured while fetching FAQ data : {e}")
             raise InternalServerError
 
-    #@token_required
-    #@users_required(users=["admin"])
+    @token_required
+    @users_required(users=["admin"])
     def post(self):
         details = {
             "question": "",
             "solution": "",
-            "tags_list": "",
             "created_by": "",
         }
         try:
             form = request.get_json()
             attachments = form.get("attachments", [])
+            tags_list = form.get("tags_list", [])
             for key in details:
                 value = form.get(key, "")
                 if faq_util.is_blank(value):
                     value = ""
                 details[key] = value
+
+            details['tags_list'] = ", ".join(tags_list)
+
         except Exception as e:
             logger.error(f"FAQAPI->post : Error occured while getting form data : {e}")
             raise InternalServerError
@@ -181,7 +184,6 @@ class FAQAPI(Resource):
                 )
             faq_id = faq_util.generate_faq_id(details["question"])
             details["id"] = faq_id
-            # details["created_by"] = user_id
             faq = FAQ(**details)
             try:
                 db.session.add(faq)

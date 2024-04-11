@@ -137,7 +137,7 @@ class Login(Resource):
                     if password == user.password:
                         print(user.role.name)
                         # password is correct so log in user if user is verified
-                        if user.is_approved or user.role.name == "Admin":
+                        if user.is_approved or user.role.name == "admin":
                             #  generate token
                             token_expiry_on = int(int(time.time()) + TOKEN_VALIDITY)
                             web_token = auth_utils.generate_web_token(
@@ -297,7 +297,8 @@ class NewUsers(Resource):
         # get new users data from auth table
         try:
             all_users = (
-                User.query.join(User.role).filter(Role.name.in_(["Student", "Staff"])).all()
+                User.query.join(User.role).filter(Role.name.in_(["student", "staff"])).filter(User.is_approved == 0).all()
+
             )
         except Exception as e:
             logger.error(f"NewUsers->get : Error occured while fetching db data : {e}")

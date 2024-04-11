@@ -133,22 +133,39 @@ class UserUtils:
         user_id = hashlib.md5(email.encode()).hexdigest()
         return user_id
 
-    # def convert_user_data_to_dict(self, user) -> dict:
-    #     user_dict = vars(user)
-    #     if "_sa_instance_state" in user_dict:
-    #         del user_dict["_sa_instance_state"]
-    #     if "password" in user_dict:
-    #         del user_dict["password"]
-    #     profile_pic = user_dict["profile_photo_loc"]
-    #     if is_img_path_valid(profile_pic):
-    #         img_base64 = convert_img_to_base64(profile_pic)
-    #         if img_base64 != "":
-    #             user_dict["profile_photo_loc"] = img_base64
-    #         else:
-    #             user_dict["profile_photo_loc"] = ""
-    #     else:
-    #         user_dict["profile_photo_loc"] = ""
-    #     return user_dict
+    def convert_user_data_to_dict(self, user) -> dict:
+        user_dict = vars(user)
+        if "_sa_instance_state" in user_dict:
+            del user_dict["_sa_instance_state"]
+        if "password" in user_dict:
+            del user_dict["password"]
+
+        if hasattr(user, 'authentication'):
+            auth_data = vars(user.authentication)
+            token_data = {
+                'token': auth_data.get('token', ''),
+                'token_created': auth_data.get('token_created', 0),
+                'token_expired': auth_data.get('token_expired', 0)
+            }
+            user_dict['authentication'] = token_data
+
+        if hasattr(user, 'role'):
+            role_data = vars(user.role)
+            rol_data = {
+                'role_name': role_data.get('name', ''),
+            }
+            user_dict['role'] = rol_data
+
+        profile_pic = user_dict["profile_photo_loc"]
+        if is_img_path_valid(profile_pic):
+            img_base64 = convert_img_to_base64(profile_pic)
+            if img_base64 != "":
+                user_dict["profile_photo_loc"] = img_base64
+            else:
+                user_dict["profile_photo_loc"] = ""
+        else:
+            user_dict["profile_photo_loc"] = ""
+        return user_dict
 
     def update_user_profile_data(self, user_id, form):
         # check url data
