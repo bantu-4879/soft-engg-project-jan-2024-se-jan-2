@@ -122,39 +122,6 @@ export default {
       this.form.password = btoa(this.form.password);
       this.form.retype_password = btoa(this.form.retype_password);
 
-      fetch(common.DISCOURSE_REGISTER_API + '/discourseRegister', {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          email: this.form.email,
-          password: this.form.password,
-          username: this.form.first_name + "_" + this.form.second_name,
-          name: this.form.first_name + " " + this.form.second_name
-        }),
-      })
-        .then((response) => response.json())
-        .then((data) => {
-          if (data.category == "success") {
-            this.flashMessage.success({
-              message: data.message,
-            });
-          }
-          if (data.category == "error") {
-            this.flashMessage.error({
-              message: data.message,
-            });
-          }
-        })
-        .catch((error) => {
-          this.$log.error(`Error : ${error}`);
-          this.flashMessage.error({
-            message: "Internal Server Error",
-          });
-        });
-
-
       fetch(common.AUTH_API_REGISTER, {
         method: "POST",
         headers: {
@@ -168,6 +135,7 @@ export default {
             this.flashMessage.success({
               message: data.message,
             });
+
             this.$router.push("/login");
           }
           if (data.category == "error") {

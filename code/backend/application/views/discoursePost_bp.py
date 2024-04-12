@@ -28,6 +28,8 @@ discoursePost_api=Api(discoursePost_bp)
 discourseUserUtils=DiscourseUserUtils()
 TicketUtils=DiscourseUserUtils()
 class AllCategories(Resource):
+TicketUtils=DiscourseUserUtils()
+class AllCategories(Resource):
     """
     usage 
     ------
@@ -41,10 +43,13 @@ class AllCategories(Resource):
     """
     #@token_required
     #@users_required(users=['Student','Staff','Admin'])
+    #@token_required
+    #@users_required(users=['Student','Staff','Admin'])
     def get(self):
         headers={
             'Api-Key':API_KEY,
             'Api-Username':API_USERNAME,
+            "include_subcategories":'true'
             "include_subcategories":'true'
         }
         url=f'{DISCOURSE_BASE_URL}/categories.json'
@@ -61,6 +66,7 @@ class AllCategories(Resource):
                 _d["color"] = category["color"]
                 _d["text_color"] = category["text_color"]
                 _d["description"] = category["description"]
+                _d["slug"]=category["slug"]
                 data.append(_d)
             return success_200_custom(data=data)
         else:
@@ -90,6 +96,7 @@ class Categories(Resource):
         response=requests.get(url,headers=headers)
         if(response.status_code == 200):
             response=response.json()
+            print(response)
             category=response["category"]
             data={}
             data["id"] = category["id"]
@@ -97,6 +104,7 @@ class Categories(Resource):
             data["color"] = category["color"]
             data["text_color"] = category["text_color"]
             data["description"] = category["description"]
+            data["slug"]=category["slug"]
             return success_200_custom(data=data)
         else:
             raise NotFoundError(status_msg="could not load category data")
@@ -169,6 +177,48 @@ class Categories(Resource):
                     return True
             return False
     
+class CategoryTopicsAll(Resource):
+    """
+    usage 
+    ------
+    This gives the list of principal categories and then let the students create post in that category.
+    
+    parameters 
+    -------
+    this takes nothing it returns the list of categories. 
+
+    
+    """
+    #@token_required
+    #@users_required(users=['Student','Staff','Admin'])
+    def get(self,slug,category_id):
+        headers={
+            'Api-Key':API_KEY,
+            'Api-Username':API_USERNAME
+        }
+        url=f'{DISCOURSE_BASE_URL}/c/{slug}/{category_id}.json'
+        try:
+            response=requests.get(url,headers=headers)
+        except Exception as e:
+            logger.error(
+                f"DiscourseCategoryTopics Lists -> Error occured while getting form data : {e} "
+            )
+        if(response.status_code == 200):
+            response=response.json()
+            print(response.keys())
+            topics=response["topic_list"]["topics"]
+            data=[]
+            for topic in topics:
+                _d={}
+                _d["id"]=topic["id"]
+                _d["title"]=topic["title"]
+                _d["posts_count"]=topic["posts_count"]
+                _d["created_at"]=topic["created_at"]
+                _d["last_modified_at"]=topic["last_posted_at"]
+                data.append(_d)
+            return success_200_custom(data=data)
+        else:
+            raise NotFoundError(status_msg="could not load categories")
 
 class Tags(Resource):
     def __init__(self,user_id=None):
@@ -201,22 +251,28 @@ class Tags(Resource):
     def post(self):
         try:
             form = request.get_json()
-            tag_name = form.get("name", "")
+            tags=form.get("tags",[])
         except Exception as e:
             logger.error(f"DiscourseTagCreation: Post ->Error occured while getting form data : {e} ")
             raise InternalServerError
 
         # Validate form data
-        if discourseUserUtils.is_blank(tag_name):
-            raise BadRequest(status_msg=f"Tag Name cannot be empty")
+        if len(tags)==0:
+            raise BadRequest(status_msg=f"Tag Names List cannot be empty")
 
+        default_category=14
         # Create payload
         payload = {
-            "name": tag_name
+            "title":"Creating sample tags for general use in the category created for this App.",
+            "raw":"This post is being used for creating tags which can be used by students to create posts.",
+            "category":default_category,
+            "skip_validations":'true',
+            "auto_track":'true',
+            "tags":tags
         }
         # Send request to Discourse API
         headers = {'Api-Key': API_KEY, 'Api-Username': API_USERNAME}
-        url = f'{DISCOURSE_BASE_URL}/tag_groups.json'
+        url = f'{DISCOURSE_BASE_URL}/posts.json'
         try:
             response = requests.post(url, json=payload, headers=headers)
             response_data = response.json()
@@ -260,7 +316,7 @@ class DiscourseTopics(Resource):
         else:
             raise BadRequest(status_msg="The user is not registered on Discourse register on discourse first.")
         
-        if TicketUtils.is_blank(user_id) or TicketUtils.is_blank(topic_id):
+        if TicketUtils.is_blank(user_id):
             raise BadRequest(status_msg="User id or Topic Id is missing for discourse.")
         
         headers={
@@ -272,23 +328,18 @@ class DiscourseTopics(Resource):
         }
         url=f"{DISCOURSE_BASE_URL}/t/{topic_id}.json"
         try:
-            response=requests.get(url,headers=headers,payload=payload) 
+            response=requests.get(url,headers=headers) 
         except Exception as e:
             logger.error(
                 f"Discourse API TicketAPI->post : Error occured while getting topic from discourse : {e}"
             )    
             raise InternalServerError(status_msg="Cannot get topic from discourse")
-        else:
+        if(response.status_code==200):
             response=response.json()
             print(response)
-            if(response["status"]==200):
-                return success_200_custom(data=response)
-            else:
-                raise BadRequest(status_code=401,status_msg="Cannot load topic")
-
-
-        
-        
+            return success_200_custom(data=response)
+        else:
+            raise BadRequest(status_code=401,status_msg="Cannot load topic")
         
 
     @token_required
@@ -317,6 +368,7 @@ class DiscourseTopics(Resource):
             "created_at":"",
             "reply_to_post_number":"",
             "embed_url":"",
+            "tags":""
 
         }
         try:
@@ -361,6 +413,8 @@ class DiscourseTopics(Resource):
             )
             raise InternalServerError
         else:
+            if(ticket.user_id != user_id):
+                raise BadRequest(status_code=403,status_msg="You cannot create discourse thread for this topic.")
             logger.info("Uploading the attachments to discourse.")
             header1={
                 'Api-Key':API_KEY,
@@ -399,7 +453,7 @@ class DiscourseTopics(Resource):
                 'Api-Username':username,
                 'Content-type':'application/json'
             }
-            default_category=4
+            default_category=14
             payload={
                 "title":details["title"],
                 "raw":details["raw"],
@@ -408,18 +462,128 @@ class DiscourseTopics(Resource):
                 "sub_category":details["sub_category"],
                 "reply_to_post_number":details["reply_to_post_number"],
                 "created_at":details["created_at"],
-                "embed_url":details["embed_url"]
+                "embed_url":details["embed_url"],
+                "tags[]":details["tags"]
             }
             headers={
                 'Api-Key':API_KEY,
                 'Api-Username':username,
                 'Content-Type':'application/x-www-form-urlencoded'
             }
+            url2=f"{DISCOURSE_BASE_URL}/posts.json"
+            try:
+                response=requests.post(url=url2,headers=header,json=payload)
+            except Exception as e:
+                    logger.error(
+                            f"Discourse API TicketAPI->post : Error occured while uploading image {file_name}to discourse  : {e}"
+                        )    
+                    raise InternalServerError(status_msg="Cannot upload image to discourse.")
+            if(response.status_code==200):
+                response=response.json()
+                ticket.thread_link=response["id"]
+                try:
+                    db.session.add(ticket)
+                    db.session.commit()
+                except Exception as e:
+                    logger.error(
+                        f"Discourse API TicketAPI->post : Error while adding thread link to discourse: {e}"
+                    )
+                    raise InternalServerError(status_msg="Cannot add the discourse topic data to database.")
+
+                data={}
+                data["id"] = response["id"]
+                data["name"] = response["name"]
+                data["created_at"] = response["created_at"]
+                data["raw"] = response["raw"]
+                return success_200_custom(data=data)
+            else:
+                raise BadRequest(status_code=403,status_msg="Cannot create post.pictures uploaded")
 
 
+    @token_required
+    @users_required(users=['Student','Staff'])
+    def delete(self,user_id,topic_id):
+        """
+        Usage
+        -----
+        Deletes a single topic from its topic Id , if it is by that user or the user is staff.
 
+        Parameters
+        ----------
+        parameters sent in the path.
 
-class TicketThread(Resource):
+        Returns
+        -------
+        """
+        try:
+            user=User.query.filter_by(id=user_id).first()
+            if not user:
+                raise NotFoundError(status_msg="User does not exist.")
+        except Exception as e:
+            logger.error(
+                f"Discourse API TicketAPI->delete : Error occured while getting the user : {e}"
+            )
+            raise InternalServerError
+        if (user.discourse_username):
+            username=user.discourse_username
+        else:
+            raise BadRequest(status_msg="The user is not registered on Discourse register on discourse first.")
+        
+        if TicketUtils.is_blank(user_id):
+            raise BadRequest(status_msg="User id or Topic Id is missing for discourse.")
+        headers={
+            'Api-Key':API_KEY,
+            'Api-Username':username
+        }
+        payload={
+            'topic_id':topic_id
+        }
+        url=f"{DISCOURSE_BASE_URL}/t/{topic_id}.json"
+        try:
+            response=requests.get(url,headers=headers) 
+        except Exception as e:
+            logger.error(
+                f"Discourse API TicketAPI->delete : Error occured while deleting topic from discourse : {e}"
+            )    
+            raise InternalServerError(status_msg="Cannot delete topic from discourse")
+        if(response.status_code==200):
+            response=response.json()
+            post_username=response["name"]
+            if(post_username!=username):
+                if(user.role.name !='staff'):
+                    raise BadRequest(status_code=403,status_msg="You cannot delete this post.")
+                else:
+                    header2={
+                        'Api-Key':API_KEY,
+                        'Api-Username':API_USERNAME
+                    }
+                    try:
+                        response=requests.delete(url=url,headers=header2)
+                    except Exception as e:
+                        logger.error(
+                f"Discourse API TicketAPI->delete : Error occured while deleting topic from discourse : {e}"
+            )       
+                    if(response.status_code==200):
+                        raise Success_200(status_code=response.status_code,response_msg="Successfully deleted the thread")
+                    else:
+                        raise InternalServerError(status_msg="Cannot delete the topic.")
+            else:
+                try:
+                    response=requests.delete(url=url,headers=headers)
+                except Exception as e:
+                    logger.error(
+                        f"Discourse API TicketAPI->delete : Error occured while deleting topic from discourse : {e}"
+                    )
+                if(response.status_code==200):
+                    raise Success_200(status_code=response.status_code,response_msg="Successfully deleted the thread")
+                else:
+                    raise InternalServerError(status_msg="Cannot delete the topic.")
+        else:
+            raise BadRequest(status_code=401,status_msg="Cannot load topic with this topic id")
+        
+        
+
+class DiscoursePosts(Resource):
     @token_required
     @users_required(users=['Student','Staff','Admin'])
     def post(self):
@@ -435,4 +599,13 @@ class TicketThread(Resource):
 discoursePost_api.add_resource(AllCategories,"/categories")
 discoursePost_api.add_resource(Categories,"/category","/category/<int:category_id>")
 discoursePost_api.add_resource(Tags,'/tags')
+discoursePost_api.add_resource(
+    DiscourseTopics,
+    '/topic/<string:user_id>/<int:topic_id>',
+   '/topic/<string:user_id>/<string:ticket_id>'
+)
+discoursePost_api.add_resource(CategoryTopicsAll,'/category/topics/<string:slug>/<int:category_id>')
+
+
+
 
