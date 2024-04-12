@@ -17,6 +17,7 @@
             >
               <b-button
                 @click="delete_inbox_message(message.id)"
+                v-show="delete_button == true"
                 variant="danger"
                 >Delete</b-button
               >
@@ -42,6 +43,7 @@ export default {
     return {
       user_id: this.$store.getters.get_user_id,
       messages_list: [],
+      delete_button: true,
     };
   },
   created() {
@@ -51,8 +53,8 @@ export default {
     let params = "";
     params = new URLSearchParams(form).toString();
 
-    fetch(common.INBOX_API + "/23463b99b62a72f26ed677cc556c44e8", {
-      //`/${this.user_id}`
+    fetch(common.INBOX_API + `/${this.user_id}`, {
+    //fetch(common.INBOX_API + "/23463b99b62a72f26ed677cc556c44e8", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -74,9 +76,10 @@ export default {
           });
         }
         if (this.messages_list.length == 0) {
+          this.delete_button = false;
           this.messages_list.push({
             message: "No New Messages!",
-            recieved_at: "here",
+            recieved_at: "",
           });
         }
       })
@@ -86,27 +89,22 @@ export default {
           message: "Internal Server Error",
         });
       });
-
-    this.n_user_new = this.n_student_new + this.n_support_new;
   },
   mounted() {},
   methods: {
     delete_inbox_message: function (message_id) {
       console.log(message_id);
-      fetch(
-        common.INBOX_API + "/23463b99b62a72f26ed677cc556c44e8/" + message_id,
-        {
-          method: "DELETE",
-          headers: {
-            "Content-Type": "application/json",
-            webtoken: this.$store.getters.get_web_token,
-            userid: this.user_id,
-          },
-          body: JSON.stringify({
-            user_id: this.user_id,
-          }),
-        }
-      )
+      fetch(common.INBOX_API + `/${this.user_id}/` + message_id, {
+        method: "DELETE",
+        headers: {
+          "Content-Type": "application/json",
+          webtoken: this.$store.getters.get_web_token,
+          userid: this.user_id,
+        },
+        body: JSON.stringify({
+          user_id: this.user_id,
+        }),
+      })
         .then((response) => response.json())
         .then((data) => {
           if (data.category == "success") {

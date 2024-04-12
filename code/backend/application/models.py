@@ -189,10 +189,17 @@ class Inbox(db.Model):
     message_type = db.Column(db.String(100),nullable=False)
 
 class AssignBadge(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
+    id = db.Column(db.Integer, primary_key=True) 
     user_id = db.Column(db.String(100), db.ForeignKey('user.id'))
     badge_name = db.Column(db.String(100), db.ForeignKey('badge.badge_name') )
     assigned_by = db.Column(db.String(100), db.ForeignKey('user.id'))
+
+    def to_dict(self):
+        return{
+            "id" : self.id,
+            "user_id" : self.user_id, 
+            "badge_name" : self.badge_name
+        }
 
 class Badge(db.Model):
     id = db.Column(db.Integer, primary_key=True)

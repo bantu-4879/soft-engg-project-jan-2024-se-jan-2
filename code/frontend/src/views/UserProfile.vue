@@ -1,17 +1,31 @@
 <template>
   <div>
     <UserNavbar :id_="0"></UserNavbar>
-
     <b-container fluid="xl">
+      <b-container fluid="xl">
+        <div>
+        </br>
+          <h3>{{ user_name.toUpperCase() }}</h3>
+          <h4><i>{{ discplinary_action_card }}</i></h4>
+          <h4>{{ user_badges.join(', ') }}</h4>
+        </div>
+      </b-container>
       <b-row class="text-start"  style="border-bottom: dashed black">
         <b-col cols="12" sm="7" md="7" style="border-right: dashed black">
           <h3 style="text-align: center">My Profile</h3>
           <div
             class="profile-form"
-            style="margin-top: 5px; margin-left: 5px; margin-right: 5px; text-align: left"
+            style="
+              margin-top: 5px;
+              margin-left: 5px;
+              margin-right: 5px;
+              text-align: left;
+            "
           >
             <b-form @submit="onSubmit" @reset="onReset" v-if="show">
-              <b-form-group label="First Name:" label-for="input-first-name-change"
+              <b-form-group
+                label="First Name:"
+                label-for="input-first-name-change"
                 ><b-form-input
                   id="input-first-name-change"
                   v-model="form.first_name"
@@ -25,8 +39,9 @@
                   Enter at least 3 letters of first name
                 </b-form-invalid-feedback>
               </b-form-group>
-
-              <b-form-group label="Second Name:" label-for="input-second-name-change"
+              <b-form-group
+                label="Last Name:"
+                label-for="input-last-name-change"
                 ><b-form-input
                   id="input-last-name-change"
                   v-model="form.second_name"
@@ -55,8 +70,8 @@
                   aria-describedby="input-live-feedback-password"
                 ></b-form-input>
                 <b-form-invalid-feedback id="input-live-feedback-password">
-                  Password should contain letters A-Z a-z and numbers 0-9 only and should be atleast
-                  4 and atmost 8 characters long.
+                  Password should contain letters A-Z a-z and numbers 0-9 only
+                  and should be atleast 4 and atmost 8 characters long.
                 </b-form-invalid-feedback>
               </b-form-group>
 
@@ -69,12 +84,18 @@
                   :state="check_retype_password"
                   aria-describedby="input-live-feedback-retype-password"
                 ></b-form-input>
-                <b-form-invalid-feedback id="input-live-feedback-retype-password">
+                <b-form-invalid-feedback
+                  id="input-live-feedback-retype-password"
+                >
                   Password did not match.
                 </b-form-invalid-feedback>
               </b-form-group>
-              <b-button style="margin: 10px" type="submit" variant="primary">Update</b-button>
-              <b-button style="margin: 10px" type="reset" variant="danger">Reset</b-button>
+              <b-button style="margin: 10px" type="submit" variant="primary"
+                >Update</b-button
+              >
+              <b-button style="margin: 10px" type="reset" variant="danger"
+                >Reset</b-button
+              >
             </b-form>
           </div>
         </b-col>
@@ -186,6 +207,10 @@ export default {
       user_role: this.$store.getters.get_user_role,
       user_id: this.$store.getters.get_user_id,
       user_url_to_fetch_data: "",
+      badge_fetch_url: "",
+      discplinary_action_card: "",
+      user_name: "",
+      user_badges: [],
       form: {
         first_name: "",
         second_name: "",
@@ -214,13 +239,77 @@ export default {
     this.form.profile_photo_loc = this.$store.getters.get_user_profile_pic;
     if (this.user_role === "student") {
       this.user_url_to_fetch_data = common.STUDENT_API + `/${this.user_id}`;
+      this.badge_fetch_url =
+        common.MANAGEMENT_API + "/badge" + `/${this.user_id}`;
+      this.user_badges = ["NA"]
     }
     if (this.user_role === "staff") {
       this.user_url_to_fetch_data = common.SUPPORT_API + `/${this.user_id}`;
+      this.discplinary_action_card = "NA"
     }
     if (this.user_role === "admin") {
       this.user_url_to_fetch_data = common.ADMIN_API + `/${this.user_id}`;
     }
+    fetch(this.user_url_to_fetch_data, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        web_token: this.$store.getters.get_web_token,
+        user_id: this.$store.getters.get_user_id,
+      },
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.category == "success") {
+          this.flashMessage.success({
+            message: "Data Retrieved",
+          });
+          this.discplinary_action_card = data.message.card + " Card";
+          this.user_name = data.message.first_name;
+        }
+        if (data.category == "error") {
+          this.flashMessage.error({
+            message: data.message,
+          });
+        }
+      })
+      .catch((error) => {
+        this.$log.error(`Error : ${error}`);
+        this.flashMessage.error({
+          message: "Internal Server Error",
+        });
+      });
+
+    //THIS IS THE BADGE FETCH
+    fetch(this.badge_fetch_url, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        web_token: this.$store.getters.get_web_token,
+        user_id: this.$store.getters.get_user_id,
+      },
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.category == "success") {
+          this.flashMessage.success({
+            message: "Data Retrieved",
+          });
+          this.user_badges = data.message;
+          
+        }
+        if (data.category == "error") {
+          this.flashMessage.error({
+            message: data.message,
+          });
+        }
+      })
+      .catch((error) => {
+        this.$log.error(`Error : ${error}`);
+        this.flashMessage.error({
+          message: "Internal Server Error",
+        });
+      });
     this.isregisteredOnDiscoursefun();
   },
   methods: {

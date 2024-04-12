@@ -12,6 +12,7 @@ const TICKET_API_PREFIX = `/api/${VERSION}/ticket`
 const DISCOURSE_AUTH_PREFIX = `//api/${VERSION}/discourseAuth`
 const DISCOURSE_POST_PREFIX = `//api/${VERSION}/discourse`
 const INBOX_API_PREFIX = `/api/${VERSION}/inbox`
+const USER_MANAGEMENT_PREFIX = `/api/${VERSION}/management`
 
 const AUTH_API_LOGIN = `${BASEURL}${AUTH_API_PREFIX}/login`
 const AUTH_API_REGISTER = `${BASEURL}${AUTH_API_PREFIX}/register`
@@ -24,6 +25,7 @@ const FAQ_API = `${BASEURL}${FAQ_API_PREFIX}`;
 const TICKET_API = `${BASEURL}${TICKET_API_PREFIX}`;
 const DISCOURSE_REGISTER_API = `${BASEURL}${DISCOURSE_AUTH_PREFIX}`
 const INBOX_API = `${BASEURL}${INBOX_API_PREFIX}`
+const MANAGEMENT_API = `${BASEURL}${USER_MANAGEMENT_PREFIX}`
 
 
 const TICKET_API_ALLTICKETS = `${BASEURL}${TICKET_API_PREFIX}/all-tickets`
@@ -32,9 +34,9 @@ const WEBHOOK_URL_STUDENT = `https://chat.googleapis.com/v1/spaces/AAAAsTbnkos/m
 const WEBHOOK_URL_ADMIN = `https://chat.googleapis.com/v1/spaces/AAAAsTbnkos/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=VgCumRm7zG5aykpSjHoQ9bZ9FG3i2LSZEdmMlcD_CBA`
 
 
-const STUDENT_ROUTES = ['/student', '/student-home', "/student-create-ticket", "/student-my-tickets", "/common-faqs", "/user-profile"]
-const SUPPORT_ROUTES = ['/staff', '/staff-home', "/staff-my-tickets", "/common-faqs", "/user-profile"]
-const ADMIN_ROUTES = ['/admin', '/admin-home', "/admin-create-faq", "/admin-validate-users", "/common-faqs", "/user-profile","/inbox"]
+const STUDENT_ROUTES = ['/student', '/student-home', "/student-create-ticket", "/student-my-tickets", "/common-faqs", "/user-profile", "/inbox"]
+const SUPPORT_ROUTES = ['/staff', '/staff-home', "/staff-my-tickets", "/common-faqs", "/user-profile", "/inbox"]
+const ADMIN_ROUTES = ['/admin', '/admin-home', "/admin-create-faq", "/admin-validate-users", "/common-faqs", "/user-profile","/inbox", "/user-management"]
 
 
 const STUDENT_NAV_BUTTONS = [
@@ -59,7 +61,8 @@ const ADMIN_NAV_BUTTONS = [
   { id: 3, title: "Create FAQ", link: "/admin-create-faq", active: false },
   { id: 4, title: "FAQs", link: "/common-faqs", active: false },
   { id: 5, title: "Inbox", link: "/inbox", active: false },
-  { id: 6, title: "Logout", link: "#", active: false },
+  { id: 6, title: "User Management", link: "/user-management", active: false },
+  { id: 7, title: "Logout", link: "#", active: false },
 ]
 
 export {
@@ -87,5 +90,6 @@ export {
   WEBHOOK_URL_STUDENT,
   WEBHOOK_URL_STAFF,
   DISCOURSE_REGISTER_API,
-  INBOX_API
+  INBOX_API, 
+  MANAGEMENT_API
 };

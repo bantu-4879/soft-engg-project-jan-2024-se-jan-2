@@ -111,6 +111,25 @@ user_management_api = Api(user_management_bp)
 user_management_util = UserManagementUtils()
 
 class BadgeAPI(Resource):
+    def get(self, user_id=""): 
+        try:
+            user_badges = []
+            badge_names = []
+            badges = AssignBadge.query.filter_by(user_id=user_id).all()
+            for badge in badges:
+                b = AssignBadge.to_dict(badge)
+                user_badges.append(b)
+                badge_names.append(b["badge_name"])
+            logger.info(f"All Badges found")
+
+            return success_200_custom(data=badge_names)
+
+        except Exception as e:
+            logger.error(
+                f"BadgeAPI->get : Error occured while fetching user badges: {e}"
+            )
+            raise InternalServerError
+    
 
     @token_required
     @users_required(users=["Admin"])
@@ -346,5 +365,5 @@ class UserManagementAPI(Resource):
                 raise NotFoundError(status_msg="User does not exists.")
 
 user_management_api.add_resource(UserManagementAPI, "/<string:user_id>/card")  
-user_management_api.add_resource(BadgeAPI, "/badge", "/badge/<int:badge_id>")
+user_management_api.add_resource(BadgeAPI, "/badge", "/badge/<int:badge_id>", "/badge/<string:user_id>")
 user_management_api.add_resource(AssignBadgeAPI, "/assign/badge", "/assign/badge/<int:badge_assign_id>")

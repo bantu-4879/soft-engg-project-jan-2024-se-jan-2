@@ -8,7 +8,7 @@
         </b-button>
       </b-list-group-item>
       <b-list-group-item class="d-flex justify-content-between align-items-center">
-        Email: {{ email }}
+        Email: {{ email }} 
         <b-button @click="not_verify_user" variant="outline-light">
           <b-icon icon="x-circle" scale="2" variant="danger"></b-icon>
         </b-button>

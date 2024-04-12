@@ -80,6 +80,8 @@ inbox_util = MessageUtils()
 
 class InboxAPI(Resource):
     # get the messages for dispaly in the student inbox
+    @token_required
+    @users_required(users=["student","admin","staff"])
     def get(self, user_id="",message_id=-1):
         if inbox_util.is_blank(user_id):
             raise BadRequest(status_msg="User id is missing.")
@@ -102,6 +104,8 @@ class InboxAPI(Resource):
 
         return user_messages
 
+    @token_required
+    @users_required(users=["student","admin","staff"])
     def delete(self, user_id="",message_id=-1):
         #check if message exists 
         try:
