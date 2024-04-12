@@ -56,6 +56,7 @@ class AllCategories(Resource):
             print(response.keys())
             categories=response["category_list"]["categories"]
             data=[]
+            print(categories)
             for category in categories:
                 _d = {}
                 _d["id"] = category["id"]
@@ -173,7 +174,36 @@ class Categories(Resource):
                 if(str.lower(category["name"])==str.lower(category_name)):
                     return True
             return False
+
+class SubCategoriesAll(Resource):
+    def __init__(self,user_id=None):
+        self.user_id=user_id
     
+    @token_required
+    def get(self,category_id):
+        headers={
+            'Api-Key':API_KEY,
+            'Api-Username':API_USERNAME,
+            "include_subcategories":'true'
+        }
+        url=f'{DISCOURSE_BASE_URL}/c/{category_id}/show.json'
+        response=requests.get(url,headers=headers)
+        if(response.status_code == 200):
+            response=response.json()
+            print(response)
+            category=response["category"]
+            print(category)
+            data={}
+            data["id"] = category["id"]
+            data["name"] = category["name"]
+            data["color"] = category["color"]
+            data["text_color"] = category["text_color"]
+            data["description"] = category["description"]
+            data["slug"]=category["slug"]
+            return success_200_custom(data=data)
+        else:
+            raise NotFoundError(status_msg="could not load category data")
+
 class CategoryTopicsAll(Resource):
     """
     usage 
@@ -359,12 +389,12 @@ class DiscourseTopics(Resource):
         details={
             "title":"",
             "raw":"",
-            "topic_id":"", #required for a new Post
+            "topic_id":"", #required for a new Post under a topic
             "sub_category":"",
-            "target_recepients":"",
             "created_at":"",
             "reply_to_post_number":"",
             "embed_url":"",
+            "category":"",
             "tags":""
 
         }
@@ -385,7 +415,7 @@ class DiscourseTopics(Resource):
         if TicketUtils.is_blank(user_id) or TicketUtils.is_blank(ticket_id):
             raise BadRequest(status_msg="User id or Ticket Id is missing for discourse Post.")
         try:
-            form=request.get_json()
+            form=request.form
             for key in details:
                 value=form.get(key,"")
                 if TicketUtils.is_blank(value):
@@ -602,7 +632,5 @@ discoursePost_api.add_resource(
    '/topic/<string:user_id>/<string:ticket_id>'
 )
 discoursePost_api.add_resource(CategoryTopicsAll,'/category/topics/<string:slug>/<int:category_id>')
-
-
-
+discoursePost_api.add_resource(SubCategoriesAll,'/category/subcategories/<int:category_id>')
 

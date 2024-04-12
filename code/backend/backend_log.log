@@ -106,3 +106,252 @@
 12-Apr-24 18:04:46 - [INFO] - 200 - Custom success 200 response sent
 12-Apr-24 18:04:46 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:04:46] "GET /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
 12-Apr-24 18:04:46 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:04:46] "GET /api/v2/management/badge/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 18:07:04 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:07:04] "OPTIONS /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 18:07:04 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:07:04] "OPTIONS /api/v2/management/badge/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 18:07:04 - [INFO] - All Badges found
+12-Apr-24 18:07:04 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 18:07:04 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 18:07:04 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:07:04] "GET /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 18:07:04 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:07:04] "GET /api/v2/management/badge/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 18:10:55 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:10:55] "OPTIONS /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 18:10:55 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:10:55] "OPTIONS /api/v2/management/badge/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 18:10:55 - [INFO] - All Badges found
+12-Apr-24 18:10:55 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 18:10:55 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 18:10:55 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:10:55] "GET /api/v2/management/badge/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 18:10:55 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:10:55] "GET /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 18:11:02 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:11:02] "OPTIONS /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 18:11:02 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:11:02] "OPTIONS /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=Open HTTP/1.1" 200 -
+12-Apr-24 18:11:02 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 18:11:02 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 18:11:02 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:11:02] "GET /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 18:11:02 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 18:11:02 - [INFO] - All tickets found : 8
+12-Apr-24 18:11:02 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 18:11:02 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:11:02] "GET /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=Open HTTP/1.1" 200 -
+12-Apr-24 18:11:04 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:11:04] "OPTIONS /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 18:11:04 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:11:04] "OPTIONS /api/v2/management/badge/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 18:11:04 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 18:11:04 - [INFO] - All Badges found
+12-Apr-24 18:11:04 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:11:04] "GET /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 18:11:04 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 18:11:04 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:11:04] "GET /api/v2/management/badge/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 18:11:51 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:11:51] "OPTIONS /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 18:11:51 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:11:51] "OPTIONS /api/v2/management/badge/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 18:11:51 - [INFO] - All Badges found
+12-Apr-24 18:11:51 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 18:11:51 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 18:11:51 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:11:51] "GET /api/v2/management/badge/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 18:11:51 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:11:51] "GET /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 18:11:51 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:11:51] "OPTIONS /api/v2/discourseAuth/discourseExists/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 18:11:51 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 18:11:51 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:11:51] "GET /api/v2/discourseAuth/discourseExists/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 18:12:16 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:12:16] "OPTIONS /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 18:12:16 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:12:16] "OPTIONS /api/v2/management/badge/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 18:12:16 - [INFO] - All Badges found
+12-Apr-24 18:12:16 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 18:12:16 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 18:12:16 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:12:16] "GET /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 18:12:16 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:12:16] "GET /api/v2/management/badge/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 18:12:16 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:12:16] "OPTIONS /api/v2/discourseAuth/discourseExists/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 18:12:16 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 18:12:16 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:12:16] "GET /api/v2/discourseAuth/discourseExists/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 18:12:39 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:12:39] "OPTIONS /api/v2/discourseAuth/discourseRegister HTTP/1.1" 200 -
+12-Apr-24 18:12:39 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+12-Apr-24 18:12:40 - [DEBUG] - http://127.0.0.1:3000 "GET /u/testingstudent.json HTTP/1.1" 404 None
+12-Apr-24 18:12:40 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+12-Apr-24 18:12:43 - [DEBUG] - http://127.0.0.1:3000 "POST /users.json HTTP/1.1" 200 None
+12-Apr-24 18:12:43 - [INFO] - The connection was estabilished
+12-Apr-24 18:12:43 - [INFO] - 200 - <p>You’re almost done! We sent an activation mail to <b>student_test@gmail.com</b>. Please follow the instructions in the mail to activate your account.</p><p>If it doesn’t arrive, check your spam folder.</p>
+12-Apr-24 18:12:43 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:12:43] "POST /api/v2/discourseAuth/discourseRegister HTTP/1.1" 200 -
+12-Apr-24 18:12:50 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:12:50] "OPTIONS /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 18:12:50 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:12:50] "OPTIONS /api/v2/management/badge/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 18:12:50 - [INFO] - All Badges found
+12-Apr-24 18:12:50 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 18:12:50 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 18:12:50 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:12:50] "GET /api/v2/management/badge/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 18:12:50 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:12:50] "GET /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 18:12:50 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:12:50] "OPTIONS /api/v2/discourseAuth/discourseExists/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 18:12:50 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 18:12:50 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:12:50] "GET /api/v2/discourseAuth/discourseExists/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 18:14:31 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:14:31] "OPTIONS /api/v2/inbox/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 18:14:31 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 18:14:31 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 18:14:31 - [INFO] - All Messages found
+12-Apr-24 18:14:31 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 18:14:31 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:14:31] "GET /api/v2/inbox/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 18:14:34 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:14:34] "OPTIONS /api/v2/faq/ HTTP/1.1" 200 -
+12-Apr-24 18:14:34 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 18:14:34 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 18:14:34 - [INFO] - All FAQs found : 6
+12-Apr-24 18:14:34 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 18:14:34 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:14:34] "GET /api/v2/faq/ HTTP/1.1" 200 -
+12-Apr-24 18:14:37 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:14:37] "OPTIONS /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?query=&filter_priority=&filter_status=&sortby=&sortdir=&filter_tags= HTTP/1.1" 200 -
+12-Apr-24 18:14:37 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 18:14:37 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 18:14:37 - [INFO] - All tickets found : 21
+12-Apr-24 18:14:37 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 18:14:37 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:14:37] "GET /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?query=&filter_priority=&filter_status=&sortby=&sortdir=&filter_tags= HTTP/1.1" 200 -
+12-Apr-24 18:14:39 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:14:39] "OPTIONS /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+12-Apr-24 18:14:39 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 18:14:39 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 18:14:39 - [INFO] - All tickets found : 22
+12-Apr-24 18:14:39 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 18:14:39 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:14:39] "GET /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+12-Apr-24 18:14:42 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:14:42] "OPTIONS /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 18:14:42 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:14:42] "OPTIONS /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=Open HTTP/1.1" 200 -
+12-Apr-24 18:14:42 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 18:14:42 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 18:14:42 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:14:42] "GET /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 18:14:42 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 18:14:42 - [INFO] - All tickets found : 8
+12-Apr-24 18:14:42 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 18:14:42 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:14:42] "GET /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=Open HTTP/1.1" 200 -
+12-Apr-24 18:14:43 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 18:14:43 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 18:14:43 - [INFO] - All tickets found : 22
+12-Apr-24 18:14:43 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 18:14:43 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:14:43] "GET /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+12-Apr-24 18:18:26 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:18:26] "OPTIONS /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?query=&filter_priority=&filter_status=&sortby=&sortdir=&filter_tags= HTTP/1.1" 200 -
+12-Apr-24 18:18:26 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 18:18:26 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 18:18:26 - [INFO] - All tickets found : 21
+12-Apr-24 18:18:26 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 18:18:26 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:18:26] "GET /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?query=&filter_priority=&filter_status=&sortby=&sortdir=&filter_tags= HTTP/1.1" 200 -
+12-Apr-24 18:19:32 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:19:32] "OPTIONS /api/v2/faq/ HTTP/1.1" 200 -
+12-Apr-24 18:19:32 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 18:19:32 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 18:19:32 - [INFO] - All FAQs found : 6
+12-Apr-24 18:19:32 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 18:19:32 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:19:32] "GET /api/v2/faq/ HTTP/1.1" 200 -
+12-Apr-24 18:19:40 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:19:40] "OPTIONS /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 18:19:40 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:19:40] "OPTIONS /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=Open HTTP/1.1" 200 -
+12-Apr-24 18:19:40 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 18:19:40 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 18:19:40 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:19:40] "GET /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 18:19:40 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 18:19:40 - [INFO] - All tickets found : 8
+12-Apr-24 18:19:40 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 18:19:40 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:19:40] "GET /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=Open HTTP/1.1" 200 -
+12-Apr-24 18:19:44 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:19:44] "OPTIONS /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?query=&filter_priority=&filter_status=&sortby=&sortdir=&filter_tags= HTTP/1.1" 200 -
+12-Apr-24 18:19:44 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 18:19:44 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 18:19:45 - [INFO] - All tickets found : 21
+12-Apr-24 18:19:45 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 18:19:45 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:19:45] "GET /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?query=&filter_priority=&filter_status=&sortby=&sortdir=&filter_tags= HTTP/1.1" 200 -
+12-Apr-24 18:19:46 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:19:46] "OPTIONS /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+12-Apr-24 18:19:46 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 18:19:46 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 18:19:46 - [INFO] - All tickets found : 22
+12-Apr-24 18:19:46 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 18:19:46 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:19:46] "GET /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+12-Apr-24 19:52:54 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+12-Apr-24 19:52:55 - [INFO] -  * Restarting with stat
+12-Apr-24 19:53:03 - [INFO] - Development environment configured.
+12-Apr-24 19:53:03 - [WARNING] -  * Debugger is active!
+12-Apr-24 19:53:03 - [INFO] -  * Debugger PIN: 144-740-991
+12-Apr-24 19:53:24 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+12-Apr-24 19:53:24 - [INFO] -  * Restarting with stat
+12-Apr-24 19:53:25 - [INFO] - Development environment configured.
+12-Apr-24 19:53:25 - [WARNING] -  * Debugger is active!
+12-Apr-24 19:53:25 - [INFO] -  * Debugger PIN: 144-740-991
+12-Apr-24 20:07:31 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+12-Apr-24 20:07:31 - [INFO] -  * Restarting with stat
+12-Apr-24 20:07:32 - [INFO] - Development environment configured.
+12-Apr-24 20:07:32 - [WARNING] -  * Debugger is active!
+12-Apr-24 20:07:32 - [INFO] -  * Debugger PIN: 144-740-991
+12-Apr-24 20:14:03 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+12-Apr-24 20:14:03 - [INFO] -  * Restarting with stat
+12-Apr-24 20:14:04 - [INFO] - Development environment configured.
+12-Apr-24 20:14:04 - [WARNING] -  * Debugger is active!
+12-Apr-24 20:14:04 - [INFO] -  * Debugger PIN: 144-740-991
+12-Apr-24 20:21:37 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+12-Apr-24 20:21:37 - [INFO] -  * Restarting with stat
+12-Apr-24 20:21:38 - [INFO] - Development environment configured.
+12-Apr-24 20:21:38 - [WARNING] -  * Debugger is active!
+12-Apr-24 20:21:38 - [INFO] -  * Debugger PIN: 144-740-991
+12-Apr-24 20:22:25 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+12-Apr-24 20:22:25 - [INFO] -  * Restarting with stat
+12-Apr-24 20:22:38 - [INFO] - Development environment configured.
+12-Apr-24 20:22:38 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+12-Apr-24 20:22:38 - [INFO] - [33mPress CTRL+C to quit[0m
+12-Apr-24 20:22:38 - [INFO] -  * Restarting with stat
+12-Apr-24 20:22:39 - [INFO] - Development environment configured.
+12-Apr-24 20:22:39 - [WARNING] -  * Debugger is active!
+12-Apr-24 20:22:39 - [INFO] -  * Debugger PIN: 144-740-991
+12-Apr-24 20:22:48 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+12-Apr-24 20:22:48 - [DEBUG] - http://127.0.0.1:3000 "GET /c/2/show.json HTTP/1.1" 200 None
+12-Apr-24 20:22:48 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 20:22:48 - [INFO] - 127.0.0.1 - - [12/Apr/2024 20:22:48] "GET /api/v2/discourse/category/2 HTTP/1.1" 200 -
+12-Apr-24 20:24:14 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+12-Apr-24 20:24:14 - [DEBUG] - http://127.0.0.1:3000 "GET /categories.json HTTP/1.1" 200 None
+12-Apr-24 20:24:14 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 20:24:14 - [INFO] - 127.0.0.1 - - [12/Apr/2024 20:24:14] "GET /api/v2/discourse/categories HTTP/1.1" 200 -
+12-Apr-24 20:25:29 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+12-Apr-24 20:25:29 - [INFO] -  * Restarting with stat
+12-Apr-24 20:25:30 - [INFO] - Development environment configured.
+12-Apr-24 20:25:30 - [WARNING] -  * Debugger is active!
+12-Apr-24 20:25:30 - [INFO] -  * Debugger PIN: 144-740-991
+12-Apr-24 20:25:36 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+12-Apr-24 20:25:36 - [DEBUG] - http://127.0.0.1:3000 "GET /categories.json HTTP/1.1" 200 None
+12-Apr-24 20:25:36 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 20:25:36 - [INFO] - 127.0.0.1 - - [12/Apr/2024 20:25:36] "GET /api/v2/discourse/categories HTTP/1.1" 200 -
+12-Apr-24 20:26:48 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+12-Apr-24 20:26:48 - [INFO] -  * Restarting with stat
+12-Apr-24 20:26:49 - [INFO] - Development environment configured.
+12-Apr-24 20:26:49 - [WARNING] -  * Debugger is active!
+12-Apr-24 20:26:49 - [INFO] -  * Debugger PIN: 144-740-991
+12-Apr-24 20:27:05 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+12-Apr-24 20:27:06 - [INFO] -  * Restarting with stat
+12-Apr-24 20:27:07 - [INFO] - Development environment configured.
+12-Apr-24 20:27:07 - [WARNING] -  * Debugger is active!
+12-Apr-24 20:27:07 - [INFO] -  * Debugger PIN: 144-740-991
+12-Apr-24 20:27:46 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+12-Apr-24 20:27:46 - [INFO] -  * Restarting with stat
+12-Apr-24 20:27:47 - [INFO] - Development environment configured.
+12-Apr-24 20:27:47 - [WARNING] -  * Debugger is active!
+12-Apr-24 20:27:47 - [INFO] -  * Debugger PIN: 144-740-991
+12-Apr-24 20:27:51 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+12-Apr-24 20:27:51 - [DEBUG] - http://127.0.0.1:3000 "GET /categories.json HTTP/1.1" 200 None
+12-Apr-24 20:27:51 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 20:27:51 - [INFO] - 127.0.0.1 - - [12/Apr/2024 20:27:51] "GET /api/v2/discourse/categories HTTP/1.1" 200 -
+12-Apr-24 20:31:06 - [ERROR] - DiscourseCategoryCreation ->Error occured while getting form data : 400 Bad Request: Failed to decode JSON object: Expecting value: line 1 column 1 (char 0) 
+12-Apr-24 20:31:06 - [INFO] - 500 - Internal Server Error
+12-Apr-24 20:31:06 - [INFO] - 127.0.0.1 - - [12/Apr/2024 20:31:06] "[35m[1mPOST /api/v2/discourse/category HTTP/1.1[0m" 500 -
+12-Apr-24 20:31:35 - [ERROR] - DiscourseCategoryCreation ->Error occured while getting form data : 400 Bad Request: Failed to decode JSON object: Expecting value: line 1 column 1 (char 0) 
+12-Apr-24 20:31:35 - [INFO] - 500 - Internal Server Error
+12-Apr-24 20:31:35 - [INFO] - 127.0.0.1 - - [12/Apr/2024 20:31:35] "[35m[1mPOST /api/v2/discourse/category HTTP/1.1[0m" 500 -
+12-Apr-24 20:31:55 - [ERROR] - DiscourseCategoryCreation ->Error occured while getting form data : 400 Bad Request: Failed to decode JSON object: Expecting value: line 1 column 1 (char 0) 
+12-Apr-24 20:31:55 - [INFO] - 500 - Internal Server Error
+12-Apr-24 20:31:55 - [INFO] - 127.0.0.1 - - [12/Apr/2024 20:31:55] "[35m[1mPOST /api/v2/discourse/category HTTP/1.1[0m" 500 -
+12-Apr-24 20:31:59 - [ERROR] - DiscourseCategoryCreation ->Error occured while getting form data : 400 Bad Request: Failed to decode JSON object: Expecting value: line 1 column 1 (char 0) 
+12-Apr-24 20:31:59 - [INFO] - 500 - Internal Server Error
+12-Apr-24 20:31:59 - [INFO] - 127.0.0.1 - - [12/Apr/2024 20:31:59] "[35m[1mPOST /api/v2/discourse/category HTTP/1.1[0m" 500 -
+12-Apr-24 20:33:19 - [ERROR] - DiscourseCategoryCreation ->Error occured while getting form data : 400 Bad Request: Failed to decode JSON object: Expecting value: line 1 column 1 (char 0) 
+12-Apr-24 20:33:19 - [INFO] - 500 - Internal Server Error
+12-Apr-24 20:33:19 - [INFO] - 127.0.0.1 - - [12/Apr/2024 20:33:19] "[35m[1mPOST /api/v2/discourse/category HTTP/1.1[0m" 500 -
+12-Apr-24 20:34:52 - [ERROR] - DiscourseCategoryCreation ->Error occured while getting form data : 400 Bad Request: Failed to decode JSON object: Expecting value: line 1 column 1 (char 0) 
+12-Apr-24 20:34:52 - [INFO] - 500 - Internal Server Error
+12-Apr-24 20:34:52 - [INFO] - 127.0.0.1 - - [12/Apr/2024 20:34:52] "[35m[1mPOST /api/v2/discourse/category HTTP/1.1[0m" 500 -
+12-Apr-24 20:35:11 - [ERROR] - DiscourseCategoryCreation ->Error occured while getting form data : 400 Bad Request: Failed to decode JSON object: Expecting value: line 1 column 1 (char 0) 
+12-Apr-24 20:35:11 - [INFO] - 500 - Internal Server Error
+12-Apr-24 20:35:11 - [INFO] - 127.0.0.1 - - [12/Apr/2024 20:35:11] "[35m[1mPOST /api/v2/discourse/category HTTP/1.1[0m" 500 -
+12-Apr-24 20:36:29 - [ERROR] - DiscourseCategoryCreation ->Error occured while getting form data : 400 Bad Request: Failed to decode JSON object: Expecting value: line 1 column 1 (char 0) 
+12-Apr-24 20:36:29 - [INFO] - 500 - Internal Server Error
+12-Apr-24 20:36:29 - [INFO] - 127.0.0.1 - - [12/Apr/2024 20:36:29] "[35m[1mPOST /api/v2/discourse/category HTTP/1.1[0m" 500 -
+12-Apr-24 20:38:01 - [ERROR] - DiscourseCategoryCreation ->Error occured while getting form data : 400 Bad Request: Failed to decode JSON object: Expecting value: line 1 column 1 (char 0) 
+12-Apr-24 20:38:01 - [INFO] - 500 - Internal Server Error
+12-Apr-24 20:38:01 - [INFO] - 127.0.0.1 - - [12/Apr/2024 20:38:01] "[35m[1mPOST /api/v2/discourse/category HTTP/1.1[0m" 500 -
+12-Apr-24 20:38:53 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+12-Apr-24 20:38:53 - [INFO] -  * Restarting with stat
+12-Apr-24 20:38:54 - [INFO] - Development environment configured.
+12-Apr-24 20:38:54 - [WARNING] -  * Debugger is active!
+12-Apr-24 20:38:54 - [INFO] -  * Debugger PIN: 144-740-991
+12-Apr-24 20:38:56 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+12-Apr-24 20:38:57 - [INFO] -  * Restarting with stat
+12-Apr-24 20:38:58 - [INFO] - Development environment configured.
+12-Apr-24 20:38:58 - [WARNING] -  * Debugger is active!
+12-Apr-24 20:38:58 - [INFO] -  * Debugger PIN: 144-740-991
+12-Apr-24 20:39:24 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
+12-Apr-24 20:39:24 - [INFO] -  * Restarting with stat
