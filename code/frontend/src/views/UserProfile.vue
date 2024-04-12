@@ -3,7 +3,7 @@
     <UserNavbar :id_="0"></UserNavbar>
 
     <b-container fluid="xl">
-      <b-row class="text-start">
+      <b-row class="text-start"  style="border-bottom: dashed black">
         <b-col cols="12" sm="7" md="7" style="border-right: dashed black">
           <h3 style="text-align: center">My Profile</h3>
           <div
@@ -26,12 +26,12 @@
                 </b-form-invalid-feedback>
               </b-form-group>
 
-              <b-form-group label="Last Name:" label-for="input-last-name-change"
+              <b-form-group label="Second Name:" label-for="input-second-name-change"
                 ><b-form-input
                   id="input-last-name-change"
-                  v-model="form.last_name"
+                  v-model="form.second_name"
                   type="text"
-                  placeholder="Enter last name (Optional)"
+                  placeholder="Enter Second name (Optional)"
                 ></b-form-input
               ></b-form-group>
 
@@ -90,6 +90,83 @@
           <FileUpload @file_uploading="onFileUpload"></FileUpload>
           <p>Click 'Update' to set this as new profile picture</p>
         </b-col>
+      </b-row class="text-start">
+      <div v-if="!isregisteredOnDiscourse">
+      <div 
+            class="profile-form"
+            style="margin-top: 5px; margin-left: 5px; margin-right: 5px; text-align: left">
+          <h3 style="text-align: center">Discourse Registration</h3>
+          <b-form @submit="registerDiscourse" @reset="onResetDiscourse">
+        <b-form-group label="Name:" label-for="input-name">
+          <b-form-input
+            id="input-name"
+            v-model="discourse_form.name"
+            type="text"
+            placeholder="Enter your name"
+            :state="check_name2"
+            aria-describedby="input-live-feedback-name"
+            required
+          ></b-form-input>
+          <b-form-invalid-feedback id="input-live-feedback-name">
+            Enter at least 3 letters for valid name
+          </b-form-invalid-feedback>
+        </b-form-group>
+
+        <b-form-group label="Email:" label-for="input-email-discourse">
+          <b-form-input
+            id="input-email-discourse"
+            v-model="discourse_form.email_id"
+            type="email"
+            placeholder="Enter email id for discourse"
+            required
+          ></b-form-input>
+        </b-form-group >
+        <b-form-group label="Username" label-for="input-username-discourse">
+          <b-form-input
+            id="input-username-discourse"
+            v-model="discourse_form.username"
+            placeholder="Enter Username"
+            type="text"
+          ></b-form-input>
+        </b-form-group>
+        <b-form-group label="Password:" label-for="input-discourse-password">
+          <b-form-input
+            id="input-password"
+            v-model="discourse_form.password"
+            placeholder="Enter password"
+            type="password"
+            :state="check_password2"
+            aria-describedby="input-live-feedback-discourse-password"
+          ></b-form-input>
+          <b-form-invalid-feedback id="input-live-feedback-discourse-password">
+            Password should contain letters A-Z a-z and numbers 0-9 only and should be at least 8 characters long.
+          </b-form-invalid-feedback>
+        </b-form-group>
+
+        <b-form-group>
+          <b-form-input
+            id="input-retype-password-change"
+            v-model="retypePassword"
+            placeholder="Retype new password"
+            type="password"
+            :state="checkRetypePassword"
+            aria-describedby="input-live-feedback-retype-discourse-password"
+          ></b-form-input>
+          <b-form-invalid-feedback id="input-live-feedback-retype-discourse-password">
+            Passwords do not match.
+          </b-form-invalid-feedback>
+        </b-form-group>
+        <b-button style="margin: 10px" type="submit" variant="primary">Submit</b-button>
+        <b-button style="margin: 10px" type="reset" variant="danger">Reset</b-button>
+      </b-form>
+          </div>
+        </div>
+          <div v-else>
+            <h3 style="text-align: center">Discourse Registration is complete</h3>
+    </div>
+
+      <b-row>
+
       </b-row>
     </b-container>
   </div>
@@ -117,7 +194,16 @@ export default {
         retype_password: "",
         profile_photo_loc: "",
       },
+      discourse_form:{
+        name:"",
+        email_id:"",
+        password:"",
+        username:"",
+        user_id:"",
+      },
       show: true,
+      isregisteredOnDiscourse:false,
+      retypePassword: "",
     };
   },
   created() {
@@ -135,7 +221,7 @@ export default {
     if (this.user_role === "admin") {
       this.user_url_to_fetch_data = common.ADMIN_API + `/${this.user_id}`;
     }
-    this.registerdiscourse();
+    this.isregisteredOnDiscoursefun();
   },
   methods: {
     onSubmit(event) {
@@ -197,18 +283,22 @@ export default {
     onFileUpload(value) {
       this.form.profile_photo_loc = value[0].attachment_loc;
     },
-    registerdiscourse(){
+    registerDiscourse(event){
+      event.preventDefault();
       fetch(common.DISCOURSE_REGISTER_API + '/discourseRegister', {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
+          webtoken: this.$store.getters.get_web_token,
+          userid: this.$store.getters.get_user_id,
+
         },
         body: JSON.stringify({
-          email: this.form.email,
+          email: this.discourse_form.email_id,
           user_id: this.$store.getters.get_user_id,
-          password: "your_strong_password",
-          username: this.form.first_name + "_" + this.form.second_name,
-          name: this.form.first_name + " " + this.form.second_name
+          password: this.discourse_form.password,
+          username: this.discourse_form.username,
+          name: this.discourse_form.name,
         }),
       })
         .then((response) => response.json())
@@ -232,9 +322,57 @@ export default {
         });
     }
   },
+  isregisteredOnDiscoursefun(){
+    console.log("I reached here.")
+    this.loading = true;
+    user_id= this.$store.getters.get_user_id
+      fetch(common.DISCOURSE_REGISTER_API + '/discourseExists'+`/${user_id}`, {
+        method: "GET",
+        headers: {
+          webtoken: this.$store.getters.get_web_token,
+          userid: this.user_id,
+        },
+      }) // Replace `user_id` with the actual user id
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('User not found');
+          }
+          return response.json();
+        })
+        .then(data => {
+          this.loading = false;
+          if (data.username) {
+            this.isregisteredOnDiscourse= true;
+          } else {
+            this.isregisteredOnDiscourse= false;
+          }
+        })
+        .catch((error) => {
+          this.$log.error(`Error : ${error}`);
+          this.isregisteredOnDiscourse=false;
+          this.flashMessage.error({
+            message: "Cannot Retrieve Data.",
+          });
+        });
+
+  },
+    onResetDiscourse(event) {
+      event.preventDefault();
+      this.discourse_form = {
+        name: "",
+        second_name: "",
+        email_id: "",
+        password: "",
+      };
+      this.retypePassword = "";
+    },
   computed: {
     check_name() {
       return this.form.first_name.length > 2 ? true : false;
+    },
+    check_name2()
+    {
+      return this.discourse_form.name.length > 2 ? true : false;
     },
     check_password() {
       let password = this.form.password;
@@ -254,6 +392,16 @@ export default {
     },
     check_retype_password() {
       return this.form.password === this.form.retype_password && this.check_password ? true : false;
+    },
+    check_password2() {
+      // Password should contain letters A-Z a-z and numbers 0-9 only and should be at least 8 characters long
+      const regex = /^(?=.*[A-Za-z])(?=.*\d)(?=.*_).{8,}$/;
+      let password2=this.discourse_form.password;
+      print(regex.test(password2))
+      return regex.test(password2);
+    },
+    checkRetypePassword() {
+      return this.retypePassword === this.discourse_form.password && this.check_password2 ? true:false;
     },
   },
 };

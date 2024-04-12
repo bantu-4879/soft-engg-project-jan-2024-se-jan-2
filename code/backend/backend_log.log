@@ -10929,3 +10929,210 @@
 12-Apr-24 10:19:27 - [INFO] - Admin role is verified for the user: 7e666996a8fddf675ceada5ef31fc342
 12-Apr-24 10:19:27 - [INFO] - 200 - Custom success 200 response sent
 12-Apr-24 10:19:27 - [INFO] - 127.0.0.1 - - [12/Apr/2024 10:19:27] "GET /api/v2/auth/newUsers HTTP/1.1" 200 -
+12-Apr-24 11:38:09 - [INFO] - Development environment configured.
+12-Apr-24 11:38:09 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+12-Apr-24 11:38:09 - [INFO] - [33mPress CTRL+C to quit[0m
+12-Apr-24 11:38:09 - [INFO] -  * Restarting with stat
+12-Apr-24 11:38:11 - [INFO] - Development environment configured.
+12-Apr-24 11:38:12 - [WARNING] -  * Debugger is active!
+12-Apr-24 11:38:12 - [INFO] -  * Debugger PIN: 144-740-991
+12-Apr-24 11:39:06 - [INFO] - 127.0.0.1 - - [12/Apr/2024 11:39:06] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+12-Apr-24 11:39:06 - [INFO] - User logged in.
+12-Apr-24 11:39:06 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 11:39:06 - [INFO] - 127.0.0.1 - - [12/Apr/2024 11:39:06] "POST /api/v2/auth/login HTTP/1.1" 200 -
+12-Apr-24 11:39:06 - [INFO] - 127.0.0.1 - - [12/Apr/2024 11:39:06] "OPTIONS /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 11:39:06 - [INFO] - 127.0.0.1 - - [12/Apr/2024 11:39:06] "OPTIONS /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=Open HTTP/1.1" 200 -
+12-Apr-24 11:39:06 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 11:39:06 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 11:39:06 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 11:39:06 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 11:39:06 - [INFO] - 127.0.0.1 - - [12/Apr/2024 11:39:06] "GET /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 11:39:06 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 11:39:06 - [INFO] - All tickets found : 8
+12-Apr-24 11:39:06 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 11:39:06 - [INFO] - 127.0.0.1 - - [12/Apr/2024 11:39:06] "GET /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=Open HTTP/1.1" 200 -
+12-Apr-24 11:39:10 - [INFO] - 127.0.0.1 - - [12/Apr/2024 11:39:10] "OPTIONS /api/v2/discourseAuth/discourseRegister HTTP/1.1" 200 -
+12-Apr-24 11:39:10 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+12-Apr-24 11:39:13 - [INFO] - 127.0.0.1 - - [12/Apr/2024 11:39:13] "[35m[1mPOST /api/v2/discourseAuth/discourseRegister HTTP/1.1[0m" 500 -
+12-Apr-24 11:39:27 - [INFO] - 127.0.0.1 - - [12/Apr/2024 11:39:27] "OPTIONS /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 11:39:27 - [INFO] - 127.0.0.1 - - [12/Apr/2024 11:39:27] "OPTIONS /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=Open HTTP/1.1" 200 -
+12-Apr-24 11:39:27 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 11:39:27 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 11:39:27 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 11:39:27 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 11:39:27 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 11:39:27 - [INFO] - 127.0.0.1 - - [12/Apr/2024 11:39:27] "GET /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 11:39:27 - [INFO] - All tickets found : 8
+12-Apr-24 11:39:27 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 11:39:27 - [INFO] - 127.0.0.1 - - [12/Apr/2024 11:39:27] "GET /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=Open HTTP/1.1" 200 -
+12-Apr-24 11:40:41 - [INFO] - 127.0.0.1 - - [12/Apr/2024 11:40:41] "OPTIONS /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?query=&filter_priority=&filter_status=&sortby=&sortdir=&filter_tags= HTTP/1.1" 200 -
+12-Apr-24 11:40:41 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 11:40:41 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 11:40:41 - [INFO] - All tickets found : 21
+12-Apr-24 11:40:41 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 11:40:41 - [INFO] - 127.0.0.1 - - [12/Apr/2024 11:40:41] "GET /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?query=&filter_priority=&filter_status=&sortby=&sortdir=&filter_tags= HTTP/1.1" 200 -
+12-Apr-24 11:40:48 - [INFO] - 127.0.0.1 - - [12/Apr/2024 11:40:48] "OPTIONS /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+12-Apr-24 11:40:48 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 11:40:48 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 11:40:48 - [INFO] - All tickets found : 22
+12-Apr-24 11:40:48 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 11:40:48 - [INFO] - 127.0.0.1 - - [12/Apr/2024 11:40:48] "GET /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+12-Apr-24 11:41:09 - [INFO] - 127.0.0.1 - - [12/Apr/2024 11:41:09] "OPTIONS /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 11:41:09 - [INFO] - 127.0.0.1 - - [12/Apr/2024 11:41:09] "OPTIONS /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=Open HTTP/1.1" 200 -
+12-Apr-24 11:41:09 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 11:41:09 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 11:41:09 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 11:41:09 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 11:41:09 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 11:41:09 - [INFO] - 127.0.0.1 - - [12/Apr/2024 11:41:09] "GET /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 11:41:09 - [INFO] - All tickets found : 8
+12-Apr-24 11:41:09 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 11:41:09 - [INFO] - 127.0.0.1 - - [12/Apr/2024 11:41:09] "GET /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=Open HTTP/1.1" 200 -
+12-Apr-24 11:41:15 - [INFO] - 127.0.0.1 - - [12/Apr/2024 11:41:15] "OPTIONS /api/v2/discourseAuth/discourseRegister HTTP/1.1" 200 -
+12-Apr-24 11:41:15 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+12-Apr-24 11:41:17 - [INFO] - 127.0.0.1 - - [12/Apr/2024 11:41:17] "[35m[1mPOST /api/v2/discourseAuth/discourseRegister HTTP/1.1[0m" 500 -
+12-Apr-24 12:16:40 - [INFO] - 127.0.0.1 - - [12/Apr/2024 12:16:40] "OPTIONS /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 12:16:40 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 12:16:40 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 12:16:40 - [INFO] - User details Updated successfully.
+12-Apr-24 12:16:40 - [INFO] - 200 - User details Updated successfully.
+12-Apr-24 12:16:40 - [INFO] - 127.0.0.1 - - [12/Apr/2024 12:16:40] "PUT /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 12:17:13 - [INFO] - 127.0.0.1 - - [12/Apr/2024 12:17:13] "OPTIONS /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 12:17:13 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 12:17:13 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 12:17:14 - [INFO] - User details Updated successfully.
+12-Apr-24 12:17:14 - [INFO] - 200 - User details Updated successfully.
+12-Apr-24 12:17:14 - [INFO] - 127.0.0.1 - - [12/Apr/2024 12:17:14] "PUT /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 12:17:18 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 12:17:18 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 12:17:18 - [INFO] - User details Updated successfully.
+12-Apr-24 12:17:18 - [INFO] - 200 - User details Updated successfully.
+12-Apr-24 12:17:18 - [INFO] - 127.0.0.1 - - [12/Apr/2024 12:17:18] "PUT /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 12:17:48 - [INFO] - 127.0.0.1 - - [12/Apr/2024 12:17:48] "OPTIONS /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 12:17:48 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 12:17:48 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 12:17:48 - [INFO] - User details Updated successfully.
+12-Apr-24 12:17:48 - [INFO] - 200 - User details Updated successfully.
+12-Apr-24 12:17:48 - [INFO] - 127.0.0.1 - - [12/Apr/2024 12:17:48] "PUT /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 12:23:13 - [INFO] - 127.0.0.1 - - [12/Apr/2024 12:23:13] "OPTIONS /api/v2/discourseAuth/discourseRegister HTTP/1.1" 200 -
+12-Apr-24 12:23:13 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+12-Apr-24 12:23:16 - [INFO] - 127.0.0.1 - - [12/Apr/2024 12:23:16] "[35m[1mPOST /api/v2/discourseAuth/discourseRegister HTTP/1.1[0m" 500 -
+12-Apr-24 12:49:30 - [INFO] - 127.0.0.1 - - [12/Apr/2024 12:49:30] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+12-Apr-24 12:49:30 - [INFO] - 401 - Password is incorrect
+12-Apr-24 12:49:30 - [INFO] - 127.0.0.1 - - [12/Apr/2024 12:49:30] "[31m[1mPOST /api/v2/auth/login HTTP/1.1[0m" 401 -
+12-Apr-24 12:49:39 - [INFO] - 127.0.0.1 - - [12/Apr/2024 12:49:39] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+12-Apr-24 12:49:39 - [INFO] - 401 - Password is incorrect
+12-Apr-24 12:49:39 - [INFO] - 127.0.0.1 - - [12/Apr/2024 12:49:39] "[31m[1mPOST /api/v2/auth/login HTTP/1.1[0m" 401 -
+12-Apr-24 12:50:07 - [INFO] - 127.0.0.1 - - [12/Apr/2024 12:50:07] "OPTIONS /api/v2/auth/register HTTP/1.1" 200 -
+12-Apr-24 12:50:07 - [INFO] - New account created
+12-Apr-24 12:50:07 - [INFO] - 200 - Account created successfully. Now please login.
+12-Apr-24 12:50:07 - [INFO] - 127.0.0.1 - - [12/Apr/2024 12:50:07] "POST /api/v2/auth/register HTTP/1.1" 200 -
+12-Apr-24 12:50:22 - [INFO] - 127.0.0.1 - - [12/Apr/2024 12:50:22] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+12-Apr-24 12:50:22 - [INFO] - 401 - User is not verified by Admin.
+12-Apr-24 12:50:22 - [INFO] - 127.0.0.1 - - [12/Apr/2024 12:50:22] "[31m[1mPOST /api/v2/auth/login HTTP/1.1[0m" 401 -
+12-Apr-24 12:50:47 - [INFO] - 127.0.0.1 - - [12/Apr/2024 12:50:47] "OPTIONS /api/v2/auth/register HTTP/1.1" 200 -
+12-Apr-24 12:50:47 - [INFO] - 409 - Email is already in use
+12-Apr-24 12:50:47 - [INFO] - 127.0.0.1 - - [12/Apr/2024 12:50:47] "[31m[1mPOST /api/v2/auth/register HTTP/1.1[0m" 409 -
+12-Apr-24 12:50:56 - [INFO] - 127.0.0.1 - - [12/Apr/2024 12:50:56] "OPTIONS /api/v2/auth/register HTTP/1.1" 200 -
+12-Apr-24 12:50:56 - [INFO] - New account created
+12-Apr-24 12:50:56 - [INFO] - 200 - Account created successfully. Now please login.
+12-Apr-24 12:50:56 - [INFO] - 127.0.0.1 - - [12/Apr/2024 12:50:56] "POST /api/v2/auth/register HTTP/1.1" 200 -
+12-Apr-24 12:51:07 - [INFO] - 127.0.0.1 - - [12/Apr/2024 12:51:07] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+12-Apr-24 12:51:07 - [INFO] - 401 - Password is incorrect
+12-Apr-24 12:51:07 - [INFO] - 127.0.0.1 - - [12/Apr/2024 12:51:07] "[31m[1mPOST /api/v2/auth/login HTTP/1.1[0m" 401 -
+12-Apr-24 12:54:43 - [INFO] - 127.0.0.1 - - [12/Apr/2024 12:54:43] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+12-Apr-24 12:54:43 - [INFO] - User logged in.
+12-Apr-24 12:54:43 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 12:54:43 - [INFO] - 127.0.0.1 - - [12/Apr/2024 12:54:43] "POST /api/v2/auth/login HTTP/1.1" 200 -
+12-Apr-24 12:54:43 - [INFO] - 127.0.0.1 - - [12/Apr/2024 12:54:43] "OPTIONS /api/v2/admin/08b173ba08d86410873544b82ab45610 HTTP/1.1" 200 -
+12-Apr-24 12:54:43 - [INFO] - Token is verified for the user: 08b173ba08d86410873544b82ab45610
+12-Apr-24 12:54:43 - [INFO] - User role : admin : is verified for the user: 08b173ba08d86410873544b82ab45610
+12-Apr-24 12:54:43 - [INFO] - File path is not valid: 
+12-Apr-24 12:54:43 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 12:54:43 - [INFO] - 127.0.0.1 - - [12/Apr/2024 12:54:43] "GET /api/v2/admin/08b173ba08d86410873544b82ab45610 HTTP/1.1" 200 -
+12-Apr-24 12:57:09 - [INFO] - 127.0.0.1 - - [12/Apr/2024 12:57:09] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+12-Apr-24 12:57:09 - [INFO] - User logged in.
+12-Apr-24 12:57:09 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 12:57:09 - [INFO] - 127.0.0.1 - - [12/Apr/2024 12:57:09] "POST /api/v2/auth/login HTTP/1.1" 200 -
+12-Apr-24 12:57:09 - [INFO] - 127.0.0.1 - - [12/Apr/2024 12:57:09] "OPTIONS /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 12:57:09 - [INFO] - 127.0.0.1 - - [12/Apr/2024 12:57:09] "OPTIONS /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=Open HTTP/1.1" 200 -
+12-Apr-24 12:57:09 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 12:57:09 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 12:57:09 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 12:57:09 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 12:57:09 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 12:57:09 - [INFO] - 127.0.0.1 - - [12/Apr/2024 12:57:09] "GET /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 12:57:09 - [INFO] - All tickets found : 8
+12-Apr-24 12:57:09 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 12:57:09 - [INFO] - 127.0.0.1 - - [12/Apr/2024 12:57:09] "GET /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=Open HTTP/1.1" 200 -
+12-Apr-24 12:58:23 - [INFO] - 127.0.0.1 - - [12/Apr/2024 12:58:23] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+12-Apr-24 12:58:23 - [INFO] - User logged in.
+12-Apr-24 12:58:23 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 12:58:23 - [INFO] - 127.0.0.1 - - [12/Apr/2024 12:58:23] "POST /api/v2/auth/login HTTP/1.1" 200 -
+12-Apr-24 12:58:23 - [INFO] - 127.0.0.1 - - [12/Apr/2024 12:58:23] "OPTIONS /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 12:58:23 - [INFO] - 127.0.0.1 - - [12/Apr/2024 12:58:23] "OPTIONS /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=Open HTTP/1.1" 200 -
+12-Apr-24 12:58:23 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 12:58:23 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 12:58:23 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 12:58:23 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 12:58:23 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 12:58:23 - [INFO] - 127.0.0.1 - - [12/Apr/2024 12:58:23] "GET /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 12:58:23 - [INFO] - All tickets found : 8
+12-Apr-24 12:58:23 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 12:58:23 - [INFO] - 127.0.0.1 - - [12/Apr/2024 12:58:23] "GET /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=Open HTTP/1.1" 200 -
+12-Apr-24 12:58:37 - [INFO] - 127.0.0.1 - - [12/Apr/2024 12:58:37] "OPTIONS /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 12:58:37 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 12:58:37 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 12:58:37 - [INFO] - User details Updated successfully.
+12-Apr-24 12:58:37 - [INFO] - 200 - User details Updated successfully.
+12-Apr-24 12:58:37 - [INFO] - 127.0.0.1 - - [12/Apr/2024 12:58:37] "PUT /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 13:23:10 - [INFO] - 127.0.0.1 - - [12/Apr/2024 13:23:10] "OPTIONS /api/v2/discourseAuth/discourseRegister HTTP/1.1" 200 -
+12-Apr-24 13:23:10 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+12-Apr-24 13:23:12 - [DEBUG] - http://127.0.0.1:3000 "GET /u/testingstudent.json HTTP/1.1" 404 None
+12-Apr-24 13:23:12 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+12-Apr-24 13:23:12 - [DEBUG] - http://127.0.0.1:3000 "POST /users.json HTTP/1.1" 200 None
+12-Apr-24 13:23:12 - [INFO] - New account created
+12-Apr-24 13:23:12 - [INFO] - 200 - Primary email has already been taken
+12-Apr-24 13:23:12 - [INFO] - 127.0.0.1 - - [12/Apr/2024 13:23:12] "POST /api/v2/discourseAuth/discourseRegister HTTP/1.1" 200 -
+12-Apr-24 13:24:34 - [INFO] - 127.0.0.1 - - [12/Apr/2024 13:24:34] "OPTIONS /api/v2/discourseAuth/discourseRegister HTTP/1.1" 200 -
+12-Apr-24 13:24:34 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+12-Apr-24 13:24:34 - [DEBUG] - http://127.0.0.1:3000 "GET /u/testingstudent.json HTTP/1.1" 404 None
+12-Apr-24 13:24:34 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+12-Apr-24 13:24:34 - [DEBUG] - http://127.0.0.1:3000 "POST /users.json HTTP/1.1" 200 None
+12-Apr-24 13:24:34 - [INFO] - New account created
+12-Apr-24 13:24:34 - [INFO] - 200 - Primary email has already been taken
+12-Apr-24 13:24:34 - [INFO] - 127.0.0.1 - - [12/Apr/2024 13:24:34] "POST /api/v2/discourseAuth/discourseRegister HTTP/1.1" 200 -
+12-Apr-24 13:28:26 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discourseAuth_bp.py', reloading
+12-Apr-24 13:28:27 - [INFO] -  * Restarting with stat
+12-Apr-24 13:28:44 - [INFO] - Development environment configured.
+12-Apr-24 13:28:44 - [WARNING] -  * Debugger is active!
+12-Apr-24 13:28:44 - [INFO] -  * Debugger PIN: 144-740-991
+12-Apr-24 13:28:48 - [INFO] - 127.0.0.1 - - [12/Apr/2024 13:28:48] "OPTIONS /api/v2/discourseAuth/discourseRegister HTTP/1.1" 200 -
+12-Apr-24 13:28:48 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+12-Apr-24 13:28:48 - [DEBUG] - http://127.0.0.1:3000 "GET /u/testingstudent.json HTTP/1.1" 404 None
+12-Apr-24 13:28:48 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+12-Apr-24 13:28:48 - [DEBUG] - http://127.0.0.1:3000 "POST /users.json HTTP/1.1" 200 None
+12-Apr-24 13:28:48 - [INFO] - The connection was estabilished
+12-Apr-24 13:28:48 - [INFO] - 200 - Primary email has already been taken
+12-Apr-24 13:28:48 - [INFO] - 127.0.0.1 - - [12/Apr/2024 13:28:48] "POST /api/v2/discourseAuth/discourseRegister HTTP/1.1" 200 -
+12-Apr-24 13:30:13 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discourseAuth_bp.py', reloading
+12-Apr-24 13:30:13 - [INFO] -  * Restarting with stat
+12-Apr-24 13:30:16 - [INFO] - Development environment configured.
+12-Apr-24 13:30:16 - [WARNING] -  * Debugger is active!
+12-Apr-24 13:30:16 - [INFO] -  * Debugger PIN: 144-740-991
+12-Apr-24 13:30:37 - [INFO] - 127.0.0.1 - - [12/Apr/2024 13:30:37] "OPTIONS /api/v2/discourseAuth/discourseRegister HTTP/1.1" 200 -
+12-Apr-24 13:30:37 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+12-Apr-24 13:30:38 - [DEBUG] - http://127.0.0.1:3000 "GET /u/testingstudent.json HTTP/1.1" 404 None
+12-Apr-24 13:30:38 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+12-Apr-24 13:30:38 - [DEBUG] - http://127.0.0.1:3000 "POST /users.json HTTP/1.1" 200 None
+12-Apr-24 13:30:38 - [INFO] - The connection was estabilished
+12-Apr-24 13:30:38 - [INFO] - 405 - Primary email has already been taken
+12-Apr-24 13:30:38 - [INFO] - 127.0.0.1 - - [12/Apr/2024 13:30:38] "[31m[1mPOST /api/v2/discourseAuth/discourseRegister HTTP/1.1[0m" 405 -
+12-Apr-24 13:43:48 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discourseAuth_bp.py', reloading
+12-Apr-24 13:43:48 - [INFO] -  * Restarting with stat
+12-Apr-24 13:43:51 - [INFO] - Development environment configured.
+12-Apr-24 13:43:51 - [WARNING] -  * Debugger is active!
+12-Apr-24 13:43:51 - [INFO] -  * Debugger PIN: 144-740-991
+12-Apr-24 13:50:58 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discourseAuth_bp.py', reloading
+12-Apr-24 13:50:59 - [INFO] -  * Restarting with stat

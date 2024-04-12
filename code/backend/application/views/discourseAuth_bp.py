@@ -87,13 +87,16 @@ class DiscourseUserCreation(Resource):
             response = requests.post(url, json=payload, headers=headers)
             
             if response.status_code == 200:
-                logger.info("New account created")
+                logger.info("The connection was estabilished")
                 responseJs=response.json()
+                print(responseJs)
                 if(responseJs["success"]):
                     user.discourse_username=username
                     db.session.add(user)
                     db.session.commit()
-                raise Success_200(status_msg=responseJs["message"],status_code=response.status_code)
+                    raise Success_200(status_msg=responseJs["message"],status_code=response.status_code)
+                else:
+                    raise AlreadyExistError(status_msg=responseJs["message"],status_code=405)
             else:
                 raise BadRequest(
                     status_msg=response.error
@@ -125,7 +128,24 @@ class DiscourseUserCreation(Resource):
         else:
             return response.json(), response.status_code
 
-
+class DiscourseIdExists(Resource):
+    def __init__(self,user_id=None):
+        self.user_id=user_id
+    
+    @token_required
+    def get(self,user_id):
+        try:
+            user = User.query.filter_by(id=user_id).first()
+            if user:
+                username = user.discourse_username
+                return {"username": username}, 200
+            else:
+                return {"message": "User not found"}, 404
+        except Exception as e:
+            logger.error(
+                f"Cannot retrieve user from user id: {user_id}. Error: {str(e)}"
+            )
+            raise InternalServerError(status_msg="Unknown error occurred")
 class DiscourseAddMedorators(Resource):
     def __init__(self,user_id=None):
         self.user_id=user_id
@@ -328,3 +348,4 @@ class DiscourseGroupMessages(Resource):
 discourseAuth_api.add_resource(DiscourseUserCreation,"/discourseRegister", "/discourseRegister/<string:username>")
 discourseAuth_api.add_resource(DiscourseAddMedorators,"/addStaff",'/addStaff/<string:user_id>')
 discourseAuth_api.add_resource(DiscourseGroupMessages,"/getMessages/<string:user_id>")
+discourseAuth_api.add_resource(DiscourseIdExists,'/discourseExists/<string:user_id>')
