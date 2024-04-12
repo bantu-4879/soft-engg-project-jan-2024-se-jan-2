@@ -61,7 +61,7 @@ class TicketUtils(UserUtils):
         ticket_attch = TicketAttachment.query.filter_by(ticket_id=ticket_id).all()
         attachments = []
         for att in ticket_attch:
-            file_path = att.attachment_loc
+            file_path = att.attachment_location
             img_base64 = ""
             if is_img_path_valid(file_path):
                 img_base64 = convert_img_to_base64(file_path)

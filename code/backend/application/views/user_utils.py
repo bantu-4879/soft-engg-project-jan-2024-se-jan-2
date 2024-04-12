@@ -215,7 +215,7 @@ class UserUtils:
                 user_ = User.query.filter_by(email=details["email"]).first()
                 if user_:
                     # if user id dont match means email already in use
-                    if user_.user_id != user.user_id:
+                    if user_.id != user.id:
                         raise AlreadyExistError(status_msg="Email is already in use")
                 else:
                     user.email = details["email"]

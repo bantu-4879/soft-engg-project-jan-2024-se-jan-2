@@ -10580,3 +10580,352 @@
 11-Apr-24 19:56:33 - [INFO] - All tickets found : 22
 11-Apr-24 19:56:33 - [INFO] - 200 - Custom success 200 response sent
 11-Apr-24 19:56:33 - [INFO] - 127.0.0.1 - - [11/Apr/2024 19:56:33] "GET /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+12-Apr-24 09:09:57 - [INFO] - Development environment configured.
+12-Apr-24 09:09:57 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+12-Apr-24 09:09:57 - [INFO] - [33mPress CTRL+C to quit[0m
+12-Apr-24 09:09:57 - [INFO] -  * Restarting with stat
+12-Apr-24 09:09:58 - [INFO] - Development environment configured.
+12-Apr-24 09:09:58 - [WARNING] -  * Debugger is active!
+12-Apr-24 09:09:58 - [INFO] -  * Debugger PIN: 951-357-459
+12-Apr-24 09:10:24 - [INFO] - 127.0.0.1 - - [12/Apr/2024 09:10:24] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+12-Apr-24 09:10:24 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+12-Apr-24 09:10:24 - [INFO] - User logged in.
+12-Apr-24 09:10:24 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 09:10:24 - [INFO] - 127.0.0.1 - - [12/Apr/2024 09:10:24] "POST /api/v2/auth/login HTTP/1.1" 200 -
+12-Apr-24 09:10:24 - [INFO] - 127.0.0.1 - - [12/Apr/2024 09:10:24] "OPTIONS /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 09:10:24 - [INFO] - 127.0.0.1 - - [12/Apr/2024 09:10:24] "OPTIONS /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=Open HTTP/1.1" 200 -
+12-Apr-24 09:10:24 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 09:10:24 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 09:10:24 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 09:10:24 - [INFO] - File path is not valid: 
+12-Apr-24 09:10:24 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 09:10:24 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 09:10:24 - [INFO] - 127.0.0.1 - - [12/Apr/2024 09:10:24] "GET /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 09:10:24 - [INFO] - All tickets found : 8
+12-Apr-24 09:10:24 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 09:10:24 - [INFO] - 127.0.0.1 - - [12/Apr/2024 09:10:24] "GET /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=Open HTTP/1.1" 200 -
+12-Apr-24 09:10:27 - [INFO] - 127.0.0.1 - - [12/Apr/2024 09:10:27] "OPTIONS /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+12-Apr-24 09:10:27 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 09:10:27 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 09:10:27 - [INFO] - All tickets found : 22
+12-Apr-24 09:10:27 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 09:10:27 - [INFO] - 127.0.0.1 - - [12/Apr/2024 09:10:27] "GET /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+12-Apr-24 09:11:08 - [INFO] - 127.0.0.1 - - [12/Apr/2024 09:11:08] "OPTIONS /api/v2/ticket/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 09:11:08 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 09:11:08 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 09:11:08 - [INFO] - Ticket created successfully.
+12-Apr-24 09:11:08 - [INFO] - 127.0.0.1 - - [12/Apr/2024 09:11:08] "[35m[1mPOST /api/v2/ticket/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1[0m" 500 -
+12-Apr-24 09:17:39 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/globals.py', reloading
+12-Apr-24 09:17:39 - [INFO] -  * Restarting with stat
+12-Apr-24 09:17:40 - [INFO] - Development environment configured.
+12-Apr-24 09:17:40 - [WARNING] -  * Debugger is active!
+12-Apr-24 09:17:40 - [INFO] -  * Debugger PIN: 951-357-459
+12-Apr-24 09:17:50 - [INFO] - 127.0.0.1 - - [12/Apr/2024 09:17:50] "OPTIONS /api/v2/ticket/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 09:17:50 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 09:17:50 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 09:17:50 - [INFO] - Ticket created successfully.
+12-Apr-24 09:17:50 - [INFO] - 127.0.0.1 - - [12/Apr/2024 09:17:50] "[35m[1mPOST /api/v2/ticket/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1[0m" 500 -
+12-Apr-24 09:19:16 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/globals.py', reloading
+12-Apr-24 09:19:16 - [INFO] -  * Restarting with stat
+12-Apr-24 09:19:16 - [INFO] - Development environment configured.
+12-Apr-24 09:19:16 - [WARNING] -  * Debugger is active!
+12-Apr-24 09:19:16 - [INFO] -  * Debugger PIN: 951-357-459
+12-Apr-24 09:19:20 - [INFO] - 127.0.0.1 - - [12/Apr/2024 09:19:20] "OPTIONS /api/v2/ticket/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 09:19:20 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 09:19:20 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 09:19:20 - [INFO] - Ticket created successfully.
+12-Apr-24 09:19:20 - [INFO] - 127.0.0.1 - - [12/Apr/2024 09:19:20] "[35m[1mPOST /api/v2/ticket/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1[0m" 500 -
+12-Apr-24 09:22:22 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/globals.py', reloading
+12-Apr-24 09:22:22 - [INFO] -  * Restarting with stat
+12-Apr-24 09:22:23 - [INFO] - Development environment configured.
+12-Apr-24 09:22:23 - [WARNING] -  * Debugger is active!
+12-Apr-24 09:22:23 - [INFO] -  * Debugger PIN: 951-357-459
+12-Apr-24 09:22:25 - [INFO] - 127.0.0.1 - - [12/Apr/2024 09:22:25] "OPTIONS /api/v2/ticket/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 09:22:25 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 09:22:25 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 09:22:25 - [INFO] - Ticket created successfully.
+12-Apr-24 09:22:25 - [INFO] - 200 - Ticket created successfully. Total 1 / 1 attchements are valid and added successfully.
+12-Apr-24 09:22:25 - [INFO] - 127.0.0.1 - - [12/Apr/2024 09:22:25] "POST /api/v2/ticket/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 09:22:31 - [INFO] - 127.0.0.1 - - [12/Apr/2024 09:22:31] "OPTIONS /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?query=&filter_priority=&filter_status=&sortby=&sortdir=&filter_tags= HTTP/1.1" 200 -
+12-Apr-24 09:22:31 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 09:22:31 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 09:22:31 - [INFO] - 127.0.0.1 - - [12/Apr/2024 09:22:31] "[35m[1mGET /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?query=&filter_priority=&filter_status=&sortby=&sortdir=&filter_tags= HTTP/1.1[0m" 500 -
+12-Apr-24 09:23:37 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+12-Apr-24 09:23:37 - [INFO] -  * Restarting with stat
+12-Apr-24 09:23:38 - [INFO] - Development environment configured.
+12-Apr-24 09:23:38 - [WARNING] -  * Debugger is active!
+12-Apr-24 09:23:38 - [INFO] -  * Debugger PIN: 951-357-459
+12-Apr-24 09:23:44 - [INFO] - 127.0.0.1 - - [12/Apr/2024 09:23:44] "OPTIONS /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 09:23:44 - [INFO] - 127.0.0.1 - - [12/Apr/2024 09:23:44] "OPTIONS /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=Open HTTP/1.1" 200 -
+12-Apr-24 09:23:44 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 09:23:44 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 09:23:44 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 09:23:44 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 09:23:44 - [INFO] - File path is not valid: 
+12-Apr-24 09:23:44 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 09:23:44 - [INFO] - 127.0.0.1 - - [12/Apr/2024 09:23:44] "GET /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 09:23:44 - [INFO] - All tickets found : 12
+12-Apr-24 09:23:44 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 09:23:44 - [INFO] - 127.0.0.1 - - [12/Apr/2024 09:23:44] "GET /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=Open HTTP/1.1" 200 -
+12-Apr-24 09:23:44 - [INFO] - 127.0.0.1 - - [12/Apr/2024 09:23:44] "OPTIONS /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?query=&filter_priority=&filter_status=&sortby=&sortdir=&filter_tags= HTTP/1.1" 200 -
+12-Apr-24 09:23:44 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 09:23:44 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 09:23:44 - [INFO] - All tickets found : 25
+12-Apr-24 09:23:44 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 09:23:44 - [INFO] - 127.0.0.1 - - [12/Apr/2024 09:23:44] "GET /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?query=&filter_priority=&filter_status=&sortby=&sortdir=&filter_tags= HTTP/1.1" 200 -
+12-Apr-24 09:23:48 - [INFO] - 127.0.0.1 - - [12/Apr/2024 09:23:48] "OPTIONS /api/v2/ticket/df1aea03a7a3bc869f26f2e2894fcb7c/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 09:23:48 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 09:23:48 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 09:23:48 - [INFO] - 127.0.0.1 - - [12/Apr/2024 09:23:48] "GET /api/v2/ticket/df1aea03a7a3bc869f26f2e2894fcb7c/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 09:24:07 - [INFO] - 127.0.0.1 - - [12/Apr/2024 09:24:07] "OPTIONS /api/v2/discourseAuth/discourseRegister HTTP/1.1" 200 -
+12-Apr-24 09:24:07 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+12-Apr-24 09:24:07 - [INFO] - 127.0.0.1 - - [12/Apr/2024 09:24:07] "[35m[1mPOST /api/v2/discourseAuth/discourseRegister HTTP/1.1[0m" 500 -
+12-Apr-24 09:24:23 - [INFO] - 127.0.0.1 - - [12/Apr/2024 09:24:23] "OPTIONS /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=Open HTTP/1.1" 200 -
+12-Apr-24 09:24:23 - [INFO] - 127.0.0.1 - - [12/Apr/2024 09:24:23] "OPTIONS /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 09:24:23 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 09:24:23 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 09:24:23 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 09:24:23 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 09:24:23 - [INFO] - File path is not valid: 
+12-Apr-24 09:24:23 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 09:24:23 - [INFO] - 127.0.0.1 - - [12/Apr/2024 09:24:23] "GET /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 09:24:23 - [INFO] - All tickets found : 12
+12-Apr-24 09:24:23 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 09:24:23 - [INFO] - 127.0.0.1 - - [12/Apr/2024 09:24:23] "GET /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=Open HTTP/1.1" 200 -
+12-Apr-24 09:24:25 - [INFO] - 127.0.0.1 - - [12/Apr/2024 09:24:25] "OPTIONS /api/v2/ticket/df1aea03a7a3bc869f26f2e2894fcb7c/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 09:24:25 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 09:24:25 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 09:24:25 - [INFO] - 127.0.0.1 - - [12/Apr/2024 09:24:25] "GET /api/v2/ticket/df1aea03a7a3bc869f26f2e2894fcb7c/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 09:24:47 - [INFO] - 127.0.0.1 - - [12/Apr/2024 09:24:47] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+12-Apr-24 09:24:47 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+12-Apr-24 09:24:47 - [INFO] - User logged in.
+12-Apr-24 09:24:47 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 09:24:47 - [INFO] - 127.0.0.1 - - [12/Apr/2024 09:24:47] "POST /api/v2/auth/login HTTP/1.1" 200 -
+12-Apr-24 09:24:47 - [INFO] - 127.0.0.1 - - [12/Apr/2024 09:24:47] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+12-Apr-24 09:24:47 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+12-Apr-24 09:24:47 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+12-Apr-24 09:24:47 - [INFO] - File path is not valid: 
+12-Apr-24 09:24:47 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 09:24:47 - [INFO] - 127.0.0.1 - - [12/Apr/2024 09:24:47] "GET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+12-Apr-24 09:24:52 - [INFO] - 127.0.0.1 - - [12/Apr/2024 09:24:52] "OPTIONS /api/v2/ticket/all-tickets/7e666996a8fddf675ceada5ef31fc342?query=&filter_priority=&filter_status=Resolved&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+12-Apr-24 09:24:52 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+12-Apr-24 09:24:52 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+12-Apr-24 09:24:52 - [INFO] - All tickets found : 13
+12-Apr-24 09:24:52 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 09:24:52 - [INFO] - 127.0.0.1 - - [12/Apr/2024 09:24:52] "GET /api/v2/ticket/all-tickets/7e666996a8fddf675ceada5ef31fc342?query=&filter_priority=&filter_status=Resolved&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+12-Apr-24 09:25:26 - [INFO] - 127.0.0.1 - - [12/Apr/2024 09:25:26] "OPTIONS /api/v2/faq/ HTTP/1.1" 200 -
+12-Apr-24 09:25:26 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+12-Apr-24 09:25:26 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+12-Apr-24 09:25:26 - [INFO] - FAQ created successfully.
+12-Apr-24 09:25:26 - [INFO] - 127.0.0.1 - - [12/Apr/2024 09:25:26] "[35m[1mPOST /api/v2/faq/ HTTP/1.1[0m" 500 -
+12-Apr-24 09:34:59 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/faq_bp.py', reloading
+12-Apr-24 09:34:59 - [INFO] -  * Restarting with stat
+12-Apr-24 09:35:00 - [INFO] - Development environment configured.
+12-Apr-24 09:35:00 - [WARNING] -  * Debugger is active!
+12-Apr-24 09:35:00 - [INFO] -  * Debugger PIN: 951-357-459
+12-Apr-24 09:35:03 - [INFO] - 127.0.0.1 - - [12/Apr/2024 09:35:03] "OPTIONS /api/v2/faq/ HTTP/1.1" 200 -
+12-Apr-24 09:35:03 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+12-Apr-24 09:35:03 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+12-Apr-24 09:35:03 - [INFO] - FAQ created successfully.
+12-Apr-24 09:35:03 - [ERROR] - FAQAPI->post : Error occured while creating a FAQ Attachment : 'attachment_loc' is an invalid keyword argument for FAQAttachment
+12-Apr-24 09:35:03 - [INFO] - 200 - FAQ created successfully. Total 0 / 1 attchements are valid and added successfully.
+12-Apr-24 09:35:03 - [INFO] - 127.0.0.1 - - [12/Apr/2024 09:35:03] "POST /api/v2/faq/ HTTP/1.1" 200 -
+12-Apr-24 09:35:10 - [INFO] - 127.0.0.1 - - [12/Apr/2024 09:35:10] "OPTIONS /api/v2/faq/ HTTP/1.1" 200 -
+12-Apr-24 09:35:10 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+12-Apr-24 09:35:10 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+12-Apr-24 09:35:10 - [INFO] - All FAQs found : 7
+12-Apr-24 09:35:10 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 09:35:10 - [INFO] - 127.0.0.1 - - [12/Apr/2024 09:35:10] "GET /api/v2/faq/ HTTP/1.1" 200 -
+12-Apr-24 09:53:56 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/faq_bp.py', reloading
+12-Apr-24 09:53:56 - [INFO] -  * Restarting with stat
+12-Apr-24 09:53:57 - [INFO] - Development environment configured.
+12-Apr-24 09:53:57 - [WARNING] -  * Debugger is active!
+12-Apr-24 09:53:57 - [INFO] -  * Debugger PIN: 951-357-459
+12-Apr-24 09:54:08 - [INFO] - 127.0.0.1 - - [12/Apr/2024 09:54:08] "OPTIONS /api/v2/ticket/all-tickets/7e666996a8fddf675ceada5ef31fc342?query=&filter_priority=&filter_status=Resolved&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+12-Apr-24 09:54:08 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+12-Apr-24 09:54:08 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+12-Apr-24 09:54:08 - [INFO] - All tickets found : 13
+12-Apr-24 09:54:08 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 09:54:08 - [INFO] - 127.0.0.1 - - [12/Apr/2024 09:54:08] "GET /api/v2/ticket/all-tickets/7e666996a8fddf675ceada5ef31fc342?query=&filter_priority=&filter_status=Resolved&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+12-Apr-24 09:54:33 - [INFO] - 127.0.0.1 - - [12/Apr/2024 09:54:33] "OPTIONS /api/v2/faq/ HTTP/1.1" 200 -
+12-Apr-24 09:54:33 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+12-Apr-24 09:54:33 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+12-Apr-24 09:54:33 - [INFO] - FAQ created successfully.
+12-Apr-24 09:54:33 - [ERROR] - FAQAPI->post : Error occured while creating a FAQ Attachment : 'faq_id'
+12-Apr-24 09:54:33 - [INFO] - 200 - FAQ created successfully. Total 0 / 1 attchements are valid and added successfully.
+12-Apr-24 09:54:33 - [INFO] - 127.0.0.1 - - [12/Apr/2024 09:54:33] "POST /api/v2/faq/ HTTP/1.1" 200 -
+12-Apr-24 09:59:16 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/faq_bp.py', reloading
+12-Apr-24 09:59:16 - [INFO] -  * Restarting with stat
+12-Apr-24 09:59:17 - [INFO] - Development environment configured.
+12-Apr-24 09:59:17 - [WARNING] -  * Debugger is active!
+12-Apr-24 09:59:17 - [INFO] -  * Debugger PIN: 951-357-459
+12-Apr-24 09:59:42 - [INFO] - 127.0.0.1 - - [12/Apr/2024 09:59:42] "OPTIONS /api/v2/faq/ HTTP/1.1" 200 -
+12-Apr-24 09:59:42 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+12-Apr-24 09:59:42 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+12-Apr-24 09:59:42 - [INFO] - FAQ created successfully.
+12-Apr-24 09:59:42 - [ERROR] - FAQAPI->post : Error occured while creating a FAQ Attachment : 'faq_id'
+12-Apr-24 09:59:42 - [INFO] - 200 - FAQ created successfully. Total 0 / 1 attchements are valid and added successfully.
+12-Apr-24 09:59:42 - [INFO] - 127.0.0.1 - - [12/Apr/2024 09:59:42] "POST /api/v2/faq/ HTTP/1.1" 200 -
+12-Apr-24 10:02:00 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/faq_bp.py', reloading
+12-Apr-24 10:02:00 - [INFO] -  * Restarting with stat
+12-Apr-24 10:02:01 - [INFO] - Development environment configured.
+12-Apr-24 10:02:01 - [WARNING] -  * Debugger is active!
+12-Apr-24 10:02:01 - [INFO] -  * Debugger PIN: 951-357-459
+12-Apr-24 10:02:30 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/faq_bp.py', reloading
+12-Apr-24 10:02:30 - [INFO] -  * Restarting with stat
+12-Apr-24 10:02:31 - [INFO] - Development environment configured.
+12-Apr-24 10:02:31 - [WARNING] -  * Debugger is active!
+12-Apr-24 10:02:31 - [INFO] -  * Debugger PIN: 951-357-459
+12-Apr-24 10:02:56 - [INFO] - 127.0.0.1 - - [12/Apr/2024 10:02:56] "OPTIONS /api/v2/faq/ HTTP/1.1" 200 -
+12-Apr-24 10:02:56 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+12-Apr-24 10:02:56 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+12-Apr-24 10:02:56 - [INFO] - FAQ created successfully.
+12-Apr-24 10:02:56 - [INFO] - 200 - FAQ created successfully. Total 1 / 1 attchements are valid and added successfully.
+12-Apr-24 10:02:56 - [INFO] - 127.0.0.1 - - [12/Apr/2024 10:02:56] "POST /api/v2/faq/ HTTP/1.1" 200 -
+12-Apr-24 10:02:59 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+12-Apr-24 10:02:59 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+12-Apr-24 10:02:59 - [INFO] - All FAQs found : 10
+12-Apr-24 10:02:59 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 10:02:59 - [INFO] - 127.0.0.1 - - [12/Apr/2024 10:02:59] "GET /api/v2/faq/ HTTP/1.1" 200 -
+12-Apr-24 10:03:20 - [INFO] - 127.0.0.1 - - [12/Apr/2024 10:03:20] "OPTIONS /api/v2/discourseAuth/discourseRegister HTTP/1.1" 200 -
+12-Apr-24 10:03:20 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+12-Apr-24 10:03:20 - [INFO] - 127.0.0.1 - - [12/Apr/2024 10:03:20] "[35m[1mPOST /api/v2/discourseAuth/discourseRegister HTTP/1.1[0m" 500 -
+12-Apr-24 10:04:04 - [INFO] - 127.0.0.1 - - [12/Apr/2024 10:04:04] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+12-Apr-24 10:04:04 - [INFO] - 404 - Provided user id does not exists. Please create account.
+12-Apr-24 10:04:04 - [INFO] - 127.0.0.1 - - [12/Apr/2024 10:04:04] "[33mPUT /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 404 -
+12-Apr-24 10:07:09 - [INFO] - Development environment configured.
+12-Apr-24 10:07:09 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+12-Apr-24 10:07:09 - [INFO] - [33mPress CTRL+C to quit[0m
+12-Apr-24 10:07:09 - [INFO] -  * Restarting with stat
+12-Apr-24 10:07:09 - [INFO] - Development environment configured.
+12-Apr-24 10:07:09 - [WARNING] -  * Debugger is active!
+12-Apr-24 10:07:09 - [INFO] -  * Debugger PIN: 951-357-459
+12-Apr-24 10:07:56 - [INFO] - 127.0.0.1 - - [12/Apr/2024 10:07:56] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+12-Apr-24 10:07:56 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/dummy_profile.png
+12-Apr-24 10:07:56 - [INFO] - User logged in.
+12-Apr-24 10:07:56 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 10:07:56 - [INFO] - 127.0.0.1 - - [12/Apr/2024 10:07:56] "POST /api/v2/auth/login HTTP/1.1" 200 -
+12-Apr-24 10:07:56 - [INFO] - 127.0.0.1 - - [12/Apr/2024 10:07:56] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+12-Apr-24 10:07:56 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+12-Apr-24 10:07:56 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+12-Apr-24 10:07:56 - [INFO] - File path is not valid: 
+12-Apr-24 10:07:56 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 10:07:56 - [INFO] - 127.0.0.1 - - [12/Apr/2024 10:07:56] "GET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+12-Apr-24 10:07:58 - [INFO] - 127.0.0.1 - - [12/Apr/2024 10:07:58] "OPTIONS /api/v2/discourseAuth/discourseRegister HTTP/1.1" 200 -
+12-Apr-24 10:07:58 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+12-Apr-24 10:07:58 - [INFO] - 127.0.0.1 - - [12/Apr/2024 10:07:58] "[35m[1mPOST /api/v2/discourseAuth/discourseRegister HTTP/1.1[0m" 500 -
+12-Apr-24 10:08:11 - [INFO] - 127.0.0.1 - - [12/Apr/2024 10:08:11] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+12-Apr-24 10:08:11 - [INFO] - 404 - Provided user id does not exists. Please create account.
+12-Apr-24 10:08:11 - [INFO] - 127.0.0.1 - - [12/Apr/2024 10:08:11] "[33mPUT /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 404 -
+12-Apr-24 10:12:15 - [INFO] - 127.0.0.1 - - [12/Apr/2024 10:12:15] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+12-Apr-24 10:12:15 - [INFO] - User logged in.
+12-Apr-24 10:12:15 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 10:12:15 - [INFO] - 127.0.0.1 - - [12/Apr/2024 10:12:15] "POST /api/v2/auth/login HTTP/1.1" 200 -
+12-Apr-24 10:12:15 - [INFO] - 127.0.0.1 - - [12/Apr/2024 10:12:15] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+12-Apr-24 10:12:15 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+12-Apr-24 10:12:15 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+12-Apr-24 10:12:15 - [INFO] - File path is not valid: 
+12-Apr-24 10:12:15 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 10:12:15 - [INFO] - 127.0.0.1 - - [12/Apr/2024 10:12:15] "GET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+12-Apr-24 10:12:17 - [INFO] - 127.0.0.1 - - [12/Apr/2024 10:12:17] "OPTIONS /api/v2/discourseAuth/discourseRegister HTTP/1.1" 200 -
+12-Apr-24 10:12:17 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+12-Apr-24 10:12:17 - [INFO] - 127.0.0.1 - - [12/Apr/2024 10:12:17] "[35m[1mPOST /api/v2/discourseAuth/discourseRegister HTTP/1.1[0m" 500 -
+12-Apr-24 10:12:49 - [INFO] - 127.0.0.1 - - [12/Apr/2024 10:12:49] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+12-Apr-24 10:12:49 - [INFO] - 404 - Provided user id does not exists. Please create account.
+12-Apr-24 10:12:49 - [INFO] - 127.0.0.1 - - [12/Apr/2024 10:12:49] "[33mPUT /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 404 -
+12-Apr-24 10:15:35 - [INFO] - 127.0.0.1 - - [12/Apr/2024 10:15:35] "OPTIONS /api/v2/discourseAuth/discourseRegister HTTP/1.1" 200 -
+12-Apr-24 10:15:35 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+12-Apr-24 10:15:35 - [INFO] - 127.0.0.1 - - [12/Apr/2024 10:15:35] "[35m[1mPOST /api/v2/discourseAuth/discourseRegister HTTP/1.1[0m" 500 -
+12-Apr-24 10:15:52 - [INFO] - 127.0.0.1 - - [12/Apr/2024 10:15:52] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+12-Apr-24 10:15:52 - [INFO] - User logged in.
+12-Apr-24 10:15:52 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 10:15:52 - [INFO] - 127.0.0.1 - - [12/Apr/2024 10:15:52] "POST /api/v2/auth/login HTTP/1.1" 200 -
+12-Apr-24 10:15:52 - [INFO] - 127.0.0.1 - - [12/Apr/2024 10:15:52] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+12-Apr-24 10:15:52 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+12-Apr-24 10:15:52 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+12-Apr-24 10:15:52 - [INFO] - File path is not valid: 
+12-Apr-24 10:15:52 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 10:15:52 - [INFO] - 127.0.0.1 - - [12/Apr/2024 10:15:52] "GET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+12-Apr-24 10:15:55 - [INFO] - 127.0.0.1 - - [12/Apr/2024 10:15:55] "OPTIONS /api/v2/discourseAuth/discourseRegister HTTP/1.1" 200 -
+12-Apr-24 10:15:55 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+12-Apr-24 10:15:55 - [INFO] - 127.0.0.1 - - [12/Apr/2024 10:15:55] "[35m[1mPOST /api/v2/discourseAuth/discourseRegister HTTP/1.1[0m" 500 -
+12-Apr-24 10:16:04 - [INFO] - 127.0.0.1 - - [12/Apr/2024 10:16:04] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+12-Apr-24 10:16:04 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+12-Apr-24 10:16:04 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+12-Apr-24 10:16:04 - [INFO] - 127.0.0.1 - - [12/Apr/2024 10:16:04] "[35m[1mPUT /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 500 -
+12-Apr-24 10:18:06 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/user_utils.py', reloading
+12-Apr-24 10:18:07 - [INFO] -  * Restarting with stat
+12-Apr-24 10:18:07 - [INFO] - Development environment configured.
+12-Apr-24 10:18:07 - [WARNING] -  * Debugger is active!
+12-Apr-24 10:18:07 - [INFO] -  * Debugger PIN: 951-357-459
+12-Apr-24 10:18:10 - [INFO] - 127.0.0.1 - - [12/Apr/2024 10:18:10] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+12-Apr-24 10:18:10 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+12-Apr-24 10:18:10 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+12-Apr-24 10:18:10 - [INFO] - 127.0.0.1 - - [12/Apr/2024 10:18:10] "[35m[1mPUT /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 500 -
+12-Apr-24 10:18:35 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/user_utils.py', reloading
+12-Apr-24 10:18:35 - [INFO] -  * Restarting with stat
+12-Apr-24 10:18:35 - [INFO] - Development environment configured.
+12-Apr-24 10:18:35 - [WARNING] -  * Debugger is active!
+12-Apr-24 10:18:35 - [INFO] -  * Debugger PIN: 951-357-459
+12-Apr-24 10:18:39 - [INFO] - 127.0.0.1 - - [12/Apr/2024 10:18:39] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+12-Apr-24 10:18:39 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+12-Apr-24 10:18:39 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+12-Apr-24 10:18:39 - [INFO] - 127.0.0.1 - - [12/Apr/2024 10:18:39] "[35m[1mPUT /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1[0m" 500 -
+12-Apr-24 10:18:45 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/user_utils.py', reloading
+12-Apr-24 10:18:46 - [INFO] -  * Restarting with stat
+12-Apr-24 10:18:46 - [INFO] - Development environment configured.
+12-Apr-24 10:18:46 - [WARNING] -  * Debugger is active!
+12-Apr-24 10:18:46 - [INFO] -  * Debugger PIN: 951-357-459
+12-Apr-24 10:18:48 - [INFO] - 127.0.0.1 - - [12/Apr/2024 10:18:48] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+12-Apr-24 10:18:48 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+12-Apr-24 10:18:48 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+12-Apr-24 10:18:48 - [INFO] - User details Updated successfully.
+12-Apr-24 10:18:48 - [INFO] - 200 - User details Updated successfully.
+12-Apr-24 10:18:48 - [INFO] - 127.0.0.1 - - [12/Apr/2024 10:18:48] "PUT /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+12-Apr-24 10:18:54 - [INFO] - 127.0.0.1 - - [12/Apr/2024 10:18:54] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+12-Apr-24 10:18:54 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+12-Apr-24 10:18:54 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+12-Apr-24 10:18:54 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 10:18:54 - [INFO] - 127.0.0.1 - - [12/Apr/2024 10:18:54] "GET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+12-Apr-24 10:18:58 - [INFO] - 127.0.0.1 - - [12/Apr/2024 10:18:58] "OPTIONS /api/v2/discourseAuth/discourseRegister HTTP/1.1" 200 -
+12-Apr-24 10:18:58 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+12-Apr-24 10:18:58 - [INFO] - 127.0.0.1 - - [12/Apr/2024 10:18:58] "[35m[1mPOST /api/v2/discourseAuth/discourseRegister HTTP/1.1[0m" 500 -
+12-Apr-24 10:19:12 - [INFO] - 127.0.0.1 - - [12/Apr/2024 10:19:12] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+12-Apr-24 10:19:12 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+12-Apr-24 10:19:12 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+12-Apr-24 10:19:12 - [INFO] - User details Updated successfully.
+12-Apr-24 10:19:12 - [INFO] - 200 - User details Updated successfully.
+12-Apr-24 10:19:12 - [INFO] - 127.0.0.1 - - [12/Apr/2024 10:19:12] "PUT /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+12-Apr-24 10:19:14 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+12-Apr-24 10:19:14 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+12-Apr-24 10:19:14 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 10:19:14 - [INFO] - 127.0.0.1 - - [12/Apr/2024 10:19:14] "GET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+12-Apr-24 10:19:18 - [INFO] - 127.0.0.1 - - [12/Apr/2024 10:19:18] "OPTIONS /api/v2/auth/newUsers HTTP/1.1" 200 -
+12-Apr-24 10:19:18 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+12-Apr-24 10:19:18 - [INFO] - Admin role is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+12-Apr-24 10:19:18 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 10:19:18 - [INFO] - 127.0.0.1 - - [12/Apr/2024 10:19:18] "GET /api/v2/auth/newUsers HTTP/1.1" 200 -
+12-Apr-24 10:19:20 - [INFO] - 127.0.0.1 - - [12/Apr/2024 10:19:20] "OPTIONS /api/v2/ticket/all-tickets/7e666996a8fddf675ceada5ef31fc342?query=&filter_priority=&filter_status=Resolved&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+12-Apr-24 10:19:20 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+12-Apr-24 10:19:20 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+12-Apr-24 10:19:20 - [INFO] - All tickets found : 13
+12-Apr-24 10:19:20 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 10:19:20 - [INFO] - 127.0.0.1 - - [12/Apr/2024 10:19:20] "GET /api/v2/ticket/all-tickets/7e666996a8fddf675ceada5ef31fc342?query=&filter_priority=&filter_status=Resolved&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+12-Apr-24 10:19:23 - [INFO] - 127.0.0.1 - - [12/Apr/2024 10:19:23] "OPTIONS /api/v2/faq/ HTTP/1.1" 200 -
+12-Apr-24 10:19:23 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+12-Apr-24 10:19:23 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+12-Apr-24 10:19:23 - [INFO] - All FAQs found : 10
+12-Apr-24 10:19:23 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 10:19:23 - [INFO] - 127.0.0.1 - - [12/Apr/2024 10:19:23] "GET /api/v2/faq/ HTTP/1.1" 200 -
+12-Apr-24 10:19:25 - [INFO] - 127.0.0.1 - - [12/Apr/2024 10:19:25] "OPTIONS /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+12-Apr-24 10:19:25 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+12-Apr-24 10:19:25 - [INFO] - User role : admin : is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+12-Apr-24 10:19:25 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 10:19:25 - [INFO] - 127.0.0.1 - - [12/Apr/2024 10:19:25] "GET /api/v2/admin/7e666996a8fddf675ceada5ef31fc342 HTTP/1.1" 200 -
+12-Apr-24 10:19:27 - [INFO] - 127.0.0.1 - - [12/Apr/2024 10:19:27] "OPTIONS /api/v2/auth/newUsers HTTP/1.1" 200 -
+12-Apr-24 10:19:27 - [INFO] - Token is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+12-Apr-24 10:19:27 - [INFO] - Admin role is verified for the user: 7e666996a8fddf675ceada5ef31fc342
+12-Apr-24 10:19:27 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 10:19:27 - [INFO] - 127.0.0.1 - - [12/Apr/2024 10:19:27] "GET /api/v2/auth/newUsers HTTP/1.1" 200 -

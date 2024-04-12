@@ -83,11 +83,12 @@ class FAQUtils(UserUtils):
             # attachment_loc will contain base64 version of image while data transfer is occuring between backend and frontend
             # attachment_loc will contain image path when data is retried from db by backend
             # attachment_loc will contain base64 image when creating new attachment
+            
 
-            if attach["attachment_location"]:
-                if is_base64(attach["attachment_location"].split(",")[1]):
+            if attach["attachment_loc"]:
+                if is_base64(attach["attachment_loc"].split(",")[1]):
                     file_type, file_format, encoded_data = get_encoded_file_details(
-                        attach["attachment_location"]
+                        attach["attachment_loc"]
                     )
                     if (file_type == "image") and (
                         file_format in ACCEPTED_IMAGE_EXTENSIONS
@@ -99,10 +100,12 @@ class FAQUtils(UserUtils):
                             try:
                                 # while creating a faq a student can upload multiple attachments
                                 # verify whether each attachment is unique
-                                attach = {}
                                 attach["faq_id"] = faq_id
-                                attach["attachment_location"] = file_path
-                                faq_attach = FAQAttachment(**attach)
+                                attach["attachment_loc"] = file_path
+                                faq_attach = FAQAttachment(
+                                    faq_id=attach["faq_id"],
+                                    attachment_location=attach["attachment_loc"]
+                                )
                                 db.session.add(faq_attach)
                                 db.session.commit()
                                 num_successful_attachments += 1
