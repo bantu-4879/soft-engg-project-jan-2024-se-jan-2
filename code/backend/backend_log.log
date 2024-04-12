@@ -355,3 +355,254 @@
 12-Apr-24 20:38:58 - [INFO] -  * Debugger PIN: 144-740-991
 12-Apr-24 20:39:24 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\views\\discoursePost_bp.py', reloading
 12-Apr-24 20:39:24 - [INFO] -  * Restarting with stat
+12-Apr-24 21:22:17 - [INFO] - Development environment configured.
+12-Apr-24 21:22:17 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+12-Apr-24 21:22:17 - [INFO] - [33mPress CTRL+C to quit[0m
+12-Apr-24 21:22:17 - [INFO] -  * Restarting with stat
+12-Apr-24 21:22:17 - [INFO] - Development environment configured.
+12-Apr-24 21:22:17 - [WARNING] -  * Debugger is active!
+12-Apr-24 21:22:17 - [INFO] -  * Debugger PIN: 163-373-655
+12-Apr-24 21:22:57 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:22:57] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+12-Apr-24 21:22:57 - [INFO] - File path is not valid: D:\GitHub\soft-engg-project-jan-2024-se-jan-2\code\backend\databases\images\profile_pics\b8aeec8b91548b073d2b7e42f9d1328d.png
+12-Apr-24 21:22:57 - [INFO] - User logged in.
+12-Apr-24 21:22:57 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 21:22:57 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:22:57] "POST /api/v2/auth/login HTTP/1.1" 200 -
+12-Apr-24 21:22:57 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:22:57] "OPTIONS /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 21:22:57 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:22:57] "OPTIONS /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=Open HTTP/1.1" 200 -
+12-Apr-24 21:22:57 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 21:22:57 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:22:57] "GET /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 21:22:57 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 21:22:57 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 21:22:57 - [INFO] - All tickets found : 8
+12-Apr-24 21:22:57 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 21:22:57 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:22:57] "GET /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=Open HTTP/1.1" 200 -
+12-Apr-24 21:23:00 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:23:00] "OPTIONS /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+12-Apr-24 21:23:00 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 21:23:00 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 21:23:00 - [INFO] - All tickets found : 22
+12-Apr-24 21:23:00 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 21:23:00 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:23:00] "GET /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+12-Apr-24 21:23:02 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:23:02] "OPTIONS /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?query=&filter_priority=&filter_status=&sortby=&sortdir=&filter_tags= HTTP/1.1" 200 -
+12-Apr-24 21:23:02 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 21:23:02 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 21:23:02 - [INFO] - All tickets found : 21
+12-Apr-24 21:23:02 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 21:23:02 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:23:02] "GET /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?query=&filter_priority=&filter_status=&sortby=&sortdir=&filter_tags= HTTP/1.1" 200 -
+12-Apr-24 21:23:05 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:23:05] "OPTIONS /api/v2/faq/ HTTP/1.1" 200 -
+12-Apr-24 21:23:05 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 21:23:05 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 21:23:05 - [INFO] - All FAQs found : 6
+12-Apr-24 21:23:05 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 21:23:05 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:23:05] "GET /api/v2/faq/ HTTP/1.1" 200 -
+12-Apr-24 21:23:13 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:23:13] "OPTIONS /api/v2/inbox/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 21:23:13 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 21:23:13 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 21:23:13 - [INFO] - All Messages found
+12-Apr-24 21:23:13 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 21:23:13 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:23:13] "GET /api/v2/inbox/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 21:23:17 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:23:17] "OPTIONS /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 21:23:17 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:23:17] "OPTIONS /api/v2/management/badge/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 21:23:17 - [INFO] - All Badges found
+12-Apr-24 21:23:17 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 21:23:17 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 21:23:17 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:23:17] "GET /api/v2/management/badge/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 21:23:17 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:23:17] "GET /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 21:23:17 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:23:17] "OPTIONS /api/v2/discourseAuth/discourseExists/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 21:23:17 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 21:23:17 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:23:17] "GET /api/v2/discourseAuth/discourseExists/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 21:24:47 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:24:47] "OPTIONS /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 21:24:47 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:24:47] "OPTIONS /api/v2/management/badge/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 21:24:47 - [INFO] - All Badges found
+12-Apr-24 21:24:47 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 21:24:47 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:24:47] "GET /api/v2/management/badge/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 21:24:47 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 21:24:47 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:24:47] "GET /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 21:24:47 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:24:47] "OPTIONS /api/v2/discourseAuth/discourseExists/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 21:24:47 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 21:24:47 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:24:47] "GET /api/v2/discourseAuth/discourseExists/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 21:25:37 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/student_bp.py', reloading
+12-Apr-24 21:25:37 - [INFO] -  * Restarting with stat
+12-Apr-24 21:25:38 - [INFO] - Development environment configured.
+12-Apr-24 21:25:38 - [WARNING] -  * Debugger is active!
+12-Apr-24 21:25:38 - [INFO] -  * Debugger PIN: 163-373-655
+12-Apr-24 21:26:20 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:26:20] "OPTIONS /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 21:26:20 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:26:20] "OPTIONS /api/v2/management/badge/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 21:26:20 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:26:20] "OPTIONS /api/v2/discourseAuth/discourseExists/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 21:26:20 - [INFO] - All Badges found
+12-Apr-24 21:26:20 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 21:26:20 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 21:26:20 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:26:20] "GET /api/v2/management/badge/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 21:26:20 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 21:26:20 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 21:26:20 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:26:20] "GET /api/v2/discourseAuth/discourseExists/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 21:26:20 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 21:26:20 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:26:20] "GET /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 21:28:44 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:28:44] "OPTIONS /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 21:28:44 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 21:28:44 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 21:28:44 - [INFO] - User details Updated successfully.
+12-Apr-24 21:28:44 - [INFO] - 200 - User details Updated successfully.
+12-Apr-24 21:28:44 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:28:44] "PUT /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 21:28:47 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:28:47] "OPTIONS /api/v2/faq/ HTTP/1.1" 200 -
+12-Apr-24 21:28:47 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 21:28:47 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 21:28:47 - [INFO] - All FAQs found : 6
+12-Apr-24 21:28:47 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 21:28:47 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:28:47] "GET /api/v2/faq/ HTTP/1.1" 200 -
+12-Apr-24 21:28:49 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:28:49] "OPTIONS /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 21:28:49 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:28:49] "OPTIONS /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=Open HTTP/1.1" 200 -
+12-Apr-24 21:28:49 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 21:28:49 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 21:28:49 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 21:28:49 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 21:28:49 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 21:28:49 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:28:49] "GET /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 21:28:49 - [INFO] - All tickets found : 8
+12-Apr-24 21:28:49 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 21:28:49 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:28:49] "GET /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=Open HTTP/1.1" 200 -
+12-Apr-24 21:28:54 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:28:54] "OPTIONS /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+12-Apr-24 21:28:54 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 21:28:54 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 21:28:54 - [INFO] - All tickets found : 22
+12-Apr-24 21:28:54 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 21:28:54 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:28:54] "GET /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+12-Apr-24 21:29:20 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:29:20] "OPTIONS /api/v2/ticket/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 21:29:20 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 21:29:20 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 21:29:20 - [INFO] - Ticket created successfully.
+12-Apr-24 21:29:20 - [INFO] - 200 - Ticket created successfully. Attachments are empty.
+12-Apr-24 21:29:20 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:29:20] "POST /api/v2/ticket/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 21:33:48 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:33:48] "OPTIONS /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+12-Apr-24 21:33:48 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 21:33:48 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 21:33:48 - [INFO] - All tickets found : 23
+12-Apr-24 21:33:48 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 21:33:48 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:33:48] "GET /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+12-Apr-24 21:33:56 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:33:56] "OPTIONS /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=Open&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+12-Apr-24 21:33:56 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 21:33:56 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 21:33:56 - [INFO] - All tickets found : 10
+12-Apr-24 21:33:56 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 21:33:56 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:33:56] "GET /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=Open&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+12-Apr-24 21:34:00 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:34:00] "OPTIONS /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=Resolved&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+12-Apr-24 21:34:00 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 21:34:00 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 21:34:00 - [INFO] - All tickets found : 13
+12-Apr-24 21:34:00 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 21:34:00 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:34:00] "GET /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=Resolved&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+12-Apr-24 21:34:03 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:34:03] "OPTIONS /api/v2/ticket/1340f9086b57da21ea17485e61230f94/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 21:34:03 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 21:34:03 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 21:34:03 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:34:03] "GET /api/v2/ticket/1340f9086b57da21ea17485e61230f94/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 21:34:23 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:34:23] "OPTIONS /api/v2/ticket/all-tickets?query=&filter_priority=low&filter_status=Resolved&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+12-Apr-24 21:34:23 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 21:34:23 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 21:34:23 - [INFO] - All tickets found : 0
+12-Apr-24 21:34:23 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 21:34:23 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:34:23] "GET /api/v2/ticket/all-tickets?query=&filter_priority=low&filter_status=Resolved&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+12-Apr-24 21:45:39 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+12-Apr-24 21:45:39 - [INFO] -  * Restarting with stat
+12-Apr-24 21:45:39 - [INFO] - Development environment configured.
+12-Apr-24 21:45:39 - [WARNING] -  * Debugger is active!
+12-Apr-24 21:45:39 - [INFO] -  * Debugger PIN: 163-373-655
+12-Apr-24 21:45:53 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:45:53] "OPTIONS /api/v2/ticket/all-tickets?query=&filter_priority=low,medium,high&filter_status=&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+12-Apr-24 21:45:53 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 21:45:53 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 21:45:53 - [INFO] - All tickets found : 0
+12-Apr-24 21:45:53 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 21:45:53 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:45:53] "GET /api/v2/ticket/all-tickets?query=&filter_priority=low,medium,high&filter_status=&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+12-Apr-24 21:47:43 - [INFO] -  * Detected change in '/Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/ticket_bp.py', reloading
+12-Apr-24 21:47:43 - [INFO] -  * Restarting with stat
+12-Apr-24 21:47:43 - [INFO] - Development environment configured.
+12-Apr-24 21:47:43 - [WARNING] -  * Debugger is active!
+12-Apr-24 21:47:43 - [INFO] -  * Debugger PIN: 163-373-655
+12-Apr-24 21:48:29 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:48:29] "OPTIONS /api/v2/ticket/all-tickets?query=&filter_priority=low,medium,high&filter_status=&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+12-Apr-24 21:48:30 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 21:48:30 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 21:48:30 - [INFO] - All tickets found : 23
+12-Apr-24 21:48:30 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 21:48:30 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:48:30] "GET /api/v2/ticket/all-tickets?query=&filter_priority=low,medium,high&filter_status=&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+12-Apr-24 21:48:33 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:48:33] "OPTIONS /api/v2/ticket/all-tickets?query=&filter_priority=low,high&filter_status=&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+12-Apr-24 21:48:33 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 21:48:33 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 21:48:33 - [INFO] - All tickets found : 21
+12-Apr-24 21:48:33 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 21:48:33 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:48:33] "GET /api/v2/ticket/all-tickets?query=&filter_priority=low,high&filter_status=&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+12-Apr-24 21:48:35 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:48:35] "OPTIONS /api/v2/ticket/all-tickets?query=&filter_priority=high&filter_status=&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+12-Apr-24 21:48:35 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 21:48:35 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 21:48:35 - [INFO] - All tickets found : 17
+12-Apr-24 21:48:35 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 21:48:35 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:48:35] "GET /api/v2/ticket/all-tickets?query=&filter_priority=high&filter_status=&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+12-Apr-24 21:48:38 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:48:38] "OPTIONS /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+12-Apr-24 21:48:38 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 21:48:38 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 21:48:38 - [INFO] - All tickets found : 23
+12-Apr-24 21:48:38 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 21:48:38 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:48:38] "GET /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+12-Apr-24 21:48:42 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:48:42] "OPTIONS /api/v2/ticket/all-tickets?query=&filter_priority=low&filter_status=&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+12-Apr-24 21:48:42 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 21:48:42 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 21:48:42 - [INFO] - All tickets found : 4
+12-Apr-24 21:48:42 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 21:48:42 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:48:42] "GET /api/v2/ticket/all-tickets?query=&filter_priority=low&filter_status=&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+12-Apr-24 21:48:47 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:48:47] "OPTIONS /api/v2/ticket/all-tickets?query=&filter_priority=medium&filter_status=&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+12-Apr-24 21:48:47 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 21:48:47 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 21:48:47 - [INFO] - All tickets found : 2
+12-Apr-24 21:48:47 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 21:48:47 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:48:47] "GET /api/v2/ticket/all-tickets?query=&filter_priority=medium&filter_status=&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+12-Apr-24 21:55:01 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:55:01] "OPTIONS /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=votes&sortdir=desc&filter_tags=Help,Portal+Down HTTP/1.1" 200 -
+12-Apr-24 21:55:01 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 21:55:01 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 21:55:01 - [INFO] - All tickets found : 1
+12-Apr-24 21:55:01 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 21:55:01 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:55:01] "GET /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=votes&sortdir=desc&filter_tags=Help,Portal+Down HTTP/1.1" 200 -
+12-Apr-24 21:55:06 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:55:06] "OPTIONS /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=votes&sortdir=desc&filter_tags=Portal+Down HTTP/1.1" 200 -
+12-Apr-24 21:55:06 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 21:55:06 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 21:55:06 - [INFO] - All tickets found : 1
+12-Apr-24 21:55:06 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 21:55:06 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:55:06] "GET /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=votes&sortdir=desc&filter_tags=Portal+Down HTTP/1.1" 200 -
+12-Apr-24 21:55:10 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:55:10] "OPTIONS /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=votes&sortdir=desc&filter_tags=Graded+Assignment HTTP/1.1" 200 -
+12-Apr-24 21:55:10 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 21:55:10 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 21:55:10 - [INFO] - All tickets found : 2
+12-Apr-24 21:55:10 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 21:55:10 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:55:10] "GET /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=votes&sortdir=desc&filter_tags=Graded+Assignment HTTP/1.1" 200 -
+12-Apr-24 21:55:15 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:55:15] "OPTIONS /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=votes&sortdir=desc&filter_tags=Graded+Assignment,SE+Course HTTP/1.1" 200 -
+12-Apr-24 21:55:15 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 21:55:15 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 21:55:15 - [INFO] - All tickets found : 5
+12-Apr-24 21:55:15 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 21:55:15 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:55:15] "GET /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=votes&sortdir=desc&filter_tags=Graded+Assignment,SE+Course HTTP/1.1" 200 -
+12-Apr-24 21:55:18 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 21:55:18 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 21:55:18 - [INFO] - All tickets found : 5
+12-Apr-24 21:55:18 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 21:55:18 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:55:18] "GET /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=votes&sortdir=desc&filter_tags=Graded+Assignment,SE+Course HTTP/1.1" 200 -
+12-Apr-24 21:55:52 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:55:52] "OPTIONS /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+12-Apr-24 21:55:52 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 21:55:52 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 21:55:52 - [INFO] - All tickets found : 23
+12-Apr-24 21:55:52 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 21:55:52 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:55:52] "GET /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+12-Apr-24 21:56:07 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:56:07] "OPTIONS /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=votes&sortdir=asc&filter_tags= HTTP/1.1" 200 -
+12-Apr-24 21:56:07 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 21:56:07 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 21:56:07 - [INFO] - All tickets found : 23
+12-Apr-24 21:56:07 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 21:56:07 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:56:07] "GET /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=votes&sortdir=asc&filter_tags= HTTP/1.1" 200 -
+12-Apr-24 21:56:12 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:56:12] "OPTIONS /api/v2/faq/ HTTP/1.1" 200 -
+12-Apr-24 21:56:12 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 21:56:12 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 21:56:12 - [INFO] - All FAQs found : 6
+12-Apr-24 21:56:12 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 21:56:12 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:56:12] "GET /api/v2/faq/ HTTP/1.1" 200 -
+12-Apr-24 21:56:15 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:56:15] "OPTIONS /api/v2/inbox/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 21:56:15 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 21:56:15 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 21:56:15 - [INFO] - All Messages found
+12-Apr-24 21:56:15 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 21:56:15 - [INFO] - 127.0.0.1 - - [12/Apr/2024 21:56:15] "GET /api/v2/inbox/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
