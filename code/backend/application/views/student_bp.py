@@ -26,8 +26,8 @@ student_util = StudentUtils()
 
 
 class StudentAPI(Resource):
-    # @token_required
-    # @users_required(users=["student"])
+    @token_required
+    @users_required(users=["student"])
     def get(self, user_id):
         """
         Usage
