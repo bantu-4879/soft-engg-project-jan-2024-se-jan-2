@@ -106,8 +106,8 @@ export default {
         { item: "high", name: "High" },
       ],
       filter_status_options: [
-        { item: "pending", name: "Pending", disabled: false },
-        { item: "resolved", name: "Resolved", disabled: false },
+        { item: "Open", name: "Open", disabled: false },
+        { item: "Resolved", name: "Resolved", disabled: false },
       ],
 
       sort_by_options: [
