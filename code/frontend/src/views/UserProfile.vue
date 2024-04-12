@@ -486,7 +486,7 @@ export default {
       // Password should contain letters A-Z a-z and numbers 0-9 only and should be at least 8 characters long
       const regex = /^(?=.*[A-Za-z])(?=.*\d)(?=.*_).{8,}$/;
       let password2=this.discourse_form.password;
-      print(regex.test(password2))
+      console.log(regex.test(password2))
       return regex.test(password2);
     },
     checkRetypePassword() {

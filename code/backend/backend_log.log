@@ -1,0 +1,80 @@
+12-Apr-24 17:14:08 - [INFO] - Development environment configured.
+12-Apr-24 17:14:08 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+12-Apr-24 17:14:08 - [INFO] - [33mPress CTRL+C to quit[0m
+12-Apr-24 17:14:08 - [INFO] -  * Restarting with stat
+12-Apr-24 17:14:09 - [INFO] - Development environment configured.
+12-Apr-24 17:14:09 - [WARNING] -  * Debugger is active!
+12-Apr-24 17:14:09 - [INFO] -  * Debugger PIN: 299-872-502
+12-Apr-24 17:14:49 - [INFO] - 127.0.0.1 - - [12/Apr/2024 17:14:49] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+12-Apr-24 17:14:49 - [INFO] - User logged in.
+12-Apr-24 17:14:49 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 17:14:49 - [INFO] - 127.0.0.1 - - [12/Apr/2024 17:14:49] "POST /api/v2/auth/login HTTP/1.1" 200 -
+12-Apr-24 17:14:49 - [INFO] - 127.0.0.1 - - [12/Apr/2024 17:14:49] "OPTIONS /api/v2/admin/0ecd00c35e6914b2846832bd22677f3a HTTP/1.1" 200 -
+12-Apr-24 17:14:49 - [INFO] - Token is verified for the user: 0ecd00c35e6914b2846832bd22677f3a
+12-Apr-24 17:14:49 - [INFO] - User role : admin : is verified for the user: 0ecd00c35e6914b2846832bd22677f3a
+12-Apr-24 17:14:49 - [INFO] - File path is not valid: 
+12-Apr-24 17:14:49 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 17:14:49 - [INFO] - 127.0.0.1 - - [12/Apr/2024 17:14:49] "GET /api/v2/admin/0ecd00c35e6914b2846832bd22677f3a HTTP/1.1" 200 -
+12-Apr-24 17:14:52 - [INFO] - 127.0.0.1 - - [12/Apr/2024 17:14:52] "OPTIONS /api/v2/admin/0ecd00c35e6914b2846832bd22677f3a HTTP/1.1" 200 -
+12-Apr-24 17:14:52 - [INFO] - 404 - Provided user id does not exists. Please create account.
+12-Apr-24 17:14:52 - [INFO] - 127.0.0.1 - - [12/Apr/2024 17:14:52] "[33mGET /api/v2/admin/0ecd00c35e6914b2846832bd22677f3a HTTP/1.1[0m" 404 -
+12-Apr-24 17:16:00 - [INFO] - 127.0.0.1 - - [12/Apr/2024 17:16:00] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+12-Apr-24 17:16:00 - [INFO] - 404 - User does not exists
+12-Apr-24 17:16:00 - [INFO] - 127.0.0.1 - - [12/Apr/2024 17:16:00] "[33mPOST /api/v2/auth/login HTTP/1.1[0m" 404 -
+12-Apr-24 17:16:01 - [INFO] - 404 - User does not exists
+12-Apr-24 17:16:01 - [INFO] - 127.0.0.1 - - [12/Apr/2024 17:16:01] "[33mPOST /api/v2/auth/login HTTP/1.1[0m" 404 -
+12-Apr-24 17:16:05 - [INFO] - 127.0.0.1 - - [12/Apr/2024 17:16:05] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+12-Apr-24 17:16:05 - [INFO] - 404 - User does not exists
+12-Apr-24 17:16:05 - [INFO] - 127.0.0.1 - - [12/Apr/2024 17:16:05] "[33mPOST /api/v2/auth/login HTTP/1.1[0m" 404 -
+12-Apr-24 17:17:14 - [INFO] - 127.0.0.1 - - [12/Apr/2024 17:17:14] "OPTIONS /api/v2/auth/register HTTP/1.1" 200 -
+12-Apr-24 17:17:14 - [INFO] - New account created
+12-Apr-24 17:17:14 - [INFO] - 200 - Account created successfully. Now please login.
+12-Apr-24 17:17:14 - [INFO] - 127.0.0.1 - - [12/Apr/2024 17:17:14] "POST /api/v2/auth/register HTTP/1.1" 200 -
+12-Apr-24 17:17:23 - [INFO] - 127.0.0.1 - - [12/Apr/2024 17:17:23] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+12-Apr-24 17:17:23 - [INFO] - User logged in.
+12-Apr-24 17:17:23 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 17:17:23 - [INFO] - 127.0.0.1 - - [12/Apr/2024 17:17:23] "POST /api/v2/auth/login HTTP/1.1" 200 -
+12-Apr-24 17:17:23 - [INFO] - 127.0.0.1 - - [12/Apr/2024 17:17:23] "OPTIONS /api/v2/admin/0ecd00c35e6914b2846832bd22677f3a HTTP/1.1" 200 -
+12-Apr-24 17:17:23 - [INFO] - Token is verified for the user: 0ecd00c35e6914b2846832bd22677f3a
+12-Apr-24 17:17:23 - [INFO] - User role : admin : is verified for the user: 0ecd00c35e6914b2846832bd22677f3a
+12-Apr-24 17:17:23 - [INFO] - File path is not valid: 
+12-Apr-24 17:17:23 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 17:17:23 - [INFO] - 127.0.0.1 - - [12/Apr/2024 17:17:23] "GET /api/v2/admin/0ecd00c35e6914b2846832bd22677f3a HTTP/1.1" 200 -
+12-Apr-24 17:17:26 - [INFO] - 127.0.0.1 - - [12/Apr/2024 17:17:26] "OPTIONS /api/v2/auth/newUsers HTTP/1.1" 200 -
+12-Apr-24 17:17:26 - [INFO] - Token is verified for the user: 0ecd00c35e6914b2846832bd22677f3a
+12-Apr-24 17:17:26 - [INFO] - Admin role is verified for the user: 0ecd00c35e6914b2846832bd22677f3a
+12-Apr-24 17:17:26 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 17:17:26 - [INFO] - 127.0.0.1 - - [12/Apr/2024 17:17:26] "GET /api/v2/auth/newUsers HTTP/1.1" 200 -
+12-Apr-24 17:17:30 - [INFO] - 127.0.0.1 - - [12/Apr/2024 17:17:30] "OPTIONS /api/v2/auth/newUsers/4007354331587558128063350bfa250e HTTP/1.1" 200 -
+12-Apr-24 17:17:30 - [INFO] - Token is verified for the user: 0ecd00c35e6914b2846832bd22677f3a
+12-Apr-24 17:17:30 - [INFO] - Admin role is verified for the user: 0ecd00c35e6914b2846832bd22677f3a
+12-Apr-24 17:17:30 - [INFO] - 200 - User verified and updated in database.
+12-Apr-24 17:17:30 - [INFO] - 127.0.0.1 - - [12/Apr/2024 17:17:30] "PUT /api/v2/auth/newUsers/4007354331587558128063350bfa250e HTTP/1.1" 200 -
+12-Apr-24 17:17:44 - [INFO] - 127.0.0.1 - - [12/Apr/2024 17:17:44] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+12-Apr-24 17:17:44 - [INFO] - User logged in.
+12-Apr-24 17:17:44 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 17:17:44 - [INFO] - 127.0.0.1 - - [12/Apr/2024 17:17:44] "POST /api/v2/auth/login HTTP/1.1" 200 -
+12-Apr-24 17:17:44 - [INFO] - 127.0.0.1 - - [12/Apr/2024 17:17:44] "OPTIONS /api/v2/student/4007354331587558128063350bfa250e HTTP/1.1" 200 -
+12-Apr-24 17:17:44 - [INFO] - 127.0.0.1 - - [12/Apr/2024 17:17:44] "OPTIONS /api/v2/ticket/all-tickets/4007354331587558128063350bfa250e?filter_status=Open HTTP/1.1" 200 -
+12-Apr-24 17:17:44 - [INFO] - Token is verified for the user: 4007354331587558128063350bfa250e
+12-Apr-24 17:17:44 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 17:17:44 - [INFO] - 127.0.0.1 - - [12/Apr/2024 17:17:44] "GET /api/v2/student/4007354331587558128063350bfa250e HTTP/1.1" 200 -
+12-Apr-24 17:17:44 - [INFO] - User role : student : is verified for the user: 4007354331587558128063350bfa250e
+12-Apr-24 17:17:44 - [INFO] - All tickets found : 0
+12-Apr-24 17:17:44 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 17:17:44 - [INFO] - 127.0.0.1 - - [12/Apr/2024 17:17:44] "GET /api/v2/ticket/all-tickets/4007354331587558128063350bfa250e?filter_status=Open HTTP/1.1" 200 -
+12-Apr-24 17:17:47 - [INFO] - 127.0.0.1 - - [12/Apr/2024 17:17:47] "OPTIONS /api/v2/student/4007354331587558128063350bfa250e HTTP/1.1" 200 -
+12-Apr-24 17:17:47 - [INFO] - 127.0.0.1 - - [12/Apr/2024 17:17:47] "OPTIONS /api/v2/management/badge/4007354331587558128063350bfa250e HTTP/1.1" 200 -
+12-Apr-24 17:17:47 - [INFO] - All Badges found
+12-Apr-24 17:17:47 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 17:17:47 - [INFO] - 127.0.0.1 - - [12/Apr/2024 17:17:47] "GET /api/v2/management/badge/4007354331587558128063350bfa250e HTTP/1.1" 200 -
+12-Apr-24 17:17:47 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 17:17:47 - [INFO] - 127.0.0.1 - - [12/Apr/2024 17:17:47] "GET /api/v2/student/4007354331587558128063350bfa250e HTTP/1.1" 200 -
+12-Apr-24 17:22:16 - [INFO] - 127.0.0.1 - - [12/Apr/2024 17:22:16] "OPTIONS /api/v2/student/4007354331587558128063350bfa250e HTTP/1.1" 200 -
+12-Apr-24 17:22:16 - [INFO] - 127.0.0.1 - - [12/Apr/2024 17:22:16] "OPTIONS /api/v2/management/badge/4007354331587558128063350bfa250e HTTP/1.1" 200 -
+12-Apr-24 17:22:16 - [INFO] - All Badges found
+12-Apr-24 17:22:16 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 17:22:16 - [INFO] - 127.0.0.1 - - [12/Apr/2024 17:22:16] "GET /api/v2/management/badge/4007354331587558128063350bfa250e HTTP/1.1" 200 -
+12-Apr-24 17:22:16 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 17:22:16 - [INFO] - 127.0.0.1 - - [12/Apr/2024 17:22:16] "GET /api/v2/student/4007354331587558128063350bfa250e HTTP/1.1" 200 -
