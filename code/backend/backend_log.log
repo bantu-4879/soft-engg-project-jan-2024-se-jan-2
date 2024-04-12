@@ -78,3 +78,31 @@
 12-Apr-24 17:22:16 - [INFO] - 127.0.0.1 - - [12/Apr/2024 17:22:16] "GET /api/v2/management/badge/4007354331587558128063350bfa250e HTTP/1.1" 200 -
 12-Apr-24 17:22:16 - [INFO] - 200 - Custom success 200 response sent
 12-Apr-24 17:22:16 - [INFO] - 127.0.0.1 - - [12/Apr/2024 17:22:16] "GET /api/v2/student/4007354331587558128063350bfa250e HTTP/1.1" 200 -
+12-Apr-24 18:03:29 - [INFO] - Development environment configured.
+12-Apr-24 18:03:29 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+12-Apr-24 18:03:29 - [INFO] - [33mPress CTRL+C to quit[0m
+12-Apr-24 18:03:29 - [INFO] -  * Restarting with stat
+12-Apr-24 18:03:31 - [INFO] - Development environment configured.
+12-Apr-24 18:03:32 - [WARNING] -  * Debugger is active!
+12-Apr-24 18:03:32 - [INFO] -  * Debugger PIN: 144-740-991
+12-Apr-24 18:04:42 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:04:42] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+12-Apr-24 18:04:42 - [INFO] - User logged in.
+12-Apr-24 18:04:42 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 18:04:42 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:04:42] "POST /api/v2/auth/login HTTP/1.1" 200 -
+12-Apr-24 18:04:42 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:04:42] "OPTIONS /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 18:04:42 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:04:42] "OPTIONS /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=Open HTTP/1.1" 200 -
+12-Apr-24 18:04:42 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 18:04:42 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 18:04:42 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:04:42] "GET /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 18:04:42 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+12-Apr-24 18:04:42 - [INFO] - All tickets found : 8
+12-Apr-24 18:04:42 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 18:04:42 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:04:42] "GET /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=Open HTTP/1.1" 200 -
+12-Apr-24 18:04:46 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:04:46] "OPTIONS /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 18:04:46 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:04:46] "OPTIONS /api/v2/management/badge/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 18:04:46 - [INFO] - All Badges found
+12-Apr-24 18:04:46 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 18:04:46 - [INFO] - 200 - Custom success 200 response sent
+12-Apr-24 18:04:46 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:04:46] "GET /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+12-Apr-24 18:04:46 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:04:46] "GET /api/v2/management/badge/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -

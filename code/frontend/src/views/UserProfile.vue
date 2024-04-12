@@ -310,6 +310,8 @@ export default {
           message: "Internal Server Error",
         });
       });
+  },
+  mounted(){
     this.isregisteredOnDiscoursefun();
   },
   methods: {
@@ -409,12 +411,11 @@ export default {
             message: "Internal Server Error due to discourse",
           });
         });
-    }
-  },
-  isregisteredOnDiscoursefun(){
+    },
+    isregisteredOnDiscoursefun(){
     console.log("I reached here.")
     this.loading = true;
-    user_id= this.$store.getters.get_user_id
+    let user_id= this.$store.getters.get_user_id
       fetch(common.DISCOURSE_REGISTER_API + '/discourseExists'+`/${user_id}`, {
         method: "GET",
         headers: {
@@ -445,7 +446,7 @@ export default {
         });
 
   },
-    onResetDiscourse(event) {
+  onResetDiscourse(event) {
       event.preventDefault();
       this.discourse_form = {
         name: "",
@@ -455,6 +456,7 @@ export default {
       };
       this.retypePassword = "";
     },
+  },
   computed: {
     check_name() {
       return this.form.first_name.length > 2 ? true : false;
