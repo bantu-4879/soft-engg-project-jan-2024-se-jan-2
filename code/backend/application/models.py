@@ -28,9 +28,31 @@ class User(db.Model):
     #approving_actions = db.relationship('DisciplinaryAction',  foreign_keys='DisciplinaryAction.approved_by',backref='approved_by_user', lazy='dynamic')
     discourse_username=db.Column(db.String(100))
 
+    def to_dict(self):
+        return {
+            "id": self.id,
+            "first_name": self.first_name,
+            "second_name": self.second_name,
+            "password": self.password,
+            "email": self.email,
+            "is_approved": self.is_approved,
+            "is_logged": self.is_logged,
+            "role_id": self.role_id,
+            "card": self.card,
+            "profile_photo_loc": self.profile_photo_loc,
+            "number_DA": self.number_DA,
+            "discourse_username": self.discourse_username
+        }
+
 class Role(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(64), unique=True, nullable=False)
+
+    def to_dict(self):
+        return {
+            "id": self.id,
+            "name": self.name
+        }
 
 
 class Authentication(db.Model):
@@ -39,6 +61,15 @@ class Authentication(db.Model):
     token = db.Column(db.String(100), nullable=True)
     token_created = db.Column(db.Integer,default=0, nullable=True)
     token_expired = db.Column(db.Integer, nullable=True,default=0)
+
+    def to_dict(self):
+        return {
+            "id": self.id,
+            "user_id" : self.user_id, 
+            "token" : self.token, 
+            "token_created": self.token_created, 
+            "token_expired": self.token_expired
+        }
 
 class Ticket(db.Model):
     id = db.Column(db.String(100), primary_key=True)
@@ -49,6 +80,7 @@ class Ticket(db.Model):
     thread_link = db.Column(db.String(500))
     privacy=db.Column(db.Boolean, default=False, nullable=False)
     created_at = db.Column(db.String,nullable=False)
+    #date_posted = db.Column(db.Date)
     resolved_by = db.Column(db.String(100), db.ForeignKey('user.id'),default=0,nullable=False)
     solution_satisfaction = db.Column(db.Boolean,nullable=False) 
     comments = db.Column(db.String(500))
@@ -62,6 +94,29 @@ class Ticket(db.Model):
     comments=db.relationship('TicketComments', backref='ticket',uselist=True) #the comments made by staff to the ticket one - many relationship
     attachments=db.relationship('TicketAttachment', backref='ticket',uselist=True) #ticket attachments one - many relationship (we can limit to 2)
 
+    def to_dict(self):
+        return {
+            "id": self.id,
+            "user_id": self.user_id,
+            "title": self.title,
+            "description": self.description,
+            "solution": self.solution,
+            "thread_link": self.thread_link,
+            "privacy": self.privacy,
+            "created_at": self.created_at,
+            "resolved_by": self.resolved_by,
+            "solution_satisfaction": self.solution_satisfaction,
+            #"comments": self.comments,
+            "ticket_status": self.ticket_status,
+            "ticket_priority": self.ticket_priority,
+            "tags_list": self.tags_list,
+            #"votes": self.votes,
+            #"assigned_staff": self.assigned_staff,
+            #"comments": self.comments,
+            #"attachments": self.attachments
+
+        }
+
 class VoteTable(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     ticket_id = db.Column(db.String(100), db.ForeignKey('ticket.id'),nullable =False)
@@ -73,12 +128,29 @@ class Tags(db.Model):
     tag_name = db.Column(db.String(100)) 
     description = db.Column(db.String(200))
 
+    def to_dict(self):
+        return {
+            "id": self.id,
+            "tag_name": self.tag_name,
+            "description": self.description,
+
+        }
+
 
 #Following is the relationship table between tickets and tags 
-class Tickets_Tags(db.Model):
+class TicketsTags(db.Model):
     id=db.Column(db.Integer, primary_key=True)
-    tag_id=db.Column(db.Integer,db.ForeignKey('tag.id'),nullable=False)
+    tag_id=db.Column(db.Integer,db.ForeignKey('tags.id'),nullable=False)
     ticket_id=db.Column(db.String(100),db.ForeignKey('ticket.id'),nullable=False)
+
+    def to_dict(self):
+        return {
+            "id": self.id,
+            "tag_id": self.tag_id,
+            "ticket_id": self.ticket_id,
+
+        }
+
 
 
 class TicketComments(db.Model):
@@ -89,6 +161,18 @@ class TicketComments(db.Model):
     commenter = db.Column(db.String(100), db.ForeignKey('user.id'))
     user_mentions = db.relationship('User',backref='TicketComments',uselist=True)
     reactions = db.Column(db.String(100))
+
+    def to_dict(self):
+        return {
+            "id": self.id,
+            "ticket_id": self.ticket_id,
+            "comment": self.comment,
+            "added_at": self.added_at,
+            "commenter": self.commenter,
+            "user_mentions": self.user_mentions,
+            "reactions": self.reactions
+
+        }
 
 class TicketAttachment(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -124,6 +208,19 @@ class TicketData(db.Model):
     resolved_at = db.Column(db.String)
     closed_at= db.Column(db.String)
     reopened_at=db.Column(db.String)
+
+    def to_dict(self):
+        return {
+            "id": self.id,
+            "ticket_id": self.ticket_id,
+            "opened_at": self.opened_at,
+            "assigned_at": self.assigned_at,
+            "inProgress_at": self.inProgress_at,
+            "resolved_at": self.resolved_at,
+            "closed_at": self.closed_at,
+            "reopened_at": self.reopened_at
+
+        }
 
 class DisciplinaryAction(db.Model):
     id = db.Column(db.Integer, primary_key=True)

@@ -67,7 +67,9 @@ class StudentAPI(Resource):
                     n_tickets_upvoted = VoteTable.query.filter_by(
                         voter_id=user_id
                     ).count()
-                    student_dict = student_util.convert_user_data_to_dict(user)
+                    student_dict = user.to_dict()
+                    if "password" in student_dict:
+                        del student_dict["password"]
                     student_dict["n_tickets_created"] = n_tickets_created
                     student_dict["n_tickets_resolved"] = n_tickets_resolved
                     student_dict["n_tickets_pending"] = n_tickets_pending

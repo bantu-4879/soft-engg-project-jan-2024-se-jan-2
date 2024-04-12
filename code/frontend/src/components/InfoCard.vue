@@ -1,14 +1,22 @@
 <template>
   <div class="info-card-container">
-    <b-card :title="value" :sub-title="title" bg-variant="light" class="text-center"> </b-card>
+    <b-card
+      :title="value"
+      :sub-title="title"
+      bg-variant="light"
+      class="text-center"
+    >
+    </b-card>
   </div>
 </template>
 
 <script>
 export default {
   name: "InfoCard",
-  props: ["title", "value"],
-  components: {},
+  props: ["title", "value2", "value"],
+  components: {
+    delete_card: false,
+  },
   data() {
     return {};
   },

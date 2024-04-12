@@ -28,6 +28,8 @@ discoursePost_api=Api(discoursePost_bp)
 discourseUserUtils=DiscourseUserUtils()
 TicketUtils=DiscourseUserUtils()
 class AllCategories(Resource):
+TicketUtils=DiscourseUserUtils()
+class AllCategories(Resource):
     """
     usage 
     ------
@@ -41,10 +43,13 @@ class AllCategories(Resource):
     """
     #@token_required
     #@users_required(users=['Student','Staff','Admin'])
+    #@token_required
+    #@users_required(users=['Student','Staff','Admin'])
     def get(self):
         headers={
             'Api-Key':API_KEY,
             'Api-Username':API_USERNAME,
+            "include_subcategories":'true'
             "include_subcategories":'true'
         }
         url=f'{DISCOURSE_BASE_URL}/categories.json'
