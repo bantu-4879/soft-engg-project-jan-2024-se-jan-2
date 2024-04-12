@@ -195,9 +195,18 @@ class TicketUtils(UserUtils):
     def tickets_filter_by_priority(self, all_tickets, priority=[]):
         # filter by priority (if present)
         filtered_tickets = []
+        priority_list = []
+        for i in priority:
+            if(i=="low"):
+                priority_list.append(0.15)
+            if(i=="medium"):
+                priority_list.append(0.50)
+            if(i=="high"):
+                priority_list.append(0.75)
+
         if priority:
             for ticket in all_tickets:
-                if ticket["ticket_priority"] in priority:
+                if ticket["ticket_priority"] in priority_list:
                     filtered_tickets.append(ticket)
 
             return filtered_tickets
