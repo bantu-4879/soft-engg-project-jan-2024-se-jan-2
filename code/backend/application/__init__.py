@@ -18,6 +18,7 @@ from application.views.tags_bp import tags_bp
 from application.views.discourseAuth_bp import discourseAuth_bp
 from application.views.stats_bp import stats_bp
 from application.views.ticket_tracking_bp import tracking_bp
+from application.views.userDetails_bp import userDetails_bp
 from flask_cors import CORS
 from application.models import *
 import os
@@ -54,6 +55,7 @@ def create_app(env_type="dev"):
     app.register_blueprint(tracking_bp,url_prefix=f"/api/{API_VERSION}/tracking")
     app.register_blueprint(stats_bp,url_prefix=f"/api/{API_VERSION}/data" )
     app.register_blueprint(discoursePost_bp,url_prefix=f"/api/{API_VERSION}/discourse")
+    app.register_blueprint(userDetails_bp,url_prefix=f"/api/{API_VERSION}/userDetails")
     app.app_context().push()
 
     print("the app context is there")
