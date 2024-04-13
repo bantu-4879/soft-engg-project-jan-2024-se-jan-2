@@ -105,57 +105,59 @@
       </template>
 
       <div class="d-block text-left">
-        <h5 style="text-align: center">Ticket Details</h5>
-        <!-- display as a table -->
-        <table style="width: 100%">
-          <tr>
-            <th style="width: 15%">Attribute</th>
-            <th>Details</th>
-          </tr>
-          <tr>
-            <td>Title:</td>
-            <td>{{ title }}</td>
-          </tr>
-          <tr>
-            <td>Description:</td>
-            <td>{{ description }}</td>
-          </tr>
-          <tr>
-            <td>Status:</td>
-            <td>{{ ticket_status }}</td>
-          </tr>
-          <tr>
-            <td>Priority:</td>
-            <td>{{ ticket_priority }}</td>
-          </tr>
-          <tr>
-            <td>Tags:</td>
-            <td>{{ tags_list }}</td>
-          </tr>
-          <tr>
-            <td>Created on:</td>
-            <td>{{ Date(created_at).toLocaleString() }}</td>
-          </tr>
-          <tr>
-            <td>Created by:</td>
-            <td>{{ user_id }}</td>
-          </tr>
-          <tr>
-            <td>Resolved by:</td>
-            <td>{{ resolved_by ? resolved_by : "" }}</td>
-          </tr>
-          <tr>
-            <td>Solution:</td>
-            <td>{{ solution }}</td>
-          </tr>
-        </table>
-        <div>
-          <p>Attachments</p>
+        <h5 style="text-align: center">{{ title }}</h5>
+
+        <!-- Three parallel divisions with separate borders -->
+        <div class="ticket-indicator">
+          
+            <div class="dark-bg border-item">
+              <p>Status: {{ ticket_status }}</p>
+            </div>
+            <div class="dark-bg border-item">
+              <p>Priority: {{ ticket_priority }}</p>
+            </div>
+            <div class="dark-bg border-item">
+              <p>Tags: <span class="light-bg">{{ tags_list }}</span></p>
+            </div>
+          
+        </div>
+
+        <!-- Description section -->
+        <div class="ticket-section">
+          <h6>Description:</h6>
+          <p>{{ description }}</p>
+        </div>
+
+        <!-- Three parallel sections -->
+        <div class="ticket-indicator">
+            <div class="border-item">
+              <p><span class="dark-bg">Created by:</span> {{ created_by_full_name }}</p>
+            </div>
+            <div class="border-item">
+              <p><span class="dark-bg">Created on:</span> {{ Date(created_at).toLocaleString() }}</p>
+            </div>
+            <div class="border-item" v-if="resolved_by">
+              <p><span class="dark-bg">Resolved by:</span> {{ resolved_by_full_name }}</p>
+            </div>
+        </div>
+
+        <!-- Solution and Attachments -->
+        <div class="ticket-section" :class="{ 'green-bg': resolved_by != 0 }">
+          <h6>Solution:</h6>
+          <p>{{ solution }}</p>
+        </div>
+
+        <div class="ticket-section">
+          <h6>Attachments:</h6>
           <div v-for="(attach, imageIndex) in attachments" :key="imageIndex">
             <img :src="attach.attachment_loc" class="img-fluid" />
           </div>
         </div>
       </div>
+
+      
+
+
 
       <template #modal-footer="{ cancel }">
         <b-button size="sm" variant="danger" @click="cancel()"> Cancel </b-button>
@@ -242,14 +244,19 @@ export default {
       ticket_priority: "",
       ticket_status: "",
       solution: "",
-      resolved_by: "",
+      resolved_by: 0,
       tags_list: "",
       attachments: [],
       ticket_deleted: false,
+      created_by: this.$store.getters.get_user_id,
+      created_by_full_name: "",
+      resolved_by_full_name: "Not Resolved",
     };
   },
   created() {},
-  mounted() {},
+  mounted() {
+    this.userdetails();
+  },
   methods: {
     ticketResolvedFn() {
       this.ticket_deleted = true; // its not deletd, its resolved , so its hidden
@@ -278,6 +285,9 @@ export default {
             // this.resolved_on = data.message.resolved_on;
             this.tags_list = data.message.tags_list;
             this.attachments = data.message.attachments;
+
+            // Call userdetails method after resolved_by is updated
+            this.userdetails();
           }
           if (data.category == "error") {
             this.flashMessage.error({
@@ -370,12 +380,66 @@ export default {
           });
         });
     },
+    userdetails() {
+        if(this.created_by){
+          fetch(common.USERDETAILS_API + `/${this.created_by}`, {
+            method: "GET",
+            headers: {
+              "Content-Type": "application/json",
+              webtoken: this.$store.getters.get_web_token,
+              userid: this.user_id,
+            },
+          })
+          .then((response) => response.json())
+          .then((data) => {
+            if (data.category == "success") {
+              this.created_by_full_name = data.message.first_name + " " + data.message.second_name;
+            } else if (data.category == "error") {
+              this.flashMessage.error({
+                message: data.message,
+              });
+            }
+          })
+          .catch((error) => {
+            reject("Internal Server Error");
+          });
+        }
+        
+        if(this.resolved_by != 0){
+          fetch(common.USERDETAILS_API + `/${this.resolved_by}`, {
+            method: "GET",
+            headers: {
+              "Content-Type": "application/json",
+              webtoken: this.$store.getters.get_web_token,
+              userid: this.user_id,
+            },
+          })
+          .then((response) => response.json())
+          .then((data) => {
+            if (data.category == "success") {
+              this.resolved_by_full_name = data.message.first_name + " " + data.message.second_name;
+            } else if (data.category == "error") {
+              this.flashMessage.error({
+                message: data.message,
+              });
+            }
+          })
+          .catch((error) => {
+            reject("Internal Server Error");
+          });
+        }
+    },
+
   },
-  computed: {},
+  computed: {
+    
+    
+  },
 };
 </script>
 
 <style scoped>
+
 .ticket-card-container {
   box-shadow: 2px 4px 5px 5px #dbdada;
   background-color: rgb(251, 252, 252);
@@ -385,15 +449,60 @@ export default {
   box-shadow: 5px 8px 8px 10px #888888;
   background-color: rgb(255, 255, 255);
 }
-.row {
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
+
 .ticket-card-buttons {
   border-color: #ffffff;
 }
 .ticket-card-buttons:hover:not([disabled]) {
   border-color: #95ddfa;
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.ticket-section {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f0f0f0; /* Default background color */
+}
+
+.ticket-indicator {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.row{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.dark-bg {
+  background-color: #f0f0f0; /* Slightly darker color */
+  padding: 5px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.light-bg {
+  background-color: #f9f9f9; /* Slightly lighter color */
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.border-item {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.border-item:not(:last-child) {
+  margin-right: 10px; /* Small gap between items */
+}
+
+.green-bg {
+  background-color: #9fdf9f; /* Green color when resolved */
 }
 </style>
