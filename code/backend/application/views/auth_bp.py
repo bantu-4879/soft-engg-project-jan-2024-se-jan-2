@@ -55,8 +55,8 @@ class AuthUtils(UserUtils):
                 email=details["email"],
                 password=details["password"],
                 role_id=role_id,
-                first_name=details["first_name"],
-                second_name=details["second_name"]
+                first_name="".join([details["first_name"][0].upper(), details["first_name"][1:]]),
+                second_name="".join([details["second_name"][0].upper(), details["second_name"][1:]])
             )
             auth=Authentication(
                 user_id=details["user_id"]
