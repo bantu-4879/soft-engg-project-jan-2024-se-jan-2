@@ -1,11 +1,13 @@
 <template>
   <div class="home-div">
-    <h1 style="text-align: center">
-      <span>Welcome to</span><br /><span>Online Support Ticket System</span>
-    </h1>
-    <b-row align-h="end">
+    <div class="home-div-heading">
+      <h1 style="text-align: center; margin-top: 50px;">
+        <span>Welcome to</span><br /><span>Ticket System Integration with Discourse and Webhooks</span>
+      </h1>
+    </div>
+    <b-row align-h="center" style="margin-top: 20em;">
       <b-button
-        style="margin: 10px; margin-right: 50px"
+        style="margin: 10px; margin-right: 10px"
         type="button"
         variant="primary"
         :to="{ path: '/login' }"
@@ -31,11 +33,17 @@ export default {
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap');
+
 .home-div {
-  background-image: url("../assets/home_page_image.jpg");
-  height: 100vh;
+  background-image: url("../assets/pasqal_logo.jpeg");
+  height: 75vh;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  
+}
+
+.home-div-heading{
+  font-family: 'Antic Didone', serif;
 }
 </style>
