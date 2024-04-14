@@ -4023,3 +4023,11 @@
 13-Apr-24 19:12:21 - [INFO] - 127.0.0.1 - - [13/Apr/2024 19:12:21] "GET /api/v2/ticket/c1b3b3f1e5f75a0c0cef9224f5d17e39/057a564b37454b5314f89741b73656f4 HTTP/1.1" 200 -
 13-Apr-24 19:12:21 - [INFO] - 200 - Custom success 200 response sent
 13-Apr-24 19:12:21 - [INFO] - 127.0.0.1 - - [13/Apr/2024 19:12:21] "GET /api/v2/userDetails/057a564b37454b5314f89741b73656f4 HTTP/1.1" 200 -
+14-Apr-24 08:59:09 - [INFO] - Development environment configured.
+14-Apr-24 08:59:09 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+14-Apr-24 08:59:09 - [INFO] - [33mPress CTRL+C to quit[0m
+14-Apr-24 08:59:09 - [INFO] -  * Restarting with stat
+14-Apr-24 08:59:09 - [INFO] - Development environment configured.
+14-Apr-24 08:59:09 - [WARNING] -  * Debugger is active!
+14-Apr-24 08:59:09 - [INFO] -  * Debugger PIN: 163-373-655
