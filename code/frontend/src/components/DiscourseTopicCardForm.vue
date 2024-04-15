@@ -62,7 +62,7 @@
   import Tags from './TagsDiscourse.vue';
   
   export default {
-    name: "DiscourseTicketCard",
+    name: "DiscourseTopicCardForm",
     components:{FileUpload,Tags,Subcategory,Category},
     props: ['ticketId'],
     data() {
@@ -76,9 +76,12 @@
         },
         show: true,
         user_id: this.$store.getters.get_user_id,
-        ticket_id:'ae46f9c2db3151005e062e542a312798',
         files:null,
       };
+    },
+    mounted()
+    {
+        console.log(this.ticketId);
     },
     methods: {
         onFileUpload(value) {
@@ -105,11 +108,11 @@
         for (let i = 0; i < this.files.length; i++) {
           const file = this.files[i];
           // Append each file with a unique key (e.g., 'file0', 'file1', etc.)
-          formData.append(`file${i}`, file);
+          formData.append(`files`, file);
         }
       }
           // Adjust API endpoint for creating discourse ticket
-          fetch(common.DISCOURSE_TICKET_API+'/topic/'+`${this.user_id}/${this.ticket_id}`, {
+          fetch(common.DISCOURSE_TICKET_API+'/topic/'+`${this.user_id}/${this.ticketId}`, {
             method: "POST",
             headers: {
               "Content-Type": "multipart/form-data",

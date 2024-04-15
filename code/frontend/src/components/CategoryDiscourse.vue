@@ -12,8 +12,7 @@
   import * as common from "../assets/common.js";
   
   export default {
-    name:"Category",
-    props: ['value'], 
+    name:"Category", 
     data() {
       return {
         selectedCategory: this.value || '', 
@@ -37,15 +36,11 @@
               if (data.category == "success") {
                 this.categories=data.message
                 console.log(" categories are being rendered.")
-                this.flashMessage.success({
-                  message: "Categories Retrieved successfully",
-                });
                 this.onReset();
               }
               if (data.category == "error") {
-                this.flashMessage.error({
-                  message: data.message,
-                });
+
+                console.log("cannot retrieve categories.")
               }
             })
             .catch((error) => {

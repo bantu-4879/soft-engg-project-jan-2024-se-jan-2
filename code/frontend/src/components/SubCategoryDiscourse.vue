@@ -11,7 +11,7 @@
   import * as common from "../assets/common.js";
   export default {
     name:"Subcategory",
-    props: ['value', 'category'], 
+    props: ['category'], 
     data() {
       return {
         selectedSubcategory: this.value || '', 
@@ -24,6 +24,7 @@
       },
     },
     created() {
+      console.log(this.category);
       this.fetchSubcategories(this.category);
     },
     methods: {
@@ -38,17 +39,16 @@
             .then((response) => response.json())
             .then((data) => {
               if (data.category == "success") {
-                this.subcategories=data.message
-                console.log("Sub categories are being rendered.")
-                this.flashMessage.success({
-                  message: "Sub categories retrived",
-                });
+                this.subcategories=data.message;
+                console.log("Sub categories are being rendered.");
+                console.log(this.subcategories);
+                //this.flashMessage.success({
+                  //message: "Sub categories retrived",
+                //});
                 this.onReset();
               }
               if (data.category == "error") {
-                this.flashMessage.error({
-                  message: data.message,
-                });
+                console.log("cannot retrieve sub categories.")
               }
             })
             .catch((error) => {

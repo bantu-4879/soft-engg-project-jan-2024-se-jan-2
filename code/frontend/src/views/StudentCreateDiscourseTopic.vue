@@ -6,7 +6,7 @@
         <b-row class="text-start">
           <b-col cols="12" sm="6" md="12" style="border-right: dashed black">
             <h3 style="text-align: center">Create Discourse Ticket</h3>
-            <DiscourseTicketCard v-if="showDiscourseTicketForm"></DiscourseTicketCard>
+            <DiscourseTopicCardForm :ticketId="ticket_id"></DiscourseTopicCardForm>
           </b-col>
         </b-row>
       </b-container>
@@ -17,18 +17,24 @@
   
   <script>
   import UserNavbar from "../components/UserNavbar.vue";
-  import DiscourseTicketCard from "../components/DiscourseTopicCardForm.vue";
+  import DiscourseTopicCardForm from "../components/DiscourseTopicCardForm.vue";
   import SearchTicket from "../components/SearchTicket.vue";
   
   export default {
     name: "StudentCreateDiscourseTopic",
-    components: { UserNavbar, DiscourseTicketCard, SearchTicket },
+    components: { UserNavbar, DiscourseTopicCardForm, SearchTicket },
     data() {
       return {
-        showDiscourseTicketForm:false,
+        ticket_id:null
       };
     },
-    mounted() {},
+    created()
+    {
+      this.ticket_id = this.$route.params.ticketId
+    },
+    mounted() {
+
+    },
     methods: {},
     computed: {},
   };

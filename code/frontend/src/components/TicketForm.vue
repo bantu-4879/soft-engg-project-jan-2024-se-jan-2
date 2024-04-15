@@ -101,6 +101,7 @@ export default {
       },
       user_role: this.$store.getters.get_user_role,
       show: true,
+      ticket_id:null,
     };
   },
   created() {},
@@ -143,14 +144,15 @@ export default {
           .then((response) => response.json())
           .then((data) => {
             if (data.category === "success") {
-              console.log(this.ticketId);
               const ticketId = data.ticketId;
+              this.ticket_id=data.ticketId;
+              console.log(this.ticket_id);
               this.flashMessage.success({
                 message: data.message,
               });
               if (!this.editTicket) {
                 this.onReset();
-                //this.$emit("ticketCreated",ticketId);
+                this.$router.push({ name: 'CreateDiscourseTopic', params: { ticketId: this.ticket_id }})
               }
               if (this.user_role == "staff") {
                 

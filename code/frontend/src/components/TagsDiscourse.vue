@@ -33,15 +33,10 @@
               if (data.category == "success") {
                 this.tags=data.message.map(tag => ({ id: tag.id, name: tag.name }));
                 console.log("Tags are being rendered.")
-                this.flashMessage.success({
-                  message: "Sub categories retrived",
-                });
                 this.onReset();
               }
               if (data.category == "error") {
-                this.flashMessage.error({
-                  message: data.message,
-                });
+                console.log("cannot retrive messages.")
               }
             })
             .catch((error) => {
