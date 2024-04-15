@@ -101,7 +101,7 @@ export default {
       },
       user_role: this.$store.getters.get_user_role,
       show: true,
-
+      ticket_id:null,
     };
   },
   created() {},
@@ -143,7 +143,11 @@ export default {
         })
           .then((response) => response.json())
           .then((data) => {
-            if (data.category == "success") {
+            if (data.category === "success") {
+              const ticketId = data.ticket_id;
+              console.log(ticketId)
+              this.ticket_id=data.ticket_id;
+              console.log(this.ticket_id);
               this.flashMessage.success({
                 message: data.message,
               });

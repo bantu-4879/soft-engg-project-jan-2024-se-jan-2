@@ -162,7 +162,7 @@
 12-Apr-24 18:12:40 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
 12-Apr-24 18:12:43 - [DEBUG] - http://127.0.0.1:3000 "POST /users.json HTTP/1.1" 200 None
 12-Apr-24 18:12:43 - [INFO] - The connection was estabilished
-12-Apr-24 18:12:43 - [INFO] - 200 - <p>You’re almost done! We sent an activation mail to <b>student_test@gmail.com</b>. Please follow the instructions in the mail to activate your account.</p><p>If it doesn’t arrive, check your spam folder.</p>
+12-Apr-24 18:12:43 - [INFO] - 200 - <p>Youï¿½re almost done! We sent an activation mail to <b>student_test@gmail.com</b>. Please follow the instructions in the mail to activate your account.</p><p>If it doesnï¿½t arrive, check your spam folder.</p>
 12-Apr-24 18:12:43 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:12:43] "POST /api/v2/discourseAuth/discourseRegister HTTP/1.1" 200 -
 12-Apr-24 18:12:50 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:12:50] "OPTIONS /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
 12-Apr-24 18:12:50 - [INFO] - 127.0.0.1 - - [12/Apr/2024 18:12:50] "OPTIONS /api/v2/management/badge/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -

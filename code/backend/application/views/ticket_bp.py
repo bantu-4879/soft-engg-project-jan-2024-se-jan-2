@@ -16,7 +16,7 @@
 
 # --------------------  Imports  --------------------
 
-from flask import Blueprint, request
+from flask import Blueprint, request,jsonify
 from flask_restful import Api, Resource
 from application.logger import logger
 import hashlib
@@ -39,6 +39,7 @@ from application.globals import *
 from application.models import *
 from copy import deepcopy
 from application.notifications import send_email
+import joblib 
 
 # --------------------  Code  --------------------
 
@@ -48,6 +49,17 @@ from application.notifications import send_email
 class TicketUtils(UserUtils):
     def __init__(self, user_id=None):
         self.user_id = user_id
+    
+    def make_predictions(self, ticket_id):
+        try:
+            ticket = Ticket.query.filter_by(id=ticket_id).first() 
+            loaded_model = joblib.load('pre-trained-model.pkl')
+            predicted_priority = loaded_model.predict(ticket.description)
+            ticket.priority = predicted_priority 
+            db.session.commit() 
+            return predicted_priority
+        except Exception as e:
+            logger.error(f"Exception from make_predictions {e}")
 
     def convert_ticket_to_dict(self, ticket):
         ticket_dict = vars(ticket)  # verify if this properly converts obj to dict
@@ -404,6 +416,8 @@ class TicketAPI(Resource):
             details["created_by"] = user_id
             details["created_on"] = time_to_str(datetime.datetime.now())
             details['tags_list'] = ", ".join(tags_list)
+            predicted_priority = ticket_utils.make_predictions(ticket_id)
+            details["priority"] = predicted_priority
 
             if(details["priority"]=="low"):
                 ticket_priority=0.15
@@ -446,7 +460,7 @@ class TicketAPI(Resource):
                 status, message = ticket_utils.save_ticket_attachments(
                     attachments, ticket_id, user_id, operation="create_ticket"
                 )
-                raise Success_200(status_msg=f"Ticket created successfully. {message}")
+                return jsonify({"status": "success", "message": message, "ticket_id": ticket_id,"category":"success"})
 
     @token_required
     @users_required(users=["student", "staff"])
@@ -540,15 +554,15 @@ class TicketAPI(Resource):
                     ticket.title = details["title"]
                     ticket.description = details["description"]
                     ticket.tags_list = ", ".join(tags_list)
-                    priority = details["priority"]
+                    predicted_priority = ticket_utils.make_predictions(ticket_id)
+                    ticket.ticket_priority = predicted_priority
                     
-
-                    if(priority=="low"):
-                        ticket.ticket_priority=0.15
-                    if(priority=="medium"):
-                        ticket.ticket_priority=0.50
-                    if(priority=="high"):
-                        ticket.ticket_priority=0.75
+                    # if(predicted_priority=="low"):
+                    #     ticket.ticket_priority=0.15
+                    # if(predicted_priority=="medium"):
+                    #     ticket.ticket_priority=0.50
+                    # if(predicted_priority=="high"):
+                    #     ticket.ticket_priority=0.75
                     db.session.add(ticket)
                     db.session.commit()
 

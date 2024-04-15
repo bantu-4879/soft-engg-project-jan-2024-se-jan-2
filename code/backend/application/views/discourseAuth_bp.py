@@ -289,7 +289,7 @@ class DiscourseGroupMessages(Resource):
         self.user_id=user_id
     
     #@token_required
-    #@users_required(users=['Staff','Admin'])
+    #@users_required(users=['staff','admin'])
     def get(self,user_id):
         """
         usage
@@ -341,6 +341,59 @@ class DiscourseGroupMessages(Resource):
                 raise NotFoundError(status_msg="Staff not registered on discourse , register on discourse first.")
         
 
+class Notifications(Resource):
+
+    @token_required
+    def get(self,user_id):
+        """
+        Usage
+        -----
+        Gets the Notifications belonging to a particular user on discourse.
+
+        Parameters
+        ----------
+        parameters sent in the path.
+
+        Returns
+        -------
+        """
+        try:
+            user=User.query.filter_by(id=user_id).first()
+            if not user:
+                raise NotFoundError(status_msg="User does not exist.")
+        except Exception as e:
+            logger.error(
+                f"Discourse API TicketAPI->delete : Error occured while getting the user : {e}"
+            )
+            raise InternalServerError
+        if (user.discourse_username):
+            username=user.discourse_username
+        else:
+            raise BadRequest(status_msg="The user is not registered on Discourse register on discourse first.")
+        
+        # if DiscourseUserUtils.is_blank(user_id):
+        #     raise BadRequest(status_msg="User id  is missing for discourse.")
+        headers={
+            'Api-Key':API_KEY,
+            'Api-Username':username
+        }
+        url=f'{DISCOURSE_BASE_URL}/notifications.json'
+        response=requests.get(url,headers=headers)
+        if(response.status_code == 200):
+            response=response.json()
+            notifications=response["notifications"]
+            data=[]
+            for notification in notifications:
+                _d = {}
+                _d["id"] = notification["id"]
+                _d["created_at"] = notification["created_at"]
+                _d["type"] = notification["type"]
+                _d["topic_id"] = notification["topic_id"]
+                _d["slug"]=notification["slug"]
+                data.append(_d)
+            return success_200_custom(data=data)
+        else:
+            raise NotFoundError(status_msg="could not load notifications.")
 
         
         
@@ -349,3 +402,4 @@ discourseAuth_api.add_resource(DiscourseUserCreation,"/discourseRegister", "/dis
 discourseAuth_api.add_resource(DiscourseAddMedorators,"/addStaff",'/addStaff/<string:user_id>')
 discourseAuth_api.add_resource(DiscourseGroupMessages,"/getMessages/<string:user_id>")
 discourseAuth_api.add_resource(DiscourseIdExists,'/discourseExists/<string:user_id>')
+discourseAuth_api.add_resource(Notifications,'/notifications/<string:user_id>')

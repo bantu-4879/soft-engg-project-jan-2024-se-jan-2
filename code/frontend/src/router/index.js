@@ -17,6 +17,7 @@ import AppHomeView from "../views/AppHomeView.vue";
 import UserProfile from "../views/UserProfile.vue";
 import InboxView from "../views/InboxView.vue";
 import AdminUserManagement from "../views/AdminUserManagement.vue"
+import StudentCreateDiscourseTopic from "../views/StudentCreateDiscourseTopic.vue";
 
 Vue.use(VueRouter);
 

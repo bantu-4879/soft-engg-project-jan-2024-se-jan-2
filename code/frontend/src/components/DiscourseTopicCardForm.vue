@@ -28,12 +28,8 @@
             required
           ></b-form-textarea>
           <b-form-invalid-feedback>
-            Description should be at least 50 characters long.
+            Description should be at least 30 characters long.
           </b-form-invalid-feedback>
-        </b-form-group>
-  
-        <b-form-group>
-        <Tags v-model="form.tags" />
         </b-form-group>
 
         <b-form-group>
@@ -41,7 +37,7 @@
         </b-form-group>
 
         <b-form-group>
-        <Subcategory :category="form.subCategory" v-model="form.subcategory" />
+        <Tags v-model="form.tags" />
         </b-form-group>
 
         <FileUpload @file_uploading="onFileUpload"></FileUpload>
@@ -58,25 +54,28 @@
   import * as common from "../assets/common.js";
   import FileUpload from "./FileUpload.vue";
   import Category from './CategoryDiscourse.vue';
-  import Subcategory from './SubCategoryDiscourse.vue';
   import Tags from './TagsDiscourse.vue';
   
   export default {
-    name: "DiscourseTicketForm",
-    props: [],
+    name: "DiscourseTopicCardForm",
+    components:{FileUpload,Tags,Category},
+    props: ['ticketId'],
     data() {
       return {
         form: {
           title: "",
           raw: "",
           category:"",
-          sub_category:"",
           tags:"",
         },
         show: true,
         user_id: this.$store.getters.get_user_id,
         files:null,
       };
+    },
+    mounted()
+    {
+        console.log(this.ticketId);
     },
     methods: {
         onFileUpload(value) {
@@ -90,25 +89,24 @@
         if (this.check_title && this.check_description) {
           alert('Submitting Discourse Thread form. Click "Ok" to proceed?');
           this.$log.info("Submitting Discourse ticket form");
-  
-          this.form.created_by = this.user_id.toString();
+          console.log(this.ticketId);
           console.log("Form data:", this.form);
-          const formData = new FormData();
+        const formData = new FormData();
          formData.append('title', this.form.title);
          formData.append('raw', this.form.raw);
          formData.append('category',this.form.category);
          formData.append('sub_category',this.form.sub_category);
          formData.append('tags',this.form.tags);
-                // Append files to FormData object
+        
       if (this.files) {
         for (let i = 0; i < this.files.length; i++) {
           const file = this.files[i];
           // Append each file with a unique key (e.g., 'file0', 'file1', etc.)
-          formData.append(`file${i}`, file);
+          formData.append(`files`, file);
         }
       }
           // Adjust API endpoint for creating discourse ticket
-          fetch(common.DISCORD_TICKET_API, {
+          fetch(common.DISCOURSE_TICKET_API+'/topic/'+`${this.user_id}/${this.ticketId}`, {
             method: "POST",
             headers: {
               "Content-Type": "multipart/form-data",
@@ -123,7 +121,7 @@
                 this.flashMessage.success({
                   message: data.message,
                 });
-                this.onReset();
+                this.$emit("discourseTopicCreated");
               }
               if (data.category == "error") {
                 this.flashMessage.error({
@@ -161,7 +159,7 @@
         return this.form.title.length > 15 ? true : false;
       },
       check_description() {
-        return this.form.description.length > 80 ? true : false;
+        return this.form.raw.length > 30 ? true : false;
       },
     },
   };
