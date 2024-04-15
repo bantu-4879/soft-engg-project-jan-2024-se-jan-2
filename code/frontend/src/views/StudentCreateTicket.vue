@@ -25,15 +25,30 @@
 import UserNavbar from "../components/UserNavbar.vue";
 import TicketForm from "../components/TicketForm.vue";
 import SearchTicket from "../components/SearchTicket.vue";
+import DiscourseTicketCard from "../components/DiscourseTopicCardForm.vue";
 
 export default {
   name: "StudentCreateTicket",
-  components: { UserNavbar, TicketForm, SearchTicket },
+  components: { UserNavbar, TicketForm, SearchTicket,DiscourseTicketCard },
   data() {
-    return {};
+    return {
+      showDiscourseTicketForm:false,
+      ticketId:'',
+    };
   },
   mounted() {},
-  methods: {},
+  methods: {
+    handleTicketCreated(ticketId) {
+      this.ticketId=ticketId;
+      console.log(ticketId);
+      console.log(this.ticketId);
+      this.showDiscourseTicketForm = true;
+    },
+    handleDisccourseCreated()
+    {
+      this.showDiscourseTicketForm=false;
+    }
+  },
   computed: {},
 };
 </script>

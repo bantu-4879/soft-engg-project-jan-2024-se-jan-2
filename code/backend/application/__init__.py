@@ -25,6 +25,7 @@ import os
 #from application.g_webhook import gchat_webhook
 from application.views.inbox_bp import post_message
 from application.views.discoursePost_bp import discoursePost_bp
+from application.celery_worker import celery_init_app
 # --------------------  Code  --------------------
 
 
@@ -98,4 +99,7 @@ def create_app(env_type="dev"):
 
     #gchat_webhook()
     #post_message(0,"This is a test message!","inbox")
-    return app
+
+    #initializing celery 
+    celery=celery_init_app(app)
+    return app,celery

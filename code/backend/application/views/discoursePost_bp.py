@@ -53,10 +53,8 @@ class AllCategories(Resource):
         response=requests.get(url,headers=headers)
         if(response.status_code == 200):
             response=response.json()
-            print(response.keys())
             categories=response["category_list"]["categories"]
             data=[]
-            print(categories)
             for category in categories:
                 _d = {}
                 _d["id"] = category["id"]
@@ -94,7 +92,6 @@ class Categories(Resource):
         response=requests.get(url,headers=headers)
         if(response.status_code == 200):
             response=response.json()
-            print(response)
             category=response["category"]
             data={}
             data["id"] = category["id"]
@@ -179,27 +176,33 @@ class SubCategoriesAll(Resource):
     def __init__(self,user_id=None):
         self.user_id=user_id
     
-    @token_required
+    #@token_required
     def get(self,category_id):
         headers={
             'Api-Key':API_KEY,
             'Api-Username':API_USERNAME,
             "include_subcategories":'true'
         }
-        url=f'{DISCOURSE_BASE_URL}/c/{category_id}/show.json'
-        response=requests.get(url,headers=headers)
+        url=f'{DISCOURSE_BASE_URL}/categories.json'
+        params={
+            'include_subcategories':'true'
+        }
+        response=requests.get(url,headers=headers,params=params)
         if(response.status_code == 200):
             response=response.json()
-            print(response)
-            category=response["category"]
-            print(category)
-            data={}
-            data["id"] = category["id"]
-            data["name"] = category["name"]
-            data["color"] = category["color"]
-            data["text_color"] = category["text_color"]
-            data["description"] = category["description"]
-            data["slug"]=category["slug"]
+            for category in response['category_list']['categories']:
+                if category['id'] == category_id:
+                    category_req=category
+            data=[]
+            for sub_category in category_req["subcategory_list"]:
+                _d={}
+                _d["id"] = sub_category["id"]
+                _d["name"] = sub_category["name"]
+                _d["color"] = sub_category["color"]
+                _d["text_color"] = sub_category["text_color"]
+                _d["description"] = sub_category["description"]
+                _d["slug"]=sub_category["slug"]
+                data.append(_d)
             return success_200_custom(data=data)
         else:
             raise NotFoundError(status_msg="could not load category data")
@@ -232,7 +235,6 @@ class CategoryTopicsAll(Resource):
             )
         if(response.status_code == 200):
             response=response.json()
-            print(response.keys())
             topics=response["topic_list"]["topics"]
             data=[]
             for topic in topics:
@@ -252,7 +254,7 @@ class Tags(Resource):
         self.user_id=user_id
 
     
-    @token_required
+    #@token_required
     def get(self):
         headers={
             'Api-Key':API_KEY,
@@ -273,8 +275,8 @@ class Tags(Resource):
         else:
             raise NotFoundError(status_msg="could not load Tags data")
     
-    @token_required
-    @users_required(users='Staff')
+    #@token_required
+    #@users_required(users='Staff')
     def post(self):
         try:
             form = request.get_json()
@@ -350,9 +352,6 @@ class DiscourseTopics(Resource):
             'Api-Key':API_KEY,
             'Api-Username':username
         }
-        payload={
-            'topic_id':topic_id
-        }
         url=f"{DISCOURSE_BASE_URL}/t/{topic_id}.json"
         try:
             response=requests.get(url,headers=headers) 
@@ -369,8 +368,8 @@ class DiscourseTopics(Resource):
             raise BadRequest(status_code=401,status_msg="Cannot load topic")
         
 
-    @token_required
-    @users_required(users='Student')
+    #@token_required
+    #@users_required(users='Student')
     def post(self,user_id,ticket_id):
         """
         Usage
@@ -416,12 +415,26 @@ class DiscourseTopics(Resource):
             raise BadRequest(status_msg="User id or Ticket Id is missing for discourse Post.")
         try:
             form=request.form
-            for key in details:
-                value=form.get(key,"")
-                if TicketUtils.is_blank(value):
-                    value=""
-                    details[key]=value
-                print(details)
+            title = request.form.get('title')
+            raw = request.form.get('raw')
+            topic_id = request.form.get('topic_id')
+            sub_category = request.form.get('sub_category')
+            created_at = request.form.get('created_at')
+            reply_to_post_number = request.form.get('reply_to_post_number')
+            embed_url = request.form.get('embed_url')
+            category = request.form.get('category')
+            tags = request.form.get('tags')
+
+            details["title"] = title if title else ""
+            details["raw"] = raw if raw else ""
+            details["topic_id"] = topic_id if topic_id else ""
+            details["sub_category"] = sub_category if sub_category else ""
+            details["created_at"] = created_at if created_at else ""
+            details["reply_to_post_number"] = reply_to_post_number if reply_to_post_number else ""
+            details["embed_url"] = embed_url if embed_url else ""
+            details["category"] = category if category else ""
+            details["tags"] = tags if tags else ""
+            print(details)
         except Exception as e:
             logger.error(
                 f"TicketAPI->post : Error occured while getting form data : {e}"
@@ -445,47 +458,48 @@ class DiscourseTopics(Resource):
             logger.info("Uploading the attachments to discourse.")
             header1={
                 'Api-Key':API_KEY,
-                'Api-Username':username,
-                'Content-type':'multipart/form-data'
+                'Api-Username':API_USERNAME,
             }
             params={
-                "type":'composer',
-                "synchronous":'true'
+                "type":"image",
+                "synchronous":True
             }
-            raw+=f"\n"
+            raw=raw+f"\n"
             url=f"{DISCOURSE_BASE_URL}/uploads.json"
             if 'files' in request.files:
-                files=request.files.getlist('files')
-                if len(files) !=0 :
-                    image_urls=[]
-                    for i,file in enumerate(files):
-                        file_name=file.filename
-                        with open(file,'rb') as f:
-                            files={
-                                "file":(f.read())}
+                uploaded_files = request.files.getlist('files')
+                if uploaded_files:
+                    image_urls = []
+                    print("I am here . line 456")
+                    for i, uploaded_file in enumerate(uploaded_files):
+                        file_name = uploaded_file.filename
+                        files = {"files[]": (uploaded_file.filename,uploaded_file.stream,uploaded_file.content_type)}
                         try:
-                            response=requests.post(url,headers=header1,files=files,data=params) 
+                            response = requests.post(url, headers=header1, files=files,data=params)
+                            response.raise_for_status()
                         except Exception as e:
                             logger.error(
-                                f"Discourse API TicketAPI->post : Error occured while uploading image {file_name}to discourse  : {e}"
+                                f"Discourse API TicketAPI->post : Error occurred while uploading image {file_name} to discourse: {e}"
                             )    
                             raise InternalServerError(status_msg="Cannot upload image to discourse.")
                         else:
-                            response=response.json()
-                            image_urls.append(response["short_url"])
+                            logger.info("Images successfully uploaded")
+                            response_json = response.json()
+                            image_urls.append(response_json["short_url"])
                     for image_url in image_urls:
-                        details["raw"]+=f"![]({image_url})\n"
+                        details["raw"]=details["raw"]+f"![]({image_url})\n"
             header={
                 'Api-Key':API_KEY,
                 'Api-Username':username,
                 'Content-type':'application/json'
             }
+            print(details["raw"])
             default_category=14
             payload={
                 "title":details["title"],
                 "raw":details["raw"],
                 "topic_id":details["topic_id"],
-                "category":default_category,
+                "category":"14",
                 "sub_category":details["sub_category"],
                 "reply_to_post_number":details["reply_to_post_number"],
                 "created_at":details["created_at"],
@@ -494,12 +508,12 @@ class DiscourseTopics(Resource):
             }
             headers={
                 'Api-Key':API_KEY,
-                'Api-Username':username,
-                'Content-Type':'application/x-www-form-urlencoded'
+                'Api-Username':API_USERNAME
             }
+            print(payload)
             url2=f"{DISCOURSE_BASE_URL}/posts.json"
             try:
-                response=requests.post(url=url2,headers=header,json=payload)
+                response=requests.post(url=url2,headers=headers,json=payload)
             except Exception as e:
                     logger.error(
                             f"Discourse API TicketAPI->post : Error occured while uploading image {file_name}to discourse  : {e}"
@@ -526,6 +540,76 @@ class DiscourseTopics(Resource):
             else:
                 raise BadRequest(status_code=403,status_msg="Cannot create post.pictures uploaded")
 
+
+    @token_required
+    @users_required(users=['staff'])
+    def put(self,topic_id):
+        """
+        Usage
+        -----
+        Gets a single topic from its topic Id , if it can be viewed by a username.
+
+        Parameters
+        ----------
+        form data sent with request
+
+        Returns
+        -------
+        """
+        
+        if TicketUtils.is_blank(topic_id):
+            raise BadRequest(status_msg="Topic Id is missing for discourse.")
+        
+        headers={
+            'Api-Key':API_KEY,
+            'Api-Username':API_USERNAME
+        }
+        url=f"{DISCOURSE_BASE_URL}/t/{topic_id}.json"
+        try:
+            response=requests.get(url,headers=headers) 
+        except Exception as e:
+            logger.error(
+                f"Discourse API TicketAPI->post : Error occured while locking topic status on discourse : {e}"
+            )    
+            raise InternalServerError(status_msg="Cannot connect to the discourse for locking the post on discourse")
+        if(response.status_code==200):
+            response=response.json()
+            if(response["closed"]=="true"):
+                url2=f"{DISCOURSE_BASE_URL}/t/{topic_id}/status.json"
+                header2={
+                    'Api-Key':API_KEY,
+                    'Api-Username':API_USERNAME
+                }
+                payload={
+                    "status":"closed",
+                    "enabled":"false"
+                }
+                try:
+                    response=requests.put(url=url2,headers=header2,json=payload)
+                except Exception as e:
+                    logger.error(
+                        f"Discourse API TicketAPI->Topic status update : Error occured while unlocking topic status on discourse : {e}"
+                    )    
+                    raise InternalServerError(status_msg="Cannot connect to the discourse for unlocking the post on discourse")
+            else:
+                url2=f"{DISCOURSE_BASE_URL}/t/{topic_id}/status.json"
+                header2={
+                    'Api-Key':API_KEY,
+                    'Api-Username':API_USERNAME
+                }
+                payload={
+                    "status":"closed",
+                    "enabled":"true"
+                }
+                try:
+                    response=requests.put(url=url2,headers=header2,json=payload)
+                except Exception as e:
+                    logger.error(
+                        f"Discourse API TicketAPI->Topic status update : Error occured while locking topic status on discourse : {e}"
+                    )    
+                    raise InternalServerError(status_msg="Cannot connect to the discourse for locking the post on discourse")
+        else:
+            raise BadRequest(status_code=401,status_msg="Cannot access the topic on discourse.")
 
     @token_required
     @users_required(users=['Student','Staff'])
@@ -611,15 +695,310 @@ class DiscourseTopics(Resource):
         
 
 class DiscoursePosts(Resource):
+
     @token_required
-    @users_required(users=['Student','Staff','Admin'])
-    def post(self):
-        user_id_rec = request.headers.get("user_id", "")
-        user=User.query.filter_by(id=user_id_rec).first()
-        username=user.discourse_username
-        form=request.get_json()
-        topic_id=form.get("topic_id","")
-        category_id=form.get("category_id")
+    def get(self,user_id,post_id):
+        """
+        Usage
+        -----
+        Get a post on discourse with its post id.
+
+        Parameters
+        ----------
+        form data sent with request
+
+        Returns
+        -------
+
+        """
+        try:
+            user=User.query.filter_by(id=user_id).first()
+            if not user:
+                raise NotFoundError(status_msg="User does not exist.")
+        except Exception as e:
+            logger.error(
+                f"Discourse API TicketAPI->post : Error occured while getting the user : {e}"
+            )
+            raise InternalServerError
+        if (user.discourse_username):
+            username=user.discourse_username
+        else:
+            raise BadRequest(status_msg="The user is not registered on Discourse register on discourse first.")
+        
+        if TicketUtils.is_blank(user_id) or TicketUtils.is_blank(post_id):
+            raise BadRequest(status_msg="User id or Post Id is missing for discourse.")
+        
+        headers={
+            'Api-Key':API_KEY,
+            'Api-Username':username
+        }
+        url=f"{DISCOURSE_BASE_URL}/posts/{post_id}.json"
+        try:
+            response=requests.get(url,headers=headers) 
+        except Exception as e:
+            logger.error(
+                f"Discourse API TicketAPI->post : Error occured while getting topic from discourse : {e}"
+            )    
+            raise InternalServerError(status_msg="Cannot get post from discourse")
+        if(response.status_code==200):
+            response=response.json()
+            print(response)
+            return success_200_custom(data=response)
+        else:
+            raise BadRequest(status_code=401,status_msg="Cannot load Post")
+
+    @token_required
+    @users_required(users=['student','staff','admin'])
+    def post(self,user_id):
+        """
+        Usage
+        -----
+        Reply to a topic created on discourse.
+
+        Parameters
+        ----------
+        form data sent with request
+
+        Returns
+        -------
+
+        """
+
+        details={
+            "title":"",
+            "raw":"",
+            "topic_id":"", #required for a new Post under a topic
+            "created_at":"",
+            "reply_to_post_number":"",
+            "embed_url":"",
+        }
+        try:
+            user=User.query.filter_by(id=user_id).first()
+            if not user:
+                raise NotFoundError(status_msg="User does not exist.")
+        except Exception as e:
+            logger.error(
+                f"Discourse API TicketAPI->post : Error occured while getting the user : {e}"
+            )
+            raise InternalServerError
+        if (user.discourse_username):
+            username=user.discourse_username
+        else:
+            raise BadRequest(status_msg="The user is not registered on Discourse register on discourse first.")
+
+        if TicketUtils.is_blank(user_id):
+            raise BadRequest(status_msg="User id is missing for discourse Post.")
+        try:
+            form=request.form
+            title = request.form.get('title')
+            raw = request.form.get('raw')
+            topic_id = request.form.get('topic_id')
+            created_at = request.form.get('created_at')
+            reply_to_post_number = request.form.get('reply_to_post_number')
+            embed_url = request.form.get('embed_url')
+
+            details["title"] = title if title else ""
+            details["raw"] = raw if raw else ""
+            details["topic_id"] = topic_id if topic_id else ""
+            details["created_at"] = created_at if created_at else ""
+            details["reply_to_post_number"] = reply_to_post_number if reply_to_post_number else ""
+            details["embed_url"] = embed_url if embed_url else ""
+
+            print(details)
+        except Exception as e:
+            logger.error(
+                f"TicketAPI->post : Error occured while getting form data : {e}"
+            )
+            raise InternalServerError
+        else:
+            if details["title"] =="" or details["raw"]=="":
+                raise BadRequest(
+                    status_msg="Ticket title or the message cannot be empty"
+                )
+            if details["topic_id"] =="":
+                raise BadRequest(
+                    status_msg="The topic_id cannot be empty."
+                )
+            header1={
+                'Api-Key':API_KEY,
+                'Api-Username':API_USERNAME,
+            }
+            params={
+                "type":"image",
+                "synchronous":True
+            }
+            raw=raw+f"\n"
+            url=f"{DISCOURSE_BASE_URL}/uploads.json"
+            if 'files' in request.files:
+                uploaded_files = request.files.getlist('files')
+                if uploaded_files:
+                    image_urls = []
+                    print("I am here . line 456")
+                    for i, uploaded_file in enumerate(uploaded_files):
+                        file_name = uploaded_file.filename
+                        files = {"files[]": (uploaded_file.filename,uploaded_file.stream,uploaded_file.content_type)}
+                        try:
+                            logger.info("Uploading the attachments to discourse.")
+                            response = requests.post(url, headers=header1, files=files,data=params)
+                            response.raise_for_status()
+                        except Exception as e:
+                            logger.error(
+                                f"Discourse API TicketAPI->post : Error occurred while uploading image {file_name} to discourse: {e}"
+                            )    
+                            raise InternalServerError(status_msg="Cannot upload image to discourse.")
+                        else:
+                            logger.info("Images successfully uploaded")
+                            response_json = response.json()
+                            image_urls.append(response_json["short_url"])
+                    for image_url in image_urls:
+                        details["raw"]=details["raw"]+f"![]({image_url})\n"
+            payload={
+                "title":details["title"],
+                "raw":details["raw"],
+                "topic_id":details["topic_id"],
+                "reply_to_post_number":details["reply_to_post_number"],
+                "created_at":details["created_at"],
+                "embed_url":details["embed_url"],
+            }
+            headers={
+                'Api-Key':API_KEY,
+                'Api-Username':username
+            }
+            url2=f"{DISCOURSE_BASE_URL}/posts.json"
+            try:
+                response=requests.post(url=url2,headers=headers,json=payload)
+            except Exception as e:
+                    logger.error(
+                            f"Discourse API TicketAPI->post : Error occured while uploading image {file_name}to discourse  : {e}"
+                        )    
+                    raise InternalServerError(status_msg="Cannot upload image to discourse.")
+            if(response.status_code==200):
+                response=response.json()
+                data={}
+                data["id"] = response["id"]
+                data["name"] = response["name"]
+                data["created_at"] = response["created_at"]
+                data["raw"] = response["raw"]
+                return success_200_custom(data=data)
+            else:
+                raise BadRequest(status_code=403,status_msg="Cannot create post.pictures uploaded")
+
+
+class TopicNotifications(Resource):
+
+    def __init__(self,user_id=None):
+        self.user_id=user_id
+
+    def post(self,user_id,topic_id,notification_level):
+        """
+        Usage
+        -----
+        Sets a notification topic from its topic Id , if it can be viewed by a username.
+
+        Parameters
+        ----------
+        form data sent with request
+
+        Returns
+        -------
+        """
+        try:
+            user=User.query.filter_by(id=user_id).first()
+            if not user:
+                raise NotFoundError(status_msg="User does not exist.")
+        except Exception as e:
+            logger.error(
+                f"Discourse API TicketAPI->post : Error occured while getting the user : {e}"
+            )
+            raise InternalServerError
+        if (user.discourse_username):
+            username=user.discourse_username
+        else:
+            raise BadRequest(status_msg="The user is not registered on Discourse register on discourse first.")
+        
+        if TicketUtils.is_blank(user_id):
+            raise BadRequest(status_msg="User id or Topic Id is missing for discourse.")
+        
+        headers={
+            'Api-Key':API_KEY,
+            'Api-Username':username
+        }
+        url=f"{DISCOURSE_BASE_URL}/t/{topic_id}/notifications.json"
+        payload={
+            "notification_level":str(notification_level)
+        }
+        try:
+            response=requests.get(url,headers=headers,json=payload) 
+        except Exception as e:
+            logger.error(
+                f"Discourse API TicketAPI->post : Error occured while setting notification level for topic on discourse : {e}"
+            )    
+            raise InternalServerError(status_msg="Cannot connect to the discourse for liking the post on discourse")
+        if(response.status_code==200):
+            response=response.json()
+            raise Success_200(status_code=200,status_msg="The status was modified.")
+        else:
+            raise BadRequest(status_code=401,status_msg="Cannot modify the notification for topic.")
+class LikingPosts(Resource):
+
+    def __init__(self,user_id=None):
+        self.user_id=user_id
+    
+    def post(self,user_id,post_id):
+        """
+        Usage
+        -----
+        Gets a single topic from its topic Id , if it can be viewed by a username.
+
+        Parameters
+        ----------
+        form data sent with request
+
+        Returns
+        -------
+        """
+        try:
+            user=User.query.filter_by(id=user_id).first()
+            if not user:
+                raise NotFoundError(status_msg="User does not exist.")
+        except Exception as e:
+            logger.error(
+                f"Discourse API TicketAPI->post : Error occured while getting the user : {e}"
+            )
+            raise InternalServerError
+        if (user.discourse_username):
+            username=user.discourse_username
+        else:
+            raise BadRequest(status_msg="The user is not registered on Discourse register on discourse first.")
+        
+        if TicketUtils.is_blank(user_id):
+            raise BadRequest(status_msg="User id or Topic Id is missing for discourse.")
+        
+        headers={
+            'Api-Key':API_KEY,
+            'Api-Username':username
+        }
+        url=f"{DISCOURSE_BASE_URL}/post_actions.json"
+        payload={
+            "id":str(post_id),
+            "post_action_type_id":'2',
+            "flag_topic":False
+
+        }
+        try:
+            response=requests.get(url,headers=headers,json=payload) 
+        except Exception as e:
+            logger.error(
+                f"Discourse API TicketAPI->post : Error occured while liking post on discourse : {e}"
+            )    
+            raise InternalServerError(status_msg="Cannot connect to the discourse for liking the post on discourse")
+        if(response.status_code==200):
+            response=response.json()
+            print(response)
+            return success_200_custom(data=response)
+        else:
+            raise BadRequest(status_code=401,status_msg="Cannot like the post")
+
 
 
 
@@ -629,8 +1008,11 @@ discoursePost_api.add_resource(Tags,'/tags')
 discoursePost_api.add_resource(
     DiscourseTopics,
     '/topic/<string:user_id>/<int:topic_id>',
-   '/topic/<string:user_id>/<string:ticket_id>'
+   '/topic/<string:user_id>/<string:ticket_id>',
+   '/topic/status_update/<int:topic_id>'
 )
 discoursePost_api.add_resource(CategoryTopicsAll,'/category/topics/<string:slug>/<int:category_id>')
 discoursePost_api.add_resource(SubCategoriesAll,'/category/subcategories/<int:category_id>')
-
+discoursePost_api.add_resource(DiscoursePosts,'/topic/reply/<string:user_id>','/topic/change_status/<string:user_id>/<string:ticket_id>')
+discoursePost_api.add_resource(LikingPosts,'/post/like/<string:user_id>/<int:post_id>')
+discoursePost_api.add_resource(TopicNotifications,'/topic/notification/<string:user_id>/<int:topic_id>/<int:notification_level>')

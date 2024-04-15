@@ -10,7 +10,7 @@ const ADMIN_API_PREFIX = `/api/${VERSION}/admin`;
 const FAQ_API_PREFIX = `/api/${VERSION}/faq/`;
 const TICKET_API_PREFIX = `/api/${VERSION}/ticket`
 const DISCOURSE_AUTH_PREFIX = `//api/${VERSION}/discourseAuth`
-const DISCOURSE_POST_PREFIX = `//api/${VERSION}/discourse`
+const DISCOURSE_POST_PREFIX = `/api/${VERSION}/discourse`
 const INBOX_API_PREFIX = `/api/${VERSION}/inbox`
 const USER_MANAGEMENT_PREFIX = `/api/${VERSION}/management`
 const USERDETAILS_PREFIX = `/api/${VERSION}/userDetails`
@@ -28,7 +28,7 @@ const DISCOURSE_REGISTER_API = `${BASEURL}${DISCOURSE_AUTH_PREFIX}`
 const INBOX_API = `${BASEURL}${INBOX_API_PREFIX}`
 const MANAGEMENT_API = `${BASEURL}${USER_MANAGEMENT_PREFIX}`
 const USERDETAILS_API = `${BASEURL}${USERDETAILS_PREFIX}`
-
+const DISCOURSE_TICKET_API=`${BASEURL}${DISCOURSE_POST_PREFIX}`
 const TICKET_API_ALLTICKETS = `${BASEURL}${TICKET_API_PREFIX}/all-tickets`
 const WEBHOOK_URL_STAFF = `https://chat.googleapis.com/v1/spaces/AAAAsTbnkos/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=2ZVePrYB_1cEwSrlkdUstzpUGCFBW9a6_RtzylmGdQE`
 const WEBHOOK_URL_STUDENT = `https://chat.googleapis.com/v1/spaces/AAAAsTbnkos/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=aJjfYWhYMscOv6l-VukfKhX3c3GhRmN3Xpg_KAt03p4`
@@ -93,6 +93,8 @@ export {
   DISCOURSE_REGISTER_API,
   INBOX_API, 
   MANAGEMENT_API,
-  USERDETAILS_API
+  USERDETAILS_API,
+  DISCOURSE_TICKET_API,
+
 
 };

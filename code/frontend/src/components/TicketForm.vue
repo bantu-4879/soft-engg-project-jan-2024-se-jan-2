@@ -101,7 +101,6 @@ export default {
       },
       user_role: this.$store.getters.get_user_role,
       show: true,
-
     };
   },
   created() {},
@@ -143,12 +142,15 @@ export default {
         })
           .then((response) => response.json())
           .then((data) => {
-            if (data.category == "success") {
+            if (data.category === "success") {
+              console.log(this.ticketId);
+              const ticketId = data.ticketId;
               this.flashMessage.success({
                 message: data.message,
               });
               if (!this.editTicket) {
                 this.onReset();
+                //this.$emit("ticketCreated",ticketId);
               }
               if (this.user_role == "staff") {
                 

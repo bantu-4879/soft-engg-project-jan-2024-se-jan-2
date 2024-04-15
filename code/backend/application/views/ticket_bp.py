@@ -16,7 +16,7 @@
 
 # --------------------  Imports  --------------------
 
-from flask import Blueprint, request
+from flask import Blueprint, request,jsonify
 from flask_restful import Api, Resource
 from application.logger import logger
 import hashlib
@@ -446,7 +446,7 @@ class TicketAPI(Resource):
                 status, message = ticket_utils.save_ticket_attachments(
                     attachments, ticket_id, user_id, operation="create_ticket"
                 )
-                raise Success_200(status_msg=f"Ticket created successfully. {message}")
+                return jsonify({"status": "success", "message": message, "ticket_id": ticket_id,"category":"success"})
 
     @token_required
     @users_required(users=["student", "staff"])
