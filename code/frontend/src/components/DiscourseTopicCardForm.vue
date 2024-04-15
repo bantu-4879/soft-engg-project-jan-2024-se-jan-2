@@ -58,7 +58,7 @@
   
   export default {
     name: "DiscourseTopicCardForm",
-    components:{FileUpload,Tags,Subcategory,Category},
+    components:{FileUpload,Tags,Category},
     props: ['ticketId'],
     data() {
       return {

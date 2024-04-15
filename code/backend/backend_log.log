@@ -9454,3 +9454,929 @@
 15-Apr-24 20:13:49 - [INFO] -  * Debugger PIN: 144-740-991
 15-Apr-24 20:16:26 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\tasks.py', reloading
 15-Apr-24 20:16:27 - [INFO] -  * Restarting with stat
+15-Apr-24 20:16:29 - [INFO] - Development environment configured.
+15-Apr-24 20:16:29 - [WARNING] -  * Debugger is active!
+15-Apr-24 20:16:29 - [INFO] -  * Debugger PIN: 144-740-991
+15-Apr-24 20:21:58 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:21:58] "OPTIONS /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:21:58 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:21:58] "OPTIONS /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=Open HTTP/1.1" 200 -
+15-Apr-24 20:21:58 - [INFO] - 401 - Token is incorrect
+15-Apr-24 20:21:58 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:21:58] "[31m[1mGET /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1[0m" 401 -
+15-Apr-24 20:21:58 - [INFO] - 401 - Token is incorrect
+15-Apr-24 20:21:58 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:21:58] "[31m[1mGET /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=Open HTTP/1.1[0m" 401 -
+15-Apr-24 20:22:04 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:04] "OPTIONS /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:04 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:04] "OPTIONS /api/v2/management/badge/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:04 - [INFO] - 401 - Token is incorrect
+15-Apr-24 20:22:04 - [INFO] - All Badges found
+15-Apr-24 20:22:04 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:04] "[31m[1mGET /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1[0m" 401 -
+15-Apr-24 20:22:04 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:22:04 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:04] "GET /api/v2/management/badge/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:04 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:04] "OPTIONS /api/v2/discourseAuth/discourseExists/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:04 - [INFO] - 401 - Token is incorrect
+15-Apr-24 20:22:04 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:04] "[31m[1mGET /api/v2/discourseAuth/discourseExists/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1[0m" 401 -
+15-Apr-24 20:22:23 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:23] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+15-Apr-24 20:22:23 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/b8aeec8b91548b073d2b7e42f9d1328d.png
+15-Apr-24 20:22:23 - [INFO] - User logged in.
+15-Apr-24 20:22:23 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:22:23 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:23] "POST /api/v2/auth/login HTTP/1.1" 200 -
+15-Apr-24 20:22:23 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:23] "OPTIONS /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:23 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:23] "OPTIONS /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=Open HTTP/1.1" 200 -
+15-Apr-24 20:22:23 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 20:22:23 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 20:22:23 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 20:22:23 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 20:22:23 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:22:23 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:23] "GET /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:23 - [INFO] - All tickets found : 9
+15-Apr-24 20:22:23 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:22:23 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:23] "GET /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=Open HTTP/1.1" 200 -
+15-Apr-24 20:22:24 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:24] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:24 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:24] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:24 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:24] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:24 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:24] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:24 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:24] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:24 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:24] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:24 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:24] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:24 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:22:24 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:24] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:24 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:22:24 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:24] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:24 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:22:24 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:24] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:24 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:22:24 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:24] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:24 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:22:24 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:24] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:24 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:22:24 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:24] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:24 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:22:24 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:24] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:24 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:22:24 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:24] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:24 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:22:24 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:24] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:28 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:28] "OPTIONS /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+15-Apr-24 20:22:28 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 20:22:28 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 20:22:28 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/ticket_attachments/c1b3b3f1e5f75a0c0cef9224f5d17e39_057a564b37454b5314f89741b73656f4_0.png
+15-Apr-24 20:22:29 - [INFO] - All tickets found : 24
+15-Apr-24 20:22:29 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:22:29 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:29] "GET /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+15-Apr-24 20:22:29 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:29] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:29 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:29] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:29 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:29] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:29 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:29] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:29 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:29] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:29 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:29] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:29 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:29] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:29 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:29] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:29 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:29] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:29 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:29] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:29 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:29] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:29 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:29] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:29 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:29] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:29 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:29] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:29 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:22:29 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:29] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:29 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:22:29 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:29] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:29 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:22:29 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:29] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:29 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:22:29 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:29] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:29 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:22:29 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:29] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:29 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:22:29 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:29] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:29 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:22:29 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:29] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:29 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:22:29 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:29] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:29 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:22:29 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:29] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:29 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:22:29 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:29] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:29 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:22:29 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:29] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:29 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:22:29 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:29] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:29 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:22:29 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:29] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:29 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:22:29 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:29] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:29 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:22:29 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:29] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:29 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:22:29 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:29] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:29 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:22:29 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:29] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:29 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:22:29 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:29] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:29 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:22:29 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:29] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:29 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:22:29 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:29] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:29 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:22:29 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:29] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:29 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:22:29 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:29] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:29 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:22:29 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:29] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:29 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:22:29 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:29] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:45 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:45] "OPTIONS /api/v2/ticket/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:45 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 20:22:45 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 20:22:45 - [INFO] - Ticket created successfully.
+15-Apr-24 20:22:45 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:45] "POST /api/v2/ticket/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:47 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:47] "OPTIONS /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:47 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:47] "OPTIONS /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=Open HTTP/1.1" 200 -
+15-Apr-24 20:22:47 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 20:22:47 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 20:22:47 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 20:22:47 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 20:22:47 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:22:47 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:47] "GET /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:47 - [INFO] - All tickets found : 10
+15-Apr-24 20:22:47 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:22:47 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:47] "GET /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=Open HTTP/1.1" 200 -
+15-Apr-24 20:22:47 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:47] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:47 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:47] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:47 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:47] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:47 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:47] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:47 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:47] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:47 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:47] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:47 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:47] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:47 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:47] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:47 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:47] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:47 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:47] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:47 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:22:47 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:47] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:47 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:22:47 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:47] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:47 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:22:47 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:47] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:47 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:22:47 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:47] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:47 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:22:47 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:47] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:47 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:22:47 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:47] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:47 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:22:47 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:47] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:47 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:22:47 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:47] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:47 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:22:47 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:47] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:22:47 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:22:47 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:22:47] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:25:54 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:25:54] "OPTIONS /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+15-Apr-24 20:25:54 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 20:25:54 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 20:25:54 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/ticket_attachments/c1b3b3f1e5f75a0c0cef9224f5d17e39_057a564b37454b5314f89741b73656f4_0.png
+15-Apr-24 20:25:54 - [INFO] - All tickets found : 25
+15-Apr-24 20:25:54 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:25:54 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:25:54] "GET /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+15-Apr-24 20:25:54 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:25:54] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:25:54 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:25:54] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:25:54 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:25:54] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:25:54 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:25:54] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:25:54 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:25:54] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:25:54 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:25:54] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:25:54 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:25:54] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:25:54 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:25:54] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:25:54 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:25:54] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:25:54 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:25:54] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:25:54 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:25:54] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:25:54 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:25:54] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:25:54 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:25:54] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:25:54 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:25:54] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:25:54 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:25:54] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:25:54 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:25:54] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:25:54 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:25:54] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:25:54 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:25:54] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:25:54 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:25:54] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:25:54 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:25:54] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:25:54 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:25:54] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:25:54 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:25:54] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:25:54 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:25:54] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:25:54 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:25:54 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:25:54] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:25:55 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:25:55 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:25:55] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:25:56 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:25:56 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:25:56] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:25:56 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:25:56 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:25:56] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:25:57 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:25:57 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:25:57] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:25:57 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:25:57 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:25:57] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:25:58 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:25:58 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:25:58] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:25:58 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:25:58 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:25:58] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:25:59 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:25:59 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:25:59] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:26:00 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:26:00 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:26:00] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:26:00 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:26:00 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:26:00] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:26:01 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:26:01 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:26:01] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:26:01 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:26:01 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:26:01] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:26:02 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:26:02 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:26:02] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:26:02 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:26:02 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:26:02] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:26:03 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:26:03 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:26:03] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:26:04 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:26:04 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:26:04] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:26:04 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:26:04 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:26:04] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:26:05 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:26:05 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:26:05] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:26:05 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:26:05 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:26:05] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:26:06 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:26:06 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:26:06] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:26:06 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:26:06] "OPTIONS /api/v2/ticket/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:26:06 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 20:26:06 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 20:26:06 - [INFO] - Ticket created successfully.
+15-Apr-24 20:26:06 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:26:06] "POST /api/v2/ticket/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:26:07 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:26:07 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:26:07] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:26:07 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:26:07 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:26:07] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:26:07 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:26:07] "OPTIONS /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:26:07 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:26:07] "OPTIONS /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=Open HTTP/1.1" 200 -
+15-Apr-24 20:26:07 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 20:26:07 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 20:26:07 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 20:26:07 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 20:26:07 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:26:07 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:26:07] "GET /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:26:07 - [INFO] - All tickets found : 11
+15-Apr-24 20:26:07 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:26:07 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:26:07] "GET /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=Open HTTP/1.1" 200 -
+15-Apr-24 20:26:08 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:26:08 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:26:08] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:26:08 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:26:08] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:26:08 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:26:08] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:26:08 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:26:08] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:26:08 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:26:08] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:26:08 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:26:08] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:26:08 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:26:08] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:26:08 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:26:08] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:26:08 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:26:08 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:26:08] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:26:09 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:26:09 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:26:09] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:26:09 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:26:09 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:26:09] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:26:10 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:26:10 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:26:10] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:26:11 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:26:11 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:26:11] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:26:11 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:26:11 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:26:11] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:26:12 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:26:12 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:26:12] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:26:12 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:26:12 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:26:12] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:26:13 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:26:13 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:26:13] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:26:13 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:26:13 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:26:13] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:26:14 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:26:14 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:26:14] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:26:15 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:26:15 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:26:15] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:01 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:01] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+15-Apr-24 20:31:01 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/b8aeec8b91548b073d2b7e42f9d1328d.png
+15-Apr-24 20:31:01 - [INFO] - User logged in.
+15-Apr-24 20:31:01 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:31:01 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:01] "POST /api/v2/auth/login HTTP/1.1" 200 -
+15-Apr-24 20:31:01 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:01] "OPTIONS /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:01 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:01] "OPTIONS /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=Open HTTP/1.1" 200 -
+15-Apr-24 20:31:01 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 20:31:01 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 20:31:01 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 20:31:01 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 20:31:01 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:31:01 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:01] "GET /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:01 - [INFO] - All tickets found : 11
+15-Apr-24 20:31:01 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:31:01 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:01] "GET /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=Open HTTP/1.1" 200 -
+15-Apr-24 20:31:02 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:02] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:02 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:02] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:02 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:02] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:02 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:02] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:02 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:02] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:02 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:02] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:02 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:02] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:02 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:02] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:02 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:02] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:02 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:02] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:02 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:02] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:02 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:31:02 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:02] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:02 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:31:02 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:02] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:02 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:31:02 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:02] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:02 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:31:02 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:02] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:02 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:31:02 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:02] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:02 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:31:02 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:02] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:02 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:31:02 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:02] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:02 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:31:02 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:02] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:02 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:31:02 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:02] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:02 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:31:02 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:02] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:02 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:31:02 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:02] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:06 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:06] "OPTIONS /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+15-Apr-24 20:31:06 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 20:31:06 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 20:31:06 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/ticket_attachments/c1b3b3f1e5f75a0c0cef9224f5d17e39_057a564b37454b5314f89741b73656f4_0.png
+15-Apr-24 20:31:06 - [INFO] - All tickets found : 26
+15-Apr-24 20:31:06 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:31:06 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:06] "GET /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+15-Apr-24 20:31:06 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:31:06 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:06] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:06 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:31:06 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:06] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:06 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:31:06 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:06] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:06 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:31:06 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:06] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:06 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:31:06 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:06] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:06 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:31:06 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:06] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:06 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:31:06 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:06] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:06 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:31:06 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:06] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:06 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:31:06 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:06] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:06 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:31:06 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:06] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:06 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:31:06 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:06] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:07 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:31:07 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:07] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:07 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:31:07 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:07] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:07 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:31:07 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:07] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:07 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:31:07 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:07] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:07 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:31:07 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:07] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:07 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:31:07 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:07] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:07 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:31:07 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:07] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:07 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:31:07 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:07] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:07 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:31:07 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:07] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:07 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:31:07 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:07] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:07 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:31:07 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:07] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:07 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:31:07 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:07] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:07 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:31:07 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:07] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:07 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:31:07 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:07] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:07 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:31:07 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:07] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:26 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:26] "OPTIONS /api/v2/ticket/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:26 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 20:31:26 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 20:31:26 - [INFO] - Ticket created successfully.
+15-Apr-24 20:31:26 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:26] "POST /api/v2/ticket/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:28 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:28] "OPTIONS /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:28 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:28] "OPTIONS /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=Open HTTP/1.1" 200 -
+15-Apr-24 20:31:28 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 20:31:28 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 20:31:28 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 20:31:28 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:31:28 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:28] "GET /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:28 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 20:31:28 - [INFO] - All tickets found : 12
+15-Apr-24 20:31:28 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:31:28 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:28] "GET /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=Open HTTP/1.1" 200 -
+15-Apr-24 20:31:28 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:28] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:28 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:28] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:28 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:28] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:28 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:28] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:28 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:28] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:28 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:28] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:28 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:28] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:28 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:28] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:28 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:28] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:28 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:28] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:28 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:28] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:28 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:28] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:28 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:31:28 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:28] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:28 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:31:28 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:28] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:28 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:31:28 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:28] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:28 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:31:28 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:28] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:29 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:31:29 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:29] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:29 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:31:29 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:29] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:29 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:31:29 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:29] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:29 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:31:29 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:29] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:29 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:31:29 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:29] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:29 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:31:29 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:29] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:29 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:31:29 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:29] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:31:29 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:31:29 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:31:29] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:46:40 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:46:40] "OPTIONS /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+15-Apr-24 20:46:40 - [INFO] - 401 - Token is incorrect
+15-Apr-24 20:46:40 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:46:40] "[31m[1mGET /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1[0m" 401 -
+15-Apr-24 20:47:00 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:47:00] "OPTIONS /api/v2/ticket/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:47:00 - [INFO] - 401 - Token is incorrect
+15-Apr-24 20:47:00 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:47:00] "[31m[1mPOST /api/v2/ticket/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1[0m" 401 -
+15-Apr-24 20:47:00 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:47:00] "OPTIONS /api/v2/discourse/categories HTTP/1.1" 200 -
+15-Apr-24 20:47:00 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:47:00] "[33mOPTIONS /api/v2/discourse/category/subcategories/undefined HTTP/1.1[0m" 404 -
+15-Apr-24 20:47:00 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+15-Apr-24 20:47:00 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:47:00] "OPTIONS /api/v2/discourse/tags HTTP/1.1" 200 -
+15-Apr-24 20:47:00 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+15-Apr-24 20:47:01 - [DEBUG] - http://127.0.0.1:3000 "GET /tags.json HTTP/1.1" 200 None
+15-Apr-24 20:47:01 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:47:01 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:47:01] "GET /api/v2/discourse/tags HTTP/1.1" 200 -
+15-Apr-24 20:47:01 - [DEBUG] - http://127.0.0.1:3000 "GET /categories.json HTTP/1.1" 200 None
+15-Apr-24 20:47:01 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:47:01 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:47:01] "GET /api/v2/discourse/categories HTTP/1.1" 200 -
+15-Apr-24 20:49:16 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:16] "OPTIONS /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:16 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 20:49:16 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 20:49:16 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:49:16 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:16] "GET /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:16 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:16] "OPTIONS /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=Open HTTP/1.1" 200 -
+15-Apr-24 20:49:16 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 20:49:16 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 20:49:16 - [INFO] - All tickets found : 12
+15-Apr-24 20:49:16 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:49:16 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:16] "GET /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=Open HTTP/1.1" 200 -
+15-Apr-24 20:49:16 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:16] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:16 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:16] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:16 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:16] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:16 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:16] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:16 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:16] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:16 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:16] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:16 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:16] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:16 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:16] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:16 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:16] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:16 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:16] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:16 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:16] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:16 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:16] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:16 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:49:16 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:16] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:16 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:49:16 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:49:16 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:16] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:16 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:16] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:16 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:49:16 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:49:16 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:16] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:16 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:16] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:16 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:49:16 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:49:16 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:16] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:16 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:49:16 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:16] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:16 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:49:16 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:16] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:16 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:16] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:16 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:49:16 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:49:16 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:16] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:16 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:49:16 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:16] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:16 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:16] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:33 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:33] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+15-Apr-24 20:49:33 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/b8aeec8b91548b073d2b7e42f9d1328d.png
+15-Apr-24 20:49:33 - [INFO] - User logged in.
+15-Apr-24 20:49:33 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:49:33 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:33] "POST /api/v2/auth/login HTTP/1.1" 200 -
+15-Apr-24 20:49:33 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:33] "OPTIONS /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:33 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:33] "OPTIONS /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=Open HTTP/1.1" 200 -
+15-Apr-24 20:49:33 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 20:49:33 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 20:49:33 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 20:49:33 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 20:49:33 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:49:33 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:33] "GET /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:33 - [INFO] - All tickets found : 12
+15-Apr-24 20:49:33 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:49:33 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:33] "GET /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=Open HTTP/1.1" 200 -
+15-Apr-24 20:49:33 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:33] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:33 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:33] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:33 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:33] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:33 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:33] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:33 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:33] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:33 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:33] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:33 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:33] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:33 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:33] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:33 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:33] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:33 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:33] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:33 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:33] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:33 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:33] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:33 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:49:33 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:33] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:33 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:49:33 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:33] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:33 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:49:33 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:33] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:33 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:49:33 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:33] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:33 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:49:33 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:33] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:33 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:49:33 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:33] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:33 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:49:33 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:33] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:33 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:49:33 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:33] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:33 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:49:33 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:33] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:33 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:49:33 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:33] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:33 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:49:33 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:33] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:33 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:49:33 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:33] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:36 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:36] "OPTIONS /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+15-Apr-24 20:49:36 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 20:49:36 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 20:49:36 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/ticket_attachments/c1b3b3f1e5f75a0c0cef9224f5d17e39_057a564b37454b5314f89741b73656f4_0.png
+15-Apr-24 20:49:36 - [INFO] - All tickets found : 27
+15-Apr-24 20:49:36 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:49:36 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:36] "GET /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+15-Apr-24 20:49:36 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:49:36 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:36] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:36 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:49:36 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:36] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:36 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:49:36 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:36] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:36 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:49:36 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:36] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:36 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:49:36 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:36] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:36 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:49:36 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:36] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:36 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:49:36 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:36] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:36 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:49:36 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:36] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:36 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:49:36 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:36] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:36 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:49:36 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:36] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:36 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:49:36 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:36] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:36 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:49:36 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:36] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:36 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:49:36 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:36] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:36 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:49:36 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:36] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:36 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:49:36 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:36] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:36 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:49:36 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:36] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:36 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:49:36 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:36] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:36 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:49:36 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:36] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:36 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:49:36 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:36] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:36 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:49:36 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:36] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:36 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:49:36 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:36] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:36 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:49:36 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:36] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:36 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:49:36 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:36] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:36 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:49:36 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:36] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:36 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:49:36 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:36] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:36 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:49:36 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:36] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:36 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:49:36 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:36] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:56 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:56] "OPTIONS /api/v2/ticket/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:56 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 20:49:56 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 20:49:56 - [INFO] - Ticket created successfully.
+15-Apr-24 20:49:56 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:56] "POST /api/v2/ticket/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:58 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:58] "OPTIONS /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:58 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:58] "OPTIONS /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=Open HTTP/1.1" 200 -
+15-Apr-24 20:49:58 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 20:49:58 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 20:49:58 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 20:49:58 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 20:49:58 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:49:58 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:58] "GET /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:58 - [INFO] - All tickets found : 13
+15-Apr-24 20:49:58 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:49:58 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:58] "GET /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=Open HTTP/1.1" 200 -
+15-Apr-24 20:49:58 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:58] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:58 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:58] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:58 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:58] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:58 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:58] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:58 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:58] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:58 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:58] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:58 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:58] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:58 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:58] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:58 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:58] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:58 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:58] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:58 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:58] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:58 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:58] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:58 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:58] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:58 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:49:58 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:58] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:58 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:49:58 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:58] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:58 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:49:58 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:58] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:58 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:49:58 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:58] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:58 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:49:58 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:58] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:58 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:49:58 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:58] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:58 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:49:58 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:58] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:58 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:49:58 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:58] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:58 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:49:58 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:58] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:58 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:49:58 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:58] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:58 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:49:58 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:58] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:58 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:49:58 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:58] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:49:58 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:49:58 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:49:58] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:51:48 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:51:48] "OPTIONS /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:51:48 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:51:48] "OPTIONS /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=Open HTTP/1.1" 200 -
+15-Apr-24 20:51:48 - [INFO] - 401 - Token is incorrect
+15-Apr-24 20:51:48 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:51:48] "[31m[1mGET /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1[0m" 401 -
+15-Apr-24 20:51:48 - [INFO] - 401 - Token is incorrect
+15-Apr-24 20:51:48 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:51:48] "[31m[1mGET /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=Open HTTP/1.1[0m" 401 -
+15-Apr-24 20:51:51 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:51:51] "OPTIONS /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:51:51 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:51:51] "OPTIONS /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=Open HTTP/1.1" 200 -
+15-Apr-24 20:51:51 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 20:51:51 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 20:51:51 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 20:51:51 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 20:51:51 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:51:51 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:51:51] "GET /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:51:51 - [INFO] - All tickets found : 13
+15-Apr-24 20:51:51 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:51:51 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:51:51] "GET /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=Open HTTP/1.1" 200 -
+15-Apr-24 20:51:52 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:51:52] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:51:52 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:51:52] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:51:52 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:51:52] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:51:52 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:51:52] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:51:52 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:51:52] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:51:52 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:51:52] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:51:52 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:51:52] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:51:52 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:51:52] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:51:52 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:51:52 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:51:52] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:51:53 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:51:53 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:51:53] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:51:53 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:51:53 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:51:53] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:51:54 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:51:54 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:51:54] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:51:54 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:51:54 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:51:54] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:51:55 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:51:55 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:51:55] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:51:55 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:51:55 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:51:55] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:51:56 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:51:56 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:51:56] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:51:57 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:51:57 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:51:57] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:51:57 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:51:57 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:51:57] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:51:58 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:51:58 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:51:58] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:51:58 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:51:58 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:51:58] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:51:59 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:51:59 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:51:59] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:52:02 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:52:02] "OPTIONS /api/v2/ticket/4d662f88d17b60dd5b5f9bafd19b98d5/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:52:02 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 20:52:02 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:52:02 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:52:02] "GET /api/v2/ticket/4d662f88d17b60dd5b5f9bafd19b98d5/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:52:02 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:52:02] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:52:02 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:52:02 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:52:02] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:01:12 - [INFO] - Development environment configured.
+15-Apr-24 21:01:12 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+15-Apr-24 21:01:12 - [INFO] - [33mPress CTRL+C to quit[0m
+15-Apr-24 21:01:12 - [INFO] -  * Restarting with stat
+15-Apr-24 21:01:13 - [INFO] - Development environment configured.
+15-Apr-24 21:01:13 - [WARNING] -  * Debugger is active!
+15-Apr-24 21:01:13 - [INFO] -  * Debugger PIN: 144-740-991
+15-Apr-24 21:02:25 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:02:25] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+15-Apr-24 21:02:25 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/b8aeec8b91548b073d2b7e42f9d1328d.png
+15-Apr-24 21:02:25 - [INFO] - User logged in.
+15-Apr-24 21:02:25 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 21:02:25 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:02:25] "POST /api/v2/auth/login HTTP/1.1" 200 -
+15-Apr-24 21:02:25 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:02:25] "OPTIONS /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:02:25 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:02:25] "OPTIONS /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=Open HTTP/1.1" 200 -
+15-Apr-24 21:02:25 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 21:02:25 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 21:02:25 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 21:02:25 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 21:02:25 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 21:02:25 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:02:25] "GET /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:02:25 - [INFO] - All tickets found : 13
+15-Apr-24 21:02:25 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 21:02:25 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:02:25] "GET /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=Open HTTP/1.1" 200 -
+15-Apr-24 21:02:25 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:02:25] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:02:25 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:02:25] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:02:25 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:02:25] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:02:25 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:02:25] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:02:25 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:02:25] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:02:25 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:02:25] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:02:25 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:02:25] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:02:25 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:02:25] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:02:25 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:02:25] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:02:25 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:02:25] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:02:25 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:02:25] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:02:25 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:02:25] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:02:25 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:02:25] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:02:25 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 21:02:25 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:02:25] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:02:25 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 21:02:25 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:02:25] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:02:25 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 21:02:25 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:02:25] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:02:25 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 21:02:25 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:02:25] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:02:25 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 21:02:25 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:02:25] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:02:25 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 21:02:25 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:02:25] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:02:25 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 21:02:25 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:02:25] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:02:25 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 21:02:25 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:02:25] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:02:25 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 21:02:25 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:02:25] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:02:25 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 21:02:25 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:02:25] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:02:25 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 21:02:25 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:02:25] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:02:25 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 21:02:25 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:02:25] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:02:25 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 21:02:25 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:02:25] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:02:28 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:02:28] "OPTIONS /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+15-Apr-24 21:02:28 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 21:02:28 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 21:02:28 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/ticket_attachments/c1b3b3f1e5f75a0c0cef9224f5d17e39_057a564b37454b5314f89741b73656f4_0.png
+15-Apr-24 21:02:28 - [INFO] - All tickets found : 28
+15-Apr-24 21:02:28 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 21:02:28 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:02:28] "GET /api/v2/ticket/all-tickets?query=&filter_priority=&filter_status=&sortby=votes&sortdir=desc&filter_tags= HTTP/1.1" 200 -
+15-Apr-24 21:02:28 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 21:02:28 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:02:28] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:02:28 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 21:02:28 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:02:28] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:02:28 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 21:02:28 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:02:28] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:02:28 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 21:02:28 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:02:28] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:02:28 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 21:02:28 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:02:28] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:02:28 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 21:02:28 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:02:28] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:02:28 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 21:02:28 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:02:28] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:02:28 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 21:02:28 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:02:28] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:02:28 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 21:02:28 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:02:28] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:02:28 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 21:02:28 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:02:28] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:02:28 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 21:02:28 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:02:28] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:02:28 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 21:02:28 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:02:28] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:02:28 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 21:02:28 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:02:28] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:02:28 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 21:02:28 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:02:28] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:02:28 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 21:02:28 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:02:28] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:02:28 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 21:02:28 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:02:28] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:02:28 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 21:02:28 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:02:28] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:02:28 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 21:02:28 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:02:28] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:02:28 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 21:02:28 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:02:28] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:02:28 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 21:02:28 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:02:28] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:02:28 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 21:02:28 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:02:28] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:02:28 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 21:02:28 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:02:28] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:02:28 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 21:02:28 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:02:28] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:02:28 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 21:02:28 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:02:28] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:02:28 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 21:02:28 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:02:28] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:02:28 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 21:02:28 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:02:28] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:02:28 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 21:02:28 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:02:28] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:02:28 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 21:02:28 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:02:28] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:03:07 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:03:07] "OPTIONS /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:03:07 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:03:07] "OPTIONS /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=Open HTTP/1.1" 200 -
+15-Apr-24 21:03:07 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 21:03:07 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 21:03:07 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 21:03:07 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 21:03:07 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 21:03:07 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:03:07] "GET /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:03:07 - [INFO] - All tickets found : 13
+15-Apr-24 21:03:07 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 21:03:07 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:03:07] "GET /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=Open HTTP/1.1" 200 -
+15-Apr-24 21:03:07 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:03:07] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:03:07 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:03:07] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:03:07 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:03:07] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:03:07 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:03:07] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:03:07 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:03:07] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:03:07 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:03:07] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:03:07 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:03:07] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:03:07 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:03:07] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:03:07 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:03:07] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:03:07 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:03:07] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:03:07 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:03:07] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:03:07 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:03:07] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:03:07 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:03:07] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:03:07 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 21:03:07 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:03:07] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:03:07 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 21:03:07 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:03:07] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:03:07 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 21:03:07 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:03:07] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:03:07 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 21:03:07 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:03:07] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:03:07 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 21:03:07 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:03:07] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:03:07 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 21:03:07 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:03:07] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:03:07 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 21:03:07 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:03:07] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:03:07 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 21:03:07 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:03:07] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:03:07 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 21:03:07 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:03:07] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:03:07 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 21:03:07 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:03:07] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:03:07 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 21:03:07 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:03:07] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:03:07 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 21:03:07 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:03:07] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 21:03:07 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 21:03:07 - [INFO] - 127.0.0.1 - - [15/Apr/2024 21:03:07] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
