@@ -8,3 +8,7 @@ def make_predictions(ticket_id):
 
     model=joblib('pre-trained-model.pkl')
 '''
+#priority update 
+
+def priority_update(): 
+    return ""
