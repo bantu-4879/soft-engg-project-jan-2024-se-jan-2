@@ -9871,3 +9871,8 @@
 15-Apr-24 20:10:20 - [INFO] - Development environment configured.
 15-Apr-24 20:10:20 - [WARNING] -  * Debugger is active!
 15-Apr-24 20:10:20 - [INFO] -  * Debugger PIN: 144-740-991
+15-Apr-24 20:11:28 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\celeryconfig.py', reloading
+15-Apr-24 20:11:28 - [INFO] -  * Restarting with stat
+15-Apr-24 20:11:30 - [INFO] - Development environment configured.
+15-Apr-24 20:11:30 - [WARNING] -  * Debugger is active!
+15-Apr-24 20:11:30 - [INFO] -  * Debugger PIN: 144-740-991
