@@ -4031,3 +4031,349 @@
 14-Apr-24 08:59:09 - [INFO] - Development environment configured.
 14-Apr-24 08:59:09 - [WARNING] -  * Debugger is active!
 14-Apr-24 08:59:09 - [INFO] -  * Debugger PIN: 163-373-655
+14-Apr-24 10:00:41 - [INFO] - Development environment configured.
+14-Apr-24 10:00:41 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+14-Apr-24 10:00:41 - [INFO] - [33mPress CTRL+C to quit[0m
+14-Apr-24 10:00:41 - [INFO] -  * Restarting with stat
+14-Apr-24 10:00:42 - [INFO] - Development environment configured.
+14-Apr-24 10:00:42 - [WARNING] -  * Debugger is active!
+14-Apr-24 10:00:42 - [INFO] -  * Debugger PIN: 299-872-502
+14-Apr-24 10:01:19 - [INFO] - 127.0.0.1 - - [14/Apr/2024 10:01:19] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+14-Apr-24 10:01:19 - [INFO] - User logged in.
+14-Apr-24 10:01:19 - [INFO] - 200 - Custom success 200 response sent
+14-Apr-24 10:01:19 - [INFO] - 127.0.0.1 - - [14/Apr/2024 10:01:19] "POST /api/v2/auth/login HTTP/1.1" 200 -
+14-Apr-24 10:01:19 - [INFO] - 127.0.0.1 - - [14/Apr/2024 10:01:19] "OPTIONS /api/v2/admin/0ecd00c35e6914b2846832bd22677f3a HTTP/1.1" 200 -
+14-Apr-24 10:01:19 - [INFO] - Token is verified for the user: 0ecd00c35e6914b2846832bd22677f3a
+14-Apr-24 10:01:19 - [INFO] - User role : admin : is verified for the user: 0ecd00c35e6914b2846832bd22677f3a
+14-Apr-24 10:01:19 - [INFO] - File path is not valid: 
+14-Apr-24 10:01:19 - [INFO] - 200 - Custom success 200 response sent
+14-Apr-24 10:01:19 - [INFO] - 127.0.0.1 - - [14/Apr/2024 10:01:19] "GET /api/v2/admin/0ecd00c35e6914b2846832bd22677f3a HTTP/1.1" 200 -
+14-Apr-24 10:01:47 - [INFO] - 127.0.0.1 - - [14/Apr/2024 10:01:47] "OPTIONS /api/v2/admin/0ecd00c35e6914b2846832bd22677f3a HTTP/1.1" 200 -
+14-Apr-24 10:01:47 - [INFO] - Token is verified for the user: 0ecd00c35e6914b2846832bd22677f3a
+14-Apr-24 10:01:47 - [INFO] - User role : admin : is verified for the user: 0ecd00c35e6914b2846832bd22677f3a
+14-Apr-24 10:01:47 - [INFO] - File path is not valid: 
+14-Apr-24 10:01:47 - [INFO] - 200 - Custom success 200 response sent
+14-Apr-24 10:01:47 - [INFO] - 127.0.0.1 - - [14/Apr/2024 10:01:47] "GET /api/v2/admin/0ecd00c35e6914b2846832bd22677f3a HTTP/1.1" 200 -
+14-Apr-24 10:03:17 - [INFO] - 127.0.0.1 - - [14/Apr/2024 10:03:17] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+14-Apr-24 10:03:17 - [INFO] - User logged in.
+14-Apr-24 10:03:17 - [INFO] - 200 - Custom success 200 response sent
+14-Apr-24 10:03:17 - [INFO] - 127.0.0.1 - - [14/Apr/2024 10:03:17] "POST /api/v2/auth/login HTTP/1.1" 200 -
+14-Apr-24 10:03:17 - [INFO] - 127.0.0.1 - - [14/Apr/2024 10:03:17] "OPTIONS /api/v2/admin/0ecd00c35e6914b2846832bd22677f3a HTTP/1.1" 200 -
+14-Apr-24 10:03:17 - [INFO] - Token is verified for the user: 0ecd00c35e6914b2846832bd22677f3a
+14-Apr-24 10:03:17 - [INFO] - User role : admin : is verified for the user: 0ecd00c35e6914b2846832bd22677f3a
+14-Apr-24 10:03:17 - [INFO] - File path is not valid: 
+14-Apr-24 10:03:17 - [INFO] - 200 - Custom success 200 response sent
+14-Apr-24 10:03:17 - [INFO] - 127.0.0.1 - - [14/Apr/2024 10:03:17] "GET /api/v2/admin/0ecd00c35e6914b2846832bd22677f3a HTTP/1.1" 200 -
+14-Apr-24 10:03:45 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/stats_bp.py', reloading
+14-Apr-24 10:03:45 - [INFO] -  * Restarting with stat
+14-Apr-24 11:47:07 - [INFO] - Development environment configured.
+14-Apr-24 11:47:07 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+14-Apr-24 11:47:07 - [INFO] - [33mPress CTRL+C to quit[0m
+14-Apr-24 11:47:07 - [INFO] -  * Restarting with stat
+14-Apr-24 11:47:08 - [INFO] - Development environment configured.
+14-Apr-24 11:47:08 - [WARNING] -  * Debugger is active!
+14-Apr-24 11:47:08 - [INFO] -  * Debugger PIN: 299-872-502
+14-Apr-24 11:50:11 - [INFO] - 127.0.0.1 - - [14/Apr/2024 11:50:11] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+14-Apr-24 11:50:11 - [INFO] - 401 - Password is incorrect
+14-Apr-24 11:50:11 - [INFO] - 127.0.0.1 - - [14/Apr/2024 11:50:11] "[31m[1mPOST /api/v2/auth/login HTTP/1.1[0m" 401 -
+14-Apr-24 11:50:17 - [INFO] - 127.0.0.1 - - [14/Apr/2024 11:50:17] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+14-Apr-24 11:50:17 - [INFO] - User logged in.
+14-Apr-24 11:50:17 - [INFO] - 200 - Custom success 200 response sent
+14-Apr-24 11:50:17 - [INFO] - 127.0.0.1 - - [14/Apr/2024 11:50:17] "POST /api/v2/auth/login HTTP/1.1" 200 -
+14-Apr-24 11:50:17 - [INFO] - 127.0.0.1 - - [14/Apr/2024 11:50:17] "OPTIONS /api/v2/admin/0ecd00c35e6914b2846832bd22677f3a HTTP/1.1" 200 -
+14-Apr-24 11:50:17 - [INFO] - Token is verified for the user: 0ecd00c35e6914b2846832bd22677f3a
+14-Apr-24 11:50:17 - [INFO] - User role : admin : is verified for the user: 0ecd00c35e6914b2846832bd22677f3a
+14-Apr-24 11:50:17 - [INFO] - File path is not valid: 
+14-Apr-24 11:50:17 - [INFO] - 200 - Custom success 200 response sent
+14-Apr-24 11:50:17 - [INFO] - 127.0.0.1 - - [14/Apr/2024 11:50:17] "GET /api/v2/admin/0ecd00c35e6914b2846832bd22677f3a HTTP/1.1" 200 -
+14-Apr-24 11:50:32 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/stats_bp.py', reloading
+14-Apr-24 11:50:32 - [INFO] -  * Restarting with stat
+14-Apr-24 13:07:32 - [INFO] - Development environment configured.
+14-Apr-24 13:07:32 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+14-Apr-24 13:07:32 - [INFO] - [33mPress CTRL+C to quit[0m
+14-Apr-24 13:07:32 - [INFO] -  * Restarting with stat
+14-Apr-24 13:07:33 - [INFO] - Development environment configured.
+14-Apr-24 13:07:33 - [WARNING] -  * Debugger is active!
+14-Apr-24 13:07:33 - [INFO] -  * Debugger PIN: 299-872-502
+14-Apr-24 13:07:35 - [INFO] - 127.0.0.1 - - [14/Apr/2024 13:07:35] "[32mGET /api/v2/data HTTP/1.1[0m" 308 -
+14-Apr-24 13:07:35 - [ERROR] - InboxAPI->get : Error occured while fetching user messages: num_tickets_in_time_period() missing 2 required positional arguments: 'date1' and 'date2'
+14-Apr-24 13:07:35 - [INFO] - 500 - Internal Server Error
+14-Apr-24 13:07:35 - [INFO] - 127.0.0.1 - - [14/Apr/2024 13:07:35] "[35m[1mGET /api/v2/data/ HTTP/1.1[0m" 500 -
+14-Apr-24 13:07:46 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/stats_bp.py', reloading
+14-Apr-24 13:07:46 - [INFO] -  * Restarting with stat
+14-Apr-24 13:07:47 - [INFO] - Development environment configured.
+14-Apr-24 13:07:47 - [WARNING] -  * Debugger is active!
+14-Apr-24 13:07:47 - [INFO] -  * Debugger PIN: 299-872-502
+14-Apr-24 13:07:48 - [INFO] - 127.0.0.1 - - [14/Apr/2024 13:07:48] "[32mGET /api/v2/data HTTP/1.1[0m" 308 -
+14-Apr-24 13:07:48 - [INFO] - 200 - Custom success 200 response sent
+14-Apr-24 13:07:48 - [INFO] - 127.0.0.1 - - [14/Apr/2024 13:07:48] "GET /api/v2/data/ HTTP/1.1" 200 -
+14-Apr-24 13:08:06 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/stats_bp.py', reloading
+14-Apr-24 13:08:06 - [INFO] -  * Restarting with stat
+14-Apr-24 13:08:07 - [INFO] - Development environment configured.
+14-Apr-24 13:08:07 - [WARNING] -  * Debugger is active!
+14-Apr-24 13:08:07 - [INFO] -  * Debugger PIN: 299-872-502
+14-Apr-24 13:08:13 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/stats_bp.py', reloading
+14-Apr-24 13:08:13 - [INFO] -  * Restarting with stat
+14-Apr-24 13:08:28 - [INFO] - Development environment configured.
+14-Apr-24 13:08:28 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+14-Apr-24 13:08:28 - [INFO] - [33mPress CTRL+C to quit[0m
+14-Apr-24 13:08:28 - [INFO] -  * Restarting with stat
+14-Apr-24 13:08:29 - [INFO] - Development environment configured.
+14-Apr-24 13:08:29 - [WARNING] -  * Debugger is active!
+14-Apr-24 13:08:29 - [INFO] -  * Debugger PIN: 299-872-502
+14-Apr-24 13:08:30 - [INFO] - 127.0.0.1 - - [14/Apr/2024 13:08:30] "[32mGET /api/v2/data HTTP/1.1[0m" 308 -
+14-Apr-24 13:08:30 - [INFO] - 200 - Custom success 200 response sent
+14-Apr-24 13:08:30 - [INFO] - 127.0.0.1 - - [14/Apr/2024 13:08:30] "GET /api/v2/data/ HTTP/1.1" 200 -
+14-Apr-24 13:08:52 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/stats_bp.py', reloading
+14-Apr-24 13:08:52 - [INFO] -  * Restarting with stat
+14-Apr-24 13:08:53 - [INFO] - Development environment configured.
+14-Apr-24 13:08:53 - [WARNING] -  * Debugger is active!
+14-Apr-24 13:08:53 - [INFO] -  * Debugger PIN: 299-872-502
+14-Apr-24 13:08:56 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/stats_bp.py', reloading
+14-Apr-24 13:08:56 - [INFO] -  * Restarting with stat
+14-Apr-24 13:08:57 - [INFO] - Development environment configured.
+14-Apr-24 13:08:57 - [WARNING] -  * Debugger is active!
+14-Apr-24 13:08:57 - [INFO] -  * Debugger PIN: 299-872-502
+14-Apr-24 13:09:01 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/stats_bp.py', reloading
+14-Apr-24 13:09:01 - [INFO] -  * Restarting with stat
+14-Apr-24 13:09:02 - [INFO] - Development environment configured.
+14-Apr-24 13:09:02 - [WARNING] -  * Debugger is active!
+14-Apr-24 13:09:02 - [INFO] -  * Debugger PIN: 299-872-502
+14-Apr-24 13:09:27 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/stats_bp.py', reloading
+14-Apr-24 13:09:27 - [INFO] -  * Restarting with stat
+14-Apr-24 13:09:28 - [INFO] - Development environment configured.
+14-Apr-24 13:09:28 - [WARNING] -  * Debugger is active!
+14-Apr-24 13:09:28 - [INFO] -  * Debugger PIN: 299-872-502
+14-Apr-24 13:09:31 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/stats_bp.py', reloading
+14-Apr-24 13:09:31 - [INFO] -  * Restarting with stat
+14-Apr-24 13:09:32 - [INFO] - Development environment configured.
+14-Apr-24 13:09:32 - [WARNING] -  * Debugger is active!
+14-Apr-24 13:09:32 - [INFO] -  * Debugger PIN: 299-872-502
+14-Apr-24 13:09:35 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/stats_bp.py', reloading
+14-Apr-24 13:09:35 - [INFO] -  * Restarting with stat
+14-Apr-24 13:09:44 - [INFO] - Development environment configured.
+14-Apr-24 13:09:44 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+14-Apr-24 13:09:44 - [INFO] - [33mPress CTRL+C to quit[0m
+14-Apr-24 13:09:44 - [INFO] -  * Restarting with stat
+14-Apr-24 13:09:45 - [INFO] - Development environment configured.
+14-Apr-24 13:09:45 - [WARNING] -  * Debugger is active!
+14-Apr-24 13:09:45 - [INFO] -  * Debugger PIN: 299-872-502
+14-Apr-24 13:09:48 - [INFO] - 127.0.0.1 - - [14/Apr/2024 13:09:48] "[32mGET /api/v2/data HTTP/1.1[0m" 308 -
+14-Apr-24 13:09:48 - [ERROR] - InboxAPI->get : Error occured while fetching user messages: object of type 'Query' has no len()
+14-Apr-24 13:09:48 - [INFO] - 500 - Internal Server Error
+14-Apr-24 13:09:48 - [INFO] - 127.0.0.1 - - [14/Apr/2024 13:09:48] "[35m[1mGET /api/v2/data/ HTTP/1.1[0m" 500 -
+14-Apr-24 13:09:59 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/stats_bp.py', reloading
+14-Apr-24 13:09:59 - [INFO] -  * Restarting with stat
+14-Apr-24 13:10:04 - [INFO] - Development environment configured.
+14-Apr-24 13:10:04 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+14-Apr-24 13:10:04 - [INFO] - [33mPress CTRL+C to quit[0m
+14-Apr-24 13:10:04 - [INFO] -  * Restarting with stat
+14-Apr-24 13:10:05 - [INFO] - Development environment configured.
+14-Apr-24 13:10:05 - [WARNING] -  * Debugger is active!
+14-Apr-24 13:10:05 - [INFO] -  * Debugger PIN: 299-872-502
+14-Apr-24 13:10:06 - [INFO] - 127.0.0.1 - - [14/Apr/2024 13:10:06] "[32mGET /api/v2/data HTTP/1.1[0m" 308 -
+14-Apr-24 13:10:06 - [INFO] - 200 - Custom success 200 response sent
+14-Apr-24 13:10:06 - [INFO] - 127.0.0.1 - - [14/Apr/2024 13:10:06] "GET /api/v2/data/ HTTP/1.1" 200 -
+14-Apr-24 13:10:19 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/stats_bp.py', reloading
+14-Apr-24 13:10:19 - [INFO] -  * Restarting with stat
+14-Apr-24 13:10:20 - [INFO] - Development environment configured.
+14-Apr-24 13:10:20 - [WARNING] -  * Debugger is active!
+14-Apr-24 13:10:20 - [INFO] -  * Debugger PIN: 299-872-502
+14-Apr-24 13:10:33 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/stats_bp.py', reloading
+14-Apr-24 13:10:33 - [INFO] -  * Restarting with stat
+14-Apr-24 13:10:34 - [INFO] - Development environment configured.
+14-Apr-24 13:10:34 - [WARNING] -  * Debugger is active!
+14-Apr-24 13:10:34 - [INFO] -  * Debugger PIN: 299-872-502
+14-Apr-24 13:10:39 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/stats_bp.py', reloading
+14-Apr-24 13:10:39 - [INFO] -  * Restarting with stat
+14-Apr-24 13:11:43 - [INFO] - Development environment configured.
+14-Apr-24 13:11:43 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+14-Apr-24 13:11:43 - [INFO] - [33mPress CTRL+C to quit[0m
+14-Apr-24 13:11:43 - [INFO] -  * Restarting with stat
+14-Apr-24 13:11:44 - [INFO] - Development environment configured.
+14-Apr-24 13:11:45 - [WARNING] -  * Debugger is active!
+14-Apr-24 13:11:45 - [INFO] -  * Debugger PIN: 299-872-502
+14-Apr-24 13:11:46 - [INFO] - 127.0.0.1 - - [14/Apr/2024 13:11:46] "[32mGET /api/v2/data HTTP/1.1[0m" 308 -
+14-Apr-24 13:11:46 - [INFO] - 200 - Custom success 200 response sent
+14-Apr-24 13:11:46 - [INFO] - 127.0.0.1 - - [14/Apr/2024 13:11:46] "GET /api/v2/data/ HTTP/1.1" 200 -
+14-Apr-24 13:12:02 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/stats_bp.py', reloading
+14-Apr-24 13:12:02 - [INFO] -  * Restarting with stat
+14-Apr-24 13:12:03 - [INFO] - Development environment configured.
+14-Apr-24 13:12:03 - [WARNING] -  * Debugger is active!
+14-Apr-24 13:12:03 - [INFO] -  * Debugger PIN: 299-872-502
+14-Apr-24 13:12:04 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/stats_bp.py', reloading
+14-Apr-24 13:12:04 - [INFO] -  * Restarting with stat
+14-Apr-24 13:12:40 - [INFO] - Development environment configured.
+14-Apr-24 13:12:40 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+14-Apr-24 13:12:40 - [INFO] - [33mPress CTRL+C to quit[0m
+14-Apr-24 13:12:40 - [INFO] -  * Restarting with stat
+14-Apr-24 13:12:41 - [INFO] - Development environment configured.
+14-Apr-24 13:12:41 - [WARNING] -  * Debugger is active!
+14-Apr-24 13:12:41 - [INFO] -  * Debugger PIN: 299-872-502
+14-Apr-24 13:12:42 - [INFO] - 127.0.0.1 - - [14/Apr/2024 13:12:42] "[32mGET /api/v2/data HTTP/1.1[0m" 308 -
+14-Apr-24 13:12:42 - [ERROR] - InboxAPI->get : Error occured while fetching user messages: type object 'datetime.datetime' has no attribute 'datetime'
+14-Apr-24 13:12:42 - [INFO] - 500 - Internal Server Error
+14-Apr-24 13:12:42 - [INFO] - 127.0.0.1 - - [14/Apr/2024 13:12:42] "[35m[1mGET /api/v2/data/ HTTP/1.1[0m" 500 -
+14-Apr-24 13:12:50 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/stats_bp.py', reloading
+14-Apr-24 13:12:50 - [INFO] -  * Restarting with stat
+14-Apr-24 13:12:51 - [INFO] - Development environment configured.
+14-Apr-24 13:12:51 - [WARNING] -  * Debugger is active!
+14-Apr-24 13:12:51 - [INFO] -  * Debugger PIN: 299-872-502
+14-Apr-24 13:12:52 - [INFO] - 127.0.0.1 - - [14/Apr/2024 13:12:52] "[32mGET /api/v2/data HTTP/1.1[0m" 308 -
+14-Apr-24 13:12:52 - [INFO] - 200 - Custom success 200 response sent
+14-Apr-24 13:12:52 - [INFO] - 127.0.0.1 - - [14/Apr/2024 13:12:52] "GET /api/v2/data/ HTTP/1.1" 200 -
+14-Apr-24 13:13:03 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/stats_bp.py', reloading
+14-Apr-24 13:13:03 - [INFO] -  * Restarting with stat
+14-Apr-24 13:15:56 - [INFO] - Development environment configured.
+14-Apr-24 13:15:57 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+14-Apr-24 13:15:57 - [INFO] - [33mPress CTRL+C to quit[0m
+14-Apr-24 13:15:57 - [INFO] -  * Restarting with stat
+14-Apr-24 13:15:57 - [INFO] - Development environment configured.
+14-Apr-24 13:15:57 - [WARNING] -  * Debugger is active!
+14-Apr-24 13:15:57 - [INFO] -  * Debugger PIN: 299-872-502
+14-Apr-24 13:15:59 - [INFO] - 127.0.0.1 - - [14/Apr/2024 13:15:59] "[32mGET /api/v2/data HTTP/1.1[0m" 308 -
+14-Apr-24 13:15:59 - [INFO] - 200 - Custom success 200 response sent
+14-Apr-24 13:15:59 - [INFO] - 127.0.0.1 - - [14/Apr/2024 13:15:59] "GET /api/v2/data/ HTTP/1.1" 200 -
+14-Apr-24 13:16:17 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/stats_bp.py', reloading
+14-Apr-24 13:16:17 - [INFO] -  * Restarting with stat
+14-Apr-24 13:16:18 - [INFO] - Development environment configured.
+14-Apr-24 13:16:18 - [WARNING] -  * Debugger is active!
+14-Apr-24 13:16:18 - [INFO] -  * Debugger PIN: 299-872-502
+14-Apr-24 13:16:23 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/stats_bp.py', reloading
+14-Apr-24 13:16:23 - [INFO] -  * Restarting with stat
+14-Apr-24 13:18:24 - [INFO] - Development environment configured.
+14-Apr-24 13:18:24 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+14-Apr-24 13:18:24 - [INFO] - [33mPress CTRL+C to quit[0m
+14-Apr-24 13:18:24 - [INFO] -  * Restarting with stat
+14-Apr-24 13:18:25 - [INFO] - Development environment configured.
+14-Apr-24 13:18:25 - [WARNING] -  * Debugger is active!
+14-Apr-24 13:18:25 - [INFO] -  * Debugger PIN: 299-872-502
+14-Apr-24 13:18:27 - [INFO] - 127.0.0.1 - - [14/Apr/2024 13:18:27] "[32mGET /api/v2/data HTTP/1.1[0m" 308 -
+14-Apr-24 13:18:27 - [INFO] - 200 - Custom success 200 response sent
+14-Apr-24 13:18:27 - [INFO] - 127.0.0.1 - - [14/Apr/2024 13:18:27] "GET /api/v2/data/ HTTP/1.1" 200 -
+14-Apr-24 13:18:41 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/stats_bp.py', reloading
+14-Apr-24 13:18:41 - [INFO] -  * Restarting with stat
+14-Apr-24 13:18:42 - [INFO] - Development environment configured.
+14-Apr-24 13:18:42 - [WARNING] -  * Debugger is active!
+14-Apr-24 13:18:42 - [INFO] -  * Debugger PIN: 299-872-502
+14-Apr-24 13:18:43 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/stats_bp.py', reloading
+14-Apr-24 13:18:43 - [INFO] -  * Restarting with stat
+14-Apr-24 13:18:44 - [INFO] - Development environment configured.
+14-Apr-24 13:18:44 - [WARNING] -  * Debugger is active!
+14-Apr-24 13:18:44 - [INFO] -  * Debugger PIN: 299-872-502
+14-Apr-24 13:18:50 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/stats_bp.py', reloading
+14-Apr-24 13:18:50 - [INFO] -  * Restarting with stat
+14-Apr-24 13:18:51 - [INFO] - Development environment configured.
+14-Apr-24 13:18:51 - [WARNING] -  * Debugger is active!
+14-Apr-24 13:18:51 - [INFO] -  * Debugger PIN: 299-872-502
+14-Apr-24 13:30:08 - [INFO] - 127.0.0.1 - - [14/Apr/2024 13:30:08] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+14-Apr-24 13:30:08 - [INFO] - User logged in.
+14-Apr-24 13:30:08 - [INFO] - 200 - Custom success 200 response sent
+14-Apr-24 13:30:08 - [INFO] - 127.0.0.1 - - [14/Apr/2024 13:30:08] "POST /api/v2/auth/login HTTP/1.1" 200 -
+14-Apr-24 13:30:08 - [INFO] - 127.0.0.1 - - [14/Apr/2024 13:30:08] "[32mOPTIONS /api/v2/data HTTP/1.1[0m" 308 -
+14-Apr-24 13:31:12 - [INFO] - 127.0.0.1 - - [14/Apr/2024 13:31:12] "[32mOPTIONS /api/v2/data HTTP/1.1[0m" 308 -
+14-Apr-24 13:31:28 - [INFO] - 127.0.0.1 - - [14/Apr/2024 13:31:28] "[32mOPTIONS /api/v2/data HTTP/1.1[0m" 308 -
+14-Apr-24 13:31:30 - [INFO] - 127.0.0.1 - - [14/Apr/2024 13:31:30] "[32mOPTIONS /api/v2/data HTTP/1.1[0m" 308 -
+14-Apr-24 13:31:36 - [INFO] - 127.0.0.1 - - [14/Apr/2024 13:31:36] "[32mOPTIONS /api/v2/data HTTP/1.1[0m" 308 -
+14-Apr-24 13:31:41 - [INFO] - 127.0.0.1 - - [14/Apr/2024 13:31:41] "[32mOPTIONS /api/v2/data HTTP/1.1[0m" 308 -
+14-Apr-24 13:32:06 - [INFO] - 127.0.0.1 - - [14/Apr/2024 13:32:06] "[32mOPTIONS /api/v2/data HTTP/1.1[0m" 308 -
+14-Apr-24 13:32:07 - [INFO] - 127.0.0.1 - - [14/Apr/2024 13:32:07] "[32mOPTIONS /api/v2/data HTTP/1.1[0m" 308 -
+14-Apr-24 13:32:13 - [INFO] - 127.0.0.1 - - [14/Apr/2024 13:32:13] "[32mOPTIONS /api/v2/data HTTP/1.1[0m" 308 -
+14-Apr-24 13:32:37 - [INFO] - 127.0.0.1 - - [14/Apr/2024 13:32:37] "[32mOPTIONS /api/v2/data HTTP/1.1[0m" 308 -
+14-Apr-24 13:33:46 - [INFO] - Development environment configured.
+14-Apr-24 13:33:46 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+14-Apr-24 13:33:46 - [INFO] - [33mPress CTRL+C to quit[0m
+14-Apr-24 13:33:46 - [INFO] -  * Restarting with stat
+14-Apr-24 13:33:47 - [INFO] - Development environment configured.
+14-Apr-24 13:33:47 - [WARNING] -  * Debugger is active!
+14-Apr-24 13:33:47 - [INFO] -  * Debugger PIN: 299-872-502
+14-Apr-24 13:33:51 - [INFO] - 127.0.0.1 - - [14/Apr/2024 13:33:51] "[32mOPTIONS /api/v2/data HTTP/1.1[0m" 308 -
+14-Apr-24 13:34:07 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/stats_bp.py', reloading
+14-Apr-24 13:34:07 - [INFO] -  * Restarting with stat
+14-Apr-24 13:34:08 - [INFO] - Development environment configured.
+14-Apr-24 13:34:08 - [WARNING] -  * Debugger is active!
+14-Apr-24 13:34:08 - [INFO] -  * Debugger PIN: 299-872-502
+14-Apr-24 13:34:09 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/stats_bp.py', reloading
+14-Apr-24 13:34:09 - [INFO] -  * Restarting with stat
+14-Apr-24 13:34:21 - [INFO] - Development environment configured.
+14-Apr-24 13:34:21 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+14-Apr-24 13:34:21 - [INFO] - [33mPress CTRL+C to quit[0m
+14-Apr-24 13:34:21 - [INFO] -  * Restarting with stat
+14-Apr-24 13:34:22 - [INFO] - Development environment configured.
+14-Apr-24 13:34:22 - [WARNING] -  * Debugger is active!
+14-Apr-24 13:34:22 - [INFO] -  * Debugger PIN: 299-872-502
+14-Apr-24 13:34:25 - [INFO] - 127.0.0.1 - - [14/Apr/2024 13:34:25] "[32mOPTIONS /api/v2/data HTTP/1.1[0m" 308 -
+14-Apr-24 13:35:06 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/stats_bp.py', reloading
+14-Apr-24 13:35:06 - [INFO] -  * Restarting with stat
+14-Apr-24 13:35:07 - [INFO] - Development environment configured.
+14-Apr-24 13:35:07 - [WARNING] -  * Debugger is active!
+14-Apr-24 13:35:07 - [INFO] -  * Debugger PIN: 299-872-502
+14-Apr-24 13:35:07 - [INFO] - 127.0.0.1 - - [14/Apr/2024 13:35:07] "[32mGET /api/v2/data HTTP/1.1[0m" 308 -
+14-Apr-24 13:35:07 - [INFO] - 200 - Custom success 200 response sent
+14-Apr-24 13:35:07 - [INFO] - 127.0.0.1 - - [14/Apr/2024 13:35:07] "GET /api/v2/data/ HTTP/1.1" 200 -
+14-Apr-24 13:35:12 - [INFO] - 200 - Custom success 200 response sent
+14-Apr-24 13:35:12 - [INFO] - 127.0.0.1 - - [14/Apr/2024 13:35:12] "GET /api/v2/data/ HTTP/1.1" 200 -
+14-Apr-24 13:35:24 - [INFO] - 127.0.0.1 - - [14/Apr/2024 13:35:24] "OPTIONS /api/v2/data/ HTTP/1.1" 200 -
+14-Apr-24 13:35:24 - [INFO] - 200 - Custom success 200 response sent
+14-Apr-24 13:35:24 - [INFO] - 127.0.0.1 - - [14/Apr/2024 13:35:24] "GET /api/v2/data/ HTTP/1.1" 200 -
+14-Apr-24 13:35:33 - [INFO] - 127.0.0.1 - - [14/Apr/2024 13:35:33] "OPTIONS /api/v2/data/ HTTP/1.1" 200 -
+14-Apr-24 13:35:33 - [INFO] - 200 - Custom success 200 response sent
+14-Apr-24 13:35:33 - [INFO] - 127.0.0.1 - - [14/Apr/2024 13:35:33] "GET /api/v2/data/ HTTP/1.1" 200 -
+14-Apr-24 13:35:39 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/stats_bp.py', reloading
+14-Apr-24 13:35:39 - [INFO] -  * Restarting with stat
+14-Apr-24 13:35:41 - [INFO] - Development environment configured.
+14-Apr-24 13:35:41 - [WARNING] -  * Debugger is active!
+14-Apr-24 13:35:41 - [INFO] -  * Debugger PIN: 299-872-502
+14-Apr-24 13:35:41 - [INFO] - 127.0.0.1 - - [14/Apr/2024 13:35:41] "OPTIONS /api/v2/data/ HTTP/1.1" 200 -
+14-Apr-24 13:35:41 - [INFO] - Token is verified for the user: 0ecd00c35e6914b2846832bd22677f3a
+14-Apr-24 13:35:41 - [INFO] - 200 - Custom success 200 response sent
+14-Apr-24 13:35:41 - [INFO] - 127.0.0.1 - - [14/Apr/2024 13:35:41] "GET /api/v2/data/ HTTP/1.1" 200 -
+14-Apr-24 13:35:45 - [INFO] - Token is verified for the user: 0ecd00c35e6914b2846832bd22677f3a
+14-Apr-24 13:35:45 - [INFO] - 200 - Custom success 200 response sent
+14-Apr-24 13:35:45 - [INFO] - 127.0.0.1 - - [14/Apr/2024 13:35:45] "GET /api/v2/data/ HTTP/1.1" 200 -
+14-Apr-24 13:36:05 - [INFO] - 127.0.0.1 - - [14/Apr/2024 13:36:05] "OPTIONS /api/v2/data/ HTTP/1.1" 200 -
+14-Apr-24 13:36:05 - [INFO] - Token is verified for the user: 0ecd00c35e6914b2846832bd22677f3a
+14-Apr-24 13:36:05 - [INFO] - 200 - Custom success 200 response sent
+14-Apr-24 13:36:05 - [INFO] - 127.0.0.1 - - [14/Apr/2024 13:36:05] "GET /api/v2/data/ HTTP/1.1" 200 -
+14-Apr-24 18:32:15 - [INFO] - 127.0.0.1 - - [14/Apr/2024 18:32:15] "OPTIONS /api/v2/data/ HTTP/1.1" 200 -
+14-Apr-24 18:32:15 - [INFO] - Token is verified for the user: 0ecd00c35e6914b2846832bd22677f3a
+14-Apr-24 18:32:15 - [INFO] - 200 - Custom success 200 response sent
+14-Apr-24 18:32:15 - [INFO] - 127.0.0.1 - - [14/Apr/2024 18:32:15] "GET /api/v2/data/ HTTP/1.1" 200 -
+14-Apr-24 18:44:42 - [INFO] - Development environment configured.
+14-Apr-24 18:44:42 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+14-Apr-24 18:44:42 - [INFO] - [33mPress CTRL+C to quit[0m
+14-Apr-24 18:44:42 - [INFO] -  * Restarting with stat
+14-Apr-24 18:44:43 - [INFO] - Development environment configured.
+14-Apr-24 18:44:43 - [WARNING] -  * Debugger is active!
+14-Apr-24 18:44:43 - [INFO] -  * Debugger PIN: 299-872-502
+14-Apr-24 18:44:49 - [ERROR] - TicketTrackingAPI->get : Error occured while fetching ticket tracking data: 'NoneType' object has no attribute 'id'
+14-Apr-24 18:44:49 - [INFO] - 500 - Internal Server Error
+14-Apr-24 18:44:49 - [INFO] - 127.0.0.1 - - [14/Apr/2024 18:44:49] "[35m[1mGET /api/v2/tracking/4f5a09abb3fbb7cd18b90c095739f7c HTTP/1.1[0m" 500 -
+14-Apr-24 18:45:13 - [INFO] - 127.0.0.1 - - [14/Apr/2024 18:45:13] "[33mGET /api/v2/tracking HTTP/1.1[0m" 404 -
+14-Apr-24 18:45:16 - [INFO] - 127.0.0.1 - - [14/Apr/2024 18:45:16] "[33mGET /api/v2/tracking/ HTTP/1.1[0m" 404 -
+14-Apr-24 19:00:03 - [INFO] - 404 - Provided user id does not exists. Please create account.
+14-Apr-24 19:00:03 - [INFO] - 127.0.0.1 - - [14/Apr/2024 19:00:03] "[33mGET /api/v2/inbox/23463b99b6272f26ed677cc556c44e8 HTTP/1.1[0m" 404 -
+14-Apr-24 19:02:43 - [INFO] - 404 - Provided user id does not exists. Please create account.
+14-Apr-24 19:02:43 - [INFO] - 127.0.0.1 - - [14/Apr/2024 19:02:43] "[33mGET /api/v2/inbox/23463b99b62a72f26ed677cc556c44e8 HTTP/1.1[0m" 404 -
+14-Apr-24 19:11:40 - [INFO] - 200 - Custom success 200 response sent
+14-Apr-24 19:11:40 - [INFO] - 127.0.0.1 - - [14/Apr/2024 19:11:40] "GET /api/v2/ticket/comments/7aaef40c060d2e8be8e5e23e3f7ea0a9 HTTP/1.1" 200 -
+14-Apr-24 19:11:42 - [INFO] - 200 - Custom success 200 response sent
+14-Apr-24 19:11:42 - [INFO] - 127.0.0.1 - - [14/Apr/2024 19:11:42] "GET /api/v2/ticket/comments/7aaef40c060d2e8be8e5e23e3f7ea0a9 HTTP/1.1" 200 -
+14-Apr-24 21:25:35 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/tasks.py', reloading
+14-Apr-24 21:25:35 - [INFO] -  * Restarting with stat
+14-Apr-24 21:25:37 - [INFO] - Development environment configured.
+14-Apr-24 21:25:37 - [WARNING] -  * Debugger is active!
+14-Apr-24 21:25:37 - [INFO] -  * Debugger PIN: 299-872-502

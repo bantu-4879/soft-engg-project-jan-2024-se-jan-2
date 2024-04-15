@@ -12,13 +12,13 @@ timezone = "Asia/Kolkata"
 
 beat_schedule = {
     "daily_user_reminder": {
-        "task": "tasks.daily_reminders",
+        "task": "tasks.priority_update",
         "schedule": crontab(hour=11, minute=57),
         # "schedule" : 20.0,
     },
-    "monthly_admin_report": {
-        "task": "tasks.monthly_report",
-        "schedule": crontab(hour=11, minute=57, day_of_month=1),
-        # "schedule" : 20.0,
-    },
+    # "monthly_admin_report": {
+    #     "task": "tasks.monthly_report",
+    #     "schedule": crontab(hour=11, minute=57, day_of_month=1),
+    #     # "schedule" : 20.0,
+    # },
 }

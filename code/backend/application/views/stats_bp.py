@@ -15,7 +15,7 @@ from application.models import *
 from application.globals import *
 from datetime import datetime
 from application.views.user_utils import time_to_str
-from datetime import date
+from datetime import date, timedelta
 from sqlalchemy import and_
 from application.views.ticket_bp import TicketUtils
 
@@ -37,9 +37,22 @@ class StatsUtils(UserUtils):
         ).all()
 
         return tickets_found
-    
-    def str_to_date(self,date_str): 
-        format = '%Y-%m-%d'
+
+    def num_tickets_today(self, date):
+        tickets_found = Ticket.query.filter_by(created_at=date).all()
+        return tickets_found
+
+    def new_users_registered(self, date):
+        return
+
+    def total_users(self):
+        total_students = User.query.filter_by(role_id=3).all()
+        total_staff = User.query.filter_by(role_id=2).all()
+        total_admin = User.query.filter_by(role_id=1).all()
+        return len(total_admin), len(total_staff), len(total_students)
+
+    def str_to_date(self, date_str):
+        format = "%Y-%m-%d"
         date = datetime.strptime(date_str, format).date()
         return date
 
@@ -50,8 +63,50 @@ stats_util = StatsUtils()
 
 
 class StatsAPI(Resource):
+    @token_required
     def get(self):
-        return
+        try:
+            data = {
+                "new_users_registered": 0,
+                "total_open_tickets": 0,
+                "total_resolved_tickets": 0,
+                "tickets_raised_today": 0,
+                "tickets_raised_month": 0,
+                "tickets_raised_week": 0,
+                "total_admin": 0,
+                "total_support_staff": 0,
+                "total_students": 0,
+            }
+            data["total_admin"], data["total_support_staff"], data["total_students"] = (
+                stats_util.total_users()
+            )
+            # data["tickets_raised_week"] = len(stats_util.num_tickets_in_time_period())
+            data["total_open_tickets"] = len(
+                Ticket.query.filter(Ticket.ticket_status != "resolved").all()
+            )
+            data["new_users_registered"] = len(
+                User.query.filter_by(is_approved=False).all()
+            )
+            data["total_resolved_tickets"] = len(
+                Ticket.query.filter_by(ticket_status="resolved").all()
+            )
+            data["tickets_raised_today"] = len(
+                stats_util.num_tickets_today(datetime.now())
+            )
+            data["tickets_raised_month"] = len(
+                stats_util.num_tickets_in_time_period(
+                    date.today().replace(day=1) - timedelta(days=1), datetime.now()
+                )
+            )
+            data["tickets_raised_week"] = len(stats_util.num_tickets_in_time_period(datetime.now() - timedelta(days=7),datetime.now()))
+
+            return success_200_custom(data=data)
+
+        except Exception as e:
+            logger.error(
+                f"StatsAPI->get : Error occured while fetching data: {e}"
+            )
+            raise InternalServerError
 
     # @token_required
     # @users_required(users=["Admin"])
@@ -74,10 +129,10 @@ class StatsAPI(Resource):
             date2 = stats_util.str_to_date(d2)
             if details["resolved"] == False:
                 tickets = stats_util.num_tickets_in_time_period(date1, date2)
-            else: 
+            else:
                 tickets = stats_util.num_resolved_tickets_in_time_period(date1, date2)
 
-        #convert tickets into json objects!!
+            # convert tickets into json objects!!
             tickets_found = []
             for t in tickets:
                 tickets_found.append(Ticket.to_dict(t))
