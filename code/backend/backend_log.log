@@ -9867,3 +9867,7 @@
 15-Apr-24 19:46:12 - [INFO] - 200 - Custom success 200 response sent
 15-Apr-24 19:46:12 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:46:12] "GET /api/v2/discourse/tags HTTP/1.1" 200 -
 15-Apr-24 20:10:15 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\__init__.py', reloading
+15-Apr-24 20:10:17 - [INFO] -  * Restarting with stat
+15-Apr-24 20:10:20 - [INFO] - Development environment configured.
+15-Apr-24 20:10:20 - [WARNING] -  * Debugger is active!
+15-Apr-24 20:10:20 - [INFO] -  * Debugger PIN: 144-740-991
