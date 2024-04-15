@@ -9123,3 +9123,297 @@
 15-Apr-24 18:49:08 - [INFO] - Development environment configured.
 15-Apr-24 18:49:08 - [WARNING] -  * Debugger is active!
 15-Apr-24 18:49:08 - [INFO] -  * Debugger PIN: 144-740-991
+15-Apr-24 19:19:40 - [INFO] - Development environment configured.
+15-Apr-24 19:19:40 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+15-Apr-24 19:19:40 - [INFO] - [33mPress CTRL+C to quit[0m
+15-Apr-24 19:19:40 - [INFO] -  * Restarting with stat
+15-Apr-24 19:19:41 - [INFO] - Development environment configured.
+15-Apr-24 19:19:41 - [WARNING] -  * Debugger is active!
+15-Apr-24 19:19:41 - [INFO] -  * Debugger PIN: 615-108-927
+15-Apr-24 19:20:34 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:20:34] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+15-Apr-24 19:20:34 - [INFO] - 404 - User does not exists
+15-Apr-24 19:20:34 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:20:34] "[33mPOST /api/v2/auth/login HTTP/1.1[0m" 404 -
+15-Apr-24 19:22:32 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:22:32] "OPTIONS /api/v2/auth/login HTTP/1.1" 200 -
+15-Apr-24 19:22:32 - [INFO] - File path is not valid: /Users/amankankriya/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/databases/images/profile_pics/b8aeec8b91548b073d2b7e42f9d1328d.png
+15-Apr-24 19:22:32 - [INFO] - User logged in.
+15-Apr-24 19:22:32 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 19:22:32 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:22:32] "POST /api/v2/auth/login HTTP/1.1" 200 -
+15-Apr-24 19:22:32 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:22:32] "OPTIONS /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:22:32 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:22:32] "OPTIONS /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=Open HTTP/1.1" 200 -
+15-Apr-24 19:22:32 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:22:32 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:22:32 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:22:32 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:22:32 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 19:22:32 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:22:32] "GET /api/v2/student/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:22:32 - [INFO] - All tickets found : 9
+15-Apr-24 19:22:32 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 19:22:32 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:22:32] "GET /api/v2/ticket/all-tickets/b8aeec8b91548b073d2b7e42f9d1328d?filter_status=Open HTTP/1.1" 200 -
+15-Apr-24 19:22:32 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:22:32] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:22:32 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:22:32] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:22:32 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:22:32] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:22:32 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:22:32] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:22:32 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:22:32] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:22:32 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:22:32] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:22:32 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:22:32] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:22:32 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:22:32] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:22:32 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:22:32] "OPTIONS /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:22:32 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 19:22:32 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:22:32] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:22:32 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 19:22:32 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:22:32] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:22:32 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 19:22:32 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:22:32] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:22:32 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 19:22:32 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:22:32] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:22:32 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 19:22:32 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:22:32] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:22:32 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 19:22:32 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:22:32] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:22:32 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 19:22:32 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:22:32] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:22:32 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 19:22:32 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:22:32] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:22:32 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 19:22:32 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:22:32] "GET /api/v2/userDetails/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:22:34 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:22:34] "OPTIONS /api/v2/inbox/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:22:34 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:22:34] "[33mOPTIONS //api/v2/discourseAuth/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1[0m" 404 -
+15-Apr-24 19:22:34 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:22:34 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:22:34 - [INFO] - All Messages found
+15-Apr-24 19:22:34 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 19:22:34 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:22:34] "GET /api/v2/inbox/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:23:00 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:23:00] "OPTIONS /api/v2/inbox/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:23:00 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:23:00 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:23:00 - [INFO] - All Messages found
+15-Apr-24 19:23:00 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 19:23:00 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:23:00] "GET /api/v2/inbox/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:23:02 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:23:02] "[33mOPTIONS //api/v2/discourseAuth/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1[0m" 404 -
+15-Apr-24 19:23:02 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:23:02 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:23:02 - [INFO] - All Messages found
+15-Apr-24 19:23:02 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 19:23:02 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:23:02] "GET /api/v2/inbox/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:23:10 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:23:10] "OPTIONS /api/v2/inbox/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:23:10 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:23:10] "[32mOPTIONS //api/v2/discourseAuth/getMessages//b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1[0m" 308 -
+15-Apr-24 19:23:10 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:23:10 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:23:10 - [INFO] - All Messages found
+15-Apr-24 19:23:10 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 19:23:10 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:23:10] "GET /api/v2/inbox/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:23:17 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:23:17] "OPTIONS /api/v2/inbox/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:23:17 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:23:17] "OPTIONS //api/v2/discourseAuth/getMessages/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:23:17 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:23:17 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:23:17 - [INFO] - All Messages found
+15-Apr-24 19:23:17 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 19:23:17 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:23:17] "GET /api/v2/inbox/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:23:17 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+15-Apr-24 19:23:17 - [ERROR] - Discourse group Messages API->get : Error occured while fetching data from discourse : HTTPConnectionPool(host='127.0.0.1', port=3000): Max retries exceeded with url: /topics/private-messages/testingstudent.json (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x11fe3f7f0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+15-Apr-24 19:23:17 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:23:17] "[35m[1mGET //api/v2/discourseAuth/getMessages/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1[0m" 500 -
+15-Apr-24 19:23:21 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:23:21 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+15-Apr-24 19:23:21 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:23:21 - [INFO] - All Messages found
+15-Apr-24 19:23:21 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 19:23:21 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:23:21] "GET /api/v2/inbox/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:23:21 - [ERROR] - Discourse group Messages API->get : Error occured while fetching data from discourse : HTTPConnectionPool(host='127.0.0.1', port=3000): Max retries exceeded with url: /topics/private-messages/testingstudent.json (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x11fe4b2b0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+15-Apr-24 19:23:21 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:23:21] "[35m[1mGET //api/v2/discourseAuth/getMessages/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1[0m" 500 -
+15-Apr-24 19:29:33 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:29:33] "OPTIONS /api/v2/inbox/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:29:33 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:29:33] "OPTIONS /api/v2/discourseAuth/getMessages/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:29:33 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:29:33 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:29:33 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+15-Apr-24 19:29:33 - [ERROR] - Discourse group Messages API->get : Error occured while fetching data from discourse : HTTPConnectionPool(host='127.0.0.1', port=3000): Max retries exceeded with url: /topics/private-messages/testingstudent.json (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x11ff08a90>: Failed to establish a new connection: [Errno 61] Connection refused'))
+15-Apr-24 19:29:33 - [INFO] - All Messages found
+15-Apr-24 19:29:34 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 19:29:34 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:29:34] "GET /api/v2/inbox/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:29:34 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:29:34] "[35m[1mGET /api/v2/discourseAuth/getMessages/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1[0m" 500 -
+15-Apr-24 19:29:52 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:29:52] "OPTIONS /api/v2/inbox/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:29:52 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:29:52] "OPTIONS /api/v2/discourseAuth/getMessages/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:29:52 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:29:52 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:29:52 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+15-Apr-24 19:29:52 - [INFO] - All Messages found
+15-Apr-24 19:29:52 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 19:29:52 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:29:52] "GET /api/v2/inbox/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:29:52 - [ERROR] - Discourse group Messages API->get : Error occured while fetching data from discourse : HTTPConnectionPool(host='127.0.0.1', port=3000): Max retries exceeded with url: /topics/private-messages/testingstudent.json (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x11fd405b0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+15-Apr-24 19:29:52 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:29:52] "[35m[1mGET /api/v2/discourseAuth/getMessages/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1[0m" 500 -
+15-Apr-24 19:47:56 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:47:56] "OPTIONS /api/v2/inbox/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:47:56 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:47:56] "OPTIONS /api/v2/discourseAuth/getMessages/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:47:56 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:47:56 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+15-Apr-24 19:47:56 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:47:56 - [INFO] - All Messages found
+15-Apr-24 19:47:56 - [ERROR] - Discourse group Messages API->get : Error occured while fetching data from discourse : HTTPConnectionPool(host='127.0.0.1', port=3000): Max retries exceeded with url: /topics/private-messages/testingstudent.json (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x11ff083a0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+15-Apr-24 19:47:56 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 19:47:56 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:47:56] "GET /api/v2/inbox/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:47:56 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:47:56] "[35m[1mGET /api/v2/discourseAuth/getMessages/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1[0m" 500 -
+15-Apr-24 19:49:07 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:49:07] "OPTIONS /api/v2/inbox/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:49:07 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:49:07] "OPTIONS /api/v2/discourseAuth/notifications/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:49:07 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:49:07 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:49:07 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:49:07 - [INFO] - All Messages found
+15-Apr-24 19:49:07 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 19:49:07 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:49:07] "GET /api/v2/inbox/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:49:07 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:49:07] "[35m[1mGET /api/v2/discourseAuth/notifications/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1[0m" 500 -
+15-Apr-24 19:49:38 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:49:38] "OPTIONS /api/v2/inbox/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:49:38 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:49:38] "OPTIONS /api/v2/discourseAuth/notifications/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:49:38 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:49:38 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:49:38 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:49:38 - [INFO] - All Messages found
+15-Apr-24 19:49:38 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 19:49:38 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:49:38] "GET /api/v2/inbox/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:49:38 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:49:38] "[35m[1mGET /api/v2/discourseAuth/notifications/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1[0m" 500 -
+15-Apr-24 19:51:22 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:51:22] "OPTIONS /api/v2/inbox/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:51:22 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:51:22] "OPTIONS /api/v2/discourseAuth/notifications/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:51:22 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:51:22 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:51:22 - [INFO] - All Messages found
+15-Apr-24 19:51:22 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 19:51:22 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:51:22] "GET /api/v2/inbox/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:51:22 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:51:22 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:51:22] "[35m[1mGET /api/v2/discourseAuth/notifications/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1[0m" 500 -
+15-Apr-24 19:51:35 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:51:35] "OPTIONS /api/v2/inbox/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:51:35 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:51:35] "OPTIONS /api/v2/discourseAuth/notifications/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:51:35 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:51:35 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:51:35 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:51:35 - [INFO] - All Messages found
+15-Apr-24 19:51:35 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 19:51:35 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:51:35] "GET /api/v2/inbox/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:51:35 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:51:35] "[35m[1mGET /api/v2/discourseAuth/notifications/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1[0m" 500 -
+15-Apr-24 19:51:38 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:51:38 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:51:38 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:51:38 - [INFO] - All Messages found
+15-Apr-24 19:51:38 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 19:51:38 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:51:38] "GET /api/v2/inbox/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:51:38 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:51:38] "[35m[1mGET /api/v2/discourseAuth/notifications/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1[0m" 500 -
+15-Apr-24 19:51:58 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:51:58] "OPTIONS /api/v2/inbox/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:51:58 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:51:58] "OPTIONS /api/v2/discourseAuth/notifications/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:51:58 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:51:58 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:51:58 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:51:58 - [INFO] - All Messages found
+15-Apr-24 19:51:58 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 19:51:58 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:51:58] "GET /api/v2/inbox/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:51:58 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:51:58] "[35m[1mGET /api/v2/discourseAuth/notifications/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1[0m" 500 -
+15-Apr-24 19:52:01 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:52:01 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:52:01 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:52:01 - [INFO] - All Messages found
+15-Apr-24 19:52:01 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 19:52:01 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:52:01] "GET /api/v2/inbox/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:52:01 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:52:01] "[35m[1mGET /api/v2/discourseAuth/notifications/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1[0m" 500 -
+15-Apr-24 19:52:04 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:52:04] "OPTIONS /api/v2/inbox/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:52:04 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:52:04] "OPTIONS /api/v2/discourseAuth/notifications/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:52:04 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:52:04 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:52:04 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:52:04 - [INFO] - All Messages found
+15-Apr-24 19:52:04 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 19:52:04 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:52:04] "GET /api/v2/inbox/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:52:05 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:52:05] "[35m[1mGET /api/v2/discourseAuth/notifications/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1[0m" 500 -
+15-Apr-24 19:52:05 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:52:05 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:52:05 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:52:05 - [INFO] - All Messages found
+15-Apr-24 19:52:05 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 19:52:05 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:52:05] "GET /api/v2/inbox/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:52:05 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:52:05] "[35m[1mGET /api/v2/discourseAuth/notifications/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1[0m" 500 -
+15-Apr-24 19:52:44 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:52:44] "OPTIONS /api/v2/inbox/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:52:44 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:52:44] "OPTIONS /api/v2/discourseAuth/notifications/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:52:44 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:52:44 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:52:44 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:52:44 - [INFO] - All Messages found
+15-Apr-24 19:52:44 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 19:52:44 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:52:44] "GET /api/v2/inbox/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:52:44 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:52:44] "[35m[1mGET /api/v2/discourseAuth/notifications/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1[0m" 500 -
+15-Apr-24 19:52:49 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:52:49 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:52:49 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:52:49 - [INFO] - All Messages found
+15-Apr-24 19:52:49 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 19:52:49 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:52:49] "GET /api/v2/inbox/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:52:49 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:52:49] "[35m[1mGET /api/v2/discourseAuth/notifications/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1[0m" 500 -
+15-Apr-24 19:52:52 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:52:52] "OPTIONS /api/v2/inbox/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:52:52 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:52:52] "OPTIONS /api/v2/discourseAuth/notifications/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:52:52 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:52:52 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:52:52 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:52:52 - [INFO] - All Messages found
+15-Apr-24 19:52:52 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 19:52:52 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:52:52] "GET /api/v2/inbox/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:52:52 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:52:52] "[35m[1mGET /api/v2/discourseAuth/notifications/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1[0m" 500 -
+15-Apr-24 19:53:54 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:53:54] "OPTIONS /api/v2/inbox/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:53:54 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:53:54] "OPTIONS /api/v2/discourseAuth/notifications/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:53:54 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:53:54 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:53:54 - [INFO] - All Messages found
+15-Apr-24 19:53:54 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 19:53:54 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:53:54] "GET /api/v2/inbox/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:53:54 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:53:54 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:53:54] "[35m[1mGET /api/v2/discourseAuth/notifications/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1[0m" 500 -
+15-Apr-24 19:54:03 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:54:03] "OPTIONS /api/v2/inbox/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:54:03 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:54:03] "OPTIONS /api/v2/discourseAuth/notifications/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:54:04 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:54:04 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:54:04 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:54:04 - [INFO] - All Messages found
+15-Apr-24 19:54:04 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 19:54:04 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:54:04] "GET /api/v2/inbox/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:54:04 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:54:04] "[35m[1mGET /api/v2/discourseAuth/notifications/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1[0m" 500 -
+15-Apr-24 19:54:20 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:54:20] "OPTIONS /api/v2/inbox/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:54:20 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:54:20] "OPTIONS /api/v2/discourseAuth/notifications/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:54:20 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:54:20 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:54:20 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:54:20 - [INFO] - All Messages found
+15-Apr-24 19:54:20 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 19:54:20 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:54:20] "GET /api/v2/inbox/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:54:20 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:54:20] "[35m[1mGET /api/v2/discourseAuth/notifications/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1[0m" 500 -
+15-Apr-24 19:54:43 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/discourseAuth_bp.py', reloading
+15-Apr-24 19:54:44 - [INFO] -  * Restarting with stat
+15-Apr-24 19:54:45 - [INFO] - Development environment configured.
+15-Apr-24 19:54:45 - [WARNING] -  * Debugger is active!
+15-Apr-24 19:54:45 - [INFO] -  * Debugger PIN: 615-108-927
+15-Apr-24 19:54:48 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:54:48] "OPTIONS /api/v2/inbox/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:54:48 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:54:48] "OPTIONS /api/v2/discourseAuth/notifications/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:54:48 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:54:48 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:54:48 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:54:48 - [INFO] - All Messages found
+15-Apr-24 19:54:48 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 19:54:48 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:54:48] "GET /api/v2/inbox/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:54:48 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:54:48] "[35m[1mGET /api/v2/discourseAuth/notifications/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1[0m" 500 -
+15-Apr-24 19:54:56 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/discourseAuth_bp.py', reloading
+15-Apr-24 19:54:56 - [INFO] -  * Restarting with stat
+15-Apr-24 19:54:57 - [INFO] - Development environment configured.
+15-Apr-24 19:54:57 - [WARNING] -  * Debugger is active!
+15-Apr-24 19:54:57 - [INFO] -  * Debugger PIN: 615-108-927
+15-Apr-24 19:55:39 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/discourseAuth_bp.py', reloading
+15-Apr-24 19:55:39 - [INFO] -  * Restarting with stat
+15-Apr-24 19:55:41 - [INFO] - Development environment configured.
+15-Apr-24 19:55:41 - [WARNING] -  * Debugger is active!
+15-Apr-24 19:55:41 - [INFO] -  * Debugger PIN: 615-108-927
+15-Apr-24 19:55:42 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:55:42] "OPTIONS /api/v2/inbox/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:55:42 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:55:42] "OPTIONS /api/v2/discourseAuth/notifications/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:55:42 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:55:42 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:55:42 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 19:55:42 - [INFO] - All Messages found
+15-Apr-24 19:55:42 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 19:55:42 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:55:42] "GET /api/v2/inbox/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 19:55:42 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+15-Apr-24 19:55:43 - [INFO] - 127.0.0.1 - - [15/Apr/2024 19:55:43] "[35m[1mGET /api/v2/discourseAuth/notifications/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1[0m" 500 -
+15-Apr-24 19:55:55 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/views/discourseAuth_bp.py', reloading
+15-Apr-24 19:55:55 - [INFO] -  * Restarting with stat
+15-Apr-24 19:55:57 - [INFO] - Development environment configured.
+15-Apr-24 19:55:57 - [WARNING] -  * Debugger is active!
+15-Apr-24 19:55:57 - [INFO] -  * Debugger PIN: 615-108-927

@@ -371,8 +371,8 @@ class Notifications(Resource):
         else:
             raise BadRequest(status_msg="The user is not registered on Discourse register on discourse first.")
         
-        if DiscourseUserUtils.is_blank(user_id):
-            raise BadRequest(status_msg="User id  is missing for discourse.")
+        # if DiscourseUserUtils.is_blank(user_id):
+        #     raise BadRequest(status_msg="User id  is missing for discourse.")
         headers={
             'Api-Key':API_KEY,
             'Api-Username':username
