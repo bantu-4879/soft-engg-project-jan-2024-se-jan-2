@@ -23,6 +23,25 @@
               >
             </b-card>
           </div>
+          <div
+            class="info-card-container"
+            v-for="message in discourse_messages_list"
+            :key="message.id"
+          >
+            <b-card
+              :title="message.slug"
+              :sub-title="message.created_at"
+              bg-variant="light"
+              class="text-center"
+            >
+              <b-button
+                @click="delete_inbox_message(message.id)"
+                v-show="delete_button == true"
+                variant="danger"
+                >Delete</b-button
+              >
+            </b-card>
+          </div>
         </b-col>
       </b-row>
     </b-container>
@@ -43,6 +62,7 @@ export default {
     return {
       user_id: this.$store.getters.get_user_id,
       messages_list: [],
+      discourse_messages_list: [],
       delete_button: true,
     };
   },
@@ -54,7 +74,7 @@ export default {
     params = new URLSearchParams(form).toString();
 
     fetch(common.INBOX_API + `/${this.user_id}`, {
-    //fetch(common.INBOX_API + "/23463b99b62a72f26ed677cc556c44e8", {
+      //fetch(common.INBOX_API + "/23463b99b62a72f26ed677cc556c44e8", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -79,6 +99,43 @@ export default {
           this.delete_button = false;
           this.messages_list.push({
             message: "No New Messages!",
+            recieved_at: "",
+          });
+        }
+      })
+      .catch((error) => {
+        this.$log.error(`Error : ${error}`);
+        this.flashMessage.error({
+          message: "Internal Server Error",
+        });
+      });
+
+    fetch(common.DISCOURSE_REGISTER_API + "/notifications" + `/${this.user_id}`, {
+      //fetch(common.INBOX_API + "/23463b99b62a72f26ed677cc556c44e8", {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        webtoken: this.$store.getters.get_web_token,
+        userid: this.user_id,
+      },
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.category == "success") {
+          this.flashMessage.success({
+            message: "User Inbox Data retrieved.",
+          });
+          this.discourse_messages_list = data.message;
+        }
+        if (data.category == "error") {
+          this.flashMessage.error({
+            message: data.message,
+          });
+        }
+        if (this.messages_list.length == 0) {
+          this.delete_button = false;
+          this.discourse_messages_list.push({
+            message: "No New Discourse Messages!",
             recieved_at: "",
           });
         }

@@ -101,5 +101,4 @@ def create_app(env_type="dev"):
     #post_message(0,"This is a test message!","inbox")
 
     #initializing celery 
-    celery=celery_init_app(app)
-    return app,celery
+    return app

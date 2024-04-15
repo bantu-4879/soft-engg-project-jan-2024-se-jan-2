@@ -11,9 +11,9 @@ broker_connection_retry_on_startup = True
 timezone = "Asia/Kolkata"
 
 beat_schedule = {
-    "daily_user_reminder": {
-        "task": "tasks.priority_update",
-        "schedule": crontab(hour=11, minute=57),
+    "test_task": {
+        "task": "tasks.test_task",
+        "schedule": crontab(hour=20, minute=10),
         # "schedule" : 20.0,
     },
     # "monthly_admin_report": {
