@@ -9113,3 +9113,8 @@
 15-Apr-24 18:32:42 - [INFO] - Development environment configured.
 15-Apr-24 18:32:42 - [WARNING] -  * Debugger is active!
 15-Apr-24 18:32:42 - [INFO] -  * Debugger PIN: 144-740-991
+15-Apr-24 18:45:57 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\tasks.py', reloading
+15-Apr-24 18:45:58 - [INFO] -  * Restarting with stat
+15-Apr-24 18:46:01 - [INFO] - Development environment configured.
+15-Apr-24 18:46:01 - [WARNING] -  * Debugger is active!
+15-Apr-24 18:46:01 - [INFO] -  * Debugger PIN: 144-740-991
