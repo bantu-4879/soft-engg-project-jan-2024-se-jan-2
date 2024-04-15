@@ -1,4 +1,4 @@
-from celery import Celery 
+from celery import shared_task
 from models import Ticket
 import joblib 
 
@@ -9,6 +9,11 @@ def make_predictions(ticket_id):
     model=joblib('pre-trained-model.pkl')
 '''
 #priority update 
+
+@shared_task
+def test_task(): 
+    return "TASK"
+
 
 def priority_update(): 
     return ""

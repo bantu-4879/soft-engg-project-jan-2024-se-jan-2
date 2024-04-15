@@ -9417,3 +9417,30 @@
 15-Apr-24 19:55:57 - [INFO] - Development environment configured.
 15-Apr-24 19:55:57 - [WARNING] -  * Debugger is active!
 15-Apr-24 19:55:57 - [INFO] -  * Debugger PIN: 615-108-927
+15-Apr-24 20:00:52 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/tasks.py', reloading
+15-Apr-24 20:00:53 - [INFO] -  * Restarting with stat
+15-Apr-24 20:00:54 - [INFO] - Development environment configured.
+15-Apr-24 20:00:54 - [WARNING] -  * Debugger is active!
+15-Apr-24 20:00:54 - [INFO] -  * Debugger PIN: 615-108-927
+15-Apr-24 20:00:56 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/tasks.py', reloading
+15-Apr-24 20:00:56 - [INFO] -  * Restarting with stat
+15-Apr-24 20:00:58 - [INFO] - Development environment configured.
+15-Apr-24 20:00:58 - [WARNING] -  * Debugger is active!
+15-Apr-24 20:00:58 - [INFO] -  * Debugger PIN: 615-108-927
+15-Apr-24 20:00:59 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/tasks.py', reloading
+15-Apr-24 20:00:59 - [INFO] -  * Restarting with stat
+15-Apr-24 20:01:00 - [INFO] - Development environment configured.
+15-Apr-24 20:01:00 - [WARNING] -  * Debugger is active!
+15-Apr-24 20:01:00 - [INFO] -  * Debugger PIN: 615-108-927
+15-Apr-24 20:01:03 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/application/tasks.py', reloading
+15-Apr-24 20:01:03 - [INFO] -  * Restarting with stat
+15-Apr-24 20:01:05 - [INFO] - Development environment configured.
+15-Apr-24 20:01:05 - [WARNING] -  * Debugger is active!
+15-Apr-24 20:01:05 - [INFO] -  * Debugger PIN: 615-108-927
+15-Apr-24 20:03:22 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/app.py', reloading
+15-Apr-24 20:03:22 - [INFO] -  * Restarting with stat
+15-Apr-24 20:03:24 - [INFO] - Development environment configured.
+15-Apr-24 20:03:24 - [WARNING] -  * Debugger is active!
+15-Apr-24 20:03:24 - [INFO] -  * Debugger PIN: 615-108-927
+15-Apr-24 20:03:28 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/app.py', reloading
+15-Apr-24 20:03:28 - [INFO] -  * Restarting with stat
