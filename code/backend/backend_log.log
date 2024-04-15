@@ -9444,6 +9444,7 @@
 15-Apr-24 20:03:24 - [INFO] -  * Debugger PIN: 615-108-927
 15-Apr-24 20:03:28 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/app.py', reloading
 15-Apr-24 20:03:28 - [INFO] -  * Restarting with stat
+<<<<<<< Updated upstream
 15-Apr-24 20:13:48 - [INFO] - Development environment configured.
 15-Apr-24 20:13:48 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
@@ -9454,3 +9455,463 @@
 15-Apr-24 20:13:49 - [INFO] -  * Debugger PIN: 144-740-991
 15-Apr-24 20:16:26 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\tasks.py', reloading
 15-Apr-24 20:16:27 - [INFO] -  * Restarting with stat
+=======
+15-Apr-24 20:09:30 - [INFO] - Development environment configured.
+15-Apr-24 20:09:30 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+15-Apr-24 20:09:30 - [INFO] - [33mPress CTRL+C to quit[0m
+15-Apr-24 20:09:30 - [INFO] -  * Restarting with stat
+15-Apr-24 20:09:31 - [INFO] - Development environment configured.
+15-Apr-24 20:09:31 - [WARNING] -  * Debugger is active!
+15-Apr-24 20:09:31 - [INFO] -  * Debugger PIN: 615-108-927
+15-Apr-24 20:10:27 - [INFO] - Development environment configured.
+15-Apr-24 20:12:04 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/app.py', reloading
+15-Apr-24 20:12:05 - [INFO] -  * Restarting with stat
+15-Apr-24 20:13:23 - [INFO] - Development environment configured.
+15-Apr-24 20:13:43 - [INFO] - Development environment configured.
+15-Apr-24 20:13:43 - [DEBUG] - 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+15-Apr-24 20:13:43 - [DEBUG] - 
+def xmap(task, it):
+    return 1
+
+15-Apr-24 20:13:43 - [DEBUG] - 
+def chain(*args, **kwargs):
+    return 1
+
+15-Apr-24 20:13:43 - [DEBUG] - 
+def backend_cleanup():
+    return 1
+
+15-Apr-24 20:13:43 - [DEBUG] - 
+def xstarmap(task, it):
+    return 1
+
+15-Apr-24 20:13:43 - [DEBUG] - 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+15-Apr-24 20:13:43 - [DEBUG] - 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+15-Apr-24 20:13:43 - [DEBUG] - 
+def chunks(task, it, n):
+    return 1
+
+15-Apr-24 20:13:43 - [DEBUG] - 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+15-Apr-24 20:14:48 - [INFO] - Development environment configured.
+15-Apr-24 20:14:48 - [DEBUG] - 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+15-Apr-24 20:14:48 - [DEBUG] - 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+15-Apr-24 20:14:48 - [DEBUG] - 
+def chunks(task, it, n):
+    return 1
+
+15-Apr-24 20:14:48 - [DEBUG] - 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+15-Apr-24 20:14:48 - [DEBUG] - 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+15-Apr-24 20:14:48 - [DEBUG] - 
+def xmap(task, it):
+    return 1
+
+15-Apr-24 20:14:48 - [DEBUG] - 
+def chain(*args, **kwargs):
+    return 1
+
+15-Apr-24 20:14:48 - [DEBUG] - 
+def backend_cleanup():
+    return 1
+
+15-Apr-24 20:14:48 - [DEBUG] - 
+def xstarmap(task, it):
+    return 1
+
+15-Apr-24 20:15:37 - [INFO] - Development environment configured.
+15-Apr-24 20:15:37 - [DEBUG] - 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+15-Apr-24 20:15:37 - [DEBUG] - 
+def xmap(task, it):
+    return 1
+
+15-Apr-24 20:15:37 - [DEBUG] - 
+def chain(*args, **kwargs):
+    return 1
+
+15-Apr-24 20:15:37 - [DEBUG] - 
+def backend_cleanup():
+    return 1
+
+15-Apr-24 20:15:37 - [DEBUG] - 
+def xstarmap(task, it):
+    return 1
+
+15-Apr-24 20:15:37 - [DEBUG] - 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+15-Apr-24 20:15:37 - [DEBUG] - 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+15-Apr-24 20:15:37 - [DEBUG] - 
+def chunks(task, it, n):
+    return 1
+
+15-Apr-24 20:15:37 - [DEBUG] - 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+15-Apr-24 20:15:42 - [INFO] - Development environment configured.
+15-Apr-24 20:15:42 - [DEBUG] - 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+15-Apr-24 20:15:42 - [DEBUG] - 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+15-Apr-24 20:15:42 - [DEBUG] - 
+def chunks(task, it, n):
+    return 1
+
+15-Apr-24 20:15:42 - [DEBUG] - 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+15-Apr-24 20:15:42 - [DEBUG] - 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+15-Apr-24 20:15:42 - [DEBUG] - 
+def xmap(task, it):
+    return 1
+
+15-Apr-24 20:15:42 - [DEBUG] - 
+def chain(*args, **kwargs):
+    return 1
+
+15-Apr-24 20:15:42 - [DEBUG] - 
+def backend_cleanup():
+    return 1
+
+15-Apr-24 20:15:42 - [DEBUG] - 
+def xstarmap(task, it):
+    return 1
+
+15-Apr-24 20:18:39 - [INFO] - Development environment configured.
+15-Apr-24 20:18:41 - [INFO] - Development environment configured.
+15-Apr-24 20:18:57 - [INFO] - Development environment configured.
+15-Apr-24 20:18:57 - [DEBUG] - 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+15-Apr-24 20:18:57 - [DEBUG] - 
+def xmap(task, it):
+    return 1
+
+15-Apr-24 20:18:57 - [DEBUG] - 
+def chain(*args, **kwargs):
+    return 1
+
+15-Apr-24 20:18:57 - [DEBUG] - 
+def backend_cleanup():
+    return 1
+
+15-Apr-24 20:18:57 - [DEBUG] - 
+def xstarmap(task, it):
+    return 1
+
+15-Apr-24 20:18:57 - [DEBUG] - 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+15-Apr-24 20:18:57 - [DEBUG] - 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+15-Apr-24 20:18:57 - [DEBUG] - 
+def chunks(task, it, n):
+    return 1
+
+15-Apr-24 20:18:57 - [DEBUG] - 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+15-Apr-24 20:19:00 - [INFO] - Development environment configured.
+15-Apr-24 20:19:00 - [DEBUG] - 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+15-Apr-24 20:19:00 - [DEBUG] - 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+15-Apr-24 20:19:00 - [DEBUG] - 
+def chunks(task, it, n):
+    return 1
+
+15-Apr-24 20:19:00 - [DEBUG] - 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+15-Apr-24 20:19:00 - [DEBUG] - 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+15-Apr-24 20:19:00 - [DEBUG] - 
+def xmap(task, it):
+    return 1
+
+15-Apr-24 20:19:00 - [DEBUG] - 
+def chain(*args, **kwargs):
+    return 1
+
+15-Apr-24 20:19:00 - [DEBUG] - 
+def backend_cleanup():
+    return 1
+
+15-Apr-24 20:19:00 - [DEBUG] - 
+def xstarmap(task, it):
+    return 1
+
+15-Apr-24 20:21:52 - [INFO] - Development environment configured.
+15-Apr-24 20:21:52 - [DEBUG] - 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+15-Apr-24 20:21:52 - [DEBUG] - 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+15-Apr-24 20:21:52 - [DEBUG] - 
+def chunks(task, it, n):
+    return 1
+
+15-Apr-24 20:21:52 - [DEBUG] - 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+15-Apr-24 20:21:52 - [DEBUG] - 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+15-Apr-24 20:21:52 - [DEBUG] - 
+def xmap(task, it):
+    return 1
+
+15-Apr-24 20:21:52 - [DEBUG] - 
+def chain(*args, **kwargs):
+    return 1
+
+15-Apr-24 20:21:52 - [DEBUG] - 
+def backend_cleanup():
+    return 1
+
+15-Apr-24 20:21:52 - [DEBUG] - 
+def xstarmap(task, it):
+    return 1
+
+15-Apr-24 20:22:01 - [INFO] - Development environment configured.
+15-Apr-24 20:22:01 - [DEBUG] - 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+15-Apr-24 20:22:01 - [DEBUG] - 
+def xmap(task, it):
+    return 1
+
+15-Apr-24 20:22:01 - [DEBUG] - 
+def chain(*args, **kwargs):
+    return 1
+
+15-Apr-24 20:22:01 - [DEBUG] - 
+def backend_cleanup():
+    return 1
+
+15-Apr-24 20:22:01 - [DEBUG] - 
+def xstarmap(task, it):
+    return 1
+
+15-Apr-24 20:22:01 - [DEBUG] - 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+15-Apr-24 20:22:01 - [DEBUG] - 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+15-Apr-24 20:22:01 - [DEBUG] - 
+def chunks(task, it, n):
+    return 1
+
+15-Apr-24 20:22:01 - [DEBUG] - 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+15-Apr-24 20:24:43 - [INFO] - Development environment configured.
+15-Apr-24 20:24:56 - [INFO] - Development environment configured.
+15-Apr-24 20:25:16 - [INFO] - Development environment configured.
+15-Apr-24 20:25:16 - [DEBUG] - 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+15-Apr-24 20:25:16 - [DEBUG] - 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+15-Apr-24 20:25:16 - [DEBUG] - 
+def chunks(task, it, n):
+    return 1
+
+15-Apr-24 20:25:16 - [DEBUG] - 
+def test_task(ignore_result=0):
+    return 1
+
+15-Apr-24 20:25:16 - [DEBUG] - 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+15-Apr-24 20:25:16 - [DEBUG] - 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+15-Apr-24 20:25:16 - [DEBUG] - 
+def xmap(task, it):
+    return 1
+
+15-Apr-24 20:25:16 - [DEBUG] - 
+def chain(*args, **kwargs):
+    return 1
+
+15-Apr-24 20:25:16 - [DEBUG] - 
+def backend_cleanup():
+    return 1
+
+15-Apr-24 20:25:16 - [DEBUG] - 
+def xstarmap(task, it):
+    return 1
+
+15-Apr-24 20:25:30 - [INFO] - Development environment configured.
+15-Apr-24 20:25:30 - [DEBUG] - 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+15-Apr-24 20:25:30 - [DEBUG] - 
+def xmap(task, it):
+    return 1
+
+15-Apr-24 20:25:30 - [DEBUG] - 
+def chain(*args, **kwargs):
+    return 1
+
+15-Apr-24 20:25:30 - [DEBUG] - 
+def backend_cleanup():
+    return 1
+
+15-Apr-24 20:25:30 - [DEBUG] - 
+def xstarmap(task, it):
+    return 1
+
+15-Apr-24 20:25:30 - [DEBUG] - 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+15-Apr-24 20:25:30 - [DEBUG] - 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+15-Apr-24 20:25:30 - [DEBUG] - 
+def test_task(ignore_result=0):
+    return 1
+
+15-Apr-24 20:25:30 - [DEBUG] - 
+def chunks(task, it, n):
+    return 1
+
+15-Apr-24 20:25:30 - [DEBUG] - 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+15-Apr-24 20:25:35 - [INFO] - Development environment configured.
+15-Apr-24 20:25:35 - [DEBUG] - 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+15-Apr-24 20:25:35 - [DEBUG] - 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+15-Apr-24 20:25:35 - [DEBUG] - 
+def chunks(task, it, n):
+    return 1
+
+15-Apr-24 20:25:35 - [DEBUG] - 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+15-Apr-24 20:25:35 - [DEBUG] - 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+15-Apr-24 20:25:35 - [DEBUG] - 
+def xmap(task, it):
+    return 1
+
+15-Apr-24 20:25:35 - [DEBUG] - 
+def chain(*args, **kwargs):
+    return 1
+
+15-Apr-24 20:25:35 - [DEBUG] - 
+def backend_cleanup():
+    return 1
+
+15-Apr-24 20:25:35 - [DEBUG] - 
+def test_task(ignore_result=0):
+    return 1
+
+15-Apr-24 20:25:35 - [DEBUG] - 
+def xstarmap(task, it):
+    return 1
+
+15-Apr-24 20:42:10 - [INFO] - Development environment configured.
+15-Apr-24 20:42:10 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+15-Apr-24 20:42:10 - [INFO] - [33mPress CTRL+C to quit[0m
+15-Apr-24 20:42:10 - [INFO] -  * Restarting with stat
+15-Apr-24 20:42:11 - [INFO] - Development environment configured.
+15-Apr-24 20:42:11 - [WARNING] -  * Debugger is active!
+15-Apr-24 20:42:11 - [INFO] -  * Debugger PIN: 615-108-927
+15-Apr-24 20:42:31 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/tasks.py', reloading
+15-Apr-24 20:42:31 - [INFO] -  * Restarting with stat
+15-Apr-24 20:42:32 - [INFO] - Development environment configured.
+15-Apr-24 20:42:32 - [WARNING] -  * Debugger is active!
+15-Apr-24 20:42:32 - [INFO] -  * Debugger PIN: 615-108-927
+15-Apr-24 20:42:49 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:42:49] "OPTIONS /api/v2/discourseAuth/notifications/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:42:49 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:42:49] "OPTIONS /api/v2/inbox/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:42:49 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 20:42:49 - [INFO] - Token is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 20:42:49 - [INFO] - User role : student : is verified for the user: b8aeec8b91548b073d2b7e42f9d1328d
+15-Apr-24 20:42:49 - [INFO] - All Messages found
+15-Apr-24 20:42:49 - [INFO] - 200 - Custom success 200 response sent
+15-Apr-24 20:42:49 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:42:49] "GET /api/v2/inbox/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1" 200 -
+15-Apr-24 20:42:49 - [DEBUG] - Starting new HTTP connection (1): 127.0.0.1:3000
+15-Apr-24 20:42:50 - [INFO] - 127.0.0.1 - - [15/Apr/2024 20:42:50] "[35m[1mGET /api/v2/discourseAuth/notifications/b8aeec8b91548b073d2b7e42f9d1328d HTTP/1.1[0m" 500 -
+>>>>>>> Stashed changes
