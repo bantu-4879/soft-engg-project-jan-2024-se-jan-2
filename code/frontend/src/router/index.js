@@ -102,11 +102,6 @@ const routes = [
     path: "*",
     redirect: "/",
   },
-  {
-    path:"/student-create-discourse/:ticketId",
-    name:'CreateDiscourseTopic',
-    component:StudentCreateDiscourseTopic,
-  },
 ];
 
 const router = new VueRouter({

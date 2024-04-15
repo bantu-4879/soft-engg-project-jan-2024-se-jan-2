@@ -9444,3 +9444,13 @@
 15-Apr-24 20:03:24 - [INFO] -  * Debugger PIN: 615-108-927
 15-Apr-24 20:03:28 - [INFO] -  * Detected change in '/Users/sahithi/Documents/GitHub/soft-engg-project-jan-2024-se-jan-2/code/backend/app.py', reloading
 15-Apr-24 20:03:28 - [INFO] -  * Restarting with stat
+15-Apr-24 20:13:48 - [INFO] - Development environment configured.
+15-Apr-24 20:13:48 - [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+15-Apr-24 20:13:48 - [INFO] - [33mPress CTRL+C to quit[0m
+15-Apr-24 20:13:48 - [INFO] -  * Restarting with stat
+15-Apr-24 20:13:49 - [INFO] - Development environment configured.
+15-Apr-24 20:13:49 - [WARNING] -  * Debugger is active!
+15-Apr-24 20:13:49 - [INFO] -  * Debugger PIN: 144-740-991
+15-Apr-24 20:16:26 - [INFO] -  * Detected change in 'D:\\GitHub\\soft-engg-project-jan-2024-se-jan-2\\code\\backend\\application\\tasks.py', reloading
+15-Apr-24 20:16:27 - [INFO] -  * Restarting with stat

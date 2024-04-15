@@ -144,15 +144,15 @@ export default {
           .then((response) => response.json())
           .then((data) => {
             if (data.category === "success") {
-              const ticketId = data.ticketId;
-              this.ticket_id=data.ticketId;
+              const ticketId = data.ticket_id;
+              console.log(ticketId)
+              this.ticket_id=data.ticket_id;
               console.log(this.ticket_id);
               this.flashMessage.success({
                 message: data.message,
               });
               if (!this.editTicket) {
                 this.onReset();
-                this.$router.push({ name: 'CreateDiscourseTopic', params: { ticketId: this.ticket_id }})
               }
               if (this.user_role == "staff") {
                 

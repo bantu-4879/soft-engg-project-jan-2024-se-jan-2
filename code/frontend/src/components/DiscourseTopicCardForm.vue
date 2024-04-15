@@ -37,10 +37,6 @@
         </b-form-group>
 
         <b-form-group>
-        <Subcategory :category="form.Category" v-model="form.subcategory" />
-        </b-form-group>
-
-        <b-form-group>
         <Tags v-model="form.tags" />
         </b-form-group>
 
@@ -58,7 +54,6 @@
   import * as common from "../assets/common.js";
   import FileUpload from "./FileUpload.vue";
   import Category from './CategoryDiscourse.vue';
-  import Subcategory from './SubCategoryDiscourse.vue';
   import Tags from './TagsDiscourse.vue';
   
   export default {
@@ -71,7 +66,6 @@
           title: "",
           raw: "",
           category:"",
-          sub_category:"",
           tags:"",
         },
         show: true,
