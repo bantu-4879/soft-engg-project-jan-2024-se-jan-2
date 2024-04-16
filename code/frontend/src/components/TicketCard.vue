@@ -214,10 +214,30 @@
           </div>
         </div>
       </div>
-      <div class="ticket-section">
+      <div class="ticket-section" v-show="showComments">
         <h6>Comments</h6>
-        <span class="badge badge-primary">Text bubble</span>
-        <p>{{ comments }}</p>
+        <div v-for="comment in comments" :key="comment.id">
+          <p class="badge badge-info">
+            <i>{{ comment.commenter }} </i><br />
+            <i> {{ comment.added_at }}</i>
+            <br /><br />{{ comment.comment }}
+          </p>
+        </div>
+        <b-form @submit.prevent="addComment">
+          <b-row>
+            <b-col sm="10">
+              <b-form-textarea
+                id="textarea-small"
+                size="sm"
+                placeholder="Add Comment"
+                v-model="comment_input"
+              ></b-form-textarea>
+            </b-col>
+            <b-col>
+              <b-button type="submit" variant="light"> Add Comment</b-button>
+            </b-col>
+          </b-row>
+        </b-form>
       </div>
 
       <template #modal-footer="{ cancel }">
@@ -378,11 +398,15 @@ export default {
       created_by_full_name: "",
       resolved_by_full_name: "Not Resolved",
       comments: [],
+      comment_input: "",
+      show_comments: false,
     };
   },
   created() {},
   mounted() {
     this.userdetails();
+    this.getComments();
+    this.commentsVisible();
   },
   methods: {
     ticketResolvedFn() {
@@ -579,6 +603,7 @@ export default {
               message: "User data retrieved.",
             });
             this.comments = data.message;
+            console.log(this.comments);
           }
           if (data.category == "error") {
             this.flashMessage.error({
@@ -592,6 +617,46 @@ export default {
             message: "Internal Server Error",
           });
         });
+    },
+    addComment() {
+      fetch(common.COMMENTS_API + `/${this.id}`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          webtoken: this.$store.getters.get_web_token,
+          userid: this.user_id,
+        },
+        body: JSON.stringify({
+          comment: this.comment_input,
+          commenter: this.$store.getters.get_user_name,
+          user_mentions: [],
+          reactions: "",
+        }),
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          if (data.category == "success") {
+            this.flashMessage.success({
+              message: "Commented!",
+            });
+          }
+          if (data.category == "error") {
+            this.flashMessage.error({
+              message: data.message,
+            });
+          }
+        })
+        .catch((error) => {
+          this.$log.error(`Error : ${error}`);
+          this.flashMessage.error({
+            message: "Internal Server Error",
+          });
+        });
+    },
+    commentsVisible() {
+      if (this.user_role == "staff" || this.user_role == "admin") {
+        this.showComments = true;
+      }
     },
   },
   computed: {},

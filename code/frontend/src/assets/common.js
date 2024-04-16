@@ -15,7 +15,7 @@ const INBOX_API_PREFIX = `/api/${VERSION}/inbox`;
 const USER_MANAGEMENT_PREFIX = `/api/${VERSION}/management`;
 const USERDETAILS_PREFIX = `/api/${VERSION}/userDetails`;
 const STATS_PREFIX = `/api/${VERSION}/data`;
-const COMMENTS_PREFIX = `/api/${VERSION}/comments`;
+const COMMENTS_PREFIX = `/api/${VERSION}/ticket/comments`;
 
 const AUTH_API_LOGIN = `${BASEURL}${AUTH_API_PREFIX}/login`;
 const AUTH_API_REGISTER = `${BASEURL}${AUTH_API_PREFIX}/register`;
