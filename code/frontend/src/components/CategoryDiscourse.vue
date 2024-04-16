@@ -1,12 +1,18 @@
 
 <template>
-    <div>
-      <label for="category">Select Category:</label>
-      <select v-model="selectedCategory" @change="handleChange">
-        <option v-for="category in categories" :key="category.id" :value="category.id">{{ category.name }}</option>
-      </select>
-    </div>
-  </template>
+  <div>
+    <label for="category">Select Category:</label>
+    <b-dropdown v-model="selectedCategory" id="dropdown-cats">
+      <template #button-content>
+        <b-icon icon="lock-fill" aria-hidden="true"></b-icon> 
+        {{ getCategoryName(selectedCategory) }}
+      </template>
+      <b-dropdown-item v-for="category in categories" :key="category.id" :value="category.id" @click="handleChange(category.id)">
+        {{ category.name }}
+      </b-dropdown-item>
+    </b-dropdown>
+  </div>
+</template>
   
   <script>
   import * as common from "../assets/common.js";
@@ -15,14 +21,19 @@
     name:"Category", 
     data() {
       return {
-        selectedCategory: this.value || '', 
+        selectedCategory: 14 || '', 
         categories: [], 
+        lockedCategoryId:14,
       };
     },
     created() {
       this.fetchCategories();
     },
     methods: {
+      getCategoryName(categoryId) {
+    const category = this.categories.find(cat => cat.id === categoryId);
+    return category ? category.name : 'Select Category';
+  },
       fetchCategories() {
         fetch(common.DISCOURSE_TICKET_API + '/categories', {
             method: "GET",
@@ -45,9 +56,7 @@
             })
             .catch((error) => {
               this.$log.error(`Error : ${error}`);
-              this.flashMessage.error({
-                message: "Internal Server Error",
-              });
+              console.log("cannot retrieve categories.");
             });
 
       },

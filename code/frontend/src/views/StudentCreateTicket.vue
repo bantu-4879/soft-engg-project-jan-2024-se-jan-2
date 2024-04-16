@@ -12,7 +12,7 @@
           <h3 style="text-align: center">Search Tickets</h3>
           <SearchTicket :upvote_disabled="false"
           :delete_disabled="true"
-          :edit_disabled="true"></SearchTicket>
+          :edit_disabled="true" :discourse_disabled="true"></SearchTicket>
         </b-col>
       </b-row>
     </b-container>

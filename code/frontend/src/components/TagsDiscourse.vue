@@ -7,7 +7,8 @@
   </template>
   
   <script>
-  import * as common from "../assets/common.js";
+  import { componentsPlugin } from "bootstrap-vue";
+import * as common from "../assets/common.js";
   export default {
     name:"Tags",
     data() {
@@ -41,9 +42,7 @@
             })
             .catch((error) => {
               this.$log.error(`Error : ${error}`);
-              this.flashMessage.error({
-                message: "Internal Server Error",
-              });
+              console.log("cannot retrieve tags.");
             });
       },
       formatSelectedTags() {

@@ -83,6 +83,7 @@
           :delete_disabled="delete_disabled"
           :edit_disabled="edit_disabled"
           :is_resolved="ticket.ticket_status == 'Resolved'"
+          :discourse_disabled="discourse_disabled"
         ></TicketCard>
       </div>
     </div>
@@ -97,7 +98,7 @@ import TicketCard from "../components/TicketCard.vue";
 export default {
   name: "SearchTicket",
   components: { Tagging, TicketCard },
-  props: ["upvote_disabled", "delete_disabled", "edit_disabled"],
+  props: ["upvote_disabled", "delete_disabled", "edit_disabled","discourse_disabled"],
   data() {
     return {
       filter_priority_options: [

@@ -57,9 +57,10 @@ class TicketUtils(UserUtils):
             predicted_priority = loaded_model.predict(ticket.description)
             ticket.priority = predicted_priority 
             db.session.commit() 
-            return predicted_priority
+            return True
         except Exception as e:
             logger.error(f"Exception from make_predictions {e}")
+            return False
 
     def convert_ticket_to_dict(self, ticket):
         ticket_dict = vars(ticket)  # verify if this properly converts obj to dict
@@ -417,7 +418,7 @@ class TicketAPI(Resource):
             details["created_on"] = time_to_str(datetime.datetime.now())
             details['tags_list'] = ", ".join(tags_list)
             predicted_priority = ticket_utils.make_predictions(ticket_id)
-            details["priority"] = predicted_priority
+            details["priority"] = details["priority"]
 
             if(details["priority"]=="low"):
                 ticket_priority=0.15
@@ -455,6 +456,11 @@ class TicketAPI(Resource):
                 )
             else:
                 logger.info("Ticket created successfully.")
+                predict_priority = ticket_utils.make_predictions(ticket_id)
+                if(predict_priority):
+                    logger.info("ML model updated the ticket priority.")
+                else:
+                    logger.info("ML model could not update ticket priority")
 
                 # add attachments now
                 status, message = ticket_utils.save_ticket_attachments(
@@ -555,7 +561,10 @@ class TicketAPI(Resource):
                     ticket.description = details["description"]
                     ticket.tags_list = ", ".join(tags_list)
                     predicted_priority = ticket_utils.make_predictions(ticket_id)
-                    ticket.ticket_priority = predicted_priority
+                    if(predicted_priority):
+                        logger.info("The ticket priority is updated as well.")
+                    else:
+                        logger.info("Could not update ticket priority.")
                     
                     # if(predicted_priority=="low"):
                     #     ticket.ticket_priority=0.15
@@ -596,6 +605,7 @@ class TicketAPI(Resource):
                     ticket.solution = sol
                     ticket.ticket_status = "Resolved"
                     ticket.resolved_by = user_id
+                    ticket_data.resolved_at=time_to_str(datetime.datetime.now())
                     db.session.add(ticket)
                     db.session.add(ticket_data)
                     db.session.commit()

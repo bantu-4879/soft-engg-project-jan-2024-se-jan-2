@@ -317,8 +317,8 @@ class DiscourseTopics(Resource):
     def __init__(self,user_id=None):
         self.user_id=user_id
 
-    #@token_required
-    def get(self,user_id,topic_id):
+    @token_required
+    def get(self,user_id,ticket_id):
         """
         Usage
         -----
@@ -339,7 +339,16 @@ class DiscourseTopics(Resource):
             logger.error(
                 f"Discourse API TicketAPI->post : Error occured while getting the user : {e}"
             )
-            raise InternalServerError
+            raise InternalServerError(status_msg="User not found.")
+        try:
+            ticket=Ticket.query.filter_by(id=ticket_id).first()
+            if not user:
+                raise NotFoundError(status_msg="Ticket does not exist.")
+        except Exception as e:
+            logger.error(
+                f"Discourse API TicketAPI->post : Error occured while getting the ticket : {e}"
+            )
+            raise InternalServerError(status_msg="Ticket not found.")
         if (user.discourse_username):
             username=user.discourse_username
         else:
@@ -350,26 +359,29 @@ class DiscourseTopics(Resource):
         
         headers={
             'Api-Key':API_KEY,
-            'Api-Username':username
+            'Api-Username':API_USERNAME
         }
-        url=f"{DISCOURSE_BASE_URL}/t/{topic_id}.json"
-        try:
-            response=requests.get(url,headers=headers) 
-        except Exception as e:
-            logger.error(
-                f"Discourse API TicketAPI->post : Error occured while getting topic from discourse : {e}"
-            )    
-            raise InternalServerError(status_msg="Cannot get topic from discourse")
-        if(response.status_code==200):
-            response=response.json()
-            print(response)
-            return success_200_custom(data=response)
+        topic_id=ticket.thread_link
+        if(topic_id):
+            url=f"{DISCOURSE_BASE_URL}/t/{topic_id}.json"
+            try:
+                response=requests.get(url,headers=headers) 
+            except Exception as e:
+                logger.error(
+                    f"Discourse API TicketAPI->post : Error occured while getting topic from discourse : {e}"
+                )    
+                raise InternalServerError(status_msg="Cannot get topic from discourse")
+            if(response.status_code==200):
+                response=response.json()
+                return success_200_custom(data=response)
+            else:
+                raise BadRequest(status_code=401,status_msg="Cannot load topic")
         else:
-            raise BadRequest(status_code=401,status_msg="Cannot load topic")
+            raise BadRequest(status_msg="This ticket does not have a discourse thread.")
         
 
-    #@token_required
-    #@users_required(users='Student')
+    @token_required
+    @users_required(users='Student')
     def post(self,user_id,ticket_id):
         """
         Usage
@@ -414,7 +426,6 @@ class DiscourseTopics(Resource):
         if TicketUtils.is_blank(user_id) or TicketUtils.is_blank(ticket_id):
             raise BadRequest(status_msg="User id or Ticket Id is missing for discourse Post.")
         try:
-            form=request.form
             title = request.form.get('title')
             raw = request.form.get('raw')
             topic_id = request.form.get('topic_id')
@@ -508,7 +519,7 @@ class DiscourseTopics(Resource):
             }
             headers={
                 'Api-Key':API_KEY,
-                'Api-Username':API_USERNAME
+                'Api-Username':username
             }
             print(payload)
             url2=f"{DISCOURSE_BASE_URL}/posts.json"
@@ -1007,7 +1018,6 @@ discoursePost_api.add_resource(Categories,"/category","/category/<int:category_i
 discoursePost_api.add_resource(Tags,'/tags')
 discoursePost_api.add_resource(
     DiscourseTopics,
-    '/topic/<string:user_id>/<int:topic_id>',
    '/topic/<string:user_id>/<string:ticket_id>',
    '/topic/status_update/<int:topic_id>'
 )

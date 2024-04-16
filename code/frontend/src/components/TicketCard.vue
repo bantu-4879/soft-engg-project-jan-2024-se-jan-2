@@ -50,21 +50,34 @@
                   ></b-icon>
                 </b-button>
               </b-col>
-
+              <b-col class="col" cols="4" sm="12" lg="12"
+                ><b-button
+                  @click="showDiscourse"
+                  variant="outline-light"
+                  size="sm"
+                  class="ticket-card-buttons"
+                  ><b-icon
+                    icon="chat-left-quote-fill"
+                    aria-hidden="true"
+                    class="bg-light"
+                    variant="primary"
+                  ></b-icon
+                ></b-button>
+              </b-col>
               <b-col class="col" cols="4" sm="12" lg="12"
                 ><b-button
                   @click="showDiscourseTicketModal"
                   variant="outline-light"
                   size="sm"
                   class="ticket-card-buttons"
-                  :disabled="edit_disabled"
+                  :disabled="discourse_disabled"
                   v-show="
-                    edit_disabled
-                      ? !edit_disabled
-                      : (user_id == user_id || user_role == 'staff') && !is_resolved
+                    discourse_disabled
+                      ? !discourse_disabled
+                      : (user_id == user_id) && !is_resolved
                   "
                   ><b-icon
-                    icon="pencil-fill"
+                    icon="chat-dots-fill"
                     aria-hidden="true"
                     class="bg-light"
                     variant="primary"
@@ -247,23 +260,39 @@
       </template>
 
       <div class="d-block text-left">
-        <h5 style="text-align: center">Discourse Ticket Creation Details</h5>
+        <h5 style="text-align: center">Discourse Topic Creation Form</h5>
         <!-- display as a table -->
-        <TicketForm
+        <DiscourseTicketForm
           :id="id"
           :title="title"
           :description="description"
-          :ticket_priority="ticket_priority"
-          :tags_list="tags_list"
-          :hideReset="true"
-          :editTicket="true"
-          @ticketResolved="ticketResolvedFn"
-        ></TicketForm>
+          @DiscourseTopicCreated="$bvModal.hide(discourse_ticket_modal_id)"
+        ></DiscourseTicketForm>
       </div>
 
       <template #modal-footer="{ cancel }">
         <b-button size="sm" variant="secondary" @click="cancel()"> Cancel </b-button>
       </template>
+    </b-modal>
+
+
+    <b-modal
+      :id="discourse_show_modal_id"
+      @cancel="$bvModal.hide(discourse_show_modal_id)"
+      size="xl"
+      scrollable
+    >
+      <template #modal-header="{ cancel }">
+        <span style="font-size: 20px">Ticket ID: {{ id }}</span>
+        <b-button size="sm" variant="outline-danger" @click="cancel()"> Close </b-button>
+      </template>
+
+      <div class="d-block text-left">
+        <h5 style="text-align: center">Discourse Thread</h5>
+        <Discourse
+          :id="id"
+        ></Discourse>
+      </div>
     </b-modal>
 
 
@@ -274,6 +303,7 @@
 import * as common from "../assets/common.js";
 import TicketForm from "../components/TicketForm.vue";
 import DiscourseTicketForm from "../components/DiscoursePopUp.vue";
+import Discourse from "../components/Discourse.vue"
 
 export default {
   name: "TicketCard",
@@ -286,9 +316,10 @@ export default {
     "upvote_disabled",
     "delete_disabled",
     "edit_disabled",
+    "discourse_disabled",
     "is_resolved",
   ],
-  components: { TicketForm, DiscourseTicketForm },
+  components: { TicketForm, DiscourseTicketForm,Discourse },
   data() {
     return {
       button_1_active: false,
@@ -298,6 +329,7 @@ export default {
       edit_ticket_modal_id: "edit_ticket_modal_" + this.id,
       delete_ticket_modal_id: "delete_ticket_modal_" + this.id,
       discourse_ticket_modal_id: "discourse_ticket_modal_" + this.id,
+      discourse_show_modal_id:"discourse_show_modal_"+this.id,
       ticket_priority: "",
       ticket_status: "",
       solution: "",
@@ -373,6 +405,10 @@ export default {
     },
     showDiscourseTicketModal() {
       this.$bvModal.show(this.discourse_ticket_modal_id);
+    },
+    showDiscourse()
+    {
+      this.$bvModal.show(this.discourse_show_modal_id);
     },
     upvoteTicket() {
       if (this.user_id == this.user_id) {
@@ -489,7 +525,6 @@ export default {
           });
         }
     },
-
   },
   computed: {
     

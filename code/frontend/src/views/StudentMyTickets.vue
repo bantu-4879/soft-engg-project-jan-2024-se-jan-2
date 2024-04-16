@@ -8,7 +8,7 @@
         <b-col cols="12" sm="12" md="12">
           <SearchTicket :upvote_disabled="true"
           :delete_disabled="false"
-          :edit_disabled="false"></SearchTicket>
+          :edit_disabled="false" :discourse_disabled="false"></SearchTicket>
         </b-col>
       </b-row>
     </b-container>

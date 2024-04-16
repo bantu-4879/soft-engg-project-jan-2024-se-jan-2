@@ -18,6 +18,7 @@
                 :delete_disabled="false"
                 :edit_disabled="false"
                 :is_resolved="false"
+                :discourse_disabled="!ticket.thread_link"
               ></TicketCard>
             </div>
           </div>
@@ -124,9 +125,12 @@ export default {
         });
       });
   },
-  mounted() {},
-  methods: {},
-  computed: {},
+  mounted() {
+  },
+  methods: {
+  },
+  computed: {
+  },
 };
 </script>
 
