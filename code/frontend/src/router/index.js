@@ -18,6 +18,7 @@ import UserProfile from "../views/UserProfile.vue";
 import InboxView from "../views/InboxView.vue";
 import AdminUserManagement from "../views/AdminUserManagement.vue"
 import StudentCreateDiscourseTopic from "../views/StudentCreateDiscourseTopic.vue";
+import AllTickets from "../views/AllTickets.vue"
 
 Vue.use(VueRouter);
 
@@ -97,6 +98,11 @@ const routes = [
     path: "/user-management",
     name: "UserManagement",
     component: AdminUserManagement,
+  },
+  {
+    path: "/all-tickets",
+    name: "AllTickets",
+    component: AllTickets,
   },
   {
     path: "*",

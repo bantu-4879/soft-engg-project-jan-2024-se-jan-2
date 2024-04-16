@@ -15,12 +15,22 @@
           <b-col class="col" cols="12" lg="5" sm="12"
             ><i>Id: </i>{{ id.slice(0, 15) }}</b-col
           >
-          <b-col class="col" cols="12" lg="5" sm="8"><i>Created At: </i>{{ created_at }}</b-col>
+          <b-col class="col" cols="12" lg="5" sm="8"
+            ><i>Created At: </i>{{ created_at }}</b-col
+          >
         </b-row>
         <b-row class="row">
-          <b-col class="col" cols="12" sm="10" lg="11" @click="getTicketDetails">
+          <b-col
+            class="col"
+            cols="12"
+            sm="10"
+            lg="11"
+            @click="getTicketDetails"
+          >
             <b-row class="row">
-              <b-col class="col" cols="12"><b>Title: </b>{{ title.slice(0, 80) }}</b-col>
+              <b-col class="col" cols="12"
+                ><b>Title: </b>{{ title.slice(0, 80) }}</b-col
+              >
             </b-row>
             <b-row class="row">
               <b-col class="col" cols="12"
@@ -40,7 +50,9 @@
                   v-show="
                     upvote_disabled
                       ? !upvote_disabled
-                      : user_id !== user_id && user_role == 'student' && !is_resolved
+                      : user_id !== user_id &&
+                        user_role == 'student' &&
+                        !is_resolved
                   "
                   ><b-icon
                     icon="heart-fill"
@@ -74,7 +86,7 @@
                   v-show="
                     discourse_disabled
                       ? !discourse_disabled
-                      : (user_id == user_id) && !is_resolved
+                      : user_id == user_id && !is_resolved
                   "
                   ><b-icon
                     icon="chat-dots-fill"
@@ -95,7 +107,8 @@
                   v-show="
                     edit_disabled
                       ? !edit_disabled
-                      : (user_id == user_id || user_role == 'staff') && !is_resolved
+                      : (user_id == user_id || user_role == 'staff') &&
+                        !is_resolved
                   "
                   ><b-icon
                     icon="pencil-fill"
@@ -113,7 +126,9 @@
                   size="sm"
                   class="ticket-card-buttons"
                   :disabled="delete_disabled"
-                  v-show="delete_disabled ? !delete_disabled : user_id == user_id"
+                  v-show="
+                    delete_disabled ? !delete_disabled : user_id == user_id
+                  "
                   ><b-icon
                     icon="trash-fill"
                     aria-hidden="true"
@@ -135,7 +150,9 @@
     >
       <template #modal-header="{ cancel }">
         <span style="font-size: 20px">Ticket ID: {{ id }}</span>
-        <b-button size="sm" variant="outline-danger" @click="cancel()"> Close </b-button>
+        <b-button size="sm" variant="outline-danger" @click="cancel()">
+          Close
+        </b-button>
       </template>
 
       <div class="d-block text-left">
@@ -143,17 +160,17 @@
 
         <!-- Three parallel divisions with separate borders -->
         <div class="ticket-indicator">
-          
-            <div class="dark-bg border-item">
-              <p>Status: {{ ticket_status }}</p>
-            </div>
-            <div class="dark-bg border-item">
-              <p>Priority: {{ ticket_priority }}</p>
-            </div>
-            <div class="dark-bg border-item">
-              <p>Tags: <span class="light-bg">{{ tags_list }}</span></p>
-            </div>
-          
+          <div class="dark-bg border-item">
+            <p>Status: {{ ticket_status }}</p>
+          </div>
+          <div class="dark-bg border-item">
+            <p>Priority: {{ ticket_priority }}</p>
+          </div>
+          <div class="dark-bg border-item">
+            <p>
+              Tags: <span class="light-bg">{{ tags_list }}</span>
+            </p>
+          </div>
         </div>
 
         <!-- Description section -->
@@ -164,15 +181,24 @@
 
         <!-- Three parallel sections -->
         <div class="ticket-indicator">
-            <div class="border-item">
-              <p><span class="dark-bg">Created by:</span> {{ created_by_full_name }}</p>
-            </div>
-            <div class="border-item">
-              <p><span class="dark-bg">Created on:</span> {{ Date(created_at).toLocaleString() }}</p>
-            </div>
-            <div class="border-item" v-if="resolved_by">
-              <p><span class="dark-bg">Resolved by:</span> {{ resolved_by_full_name }}</p>
-            </div>
+          <div class="border-item">
+            <p>
+              <span class="dark-bg">Created by:</span>
+              {{ created_by_full_name }}
+            </p>
+          </div>
+          <div class="border-item">
+            <p>
+              <span class="dark-bg">Created on:</span>
+              {{ Date(created_at).toLocaleString() }}
+            </p>
+          </div>
+          <div class="border-item" v-if="resolved_by">
+            <p>
+              <span class="dark-bg">Resolved by:</span>
+              {{ resolved_by_full_name }}
+            </p>
+          </div>
         </div>
 
         <!-- Solution and Attachments -->
@@ -188,13 +214,16 @@
           </div>
         </div>
       </div>
-
-      
-
-
+      <div class="ticket-section">
+        <h6>Comments</h6>
+        <span class="badge badge-primary">Text bubble</span>
+        <p>{{ comments }}</p>
+      </div>
 
       <template #modal-footer="{ cancel }">
-        <b-button size="sm" variant="danger" @click="cancel()"> Cancel </b-button>
+        <b-button size="sm" variant="danger" @click="cancel()">
+          Cancel
+        </b-button>
       </template>
     </b-modal>
 
@@ -207,11 +236,15 @@
     >
       <template #modal-header="{ cancel }">
         <span style="font-size: 20px">Delete Ticket ?</span>
-        <b-button size="sm" variant="outline-danger" @click="cancel()"> Close </b-button>
+        <b-button size="sm" variant="outline-danger" @click="cancel()">
+          Close
+        </b-button>
       </template>
 
       <template #modal-footer="{ ok, cancel }">
-        <b-button size="sm" variant="secondary" @click="cancel()"> Cancel </b-button>
+        <b-button size="sm" variant="secondary" @click="cancel()">
+          Cancel
+        </b-button>
         <b-button size="sm" variant="danger" @click="ok()"> Ok </b-button>
       </template>
     </b-modal>
@@ -224,7 +257,9 @@
     >
       <template #modal-header="{ cancel }">
         <span style="font-size: 20px">Ticket ID: {{ id }}</span>
-        <b-button size="sm" variant="outline-danger" @click="cancel()"> Close </b-button>
+        <b-button size="sm" variant="outline-danger" @click="cancel()">
+          Close
+        </b-button>
       </template>
 
       <div class="d-block text-left">
@@ -243,10 +278,11 @@
       </div>
 
       <template #modal-footer="{ cancel }">
-        <b-button size="sm" variant="secondary" @click="cancel()"> Cancel </b-button>
+        <b-button size="sm" variant="secondary" @click="cancel()">
+          Cancel
+        </b-button>
       </template>
     </b-modal>
-
 
     <b-modal
       :id="discourse_ticket_modal_id"
@@ -256,7 +292,9 @@
     >
       <template #modal-header="{ cancel }">
         <span style="font-size: 20px">Ticket ID: {{ id }}</span>
-        <b-button size="sm" variant="outline-danger" @click="cancel()"> Close </b-button>
+        <b-button size="sm" variant="outline-danger" @click="cancel()">
+          Close
+        </b-button>
       </template>
 
       <div class="d-block text-left">
@@ -271,10 +309,11 @@
       </div>
 
       <template #modal-footer="{ cancel }">
-        <b-button size="sm" variant="secondary" @click="cancel()"> Cancel </b-button>
+        <b-button size="sm" variant="secondary" @click="cancel()">
+          Cancel
+        </b-button>
       </template>
     </b-modal>
-
 
     <b-modal
       :id="discourse_show_modal_id"
@@ -284,18 +323,16 @@
     >
       <template #modal-header="{ cancel }">
         <span style="font-size: 20px">Ticket ID: {{ id }}</span>
-        <b-button size="sm" variant="outline-danger" @click="cancel()"> Close </b-button>
+        <b-button size="sm" variant="outline-danger" @click="cancel()">
+          Close
+        </b-button>
       </template>
 
       <div class="d-block text-left">
         <h5 style="text-align: center">Discourse Thread</h5>
-        <Discourse
-          :id="id"
-        ></Discourse>
+        <Discourse :id="id"></Discourse>
       </div>
     </b-modal>
-
-
   </div>
 </template>
 
@@ -303,7 +340,7 @@
 import * as common from "../assets/common.js";
 import TicketForm from "../components/TicketForm.vue";
 import DiscourseTicketForm from "../components/DiscoursePopUp.vue";
-import Discourse from "../components/Discourse.vue"
+import Discourse from "../components/Discourse.vue";
 
 export default {
   name: "TicketCard",
@@ -319,7 +356,7 @@ export default {
     "discourse_disabled",
     "is_resolved",
   ],
-  components: { TicketForm, DiscourseTicketForm,Discourse },
+  components: { TicketForm, DiscourseTicketForm, Discourse },
   data() {
     return {
       button_1_active: false,
@@ -329,7 +366,7 @@ export default {
       edit_ticket_modal_id: "edit_ticket_modal_" + this.id,
       delete_ticket_modal_id: "delete_ticket_modal_" + this.id,
       discourse_ticket_modal_id: "discourse_ticket_modal_" + this.id,
-      discourse_show_modal_id:"discourse_show_modal_"+this.id,
+      discourse_show_modal_id: "discourse_show_modal_" + this.id,
       ticket_priority: "",
       ticket_status: "",
       solution: "",
@@ -340,6 +377,7 @@ export default {
       created_by: this.$store.getters.get_user_id,
       created_by_full_name: "",
       resolved_by_full_name: "Not Resolved",
+      comments: [],
     };
   },
   created() {},
@@ -351,7 +389,6 @@ export default {
       this.ticket_deleted = true; // its not deletd, its resolved , so its hidden
     },
     getTicketDetails() {
-      
       fetch(common.TICKET_API + `/${this.id}` + `/${this.user_id}`, {
         method: "GET",
         headers: {
@@ -406,8 +443,7 @@ export default {
     showDiscourseTicketModal() {
       this.$bvModal.show(this.discourse_ticket_modal_id);
     },
-    showDiscourse()
-    {
+    showDiscourse() {
       this.$bvModal.show(this.discourse_show_modal_id);
     },
     upvoteTicket() {
@@ -477,19 +513,20 @@ export default {
         });
     },
     userdetails() {
-        if(this.created_by){
-          fetch(common.USERDETAILS_API + `/${this.created_by}`, {
-            method: "GET",
-            headers: {
-              "Content-Type": "application/json",
-              webtoken: this.$store.getters.get_web_token,
-              userid: this.user_id,
-            },
-          })
+      if (this.created_by) {
+        fetch(common.USERDETAILS_API + `/${this.created_by}`, {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+            webtoken: this.$store.getters.get_web_token,
+            userid: this.user_id,
+          },
+        })
           .then((response) => response.json())
           .then((data) => {
             if (data.category == "success") {
-              this.created_by_full_name = data.message.first_name + " " + data.message.second_name;
+              this.created_by_full_name =
+                data.message.first_name + " " + data.message.second_name;
             } else if (data.category == "error") {
               this.flashMessage.error({
                 message: data.message,
@@ -499,21 +536,22 @@ export default {
           .catch((error) => {
             reject("Internal Server Error");
           });
-        }
-        
-        if(this.resolved_by != 0){
-          fetch(common.USERDETAILS_API + `/${this.resolved_by}`, {
-            method: "GET",
-            headers: {
-              "Content-Type": "application/json",
-              webtoken: this.$store.getters.get_web_token,
-              userid: this.user_id,
-            },
-          })
+      }
+
+      if (this.resolved_by != 0) {
+        fetch(common.USERDETAILS_API + `/${this.resolved_by}`, {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+            webtoken: this.$store.getters.get_web_token,
+            userid: this.user_id,
+          },
+        })
           .then((response) => response.json())
           .then((data) => {
             if (data.category == "success") {
-              this.resolved_by_full_name = data.message.first_name + " " + data.message.second_name;
+              this.resolved_by_full_name =
+                data.message.first_name + " " + data.message.second_name;
             } else if (data.category == "error") {
               this.flashMessage.error({
                 message: data.message,
@@ -523,18 +561,44 @@ export default {
           .catch((error) => {
             reject("Internal Server Error");
           });
-        }
+      }
+    },
+    getComments() {
+      fetch(common.COMMENTS_API + `/${this.id}`, {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+          webtoken: this.$store.getters.get_web_token,
+          userid: this.user_id,
+        },
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          if (data.category == "success") {
+            this.flashMessage.success({
+              message: "User data retrieved.",
+            });
+            this.comments = data.message;
+          }
+          if (data.category == "error") {
+            this.flashMessage.error({
+              message: data.message,
+            });
+          }
+        })
+        .catch((error) => {
+          this.$log.error(`Error : ${error}`);
+          this.flashMessage.error({
+            message: "Internal Server Error",
+          });
+        });
     },
   },
-  computed: {
-    
-    
-  },
+  computed: {},
 };
 </script>
 
 <style scoped>
-
 .ticket-card-container {
   box-shadow: 2px 4px 5px 5px #dbdada;
   background-color: rgb(251, 252, 252);
@@ -550,7 +614,8 @@ export default {
 }
 .ticket-card-buttons:hover:not([disabled]) {
   border-color: #95ddfa;
-  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 .ticket-section {
@@ -569,7 +634,7 @@ export default {
   margin-bottom: 10px;
 }
 
-.row{
+.row {
   padding-top: 5px;
   padding-bottom: 5px;
 }
