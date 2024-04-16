@@ -53,6 +53,27 @@
 
               <b-col class="col" cols="4" sm="12" lg="12"
                 ><b-button
+                  @click="showDiscourseTicketModal"
+                  variant="outline-light"
+                  size="sm"
+                  class="ticket-card-buttons"
+                  :disabled="edit_disabled"
+                  v-show="
+                    edit_disabled
+                      ? !edit_disabled
+                      : (user_id == user_id || user_role == 'staff') && !is_resolved
+                  "
+                  ><b-icon
+                    icon="pencil-fill"
+                    aria-hidden="true"
+                    class="bg-light"
+                    variant="primary"
+                  ></b-icon
+                ></b-button>
+              </b-col>
+
+              <b-col class="col" cols="4" sm="12" lg="12"
+                ><b-button
                   @click="showEditTicketModal"
                   variant="outline-light"
                   size="sm"
@@ -212,12 +233,47 @@
         <b-button size="sm" variant="secondary" @click="cancel()"> Cancel </b-button>
       </template>
     </b-modal>
+
+
+    <b-modal
+      :id="discourse_ticket_modal_id"
+      @cancel="$bvModal.hide(discourse_ticket_modal_id)"
+      size="xl"
+      scrollable
+    >
+      <template #modal-header="{ cancel }">
+        <span style="font-size: 20px">Ticket ID: {{ id }}</span>
+        <b-button size="sm" variant="outline-danger" @click="cancel()"> Close </b-button>
+      </template>
+
+      <div class="d-block text-left">
+        <h5 style="text-align: center">Discourse Ticket Creation Details</h5>
+        <!-- display as a table -->
+        <TicketForm
+          :id="id"
+          :title="title"
+          :description="description"
+          :ticket_priority="ticket_priority"
+          :tags_list="tags_list"
+          :hideReset="true"
+          :editTicket="true"
+          @ticketResolved="ticketResolvedFn"
+        ></TicketForm>
+      </div>
+
+      <template #modal-footer="{ cancel }">
+        <b-button size="sm" variant="secondary" @click="cancel()"> Cancel </b-button>
+      </template>
+    </b-modal>
+
+
   </div>
 </template>
 
 <script>
 import * as common from "../assets/common.js";
 import TicketForm from "../components/TicketForm.vue";
+import DiscourseTicketForm from "../components/DiscoursePopUp.vue";
 
 export default {
   name: "TicketCard",
@@ -232,7 +288,7 @@ export default {
     "edit_disabled",
     "is_resolved",
   ],
-  components: { TicketForm },
+  components: { TicketForm, DiscourseTicketForm },
   data() {
     return {
       button_1_active: false,
@@ -241,6 +297,7 @@ export default {
       show_ticket_modal_id: "show_ticket_modal_" + this.id,
       edit_ticket_modal_id: "edit_ticket_modal_" + this.id,
       delete_ticket_modal_id: "delete_ticket_modal_" + this.id,
+      discourse_ticket_modal_id: "discourse_ticket_modal_" + this.id,
       ticket_priority: "",
       ticket_status: "",
       solution: "",
@@ -313,6 +370,9 @@ export default {
     },
     showEditTicketModal() {
       this.$bvModal.show(this.edit_ticket_modal_id);
+    },
+    showDiscourseTicketModal() {
+      this.$bvModal.show(this.discourse_ticket_modal_id);
     },
     upvoteTicket() {
       if (this.user_id == this.user_id) {
