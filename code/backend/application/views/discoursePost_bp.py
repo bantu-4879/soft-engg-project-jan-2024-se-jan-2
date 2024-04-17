@@ -118,9 +118,8 @@ class Categories(Resource):
             form =request.get_json()
             category_name=form.get("name","")
             color=form.get("color", "") 
-            text_color=form.get("text-color","")
+            text_color=form.get("text_color","")
             permission_staff=form.get("Staff",0)
-            parent_category_id=form.get("parent_category","")
             permission_all=form.get("All",1)
             category_description=form.get("description","")
         except Exception as e:
@@ -135,7 +134,7 @@ class Categories(Resource):
                 "name":category_name,
                 "color":color,
                 "text_color":text_color,
-                "parent_category_id":parent_category_id,
+                "parent_category_id":"14",
                 "permissions":{
                     "everyone":permission_all,
                     "staff":permission_staff
