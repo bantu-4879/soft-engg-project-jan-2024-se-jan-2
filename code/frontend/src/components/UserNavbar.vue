@@ -153,23 +153,5 @@ nav {
   flex-direction: column;
   align-items: center;
 }
-<<<<<<< HEAD
 </style>
 
-=======
-
-.buttons .b-button {
-  margin-bottom: 10px;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Update font */
-  font-size: 16px; /* Increase font size */
-}
-
-/* Button hover effect */
-.buttons .b-button:hover {
-  background-color: #4dd325; /* Green background color on hover */
-  color: #fff; /* White color for text on hover */
-}
-</style>
->>>>>>> 423bd935ba5c0ba5f3143c8a9d246b7b592561a5
