@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-navbar toggleable="lg" type="light" variant="dark">
+    <b-navbar toggleable="lg" type="light" variant="light">
       <b-navbar-brand href="#">OSTS</b-navbar-brand>
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
       <b-collapse id="nav-collapse" is-nav>
@@ -10,8 +10,15 @@
               variant="primary"
               :to="{ path: b.link }"
               @click="change_button_state(b.id)"
-              :class="{ active: b.active }"
-            >{{ b.title }}</b-button>
+              :style="{
+                boxShadow: b.active ? '5px 5px 15px 5px #a3a3a3' : 'none',
+                backgroundColor: b.active ? 'blue' : '#f8f9fa',
+                color: b.active ? 'white' : 'black',
+                borderColor: b.active ? '#007bff' : '#f8f9fa',
+                fontSize: b.active ? '18px' : '16px',
+              }"
+              >{{ b.title }}</b-button
+            >
           </div>
         </b-navbar-nav>
 
@@ -21,12 +28,12 @@
             id="profile_pic"
             :to="{ path: user_profile_page_url }"
             @click="change_button_state(0)"
-          ><b-img
+            ><b-img
               :src="profile_pic_base64"
               v-bind="mainProps"
               alt="Profile image"
               style="margin: -6px -10px -12px -12px"
-            </b-img>
+            ></b-img>
           </b-button>
         </b-navbar-nav>
       </b-collapse>
@@ -98,60 +105,40 @@ export default {
 };
 </script>
 
-<style scoped>
-/* Navbar styling */
+<style>
 nav {
-  background-color: #222; /* Dark background color */
+  padding: 30px;
 }
 
-/* Navbar brand styling */
-.navbar-brand {
-  font-size: 24px;
-  color: #ffffff; /* White color for text */
+nav a {
+  font-weight: bold;
+  color: #4dd325;
 }
 
-.b-navbar-brand {
-  font-size: 24px;
-  color: #ffffff; /* White color for text */
+nav a.router-link-exact-active {
+  color: #441ada;
 }
 
-/* Navbar toggle button styling */
-.b-navbar-toggle {
-  border-color: #fff; /* White border color */
+.buttons {
+  margin: 15px;
+  justify-content: space-between;
 }
 
-/* Navbar links styling */
-.navbar-nav .nav-link {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Update font */
-  font-size: 18px; /* Increase font size */
-  color: #fff; /* White color for text */
-}
-
-/* Active link styling */
-.navbar-nav .nav-link.active {
-  background-color: #4dd325; /* Green background color for active link */
-  color: #fff; /* White color for text */
-}
-
-/* Profile picture button styling */
 #profile_pic {
   width: 50px;
   height: 50px;
-  border: 2px solid #fff; /* White border */
-  border-radius: 50%; /* Circular shape */
-  background-color: #ffffff;; /* Green background color */
+  border: none;
+  color: white;
 }
 
-/* Profile picture hover effect */
 #profile_pic:hover {
-  border-color: #bb0520; /* Green border color on hover */
+  border: none;
+  color: white;
 }
 
-/* Button styling */
-.buttons {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+router-link {
+  box-shadow: 5px 10px 8px 10px #888888;
+  background-color: aqua;
 }
 </style>
 
