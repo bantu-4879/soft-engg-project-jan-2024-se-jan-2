@@ -239,6 +239,22 @@
           </b-row>
         </b-form>
       </div>
+      <!-- <div class="ticket-section">
+        <h6>Tracking Data</h6>
+        <div v-for="data in tracking_data" :key="data.id">
+          {{ data }}
+        </div>
+      </div> -->
+      <b-form @submit.prevent="escalateTicket">
+        <b-button
+          type="submit"
+          variant="primary"
+          v-show="!showComments"
+          :diabled="already_escalated"
+        >
+          Escalate Ticket
+        </b-button>
+      </b-form>
 
       <template #modal-footer="{ cancel }">
         <b-button size="sm" variant="danger" @click="cancel()">
@@ -400,6 +416,7 @@ export default {
       comments: [],
       comment_input: "",
       show_comments: false,
+      already_escalated: false,
     };
   },
   created() {},
@@ -407,6 +424,7 @@ export default {
     this.userdetails();
     this.getComments();
     this.commentsVisible();
+    this.getTrackingData(); 
   },
   methods: {
     ticketResolvedFn() {
@@ -658,6 +676,111 @@ export default {
         this.showComments = true;
       }
     },
+    escalateTicket() {
+      if (this.already_escalated == false) {
+        fetch(common.TRACKING_API + `/${this.id}`, {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json",
+            webtoken: this.$store.getters.get_web_token,
+            userid: this.user_id,
+          },
+          body: JSON.stringify({
+            resolved_at: "",
+            assigned_at: "",
+            inProgress_at: "",
+            closed_at: "",
+            reopened_at: Date.now(),
+          }),
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            if (data.category == "success") {
+              this.flashMessage.success({
+                message: "Escalated Ticket",
+              });
+            }
+            if (data.category == "error") {
+              this.flashMessage.error({
+                message: data.message,
+              });
+            }
+          })
+          .catch((error) => {
+            this.$log.error(`Error : ${error}`);
+            this.flashMessage.error({
+              message: "Internal Server Error",
+            });
+          });
+        fetch(common.TRACKING_API + `/${this.id}`, {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json",
+            webtoken: this.$store.getters.get_web_token,
+            userid: this.user_id,
+          },
+          body: JSON.stringify({
+            resolved_at: "",
+            assigned_at: "",
+            inProgress_at: "",
+            closed_at: "",
+            reopened_at: Date.now(),
+          }),
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            if (data.category == "success") {
+              this.flashMessage.success({
+                message: "Escalated Ticket",
+              });
+            }
+            if (data.category == "error") {
+              this.flashMessage.error({
+                message: data.message,
+              });
+            }
+          })
+          .catch((error) => {
+            this.$log.error(`Error : ${error}`);
+            this.flashMessage.error({
+              message: "Internal Server Error",
+            });
+          });
+
+        this.already_escalated = true;
+      }
+    },
+    // getTrackingData() {
+    //   console.log(this.tracking_data)
+    //   fetch(common.TRACKING_API + `/${this.id}`, {
+    //     method: "GET",
+    //     headers: {
+    //       "Content-Type": "application/json",
+    //       webtoken: this.$store.getters.get_web_token,
+    //       userid: this.user_id,
+    //     },
+    //   })
+    //     .then((response) => response.json())
+    //     .then((data) => {
+    //       if (data.category == "success") {
+    //         this.flashMessage.success({
+    //           message: "",
+    //         });
+    //         this.tracking_data = data.message;
+    //       }
+    //       if (data.category == "error") {
+    //         this.flashMessage.error({
+    //           message: data.message,
+    //         });
+    //       }
+    //     })
+    //     .catch((error) => {
+    //       this.$log.error(`Error : ${error}`);
+    //       this.flashMessage.error({
+    //         message: "Internal Server Error",
+    //       });
+    //     });
+    // },
   },
   computed: {},
 };

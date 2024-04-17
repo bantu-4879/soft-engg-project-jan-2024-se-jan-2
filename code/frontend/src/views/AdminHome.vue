@@ -149,7 +149,7 @@ export default {
         link.setAttribute('download', 'tickets_report.csv');
         document.body.appendChild(link);
         link.click();
-        window.URL.revokeObjectURL(url);
+        window.URL.revokeObjectURL(url); 
       } catch (error) {
         console.error('Error downloading report:', error);
         // Handle error, e.g., show an error message to the user

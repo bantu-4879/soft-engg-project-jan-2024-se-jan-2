@@ -143,8 +143,8 @@ class StatsAPI(Resource):
 
 class StatsReport(Resource):
 
-    @token_required
-    @admin_required
+    # @token_required
+    # @users_required(users=["admin"])
     def get(self):
         logger.info("Generating report and then sending that to user.")
         task_result = export_ticket_csv_task.delay()

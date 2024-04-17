@@ -16,11 +16,13 @@ const USER_MANAGEMENT_PREFIX = `/api/${VERSION}/management`;
 const USERDETAILS_PREFIX = `/api/${VERSION}/userDetails`;
 const STATS_PREFIX = `/api/${VERSION}/data`;
 const COMMENTS_PREFIX = `/api/${VERSION}/ticket/comments`;
+const TRACKING_PREFIX = `/api/${VERSION}/tracking`;
 
 const AUTH_API_LOGIN = `${BASEURL}${AUTH_API_PREFIX}/login`;
 const AUTH_API_REGISTER = `${BASEURL}${AUTH_API_PREFIX}/register`;
 const AUTH_API_NEWUSERS = `${BASEURL}${AUTH_API_PREFIX}/newUsers`;
 
+const TRACKING_API = `${BASEURL}${TRACKING_PREFIX}`;
 const COMMENTS_API = `${BASEURL}${COMMENTS_PREFIX}`;
 const STUDENT_API = `${BASEURL}${STUDENT_API_PREFIX}`;
 const SUPPORT_API = `${BASEURL}${SUPPORT_API_PREFIX}`;
@@ -54,7 +56,7 @@ const SUPPORT_ROUTES = [
   "/common-faqs",
   "/user-profile",
   "/inbox",
-  "/discourse-threads"
+  "/discourse-threads",
 ];
 const ADMIN_ROUTES = [
   "/admin",
@@ -86,7 +88,7 @@ const SUPPORT_NAV_BUTTONS = [
   { id: 1, title: "Home", link: "/staff-home", active: false },
   { id: 2, title: "My Tickets", link: "/staff-my-tickets", active: false },
   { id: 3, title: "FAQs", link: "/common-faqs", active: false },
-  { id :4 ,title:"Discourse", link:"/discourse-threads",active:false},
+  { id: 4, title: "Discourse", link: "/discourse-threads", active: false },
   { id: 5, title: "Logout", link: "#", active: false },
 ];
 
@@ -137,4 +139,5 @@ export {
   DISCOURSE_TICKET_API,
   STATS_API,
   COMMENTS_API,
+  TRACKING_API,
 };
