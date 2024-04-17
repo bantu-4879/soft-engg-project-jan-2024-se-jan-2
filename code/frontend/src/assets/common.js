@@ -89,7 +89,8 @@ const SUPPORT_NAV_BUTTONS = [
   { id: 2, title: "My Tickets", link: "/staff-my-tickets", active: false },
   { id: 3, title: "FAQs", link: "/common-faqs", active: false },
   { id: 4, title: "Discourse", link: "/discourse-threads", active: false },
-  { id: 5, title: "Logout", link: "#", active: false },
+  { id: 5, title: "Inbox", link: "/inbox", active: false },
+  { id: 6, title: "Logout", link: "#", active: false },
 ];
 
 const ADMIN_NAV_BUTTONS = [
