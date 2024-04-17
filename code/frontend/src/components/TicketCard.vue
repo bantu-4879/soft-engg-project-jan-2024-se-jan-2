@@ -410,7 +410,7 @@ export default {
       tags_list: "",
       attachments: [],
       ticket_deleted: false,
-      created_by: this.$store.getters.get_user_id,
+      created_by: 0,
       created_by_full_name: "",
       resolved_by_full_name: "Not Resolved",
       comments: [],
@@ -445,7 +445,7 @@ export default {
             // load data
             this.title = data.message.title;
             this.description = data.message.description;
-            // this.votes = data.message.votes;
+            this.created_by = data.message.user_id;
             this.ticket_priority = data.message.ticket_priority;
             this.ticket_status = data.message.ticket_status;
             this.solution = data.message.solution;
@@ -567,8 +567,8 @@ export default {
           .then((response) => response.json())
           .then((data) => {
             if (data.category == "success") {
-              this.created_by_full_name =
-                data.message.first_name + " " + data.message.second_name;
+              this.created_by_full_name = data.message.first_name + " " + data.message.second_name;
+              
             } else if (data.category == "error") {
               this.flashMessage.error({
                 message: data.message,
@@ -592,8 +592,9 @@ export default {
           .then((response) => response.json())
           .then((data) => {
             if (data.category == "success") {
-              this.resolved_by_full_name =
-                data.message.first_name + " " + data.message.second_name;
+              
+              this.resolved_by_full_name = data.message.first_name + " " + data.message.second_name;
+              
             } else if (data.category == "error") {
               this.flashMessage.error({
                 message: data.message,
