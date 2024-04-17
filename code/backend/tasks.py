@@ -1,5 +1,5 @@
 from celery import shared_task
-from application.models import Ticket,User,Role,TicketData
+from application.models import Ticket, TicketData,User
 from application.database import db
 from application.logger import logger
 import joblib 
@@ -39,9 +39,9 @@ def export_ticket_csv_task(self):
         csv_writer.writerow(['ID', 'User ID', 'Title', 'Description', 'Solution', 'Created At', 'Resolved By', 'Solution Satisfaction', 'Ticket Status', 'Ticket Priority', 'Tags List', 'Resolution Time'])
 
         for ticket in tickets:
+            ticket_data = TicketData.query.filter_by(ticket_id=ticket.id).first()
             # Calculate resolution time (assuming resolved_at is a field in your Ticket model)
             resolution_time = None
-            ticket_data=TicketData.query.filter_by(ticket_id=ticket.id).first()
             if ticket.ticket_status == 'Resolved' and ticket_data.resolved_at:
                 resolution_time = ticket_data.resolved_at - ticket.created_at
 
