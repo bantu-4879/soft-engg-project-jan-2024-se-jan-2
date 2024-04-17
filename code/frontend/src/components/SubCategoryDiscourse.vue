@@ -11,7 +11,7 @@
   import * as common from "../assets/common.js";
   export default {
     name:"Subcategory",
-    props: ['category'], 
+    props: ['value','category'], 
     data() {
       return {
         selectedSubcategory: this.value || '', 
@@ -29,7 +29,7 @@
     },
     methods: {
       fetchSubcategories(categoryId) {
-        fetch(common.DISCOURSE_TICKET_API + '/category/subcategories/'+`${categoryId}`, {
+        fetch(common.DISCOURSE_TICKET_API + '/category/subcategories/14', {
             method: "GET",
             headers: {
               webtoken: this.$store.getters.get_web_token,
@@ -53,9 +53,7 @@
             })
             .catch((error) => {
               this.$log.error(`Error : ${error}`);
-              this.flashMessage.error({
-                message: "Internal Server Error",
-              });
+              console.log("Sub categories cannot be retrieved.")
             });
       },
       handleChange() {

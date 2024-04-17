@@ -35,6 +35,10 @@
         <b-form-group>
         <Category v-model="form.category" />
         </b-form-group>
+      
+        <b-form-group>
+        <Subcategory v-model="form.sub_category" @input="handleSubcategoryChange" />
+        </b-form-group>
 
         <b-form-group>
         <Tags v-model="form.tags" @selected-tags="handleSelectedTags" />
@@ -60,17 +64,19 @@
   import Category from './CategoryDiscourse.vue';
   import Tags from './TagsDiscourse.vue';
   import axios from 'axios';
+  import Subcategory from "./SubCategoryDiscourse.vue";
   
   export default {
     name: "DiscourseTicketForm",
     props: ["id", "title", "description"],
-    components: { FileUpload ,Category,Tags},
+    components: { FileUpload ,Category,Tags,Subcategory},
     data() {
       return {
         form: {
           title: this.title ? this.title : "",
           raw: this.description ? this.description : "",
           category:"",
+          sub_category:"",
           tags:"",
         },
         show: true,
@@ -153,6 +159,11 @@
       console.log("Selected tags:", selectedTags);
       this.form.tags=selectedTags
     },
+    handleSubcategoryChange(subcategoryValue) {
+      this.form.sub_category=subcategoryValue;
+      console.log('Selected subcategory:', subcategoryValue);
+    },
+
     },
     computed: {
       check_title() {
