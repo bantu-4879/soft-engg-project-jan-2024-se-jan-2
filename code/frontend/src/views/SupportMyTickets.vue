@@ -8,6 +8,7 @@
             :upvote_disabled="true"
             :delete_disabled="true"
             :edit_disabled="true"
+            :discourse_disabled="true"
           ></SearchTicket>
         </b-col>
       </b-row>

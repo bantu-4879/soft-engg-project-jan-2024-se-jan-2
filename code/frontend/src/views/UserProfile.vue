@@ -160,7 +160,7 @@
             aria-describedby="input-live-feedback-discourse-password"
           ></b-form-input>
           <b-form-invalid-feedback id="input-live-feedback-discourse-password">
-            Password should contain letters A-Z a-z and numbers 0-9 only and should be at least 8 characters long.
+            Password should contain letters A-Z a-z and numbers 0-9 or _ only and should be at least 8 characters long.
           </b-form-invalid-feedback>
         </b-form-group>
 
@@ -398,6 +398,7 @@ export default {
             this.flashMessage.success({
               message: data.message,
             });
+            this.onResetDiscourse();
           }
           if (data.category == "error") {
             this.flashMessage.error({

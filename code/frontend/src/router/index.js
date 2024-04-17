@@ -17,7 +17,7 @@ import AppHomeView from "../views/AppHomeView.vue";
 import UserProfile from "../views/UserProfile.vue";
 import InboxView from "../views/InboxView.vue";
 import AdminUserManagement from "../views/AdminUserManagement.vue"
-import StudentCreateDiscourseTopic from "../views/StudentCreateDiscourseTopic.vue";
+import SupportDiscourse from "../views/SupportDiscourseView.vue";
 import AllTickets from "../views/AllTickets.vue"
 
 Vue.use(VueRouter);
@@ -108,6 +108,11 @@ const routes = [
     path: "*",
     redirect: "/",
   },
+  {
+    path:"/discourse-threads",
+    name:"SupportDiscourse",
+    component:SupportDiscourse,
+  }
 ];
 
 const router = new VueRouter({

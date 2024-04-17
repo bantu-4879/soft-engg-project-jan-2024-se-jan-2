@@ -11,6 +11,7 @@
               :upvote_disabled="true"
               :delete_disabled="true"
               :edit_disabled="false"
+              :discourse_disabled="true"
             ></SearchTicket>
           </div>
         </b-col>

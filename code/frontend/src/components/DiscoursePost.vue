@@ -1,6 +1,11 @@
 <template>
     <div class="post">
-      <h3>{{ post.name }}</h3>
+      <b-icon
+                    icon="person-fill"
+                    aria-hidden="true"
+                    class="bg-light"
+                    variant="danger"
+                  ></b-icon><h5>{{ post.name }}</h5>
       <div v-html="post.cooked"></div>
     </div>
   </template>

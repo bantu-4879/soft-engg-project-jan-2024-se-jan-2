@@ -1,19 +1,19 @@
 <template>
     <div>
-      <b-form-select v-model="selectedTags" multiple>
+      <b-form-select v-model="selectedTags" multiple @change="emitSelectedTags">
         <option v-for="tag in tags" :key="tag.id" :value="tag.name">{{ tag.name }}</option>
       </b-form-select>
     </div>
   </template>
   
   <script>
-  import { componentsPlugin } from "bootstrap-vue";
 import * as common from "../assets/common.js";
   export default {
     name:"Tags",
     data() {
       return {
         selectedTags: [],
+        user_id:this.$store.getters.get_user_id,
         tags: [],
       };
     },
@@ -48,6 +48,9 @@ import * as common from "../assets/common.js";
       formatSelectedTags() {
         return this.selectedTags.map(tag => tag.name);
       },
+      emitSelectedTags() {
+      this.$emit('selected-tags', this.selectedTags);
+    },
     },
   };
   </script>

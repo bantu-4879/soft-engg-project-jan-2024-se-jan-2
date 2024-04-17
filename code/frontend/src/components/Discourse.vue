@@ -10,7 +10,6 @@
   <script>
   import PostDetail from './DiscoursePostDetails.vue'; // Import the DiscourseDetails component
   import * as common from "../assets/common.js";
-  import axios from 'axios';
   export default {
     name: 'Discourse',
     components: {
@@ -20,6 +19,7 @@
     data() {
       return {
         messages:null,
+        loading:false,
         user_id:this.$store.getters.get_user_id,
       };
     },
@@ -30,19 +30,20 @@
         fetchTopicDetails() {
           this.loading = true;
           const url = `${common.DISCOURSE_TICKET_API}/topic/${this.user_id}/${this.id}`;
-          axios.get(url, {
+          fetch(url, {
+            method:"GET",
             headers: {
               webtoken: this.$store.getters.get_web_token,
               userid: this.user_id,
             }
           })
-          .then(response => response.data)
+          .then((response) => response.json())
           .then(data => {
             if (data.category === "success") {
                 this.messages=data.message;
               this.flashMessage.success({ message: "Discourse Thread retrieved successfully." });
             } else if (data.category === "error") {
-              this.flashMessage.error({ message: "Discourse Thread cannot be retrieved" });
+              this.flashMessage.error({ message: error.message });
             }
           })
           .catch(error => {

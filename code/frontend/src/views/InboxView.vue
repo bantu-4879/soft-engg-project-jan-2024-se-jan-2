@@ -30,16 +30,10 @@
           >
             <b-card
               :title="message.slug"
-              :sub-title="message.created_at"
+              :sub-title="'message from discourse'"
               bg-variant="light"
               class="text-center"
             >
-              <b-button
-                @click="delete_inbox_message(message.id)"
-                v-show="delete_button == true"
-                variant="danger"
-                >Delete</b-button
-              >
             </b-card>
           </div>
         </b-col>

@@ -37,7 +37,7 @@
         </b-form-group>
 
         <b-form-group>
-        <Tags v-model="form.tags" />
+        <Tags v-model="form.tags" @selected-tags="handleSelectedTags" />
         </b-form-group>
 
         <b-form-group>
@@ -148,6 +148,10 @@
           this.show = true;
         });
       },
+      handleSelectedTags(selectedTags) {
+      console.log("Selected tags:", selectedTags);
+      this.form.tags=selectedTags
+    },
     },
     computed: {
       check_title() {

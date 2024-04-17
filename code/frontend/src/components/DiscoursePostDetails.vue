@@ -1,13 +1,13 @@
 <template>
     <div class="post-details">
       <h1>{{ message.title }}</h1>
-      <PostStream :posts="message.post_stream.posts" />
       <b-icon
                     icon="chat-right-quote-fill"
                     aria-hidden="true"
                     class="bg-light"
                     variant="danger"
                   ></b-icon><h6>{{ message.post_counts }} </h6>
+      <PostStream :posts="message.post_stream.posts" />
                   <b-icon
                     icon="heart-fill"
                     aria-hidden="true"

@@ -28,8 +28,8 @@ discourseAuth_api=Api(discourseAuth_bp)
 discourseUserUtils=DiscourseUserUtils()
 class DiscourseUserCreation(Resource):
 
-    #@token_required
-    #@users_required(users=["Student","Staff","Admin"])
+    @token_required
+    @users_required(users=["student","staff","admin"])
     def post(self):
         """
         Usage 
@@ -150,8 +150,8 @@ class DiscourseAddMedorators(Resource):
     def __init__(self,user_id=None):
         self.user_id=user_id
     
-    #@token_required
-    #@admin_required
+    @token_required
+    @admin_required
     def get(self):
         """
         usage
@@ -183,8 +183,8 @@ class DiscourseAddMedorators(Resource):
                 data.append(_d)
             return success_200_custom(data=data)
     
-    #@token_required
-    #@admin_required
+    @token_required
+    @admin_required
     def put(self,user_id):
         """
         Usage
@@ -288,8 +288,8 @@ class DiscourseGroupMessages(Resource):
     def __init__(self,user_id=None):
         self.user_id=user_id
     
-    #@token_required
-    #@users_required(users=['staff','admin'])
+    @token_required
+    @users_required(users=['staff','admin'])
     def get(self,user_id):
         """
         usage
@@ -387,7 +387,7 @@ class Notifications(Resource):
                 _d = {}
                 _d["id"] = notification["id"]
                 _d["created_at"] = notification["created_at"]
-                _d["type"] = notification["type"]
+                _d["type"] = notification["notification_type"]
                 _d["topic_id"] = notification["topic_id"]
                 _d["slug"]=notification["slug"]
                 data.append(_d)

@@ -92,6 +92,7 @@ class Categories(Resource):
         response=requests.get(url,headers=headers)
         if(response.status_code == 200):
             response=response.json()
+            print(response)
             category=response["category"]
             data={}
             data["id"] = category["id"]
@@ -220,12 +221,14 @@ class CategoryTopicsAll(Resource):
     
     """
     #@token_required
-    #@users_required(users=['Student','Staff','Admin'])
-    def get(self,slug,category_id):
+    #@users_required(users=['student','staff','admin'])
+    def get(self):
         headers={
             'Api-Key':API_KEY,
             'Api-Username':API_USERNAME
         }
+        slug='ticket-resolution-system'
+        category_id=14
         url=f'{DISCOURSE_BASE_URL}/c/{slug}/{category_id}.json'
         try:
             response=requests.get(url,headers=headers)
@@ -253,8 +256,8 @@ class Tags(Resource):
     def __init__(self,user_id=None):
         self.user_id=user_id
 
-    
-    #@token_required
+    @token_required
+    @users_required(users=['student','staff','admin'])
     def get(self):
         headers={
             'Api-Key':API_KEY,
@@ -275,8 +278,8 @@ class Tags(Resource):
         else:
             raise NotFoundError(status_msg="could not load Tags data")
     
-    #@token_required
-    #@users_required(users='Staff')
+    @token_required
+    @users_required(users='staff')
     def post(self):
         try:
             form = request.get_json()
@@ -509,11 +512,7 @@ class DiscourseTopics(Resource):
             payload={
                 "title":details["title"],
                 "raw":details["raw"],
-                "topic_id":details["topic_id"],
                 "category":"14",
-                "sub_category":details["sub_category"],
-                "reply_to_post_number":details["reply_to_post_number"],
-                "created_at":details["created_at"],
                 "embed_url":details["embed_url"],
                 "tags[]":details["tags"]
             }
@@ -532,7 +531,7 @@ class DiscourseTopics(Resource):
                     raise InternalServerError(status_msg="Cannot upload image to discourse.")
             if(response.status_code==200):
                 response=response.json()
-                ticket.thread_link=response["id"]
+                ticket.thread_link=response["topic_id"]
                 try:
                     db.session.add(ticket)
                     db.session.commit()
@@ -1021,7 +1020,7 @@ discoursePost_api.add_resource(
    '/topic/<string:user_id>/<string:ticket_id>',
    '/topic/status_update/<int:topic_id>'
 )
-discoursePost_api.add_resource(CategoryTopicsAll,'/category/topics/<string:slug>/<int:category_id>')
+discoursePost_api.add_resource(CategoryTopicsAll,'/category/topics')
 discoursePost_api.add_resource(SubCategoriesAll,'/category/subcategories/<int:category_id>')
 discoursePost_api.add_resource(DiscoursePosts,'/topic/reply/<string:user_id>','/topic/change_status/<string:user_id>/<string:ticket_id>')
 discoursePost_api.add_resource(LikingPosts,'/post/like/<string:user_id>/<int:post_id>')
