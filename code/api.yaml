@@ -1,0 +1,1716 @@
+---
+openapi: 3.0.0
+info:
+  title: Software Engineering Project
+  description: |-
+    <h1>Milestone 4 - API Endpoints Documentation</h1>
+    <h2>Group: 2</h2>
+    <h3>Members
+      <ul>
+        <li>Aman Kankriya    (21F2000493)</li>
+        <li>Steve Richards   (21F1005920)</li>
+        <li>Ishika Goel      (21F1006093)</li>
+        <li>Sahithi Dhara    (21F1003337)</li>
+        <li>Muskan Sindhu    (21F1003710)</li>
+        <li>Akrithi Vishwas  (21F1001471)</li>
+      </ul>
+    </h3>
+    
+
+
+    <h2>The database schemas are as follows:</h2>
+
+    <h3> [1] User Schema </h3>
+    <h4>Auth table contains all details about user including login status.</h4>
+    <table>
+      <thead>
+        <th>Column Name</th>
+        <th>Column Type</th>
+        <th>Constraints</th>
+      </thead>
+      <tbody>
+      <tr>
+        <td>id</td>
+        <td>String</td>
+        <td>Primary Key</td>
+      </tr>
+      <tr>
+        <td>first_name</td>
+        <td>String</td>
+        <td>Not Null</td>
+      </tr>
+      <tr>
+        <td>second_name</td>
+        <td>String</td>
+        <td>Not Null</td>
+      </tr>
+      <tr>
+        <td>email</td>
+        <td>String</td>
+        <td>Not Null</td>
+      </tr>
+      <tr>
+        <td>password</td>
+        <td>String</td>
+        <td>Not Null</td>
+      </tr>
+      <tr>
+        <td>is_approved</td>
+        <td>Bool</td>
+        <td>Not Null</td>
+      </tr>
+      <tr>
+        <td>is_logged</td>
+        <td>Bool</td>
+        <td>Not Null</td>
+      </tr>
+      <tr>
+        <td>role_id</td>
+        <td>Integer</td>
+        <td>Foreign Key</td>
+      </tr>
+      <tr>
+        <td>card</td>
+        <td>String</td>
+        <td>Not Null, Default: Green</td>
+      </tr>
+      <tr>
+        <td>profile_photo_loc</td>
+        <td>String</td>
+        <td>Nullable</td>
+      </tr>
+      <tr>
+        <td>number_DA</td>
+        <td>Integer</td>
+        <td>Not Null</td>
+      </tr>
+      <tr>
+        <td>Authentication</td>
+        <td>Integer</td>
+        <td>Not Null, Foreign Key</td>
+      </tr>
+      <tr>
+        <td>discourse_username</td>
+        <td>String</td>
+        <td>Not Null</td>
+      </tr>
+      </tbody>
+
+    </table>
+    <h3> [2] Role Schema </h3>
+    <h4>....</h4>
+    <table>
+      <thead>
+        <th>Column Name</th>
+        <th>Column Type</th>
+        <th>Constraints</th>
+      </thead>
+      <tbody>
+      <tr>
+        <td>id</td>
+        <td>Integer</td>
+        <td>Primary Key</td>
+      </tr>
+      <tr>
+        <td>name</td>
+        <td>Sting</td>
+        <td>Not Null, Unique</td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h3> [3] Authentication Schema </h3>
+    <h4>...</h4>
+    <table>
+      <thead>
+        <th>Column Name</th>
+        <th>Column Type</th>
+        <th>Constraints</th>
+      </thead>
+      <tbody>
+      <tr>
+        <td>id</td>
+        <td>Integer</td>
+        <td>Primary Key</td>
+      </tr>
+      <tr>
+        <td>user_id</td>
+        <td>String</td>
+        <td>Foreign Key, Not Null</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>token</td>
+        <td>String</td>
+        <td>Nullable</td>
+      </tr>
+      <tr>
+        <td>token_created</td>
+        <td>Integer</td>
+        <td>Nullable</td>
+      </tr>
+      <tr>
+        <td>token_expired</td>
+        <td>Integer</td>
+        <td>Nullable</td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h3> [4] Ticket Schema </h3>
+    <h4>...</h4>
+    <table>
+      <thead>
+        <th>Column Name</th>
+        <th>Column Type</th>
+        <th>Constraints</th>
+      </thead>
+      <tbody>
+      <tr>
+        <td>id</td>
+        <td>String</td>
+        <td>Primary Key</td>
+      </tr>
+      <tr>
+        <td>user_id</td>
+        <td>String</td>
+        <td>Primary Key, Foreign Key, Not Null</td>
+      </tr>
+      <tr>
+        <td>title</td>
+        <td>String</td>
+        <td>Not Null</td>
+      </tr>
+      <tr>
+        <td>description</td>
+        <td>String</td>
+        <td>Not Null</td>
+      </tr>
+      <tr>
+        <td>solution</td>
+        <td>String</td>
+        <td>Nullable</td>
+      </tr>
+      <tr>
+        <td>privacy</td>
+        <td>Bool</td>
+        <td>Not Null</td>
+      </tr>
+      <tr>
+        <td>created_at</td>
+        <td>String</td>
+        <td>Not Null</td>
+      </tr>
+      <tr>
+        <td>resolved_by</td>
+        <td>String</td>
+        <td>Foreign key, Not Null</td>
+      </tr>
+      <tr>
+        <td>solution_satisfaction</td>
+        <td>Bool</td>
+        <td>Not Null</td>
+      </tr>
+      <tr>
+        <td>comments</td>
+        <td>String</td>
+        <td>Nullable</td>
+      </tr>
+      <tr>
+        <td>ticket_status</td>
+        <td>String</td>
+        <td>Not Null</td>
+      </tr>
+      <tr>
+        <td>ticket_priority</td>
+        <td>Float</td>
+        <td>Nullable</td>
+      </tr>
+      <tr>
+        <td>tags_list</td>
+        <td>String</td>
+        <td>Nullable</td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h3> [5] VoteTable Schema </h3>
+    <h4>..</h4>
+    <table>
+      <thead>
+        <th>Column Name</th>
+        <th>Column Type</th>
+        <th>Constraints</th>
+      </thead>
+      <tbody>
+      <tr>
+        <td>id</td>
+        <td>Integer</td>
+        <td>Primary Key</td>
+      </tr>
+      <tr>
+        <td>ticket_id</td>
+        <td>String</td>
+        <td>Foreign Key, Not Null</td>
+      </tr>
+      <tr>
+        <td>voter_id</td>
+        <td>String</td>
+        <td>Foreign Key, Not Null</td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h3> [6] Tags Schema </h3>
+    <h4>...</h4>
+    <table>
+      <thead>
+        <th>Column Name</th>
+        <th>Column Type</th>
+        <th>Constraints</th>
+      </thead>
+      <tbody>
+      <tr>
+        <td>id</td>
+        <td>Integer</td>
+        <td>Primary Key</td>
+      </tr>
+      <tr>
+        <td>tag_name</td>
+        <td>String</td>
+        <td>Nullable</td>
+      </tr>
+      <tr>
+        <td>description</td>
+        <td>String</td>
+        <td>Nullable</td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h3> [7] Tickets_Tags Schema </h3>
+    <h4>...</h4>
+    <table>
+      <thead>
+        <th>Column Name</th>
+        <th>Column Type</th>
+        <th>Constraints</th>
+      </thead>
+      <tbody>
+      <tr>
+        <td>id</td>
+        <td>Integer</td>
+        <td>Primary Key</td>
+      </tr>
+      <tr>
+        <td>tag_id</td>
+        <td>Integer</td>
+        <td>Not Null, Foreign Key</td>
+      </tr>
+      <tr>
+        <td>ticket_id</td>
+        <td>Integer</td>
+        <td>Not Null, Foreign Key</td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h3> [8] TicketComments Schema </h3>
+    <h4>...</h4>
+    <table>
+      <thead>
+        <th>Column Name</th>
+        <th>Column Type</th>
+        <th>Constraints</th>
+      </thead>
+      <tbody>
+      <tr>
+        <td>id</td>
+        <td>Integer</td>
+        <td>Primary Key</td>
+      </tr>
+      <tr>
+        <td>ticket_id</td>
+        <td>Integer</td>
+        <td>Not Null, Foreign Key</td>
+      </tr>
+      <tr>
+        <td>comment</td>
+        <td>String</td>
+        <td>Nullable</td>
+      </tr>
+      <tr>
+        <td>added_at</td>
+        <td>String</td>
+        <td>Not Null</td>
+      </tr>
+      <tr>
+        <td>commenter</td>
+        <td>String</td>
+        <td>Foreign Key</td>
+      </tr>
+      <tr>
+        <td>user_mentions</td>
+        <td>List</td>
+        <td>Foreign Key, Nullable</td>
+      </tr>
+      <tr>
+        <td>reactions</td>
+        <td>String</td>
+        <td>Nullable</td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h3> [9] Ticket Attachment Schema</h3>
+    <h4>...</h4>
+    <table>
+      <thead>
+        <th>Column Name</th>
+        <th>Column Type</th>
+        <th>Constraints</th>
+      </thead>
+      <tbody>
+      <tr>
+        <td>id</td>
+        <td>Integer</td>
+        <td>Primary Key</td>
+      </tr>
+      <tr>
+        <td>ticket_id</td>
+        <td>Integer</td>
+        <td>Foreign Key</td>
+      </tr>
+      <tr>
+        <td>attachment_location</td>
+        <td>String</td>
+        <td>Nullable</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h3> [10] Inbox Schema</h3>
+    <h4>...</h4>
+    <table>
+      <thead>
+        <th>Column Name</th>
+        <th>Column Type</th>
+        <th>Constraints</th>
+      </thead>
+      <tbody>
+      <tr>
+        <td>id</td>
+        <td>Integer</td>
+        <td>Primary Key</td>
+      </tr>
+      <tr>
+        <td>user_id</td>
+        <td>String</td>
+        <td>Foreign Key</td>
+      </tr>
+      <tr>
+        <td>message</td>
+        <td>String</td>
+        <td>Nullable</td>
+      </tr>
+      <tr>
+        <td>received_at</td>
+        <td>String</td>
+        <td>Not Nullable</td>
+      </tr>
+      <tr>
+        <td>have_read</td>
+        <td>Bool</td>
+        <td>Not Nullable</td>
+      </tr>
+      <tr>
+        <td>message_type</td>
+        <td>String</td>
+        <td>Not Null</td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h3> [11] AssignBadge Schema</h3>
+    <h4>...</h4>
+    <table>
+      <thead>
+        <th>Column Name</th>
+        <th>Column Type</th>
+        <th>Constraints</th>
+      </thead>
+      <tbody>
+      <tr>
+        <td>id</td>
+        <td>Integer</td>
+        <td>Primary Key</td>
+      </tr>
+      <tr>
+        <td>user_id</td>
+        <td>String</td>
+        <td>Foreign Key</td>
+      </tr>
+      <tr>
+        <td>badge_name</td>
+        <td>Integer</td>
+        <td>Foreign Key</td>
+      </tr>
+      <tr>
+        <td>assigned_by</td>
+        <td>String</td>
+        <td>Foreign Key</td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h3> [12] Badge Schema</h3>
+    <h4>...</h4>
+    <table>
+      <thead>
+        <th>Column Name</th>
+        <th>Column Type</th>
+        <th>Constraints</th>
+      </thead>
+      <tbody>
+      <tr>
+        <td>id</td>
+        <td>Integer</td>
+        <td>Primary Key</td>
+      </tr>
+      <tr>
+        <td>badge_name</td>
+        <td>String</td>
+        <td>Not Null</td>
+      </tr>
+      <tr>
+        <td>badge_picture_location</td>
+        <td>String</td>
+        <td>Not Null</td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h3> [13] TicketData Schema</h3>
+    <h4>...</h4>
+    <table>
+      <thead>
+        <th>Column Name</th>
+        <th>Column Type</th>
+        <th>Constraints</th>
+      </thead>
+      <tbody>
+      <tr>
+        <td>id</td>
+        <td>Integer</td>
+        <td>Primary Key</td>
+      </tr>
+      <tr>
+        <td>ticket_id</td>
+        <td>Integer</td>
+        <td>Foreign Key, Not Null</td>
+      </tr>
+      <tr>
+        <td>opened_at</td>
+        <td>String</td>
+        <td>Nullable</td>
+      </tr>
+      <tr>
+        <td>assigned_at</td>
+        <td>String</td>
+        <td>Nullable</td>
+      </tr>
+      <tr>
+        <td>inProgress_at</td>
+        <td>String</td>
+        <td>Nullable</td>
+      </tr>
+      <tr>
+        <td>resolved_at</td>
+        <td>String</td>
+        <td>Nullable</td>
+      </tr>
+      <tr>
+        <td>closed_at</td>
+        <td>String</td>
+        <td>Nullable</td>
+      </tr>
+      <tr>
+        <td>reopened_at</td>
+        <td>String</td>
+        <td>Nullable</td>
+      </tr>
+      </tbody>
+    </table>
+    
+    <h3> [14] DisciplinaryAction Schema</h3>
+    <h4>...</h4>
+    <table>
+      <thead>
+        <th>Column Name</th>
+        <th>Column Type</th>
+        <th>Constraints</th>
+      </thead>
+      <tbody>
+      <tr>
+        <td>id</td>
+        <td>Integer</td>
+        <td>Primary Key</td>
+      </tr>
+      <tr>
+        <td>user_id</td>
+        <td>String</td>
+        <td>Foreign Key, Not Null</td>
+      </tr>
+      <tr>
+        <td>flagged_by</td>
+        <td>String</td>
+        <td>Foreign Key, Not Null</td>
+      </tr>
+      <tr>
+        <td>approved_by</td>
+        <td>String</td>
+        <td>Foreign Key, Not Null</td>
+      </tr>
+      <tr>
+        <td>flagged_till</td>
+        <td>String</td>
+        <td>Not Null</td>
+      </tr>
+      <tr>
+        <td>flagged_users</td>
+        <td>String</td>
+        <td>Foreign Key</td>
+      </tr>
+      <tr>
+        <td>flagging_staff</td>
+        <td>String</td>
+        <td>Foreign Key</td>
+      </tr>
+      <tr>
+        <td>approving_satff</td>
+        <td>String</td>
+        <td>Foreign Key</td>
+      </tr>
+      </tbody>
+    </table>
+    <h3> [15] FAQ Schema</h3>
+    <h4>...</h4>
+    <table>
+      <thead>
+        <th>Column Name</th>
+        <th>Column Type</th>
+        <th>Constraints</th>
+      </thead>
+      <tbody>
+      <tr>
+        <td>id</td>
+        <td>Integer</td>
+        <td>Primary Key</td>
+      </tr>
+      <tr>
+        <td>question</td>
+        <td>String</td>
+        <td>Not Null</td>
+      </tr>
+      <tr>
+        <td>solution</td>
+        <td>String</td>
+        <td>Not Null</td>
+      </tr>
+      <tr>
+        <td>tags_list</td>
+        <td>String</td>
+        <td>Nullable</td>
+      </tr>
+      <tr>
+        <td>created_by</td>
+        <td>String</td>
+        <td>Not Null, Foreign Key</td>
+      </tr>
+      </tbody>
+      </table>
+    <h3> [16] FAQAttachment Schema</h3>
+    <h4>...</h4>
+    <table>
+      <thead>
+        <th>Column Name</th>
+        <th>Column Type</th>
+        <th>Constraints</th>
+      </thead>
+      <tbody>
+      <tr>
+        <td>id</td>
+        <td>Integer</td>
+        <td>Primary Key</td>
+      </tr>
+      <tr>
+        <td>faq_id</td>
+        <td>String</td>
+        <td>Not Null, Foreign Key</td>
+      </tr>
+      <tr>
+        <td>solution</td>
+        <td>String</td>
+        <td>Not Null</td>
+      </tr>
+      </tbody> 
+    </table>
+
+  termsOfService: http://swagger.io/terms/
+  contact:
+    name: Aman Kankriya
+    email: 21f2000493@ds.study.iitm.ac.in
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  version: 1.2.0
+servers:
+- url: http://127.0.0.1:5000/
+  description: Local Host
+
+tags:
+- name: Discourse
+  description: Discourse API's
+- name: Login
+  description: Login a user
+- name: Register
+  description: Register a user
+- name: NewUsers
+  description: Verify and validate new users. Only admin can access this endpoint.
+- name: Ticket
+  description: To perform CRUD operations on single ticket
+- name: AllTickets
+  description: Get all tickets for different categories and different types of users.
+- name: Management
+  description: Management API's
+
+
+paths:
+  /api/v2/discourseAuth/discourseRegister:
+    post:
+      tags:
+      - Discourse
+      summary: Register on Discourse
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example: 
+                name: string
+                email: string
+                password: string
+                username: string
+                user_id: string  
+
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                category: success
+                message: New account created
+                status: 200
+        "400":
+          description: Email or Password is empty
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
+        "401":
+          description: Username is already in use
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
+
+  /api/v2/discourseAuth/addStaff:
+    get:
+      tags:
+      - Discourse
+      summary: Add Staff to Discourse Group
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                message:
+                  user_id: string
+                  first_name: string
+                  last_name: string
+                  email: string
+                  discourse_Username: string
+                category: success
+                status: 200
+              
+          
+    
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: Error occured while fetching database
+ 
+  /api/v2/discourse/categories:
+    get:
+      tags:
+      - Discourse
+      summary: Get Discourse categories
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                message:
+                  id: integer
+                  name: strinh
+                  color: integer
+                  text_color: string
+                  description: string
+                category: success
+                status: 200
+    
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: Error occured while fetching database
+
+  /api/v2/discourseAuth/addStaff/<username>: 
+    put:
+      tags:
+      - Discourse
+      summary: Modify staff to Discourse Ticket system app group
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                user_id: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                category: success
+                message: User updated successfully.
+                status: 200
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: Error occured while getting form data
+      
+  /api/v2/auth/login:
+    post:
+      tags:
+      - Login
+      summary: Log in .. 
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                email: example@example.com
+                password: password
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                message:
+                  user_id: string
+                  web_token: string
+                  token_expiry_on: float
+                  role: string
+                  first_name: string
+                  last_name: string
+                  email: string
+                  profile_photo_loc: null
+                category: success
+                status: 200
+        "400":
+          description: Email or Password are not valid as per specification
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
+        "401":
+          description: Request not authenticated due to missing/invalid token
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
+        "404":
+          description: User does not exist
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
+        
+  /api/v2/auth/register:
+    post:
+      tags:
+      - Register
+      summary: Register in .. 
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                email: example@example.com
+                password: password
+                retype_password: password
+                first_name: john
+                last_name: doe
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                category: success
+                message: Account created successfully. Now please login.
+                status: 200
+        "400":
+          description: Email or Password are not valid as per specification OR Password did not match.
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
+        "404":
+          description: Email is already in use
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
+      
+  /api/v2/auth/newUsers:
+    get:
+      tags:
+      - NewUsers
+      summary: Get new users data (which are not verified).
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                message:
+                  user_id: string
+                  first_name: Max
+                  last_name: Doe
+                  email: max.doe@example.com
+                  role: Staff
+                category: success
+                status: 200
+    
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: Error occured while fetching database
+
+  /api/v2/auth/newUsers/<user_id>:
+    put:
+      tags:
+      - NewUsers
+      summary: Update User Approvals
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                user_id: string
+                first_name: string
+                last_name: string
+                email: max.doe@example.com
+                role: Staff/Student
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                category: success
+                message: User verified and updated in database.
+                status: 200
+        "400":
+          description: User does not exists.
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
+        "404":
+          description: User id is empty or invalid
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
+
+    delete:
+      tags:
+      - NewUsers
+      summary: Delete new users data which are rejected by admin during verification.
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                category: success
+                message: Verification failed so user deleted.
+                status: 200
+        "400":
+          description: User id is empty or invalid
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
+        "404":
+          description: User does not exists.
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
+
+  /api/v2/ticket/<ticket_id>/<user_id>:
+    get:
+      tags:
+      - Ticket
+      summary: Retrieve a ticket.
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                message:
+                  id: string
+                  title: string
+                  solution: null
+                  privacy: false
+                  resolved_by: '0'
+                  ticket_status: Open
+                  tags_list: ""
+                  user_id: string
+                  description: string
+                  thread_link: null
+                  created_at: string
+                  solution_satisfaction: false
+                  ticket_priority: float
+                  attachments: []
+                category: success
+                status: 200
+        "400":
+          description: User id or ticket id is missing.
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
+        "404":
+          description: Ticket does not exists
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: Error occured while fetching ticket data
+    put:
+      tags:
+      - Ticket
+      summary: Update ticket data and number of votes
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                title: ""
+                description: ""
+                tags: ""
+                priority: ""
+                status: ""
+                votes: 0
+                solution: ""
+                inProgress: ""
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                category: success
+                message: Successfully updated a ticket.
+                status: 200
+        "400":
+          description: User id or ticket id is missing.
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
+        "404":
+          description: Resolved tickets can't be edited.
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: Error occured while getting form data
+    delete:
+      tags:
+      - Ticket
+      summary: Delete a ticket.
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                category: success
+                message: Ticket deleted successfully
+                status: 200
+        "400":
+          description: Only a user who created a ticket can delete it.
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
+        "404":
+          description: Ticket does not exists.
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: Error occured while fetching ticket data
+
+  /api/v2/ticket/<user_id>:
+    post:
+      tags:
+      - Ticket
+      summary: Create a new Ticket
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                title: string
+                description: string
+                ticket_priority: float
+                tag: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                category: success
+                message: Ticket created successfully. Attachments are empty.
+                status: 200
+        "400":
+          description: Ticket title and at least one tag is required.
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
+        "404":
+          description: User id is empty/missing in url
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: Error occured while getting form data
+
+  /api/v2/ticket/all-tickets:
+    get:
+      tags:
+      - AllTickets
+      summary: Retrieve all tickets for searching.
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                message:
+                    id: string
+                    description: string
+                    thread_link: null
+                    created_at: string
+                    solution_satisfaction: false
+                    ticket_priority: float
+                    user_id: string
+                    title: string
+                    solution: null
+                    privacy: false
+                    resolved_by: string
+                    ticket_status: Open
+                    tags_list: string
+                    attachments: []
+                category: success
+                status: 200
+        "400":
+          description: Error occured while resolving query
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
+        "404":
+          description: Only student can search all tickets using query.
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
+
+  /api/v2/ticket/all-tickets/<user_id>:
+    get:
+      tags:
+      - AllTickets
+      summary: Retrieve all tickets for the user as per user role.
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                category: success
+                message: Retrieve all tickets by the given user.
+                status: 200
+        "400":
+          description: User id is missing.
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
+        "404":
+          description: Error occured while resolving query.
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
+
+  /api/v2/management/<user_id>/card:
+    put:
+      tags:
+      - Management
+      summary: Update Card
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                category: success
+                message: User card updated in database.
+                status: 200
+        "400":
+          description: User id is empty or invalid
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
+        "404":
+          description: User does not exists.
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: Error occured while getting form data
+
+  /api/v2/management/badge:
+    post:
+      tags:
+      - Management
+      summary: Create Badge 
+
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                badge_name : string
+                badge_picture_location : string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                category: success
+                message: Badge Assigned Successfully.
+                status: 200
+        "401":
+          description: Cannot assign Badge
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
+        "404":
+          description: User does not exist
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
+        
+  /api/v2/management/assign/badge:
+    post:
+      tags:
+      - Management
+      summary: Create Badge 
+
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                user_email : string
+                badge_name : string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                category: success
+                message: Badge Assigned Successfully
+                status: 200
+        "400":
+          description: Error occured while getting form data
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
+        "401":
+          description: Cannot assign Badge
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
+        "404":
+          description: User does not exist
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
+    
+  /api/v2/management/badge/<badge_id>:
+    delete:
+      tags:
+      - Management
+      summary: Delete the badge.
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                category: success
+                message: Badge deleted successfully.
+                status: 200
+        "400":
+          description: Error occurred while deleting badge 
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
+        "404":
+          description: Badge Not Found
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
+
+  /api/v2/management/assign/badge/<badge_assign_id>:
+    delete:
+      tags:
+      - Management
+      summary: Delete assigned badge
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                category: success
+                message: Badge revoked successfully..
+                status: 200
+        "400":
+          description: Error occurred while deleting badge 
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
+        "404":
+          description: Badge Not Found
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                  status: 0
+                  category: string
+                  message: string
+
+
