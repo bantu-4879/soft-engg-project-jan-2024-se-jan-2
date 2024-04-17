@@ -8,3 +8,4 @@ redis-server
 
 echo "Starting Celery Worker..."
 celery -A app:celery_app worker --loglevel=INFO --pool=solo 
+celery -A app:celery_app beat --loglevel=INFO
