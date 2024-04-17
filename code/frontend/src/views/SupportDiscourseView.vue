@@ -2,15 +2,18 @@
     <div>
       <user-navbar></user-navbar>
       <div class="container mt-4">
-        <h2>Discourse Topics from Ticket Resolution System </h2>
-        <div v-if="isLoading" class="text-center mt-4">
+        <b-container fluid="xl">
+      <b-row class="text-start">
+        <b-col cols="12" sm="6" md="12" style="border-right: dashed black">
+          <h3 style="text-align: center">Discourse Topics from Ticket Resolution System </h3>
+          <div v-if="isLoading" class="text-center mt-4">
           <b-spinner></b-spinner>
         </div>
         <div v-else>
           <div v-if="errorMessage" class="alert alert-danger mt-4">
             {{ errorMessage }}
           </div>
-          <div v-else>
+          <div v-else class="scrollable-container">
             <div v-if="topics.length > 0">
               <div v-for="topic in topics" :key="topic.id" class="card mb-3">
                 <div class="card-body">
@@ -36,6 +39,19 @@
             </div>
           </div>
         </div>
+        </b-col>
+        <!--
+        <b-col cols="12" sm="6" md="4">
+          <b-row>
+            <h3 style="text-align: center">Create Tags</h3>
+          </b-row> <b-row>
+            <h3 style="text-align: center">Create Subcategories</h3>
+            <CreateSubcategory></CreateSubcategory>
+          </b-row>
+          
+        </b-col>-->
+      </b-row>
+    </b-container>
       </div>
     </div>
   </template>
@@ -43,10 +59,11 @@
   <script>
 import UserNavbar from "../components/UserNavbar.vue";
 import * as common from "../assets/common.js";
+import CreateSubcategory from "../components/StaffCreateSubcategories.vue";
 
 export default {
   name: "SupportDiscourse",
-  components: { UserNavbar },
+  components: { UserNavbar,CreateSubcategory },
   data() {
     return {
       user_id: this.$store.getters.get_user_id,
@@ -92,5 +109,10 @@ export default {
 };
 </script>
   
-  <style></style>
+  <style>
+.scrollable-container {
+  max-height: 600px; 
+  overflow-y: auto;
+}
+</style>
   
