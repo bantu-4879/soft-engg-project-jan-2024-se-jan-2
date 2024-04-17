@@ -18,6 +18,7 @@ from application.models import *
 from application.globals import *
 from application.globals import DISCOURSE_BASE_URL,API_USERNAME,API_KEY
 from application.database import db
+from application.views.inbox_bp import post_message
 
 class DiscourseUserUtils(UserUtils):
     def __init__(self,user_id=None):
@@ -94,6 +95,7 @@ class DiscourseUserCreation(Resource):
                     user.discourse_username=username
                     db.session.add(user)
                     db.session.commit()
+                    post_message(user_id, f"You have registered on discourse with username-{username} and activate your account from your email.", "inbox")
                     raise Success_200(status_msg=responseJs["message"],status_code=response.status_code)
                 else:
                     raise AlreadyExistError(status_msg=responseJs["message"],status_code=405)

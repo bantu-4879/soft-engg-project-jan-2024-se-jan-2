@@ -46,6 +46,15 @@
           ></InfoCard>
         </b-col>
       </b-row>
+      <b-card>
+  <div>
+    <h5>Download the ticket Report for further Data analysis as CSV.</h5>
+    <b-button block variant="primary" @click="downloadReport">Download Report</b-button>
+  </div>
+    </b-card>
+      <b-row>
+
+      </b-row>
     </b-container>
 
     <br />
@@ -56,6 +65,7 @@
 import UserNavbar from "../components/UserNavbar.vue";
 import * as common from "../assets/common.js";
 import InfoCard from "../components/InfoCard.vue";
+import axios from 'axios';
 
 export default {
   name: "AdminHome",
@@ -119,7 +129,33 @@ export default {
       });
   },
   mounted() {},
-  methods: {},
+  methods: {
+    async downloadReport() {
+      try {
+        const response = await axios.get(common.STATS_API+'/generate_report', {
+          headers: {
+            Authorization: 
+            {
+              webtoken: this.$store.getters.get_web_token,
+              userid: this.user_id,
+            },
+          },
+          responseType: 'blob',
+        });
+
+        const url = window.URL.createObjectURL(new Blob([response.data]));
+        const link = document.createElement('a');
+        link.href = url;
+        link.setAttribute('download', 'tickets_report.csv');
+        document.body.appendChild(link);
+        link.click();
+        window.URL.revokeObjectURL(url);
+      } catch (error) {
+        console.error('Error downloading report:', error);
+        // Handle error, e.g., show an error message to the user
+      }
+    },
+  },
   computed: {},
 };
 </script>

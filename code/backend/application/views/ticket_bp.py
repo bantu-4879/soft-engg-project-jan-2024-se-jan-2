@@ -40,6 +40,7 @@ from application.models import *
 from copy import deepcopy
 from application.notifications import send_email
 import joblib 
+from application.views.inbox_bp import post_message
 
 # --------------------  Code  --------------------
 
@@ -606,6 +607,7 @@ class TicketAPI(Resource):
                     ticket.ticket_status = "Resolved"
                     ticket.resolved_by = user_id
                     ticket_data.resolved_at=time_to_str(datetime.datetime.now())
+                    post_message(ticket.user_id, f"Your ticket with id {ticket.id} has been resolved.kindly check the solution.", "inbox")
                     db.session.add(ticket)
                     db.session.add(ticket_data)
                     db.session.commit()
@@ -993,6 +995,7 @@ class TicketCommentAPI(Resource):
                         raise NotFoundError(status_msg="Comment Does Not Exist")
 
 
+
 ticket_api.add_resource(
     TicketCommentAPI, "/comments/<string:ticket_id>", endpoint="ticket_comment"
 )
@@ -1002,3 +1005,9 @@ ticket_api.add_resource(
     endpoint="comment_update_delete",
 )
 # ticket_api.add_resource(TicketCommentAPI, "/comments/<string:ticket_id>/<int:comment_id>/", endpoint="comment_delete")
+
+
+class AssignTicket(Resource):
+
+    def post(self,ticket_id,user_id):
+        print("Assigned Ticket.")

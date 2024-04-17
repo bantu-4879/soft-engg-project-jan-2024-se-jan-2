@@ -7,6 +7,7 @@
         :upvote_disabled="true"
         :delete_disabled="false"
         :edit_disabled="true"
+        :discourse_disable="true"
       ></SearchTicket>
     </b-container>
 

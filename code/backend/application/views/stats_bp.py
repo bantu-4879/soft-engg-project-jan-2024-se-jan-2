@@ -2,12 +2,13 @@
 # - generate report API $
 
 # IMPORTS
-from flask import Blueprint, request
+from flask import Blueprint, request,send_from_directory,send_file
 from flask_restful import Api, Resource
 from application.logger import logger
 from application.common_utils import (
     token_required,
     users_required,
+    admin_required
 )
 from application.views.user_utils import UserUtils
 from application.responses import *
@@ -18,6 +19,7 @@ from application.views.user_utils import time_to_str
 from datetime import date, timedelta
 from sqlalchemy import and_
 from application.views.ticket_bp import TicketUtils
+from tasks import export_ticket_csv_task
 
 now = time_to_str(datetime.now())
 
@@ -82,13 +84,13 @@ class StatsAPI(Resource):
             )
             # data["tickets_raised_week"] = len(stats_util.num_tickets_in_time_period())
             data["total_open_tickets"] = len(
-                Ticket.query.filter(Ticket.ticket_status != "resolved").all()
+                Ticket.query.filter(Ticket.ticket_status != "Resolved").all()
             )
             data["new_users_registered"] = len(
                 User.query.filter_by(is_approved=False).all()
             )
             data["total_resolved_tickets"] = len(
-                Ticket.query.filter_by(ticket_status="resolved").all()
+                Ticket.query.filter_by(ticket_status="Resolved").all()
             )
             data["tickets_raised_today"] = len(
                 stats_util.num_tickets_today(datetime.now())
@@ -108,8 +110,8 @@ class StatsAPI(Resource):
             )
             raise InternalServerError
 
-    # @token_required
-    # @users_required(users=["Admin"])
+    @token_required
+    @users_required(users=["admin"])
     def post(self):
         details = {"date1": "", "date2": "", "resolved": ""}
         try:
@@ -127,7 +129,7 @@ class StatsAPI(Resource):
             d2 = details["date2"]
             date1 = stats_util.str_to_date(d1)
             date2 = stats_util.str_to_date(d2)
-            if details["resolved"] == False:
+            if details["Resolved"] == False:
                 tickets = stats_util.num_tickets_in_time_period(date1, date2)
             else:
                 tickets = stats_util.num_resolved_tickets_in_time_period(date1, date2)
@@ -139,4 +141,26 @@ class StatsAPI(Resource):
             return success_200_custom(data=tickets_found)
 
 
+class StatsReport(Resource):
+
+    @token_required
+    @admin_required
+    def get(self):
+        logger.info("Generating report and then sending that to user.")
+        task_result = export_ticket_csv_task.delay()
+
+        # Once the task is completed, retrieve the CSV filename
+        task_result.wait()  # Wait for the task to finish
+        csv_filename = task_result.result.get('csv_filename')
+
+        # Send the generated CSV file to the user
+        csv_directory = '../../databases/csv_files/'  # Path to csv_files directory
+        csv_path = os.path.abspath(os.path.join(os.path.dirname(__file__), csv_directory, csv_filename))
+
+        # Send the generated CSV file to the user
+        return send_file(csv_path, as_attachment=True)
+
+
+
 stats_api.add_resource(StatsAPI, "/", endpoint="stats_get")
+stats_api.add_resource(StatsReport,'/generate_report')
