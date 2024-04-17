@@ -1,7 +1,13 @@
 # IITM-SE-Project
 Software Engineering Project - IIT Madras Jan 2024 Term 
 
-(Team 2)
+### Team 2
+- Aman Kankriya 
+- Steve Richards
+- Ishika Goel
+- Sahithi Dhara 
+- Muskan Sindhu 
+- Akriti Vishwas 
 
 # Getting Started 
 ## Setting Up 
