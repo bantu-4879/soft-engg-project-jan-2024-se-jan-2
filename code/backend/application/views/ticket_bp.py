@@ -65,6 +65,13 @@ class TicketUtils(UserUtils):
 
     def convert_ticket_to_dict(self, ticket):
         ticket_dict = vars(ticket)  # verify if this properly converts obj to dict
+        
+        if ticket_dict["ticket_priority"]==0.15:
+            ticket_dict["ticket_priority"]="Low"
+        if ticket_dict["ticket_priority"]==0.50:    
+            ticket_dict["ticket_priority"]="Medium"
+        if ticket_dict["ticket_priority"]==0.75:    
+            ticket_dict["ticket_priority"]="High"
         if "_sa_instance_state" in ticket_dict:
             del ticket_dict["_sa_instance_state"]
         attachments = self.get_ticket_attachments(ticket_id=ticket.id)
@@ -212,11 +219,12 @@ class TicketUtils(UserUtils):
         priority_list = []
         for i in priority:
             if(i=="low"):
-                priority_list.append(0.15)
+                priority_list.append("Low")
             if(i=="medium"):
-                priority_list.append(0.50)
+                priority_list.append("Medium")
             if(i=="high"):
-                priority_list.append(0.75)
+                priority_list.append('High')
+        
 
         if priority:
             for ticket in all_tickets:
