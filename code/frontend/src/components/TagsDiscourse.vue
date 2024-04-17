@@ -46,7 +46,9 @@ import * as common from "../assets/common.js";
             });
       },
       formatSelectedTags() {
-        return this.selectedTags.map(tag => tag.name);
+        return this.selectedTags.map(tag => {
+    return tag.name;
+  })
       },
       emitSelectedTags() {
       this.$emit('selected-tags', this.selectedTags);

@@ -24,6 +24,7 @@
         selectedCategory: 14 || '', 
         categories: [], 
         lockedCategoryId:14,
+        user_id:this.$store.getters.get_user_id,
       };
     },
     created() {

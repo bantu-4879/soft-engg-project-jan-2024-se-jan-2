@@ -18,7 +18,7 @@
                 :delete_disabled="false"
                 :edit_disabled="false"
                 :is_resolved="false"
-                :discourse_disabled="!ticket.thread_link"
+                :discourse_disabled="false"
               ></TicketCard>
             </div>
           </div>

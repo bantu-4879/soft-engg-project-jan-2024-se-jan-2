@@ -123,6 +123,7 @@
             if (data.category === "success") {
               this.flashMessage.success({ message: "Discourse Thread successfully created." });
               this.onReset();
+              this.$emit("DiscourseTopicCreated")
             } else if (data.category === "error") {
               this.flashMessage.error({ message: data.message });
             }

@@ -599,9 +599,7 @@ export default {
         .then((response) => response.json())
         .then((data) => {
           if (data.category == "success") {
-            this.flashMessage.success({
-              message: "User data retrieved.",
-            });
+            console.log("Ticket Comments Retrived")
             this.comments = data.message;
             console.log(this.comments);
           }

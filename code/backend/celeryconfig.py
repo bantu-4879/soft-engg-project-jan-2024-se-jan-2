@@ -17,9 +17,9 @@ beat_schedule = {
         "schedule": crontab(hour=20, minute=26),
         # "schedule" : 20.0,
     },
-    # "monthly_admin_report": {
-    #     "task": "tasks.monthly_report",
-    #     "schedule": crontab(hour=11, minute=57, day_of_month=1),
-    #     # "schedule" : 20.0,
-    # },
+    "monthly_admin_report": {
+         "task": "tasks.send_monthly_ticket_report",
+         "schedule": crontab(hour=11, minute=57, day_of_month=1),
+        "schedule" : 20.0,
+     },
 }

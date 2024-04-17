@@ -83,7 +83,7 @@
           :delete_disabled="delete_disabled"
           :edit_disabled="edit_disabled"
           :is_resolved="ticket.ticket_status == 'Resolved'"
-          :discourse_disabled="discourse_disabled"
+          :discourse_disabled="ticket.thread_link"
         ></TicketCard>
       </div>
     </div>

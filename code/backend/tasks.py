@@ -1,11 +1,13 @@
 from celery import shared_task
-from application.models import Ticket
+from application.models import Ticket,User,Role,TicketData
 from application.database import db
 from application.logger import logger
 import joblib 
 import os 
 import csv
-
+import logging
+import datetime
+from application.views.inbox_bp import post_message
 # @shared_task(ignore_result=False)
 # def make_predictions(ticket_id):
 #     try:
@@ -39,8 +41,9 @@ def export_ticket_csv_task(self):
         for ticket in tickets:
             # Calculate resolution time (assuming resolved_at is a field in your Ticket model)
             resolution_time = None
-            if ticket.ticket_status == 'Resolved' and ticket.resolved_at:
-                resolution_time = ticket.resolved_at - ticket.created_at
+            ticket_data=TicketData.query.filter_by(ticket_id=ticket.id).first()
+            if ticket.ticket_status == 'Resolved' and ticket_data.resolved_at:
+                resolution_time = ticket_data.resolved_at - ticket.created_at
 
             csv_writer.writerow([
                 ticket.id,
@@ -59,6 +62,46 @@ def export_ticket_csv_task(self):
 
     return {'success': True, 'message': 'CSV export completed', 'csv_filename': csv_filename}
      
+@shared_task
+def send_monthly_ticket_report():
+    # Fetch users with the 'user' role
+    users = User.query.filter_by(role_id = 3).all()
+    # Get current month and year
+    current_month = datetime.now().month
+    current_year = datetime.now().year
+
+    # Calculate previous month and year
+    if current_month == 1:
+        previous_month = 12
+        previous_year = current_year - 1
+    else:
+        previous_month = current_month - 1
+        previous_year = current_year
+
+    # Fetch tickets resolved by staff users and created by students
+    staff=User.query.filter_by(role_id=2)
+    for staff_i in staff:
+     count=0
+     tickets_resolved_by_staff = Ticket.query.filter(Ticket.ticket_status == 'Resolved').filter(resolved_by=staff_i.id).all()
+     for ticket in tickets_resolved_by_staff:
+          if ticket.created_at.month == previous_month and ticket.created_at.year == previous_year:
+               count=count+1
+          post_message(staff.id,f"You have resolved {count} ticket/s on Ticket Resolution App in the month of {previous_month}/{previous_year}.","inbox")
+     
+     for user in users:
+         count=0
+         resolved_tickets_created_by_user=Ticket.query.filter(Ticket.ticket_status == 'Resolved').filter(user_id=user.id).all()
+         for ticket in resolved_tickets_created_by_user:
+          if ticket.created_at.month == previous_month and ticket.created_at.year == previous_year:
+               count=count+1 
+          post_message(user.id,f"The ticket has resolved  {count} ticket/s for you in the month of {previous_month}/{previous_year}.","inbox")
+          
+     
+    # Send monthly report to each user
+    
+     logging.info("Monthly ticket report inbox message sent.")
+
+
 @shared_task(ignore_result=False)
 def test_task(): 
     return "TASK"

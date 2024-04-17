@@ -41,8 +41,8 @@ class AllCategories(Resource):
     
     """
 
-    #@token_required
-    #@users_required(users=['Student','Staff','Admin'])
+    @token_required
+    @users_required(users=['student','staff','admin'])
     def get(self):
         headers={
             'Api-Key':API_KEY,
@@ -81,7 +81,7 @@ class Categories(Resource):
     
     """
 
-    #@token_required
+    @token_required
     def get(self,category_id):
         headers={
             'Api-Key':API_KEY,
@@ -105,8 +105,8 @@ class Categories(Resource):
         else:
             raise NotFoundError(status_msg="could not load category data")
 
-    #@token_required
-    #@users_required(users=['Staff','Admin'])
+    @token_required
+    @users_required(users=['staff','admin'])
     def post(self):
         headers={
             'Api-Key':API_KEY,
@@ -177,7 +177,7 @@ class SubCategoriesAll(Resource):
     def __init__(self,user_id=None):
         self.user_id=user_id
     
-    #@token_required
+    @token_required
     def get(self,category_id):
         headers={
             'Api-Key':API_KEY,
@@ -220,8 +220,8 @@ class CategoryTopicsAll(Resource):
 
     
     """
-    #@token_required
-    #@users_required(users=['student','staff','admin'])
+    @token_required
+    @users_required(users=['student','staff','admin'])
     def get(self):
         headers={
             'Api-Key':API_KEY,
@@ -267,6 +267,7 @@ class Tags(Resource):
         response=requests.get(url,headers=headers)
         if(response.status_code == 200):
             response=response.json()
+            print(response)
             tags=response["tags"]
             data=[]
             for tag in tags:
@@ -384,7 +385,7 @@ class DiscourseTopics(Resource):
         
 
     @token_required
-    @users_required(users='Student')
+    @users_required(users='student')
     def post(self,user_id,ticket_id):
         """
         Usage
@@ -438,6 +439,9 @@ class DiscourseTopics(Resource):
             embed_url = request.form.get('embed_url')
             category = request.form.get('category')
             tags = request.form.get('tags')
+            print(tags)
+            tag_list = tags.split(',')
+            print(tag_list)
 
             details["title"] = title if title else ""
             details["raw"] = raw if raw else ""
@@ -447,7 +451,7 @@ class DiscourseTopics(Resource):
             details["reply_to_post_number"] = reply_to_post_number if reply_to_post_number else ""
             details["embed_url"] = embed_url if embed_url else ""
             details["category"] = category if category else ""
-            details["tags"] = tags if tags else ""
+            details["tags"] = tag_list if tag_list else ""
             print(details)
         except Exception as e:
             logger.error(
@@ -514,7 +518,7 @@ class DiscourseTopics(Resource):
                 "raw":details["raw"],
                 "category":"14",
                 "embed_url":details["embed_url"],
-                "tags[]":details["tags"]
+                "tags":details["tags"]
             }
             headers={
                 'Api-Key':API_KEY,

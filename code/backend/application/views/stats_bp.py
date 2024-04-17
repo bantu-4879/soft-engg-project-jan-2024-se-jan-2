@@ -65,6 +65,7 @@ stats_util = StatsUtils()
 
 
 class StatsAPI(Resource):
+
     @token_required
     def get(self):
         try:
@@ -144,7 +145,7 @@ class StatsAPI(Resource):
 class StatsReport(Resource):
 
     @token_required
-    @admin_required
+    @users_required(users=['admin'])
     def get(self):
         logger.info("Generating report and then sending that to user.")
         task_result = export_ticket_csv_task.delay()
