@@ -194,6 +194,7 @@ class SubCategoriesAll(Resource):
                 if category['id'] == category_id:
                     category_req=category
             data=[]
+            print(category_req)
             for sub_category in category_req["subcategory_list"]:
                 _d={}
                 _d["id"] = sub_category["id"]
@@ -266,7 +267,6 @@ class Tags(Resource):
         response=requests.get(url,headers=headers)
         if(response.status_code == 200):
             response=response.json()
-            print(response)
             tags=response["tags"]
             data=[]
             for tag in tags:

@@ -37,10 +37,6 @@
         </b-form-group>
       
         <b-form-group>
-        <Subcategory v-model="form.sub_category" @input="handleSubcategoryChange" />
-        </b-form-group>
-
-        <b-form-group>
         <Tags v-model="form.tags" @selected-tags="handleSelectedTags" />
         </b-form-group>
 

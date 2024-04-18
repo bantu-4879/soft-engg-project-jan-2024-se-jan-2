@@ -4,7 +4,7 @@
       <div class="container mt-4">
         <b-container fluid="xl">
       <b-row class="text-start">
-        <b-col cols="12" sm="6" md="12" style="border-right: dashed black">
+        <b-col cols="12" sm="6" md="8" style="border-right: dashed black">
           <h3 style="text-align: center">Discourse Topics from Ticket Resolution System </h3>
           <div v-if="isLoading" class="text-center mt-4">
           <b-spinner></b-spinner>
@@ -40,16 +40,11 @@
           </div>
         </div>
         </b-col>
+        <b-col cols="12" sm="6" md="4" style="border-right: dashed black">
+            <CreateTags></CreateTags>
+        </b-col>
         <!--
-        <b-col cols="12" sm="6" md="4">
-          <b-row>
-            <h3 style="text-align: center">Create Tags</h3>
-          </b-row> <b-row>
-            <h3 style="text-align: center">Create Subcategories</h3>
-            <CreateSubcategory></CreateSubcategory>
-          </b-row>
-          
-        </b-col>-->
+        <b-col cols="12" sm="6" md="3"><CreateSubcategory></CreateSubcategory></b-col>-->
       </b-row>
     </b-container>
       </div>
@@ -60,10 +55,11 @@
 import UserNavbar from "../components/UserNavbar.vue";
 import * as common from "../assets/common.js";
 import CreateSubcategory from "../components/StaffCreateSubcategories.vue";
+import CreateTags from "../components/StaffCreateTags.vue";
 
 export default {
   name: "SupportDiscourse",
-  components: { UserNavbar,CreateSubcategory },
+  components: { UserNavbar,CreateSubcategory,CreateTags },
   data() {
     return {
       user_id: this.$store.getters.get_user_id,

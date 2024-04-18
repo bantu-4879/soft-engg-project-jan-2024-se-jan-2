@@ -1,30 +1,26 @@
 <template>
     <div>
-      <h2>Subcategories</h2>
+      <h4>Subcategories</h4>
       <div v-for="subcategory in subcategories" :key="subcategory.id">
         <p>{{ subcategory.name }}</p>
       </div>
-      <form @submit="createSubcategory" class="ticket-form" style="margin-top: 5px; margin-left: 5px; margin-right: 5px; text-align: left">
-        <div>
-          <label for="name">Subcategory Name:</label>
-          <input type="text" id="name" v-model="form.name" required>
-        </div>
-        <div>
-          <label for="color">Color:</label>
-          <input type="color" id="color" v-model="form.color">
-          <span>{{ selectedColorHex }}</span>
-        </div>
-        <div>
-          <label for="color">Text Color:</label>
-          <input type="color" id="color" v-model="form.text_color">
-          <span>{{ selectedTextColorHex }}</span>
-        </div>
-        <div>
-          <label for="description">Description:</label>
-          <textarea id="description" v-model="form.description"></textarea>
-        </div>
-        <b-button type="submit" variant="primary" @click="createSubcategory">Create Subcategory</b-button>
-      </form>
+      <b-form @submit="createSubcategory()" class="ticket-form" style="margin-top: 5px; margin-left: 5px; margin-right: 5px; text-align: center;width: 300px; border-left: 10px;">
+    <b-form-group label="Subcategory Name:" label-for="name">
+        <b-form-input id="name" v-model="form.name" type="text" required></b-form-input>
+    </b-form-group>
+    <b-form-group label="Color:" label-for="color">
+        <b-form-input id="color" v-model="form.color" type="color"></b-form-input>
+        <span>{{ selectedColorHex }}</span>
+    </b-form-group>
+    <b-form-group label="Text Color:" label-for="text-color">
+        <b-form-input id="text-color" v-model="form.text_color" type="color"></b-form-input>
+        <span>{{ selectedTextColorHex }}</span>
+    </b-form-group>
+    <b-form-group label="Description:" label-for="description">
+        <b-form-textarea id="description" v-model="form.description"></b-form-textarea>
+    </b-form-group>
+    <b-button type="submit" variant="primary">Create Subcategory</b-button>
+</b-form>
     </div>
   </template>
   
@@ -87,8 +83,9 @@
             });
       },
       createSubcategory() {
-        this.newSubcategory.color = this.selectedColorHex;
-        
+
+        this.form.color.color = this.selectedColorHex;
+        this.form.text_color=this.selectedTextColorHex;
         fetch(common.DISCOURSE_TICKET_API + '/category', {
           method: "POST",
           headers: {
