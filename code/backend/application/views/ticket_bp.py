@@ -53,9 +53,15 @@ class TicketUtils(UserUtils):
     
     def make_predictions(self, ticket_id):
         try:
-            ticket = Ticket.query.filter_by(id=ticket_id).first() 
-            loaded_model = joblib.load('pre-trained-model.pkl')
-            predicted_priority = loaded_model.predict(ticket.description)
+            ticket = Ticket.query.filter_by(id=ticket_id).first()
+            #print(os.getcwd()) 
+            # path = "code/backend/application/views/pre-trained-model.pkl"
+            # loaded_model = joblib.load(path)
+            path = "application/views/"
+            loaded_model = joblib.load(path + "pre-trained-model.pkl")
+            print(ticket.description)
+            print(type(ticket.description))
+            predicted_priority = loaded_model.predict([ticket.description])
             ticket.priority = predicted_priority 
             db.session.commit() 
             return True
@@ -360,8 +366,8 @@ class TicketAPI(Resource):
             else:
                 raise NotFoundError(status_msg="Ticket does not exists")
 
-    @token_required
-    @users_required(users=["student"])
+    # @token_required
+    # @users_required(users=["student"])
     def post(self, user_id):
         """
         Usage
