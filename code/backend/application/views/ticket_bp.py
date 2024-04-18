@@ -65,7 +65,7 @@ class TicketUtils(UserUtils):
 
     def convert_ticket_to_dict(self, ticket):
         ticket_dict = vars(ticket)  # verify if this properly converts obj to dict
-        
+        print(ticket_dict)
         if ticket_dict["ticket_priority"]==0.15:
             ticket_dict["ticket_priority"]="Low"
         if ticket_dict["ticket_priority"]==0.50:    
@@ -241,7 +241,7 @@ class TicketUtils(UserUtils):
         # sort (if present)
         if sortby:
             # sortby should be 'created_on', 'resolved_on', 'votes'
-            if sortby not in ["created_at", "resolved_on"]:
+            if sortby not in ["created_at", "resolved_at"]:
                 sortby = "created_at"
         else:
             sortby = "created_at"
@@ -319,7 +319,8 @@ ticket_utils = TicketUtils()
 
 
 class TicketAPI(Resource):
-    #@token_required
+    
+    @token_required
     @users_required(users=["student", "staff", "admin"])
     def get(self, ticket_id="", user_id=""):
         """
@@ -440,7 +441,7 @@ class TicketAPI(Resource):
                 id = details["ticket_id"],
                 title = details["title"],
                 description = details["description"],
-                ticket_priority = ticket_priority,
+                ticket_priority = predicted_priority,
                 tags_list = details["tags_list"],
                 ticket_status = "Open",
                 solution_satisfaction = False,
