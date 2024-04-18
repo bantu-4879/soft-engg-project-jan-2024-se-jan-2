@@ -51,23 +51,16 @@ class TicketUtils(UserUtils):
     def __init__(self, user_id=None):
         self.user_id = user_id
     
-    def make_predictions(self, ticket_id):
+    def make_predictions(self, ticket_description):
         try:
-            ticket = Ticket.query.filter_by(id=ticket_id).first()
-            #print(os.getcwd()) 
-            # path = "code/backend/application/views/pre-trained-model.pkl"
-            # loaded_model = joblib.load(path)
             path = "application/views/"
             loaded_model = joblib.load(path + "pre-trained-model.pkl")
-            print(ticket.description)
-            print(type(ticket.description))
-            predicted_priority = loaded_model.predict([ticket.description])
-            ticket.priority = predicted_priority 
-            db.session.commit() 
-            return True
+            predicted_priority = loaded_model.predict([ticket_description])
+            priority = predicted_priority 
+            return priority
         except Exception as e:
             logger.error(f"Exception from make_predictions {e}")
-            return False
+            return 0.25
 
     def convert_ticket_to_dict(self, ticket):
         ticket_dict = vars(ticket)  # verify if this properly converts obj to dict
@@ -432,7 +425,7 @@ class TicketAPI(Resource):
             details["created_by"] = user_id
             details["created_on"] = time_to_str(datetime.datetime.now())
             details['tags_list'] = ", ".join(tags_list)
-            predicted_priority = ticket_utils.make_predictions(ticket_id)
+            predicted_priority = ticket_utils.make_predictions(details["description"])
             details["priority"] = details["priority"]
 
             if(details["priority"]=="low"):
@@ -575,7 +568,7 @@ class TicketAPI(Resource):
                     ticket.title = details["title"]
                     ticket.description = details["description"]
                     ticket.tags_list = ", ".join(tags_list)
-                    predicted_priority = ticket_utils.make_predictions(ticket_id)
+                    predicted_priority = ticket_utils.make_predictions(ticket.description)
                     if(predicted_priority):
                         logger.info("The ticket priority is updated as well.")
                     else:
@@ -587,6 +580,7 @@ class TicketAPI(Resource):
                     #     ticket.ticket_priority=0.50
                     # if(predicted_priority=="high"):
                     #     ticket.ticket_priority=0.75
+                    ticket.priority=predicted_priority
                     db.session.add(ticket)
                     db.session.commit()
 
