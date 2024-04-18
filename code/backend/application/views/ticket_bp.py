@@ -65,7 +65,6 @@ class TicketUtils(UserUtils):
 
     def convert_ticket_to_dict(self, ticket):
         ticket_dict = vars(ticket)  # verify if this properly converts obj to dict
-        print(ticket_dict)
         if ticket_dict["ticket_priority"]==0.15:
             ticket_dict["ticket_priority"]="Low"
         if ticket_dict["ticket_priority"]==0.50:    
@@ -441,7 +440,7 @@ class TicketAPI(Resource):
                 id = details["ticket_id"],
                 title = details["title"],
                 description = details["description"],
-                ticket_priority = predicted_priority,
+                ticket_priority = ticket_priority,
                 tags_list = details["tags_list"],
                 ticket_status = "Open",
                 solution_satisfaction = False,
