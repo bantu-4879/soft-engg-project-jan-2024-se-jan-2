@@ -440,7 +440,7 @@ class TicketAPI(Resource):
                 id = details["ticket_id"],
                 title = details["title"],
                 description = details["description"],
-                ticket_priority = ticket_priority,
+                ticket_priority = predicted_priority,
                 tags_list = details["tags_list"],
                 ticket_status = "Open",
                 solution_satisfaction = False,
