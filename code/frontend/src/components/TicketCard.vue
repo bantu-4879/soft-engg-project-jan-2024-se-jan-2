@@ -164,7 +164,7 @@
             <p>Status: {{ ticket_status }}</p>
           </div>
           <div class="dark-bg border-item">
-            <p>Priority: {{ ticket_priority }}</p>
+            <p>Priority: {{ ticket_priority }} % </p>
           </div>
           <div class="dark-bg border-item">
             <p>
@@ -446,7 +446,7 @@ export default {
             this.title = data.message.title;
             this.description = data.message.description;
             this.created_by = data.message.user_id;
-            this.ticket_priority = data.message.ticket_priority;
+            this.ticket_priority = ((data.message.ticket_priority)*100).toFixed(2);
             this.ticket_status = data.message.ticket_status;
             this.solution = data.message.solution;
             this.resolved_by = data.message.resolved_by;
