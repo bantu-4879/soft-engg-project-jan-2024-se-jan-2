@@ -19,7 +19,7 @@ beat_schedule = {
     },
     "monthly_admin_report": {
         "task": "tasks.send_monthly_ticket_report",
-        "schedule": crontab(hour=20, minute=43, day_of_month=17),
+        "schedule": crontab(hour=10, minute=30, day_of_month=18),
         # "schedule" : 20.0,
     },
 }
