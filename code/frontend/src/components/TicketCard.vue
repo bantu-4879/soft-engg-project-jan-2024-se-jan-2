@@ -403,7 +403,7 @@ export default {
       delete_ticket_modal_id: "delete_ticket_modal_" + this.id,
       discourse_ticket_modal_id: "discourse_ticket_modal_" + this.id,
       discourse_show_modal_id: "discourse_show_modal_" + this.id,
-      ticket_priority: "",
+      ticket_priority: 0,
       ticket_status: "",
       solution: "",
       resolved_by: 0,
